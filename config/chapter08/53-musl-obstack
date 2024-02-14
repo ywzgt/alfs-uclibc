@@ -1,0 +1,15 @@
+#!/bin/bash
+# https://git.alpinelinux.org/aports/tree/main/musl-obstack/APKBUILD
+# https://github.com/void-linux/void-packages/blob/master/srcpkgs/musl-obstack/template
+# https://github.com/void-linux/musl-obstack/tags
+
+SRC="musl-obstack"
+PKG="$SRC"
+
+./bootstrap.sh
+
+./configure --prefix=/usr
+
+make
+make install
+rm -fv /usr/lib/libobstack.la

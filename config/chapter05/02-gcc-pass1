@@ -1,0 +1,41 @@
+#!/bin/bash
+
+SRC="gcc"
+
+tar -xf ../mpfr-[0-9]*.tar.xz
+mv -v mpfr-[0-9]* mpfr
+tar -xf ../gmp-[0-9]*.tar.xz
+mv -v gmp-[0-9]* gmp
+tar -xf ../mpc-[0-9]*.tar.gz
+mv -v mpc-[0-9]* mpc
+
+sed '/m64=/s/lib64/lib/' -i.orig gcc/config/i386/t-linux64
+sed '/ld.*-uClibc.so.0/s/0/1/' -i.ori gcc/config/linux.h
+
+mkdir -v build
+cd build
+
+../configure \
+	--target=$LFS_TGT \
+	--prefix=$LFS/tools \
+	--with-sysroot=$LFS \
+	--with-newlib \
+	--without-headers \
+	--enable-default-pie \
+	--enable-default-ssp \
+	--disable-nls \
+	--disable-shared \
+	--disable-multilib \
+	--disable-threads \
+	--disable-libatomic \
+	--disable-libgomp \
+	--disable-libquadmath \
+	--disable-libssp \
+	--disable-libvtv \
+	--disable-libstdcxx \
+	--enable-languages=c,c++
+
+make
+make install
+cd ..
+cat gcc/limitx.h gcc/glimits.h gcc/limity.h > `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/include/limits.h

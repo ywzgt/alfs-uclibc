@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SRC="grep"
+PKG="$SRC"
+
+sed -i "s/echo/#echo/" src/egrep.sh
+
+./configure --prefix=/usr
+
+make
+make install

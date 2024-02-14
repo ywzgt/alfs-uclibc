@@ -1,0 +1,12 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/git/postlfs/gnupg.html
+
+SRC="gnupg"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--localstatedir=/var \
+	--sysconfdir=/etc
+
+make
+make install

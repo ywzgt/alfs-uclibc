@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SRC="libtool"
+PKG="$SRC"
+
+./configure --prefix=/usr
+
+make
+make install
+rm -fv /usr/lib/libltdl.a

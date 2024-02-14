@@ -1,0 +1,27 @@
+#!/bin/bash
+
+SRC="e2fsprogs"
+PKG="$SRC"
+
+mkdir -v build
+cd build
+
+# needed for >=musl-1.2.4, bug 908892
+# https://gitweb.gentoo.org/repo/gentoo.git/tree/sys-fs/e2fsprogs/e2fsprogs-1.47.0-r2.ebuild
+if test "$X32"; then CFLAGS+=" -D_FILE_OFFSET_BITS=64"; fi
+
+LDFLAGS="-Wl,-lintl $LDFLAGS"
+
+../configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--enable-elf-shlibs \
+	--disable-libblkid \
+	--disable-libuuid \
+	--disable-uuidd \
+	--disable-fsck
+
+make
+make install
+
+rm -fv /usr/lib/{libcom_err,libe2p,libext2fs,libss}.a
+sed 's/metadata_csum_seed,//' -i /etc/mke2fs.conf

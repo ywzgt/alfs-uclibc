@@ -1,0 +1,17 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/postlfs/btrfs-progs.html
+
+SRC="btrfs-progs"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--enable-shared \
+	--disable-static \
+	--disable-documentation \
+	--disable-backtrace
+
+make
+make install
+for i in 5 8; do
+   install -Dvm644 Documentation/*.$i "/usr/share/man/man$i"
+done

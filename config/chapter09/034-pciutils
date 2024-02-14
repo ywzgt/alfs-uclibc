@@ -1,0 +1,21 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/systemd/general/pciutils.html
+
+SRC="pciutils"
+PKG="$SRC"
+
+make PREFIX=/usr \
+	SHAREDIR=/usr/share/hwdata \
+	SHARED=yes
+
+make PREFIX=/usr \
+	SHAREDIR=/usr/share/hwdata \
+	SHARED=yes \
+	install install-lib
+chmod -v 755 /usr/lib/libpci.so
+
+rm -fv /usr/share/hwdata/pci.ids
+install -dvm755 /usr/share/hwdata
+wget -cO /usr/share/hwdata/pci.ids \
+	https://raw.githubusercontent.com/pciutils/pciids/master/pci.ids
+# https://pci-ids.ucw.cz/v2.2/pci.ids

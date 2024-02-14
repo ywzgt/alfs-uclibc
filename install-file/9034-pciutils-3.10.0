@@ -1,0 +1,19 @@
+/root/.wget-hsts	225	root:root	644	
+/usr/bin/lspci	121804	root:root	755	
+/usr/include/pci/config.h	811	root:root	644	
+/usr/include/pci/header.h	82835	root:root	644	
+/usr/include/pci/pci.h	12737	root:root	644	
+/usr/include/pci/types.h	1950	root:root	644	
+/usr/lib/libpci.so	11	root:root	777	libpci.so.3
+/usr/lib/libpci.so.3	16	root:root	777	libpci.so.3.10.0
+/usr/lib/libpci.so.3.10.0	94836	root:root	755	
+/usr/lib/pkgconfig/libpci.pc	210	root:root	644	
+/usr/sbin/setpci	21768	root:root	755	
+/usr/sbin/update-pciids	1783	root:root	755	
+/usr/share/hwdata/pci.ids	1431735	root:root	644	
+/usr/share/hwdata/pci.ids.gz	313330	root:root	644	
+/usr/share/man/man5/pci.ids.5	3781	root:root	644	
+/usr/share/man/man7/pcilib.7	9371	root:root	644	
+/usr/share/man/man8/lspci.8	11088	root:root	644	
+/usr/share/man/man8/setpci.8	6590	root:root	644	
+/usr/share/man/man8/update-pciids.8	810	root:root	644	

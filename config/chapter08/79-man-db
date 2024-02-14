@@ -1,0 +1,21 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/lfs/view/development/chapter08/man-db.html
+
+SRC="man-db"
+PKG="$SRC"
+
+if [[ "$(uname -m)" == i?86 ]]; then
+	_args="--disable-year2038"
+fi
+
+./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--disable-setuid \
+	--enable-cache-owner=bin \
+	--with-browser=/usr/libexec/default-browser \
+	--with-vgrind=/usr/bin/vgrind \
+	--with-grap=/usr/bin/grap \
+	--with-systemdtmpfilesdir=/usr/lib/tmpfiles.d $_args
+
+make
+make install

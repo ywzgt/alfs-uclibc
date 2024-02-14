@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SRC="pkgconf"
+PKG="$SRC"
+
+./configure --prefix=/usr --disable-static
+
+make
+make install
+ln -sv pkgconf /usr/bin/pkg-config

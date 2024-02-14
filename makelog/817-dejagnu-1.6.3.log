@@ -1,0 +1,71 @@
+Wed Feb 14 10:27:10 UTC 2024
+KB: 1001932	/
+
+mkdir: created directory 'build'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make sets $(MAKE)... (cached) yes
+checking for gawk... (cached) gawk
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+Done. Now run 'make install'.
+Done. Now run 'make install'.
+make[1]: Entering directory '/sources/dejagnu-1.6.3/build'
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/mkdir -p '/usr/share/dejagnu/libexec'
+ /usr/bin/install -c ../dejagnu ../runtest '/usr/bin'
+ /usr/bin/install -c ../config.guess '/usr/share/dejagnu/libexec'
+ /usr/bin/mkdir -p '/usr/share/dejagnu/baseboards'
+ /usr/bin/mkdir -p '/usr/share/dejagnu/commands'
+ /usr/bin/mkdir -p '/usr/share/dejagnu/config'
+ /usr/bin/mkdir -p '/usr/include'
+ /usr/bin/install -c -m 644 ../commands/help.sh ../commands/report-card.awk '/usr/share/dejagnu/commands'
+ /usr/bin/install -c -m 644 ../config/README ../config/adb.exp ../config/aarch64-fv8.exp ../config/default.exp ../config/gdb-comm.exp ../config/gdb_stub.exp ../config/sid.exp ../config/sim.exp ../config/unix.exp ../config/vxworks.exp '/usr/share/dejagnu/config'
+ /usr/bin/install -c -m 644 ../baseboards/README ../baseboards/aarch64-sim.exp ../baseboards/am33_2.0-libremote.exp ../baseboards/androideabi.exp ../baseboards/arm-ice.exp ../baseboards/arm-sid.exp ../baseboards/arm-sim.exp ../baseboards/basic-sid.exp ../baseboards/basic-sim.exp ../baseboards/cris-sim.exp ../baseboards/d30v-sim.exp ../baseboards/fr30-sim.exp ../baseboards/frv-sim.exp ../baseboards/gdbserver-sample.exp ../baseboards/generic-sim.exp ../baseboards/i386-sid.exp ../baseboards/iq2000-sim.exp ../baseboards/jmr3904-sim.exp ../baseboards/linux-gdbserver.exp ../baseboards/linux-libremote.exp ../baseboards/m68k-sid.exp ../baseboards/mcore-moto-sim.exp ../baseboards/mcore-sim.exp ../baseboards/mips-lnews-sim.exp ../baseboards/mips-lsi-sim.exp ../baseboards/mips-sim-idt32.exp ../baseboards/mips-sim-idt64.exp ../baseboards/mips-sim-mti32.exp ../baseboards/mips-sim-mti64.exp ../baseboards/mips-sim-mti64_64.exp ../baseboards/mips-sim-mti64_n32.exp ../baseboards/mips-sim-sde32.exp ../baseboards/mips-sim-sde64.exp ../baseboards/mips-sim.exp ../baseboards/mmixware-sim.exp ../baseboards/mn10200-sim.exp ../baseboards/mn10300-sim.exp ../baseboards/moxie-sim.exp ../baseboards/msp430-sim.exp ../baseboards/mt-sid.exp '/usr/share/dejagnu/baseboards'
+ /usr/bin/install -c -m 644 ../dejagnu.h '/usr/include'
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 ../baseboards/multi-sim.exp ../baseboards/pi.exp ../baseboards/powerpc-sim.exp ../baseboards/powerpcle-sim.exp ../baseboards/pru-sim.exp ../baseboards/qemu.exp ../baseboards/riscv-sim.exp ../baseboards/rx-sim.exp ../baseboards/sh-sid.exp ../baseboards/sh-sim.exp ../baseboards/sparc-sim.exp ../baseboards/sparc64-sim.exp ../baseboards/sparclite-sim-le.exp ../baseboards/sparclite-sim.exp ../baseboards/tx39-sim.exp ../baseboards/unix.exp ../baseboards/v850-sim.exp ../baseboards/visium-sim.exp ../baseboards/vr4100-sim.exp ../baseboards/vr4111-sim.exp ../baseboards/vr4300-sim.exp ../baseboards/xtensa-sim.exp '/usr/share/dejagnu/baseboards'
+ /usr/bin/mkdir -p '/usr/share/info'
+ /usr/bin/mkdir -p '/usr/share/dejagnu'
+ /usr/bin/install -c -m 644 ../stub-loader.c ../testglue.c ../runtest.exp ../lib/debugger.exp ../lib/dejagnu.exp ../lib/dg.exp ../lib/dmucs.exp ../lib/framework.exp ../lib/ftp.exp ../lib/kermit.exp ../lib/libgloss.exp ../lib/remote.exp ../lib/rlogin.exp ../lib/rsh.exp ../lib/ssh.exp ../lib/standard.exp ../lib/target.exp ../lib/targetdb.exp ../lib/telnet.exp ../lib/tip.exp ../lib/utils.exp '/usr/share/dejagnu'
+ /usr/bin/install -c -m 644 ../doc/dejagnu.1 ../doc/dejagnu-help.1 ../doc/dejagnu-report-card.1 ../doc/runtest.1 '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 ../doc/dejagnu.info '/usr/share/info'
+ install-info --info-dir='/usr/share/info' '/usr/share/info/dejagnu.info'
+make[1]: Leaving directory '/sources/dejagnu-1.6.3/build'
+
+
+CFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -D_FORTIFY_SOURCE=2 -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Wed Feb 14 10:27:11 UTC 2024
+
+Totalseconds: 1
+
+KB: 1006028	/
+

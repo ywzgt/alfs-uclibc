@@ -1,0 +1,65 @@
+#!/bin/bash
+# https://git.alpinelinux.org/aports/tree/main/vim/vimrc
+# https://www.linuxfromscratch.org/lfs/view/development/chapter08/vim.html
+
+SRC="vim"
+PKG="$SRC"
+
+echo '#define SYS_VIMRC_FILE "/etc/vimrc"' >> src/feature.h
+
+# uclibc 的 iconv 也不支持 cp932 转化为 utf-8
+# 由 src/po/Makefile 可知 target <ja.sjis.po> 需要;
+# 命令为 iconv -f utf-8 -t cp932 ja.po | ./sjiscorr > ja.sjis.po
+sed -i '/ja.sjis/d' src/po/Make_all.mak
+
+# 干掉不需要的翻译,只保留了中文 (可选)
+sed -i '/\saf.*\\\|\sca.*\\\|\scs.*\\\|\sda.*\\\|\sde.*\\\|\sen.*\\\|\seo.*\\\|\ses.*\\\|\sfi.*\\\|\sfr.*\\\|\sga.*\\\|\sit.*\\\|\sja.*\\\|\sko.*\\\|\slv.*\\\|\snb.*\\\|\snl.*\\\|\sno.*\\\|\spl.*\\\|\spt.*\\\|\sru.*\\\|\ssk.*\\\|\ssr.*\\\|\ssv.*\\\|\str.*\\\|\suk.*\\\|\svi.*\\/d' src/po/Make_all.mak
+
+./configure --prefix=/usr \
+	--without-x 	--enable-gui=no
+make
+make install
+
+ln -sv vim /usr/bin/vi
+for L in  /usr/share/man/{,*/}man1/vim.1; do
+	ln -sv vim.1 $(dirname $L)/vi.1
+done
+ln -srv /usr/share/vim/vim*/doc /usr/share/doc/vim
+
+install -Dvm644 /usr/share/vim/vim*/vimrc_example.vim "/etc/vimrc"
+echo -e "\n" >>/etc/vimrc
+cat >> /etc/vimrc << "EOF"
+" Begin /etc/vimrc
+" https://git.alpinelinux.org/aports/tree/main/vim/vimrc
+
+" Ensure defaults are set before customizing settings, not after
+source $VIMRUNTIME/defaults.vim
+let skip_defaults_vim=1
+
+set nocompatible
+set backspace=indent,eol,start
+set ai
+set history=50
+set ruler
+set mouse=
+syntax on
+
+autocmd BufRead APKBUILD set filetype=sh
+autocmd BufRead PKGBUILD set filetype=bash
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+" When doing tab completion, give the following files lower priority.
+set suffixes+=.info,.aux,.log,.dvi,.bbl,.out,.o,.lo
+
+if (&term == "xterm") || (&term == "putty")
+	set background=dark
+endif
+
+if filereadable("/etc/vim/vimrc.local")
+	source /etc/vim/vimrc.local
+endif
+
+" End /etc/vimrc
+EOF

@@ -1,0 +1,17 @@
+Wed Feb 14 10:19:40 UTC 2024
+KB: 973852	/
+
+
+
+CFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -D_FORTIFY_SOURCE=2 -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Wed Feb 14 10:19:40 UTC 2024
+
+Totalseconds: 0
+
+KB: 978752	/
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SRC="openssl"
+PKG="$SRC"
+
+./config --prefix=/usr \
+	--openssldir=/etc/ssl \
+	--libdir=lib \
+	shared \
+	zlib-dynamic
+
+make
+sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
+make MANSUFFIX=ssl install
+cp -vfr doc/* /usr/share/doc/openssl
