@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="libxcrypt"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--enable-hashes=strong \
+	--enable-obsolete-api=no \
+	--disable-failure-tokens
+
+make
+make install

@@ -1,0 +1,11 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/systemd/general/valgrind.html
+
+SRC="valgrind"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--enable-lto=yes
+
+make
+make install

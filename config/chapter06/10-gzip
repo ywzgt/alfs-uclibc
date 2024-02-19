@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SRC="gzip"
+
+./configure --prefix=/usr \
+	--host=$LFS_TGT \
+	--target=$LFS_TGT
+
+make
+make DESTDIR=$LFS install

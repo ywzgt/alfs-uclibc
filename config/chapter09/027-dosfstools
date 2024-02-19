@@ -1,0 +1,12 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/postlfs/dosfstools.html
+
+SRC="dosfstools"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	 --enable-compat-symlinks \
+	--mandir=/usr/share/man
+
+make
+make install

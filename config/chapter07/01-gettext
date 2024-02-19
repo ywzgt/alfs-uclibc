@@ -1,0 +1,12 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/lfs/view/development/chapter07/gettext.html
+
+SRC="gettext"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--with-included-gettext
+
+make
+make install
+rm -fv /usr/lib/libintl*.{,l}a

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+SRC="uclibc-ng"
+
+case $(uname -m) in
+	i?86)
+		cp "$SRC_ARCHIVE/config-i686" .config
+		;;
+	*)
+		cp "$SRC_ARCHIVE/config-$(uname -m)" .config
+		;;
+esac
+
+sed -e "s#^KERNEL_HEADERS=.*#KERNEL_HEADERS=\"$LFS/usr/include\"#;" \
+	-e "/^UCLIBC_EXTRA_CFLAGS/s/=.*/=\"${CFLAGS} ${LDFLAGS}\"/" -i.old .config
+
+timeout 10 make silentoldconfig
+diff -u .config{.old,} || true
+
+make CC=$LFS_TGT-gcc
+make CC=$LFS_TGT-gcc utils
+make CC=$LFS_TGT-gcc DESTDIR=$LFS install
+make CC=$LFS_TGT-gcc DESTDIR=$LFS install_utils
