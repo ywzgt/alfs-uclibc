@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="dejagnu"
+PKG="$SRC"
+
+mkdir -v build
+cd build
+
+../configure --prefix=/usr
+
+make
+make install

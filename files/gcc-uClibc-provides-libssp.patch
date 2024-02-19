@@ -1,0 +1,12 @@
+--- a/gcc/gcc.cc
++++ b/gcc/gcc.cc
+@@ -973,8 +973,7 @@
+ 
+ #ifndef LINK_SSP_SPEC
+ #ifdef TARGET_LIBC_PROVIDES_SSP
+-#define LINK_SSP_SPEC "%{fstack-protector|fstack-protector-all" \
+-		       "|fstack-protector-strong|fstack-protector-explicit:}"
++#define LINK_SSP_SPEC "-luclibc_nonshared"
+ #else
+ #define LINK_SSP_SPEC "%{fstack-protector|fstack-protector-all" \
+ 		       "|fstack-protector-strong|fstack-protector-explicit" \

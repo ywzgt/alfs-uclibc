@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="findutils"
+PKG="$SRC"
+
+./configure --prefix=/usr --localstatedir=/var/lib/locate
+
+make
+make install

@@ -1,0 +1,12 @@
+#!/bin/bash
+# https://github.com/void-linux/void-packages/blob/master/srcpkgs/gettext/template
+
+SRC="gettext"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--with-included-gettext
+
+make
+make install
+rm -fv /usr/lib/libintl*.la

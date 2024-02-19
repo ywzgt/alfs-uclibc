@@ -1,0 +1,19 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/git/postlfs/sudo.html
+
+SRC="sudo"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--libexecdir=/usr/lib \
+	--with-secure-path \
+	--with-all-insults \
+	--with-env-editor \
+	--without-pam \
+	--with-passprompt=" 🔐 %p : "
+
+make
+make install
+
+sed -e '/root ALL=(ALL:ALL) ALL$/a\\nDefaults secure_path="\/usr\/local\/sbin:\/usr\/local\/bin:\/usr\/sbin:\/usr\/bin:"\nDefaults timestamp_timeout=30' \
+	-e '/^# %wheel ALL=(ALL:ALL) ALL$/s/#//' -i /etc/sudoers

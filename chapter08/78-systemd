@@ -1,0 +1,75 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/lfs/view/systemd/chapter08/systemd.html
+# https://www.linuxfromscratch.org/lfs/view/development/chapter08/udev.html
+
+SRC="systemd"
+PKG="$SRC"
+
+sed '/bus_message_type_from_string/s/_pure_//' \
+		-i src/libsystemd/sd-bus/bus-internal.h
+sed '/devt_hash_func/s/_pure_//' \
+		-i src/basic/hash-funcs.h
+sed '/job_get_timeout/s/_pure_//' \
+		-i src/core/job.h
+
+sed -i -e 's/GROUP="render"/GROUP="video"/' \
+		-e 's/GROUP="sgx", //' rules.d/50-udev-default.rules.in
+
+# 从默认的 sysusers.d/basic.conf 中删除两个不需要的组render 和sgx：
+sed -i -e '/^g\ render/d' -e '/^g\ sgx/d' sysusers.d/basic.conf.in
+
+pkgver="$(find .. -maxdepth 1  -type f -name 'systemd*.tar*' -exec basename {} +|head -1)"
+pkgver=${pkgver#systemd-}
+pkgver="$(echo ${pkgver%.tar*}|sed 's/[A-Za-z]\|_\|-//g')"
+
+mkdir -vp build
+cd build
+
+_meson_options=(
+	-Dmode=release
+	-Dversion-tag="${pkgver}"
+	-Dstatus-unit-format-default=combined
+	-Ddefault-timeout-sec=15
+	-Ddefault-user-timeout-sec=15
+	-Ddefault-dnssec=no
+	-Dfirstboot=false
+	-Dldconfig=false
+	-Dusers-gid=999
+	-Dnobody-user=nobody
+	-Dnobody-group=nogroup
+	-Dnologin-path=/usr/bin/false
+	-Dhomed=false
+	-Duserdb=false
+	-Dselinux=false
+	-Dtests=false
+	-Dinstall-tests=false
+	-Dtpm{,2}=false
+	-Dsysupdate=false
+	-Dsysvinit-path=""
+	-Dsysvrcnd-path=""
+	-Drc-local=""
+	-Ddev-kvm-mode=0660
+
+   	-Dsysusers=false
+
+	-D{gshadow,idn,networkd}=false
+	-Dnss-myhostname=false
+	-Dnss-mymachines=false
+	-Dnss-resolve=false
+	-Dnss-systemd=false
+)
+
+CPPFLAGS+=" -DIP_PMTUDISC_OMIT=5"
+
+meson setup --prefix=/usr  \
+	--buildtype=release  \
+	--sysconfdir=/etc \
+	"${_meson_options[@]}" ..
+meson compile
+meson install --no-rebuild
+ln -sv udevadm "/usr/bin/udevd"
+
+cd ..
+install -Dvm644 *.md NEWS README TODO  -t "/usr/share/doc/systemd"
+echo 'disable *' > "/usr/lib/systemd/system-preset/99-default.preset"
+echo 'disable *' > "/usr/lib/systemd/user-preset/99-default.preset"

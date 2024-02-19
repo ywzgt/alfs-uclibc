@@ -1,0 +1,10 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/git/general/libtasn1.html
+
+SRC="libtasn1"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static
+make
+make install

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+SRC="tar"
+
+if [[ "$(uname -m)" == i?86 ]]; then
+	_args="--disable-year2038"
+fi
+
+./configure --prefix=/usr \
+	--host=$LFS_TGT \
+	--build=$(build-aux/config.guess) $_args
+
+make
+make DESTDIR=$LFS install

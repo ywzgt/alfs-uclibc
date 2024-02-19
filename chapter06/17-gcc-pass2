@@ -1,0 +1,45 @@
+#!/bin/bash
+
+SRC="gcc"
+
+tar -xf ../mpfr-[0-9]*.tar.xz
+mv -v mpfr-[0-9]* mpfr
+tar -xf ../gmp-[0-9]*.tar.xz
+mv -v gmp-[0-9]* gmp
+tar -xf ../mpc-[0-9]*.tar.gz
+mv -v mpc-[0-9]* mpc
+
+
+sed '/m64=/s/lib64/lib/' -i.ori gcc/config/i386/t-linux64
+sed '/ld.*-uClibc.so.0/s/0/1/' -i.ori gcc/config/linux.h
+
+sed '/thread_header =/s/@.*@/gthr-posix.h/' \
+	-i libgcc/Makefile.in libstdc++-v3/include/Makefile.in
+
+mkdir -v build
+cd build
+
+case "$(uname -m)" in x86_64) _args="--with-arch=x86-64-v3";; esac
+
+../configure \
+	--build=$(../config.guess) \
+	--host=$LFS_TGT \
+	--target=$LFS_TGT \
+	LDFLAGS_FOR_TARGET=-L$PWD/$LFS_TGT/libgcc \
+	--prefix=/usr \
+	--with-build-sysroot=$LFS \
+	--enable-default-pie \
+	--enable-default-ssp \
+	--disable-nls \
+	--disable-multilib \
+	--disable-libatomic \
+	--disable-libgomp \
+	--disable-libquadmath \
+	--disable-libsanitizer \
+	--disable-libssp \
+	--disable-libvtv \
+	--enable-languages=c,c++ $_args
+
+make
+make DESTDIR=$LFS install
+ln -sv gcc $LFS/usr/bin/cc
