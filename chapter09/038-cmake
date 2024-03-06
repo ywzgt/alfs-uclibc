@@ -14,6 +14,8 @@ sed -i 's@^#  ifdef __GLIBC__$@#  if defined __GLIBC__ \&\& !defined __UCLIBC__@
 	--no-system-jsoncpp \
 	--no-system-cppdap \
 	--no-system-librhash \
+	--datadir=/share/cmake \
+	--parallel=$(nproc) \
 	--generator=Ninja
 
 ninja

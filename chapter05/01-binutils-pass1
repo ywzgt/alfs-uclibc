@@ -9,8 +9,8 @@ cd build
 	--with-sysroot=$LFS \
 	--target=$LFS_TGT \
 	--disable-nls \
-	--enable-gprofng=no \
 	--disable-werror \
+	--disable-gprofng \
 	--disable-multilib \
 	--disable-shared \
 	--enable-default-hash-style=gnu

@@ -2,15 +2,11 @@
 
 SRC="coreutils"
 
-if [[ "$(uname -m)" == i?86 ]]; then
-	_args="--disable-year2038"
-fi
-
 ./configure --prefix=/usr \
 	--host=$LFS_TGT \
 	--build=$(build-aux/config.guess) \
 	--enable-install-program=hostname \
-	--enable-no-install-program=kill,uptime $_args
+	--enable-no-install-program=kill,uptime
 
 make
 make DESTDIR=$LFS install

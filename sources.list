@@ -1,9 +1,9 @@
 # https://uclibc-ng.org
-https://downloads.uclibc-ng.org/releases/1.0.45/uClibc-ng-1.0.45.tar.xz
+https://downloads.uclibc-ng.org/releases/1.0.46/uClibc-ng-1.0.46.tar.xz
 
 # https://github.com/systemd/systemd-stable/tags
 # https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-apps/systemd-utils/Manifest
-https://github.com/systemd/systemd-stable/archive/v253.15/systemd-stable-253.15.tar.gz
+https://github.com/systemd/systemd-stable/archive/v253.17/systemd-stable-253.17.tar.gz
 
 # https://archlinux.org/packages/core/x86_64/pacman
 # https://gitlab.archlinux.org/archlinux/packaging/packages/pacman

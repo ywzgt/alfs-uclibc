@@ -3,14 +3,10 @@
 SRC="coreutils"
 PKG="$SRC"
 
-if [[ "$(uname -m)" == i?86 ]]; then
-	_args="--disable-year2038"
-fi
-
 autoreconf -fiv
 FORCE_UNSAFE_CONFIGURE=1 ./configure \
 	--prefix=/usr \
-	--enable-no-install-program=kill,uptime $_args
+	--enable-no-install-program=kill,uptime
 
 make
 make install

@@ -31,6 +31,12 @@ _package() {
 	newline
 	bash -e ../script/strip
 
+	for b in {busy,toy}box; do
+	if [[ -x ${BUILDDIR}/usr/bin/${b}-static ]]; then
+		(cd "${BUILDDIR}/usr/bin"; tar cf - ${b}* | xz -T0) > ${b}-$(uname -m).tar.xz
+	fi
+	done
+
 	newline
 	printf "::Package staticlibs..."
 	(cd "${BUILDDIR}/staticlibs"; tar cf - . | xz -T0) > "staticlibs.tar.xz" 2>/dev/null
