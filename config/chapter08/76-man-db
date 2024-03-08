@@ -1,0 +1,17 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/lfs/view/development/chapter08/man-db.html
+
+SRC="man-db"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--disable-setuid \
+	--enable-cache-owner=bin \
+	--with-browser=/usr/libexec/default-browser \
+	--with-vgrind=/usr/bin/vgrind \
+	--with-grap=/usr/bin/grap \
+	--with-systemdtmpfilesdir=/usr/lib/tmpfiles.d
+
+make
+make install

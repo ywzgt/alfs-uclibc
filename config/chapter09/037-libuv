@@ -1,0 +1,10 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/libuv.html
+
+SRC="libuv"
+PKG="$SRC"
+
+sh autogen.sh
+./configure --prefix=/usr --disable-static
+make
+make install

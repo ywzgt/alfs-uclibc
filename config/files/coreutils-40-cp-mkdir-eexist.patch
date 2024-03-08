@@ -1,0 +1,45 @@
+From 6a5468faedb77c558d5b4fdb3bca6f2ac375cae7 Mon Sep 17 00:00:00 2001
+From: Mike Frysinger <vapier@gentoo.org>
+Date: Thu, 3 Jan 2013 18:31:37 -0500
+Subject: [PATCH 4/4] cp: ignore EEXIST errors from mkdir
+
+If you're copying multiple source trees into a single destination in
+parallel (which have overlapping dirs, but not files), you can easily
+hit a race condition.
+
+This can crop up more generally if you're running multiple installs
+from different build directories in parallel.  You don't get as much
+of a speed up due to the parallel I/O, but you do from processing all
+the build scripts.
+
+Simple test to reproduce:
+
+    mkdir -p in/`printf %s/ {a..z} {0..10}`
+    (rm -rf out; for ((i=0;i<100;++i)); do cp -pPR in out & :; done)
+
+Bug: https://bugs.gentoo.org/449838
+Upstream-Bug: http://lists.gnu.org/archive/html/bug-coreutils/2013-01/msg00002.html
+
+(rebased by sam for ~9.1, https://github.com/coreutils/coreutils/commit/e2daa8f79781882f194e90dc49632ece1e1edf01
+doesn't seem like it fixes this for us)
+--- a/src/cp.c
++++ b/src/cp.c
+@@ -474,9 +474,15 @@ make_dir_parents_private (char const *const_dir, size_t src_offset,
+               mkdir_mode &= CHMOD_MODE_BITS & ~omitted_permissions;
+               if (mkdirat (dst_dirfd, dst_reldir, mkdir_mode) != 0)
+                 {
+-                  error (0, errno, _("cannot make directory %s"),
+-                         quoteaf (dir));
+-                  return false;
++                  /* If someone else created it between our stat/mkdir,
++                     don't complain.  It's debatable whether we should
++                     also preserve the mode bits in this scenario.  */
++                  if (errno != EEXIST)
++                    {
++                      error (0, errno, _("cannot make directory %s"),
++                             quoteaf (dir));
++                      return false;
++                    }
+                 }
+               else
+                 {

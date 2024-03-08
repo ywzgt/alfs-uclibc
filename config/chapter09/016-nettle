@@ -1,0 +1,11 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/svn/postlfs/nettle.html
+
+SRC="nettle"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static
+
+make
+make install

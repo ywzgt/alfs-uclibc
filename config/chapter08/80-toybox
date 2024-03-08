@@ -1,0 +1,15 @@
+#!/bin/bash
+# https://landley.net/toybox
+# https://github.com/landley/toybox
+
+SRC="toybox"
+PKG="$SRC"
+
+CFLAGS+=" -D_CS_V7_ENV -lcrypt"
+
+make defconfig
+make LDFLAGS="$LDFLAGS --static -lcrypt" CFLAGS="${CFLAGS// -lcrypt}"
+cp toybox{,-static}
+make clean
+make
+install -Dm755 toybox{,-static} -t /usr/bin

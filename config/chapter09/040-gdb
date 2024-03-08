@@ -1,0 +1,19 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/gdb.html
+
+SRC="gdb"
+PKG="$SRC"
+
+mkdir build
+cd build
+
+LDFLAGS="-Wl,-lintl $LDFLAGS"
+
+../configure --prefix=/usr \
+	--with-system-readline \
+	--with-python=/usr/bin/python3
+make
+make -C gdb install
+make -C gdbserver install
+
+pip3 install six

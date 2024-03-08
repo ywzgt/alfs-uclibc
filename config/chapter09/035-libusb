@@ -1,0 +1,15 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/libusb.html
+
+SRC="libusb"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static
+make
+make install
+
+rm -fv /usr/share/hwdata/pci.ids
+wget -cO /usr/share/hwdata/pci.ids \
+	https://raw.githubusercontent.com/pciutils/pciids/master/pci.ids
+# https://pci-ids.ucw.cz/v2.2/pci.ids

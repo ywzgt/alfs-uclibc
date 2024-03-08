@@ -1,0 +1,28 @@
+#!/bin/bash
+
+SRC="uclibc-ng"
+PKG="uclibc"
+
+case $(uname -m) in
+	i?86)
+		cp "$SRC_ROOT/config-i686" .config
+		;;
+	*)
+		cp "$SRC_ROOT/config-$(uname -m)" .config
+		;;
+esac
+
+sed -i.old "/^UCLIBC_EXTRA_CFLAGS/s/=.*/=\"$CFLAGS $LDFLAGS\"/" .config
+timeout 10 make silentoldconfig
+diff -u .config{.old,} || true
+
+sed -i '/^NONSHARED_LIBNAME/s/uclibc_nonshared.a/lib&/' Rules.mak
+sed -i '/\(libintl\|crypt\).h$/d' Makefile.in
+rm -fv include/{crypt,libintl}.h
+make
+make utils
+
+make install
+make install_utils
+install -t /usr/bin -m755 extra/scripts/getent
+#ln -sv uclibc_nonshared.a /usr/lib/libssp_nonshared.a

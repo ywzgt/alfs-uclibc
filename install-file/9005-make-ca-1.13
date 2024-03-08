@@ -1,0 +1,7 @@
+/etc/make-ca/CS.txt	2097	root:root	644	
+/etc/make-ca/make-ca.conf.dist	1179	root:root	644	
+/etc/make-ca/mozilla-ca-root.pem	1375	root:root	644	
+/usr/lib/systemd/system/update-pki.service	275	root:root	644	
+/usr/libexec/make-ca/copy-trust-modifications	1881	root:root	700	
+/usr/sbin/make-ca	32329	root:root	755	
+/usr/share/man/man8/make-ca.8	6115	root:root	644	

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SRC="intltool"
+PKG="$SRC"
+
+sed -i 's:\\\${:\\\$\\{:' intltool-update.in
+
+./configure --prefix=/usr
+
+make
+make install

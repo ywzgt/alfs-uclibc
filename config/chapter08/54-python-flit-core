@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="flit_core"
+PKG="python-${SRC/_/-}"
+
+pip3 --version
+pip3 wheel -w dist --no-build-isolation --no-deps $PWD
+pip3 install --no-index --no-user --find-links dist flit_core
+if [ -d "$HOME/.cache" ]; then
+	echo -e '\n'
+	rm -rfv "$HOME/.cache"
+fi
