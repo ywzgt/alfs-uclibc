@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SRC="iana-etc"
+PKG="$SRC"
+
+cp services protocols /etc

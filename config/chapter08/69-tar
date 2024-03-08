@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="tar"
+PKG="$SRC"
+
+CFLAGS+=" -lintl"
+
+FORCE_UNSAFE_CONFIGURE=1 \
+./configure --prefix=/usr
+
+make
+make install

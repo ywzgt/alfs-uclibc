@@ -1,0 +1,8 @@
+#!/bin/bash
+
+SRC="xml-parser"
+PKG="perl-$SRC"
+
+perl Makefile.PL
+make
+make install

@@ -1,0 +1,11 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/lzo.html
+
+SRC="lzo"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--enable-shared --disable-static
+
+make
+make install

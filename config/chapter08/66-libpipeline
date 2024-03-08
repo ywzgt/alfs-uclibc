@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="libpipeline"
+PKG="$SRC"
+
+./configure --prefix=/usr
+
+make
+make install

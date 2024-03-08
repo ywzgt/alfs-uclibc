@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SRC="patch"
+PKG="$SRC"
+
+CPPFLAGS="${CPPFLAGS/-DNDEBUG}"
+
+./configure --prefix=/usr
+
+make
+make install

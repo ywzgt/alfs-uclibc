@@ -1,0 +1,11 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/git/general/libgcrypt.html
+
+SRC="libgcrypt"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static
+
+make
+make install

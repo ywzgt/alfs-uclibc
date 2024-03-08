@@ -1,0 +1,13 @@
+/usr/bin/brotli	34032	root:root	755	
+/usr/lib/libbrotlicommon.so	20	root:root	777	libbrotlicommon.so.1
+/usr/lib/libbrotlicommon.so.1	24	root:root	777	libbrotlicommon.so.1.1.0
+/usr/lib/libbrotlicommon.so.1.1.0	139200	root:root	755	
+/usr/lib/libbrotlidec.so	17	root:root	777	libbrotlidec.so.1
+/usr/lib/libbrotlidec.so.1	21	root:root	777	libbrotlidec.so.1.1.0
+/usr/lib/libbrotlidec.so.1.1.0	59472	root:root	755	
+/usr/lib/libbrotlienc.so	17	root:root	777	libbrotlienc.so.1
+/usr/lib/libbrotlienc.so.1	21	root:root	777	libbrotlienc.so.1.1.0
+/usr/lib/libbrotlienc.so.1.1.0	722240	root:root	755	
+/usr/lib/pkgconfig/libbrotlicommon.pc	258	root:root	644	
+/usr/lib/pkgconfig/libbrotlidec.pc	285	root:root	644	
+/usr/lib/pkgconfig/libbrotlienc.pc	285	root:root	644	
