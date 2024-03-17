@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="rsync"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-lz4    \
+	--disable-xxhash \
+	--without-included-zlib
+
+make
+make install

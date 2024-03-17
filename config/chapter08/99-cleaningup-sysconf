@@ -1,0 +1,206 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/lfs/downloads
+# https://www.linuxfromscratch.org/lfs/view
+# https://www.linuxfromscratch.org/lfs/view/stable
+# https://www.linuxfromscratch.org/lfs/view/development
+
+SRC=""
+PKG=""
+
+rm -rf /tmp/*
+find /usr/lib /usr/libexec -name \*.la -delete
+find /usr -depth -name $(uname -m)-lfs-linux-\* | xargs rm -rf
+
+echo "Linux®uClibc" >/etc/hostname
+
+
+cat > /etc/shells << "EOF"
+# Begin /etc/shells
+
+/bin/sh
+/bin/bash
+
+# End /etc/shells
+EOF
+
+
+cat >/etc/fstab<<"EOF"
+# Static information about the filesystems.
+# See fstab(5) for details.
+#   < device >  <dir> <type> <options> <dump> <fsck>
+# <file system> <dir> <type> <options> <dump> <pass>
+
+#tmpfs    /tmp     tmpfs  defaults,nosuid,nodev,size=30% 0 0
+EOF
+
+		# void linux
+		install -Dvm644 ${SRC_ROOT}/DIR_COLORS* -t /etc/colors/
+		install -Dvm644 /dev/stdin "/etc/profile.d/dircolors.sh"<< "EOF"
+# Setup for /bin/ls and /bin/grep to support color, the alias is in /etc/profile.
+
+# Skip the rest for noninteractive shells.
+[ -z "$PS1" ] && return
+
+COLORS=
+
+for colors in "$HOME/.dir_colors.$TERM" "$HOME/.dircolors.$TERM" \
+	"$HOME/.dir_colors" "$HOME/.dircolors"; do
+	[ -e "$colors" ] && COLORS="$colors" && break
+done
+
+[ -z "$COLORS" ] && [ -e "/etc/colors/DIR_COLORS.256color" ] && \
+	[ "x`tput colors 2>/dev/null`" = "x256" ] && \
+	COLORS="/etc/colors/DIR_COLORS.256color"
+
+if [ -z "$COLORS" ]; then
+	for colors in "/etc/colors/DIR_COLORS.$TERM" "/etc/colors/DIR_COLORS" ; do
+		[ -e "$colors" ] && COLORS="$colors" && break
+	done
+fi
+
+# Existence of $COLORS already checked above.
+[ -n "$COLORS" ] || return
+
+eval $(dircolors -b "${COLORS}")
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+EOF
+
+
+cat > /etc/inputrc << "EOF"
+# Begin /etc/inputrc
+# Modified by Chris Lynn <roryo@roryo.dynup.net>
+
+# Allow the command prompt to wrap to the next line
+set horizontal-scroll-mode Off
+
+# Enable 8-bit input
+set meta-flag On
+set input-meta On
+
+# Turns off 8th bit stripping
+set convert-meta Off
+
+# Keep the 8th bit for display
+set output-meta On
+
+# none, visible or audible
+set bell-style none
+
+# All of the following map the escape sequence of the value
+# contained in the 1st argument to the readline specific functions
+"\eOd": backward-word
+"\eOc": forward-word
+
+# for linux console
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+"\e[5~": beginning-of-history
+"\e[6~": end-of-history
+"\e[3~": delete-char
+"\e[2~": quoted-insert
+
+# for xterm
+"\eOH": beginning-of-line
+"\eOF": end-of-line
+
+# for Konsole
+"\e[H": beginning-of-line
+"\e[F": end-of-line
+
+# End /etc/inputrc
+EOF
+
+
+		install -Dvm644 /dev/stdin "/etc/profile" <<"EFO"
+# System wide environment variables and startup programs.
+
+# System wide aliases and functions should go in /etc/bashrc.  Personal
+# environment variables and startup programs should go into
+# ~/.bash_profile.  Personal aliases and functions should go into
+# ~/.bashrc.
+
+# Functions to help us manage paths.  Second argument is the name of the
+# path variable to be modified (default: PATH)
+
+# Set the initial path
+export PATH=/usr/bin:/usr/sbin:/usr/local/bin
+
+
+# Setup some environment variables.
+export HISTSIZE=10000
+export HISTIGNORE="&:[bf]g:exit"
+
+# Set some defaults for graphical systems
+export XDG_DATA_DIRS=${XDG_DATA_DIRS:-/usr/share/}
+export XDG_CONFIG_DIRS=${XDG_CONFIG_DIRS:-/etc/xdg/}
+export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/tmp/xdg-$USER}
+export XDG_CONFIG_HOME=${HOME}/.config
+
+if [ -s /etc/hostname ]; then
+	PHOST="$(</etc/hostname)"
+else
+	PHOST='\H'
+fi
+
+# Setup a red prompt for root and a green one for users.
+NORMAL="\[\e[0m\]"
+RED="\[\e[1;31m\]"
+GREEN="\[\e[1;32m\]"
+if [[ $EUID == 0 ]] ; then
+	PS1="$RED\u@${PHOST/®/.} $NORMAL\w$RED \A # $NORMAL"
+else
+	PS1="$GREEN\u@${PHOST/®/.} $NORMAL\w$GREEN \A \$ $NORMAL"
+fi
+
+for script in /etc/profile.d/*.sh ; do
+        if [ -r $script ] ; then
+                . $script
+        fi
+done
+
+unset script RED GREEN NORMAL PHOST
+
+alias ls='ls --color=auto'
+alias ll='ls -lF --color=auto'
+alias la='ls -A --color=auto'
+alias lla='ls -la --color=auto'
+alias llh='ls -lh --color=auto'
+alias llah='ls -lah --color=auto'
+alias dir='dir --color=auto'
+alias diff='diff --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias pro='http_proxy=127.0.0.1:7890 https_proxy=127.0.0.1:7890 \
+	all_proxy=socks5://127.0.0.1:7891 RSYNC_PROXY=localhost:7890'
+alias proxyon='export http_proxy=127.0.0.1:7890 https_proxy=127.0.0.1:7890 \
+	all_proxy=socks5://127.0.0.1:7891 && curl -I google.com'
+alias proxyoff='unset http_proxy https_proxy all_proxy'
+alias df='df -Th'
+alias free='free -h'
+alias tree='tree -C'
+
+export EDITOR=/usr/bin/nano
+export VISUAL=/usr/bin/nano
+export NINJA_STATUS="[%r %f/%t %es] "
+
+# Color man pages
+export LESS_TERMCAP_mb=$'\E[01;35m'
+export LESS_TERMCAP_md=$'\E[01;35m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;47;34m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;36m'
+export LESS="-R -s -M +Gg"
+export GROFF_NO_SGR=
+EFO
+
+
+echo 'if [ -r /etc/profile ]; then source /etc/profile; fi' >> "/root/.bashrc"
+[ -d "/etc/skel/" ] || mkdir -pv "/etc/skel"
+echo 'if [ -r /etc/profile ]; then source /etc/profile; fi' >> "/etc/skel/.bashrc"

@@ -1,0 +1,11 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/systemd/general/libksba.html
+
+SRC="libksba"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static
+
+make
+make install

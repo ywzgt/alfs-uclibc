@@ -1,0 +1,12 @@
+#!/bin/bash
+# https://www.busybox.net
+
+SRC="busybox"
+PKG="$SRC"
+
+make defconfig
+make CC="cc -static"
+cp busybox{,-static}
+make clean
+make
+install -Dm755 busybox{,-static} -t /usr/bin

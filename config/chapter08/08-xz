@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="xz"
+PKG="$SRC"
+
+./configure --prefix=/usr
+
+make
+make install

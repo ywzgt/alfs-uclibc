@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="diffutils"
+PKG="$SRC"
+
+./configure --prefix=/usr
+
+make
+make install

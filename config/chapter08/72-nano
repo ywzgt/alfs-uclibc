@@ -1,0 +1,25 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/svn/postlfs/nano.html
+
+SRC="nano"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--enable-utf8
+
+make
+make install
+install -v -m644 doc/{nano.html,sample.nanorc} /usr/share/doc/nano
+install -Dvm644 /dev/stdin "/etc/nanorc" <<"EOF"
+bind ^Q exit all
+bind ^Z undo main
+bind ^Y redo main
+set autoindent
+set constantshow
+set historylog
+set positionlog
+set tabsize 4
+#set nohelp
+include "/usr/share/nano/*.nanorc"
+EOF

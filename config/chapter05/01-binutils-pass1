@@ -1,0 +1,19 @@
+#!/bin/bash
+
+SRC="binutils"
+
+mkdir -v build
+cd build
+
+../configure --prefix=$LFS/tools \
+	--with-sysroot=$LFS \
+	--target=$LFS_TGT \
+	--disable-nls \
+	--disable-werror \
+	--disable-gprofng \
+	--disable-multilib \
+	--disable-shared \
+	--enable-default-hash-style=gnu
+
+make
+make install
