@@ -30,7 +30,7 @@ _strip_symbol() {
 		mkdir -p "$dest/$d"
 		mv "$l" "$dest/$d"
 	done < <(find "usr" ! -type d -name "*.dbg" -print0)
-	cp -a usr "$dest"
+	install -d "$dest"; cp -a usr "$dest"
 	popd >/dev/null
 
 	strip_file() {
