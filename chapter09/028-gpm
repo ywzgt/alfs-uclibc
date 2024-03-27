@@ -14,10 +14,10 @@ make install
 install-info --dir-file=/usr/share/info/dir \
 	/usr/share/info/gpm.info
 rm -fv /usr/lib/libgpm.a
-ln -sfv libgpm.so.*.*.0 /usr/lib/libgpm.so
 install -vm644 conf/gpm-root.conf /etc
 install -Dt /usr/share/doc/gpm -vm644 doc/{FAQ,HACK_GPM,README*}
 install -Dt /usr/share/doc/gpm/support -vm644 doc/support/*
+find /usr/lib -name libgpm.so* -type f -exec ln -srfv '{}' /lib/libgpm.so \;
 
 git clone --depth=1 https://git.linuxfromscratch.org/blfs-systemd-units.git
 make -C blfs-systemd-units install-gpm

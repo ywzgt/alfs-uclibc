@@ -26,3 +26,23 @@ _abi ./configure --prefix=/usr \
 
 make
 make install
+
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	CFLAGS+=" -m32 -pedantic -fomit-frame-pointer"
+	CXXFLAGS+=" -m32"
+	ABI=32 \
+	PKG_CONFIG_PATH="/usr/lib32/pkgconfig" \
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--disable-static \
+		--enable-cxx \
+		--includedir=/usr/include/m32/gmp
+	sed -i 's/$(exec_prefix)\/include/$\(includedir\)/' Makefile
+	make
+	make DESTDIR=$PWD/pkg install
+	cp -av pkg/usr/lib32/* /usr/lib32
+	mkdir -pv /usr/include/m32
+	cp -av pkg/usr/include/m32/* /usr/include/m32/
+fi

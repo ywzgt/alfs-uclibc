@@ -14,7 +14,6 @@ cd build
 	--enable-shared \
 	--disable-werror \
 	--disable-gprofng \
-	--disable-multilib \
 	--enable-64-bit-bfd \
 	--enable-default-hash-style=gnu
 

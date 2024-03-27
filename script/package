@@ -6,6 +6,9 @@ case "$(uname -m)" in
 		;;
 	x86_64)
 		VER="$(date -u +%Y%m%d).r"
+		if [[ $MULTILIB ]]; then
+			VER=${VER/.r/.mul}
+		fi
 		;;
 esac
 

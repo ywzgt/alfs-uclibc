@@ -27,3 +27,26 @@ popd
 make
 make DESTDIR=$LFS TIC_PATH=$(pwd)/build/progs/tic install
 echo "INPUT(-lncursesw)" > $LFS/usr/lib/libncurses.so
+
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	CC="$LFS_TGT-gcc -m32" \
+	CXX="$LFS_TGT-g++ -m32" \
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--host=${LFS_TGT/x86_64/i686} \
+		--build=$(./config.guess) \
+		--mandir=/usr/share/man \
+		--with-shared \
+		--without-normal \
+		--with-cxx-shared \
+		--without-debug \
+		--without-ada \
+		--disable-stripping \
+		--enable-widec
+	make
+	make DESTDIR=$PWD/pkg TIC_PATH=$(pwd)/build/progs/tic install
+	ln -sv libncursesw.so pkg/usr/lib32/libcursesw.so
+	cp -av pkg/usr/lib32/* $LFS/usr/lib32
+fi
