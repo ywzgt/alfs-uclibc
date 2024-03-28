@@ -73,6 +73,7 @@ make_pkg() {
 	echo -e "\n\nCFLAGS:: ${CFLAGS}\nCXXFLAGS:: ${CXXFLAGS}\nCPPFLAGS:: ${CPPFLAGS}\nLDFLAGS:: ${LDFLAGS}" >>"${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log"
 	echo -e "\n\n$(date)\n\nTotalseconds: $((now-marker-1))\n" >>"${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log"
 	echo -e "KB: $(du -skx --exclude=${BLD_ROOT#/} --exclude=lost+found --exclude var/lib $BUILDDIR)\n" >>"${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log"
+	rm -f /etc/ld*.so.cache /usr/lib*/*.la
 	find / -xdev ! -path "${SRC_ROOT}/*" ! -path "/tmp/*" ! -path "${BLD_ROOT}/*" \
 		-newer ${BLD_ROOT}/timestamp-marker -not -type d \
 		-printf "%p\t%s\t%u:%g\t%m\t%l\n" | sort > "${FILE_DIR}/${chapter/chapter0}${target}${PVE}"

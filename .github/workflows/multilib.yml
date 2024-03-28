@@ -1,9 +1,9 @@
-name: Build
+name: Multilib
 on:
   workflow_dispatch:
 
 jobs:
-  build-uclibc64:
+  build-multilib:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
@@ -21,6 +21,7 @@ jobs:
         sudo ln -sf bash /bin/sh
         bash -e script/version-check
         echo ' '; df -Th; echo ' '; free -h
+        echo "export MULTILIB=1" >> envars
 
     - name: Download Sources
       run: |
@@ -38,6 +39,7 @@ jobs:
         [ ! -e sources.list ] || grep -Ev '^(#|$)' sources.list >> "${SRC_ARCHIVE}/wget-list"
         if [ -d files ] && [[ -n "$(ls -A files)" ]]; then
           echo " "; cp -v files/* "${SRC_ARCHIVE}"; echo " "
+          sed '/^MULTILIB_DIR/s/lib/&32/;/^LDSO_BASE_FILENAME/s/ld/&32/' files/config-i686 > ${SRC_ARCHIVE}/config-multilib
         fi
         wget -nv "https://github.com/${{ github.actor }}/alfs-musl/raw/blfs/wget-list" -O blfs-wla
         grep '^.*//.*/nano' blfs-wla >>"${SRC_ARCHIVE}/wget-list"
@@ -203,13 +205,13 @@ jobs:
         body_path: ${{ env.TAG_DES }}
         files: release/*
         fail_on_unmatched_files: true
-        prerelease: true
+        prerelease: false
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.3.3
       with:
-        keep_latest: 5
+        keep_latest: 3
         delete_tags: true
-        delete_tag_pattern: .r
+        delete_tag_pattern: .mul
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

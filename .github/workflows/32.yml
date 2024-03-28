@@ -163,10 +163,10 @@ jobs:
         EOF
 
     - name: Chapter 5. Compiling a Cross-Toolchain
-      run: sudo env -i HOME=/root TERM=$TERM bash -e script/buildpkg chapter05/*
+      run: sudo env -i TERM=$TERM bash -e script/buildpkg chapter05/*
       shell: linux32 bash -e {0}
     - name: Chapter 6. Cross Compiling Temporary Tools
-      run: sudo env -i HOME=/root TERM=$TERM bash -e script/buildpkg chapter06/*; bash -e chroot.pre
+      run: sudo env -i TERM=$TERM bash -e script/buildpkg chapter06/*; bash -e chroot.pre
       shell: linux32 bash -e {0}
 
     - name: Chapter 7. Entering Chroot and Building Additional Temporary Tools
@@ -178,7 +178,7 @@ jobs:
         sudo cp envars script/buildpkg_chroot chapter07 -at "$LFS/$BLD_ROOT"
         sudo sed -i '/BUILDDIR=/s/=.*/="\/"/' "$LFS/$BLD_ROOT/envars"
         sudo sed -e '/log_dir/d' -e '/SRC_ARCHIVE/d' -e '/LFS/d' -i "$LFS/$BLD_ROOT/envars"
-        sudo install -vm666 /dev/null "$LFS/$BLD_ROOT/docmd"
+        sudo install -m666 /dev/null "$LFS/$BLD_ROOT/docmd"
         echo "cd $BLD_ROOT" > "$LFS/$BLD_ROOT/docmd"
         echo 'bash -e buildpkg_chroot chapter07/*' >> "$LFS/$BLD_ROOT/docmd"
         sudo chroot "$LFS" /usr/bin/env -i HOME=/root TERM="$TERM" PATH=/usr/bin:/usr/sbin /bin/bash --login "$BLD_ROOT/docmd"
@@ -212,7 +212,7 @@ jobs:
       with:
         name: ${{ env.TAG_VERSION }}
         tag_name: ${{ env.TAG_VERSION }}
-        body_path: "${{ env.TAG_DES }}"
+        body_path: ${{ env.TAG_DES }}
         files: release/*
         fail_on_unmatched_files: true
         prerelease: true

@@ -15,7 +15,6 @@ LDFLAGS+=" -Wl,-lintl"
 	--enable-shared \
 	--disable-werror \
 	--disable-gprofng \
-	--disable-multilib \
 	--enable-64-bit-bfd \
 	--enable-colored-disassembly \
 	--enable-default-hash-style=gnu \

@@ -8,3 +8,12 @@ PKG="$SRC"
 make
 make install
 rm -fv /usr/lib/libz.a
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	CFLAGS+=" -m32" CXXFLAGS+=" -m32"
+	./configure --prefix=/usr --libdir=/usr/lib32
+	make
+	make DESTDIR=$PWD/pkg install
+	cp -av pkg/usr/lib32/* /usr/lib32
+fi

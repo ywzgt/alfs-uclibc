@@ -10,7 +10,7 @@ tar -xf ../mpc-[0-9]*.tar.gz
 mv -v mpc-[0-9]* mpc
 
 
-sed '/m64=/s/lib64/lib/' -i.ori gcc/config/i386/t-linux64
+sed 's@m64=.*@m64=../lib@;s@m32=.*@m32=../lib32@' -i.ori gcc/config/i386/t-linux64
 sed '/ld.*-uClibc.so.0/s/0/1/' -i.ori gcc/config/linux.h
 
 sed '/thread_header =/s/@.*@/gthr-posix.h/' \
@@ -31,7 +31,7 @@ case "$(uname -m)" in x86_64) _args="--with-arch=x86-64-v3";; esac
 	--enable-default-pie \
 	--enable-default-ssp \
 	--disable-nls \
-	--disable-multilib \
+	--$([[ $MULTILIB ]] && echo enable-multilib --with-multilib-list=m64,m32 || echo disable-multilib) \
 	--disable-libatomic \
 	--disable-libgomp \
 	--disable-libquadmath \
@@ -43,3 +43,4 @@ case "$(uname -m)" in x86_64) _args="--with-arch=x86-64-v3";; esac
 make
 make DESTDIR=$LFS install
 ln -sv gcc $LFS/usr/bin/cc
+rm -fv $LFS/usr/lib{,32}/*.la
