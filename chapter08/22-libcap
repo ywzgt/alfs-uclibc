@@ -1,0 +1,19 @@
+#!/bin/bash
+
+SRC="libcap"
+PKG="$SRC"
+
+sed -i '/install -m.*STA/d' libcap/Makefile
+
+make prefix=/usr lib=lib
+make prefix=/usr lib=lib install
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	make CC="gcc -m32 -march=i686"
+	make CC="gcc -m32 -march=i686" \
+		prefix=$PWD/pkg/usr lib=lib32 -C libcap install
+	cp -av pkg/usr/lib32/* /usr/lib32
+	sed -i "s|^libdir=.*|libdir=/usr/lib32|" /usr/lib32/pkgconfig/lib{cap,psx}.pc
+	chmod -v 755 /usr/lib32/libcap.so*
+fi

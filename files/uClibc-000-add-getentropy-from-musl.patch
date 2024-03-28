@@ -1,11 +1,9 @@
-diff --git a/include/unistd.h b/include/unistd.h
-index 36cd5fc..ca3f7dc 100644
 --- a/include/unistd.h
 +++ b/include/unistd.h
 @@ -1259,4 +1259,17 @@ extern size_t __pagesize attribute_hidden;
  #endif
- 
- 
+
+
 +#ifdef __cplusplus
 +extern "C" {
 +#endif
@@ -20,8 +18,6 @@ index 36cd5fc..ca3f7dc 100644
 +
 +
  #endif /* unistd.h  */
-diff --git a/libc/misc/Makefile.in b/libc/misc/Makefile.in
-index caf7f13..b8e9045 100644
 --- a/libc/misc/Makefile.in
 +++ b/libc/misc/Makefile.in
 @@ -16,6 +16,7 @@ include $(top_srcdir)libc/misc/file/Makefile.in
@@ -32,9 +28,6 @@ index caf7f13..b8e9045 100644
  include $(top_srcdir)libc/misc/getloadavg/Makefile.in
  include $(top_srcdir)libc/misc/glob/Makefile.in
  include $(top_srcdir)libc/misc/internals/Makefile.in
-diff --git a/libc/misc/getentropy/Makefile b/libc/misc/getentropy/Makefile
-new file mode 100644
-index 0000000..4a8f4a0
 --- /dev/null
 +++ b/libc/misc/getentropy/Makefile
 @@ -0,0 +1,13 @@
@@ -51,9 +44,6 @@ index 0000000..4a8f4a0
 +include $(top_builddir)Rules.mak
 +include Makefile.in
 +include $(top_srcdir)Makerules
-diff --git a/libc/misc/getentropy/Makefile.in b/libc/misc/getentropy/Makefile.in
-new file mode 100644
-index 0000000..d7a3e87
 --- /dev/null
 +++ b/libc/misc/getentropy/Makefile.in
 @@ -0,0 +1,23 @@
@@ -80,9 +70,6 @@ index 0000000..d7a3e87
 +
 +CLEAN_libc/misc/getentropy:
 +	$(do_rm) $(addprefix $(MISC_GETENTROPY_OUT)/*., o os)
-diff --git a/libc/misc/getentropy/getentropy.c b/libc/misc/getentropy/getentropy.c
-new file mode 100644
-index 0000000..651ea95
 --- /dev/null
 +++ b/libc/misc/getentropy/getentropy.c
 @@ -0,0 +1,33 @@

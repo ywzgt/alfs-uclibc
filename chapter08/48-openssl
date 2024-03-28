@@ -13,3 +13,16 @@ make
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
 make MANSUFFIX=ssl install
 cp -vfr doc/* /usr/share/doc/openssl
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	./config --prefix=/usr \
+		--openssldir=/etc/ssl \
+		--libdir=lib32 \
+		shared \
+		zlib-dynamic \
+		linux-x86
+	make
+	make DESTDIR=$PWD/pkg install
+	cp -av pkg/usr/lib32/* /usr/lib32
+fi

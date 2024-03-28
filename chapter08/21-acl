@@ -1,23 +1,20 @@
 #!/bin/bash
-# https://www.linuxfromscratch.org/lfs/view/development/chapter07/gettext.html
 
-SRC="gettext"
+SRC="acl"
+PKG="$SRC"
 
 ./configure --prefix=/usr \
-	--disable-static \
-	--with-included-gettext
+	--disable-static
 
 make
 make install
-rm -fv /usr/lib/libintl*.{,l}a
-
 
 if [[ $MULTILIB ]]; then
 	make distclean
-	cd gettext-runtime
 	CC="gcc -m32" CXX="g++ -m32" \
 	./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
+		--libexecdir=/usr/lib32 \
 		--disable-static
 	make
 	make DESTDIR=$PWD/pkg install
