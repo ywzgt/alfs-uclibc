@@ -1,0 +1,15 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/usbutils.html
+
+SRC="usbutils"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--datadir=/usr/share/hwdata
+make
+make install
+
+install -dvm755 /usr/share/hwdata
+rm -fv /usr/share/hwdata/usb.ids
+wget http://www.linux-usb.org/usb.ids \
+	-cO /usr/share/hwdata/usb.ids

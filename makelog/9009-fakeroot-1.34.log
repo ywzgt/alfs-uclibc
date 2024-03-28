@@ -1,0 +1,490 @@
+Thu Mar 28 16:40:57 UTC 2024
+KB: 1764544	/
+
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I build-aux
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'build-aux'.
+libtoolize: copying file 'build-aux/libtool.m4'
+libtoolize: copying file 'build-aux/ltoptions.m4'
+libtoolize: copying file 'build-aux/ltsugar.m4'
+libtoolize: copying file 'build-aux/ltversion.m4'
+libtoolize: copying file 'build-aux/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal --force -I build-aux
+autoreconf: running: /usr/bin/autoconf --force
+configure.ac:428: warning: AC_CHECK_FUNCS($WRAPPED): you should use literals
+./lib/autoconf/functions.m4:117: AC_CHECK_FUNCS is expanded from...
+configure.ac:428: the top level
+configure.ac:497: warning: AC_CHECK_FUNCS($WRAPPED): you should use literals
+./lib/autoconf/functions.m4:117: AC_CHECK_FUNCS is expanded from...
+configure.ac:497: the top level
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:10: installing './compile'
+configure.ac:7: installing './missing'
+Makefile.am: installing './depcomp'
+autoreconf: './config.sub' is updated
+autoreconf: './config.guess' is updated
+autoreconf: './install-sh' is updated
+autoreconf: Leaving directory '.'
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking target system type... x86_64-pc-linux-uclibc
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether make sets $(MAKE)... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking which IPC method to use... (cached) sysv
+checking whether SysV IPC message queues are actually working on the host... Yes
+checking which database format to use... (cached) inode
+checking for dlopen in -ldl... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking for features.h... yes
+checking for sys/feature_tests.h... no
+checking for pthread.h... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for grp.h... yes
+checking for endian.h... yes
+checking for sys/sysmacros.h... yes
+checking for sys/socket.h... yes
+checking for sys/acl.h... yes
+checking for sys/capability.h... yes
+checking for sys/xattr.h... yes
+checking for fts.h... yes
+checking for an ANSI C-conforming const... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for return value and second and third argument of readlink... ssize_t, char, size_t
+checking for first argument of setgroups... size_t
+checking for union semun... no
+checking for __xmknod... no
+no extra *
+checking for __xmknodat... no
+no extra *
+checking for type of arg of initgroups... gid_t
+checking for type of arg of setreuid... gid_t
+checking for type of arg of setregid... gid_t
+checking for type of second arg to stat... struct stat *
+checking for d_off in struct dirent... yes
+checking for d_type in struct dirent... yes
+checking for acl_t struct... yes
+checking for fchmodat... yes
+checking for fchownat... yes
+checking for fstatat... yes
+checking for mkdirat... yes
+checking for mknodat... yes
+checking for openat... yes
+checking for renameat... yes
+checking for renameat2... no
+checking for unlinkat... yes
+checking for lchmod... no
+checking for fgetattrlist... no
+checking for library containing acl_get_fd... -lacl
+checking for acl_get_fd... yes
+checking for library containing acl_trivial... no
+checking for acl_trivial... no
+checking for capset... yes
+checking for listxattr... yes
+checking for llistxattr... yes
+checking for flistxattr... yes
+checking for getxattr... yes
+checking for lgetxattr... yes
+checking for fgetxattr... yes
+checking for setxattr... yes
+checking for lsetxattr... yes
+checking for fsetxattr... yes
+checking for removexattr... yes
+checking for lremovexattr... yes
+checking for fremovexattr... yes
+checking for statx... no
+checking if we need to cope with time64... checking for egrep -e... (cached) /usr/bin/grep -E
+no
+checking for __xstat... no
+checking for _xstat... no
+checking for __stat13... no
+checking for stat... yes
+Extra wrapper for stat is not necessary
+checking for __fxstat... no
+checking for _fxstat... no
+checking for __fstat13... no
+checking for fstat... yes
+Extra wrapper for fstat is not necessary
+checking for __lxstat... no
+checking for _lxstat... no
+checking for __lstat13... no
+checking for lstat... yes
+Extra wrapper for lstat is not necessary
+checking for __fxstatat... no
+checking for _fxstatat... no
+checking for __fstatat13... no
+checking for fstatat... (cached) yes
+Extra wrapper for fstatat is not necessary
+checking for __xstat64... no
+checking for _xstat64... no
+checking for __stat6413... no
+checking for stat64... yes
+Extra wrapper for stat64 is not necessary
+checking for __fxstat64... no
+checking for _fxstat64... no
+checking for __fstat6413... no
+checking for fstat64... yes
+Extra wrapper for fstat64 is not necessary
+checking for __lxstat64... no
+checking for _lxstat64... no
+checking for __lstat6413... no
+checking for lstat64... yes
+Extra wrapper for lstat64 is not necessary
+checking for __fxstatat64... no
+checking for _fxstatat64... no
+checking for __fstatat6413... no
+checking for fstatat64... yes
+Extra wrapper for fstatat64 is not necessary
+checking for __xmknod... (cached) no
+checking for _xmknod... no
+checking for __mknod13... no
+checking for mknod... yes
+Extra wrapper for mknod is not necessary
+checking for __xmknodat... (cached) no
+checking for _xmknodat... no
+checking for __mknodat13... no
+checking for mknodat... (cached) yes
+Extra wrapper for mknodat is not necessary
+created fakerootconfig.h
+checking for strdup... yes
+checking for strstr... yes
+checking for getresuid... yes
+checking for setresuid... yes
+checking for getresgid... yes
+checking for setresgid... yes
+checking for setfsuid... yes
+checking for setfsgid... yes
+checking for fts_read... no
+checking for fts_children... no
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether setenv is declared... yes
+checking whether unsetenv is declared... yes
+checking for setenv... yes
+checking for macOS/Darwin... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating scripts/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/de/Makefile
+config.status: creating doc/es/Makefile
+config.status: creating doc/fr/Makefile
+config.status: creating doc/nl/Makefile
+config.status: creating doc/pt/Makefile
+config.status: creating doc/ro/Makefile
+config.status: creating doc/sv/Makefile
+config.status: creating test/Makefile
+config.status: creating test/defs
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/sources/fakeroot-1.34'
+Making all in doc
+make[2]: Entering directory '/sources/fakeroot-1.34/doc'
+Making all in de
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/de'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/de'
+Making all in es
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/es'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/es'
+Making all in fr
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/fr'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/fr'
+Making all in nl
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/nl'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/nl'
+Making all in pt
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/pt'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/pt'
+Making all in ro
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/ro'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/ro'
+Making all in sv
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/sv'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/sv'
+make[3]: Entering directory '/sources/fakeroot-1.34/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc'
+make[2]: Leaving directory '/sources/fakeroot-1.34/doc'
+Making all in scripts
+make[2]: Entering directory '/sources/fakeroot-1.34/scripts'
+sed -e 's,[@]prefix[@],/usr,g' -e 's,[@]bindir[@],/usr/bin,g' -e 's,[@]libdir[@],/usr/lib,g' -e 's,[@]fakeroot_transformed[@],'`echo fakeroot | sed -e 's,x,x,'`',g' -e 's,[@]faked_transformed[@],'`echo faked | sed -e 's,x,x,'`',g' -e 's,[@]signal[@],TERM,g' -e 's,[@]SHELL[@],/bin/sh,g' -e 's,[@]VERSION[@],1.34,g' -e 's,[@]DLSUFFIX[@],.so,g' -e 's,[@]LDLIBPATHVAR[@],LD_LIBRARY_PATH,g' -e 's,[@]LDPRELOADVAR[@],LD_PRELOAD,g' -e 's,[@]LDPRELOADABS[@],0,g' -e 's,[@]LDEXTRAVAR[@],,g' -e 's,[@]MACOSX_FALSE[@],,g' -e 's,[@]MACOSX_TRUE[@],#,g' < ./fakeroot.in > fakeroot
+chmod +x fakeroot
+make[2]: Leaving directory '/sources/fakeroot-1.34/scripts'
+Making all in test
+make[2]: Entering directory '/sources/fakeroot-1.34/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/fakeroot-1.34/test'
+make[2]: Entering directory '/sources/fakeroot-1.34'
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT faked.o -MD -MP -MF .deps/faked.Tpo -c -o faked.o faked.c
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT communicate.lo -MD -MP -MF .deps/communicate.Tpo -c -o communicate.lo communicate.c
+gcc -DHAVE_CONFIG_H -I.   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT simple.o -MD -MP -MF .deps/simple.Tpo -c -o simple.o simple.c
+awk -f ./wrapawk < ./wrapfunc.inp
+awk: ./wrapawk:27: warning: regexp escape sequence `\#' is not a known regexp operator
+awk -f ./wrapawk < ./wrapfunc.inp
+awk: ./wrapawk:27: warning: regexp escape sequence `\#' is not a known regexp operator
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libfakeroot_inode64.lo -MD -MP -MF .deps/libfakeroot_inode64.Tpo -c -o libfakeroot_inode64.lo libfakeroot_inode64.c
+mv -f .deps/simple.Tpo .deps/simple.Po
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libfakeroot_unix2003.lo -MD -MP -MF .deps/libfakeroot_unix2003.Tpo -c -o libfakeroot_unix2003.lo libfakeroot_unix2003.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT communicate.lo -MD -MP -MF .deps/communicate.Tpo -c communicate.c  -fPIC -DPIC -o .libs/communicate.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libfakeroot_inode64.lo -MD -MP -MF .deps/libfakeroot_inode64.Tpo -c libfakeroot_inode64.c  -fPIC -DPIC -o .libs/libfakeroot_inode64.o
+mv -f .deps/libfakeroot_inode64.Tpo .deps/libfakeroot_inode64.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libfakeroot_unix2003.lo -MD -MP -MF .deps/libfakeroot_unix2003.Tpo -c libfakeroot_unix2003.c  -fPIC -DPIC -o .libs/libfakeroot_unix2003.o
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o simple simple.o  -ldl 
+mv -f .deps/libfakeroot_unix2003.Tpo .deps/libfakeroot_unix2003.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libfakeroot.lo -MD -MP -MF .deps/libfakeroot.Tpo -c -o libfakeroot.lo libfakeroot.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libfakeroot.lo -MD -MP -MF .deps/libfakeroot.Tpo -c libfakeroot.c  -fPIC -DPIC -o .libs/libfakeroot.o
+libtool: link: gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -o simple simple.o  -ldl
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -D_FILE_OFFSET_BITS=64 -D_TIME_BITS=64 -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libfakeroot_time64_la-libfakeroot_time64.lo -MD -MP -MF .deps/libfakeroot_time64_la-libfakeroot_time64.Tpo -c -o libfakeroot_time64_la-libfakeroot_time64.lo `test -f 'libfakeroot_time64.c' || echo './'`libfakeroot_time64.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -D_FILE_OFFSET_BITS=64 -D_TIME_BITS=64 -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libfakeroot_time64_la-libfakeroot_time64.lo -MD -MP -MF .deps/libfakeroot_time64_la-libfakeroot_time64.Tpo -c libfakeroot_time64.c  -fPIC -DPIC -o .libs/libfakeroot_time64_la-libfakeroot_time64.o
+mv -f .deps/communicate.Tpo .deps/communicate.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o libmacosx.la  libfakeroot_inode64.lo libfakeroot_unix2003.lo  -ldl 
+mv -f .deps/libfakeroot_time64_la-libfakeroot_time64.Tpo .deps/libfakeroot_time64_la-libfakeroot_time64.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o libcommunicate.la  communicate.lo  -ldl 
+libtool: link: ar cr .libs/libmacosx.a .libs/libfakeroot_inode64.o .libs/libfakeroot_unix2003.o 
+libtool: link: ranlib .libs/libmacosx.a
+mv -f .deps/faked.Tpo .deps/faked.Po
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o libfakeroot_time64.la  libfakeroot_time64_la-libfakeroot_time64.lo  -ldl 
+libtool: link: ( cd ".libs" && rm -f "libmacosx.la" && ln -s "../libmacosx.la" "libmacosx.la" )
+libtool: link: ar cr .libs/libcommunicate.a .libs/communicate.o 
+libtool: link: ranlib .libs/libcommunicate.a
+libtool: link: ( cd ".libs" && rm -f "libcommunicate.la" && ln -s "../libcommunicate.la" "libcommunicate.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o faked faked.o libcommunicate.la -ldl 
+libtool: link: ar cr .libs/libfakeroot_time64.a .libs/libfakeroot_time64_la-libfakeroot_time64.o 
+libtool: link: ranlib .libs/libfakeroot_time64.a
+libtool: link: gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -o faked faked.o  ./.libs/libcommunicate.a -ldl
+libtool: link: ( cd ".libs" && rm -f "libfakeroot_time64.la" && ln -s "../libfakeroot_time64.la" "libfakeroot_time64.la" )
+mv -f .deps/libfakeroot.Tpo .deps/libfakeroot.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -release 0 -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o libfakeroot.la -rpath /usr/lib libfakeroot.lo libfakeroot_time64.la libcommunicate.la  -ldl 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libfakeroot.o  -Wl,--whole-archive ./.libs/libfakeroot_time64.a ./.libs/libcommunicate.a -Wl,--no-whole-archive  -ldl  -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd   -Wl,-soname -Wl,libfakeroot-0.so -o .libs/libfakeroot-0.so
+libtool: link: (cd ".libs" && rm -f "libfakeroot.so" && ln -s "libfakeroot-0.so" "libfakeroot.so")
+libtool: link: ( cd ".libs" && rm -f "libfakeroot.la" && ln -s "../libfakeroot.la" "libfakeroot.la" )
+make[2]: Leaving directory '/sources/fakeroot-1.34'
+make[1]: Leaving directory '/sources/fakeroot-1.34'
+Making install in doc
+make[1]: Entering directory '/sources/fakeroot-1.34/doc'
+Making install in de
+make[2]: Entering directory '/sources/fakeroot-1.34/doc/de'
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/de'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/de/man1'
+ /usr/bin/install -c -m 644 faked.1 fakeroot.1 '/usr/share/man/de/man1'
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/de'
+make[2]: Leaving directory '/sources/fakeroot-1.34/doc/de'
+Making install in es
+make[2]: Entering directory '/sources/fakeroot-1.34/doc/es'
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/es'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/es/man1'
+ /usr/bin/install -c -m 644 faked.1 fakeroot.1 '/usr/share/man/es/man1'
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/es'
+make[2]: Leaving directory '/sources/fakeroot-1.34/doc/es'
+Making install in fr
+make[2]: Entering directory '/sources/fakeroot-1.34/doc/fr'
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/fr'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/fr/man1'
+ /usr/bin/install -c -m 644 fakeroot.1 faked.1 '/usr/share/man/fr/man1'
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/fr'
+make[2]: Leaving directory '/sources/fakeroot-1.34/doc/fr'
+Making install in nl
+make[2]: Entering directory '/sources/fakeroot-1.34/doc/nl'
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/nl'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/nl/man1'
+ /usr/bin/install -c -m 644 fakeroot.1 faked.1 '/usr/share/man/nl/man1'
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/nl'
+make[2]: Leaving directory '/sources/fakeroot-1.34/doc/nl'
+Making install in pt
+make[2]: Entering directory '/sources/fakeroot-1.34/doc/pt'
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/pt'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/pt/man1'
+ /usr/bin/install -c -m 644 fakeroot.1 faked.1 '/usr/share/man/pt/man1'
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/pt'
+make[2]: Leaving directory '/sources/fakeroot-1.34/doc/pt'
+Making install in ro
+make[2]: Entering directory '/sources/fakeroot-1.34/doc/ro'
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/ro'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/ro/man1'
+ /usr/bin/install -c -m 644 faked.1 fakeroot.1 '/usr/share/man/ro/man1'
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/ro'
+make[2]: Leaving directory '/sources/fakeroot-1.34/doc/ro'
+Making install in sv
+make[2]: Entering directory '/sources/fakeroot-1.34/doc/sv'
+make[3]: Entering directory '/sources/fakeroot-1.34/doc/sv'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/sv/man1'
+ /usr/bin/install -c -m 644 faked.1 fakeroot.1 '/usr/share/man/sv/man1'
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc/sv'
+make[2]: Leaving directory '/sources/fakeroot-1.34/doc/sv'
+make[2]: Entering directory '/sources/fakeroot-1.34/doc'
+make[3]: Entering directory '/sources/fakeroot-1.34/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 faked.1 fakeroot.1 '/usr/share/man/man1'
+make[3]: Leaving directory '/sources/fakeroot-1.34/doc'
+make[2]: Leaving directory '/sources/fakeroot-1.34/doc'
+make[1]: Leaving directory '/sources/fakeroot-1.34/doc'
+Making install in scripts
+make[1]: Entering directory '/sources/fakeroot-1.34/scripts'
+make[2]: Entering directory '/sources/fakeroot-1.34/scripts'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/install -c fakeroot '/usr/bin'
+make[2]: Leaving directory '/sources/fakeroot-1.34/scripts'
+make[1]: Leaving directory '/sources/fakeroot-1.34/scripts'
+Making install in test
+make[1]: Entering directory '/sources/fakeroot-1.34/test'
+make[2]: Entering directory '/sources/fakeroot-1.34/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/fakeroot-1.34/test'
+make[1]: Leaving directory '/sources/fakeroot-1.34/test'
+make[1]: Entering directory '/sources/fakeroot-1.34'
+CONFIG_FILES= CONFIG_HEADERS= /bin/sh ./config.status
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make[2]: Entering directory '/sources/fakeroot-1.34'
+CONFIG_FILES= CONFIG_HEADERS= /bin/sh ./config.status
+make[2]: Nothing to be done for 'install-data-am'.
+config.status: executing depfiles commands
+config.status: executing libtool commands
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libfakeroot.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libfakeroot-0.so /usr/lib/libfakeroot-0.so
+libtool: install: (cd /usr/lib && { ln -s -f libfakeroot-0.so libfakeroot.so || { rm -f libfakeroot.so && ln -s libfakeroot-0.so libfakeroot.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfakeroot.lai /usr/lib/libfakeroot.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c faked '/usr/bin'
+libtool: install: /usr/bin/install -c faked /usr/bin/faked
+make[2]: Leaving directory '/sources/fakeroot-1.34'
+make[1]: Leaving directory '/sources/fakeroot-1.34'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu Mar 28 16:41:09 UTC 2024
+
+Totalseconds: 12
+
+KB: 1771148	/
+

@@ -1,0 +1,58 @@
+/etc/dbus-1/session.conf	838	root:root	644	
+/etc/dbus-1/system.conf	833	root:root	644	
+/usr/bin/dbus-cleanup-sockets	16480	root:root	755	
+/usr/bin/dbus-daemon	247320	root:root	755	
+/usr/bin/dbus-launch	29952	root:root	755	
+/usr/bin/dbus-monitor	27560	root:root	755	
+/usr/bin/dbus-run-session	16560	root:root	755	
+/usr/bin/dbus-send	31856	root:root	755	
+/usr/bin/dbus-test-tool	31048	root:root	755	
+/usr/bin/dbus-update-activation-environment	17128	root:root	755	
+/usr/bin/dbus-uuidgen	16328	root:root	755	
+/usr/include/dbus-1.0/dbus/dbus-address.h	2809	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-bus.h	3470	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-connection.h	27018	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-errors.h	2909	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-macros.h	7246	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-memory.h	1961	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-message.h	15259	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-misc.h	1810	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-pending-call.h	3809	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-protocol.h	23956	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-server.h	5412	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-shared.h	5392	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-signature.h	3047	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-syntax.h	2359	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-threads.h	8505	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus-types.h	4143	root:root	644	
+/usr/include/dbus-1.0/dbus/dbus.h	3961	root:root	644	
+/usr/lib/cmake/DBus1/DBus1Config.cmake	3193	root:root	644	
+/usr/lib/cmake/DBus1/DBus1ConfigVersion.cmake	367	root:root	644	
+/usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h	2052	root:root	644	
+/usr/lib/libdbus-1.so	19	root:root	777	libdbus-1.so.3.32.4
+/usr/lib/libdbus-1.so.3	19	root:root	777	libdbus-1.so.3.32.4
+/usr/lib/libdbus-1.so.3.32.4	361504	root:root	755	
+/usr/lib/pkgconfig/dbus-1.pc	640	root:root	644	
+/usr/lib/systemd/system/dbus.service	410	root:root	644	
+/usr/lib/systemd/system/dbus.socket	102	root:root	644	
+/usr/lib/systemd/system/multi-user.target.wants/dbus.service	15	root:root	777	../dbus.service
+/usr/lib/systemd/system/sockets.target.wants/dbus.socket	14	root:root	777	../dbus.socket
+/usr/lib/systemd/user/dbus.service	410	root:root	644	
+/usr/lib/systemd/user/dbus.socket	178	root:root	644	
+/usr/lib/systemd/user/sockets.target.wants/dbus.socket	14	root:root	777	../dbus.socket
+/usr/lib/sysusers.d/dbus.conf	211	root:root	644	
+/usr/lib/tmpfiles.d/dbus.conf	545	root:root	644	
+/usr/libexec/dbus-daemon-launch-helper	38320	root:messagebus	4750	
+/usr/share/dbus-1/session.conf	3561	root:root	644	
+/usr/share/dbus-1/system.conf	5802	root:root	644	
+/usr/share/doc/dbus/diagram.png	78762	root:root	644	
+/usr/share/doc/dbus/diagram.svg	33892	root:root	644	
+/usr/share/doc/dbus/examples/GetAllMatchRules.py	3924	root:root	755	
+/usr/share/doc/dbus/examples/example-session-disable-stats.conf	606	root:root	644	
+/usr/share/doc/dbus/examples/example-system-enable-stats.conf	572	root:root	644	
+/usr/share/doc/dbus/examples/example-system-hardening-without-traditional-activation.conf	1048	root:root	644	
+/usr/share/doc/dbus/system-activation.txt	3175	root:root	644	
+/usr/share/xml/dbus-1/busconfig.dtd	1907	root:root	644	
+/usr/share/xml/dbus-1/catalog.xml	612	root:root	644	
+/usr/share/xml/dbus-1/introspect.dtd	1226	root:root	644	
+/var/lib/dbus/machine-id	15	root:root	777	/etc/machine-id

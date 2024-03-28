@@ -1,0 +1,28 @@
+#!/bin/bash
+
+SRC="binutils"
+PKG="$SRC"
+
+mkdir -v build
+cd build
+
+LDFLAGS+=" -Wl,-lintl"
+
+../configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--enable-gold \
+	--enable-plugins \
+	--enable-shared \
+	--disable-werror \
+	--disable-gprofng \
+	--enable-64-bit-bfd \
+	--enable-colored-disassembly \
+	--enable-default-hash-style=gnu \
+	--with-system-zlib
+
+make tooldir=/usr
+make tooldir=/usr install
+rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,sframe,opcodes}.a
+
+rm -rf /usr/$(uname -m)-lfs-linux-*
+echo 'LDFLAGS+=",--compress-debug-sections=zstd"' >> "$BLD_ROOT/envars"

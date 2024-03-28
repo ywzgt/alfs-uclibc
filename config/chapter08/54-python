@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SRC="python"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--enable-shared \
+	--with-system-expat \
+	--with-system-ffi \
+	--enable-optimizations \
+	ac_cv_func_wcsftime=no
+
+make
+make install
+ln -sfv python3 /usr/bin/python
+rm -fv /usr/lib/libz.a
+rm -fv ~/.python_history || true

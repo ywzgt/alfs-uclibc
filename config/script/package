@@ -1,0 +1,101 @@
+#!/bin/bash
+
+case "$(uname -m)" in
+	i?86)
+		VER="$(date -u +%Y%m%d).r32"
+		;;
+	x86_64)
+		VER="$(date -u +%Y%m%d).r"
+		if [[ $MULTILIB ]]; then
+			VER=${VER/.r/.mul}
+		fi
+		;;
+esac
+
+newline() { printf "\n"; }
+
+_package() {
+	mkdir -pv release tag
+	pushd release >/dev/null
+
+	echo ":: Package the document as tar, Using xz Compression..."
+	(cd "${BUILDDIR}/usr/share/doc";  tar cf - .|xz -T0) >doc.tar.xz 2>/dev/null
+	rm -rf "${BUILDDIR}/usr/share/doc/"*
+
+	echo ":: Package other language locale files..."
+	mkdir tmpdir
+	cp "${BUILDDIR}/usr/share/locale/zh_"* -at tmpdir
+	rm -rf "${BUILDDIR}/usr/share/locale/zh_"*
+	( cd "${BUILDDIR}/usr/share/locale/";  tar cf - .|xz -T0) >l10n.tar.xz
+	rm -rf "${BUILDDIR}/usr/share/locale/"*
+	mv tmpdir/* -t "${BUILDDIR}/usr/share/locale/"
+	rmdir tmpdir
+
+	newline
+	bash -e ../script/strip
+
+	for b in {busy,toy}box; do
+	if [[ -x ${BUILDDIR}/usr/bin/${b}-static ]]; then
+		(cd "${BUILDDIR}/usr/bin"; tar cf - ${b}* | xz -T0) > ${b}-$(uname -m).tar.xz
+	fi
+	done
+
+	newline
+	printf "::Package staticlibs..."
+	(cd "${BUILDDIR}/staticlibs"; tar cf - . | xz -T0) > "staticlibs.tar.xz" 2>/dev/null
+	rm -rf "${BUILDDIR}/staticlibs"; printf "done.\n"
+
+	echo ":: Package the 'SysRoot' as tar, Using xz Compression..."
+	(cd "${BUILDDIR}"; tar cf - --exclude=./dev/* --exclude=./proc/* --exclude=./sys/* --exclude=./run/* \
+		--exclude=./tmp/* --exclude=./${BLD_ROOT#/} --exclude=./sources --exclude=./debug_symbol .|xz -T0) >"rootfs.tar.xz" 2>/dev/null
+
+	echo ":: Package the 'SysRoot-with-debug_symbol' as tar, Using xz Compression..."
+	(cd "${BUILDDIR}"; rm -rf usr; mv debug_symbol/usr . && rmdir debug_symbol
+	tar cf - --exclude=./dev/* --exclude=./proc/* --exclude=./sys/* --exclude=./run/* \
+		--exclude=./tmp/* --exclude=./${BLD_ROOT#/} --exclude=./sources .|xz -T0) >"rootfs-debug.tar.xz" 2>/dev/null
+	echo ":: done."
+
+	tar tf "rootfs.tar.xz"|sort >../tag/archive-list
+	tar tvf "rootfs.tar.xz"|sort -k6 >../tag/archive-list-verbose
+	tar tvf "staticlibs.tar.xz"|sort -k6 >../tag/archive-list-staticlibs
+	tar tvf "rootfs-debug.tar.xz"|sort -k6 >../tag/archive-list-debug
+
+	echo 'Update Hash...'
+	for i in *.tar.xz; do sha256sum $i >$i.sha256; done
+	echo 'done.'
+	popd >/dev/null
+}
+
+_tag() {
+	pushd tag >/dev/null
+	mkdir -p config makelog install-file
+	cp ../{files,script,chapter*,envars,bashrc} "$SRC_ARCHIVE/wget-list" -at config
+	for i in {md5,b2,sha{1,224,256,384,512}}; do local SUM="${SRC_ARCHIVE}/${i}sums"; if [ -e "$SUM" ]; then cp "$SUM" config; fi; done
+	cp $LFS/$FILE_DIR/* install-file
+	cp $LFS/$LOG_DIR/* $log_dir/* -t makelog
+	../script/create-report makelog "$(<makelog/target)"
+	rm -f makelog/{target,end*}
+	newline
+	git init 2>/dev/null
+	git add .
+	git commit -m "Created tag in $(TZ=UTC-8 date|sed 's/[0-9]\+$\|UTC//g')"
+	git tag $VER
+	popd >/dev/null
+}
+
+_package
+
+echo "Target: $(uname -m)-pc-linux-uclibc${ABI}" > tag_des.txt
+for f in $LFS/$FILE_DIR/8*-{binutils,gcc,uclibc*}-[0-9]*; do
+case "${f##*/}" in
+	*-binutils-*) BINUTILS_VER="${f##*-}";;
+	*-gcc-*) GCC_VER="${f##*-}";;
+	*-uclibc-*) UCLIBC_VER="${f##*-}";;
+esac
+done
+echo "Binutils: $BINUTILS_VER" >> tag_des.txt
+echo "GCC: $GCC_VER" >> tag_des.txt
+echo "uClibc-ng: $UCLIBC_VER" >> tag_des.txt
+echo "TAG_DES=$PWD/tag_des.txt" >>$GITHUB_ENV
+echo "TAG_VERSION=$VER" >>$GITHUB_ENV
+_tag

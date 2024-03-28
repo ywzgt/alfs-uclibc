@@ -1,0 +1,160 @@
+Thu Mar 28 16:54:45 UTC 2024
+KB: 1843164	/
+
+cd lib && ./configure
+Configuring libpci for your system... x86_64--linux 6.5.0-1016-azure x86_64 linux
+Looking for access methods... sysfs proc mem-ports ecam i386-ports dump
+Checking for zlib support... yes (auto-detected)
+Checking for DNS support... yes (auto-detected)
+Checking for libkmod... yes (auto-detected)
+Checking for udev hwdb support... yes (auto-detected)
+Checking whether to build a shared library... yes (set manually)
+make -C lib all
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o lspci.o lspci.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o ls-vpd.o ls-vpd.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o ls-caps.o ls-caps.c
+make[1]: Entering directory '/sources/pciutils-3.11.1/lib'
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o init.o init.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o access.o access.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o ls-caps-vendor.o ls-caps-vendor.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o ls-ecaps.o ls-ecaps.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o generic.o generic.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o dump.o dump.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o names.o names.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o filter.o filter.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes  -DNDEBUG  -c -o ls-kernel.o ls-kernel.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o names-hash.o names-hash.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o ls-tree.o ls-tree.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o names-parse.o names-parse.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o ls-map.o ls-map.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o names-net.o names-net.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o common.o common.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o setpci.o setpci.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -DNDEBUG  -c -o example.o example.c
+M=`echo 2024-02-25 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <lspci.man >lspci.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.11.1/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids.gz#"
+Makefile:145: warning: pattern recipe did not update peer target 'lspci.5'.
+Makefile:145: warning: pattern recipe did not update peer target 'lspci.7'.
+M=`echo 2024-02-25 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <setpci.man >setpci.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.11.1/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids.gz#"
+Makefile:145: warning: pattern recipe did not update peer target 'setpci.5'.
+Makefile:145: warning: pattern recipe did not update peer target 'setpci.7'.
+M=`echo 2024-02-25 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <pcilib.man >pcilib.7 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.11.1/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids.gz#"
+Makefile:145: warning: pattern recipe did not update peer target 'pcilib.5'.
+Makefile:145: warning: pattern recipe did not update peer target 'pcilib.8'.
+M=`echo 2024-02-25 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <pci.ids.man >pci.ids.5 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.11.1/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids.gz#"
+Makefile:145: warning: pattern recipe did not update peer target 'pci.ids.7'.
+Makefile:145: warning: pattern recipe did not update peer target 'pci.ids.8'.
+sed <update-pciids.sh >update-pciids "s@^DEST=.*@DEST=/usr/share/hwdata/pci.ids.gz@;s@^PCI_COMPRESSED_IDS=.*@PCI_COMPRESSED_IDS=1@;s@VERSION=.*@VERSION=3.11.1@"
+M=`echo 2024-02-25 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <update-pciids.man >update-pciids.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.11.1/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids.gz#"
+chmod +x update-pciids
+gzip -9n <pci.ids >pci.ids.gz
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o names-cache.o names-cache.c
+Makefile:145: warning: pattern recipe did not update peer target 'update-pciids.5'.
+Makefile:145: warning: pattern recipe did not update peer target 'update-pciids.7'.
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -I . -DNDEBUG  -c -o pcilmr.o pcilmr.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -I . -DNDEBUG  -c -o lmr/margin_hw.o lmr/margin_hw.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o names-hwdb.o names-hwdb.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -I . -DNDEBUG  -c -o lmr/margin.o lmr/margin.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o params.o params.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -I . -DNDEBUG  -c -o lmr/margin_log.o lmr/margin_log.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -I . -DNDEBUG  -c -o lmr/margin_results.o lmr/margin_results.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o caps.o caps.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o sysfs.o sysfs.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o proc.o proc.c
+M=`echo 2024-02-25 | sed 's/-01-/-January-/;s/-02-/-February-/;s/-03-/-March-/;s/-04-/-April-/;s/-05-/-May-/;s/-06-/-June-/;s/-07-/-July-/;s/-08-/-August-/;s/-09-/-September-/;s/-10-/-October-/;s/-11-/-November-/;s/-12-/-December-/;s/\(.*\)-\(.*\)-\(.*\)/\3 \2 \1/'` ; sed <pcilmr.man >pcilmr.8 "s/@TODAY@/$M/;s/@VERSION@/pciutils-3.11.1/;s#@IDSDIR@#/usr/share/hwdata#;s#@PCI_IDS@#pci.ids.gz#"
+Makefile:145: warning: pattern recipe did not update peer target 'pcilmr.5'.
+Makefile:145: warning: pattern recipe did not update peer target 'pcilmr.7'.
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o i386-ports.o i386-ports.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o mmio-ports.o mmio-ports.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o ecam.o ecam.c
+cc -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -DNDEBUG  -c -o physmem-posix.o physmem-posix.c
+sed <libpci.pc.in >libpci.pc -e 's,@PREFIX@,/usr,' \
+	-e 's,@INCDIR@,/usr/include,' \
+	-e 's,@LIBDIR@,/usr/lib,' \
+	-e 's,@IDSDIR@,/usr/share/hwdata,' \
+	-e 's,@VERSION@,3.11.1,' \
+	-e 's,@LDLIBS@,,' \
+	-e 's,@WITH_LIBS@,-lz -lresolv -ludev,'
+cc -shared -O2 -Wall -W -Wno-parentheses -Wstrict-prototypes -Wmissing-prototypes -fPIC -fvisibility=hidden -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-soname,libpci.so.3 -Wl,--version-script=libpci.ver -o libpci.so.3.11.1 init.o access.o generic.o dump.o names.o filter.o names-hash.o names-parse.o names-net.o names-cache.o names-hwdb.o params.o caps.o sysfs.o proc.o i386-ports.o mmio-ports.o ecam.o physmem-posix.o -lz -lresolv -ludev
+make[1]: Leaving directory '/sources/pciutils-3.11.1/lib'
+cc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd  lspci.o ls-vpd.o ls-caps.o ls-caps-vendor.o ls-ecaps.o ls-kernel.o ls-tree.o ls-map.o common.o lib/libpci.so.3.11.1 -lkmod -o lspci
+cc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd  setpci.o common.o lib/libpci.so.3.11.1  -o setpci
+cc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd  example.o lib/libpci.so.3.11.1  -o example
+cc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd  pcilmr.o lmr/margin_hw.o lmr/margin.o lmr/margin_log.o lmr/margin_results.o common.o lib/libpci.so.3.11.1  -o pcilmr
+make -C lib all
+make[1]: Entering directory '/sources/pciutils-3.11.1/lib'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/pciutils-3.11.1/lib'
+install -d -m 755 /usr/lib
+install -c -m 644 lib/libpci.so.3.11.1 /usr/lib
+install -d -m 755 /usr/bin /usr/sbin /usr/share/hwdata /usr/share/man/man8 /usr/share/man/man7 /usr/share/man/man5
+install -d -m 755 /usr/include/pci /usr/lib/pkgconfig
+install -c -m 755 -s lspci /usr/bin
+install -c -m 644 lib/config.h lib/header.h lib/pci.h lib/types.h /usr/include/pci
+install -c -m 644 lib/libpci.pc /usr/lib/pkgconfig
+ln -sf libpci.so.3.11.1 /usr/lib/libpci.so.3
+ln -sf libpci.so.3 /usr/lib/libpci.so
+install -c -m 755 -s setpci /usr/sbin
+install -c -m 755 -s pcilmr /usr/sbin
+install -c -m 755 update-pciids /usr/sbin
+install -c -m 644 pci.ids.gz /usr/share/hwdata
+install -c -m 644 lspci.8 setpci.8 pcilmr.8 update-pciids.8 /usr/share/man/man8
+install -c -m 644 pcilib.7 /usr/share/man/man7
+install -c -m 644 pci.ids.5 /usr/share/man/man5
+ln -sf libpci.so.3.11.1 /usr/lib/libpci.so.3
+mode of '/usr/lib/libpci.so' changed from 0644 (rw-r--r--) to 0755 (rwxr-xr-x)
+--2024-03-28 16:54:47--  https://raw.githubusercontent.com/pciutils/pciids/master/pci.ids
+Resolving raw.githubusercontent.com... 2606:50c0:8003::154, 2606:50c0:8000::154, 2606:50c0:8001::154, ...
+Connecting to raw.githubusercontent.com|2606:50c0:8003::154|:443... failed: Network is unreachable.
+Connecting to raw.githubusercontent.com|2606:50c0:8000::154|:443... failed: Network is unreachable.
+Connecting to raw.githubusercontent.com|2606:50c0:8001::154|:443... failed: Network is unreachable.
+Connecting to raw.githubusercontent.com|2606:50c0:8002::154|:443... failed: Network is unreachable.
+Connecting to raw.githubusercontent.com|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1431735 (1.4M) [text/plain]
+Saving to: '/usr/share/hwdata/pci.ids'
+
+     0K .......... .......... .......... .......... ..........  3% 25.0M 0s
+    50K .......... .......... .......... .......... ..........  7% 9.33M 0s
+   100K .......... .......... .......... .......... .......... 10%  130M 0s
+   150K .......... .......... .......... .......... .......... 14%  158M 0s
+   200K .......... .......... .......... .......... .......... 17% 38.1M 0s
+   250K .......... .......... .......... .......... .......... 21% 61.9M 0s
+   300K .......... .......... .......... .......... .......... 25%  121M 0s
+   350K .......... .......... .......... .......... .......... 28% 38.8M 0s
+   400K .......... .......... .......... .......... .......... 32%  129M 0s
+   450K .......... .......... .......... .......... .......... 35%  158M 0s
+   500K .......... .......... .......... .......... .......... 39%  134M 0s
+   550K .......... .......... .......... .......... .......... 42%  176M 0s
+   600K .......... .......... .......... .......... .......... 46%  155M 0s
+   650K .......... .......... .......... .......... .......... 50%  139M 0s
+   700K .......... .......... .......... .......... .......... 53%  159M 0s
+   750K .......... .......... .......... .......... .......... 57%  187M 0s
+   800K .......... .......... .......... .......... .......... 60%  158M 0s
+   850K .......... .......... .......... .......... .......... 64%  198M 0s
+   900K .......... .......... .......... .......... .......... 67%  155M 0s
+   950K .......... .......... .......... .......... .......... 71%  168M 0s
+  1000K .......... .......... .......... .......... .......... 75%  175M 0s
+  1050K .......... .......... .......... .......... .......... 78%  154M 0s
+  1100K .......... .......... .......... .......... .......... 82%  214M 0s
+  1150K .......... .......... .......... .......... .......... 85%  201M 0s
+  1200K .......... .......... .......... .......... .......... 89%  184M 0s
+  1250K .......... .......... .......... .......... .......... 92%  197M 0s
+  1300K .......... .......... .......... .......... .......... 96%  197M 0s
+  1350K .......... .......... .......... .......... ........  100%  164M=0.02s
+
+2024-03-28 16:54:48 (78.3 MB/s) - '/usr/share/hwdata/pci.ids' saved [1431735/1431735]
+
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu Mar 28 16:54:48 UTC 2024
+
+Totalseconds: 3
+
+KB: 1850272	/
+

@@ -1,0 +1,24 @@
+Thu Mar 28 16:36:32 UTC 2024
+KB: 1699108	/
+
+install: creating directory '/etc/colors'
+'/sources/DIR_COLORS' -> '/etc/colors/DIR_COLORS'
+'/sources/DIR_COLORS.256color' -> '/etc/colors/DIR_COLORS.256color'
+'/sources/DIR_COLORS.xterm' -> '/etc/colors/DIR_COLORS.xterm'
+'/dev/stdin' -> '/etc/profile.d/dircolors.sh'
+'/dev/stdin' -> '/etc/profile'
+mkdir: created directory '/etc/skel'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu Mar 28 16:36:32 UTC 2024
+
+Totalseconds: 0
+
+KB: 1699132	/
+

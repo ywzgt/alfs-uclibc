@@ -1,0 +1,1397 @@
+Thu Mar 28 14:45:54 UTC 2024
+KB: 843796	/lfs_build
+
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-lfs-linux-uclibc
+
+Beginning configuration for bash-5.2-release for x86_64-lfs-linux-uclibc
+
+checking for x86_64-lfs-linux-uclibc-gcc... x86_64-lfs-linux-uclibc-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-lfs-linux-uclibc-gcc accepts -g... yes
+checking for x86_64-lfs-linux-uclibc-gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/param.h... yes
+checking for xlocale.h... yes
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+configure: cross-compiling for x86_64-lfs-linux-uclibc is not supported
+checking how to run the C preprocessor... x86_64-lfs-linux-uclibc-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether x86_64-lfs-linux-uclibc-gcc needs -traditional... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for x86_64-lfs-linux-uclibc-ar... x86_64-lfs-linux-uclibc-ar
+checking for x86_64-lfs-linux-uclibc-ranlib... x86_64-lfs-linux-uclibc-ranlib
+checking for bison... bison -y
+checking whether make sets $(MAKE)... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether byte ordering is bigendian... no
+checking for preprocessor stringizing operator... yes
+checking for long double... yes
+checking whether char is unsigned... no
+checking for working volatile... yes
+checking for C/C++ restrict keyword... __restrict__
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking whether we are using the GNU C Library 2 or newer... no
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for size_t... yes
+checking for stdint.h... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for getpagesize... yes
+checking for symlink... yes
+checking for uselocale... yes
+checking for vprintf... yes
+checking for alarm... yes
+checking for fpurge... no
+checking for __fpurge... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for working mmap... yes
+checking whether integer division by zero raises SIGFPE... guessing yes
+checking for inttypes.h... yes
+checking for unsigned long long int... yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking for ld used by x86_64-lfs-linux-uclibc-gcc... /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld
+checking if the linker (/lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for the common suffixes of directories in the library search path... lib,lib
+checking whether imported symbols can be declared weak... guessing yes
+checking for pthread.h... yes
+checking for pthread_kill in -lpthread... yes
+checking for multithread API to use... posix
+checking for pthread_rwlock_t... yes
+checking whether pthread_rwlock_rdlock prefers a writer to a reader... guessing yes
+checking for x86_64-lfs-linux-uclibc-gcc options needed to detect all undeclared functions... none needed
+checking for iconv... yes
+checking for working iconv... guessing yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for argz.h... no
+checking for inttypes.h... (cached) yes
+checking for limits.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for mempcpy... yes
+checking for munmap... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strtoul... yes
+checking for tsearch... yes
+checking for argz_count... no
+checking for argz_stringify... no
+checking for argz_next... no
+checking for __fsetlocking... yes
+checking for localeconv... yes
+checking whether feof_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking for bison... bison
+checking version of bison... 3.8.2, ok
+checking for long long int... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking whether wint_t is too small... no
+checking for intmax_t... yes
+checking whether printf() supports POSIX/XSI format strings... guessing yes
+checking whether we are using the GNU C Library >= 2.1 or uClibc... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for stdint.h... (cached) yes
+checking for working fcntl.h... cross-compiling
+checking whether uselocale works... guessing yes
+checking for fake locale system (OpenBSD)... guessing no
+checking for Solaris 11.4 locale system... no
+checking for getlocalename_l... no
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for flexible array members... yes
+checking for x86_64-lfs-linux-uclibc-ar... (cached) x86_64-lfs-linux-uclibc-ar
+checking for ptrdiff_t... yes
+checking for features.h... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for asprintf... yes
+checking for fwprintf... yes
+checking for newlocale... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for snprintf... (cached) yes
+checking for strnlen... yes
+checking for uselocale... (cached) yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking whether _snprintf is declared... no
+checking whether _snwprintf is declared... no
+checking whether getc_unlocked is declared... yes
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyCurrent... (cached) no
+checking for CFLocaleCopyPreferredLanguages... (cached) no
+checking whether included gettext is requested... no
+checking for GNU gettext in libc... no
+checking for GNU gettext in libintl... no
+checking whether to use NLS... yes
+checking where the gettext function comes from... included intl directory
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for stdarg.h... yes
+checking for varargs.h... no
+checking for limits.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... yes
+checking for locale.h... yes
+checking for termcap.h... yes
+checking for termio.h... yes
+checking for termios.h... yes
+checking for dlfcn.h... yes
+checking for stdbool.h... yes
+checking for stddef.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for netdb.h... yes
+checking for pwd.h... yes
+checking for grp.h... yes
+checking for strings.h... (cached) yes
+checking for regex.h... yes
+checking for syslog.h... yes
+checking for ulimit.h... yes
+checking for sys/pte.h... no
+checking for sys/stream.h... no
+checking for sys/select.h... yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/mman.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/random.h... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/times.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/wait.h... yes
+checking for netinet/in.h... yes
+checking for arpa/inet.h... yes
+checking for sys/ptem.h... no
+checking for sys/resource.h... yes
+checking for working alloca.h... (cached) yes
+checking for alloca... (cached) checking for uid_t in sys/types.h... yes
+checking for working chown... no
+checking whether getpgrp requires zero arguments... yes
+checking for working strcoll... no
+checking for __setostype... no
+checking for wait3... yes
+checking for mkfifo... yes
+checking for dup2... yes
+checking for eaccess... yes
+checking for fcntl... yes
+checking for getdtablesize... yes
+checking for getentropy... yes
+checking for getgroups... yes
+checking for gethostname... yes
+checking for getpagesize... (cached) yes
+checking for getpeername... yes
+checking for getrandom... yes
+checking for getrlimit... yes
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for kill... yes
+checking for killpg... yes
+checking for lstat... yes
+checking for pselect... yes
+checking for readlink... yes
+checking for select... yes
+checking for setdtablesize... no
+checking for setitimer... yes
+checking for tcgetpgrp... yes
+checking for uname... yes
+checking for ulimit... yes
+checking for waitpid... yes
+checking for rename... yes
+checking for bcopy... yes
+checking for bzero... yes
+checking for confstr... yes
+checking for faccessat... yes
+checking for fnmatch... yes
+checking for getaddrinfo... yes
+checking for gethostbyname... yes
+checking for getservbyname... yes
+checking for getservent... yes
+checking for inet_aton... yes
+checking for imaxdiv... yes
+checking for memmove... yes
+checking for pathconf... yes
+checking for putenv... (cached) yes
+checking for raise... yes
+checking for random... yes
+checking for regcomp... yes
+checking for regexec... yes
+checking for setenv... (cached) yes
+checking for setlinebuf... yes
+checking for setlocale... (cached) yes
+checking for setvbuf... yes
+checking for siginterrupt... yes
+checking for strchr... yes
+checking for sysconf... yes
+checking for syslog... yes
+checking for tcgetattr... yes
+checking for times... yes
+checking for ttyname... yes
+checking for tzset... yes
+checking for unsetenv... yes
+checking for vasprintf... yes
+checking for asprintf... (cached) yes
+checking for isascii... yes
+checking for isblank... yes
+checking for isgraph... yes
+checking for isprint... yes
+checking for isspace... yes
+checking for isxdigit... yes
+checking for getpwent... yes
+checking for getpwnam... yes
+checking for getpwuid... yes
+checking for mkstemp... yes
+checking for mkdtemp... yes
+checking for arc4random... no
+checking for getcwd... (cached) yes
+checking for memset... yes
+checking for strcasecmp... (cached) yes
+checking for strcasestr... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for strnlen... (cached) yes
+checking for strpbrk... yes
+checking for strstr... yes
+checking for strtod... yes
+checking for strtol... yes
+checking for strtoul... (cached) yes
+checking for strtoll... yes
+checking for strtoull... yes
+checking for strtoumax... yes
+checking for dprintf... yes
+checking for strchrnul... yes
+checking for strdup... (cached) yes
+checking for libaudit.h... no
+checking whether AUDIT_USER_TTY is declared... yes
+checking whether confstr is declared... yes
+checking whether printf is declared... yes
+checking whether sbrk is declared... yes
+checking whether setregid is declared... yes
+checking whether strcpy is declared... yes
+checking whether strsignal is declared... yes
+checking for setresuid... yes
+checking for setresgid... yes
+checking whether strtold is declared... yes
+checking for broken strtold... no
+checking whether strtol is declared... yes
+checking whether strtoll is declared... yes
+checking whether strtoul is declared... yes
+checking whether strtoull is declared... yes
+checking whether strtoumax is declared... yes
+checking for working mktime... no
+checking for argz.h... (cached) no
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for malloc.h... yes
+checking for stdio_ext.h... yes
+checking for working mmap... (cached) yes
+checking for __argz_count... no
+checking for __argz_next... no
+checking for __argz_stringify... no
+checking for dcgettext... no
+checking for mempcpy... (cached) yes
+checking for munmap... (cached) yes
+checking for mremap... yes
+checking for stpcpy... (cached) yes
+checking for strcspn... yes
+checking for wctype.h... yes
+checking for wchar.h... (cached) yes
+checking for langinfo.h... yes
+checking for mbstr.h... no
+checking for mbrlen... yes
+checking for mbscasecmp... no
+checking for mbscmp... no
+checking for mbsnrtowcs... yes
+checking for mbsrtowcs... yes
+checking for mbschr... no
+checking for wcrtomb... (cached) yes
+checking for wcscoll... yes
+checking for wcsdup... yes
+checking for wcwidth... yes
+checking for wctype... yes
+checking for wcswidth... yes
+checking whether mbrtowc and mbstate_t are properly declared... (cached) yes
+checking for iswlower... yes
+checking for iswupper... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for iswctype... yes
+checking for wchar_t in wchar.h... yes
+checking for wctype_t in wctype.h... yes
+checking for wint_t in wctype.h... yes
+checking for wcwidth broken with unicode combining characters... no
+checking for locale_charset... no
+checking size of wchar_t... 4
+checking for dlopen in -ldl... yes
+checking for dlopen... yes
+checking for dlclose... yes
+checking for dlsym... yes
+checking type of array argument to getgroups... gid_t
+checking for off_t... yes
+checking for mode_t... yes
+checking for uid_t in sys/types.h... (cached) yes
+checking for pid_t... yes
+checking for size_t... (cached) yes
+checking for uintptr_t... yes
+checking for ssize_t... yes
+checking for time_t... yes
+checking for long long int... (cached) yes
+checking for unsigned long long int... (cached) yes
+checking for sig_atomic_t in signal.h... yes
+checking size of char... 1
+checking size of short... 2
+checking size of int... 4
+checking size of long... 8
+checking size of char *... 8
+checking size of size_t... 8
+checking size of double... 8
+checking size of long long... 8
+checking for u_int... yes
+checking for u_long... yes
+checking for bits16_t... no
+checking for u_bits16_t... no
+checking for bits32_t... no
+checking for u_bits32_t... no
+checking for bits64_t... no
+checking for ptrdiff_t... (cached) yes
+checking whether stat file-mode macros are broken... no
+checking whether #! works in shell scripts... yes
+checking if dup2 fails to clear the close-on-exec flag... configure: WARNING: cannot check dup2 if cross compiling -- defaulting to no
+no
+checking whether pgrps need synchronization... configure: WARNING: cannot check pgrp synchronization if cross compiling -- defaulting to no
+no
+checking for type of signal functions... posix
+checking for sys_errlist and sys_nerr... yes
+checking whether sys_siglist is declared... no
+checking for sys_siglist in system C library... configure: WARNING: cannot check for sys_siglist if cross compiling -- defaulting to no
+no
+checking for _sys_siglist in signal.h or unistd.h... no
+checking for _sys_siglist in system C library... configure: WARNING: cannot check for _sys_siglist if cross compiling -- defaulting to no
+no
+checking for clock_t... yes
+checking for sigset_t... yes
+checking for socklen_t... yes
+checking for quad_t... yes
+checking for type of struct rlimit fields... rlim_t
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking size of intmax_t... 8
+checking for struct termios.c_line... yes
+checking for struct termio.c_line... yes
+checking for struct dirent.d_ino... checking for struct dirent.d_ino... yes
+yes
+checking for struct dirent.d_fileno... checking for struct dirent.d_fileno... yes
+yes
+checking for struct dirent.d_namlen... checking for struct dirent.d_namlen... no
+no
+checking for struct winsize in sys/ioctl.h and termios.h... sys/ioctl.h
+checking for struct timeval in sys/time.h and time.h... yes
+checking for struct stat.st_blocks... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for struct timezone in sys/time.h and time.h... yes
+checking for offset of exit status in return status from wait... configure: WARNING: cannot check WEXITSTATUS offset if cross compiling -- defaulting to 0
+0
+checking for struct timespec in <time.h>... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for sbrk... yes
+checking for working sbrk... configure: WARNING: cannot check working sbrk if cross-compiling
+yes
+checking for the existence of strsignal... yes
+checking if opendir() opens non-directories... configure: WARNING: cannot check opendir if cross compiling -- defaulting to no
+no
+checking whether ulimit can substitute for getdtablesize... configure: WARNING: cannot check ulimit if cross compiling -- defaulting to no
+no
+checking whether fpurge is declared... no
+checking to see if getenv can be redefined... configure: WARNING: cannot check getenv redefinition if cross compiling -- defaulting to yes
+yes
+checking if getcwd() will dynamically allocate memory with 0 size... configure: WARNING: cannot check whether getcwd allocates memory when cross-compiling -- defaulting to no
+no
+checking for presence of POSIX-style sigsetjmp/siglongjmp... configure: WARNING: cannot check for sigsetjmp/siglongjmp if cross-compiling -- defaulting to yes
+present
+checking whether or not strcoll and strcmp differ... configure: WARNING: cannot check strcoll if cross compiling -- defaulting to no
+no
+checking for standard-conformant snprintf... configure: WARNING: cannot check standard snprintf if cross-compiling
+yes
+checking for standard-conformant vsnprintf... configure: WARNING: cannot check standard vsnprintf if cross-compiling
+yes
+checking for usable strtoimax... checking for strtoimax... yes
+checking whether strtoimax is declared... yes
+yes
+checking for standard-conformant putenv declaration... yes
+checking for standard-conformant unsetenv declaration... yes
+checking for printf floating point output in hex notation... configure: WARNING: cannot check printf if cross compiling -- defaulting to no
+no
+checking whether fnmatch can be used to check bracket equivalence classes... configure: WARNING: cannot check fnmatch if cross compiling -- defaulting to no
+no
+checking if signal handlers must be reinstalled when invoked... configure: WARNING: cannot check signal handling if cross compiling -- defaulting to no
+no
+checking for presence of necessary job control definitions... present
+checking for presence of named pipes... configure: WARNING: cannot check for named pipes if cross-compiling -- defaulting to missing
+missing
+checking whether termios.h defines TIOCGWINSZ... no
+checking whether sys/ioctl.h defines TIOCGWINSZ... yes
+checking for TIOCSTAT in sys/ioctl.h... no
+checking for FIONREAD in sys/ioctl.h... yes
+checking whether WCONTINUED flag to waitpid is unavailable or available but broken... configure: WARNING: cannot check WCONTINUED if cross compiling -- defaulting to no
+no
+checking for speed_t in sys/types.h... no
+checking whether getpw functions are declared in pwd.h... yes
+checking for unusable real-time signals due to large values... configure: WARNING: cannot check real-time signals if cross compiling -- defaulting to yes
+yes
+checking for tgetent... no
+checking for tgetent in -ltermcap... no
+checking for tgetent in -ltinfo... no
+checking for tgetent in -lcurses... no
+checking for tgetent in -lncurses... yes
+checking which library has the termcap functions... using libncurses
+checking whether /dev/fd is available... standard
+checking whether /dev/stdin stdout stderr are available... present
+checking for default mail directory... /var/mail
+checking shared object configuration for loadable builtins... supported
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating builtins/Makefile
+config.status: creating lib/readline/Makefile
+config.status: creating lib/glob/Makefile
+config.status: creating lib/intl/Makefile
+config.status: creating lib/malloc/Makefile
+config.status: creating lib/sh/Makefile
+config.status: creating lib/termcap/Makefile
+config.status: creating lib/tilde/Makefile
+config.status: creating doc/Makefile
+config.status: creating support/Makefile
+config.status: creating po/Makefile.in
+config.status: creating examples/loadables/Makefile
+config.status: creating examples/loadables/Makefile.inc
+config.status: creating examples/loadables/Makefile.sample
+config.status: creating examples/loadables/perl/Makefile
+config.status: creating support/bash.pc
+config.status: creating support/bashbug.sh
+config.status: creating config.h
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing stamp-h commands
+rm -f mksyntax
+gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -g -DCROSS_COMPILING -rdynamic -g -DCROSS_COMPILING -o mksyntax ./mksyntax.c 
+rm -f mksignames.o
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -g -DCROSS_COMPILING -DBUILDTOOL -c ./support/mksignames.c
+rm -f buildsignames.o
+gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -g -DCROSS_COMPILING -DBUILDTOOL -o buildsignames.o -c ./support/signames.c
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/builtins'
+making /lfs_build/sources/bash-5.2.21/lib/intl/libintl.h in /lfs_build/sources/bash-5.2.21/lib/intl
+make[2]: Entering directory '/lfs_build/sources/bash-5.2.21/lib/intl'
+make[2]: warning: -j4 forced in submake: resetting jobserver mode.
+cp ./libgnuintl.h.in libgnuintl.h
+cmp libgnuintl.h libintl.h || cp libgnuintl.h libintl.h
+cmp: libintl.h: No such file or directory
+make[2]: Leaving directory '/lfs_build/sources/bash-5.2.21/lib/intl'
+rm -f mkbuiltins.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl    -g -DCROSS_COMPILING mkbuiltins.c
+rm -f unwind_prot.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c unwind_prot.c
+rm -f alias.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c alias.c
+rm -f array.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c array.c
+gcc -rdynamic -g -DCROSS_COMPILING -o mkbuiltins mkbuiltins.o 
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/builtins'
+rm -f assoc.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c assoc.c
+rm -f bracecomp.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c bracecomp.c
+rm -f list.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c list.c
+rm -f stringlib.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c stringlib.c
+rm -f findcmd.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c findcmd.c
+rm -f signames.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c ./support/signames.c
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/support'
+rm -f man2html.o
+gcc -c  -DHAVE_CONFIG_H -DSHELL  -I/lfs_build/sources/bash-5.2.21 -I..    -g man2html.c
+rm -f syntax.c
+./mksyntax -o syntax.c
+rm -f dispose_cmd.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c dispose_cmd.c
+rm -f copy_cmd.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c copy_cmd.c
+rm -f flags.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c flags.c
+rm -f hashcmd.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c hashcmd.c
+rm -f hashlib.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c hashlib.c
+rm -f mksignames
+gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -g -DCROSS_COMPILING -rdynamic -g -DCROSS_COMPILING -o mksignames mksignames.o buildsignames.o 
+gcc -rdynamic -g man2html.o -o man2html -ldl 		
+rm -f syntax.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c syntax.c
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/support'
+/bin/sh ./support/mkversion.sh -b -S . -s release -d 5.2 -o newversion.h \
+	&& mv newversion.h version.h
+rm -f lsignames.h
+./mksignames lsignames.h
+if cmp -s lsignames.h signames.h ; then :; else rm -f signames.h ; cp lsignames.h signames.h ; fi
+gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -g -DCROSS_COMPILING -DBUILDTOOL -c -o buildversion.o ./version.c
+gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -g -DCROSS_COMPILING -rdynamic -g -DCROSS_COMPILING -o bashversion ./support/bashversion.c buildversion.o 
+
+	  ***********************************************************
+	  *                                                         *
+	  * GNU bash, version 5.2.21(1)-release (x86_64-lfs-linux-uclibc)
+	  *                                                         *
+	  ***********************************************************
+
+making lib/intl/libintl.a in ./lib/intl
+making lib/glob/libglob.a in ./lib/glob
+making lib/sh/libsh.a in ./lib/sh
+making lib/readline/libreadline.a in ./lib/readline
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/lib/intl'
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  bindtextdom.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  dcgettext.c
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/lib/glob'
+rm -f glob.o
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  dgettext.c
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/lib/readline'
+rm -f readline.o
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  gettext.c
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/lib/sh'
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  clktck.c
+rm -f vi_mode.o
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  clock.c
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  readline.c
+rm -f strmatch.o
+rm -f smatch.o
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  getenv.c
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  vi_mode.c
+x86_64-lfs-linux-uclibc-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib -DNDEBUG   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  glob.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  oslib.c
+x86_64-lfs-linux-uclibc-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib -DNDEBUG   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  strmatch.c
+x86_64-lfs-linux-uclibc-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib -DNDEBUG   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  smatch.c
+rm -f funmap.o
+rm -f xmbsrtowcs.o
+rm -f keymaps.o
+x86_64-lfs-linux-uclibc-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib -DNDEBUG   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  xmbsrtowcs.c
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  funmap.c
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  keymaps.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  finddomain.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  loadmsgcat.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  setlinebuf.c
+rm -f gmisc.o
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  strnlen.c
+x86_64-lfs-linux-uclibc-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib -DNDEBUG   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  gmisc.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  localealias.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  itos.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  zread.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  zwrite.c
+rm -f parens.o
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  shtty.c
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  parens.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  shmatch.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  textdomain.c
+rm -f search.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  search.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  eaccess.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  l10nflist.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  netconn.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  netopen.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  explodename.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  dcigettext.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  timeval.c
+rm -f rltty.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  rltty.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  makepath.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  pathcanon.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  dcngettext.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  pathphys.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  dngettext.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  tmpfile.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  stringlist.c
+rm -f complete.o
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  ngettext.c
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  complete.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  plural.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  stringvec.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  plural-exp.c
+rm -f bind.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  bind.c
+rm -f isearch.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  isearch.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  localcharset.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  relocatable.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  localename.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  spell.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  shquote.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  log.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  osdep.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  strtrans.c
+x86_64-lfs-linux-uclibc-gcc -c -DLOCALEDIR=\"/usr/share/locale\" -DLOCALE_ALIAS_PATH=\"/usr/share/locale\" -DLIBDIR=\"/usr/libdata\" -DIN_LIBINTL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\"/usr/lib\" -DNO_XMALLOC -Dset_relocation_prefix=libintl_set_relocation_prefix -Drelocate=libintl_relocate -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H -DSHELL -I. -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  intl-compat.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  snprintf.c
+/bin/sh ./config.charset 'x86_64-lfs-linux-uclibc' > t-charset.alias
+sed -e '/^#/d' -e 's/@''PACKAGE''@/@PACKAGE@/g' ./ref-add.sin > t-ref-add.sed
+mv t-ref-add.sed ref-add.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/@PACKAGE@/g' ./ref-del.sin > t-ref-del.sed
+mv t-charset.alias charset.alias
+mv t-ref-del.sed ref-del.sed
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  mailstat.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  fmtulong.c
+rm -f libintl.a
+x86_64-lfs-linux-uclibc-ar cr libintl.a bindtextdom.o dcgettext.o dgettext.o gettext.o finddomain.o loadmsgcat.o localealias.o textdomain.o l10nflist.o explodename.o dcigettext.o dcngettext.o dngettext.o ngettext.o plural.o plural-exp.o localcharset.o relocatable.o localename.o log.o osdep.o intl-compat.o
+x86_64-lfs-linux-uclibc-ranlib libintl.a
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/lib/intl'
+making lib/tilde/libtilde.a in ./lib/tilde
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/lib/tilde'
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL -DNDEBUG -I. -I../.. -I../.. -I../../include -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections tilde.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  fmtullong.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  fmtumax.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  zcatfd.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  zmapfd.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  winsize.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  wcsdup.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  fpurge.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  zgetline.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  mbscmp.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  uconvert.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  ufuncs.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  casemod.c
+rm -f libtilde.a
+x86_64-lfs-linux-uclibc-ar cr libtilde.a tilde.o
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  input_avail.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  mbscasecmp.c
+test -n "x86_64-lfs-linux-uclibc-ranlib" && x86_64-lfs-linux-uclibc-ranlib libtilde.a
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/lib/tilde'
+rm -f shell.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c shell.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  fnxform.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  unicode.c
+rm -f display.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  display.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  shmbchar.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  strvis.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  utf8.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  random.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  gettimeofday.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  timers.c
+random.c: In function 'genseed':
+random.c:93:8: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   93 |   iv = (u_bits32_t)seedrand;            /* let the compiler truncate */
+      |        ^
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  wcsnwidth.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  mktime.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  mbschr.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  getcwd.c
+rm -f signals.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  signals.c
+x86_64-lfs-linux-uclibc-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I. -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -DHAVE_CONFIG_H -DSHELL   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  strtoimax.c
+rm -f libsh.a
+x86_64-lfs-linux-uclibc-ar cr libsh.a clktck.o clock.o getenv.o oslib.o setlinebuf.o strnlen.o itos.o zread.o zwrite.o shtty.o shmatch.o eaccess.o netconn.o netopen.o timeval.o makepath.o pathcanon.o pathphys.o tmpfile.o stringlist.o stringvec.o spell.o shquote.o strtrans.o snprintf.o mailstat.o fmtulong.o fmtullong.o fmtumax.o zcatfd.o zmapfd.o winsize.o wcsdup.o fpurge.o zgetline.o mbscmp.o uconvert.o ufuncs.o casemod.o input_avail.o mbscasecmp.o fnxform.o unicode.o shmbchar.o strvis.o utf8.o random.o gettimeofday.o timers.o wcsnwidth.o mktime.o mbschr.o getcwd.o strtoimax.o
+test -n "x86_64-lfs-linux-uclibc-ranlib" && x86_64-lfs-linux-uclibc-ranlib libsh.a
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/lib/sh'
+rm -f eval.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c eval.c
+rm -f execute_cmd.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c execute_cmd.c
+rm -f util.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  util.c
+rm -f -f libglob.a
+x86_64-lfs-linux-uclibc-ar cr libglob.a glob.o strmatch.o smatch.o xmbsrtowcs.o gmisc.o
+test -n "x86_64-lfs-linux-uclibc-ranlib" && x86_64-lfs-linux-uclibc-ranlib libglob.a
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/lib/glob'
+rm -f general.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c general.c
+rm -f make_cmd.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c make_cmd.c
+rm -f kill.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  kill.c
+rm -f undo.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  undo.c
+rm -f print_cmd.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c print_cmd.c
+rm -f macro.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  macro.c
+rm -f input.o
+rm -f callback.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  input.c
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  callback.c
+rm -f variables.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c variables.c
+rm -f terminal.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  terminal.c
+rm -f text.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  text.c
+rm -f nls.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  nls.c
+rm -f misc.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  misc.c
+rm -f error.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c error.c
+rm -f history.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  history.c
+rm -f histexpand.o
+rm -f histfile.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  histexpand.c
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  histfile.c
+rm -f expr.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c expr.c
+rm -f histsearch.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  histsearch.c
+rm -f shell.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  shell.c
+rm -f savestring.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  savestring.c
+rm -f mbutil.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  mbutil.c
+rm -f tilde.o
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -DREADLINE_LIBRARY -c ./tilde.c
+rm -f colors.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  colors.c
+rm -f parse-colors.o
+rm -f xmalloc.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  parse-colors.c
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  xmalloc.c
+rm -f xfree.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  xfree.c
+rm -f compat.o
+x86_64-lfs-linux-uclibc-gcc -c -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -I. -I/lfs_build/sources/bash-5.2.21 -I../.. -I../../lib   -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  compat.c
+rm -f jobs.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c jobs.c
+rm -f subst.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c subst.c
+rm -f libreadline.a
+x86_64-lfs-linux-uclibc-ar cr libreadline.a readline.o vi_mode.o funmap.o keymaps.o parens.o search.o rltty.o complete.o bind.o isearch.o display.o signals.o util.o kill.o undo.o macro.o input.o callback.o terminal.o text.o nls.o misc.o history.o histexpand.o histfile.o histsearch.o shell.o savestring.o mbutil.o tilde.o colors.o parse-colors.o xmalloc.o xfree.o compat.o 
+test -n "x86_64-lfs-linux-uclibc-ranlib" && x86_64-lfs-linux-uclibc-ranlib libreadline.a
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/lib/readline'
+rm -f mailcheck.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c mailcheck.c
+rm -f trap.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c trap.c
+rm -f input.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c input.c
+rm -f pathexp.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c pathexp.c
+rm -f sig.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c sig.c
+rm -f test.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c test.c
+rm -f version.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c version.c
+rm -f arrayfunc.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c arrayfunc.c
+rm -f braces.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c braces.c
+rm -f bashhist.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c bashhist.c
+rm -f bashline.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c bashline.c
+rm -f locale.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c locale.c
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/builtins'
+rm -f builtins.o
+rm -f alias.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections builtins.c
+./mkbuiltins -D . alias.def
+rm -f bind.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections alias.c || ( rm -f alias.c ; exit 1 )
+./mkbuiltins -D . bind.def
+rm -f break.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections bind.c || ( rm -f bind.c ; exit 1 )
+./mkbuiltins -D . break.def
+rm -f builtin.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections break.c || ( rm -f break.c ; exit 1 )
+./mkbuiltins -D . builtin.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections builtin.c || ( rm -f builtin.c ; exit 1 )
+rm -f alias.c
+rm -f caller.o
+rm -f pcomplete.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c pcomplete.c
+./mkbuiltins -D . caller.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections caller.c || ( rm -f caller.c ; exit 1 )
+rm -f builtin.c
+rm -f cd.o
+./mkbuiltins -D . cd.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections cd.c || ( rm -f cd.c ; exit 1 )
+rm -f break.c
+rm -f colon.o
+./mkbuiltins -D . colon.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections colon.c || ( rm -f colon.c ; exit 1 )
+rm -f caller.c
+rm -f command.o
+./mkbuiltins -D . command.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections command.c || ( rm -f command.c ; exit 1 )
+rm -f command.c
+rm -f common.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections common.c
+rm -f bind.c
+rm -f declare.o
+rm -f colon.c
+./mkbuiltins -D . declare.def
+rm -f echo.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections declare.c || ( rm -f declare.c ; exit 1 )
+./mkbuiltins -D . echo.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections echo.c || ( rm -f echo.c ; exit 1 )
+rm -f cd.c
+rm -f enable.o
+./mkbuiltins -D . enable.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections enable.c || ( rm -f enable.c ; exit 1 )
+rm -f echo.c
+rm -f eval.o
+./mkbuiltins -D . eval.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections eval.c || ( rm -f eval.c ; exit 1 )
+rm -f evalfile.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections evalfile.c
+rm -f eval.c
+rm -f evalstring.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections evalstring.c
+rm -f exec.o
+./mkbuiltins -D . exec.def
+rm -f enable.c
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections exec.c || ( rm -f exec.c ; exit 1 )
+rm -f exit.o
+./mkbuiltins -D . exit.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections exit.c || ( rm -f exit.c ; exit 1 )
+rm -f exit.c
+rm -f fc.o
+./mkbuiltins -D . fc.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections fc.c || ( rm -f fc.c ; exit 1 )
+rm -f declare.c
+rm -f fg_bg.o
+rm -f pcomplib.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c pcomplib.c
+rm -f exec.c
+./mkbuiltins -D . fg_bg.def
+rm -f hash.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections fg_bg.c || ( rm -f fg_bg.c ; exit 1 )
+./mkbuiltins -D . hash.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections hash.c || ( rm -f hash.c ; exit 1 )
+rm -f xmalloc.o
+rm -f help.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c xmalloc.c
+./mkbuiltins -D . help.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections help.c || ( rm -f help.c ; exit 1 )
+making lib/readline/libhistory.a in ./lib/readline
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/lib/readline'
+rm -f libhistory.a
+rm -f fg_bg.c
+x86_64-lfs-linux-uclibc-ar cr libhistory.a history.o histexpand.o histfile.o histsearch.o shell.o savestring.o mbutil.o xmalloc.o xfree.o
+rm -f history.o
+./mkbuiltins -D . history.def
+test -n "x86_64-lfs-linux-uclibc-ranlib" && x86_64-lfs-linux-uclibc-ranlib libhistory.a
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections history.c || ( rm -f history.c ; exit 1 )
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/lib/readline'
+rm -f y.tab.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c y.tab.c
+rm -f hash.c
+rm -f jobs.o
+rm -f fc.c
+./mkbuiltins -D . jobs.def
+rm -f kill.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections jobs.c || ( rm -f jobs.c ; exit 1 )
+./mkbuiltins -D . kill.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections kill.c || ( rm -f kill.c ; exit 1 )
+rm -f history.c
+rm -f let.o
+./mkbuiltins -D . let.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections let.c || ( rm -f let.c ; exit 1 )
+rm -f jobs.c
+rm -f mapfile.o
+./mkbuiltins -D . mapfile.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections mapfile.c || ( rm -f mapfile.c ; exit 1 )
+rm -f let.c
+rm -f pushd.o
+./mkbuiltins -D . pushd.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections pushd.c || ( rm -f pushd.c ; exit 1 )
+rm -f help.c
+rm -f read.o
+./mkbuiltins -D . read.def
+rm -f kill.c
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections read.c || ( rm -f read.c ; exit 1 )
+rm -f return.o
+./mkbuiltins -D . return.def
+rm -f mapfile.c
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections return.c || ( rm -f return.c ; exit 1 )
+rm -f set.o
+./mkbuiltins -D . set.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections set.c || ( rm -f set.c ; exit 1 )
+rm -f return.c
+rm -f setattr.o
+./mkbuiltins -D . setattr.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections setattr.c || ( rm -f setattr.c ; exit 1 )
+rm -f setattr.c
+rm -f shift.o
+./mkbuiltins -D . shift.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections shift.c || ( rm -f shift.c ; exit 1 )
+rm -f pushd.c
+rm -f shift.c
+rm -f source.o
+rm -f suspend.o
+./mkbuiltins -D . source.def
+./mkbuiltins -D . suspend.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections source.c || ( rm -f source.c ; exit 1 )
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections suspend.c || ( rm -f suspend.c ; exit 1 )
+rm -f set.c
+rm -f test.o
+./mkbuiltins -D . test.def
+rm -f suspend.c
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections test.c || ( rm -f test.c ; exit 1 )
+rm -f times.o
+./mkbuiltins -D . times.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections times.c || ( rm -f times.c ; exit 1 )
+rm -f source.c
+rm -f trap.o
+./mkbuiltins -D . trap.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections trap.c || ( rm -f trap.c ; exit 1 )
+rm -f times.c
+rm -f type.o
+./mkbuiltins -D . type.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections type.c || ( rm -f type.c ; exit 1 )
+rm -f read.c
+gcc  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl    -g -DCROSS_COMPILING -rdynamic -g -DCROSS_COMPILING -o psize.aux ./psize.c
+rm -f test.c
+rm -f umask.o
+./mkbuiltins -D . umask.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections umask.c || ( rm -f umask.c ; exit 1 )
+rm -f wait.o
+./mkbuiltins -D . wait.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections wait.c || ( rm -f wait.c ; exit 1 )
+rm -f trap.c
+rm -f getopts.o
+./mkbuiltins -D . getopts.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections getopts.c || ( rm -f getopts.c ; exit 1 )
+rm -f umask.c
+rm -f shopt.o
+./mkbuiltins -D . shopt.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections shopt.c || ( rm -f shopt.c ; exit 1 )
+rm -f type.c
+rm -f printf.o
+rm -f wait.c
+./mkbuiltins -D . printf.def
+rm -f getopt.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections printf.c || ( rm -f printf.c ; exit 1 )
+rm -f getopts.c
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections getopt.c
+rm -f bashgetopt.o
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections bashgetopt.c
+rm -f shopt.c
+rm -f complete.o
+./mkbuiltins -D . complete.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections complete.c || ( rm -f complete.c ; exit 1 )
+/bin/sh ./psize.sh > pipesize.h
+rm -f complete.c
+rm -f printf.c
+rm -f ulimit.o
+./mkbuiltins -D . ulimit.def
+x86_64-lfs-linux-uclibc-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I. -I../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections ulimit.c || ( rm -f ulimit.c ; exit 1 )
+rm -f ulimit.c
+rm -f libbuiltins.a
+x86_64-lfs-linux-uclibc-ar cr libbuiltins.a builtins.o alias.o bind.o break.o builtin.o caller.o cd.o colon.o command.o common.o declare.o echo.o enable.o eval.o evalfile.o evalstring.o exec.o exit.o fc.o fg_bg.o hash.o help.o history.o jobs.o kill.o let.o mapfile.o pushd.o read.o return.o set.o setattr.o shift.o source.o suspend.o test.o times.o trap.o type.o ulimit.o umask.o wait.o getopts.o shopt.o printf.o getopt.o bashgetopt.o complete.o
+x86_64-lfs-linux-uclibc-ranlib libbuiltins.a
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/builtins'
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/builtins'
+make[1]: 'pipesize.h' is up to date.
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/builtins'
+rm -f redir.o
+x86_64-lfs-linux-uclibc-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-uclibc"' -DCONF_MACHTYPE='"x86_64-lfs-linux-uclibc"' -DCONF_VENDOR='"lfs"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib -I./lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c redir.c
+rm -f bash
+x86_64-lfs-linux-uclibc-gcc -L./builtins -L./lib/readline -L./lib/readline -L./lib/glob -L./lib/tilde  -L./lib/sh  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -rdynamic -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections   -o bash shell.o eval.o y.tab.o general.o make_cmd.o print_cmd.o  dispose_cmd.o execute_cmd.o variables.o copy_cmd.o error.o expr.o flags.o jobs.o subst.o hashcmd.o hashlib.o mailcheck.o trap.o input.o unwind_prot.o pathexp.o sig.o test.o version.o alias.o array.o arrayfunc.o assoc.o braces.o bracecomp.o bashhist.o bashline.o  list.o stringlib.o locale.o findcmd.o redir.o pcomplete.o pcomplib.o syntax.o xmalloc.o signames.o -lbuiltins -lglob -lsh -lreadline -lhistory -lncurses -ltilde  lib/intl/libintl.a     -ldl 
+ls -l bash
+-rwxr-xr-x 1 root root 1226800 Mar 28 14:46 bash
+x86_64-lfs-linux-uclibc-size bash
+   text	   data	    bss	    dec	    hex	filename
+1006697	  47968	  43304	1097969	 10c0f1	bash
+
+	  ***********************************************************
+	  *                                                         *
+	  * GNU bash, version 5.2.21(1)-release (x86_64-lfs-linux-uclibc)
+	  *                                                         *
+mkdir -p -- /lfs_build/usr/share/doc/bash
+	  ***********************************************************
+
+( cd ./po/ ; make -j4 --jobserver-auth=3,4 DESTDIR=/lfs_build installdirs )
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/po'
+/bin/sh ../support/mkinstalldirs /lfs_build/usr/share
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/builtins'
+make[1]: 'pipesize.h' is up to date.
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/builtins'
+mkdir -p -- /lfs_build/usr/share/locale/en@quot/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/en@boldquot/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/af/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/bg/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/ca/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/cs/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/da/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/de/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/el/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/eo/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/es/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/et/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/fi/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/fr/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/ga/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/gl/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/hr/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/hu/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/id/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/it/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/ja/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/ko/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/lt/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/nb/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/nl/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/pl/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/pt/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/pt_BR/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/ro/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/ru/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/sk/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/sl/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/sr/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/sv/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/tr/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/uk/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/vi/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/zh_CN/LC_MESSAGES
+mkdir -p -- /lfs_build/usr/share/locale/zh_TW/LC_MESSAGES
+if test "bash" = "gettext-tools"; then \
+  /bin/sh ../support/mkinstalldirs /lfs_build/usr/share/gettext/po; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/po'
+/usr/bin/install -c -m 0755 bash /lfs_build/usr/bin/bash
+/usr/bin/install -c -m 0555 bashbug /lfs_build/usr/bin/bashbug
+/usr/bin/install -c -m 644 ./CHANGES ./COMPAT ./NEWS ./POSIX ./RBASH ./README /lfs_build/usr/share/doc/bash
+( cd ./doc ; make -j4 --jobserver-auth=3,4 \
+	man1dir=/usr/share/man/man1 man1ext=.1 \
+	man3dir=/usr/share/man/man3 man3ext=.3 \
+	infodir=/usr/share/info htmldir=/usr/share/doc/bash DESTDIR=/lfs_build install )
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/doc'
+/bin/sh ../support/mkinstalldirs /lfs_build/usr/share/man/man1
+/bin/sh ../support/mkinstalldirs /lfs_build/usr/share/info
+/bin/sh ../support/mkinstalldirs /lfs_build/usr/share/doc/bash
+if test -n "/usr/share/doc/bash" ; then \
+	/bin/sh ../support/mkinstalldirs /lfs_build/usr/share/doc/bash ; \
+fi
+/usr/bin/install -c -m 644 ./bash.1 /lfs_build/usr/share/man/man1/bash.1
+/usr/bin/install -c -m 644 ./bashbug.1 /lfs_build/usr/share/man/man1/bashbug.1
+/usr/bin/install -c -m 644 ./FAQ ./INTRO /lfs_build/usr/share/doc/bash
+if test -f bash.info; then d=.; else d=.; fi; \
+  /usr/bin/install -c -m 644 $d/bash.info /lfs_build/usr/share/info/bash.info
+if /bin/sh -c 'install-info --version' >/dev/null 2>&1; then \
+	install-info --dir-file=/lfs_build/usr/share/info/dir /lfs_build/usr/share/info/bash.info; \
+else true; fi
+if test -n "/usr/share/doc/bash" ; then \
+	/usr/bin/install -c -m 644 ./bash.html /lfs_build/usr/share/doc/bash ; \
+	/usr/bin/install -c -m 644 ./bashref.html /lfs_build/usr/share/doc/bash ; \
+fi
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/doc'
+( cd ./builtins ; make -j4 --jobserver-auth=3,4 DESTDIR=/lfs_build install )
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/builtins'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/builtins'
+( cd ./po/ ; make -j4 --jobserver-auth=3,4 DESTDIR=/lfs_build install )
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/po'
+test -z "en@quot.gmo en@boldquot.gmo af.gmo bg.gmo ca.gmo cs.gmo da.gmo de.gmo el.gmo eo.gmo es.gmo et.gmo fi.gmo fr.gmo ga.gmo gl.gmo hr.gmo hu.gmo id.gmo it.gmo ja.gmo ko.gmo lt.gmo nb.gmo nl.gmo pl.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo sk.gmo sl.gmo sr.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo" || make en@quot.gmo en@boldquot.gmo af.gmo bg.gmo ca.gmo cs.gmo da.gmo de.gmo el.gmo eo.gmo es.gmo et.gmo fi.gmo fr.gmo ga.gmo gl.gmo hr.gmo hu.gmo id.gmo it.gmo ja.gmo ko.gmo lt.gmo nb.gmo nl.gmo pl.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo sk.gmo sl.gmo sr.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo
+make[2]: Entering directory '/lfs_build/sources/bash-5.2.21/po'
+make[2]: 'en@quot.gmo' is up to date.
+make[2]: 'en@boldquot.gmo' is up to date.
+make[2]: 'af.gmo' is up to date.
+make[2]: 'bg.gmo' is up to date.
+make[2]: 'ca.gmo' is up to date.
+make[2]: 'cs.gmo' is up to date.
+make[2]: 'da.gmo' is up to date.
+make[2]: 'de.gmo' is up to date.
+make[2]: 'el.gmo' is up to date.
+make[2]: 'eo.gmo' is up to date.
+make[2]: 'es.gmo' is up to date.
+make[2]: 'et.gmo' is up to date.
+make[2]: 'fi.gmo' is up to date.
+make[2]: 'fr.gmo' is up to date.
+make[2]: 'ga.gmo' is up to date.
+make[2]: 'gl.gmo' is up to date.
+make[2]: 'hr.gmo' is up to date.
+make[2]: 'hu.gmo' is up to date.
+make[2]: 'id.gmo' is up to date.
+make[2]: 'it.gmo' is up to date.
+make[2]: 'ja.gmo' is up to date.
+make[2]: 'ko.gmo' is up to date.
+make[2]: 'lt.gmo' is up to date.
+make[2]: 'nb.gmo' is up to date.
+make[2]: 'nl.gmo' is up to date.
+make[2]: 'pl.gmo' is up to date.
+make[2]: 'pt.gmo' is up to date.
+make[2]: 'pt_BR.gmo' is up to date.
+make[2]: 'ro.gmo' is up to date.
+make[2]: 'ru.gmo' is up to date.
+make[2]: 'sk.gmo' is up to date.
+make[2]: 'sl.gmo' is up to date.
+make[2]: 'sr.gmo' is up to date.
+make[2]: 'sv.gmo' is up to date.
+make[2]: 'tr.gmo' is up to date.
+make[2]: 'uk.gmo' is up to date.
+make[2]: 'vi.gmo' is up to date.
+make[2]: 'zh_CN.gmo' is up to date.
+make[2]: 'zh_TW.gmo' is up to date.
+make[2]: Leaving directory '/lfs_build/sources/bash-5.2.21/po'
+touch stamp-po
+/bin/sh ../support/mkinstalldirs /lfs_build/usr/share
+installing en@quot.gmo as /lfs_build/usr/share/locale/en@quot/LC_MESSAGES/bash.mo
+installing en@boldquot.gmo as /lfs_build/usr/share/locale/en@boldquot/LC_MESSAGES/bash.mo
+installing af.gmo as /lfs_build/usr/share/locale/af/LC_MESSAGES/bash.mo
+installing bg.gmo as /lfs_build/usr/share/locale/bg/LC_MESSAGES/bash.mo
+installing ca.gmo as /lfs_build/usr/share/locale/ca/LC_MESSAGES/bash.mo
+installing cs.gmo as /lfs_build/usr/share/locale/cs/LC_MESSAGES/bash.mo
+installing da.gmo as /lfs_build/usr/share/locale/da/LC_MESSAGES/bash.mo
+installing de.gmo as /lfs_build/usr/share/locale/de/LC_MESSAGES/bash.mo
+installing el.gmo as /lfs_build/usr/share/locale/el/LC_MESSAGES/bash.mo
+installing eo.gmo as /lfs_build/usr/share/locale/eo/LC_MESSAGES/bash.mo
+installing es.gmo as /lfs_build/usr/share/locale/es/LC_MESSAGES/bash.mo
+installing et.gmo as /lfs_build/usr/share/locale/et/LC_MESSAGES/bash.mo
+installing fi.gmo as /lfs_build/usr/share/locale/fi/LC_MESSAGES/bash.mo
+installing fr.gmo as /lfs_build/usr/share/locale/fr/LC_MESSAGES/bash.mo
+installing ga.gmo as /lfs_build/usr/share/locale/ga/LC_MESSAGES/bash.mo
+installing gl.gmo as /lfs_build/usr/share/locale/gl/LC_MESSAGES/bash.mo
+installing hr.gmo as /lfs_build/usr/share/locale/hr/LC_MESSAGES/bash.mo
+installing hu.gmo as /lfs_build/usr/share/locale/hu/LC_MESSAGES/bash.mo
+installing id.gmo as /lfs_build/usr/share/locale/id/LC_MESSAGES/bash.mo
+installing it.gmo as /lfs_build/usr/share/locale/it/LC_MESSAGES/bash.mo
+installing ja.gmo as /lfs_build/usr/share/locale/ja/LC_MESSAGES/bash.mo
+installing ko.gmo as /lfs_build/usr/share/locale/ko/LC_MESSAGES/bash.mo
+installing lt.gmo as /lfs_build/usr/share/locale/lt/LC_MESSAGES/bash.mo
+installing nb.gmo as /lfs_build/usr/share/locale/nb/LC_MESSAGES/bash.mo
+installing nl.gmo as /lfs_build/usr/share/locale/nl/LC_MESSAGES/bash.mo
+installing pl.gmo as /lfs_build/usr/share/locale/pl/LC_MESSAGES/bash.mo
+installing pt.gmo as /lfs_build/usr/share/locale/pt/LC_MESSAGES/bash.mo
+installing pt_BR.gmo as /lfs_build/usr/share/locale/pt_BR/LC_MESSAGES/bash.mo
+installing ro.gmo as /lfs_build/usr/share/locale/ro/LC_MESSAGES/bash.mo
+installing ru.gmo as /lfs_build/usr/share/locale/ru/LC_MESSAGES/bash.mo
+installing sk.gmo as /lfs_build/usr/share/locale/sk/LC_MESSAGES/bash.mo
+installing sl.gmo as /lfs_build/usr/share/locale/sl/LC_MESSAGES/bash.mo
+installing sr.gmo as /lfs_build/usr/share/locale/sr/LC_MESSAGES/bash.mo
+installing sv.gmo as /lfs_build/usr/share/locale/sv/LC_MESSAGES/bash.mo
+installing tr.gmo as /lfs_build/usr/share/locale/tr/LC_MESSAGES/bash.mo
+installing uk.gmo as /lfs_build/usr/share/locale/uk/LC_MESSAGES/bash.mo
+installing vi.gmo as /lfs_build/usr/share/locale/vi/LC_MESSAGES/bash.mo
+installing zh_CN.gmo as /lfs_build/usr/share/locale/zh_CN/LC_MESSAGES/bash.mo
+installing zh_TW.gmo as /lfs_build/usr/share/locale/zh_TW/LC_MESSAGES/bash.mo
+if test "bash" = "gettext-tools"; then \
+  /bin/sh ../support/mkinstalldirs /lfs_build/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /lfs_build/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /lfs_build/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/po'
+( cd /lfs_build/sources/bash-5.2.21/examples/loadables && make -j4 --jobserver-auth=3,4 DESTDIR=/lfs_build install )
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+make[1]: Entering directory '/lfs_build/sources/bash-5.2.21/examples/loadables'
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o print.o print.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o truefalse.o truefalse.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o sleep.o sleep.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o finfo.o finfo.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o logname.o logname.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o basename.o basename.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o dirname.o dirname.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o fdflags.o fdflags.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o tty.o tty.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o pathchk.o pathchk.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o tee.o tee.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o head.o head.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o mkdir.o mkdir.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o rmdir.o rmdir.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o mkfifo.o mkfifo.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o mktemp.o mktemp.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o printenv.o printenv.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o id.o id.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o whoami.o whoami.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o uname.o uname.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o sync.o sync.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o push.o push.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o ln.o ln.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o unlink.o unlink.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o realpath.o realpath.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o strftime.o strftime.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o mypid.o mypid.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o setpgid.o setpgid.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o seq.o seq.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o rm.o rm.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o accept.o accept.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o csv.o csv.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o dsv.o dsv.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o cut.o cut.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o stat.o stat.c
+x86_64-lfs-linux-uclibc-gcc -fPIC -DHAVE_CONFIG_H -DSHELL  -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/lfs_build/sources/bash-5.2.21 -I/lfs_build/sources/bash-5.2.21/lib -I/lfs_build/sources/bash-5.2.21/builtins -I../../lib/intl -I/lfs_build/sources/bash-5.2.21/lib/intl -c -o getconf.o getconf.c
+mkdir -p -- /lfs_build/usr/lib/bash
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,print -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o print print.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,truefalse -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o truefalse truefalse.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,sleep -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o sleep sleep.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,finfo -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o finfo finfo.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,logname -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o logname logname.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,basename -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o basename basename.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,dirname -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o dirname dirname.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,fdflags -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o fdflags fdflags.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,tty -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o tty tty.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,pathchk -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o pathchk pathchk.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,tee -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o tee tee.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,head -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o head head.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,mkdir -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o mkdir mkdir.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,rmdir -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o rmdir rmdir.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,mkfifo -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o mkfifo mkfifo.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,mktemp -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o mktemp mktemp.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,printenv -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o printenv printenv.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,id -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o id id.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,whoami -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o whoami whoami.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,uname -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o uname uname.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,sync -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o sync sync.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,push -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o push push.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,ln -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o ln ln.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,unlink -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o unlink unlink.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,realpath -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o realpath realpath.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,strftime -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o strftime strftime.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,mypid -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o mypid mypid.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,setpgid -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o setpgid setpgid.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,seq -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o seq seq.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,rm -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o rm rm.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,accept -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o accept accept.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,csv -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o csv csv.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,dsv -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o dsv dsv.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,cut -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o cut cut.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,stat -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o stat stat.o 
+x86_64-lfs-linux-uclibc-gcc -shared -Wl,-soname,getconf -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections  -o getconf getconf.o 
+make[2]: Entering directory '/lfs_build/sources/bash-5.2.21'
+make[2]: warning: -j4 forced in submake: resetting jobserver mode.
+mkdir -p -- /lfs_build/usr/include/bash
+mkdir -p -- /lfs_build/usr/include/bash/builtins
+mkdir -p -- /lfs_build/usr/include/bash/include
+mkdir -p -- /lfs_build/usr/lib/pkgconfig
+/usr/bin/install -c -m 644 ./support/bash.pc /lfs_build/usr/lib/pkgconfig/bash.pc
+make[2]: Leaving directory '/lfs_build/sources/bash-5.2.21'
+installing example loadable builtins in /lfs_build/usr/lib/bash
+print
+truefalse
+sleep
+finfo
+logname
+basename
+dirname
+fdflags
+tty
+pathchk
+tee
+head
+mkdir
+rmdir
+mkfifo
+mktemp
+printenv
+id
+whoami
+uname
+sync
+push
+ln
+unlink
+realpath
+strftime
+mypid
+setpgid
+seq
+rm
+accept
+csv
+dsv
+cut
+stat
+getconf
+make[1]: Leaving directory '/lfs_build/sources/bash-5.2.21/examples/loadables'
+'/lfs_build/bin/sh' -> 'bash'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Thu Mar 28 14:46:25 UTC 2024
+
+Totalseconds: 31
+
+KB: 900928	/lfs_build
+

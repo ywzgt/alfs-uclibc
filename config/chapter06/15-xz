@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="xz"
+
+./configure --prefix=/usr \
+	--host=$LFS_TGT \
+	--build=$(build-aux/config.guess) \
+	--disable-static
+
+make
+make DESTDIR=$LFS install
+rm -v $LFS/usr/lib/liblzma.la

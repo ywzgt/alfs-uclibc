@@ -1,0 +1,720 @@
+Patching gpm:
+Applying patch '../gpm-1.20.7-consolidated-1.patch'...
+patching file src/daemon/open_console.c
+patching file src/headers/daemon.h
+patching file src/prog/display-buttons.c
+patching file src/prog/display-coords.c
+patching file src/prog/get-versions.c
+patching file src/prog/gpm-root.y
+
+
+Thu Mar 28 16:50:18 UTC 2024
+KB: 1825288	/
+
+rm -f config/config.guess
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'config'.
+libtoolize: linking file 'config/config.guess'
+rm -f config/config.sub
+libtoolize: linking file 'config/config.sub'
+rm -f config/install-sh
+libtoolize: linking file 'config/install-sh'
+rm -f config/ltmain.sh
+libtoolize: linking file 'config/ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'config'.
+libtoolize: copying file 'config/config.guess'
+libtoolize: copying file 'config/config.sub'
+libtoolize: copying file 'config/install-sh'
+libtoolize: copying file 'config/ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+configure.ac:14: warning: The macro 'AC_CONFIG_HEADER' is obsolete.
+configure.ac:14: You should run autoupdate.
+./lib/autoconf/status.m4:719: AC_CONFIG_HEADER is expanded from...
+configure.ac:14: the top level
+configure.ac:43: warning: The macro 'AC_PROG_LIBTOOL' is obsolete.
+configure.ac:43: You should run autoupdate.
+aclocal.m4:114: AC_PROG_LIBTOOL is expanded from...
+configure.ac:43: the top level
+configure.ac:104: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:104: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+acinclude.m4:28: ITZ_CHECK_TYPE is expanded from...
+configure.ac:104: the top level
+configure.ac:109: warning: The macro 'ac_cv_prog_gcc' is obsolete.
+configure.ac:109: You should run autoupdate.
+./lib/autoconf/c.m4:448: ac_cv_prog_gcc is expanded from...
+acinclude.m4:2: ITZ_SYS_ELF is expanded from...
+configure.ac:109: the top level
+configure.ac:110: warning: The macro 'ac_cv_prog_gcc' is obsolete.
+configure.ac:110: You should run autoupdate.
+./lib/autoconf/c.m4:448: ac_cv_prog_gcc is expanded from...
+configure.ac:110: the top level
+configure.ac:161: warning: AC_OUTPUT should be used without arguments.
+configure.ac:161: You should run autoupdate.
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for bison... bison -y
+checking whether ln -s works... yes
+checking for dvips... no
+checking for texi2html... no
+checking for tex... no
+checking for texindex... /usr/bin/texindex
+checking for makeinfo... /usr/bin/makeinfo
+checking for diff... /usr/bin/diff
+checking for sed... (cached) /usr/bin/sed
+checking for emacs... (cached) no
+checking for syslog.h... yes
+checking for linux/input.h... yes
+checking for linux/joystick.h... yes
+checking for ncurses.h... yes
+checking for ncurses/curses.h... no
+checking for curses.h... yes
+checking for sys/sysmacros.h... yes
+checking for linux/major.h... yes
+checking for linux/tty.h... yes
+checking for sys/socket.h... yes
+checking for __u32... yes
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking whether system is ELF... yes
+checking for vsyslog... yes
+checking for syslog... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for tputs in -ltinfo... yes
+checking for wgetch in -lncurses... yes
+configure: creating ./config.status
+config.status: creating Makefile.include
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating src/Makefile
+config.status: creating contrib/Makefile
+config.status: creating doc/doc.gpm
+config.status: creating src/headers/config.h
+config.status: executing libtool commands
+touch src/.depend # to prevent unecessary warnings
+make -C src dep
+make[1]: Entering directory '/sources/gpm-1.20.7/src'
+bison -y  /sources/gpm-1.20.7/src/prog/gpm-root.y && mv y.tab.c prog/gpm-root.c
+# make links in srcdir
+make[1]: [Makefile:92: .depend] Error 1 (ignored)
+# create dependencies
+for DEPS in `echo *.c */*.c`; do \
+gcc -I. -I /sources/gpm-1.20.7/src -M -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG $DEPS | \
+/usr/bin/sed 's/^\(.*\)\.o\([ :]+\)/\1.o \1.lo\2/g' >> .depend ; done
+# make links in srcdir
+make[1]: [Makefile:92: dep] Error 1 (ignored)
+# create dependencies
+for DEPS in `echo *.c */*.c`; do \
+gcc -I. -I /sources/gpm-1.20.7/src -M -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG $DEPS | \
+/usr/bin/sed 's/^\(.*\)\.o\([ :]+\)/\1.o \1.lo\2/g' >> .depend ; done
+make[1]: Leaving directory '/sources/gpm-1.20.7/src'
+make[1]: Entering directory '/sources/gpm-1.20.7/src'
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o mice.o mice.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o twiddler.o twiddler.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o synaptics.o synaptics.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/add_mouse.o daemon/add_mouse.c
+mice.c: In function 'option_modem_lines':
+mice.c:187:37: warning: pointer targets in initialization of 'int *' from 'unsigned int *' differ in signedness [-Wpointer-sign]
+  187 |       {"dtr",  ARGV_BOOL, u: {iptr: &lines}, value: TIOCM_DTR},
+      |                                     ^
+mice.c:187:37: note: (near initialization for 'optioninfo[0].u.iptr')
+mice.c:188:37: warning: pointer targets in initialization of 'int *' from 'unsigned int *' differ in signedness [-Wpointer-sign]
+  188 |       {"rts",  ARGV_BOOL, u: {iptr: &lines}, value: TIOCM_RTS},
+      |                                     ^
+mice.c:188:37: note: (near initialization for 'optioninfo[1].u.iptr')
+mice.c:189:37: warning: pointer targets in initialization of 'int *' from 'unsigned int *' differ in signedness [-Wpointer-sign]
+  189 |       {"both", ARGV_BOOL, u: {iptr: &lines}, value: TIOCM_DTR | TIOCM_RTS},
+      |                                     ^
+mice.c:189:37: note: (near initialization for 'optioninfo[2].u.iptr')
+twiddler.c: In function 'twiddler_key':
+twiddler.c:253:10: warning: variable 'val' set but not used [-Wunused-but-set-variable]
+  253 |    char *val;
+      |          ^~~
+mice.c: In function 'M_summa':
+mice.c:345:4: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  345 |    if (y<0) y=0; if (y>summamaxy) y=summamaxy;
+      |    ^~
+mice.c:345:18: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  345 |    if (y<0) y=0; if (y>summamaxy) y=summamaxy;
+      |                  ^~
+twiddler.c: In function 'twiddler_rest_to_value':
+twiddler.c:432:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  432 |       return (char *)twiddler_escape_sequence(ptr+1, &len /* unused */);
+      |              ^
+mice.c: In function 'R_msc':
+mice.c:537:12: warning: variable 'dy' set but not used [-Wunused-but-set-variable]
+  537 |    int dx, dy;
+      |            ^~
+mice.c:537:8: warning: variable 'dx' set but not used [-Wunused-but-set-variable]
+  537 |    int dx, dy;
+      |        ^~
+mice.c: In function 'M_wacom':
+mice.c:897:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  897 |       if (x>wmaxx) x=wmaxx; if (x<0) x=0;
+      |       ^~
+mice.c:897:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  897 |       if (x>wmaxx) x=wmaxx; if (x<0) x=0;
+      |                             ^~
+mice.c:898:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  898 |       if (y>wmaxy) y=wmaxy; if (y<0) y=0;
+      |       ^~
+mice.c:898:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  898 |       if (y>wmaxy) y=wmaxy; if (y<0) y=0;
+      |                             ^~
+mice.c:907:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  907 |       if( abs(x-ox)>(wmaxx/wcmodell[WacomModell].treshold)
+      |       ^~
+synaptics.c: In function 'tp_hextoint':
+mice.c:908:68: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  908 |        || abs(y-oy)>(wmaxy/wcmodell[WacomModell].treshold) ) ox=x; oy=y;
+      |                                                                    ^~
+synaptics.c:2253:11: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+ 2253 |   sscanf (bytes, "%x", &result);
+      |           ^~~~~
+      |           |
+      |           unsigned char *
+In file included from synaptics.c:213:
+/usr/include/stdio.h:408:43: note: expected 'const char * restrict' but argument is of type 'unsigned char *'
+  408 | extern int sscanf (const char *__restrict __s,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~
+synaptics.c: In function 'tp_serial_send_cmd':
+synaptics.c:2320:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+ 2320 |   write (fd, cmd, strlen (cmd));
+      |                           ^~~
+      |                           |
+      |                           unsigned char *
+In file included from synaptics.c:216:
+/usr/include/string.h:248:35: note: expected 'const char *' but argument is of type 'unsigned char *'
+  248 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+synaptics.c:2321:37: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+ 2321 |   tp_serial_read (fd, junk, strlen (cmd));
+      |                                     ^~~
+      |                                     |
+      |                                     unsigned char *
+/usr/include/string.h:248:35: note: expected 'const char *' but argument is of type 'unsigned char *'
+  248 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+synaptics.c: In function 'syn_serial_set_mode':
+synaptics.c:2334:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 2334 |   sprintf (bytes, "%%C3B%02X5555", mode);
+      |            ^~~~~
+      |            |
+      |            unsigned char *
+/usr/include/stdio.h:330:38: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+  330 | extern int sprintf (char *__restrict __s,
+      |                     ~~~~~~~~~~~~~~~~~^~~
+mice.c: In function 'M_gunze':
+synaptics.c: In function 'syn_serial_read_ident':
+mice.c:1341:18: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+ 1341 |    if(sscanf(data+1, "%d,%d", &x, &y)!= 2) {
+      |              ~~~~^~
+      |                  |
+      |                  unsigned char *
+synaptics.c:2347:27: warning: pointer targets in passing argument 2 of 'tp_serial_send_cmd' differ in signedness [-Wpointer-sign]
+ 2347 |   tp_serial_send_cmd (fd, "%A");
+      |                           ^~~~
+      |                           |
+      |                           char *
+In file included from mice.c:45:
+/usr/include/stdio.h:408:43: note: expected 'const char * restrict' but argument is of type 'unsigned char *'
+  408 | extern int sscanf (const char *__restrict __s,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~
+synaptics.c:2315:47: note: expected 'unsigned char *' but argument is of type 'char *'
+ 2315 |                                unsigned char *cmd)
+      |                                ~~~~~~~~~~~~~~~^~~
+mice.c:1356:4: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 1356 |    if (x<0) x = 0; if (x > REALPOS_MAX) x = REALPOS_MAX;
+      |    ^~
+synaptics.c: In function 'syn_serial_read_model_id':
+mice.c:1356:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 1356 |    if (x<0) x = 0; if (x > REALPOS_MAX) x = REALPOS_MAX;
+      |                    ^~
+synaptics.c:2388:29: warning: pointer targets in passing argument 2 of 'tp_serial_send_cmd' differ in signedness [-Wpointer-sign]
+ 2388 |     tp_serial_send_cmd (fd, "%D");
+      |                             ^~~~
+      |                             |
+      |                             char *
+synaptics.c:2315:47: note: expected 'unsigned char *' but argument is of type 'char *'
+ 2315 |                                unsigned char *cmd)
+      |                                ~~~~~~~~~~~~~~~^~~
+mice.c:1357:4: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 1357 |    if (y<0) y = 0; if (y > REALPOS_MAX) y = REALPOS_MAX;
+      |    ^~
+synaptics.c: In function 'syn_serial_read_cap':
+mice.c:1357:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 1357 |    if (y<0) y = 0; if (y > REALPOS_MAX) y = REALPOS_MAX;
+      |                    ^~
+synaptics.c:2416:27: warning: pointer targets in passing argument 2 of 'tp_serial_send_cmd' differ in signedness [-Wpointer-sign]
+ 2416 |   tp_serial_send_cmd (fd, "%B");
+      |                           ^~~~
+      |                           |
+      |                           char *
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/init_mice.o daemon/init_mice.c
+mice.c: In function 'M_etouch':
+synaptics.c:2315:47: note: expected 'unsigned char *' but argument is of type 'char *'
+ 2315 |                                unsigned char *cmd)
+      |                                ~~~~~~~~~~~~~~~^~~
+mice.c:1452:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 1452 |   if (x<0) x = 0; if (x > REALPOS_MAX) x = REALPOS_MAX;
+      |   ^~
+mice.c:1452:19: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 1452 |   if (x<0) x = 0; if (x > REALPOS_MAX) x = REALPOS_MAX;
+      |                   ^~
+mice.c:1453:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 1453 |   if (y<0) y = 0; if (y > REALPOS_MAX) y = REALPOS_MAX;
+      |   ^~
+mice.c:1453:19: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 1453 |   if (y<0) y = 0; if (y > REALPOS_MAX) y = REALPOS_MAX;
+      |                   ^~
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/reset_mice.o daemon/reset_mice.c
+mice.c: In function 'I_wacom':
+mice.c:1843:10: warning: 'p' is used uninitialized [-Wuninitialized]
+ 1843 |    while(I_wacom_RequestData(NULL, fd, buffer, BUFFER_SIZE, p)) ;
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mice.c:1820:31: note: 'p' was declared here
+ 1820 |    char buffer[BUFFER_SIZE], *p;
+      |                               ^
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/build_argv.o daemon/build_argv.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/disable_paste.o daemon/disable_paste.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/do_client.o daemon/do_client.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/do_selection.o daemon/do_selection.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/get_console_size.o daemon/get_console_size.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/get_data.o daemon/get_data.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/getmousedata.o daemon/getmousedata.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/gpm.o daemon/gpm.c
+daemon/getmousedata.c: In function 'getMouseData':
+daemon/getmousedata.c:39:16: warning: pointer targets in initialization of 'char *' from 'unsigned char *' differ in signedness [-Wpointer-sign]
+   39 |    char *edata=data+type->packetlen;
+      |                ^~~~
+daemon/getmousedata.c:58:17: warning: pointer targets in returning 'unsigned char *' from a function with return type 'char *' differ in signedness [-Wpointer-sign]
+   58 |          return data;
+      |                 ^~~~
+daemon/getmousedata.c:89:11: warning: pointer targets in returning 'unsigned char *' from a function with return type 'char *' differ in signedness [-Wpointer-sign]
+   89 |    return data;
+      |           ^~~~
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/gpm-killed.o daemon/gpm-killed.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/header.o daemon/header.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/main.o daemon/main.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/old_main.o daemon/old_main.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/open_console.o daemon/open_console.c
+daemon/old_main.c: In function 'old_main':
+daemon/old_main.c:198:16: warning: value computed is not used [-Wunused-value]
+  198 |                ||  do_selection(&event);
+      |                ^~
+daemon/open_console.c: In function 'open_console':
+daemon/open_console.c:52:21: warning: 'si.line' may be used uninitialized [-Wmaybe-uninitialized]
+   52 |               if (si.line > 0) {
+      |                   ~~^~~~~
+daemon/open_console.c:43:25: note: 'si' declared here
+   43 |    struct serial_struct si;
+      |                         ^~
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/check_kill.o daemon/check_kill.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/gpm_exited.o daemon/gpm_exited.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o generic/isodigit.o generic/isodigit.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o generic/getsym.o generic/getsym.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/processspecial.o daemon/processspecial.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/processconn.o daemon/processconn.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/processmouse.o daemon/processmouse.c
+daemon/processmouse.c: In function 'processMouse':
+daemon/processmouse.c:82:57: warning: pointer targets in passing argument 2 of 'which_mouse->m_type->fun' differ in signedness [-Wpointer-sign]
+   82 |             || ((*((which_mouse->m_type)->fun))(&nEvent,data)==-1) ) {
+      |                                                         ^~~~
+      |                                                         |
+      |                                                         char *
+daemon/processmouse.c:82:57: note: expected 'unsigned char *' but argument is of type 'char *'
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/processrequest.o daemon/processrequest.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/selection_copy.o daemon/selection_copy.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/selection_paste.o daemon/selection_paste.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/cmdline.o daemon/cmdline.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/loadlut.o daemon/loadlut.c
+daemon/cmdline.c: In function 'cmdline':
+daemon/cmdline.c:46:20: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   46 |                    if (optarg)
+      |                    ^~
+daemon/cmdline.c:47:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   47 |                      opt_age_limit = atoi(optarg);       break;
+      |                                                          ^~~~~
+daemon/cmdline.c:71:13: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+   71 |             else (which_mouse->opt_scale)=100/(which_mouse->opt_scale);                break;
+      |             ^~~~
+daemon/cmdline.c:71:88: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+   71 |             else (which_mouse->opt_scale)=100/(which_mouse->opt_scale);                break;
+      |                                                                                        ^~~~~
+daemon/cmdline.c:75:13: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+   75 |             else        option.repeater_type = "msc";    break;
+      |             ^~~~
+daemon/cmdline.c:75:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+   75 |             else        option.repeater_type = "msc";    break;
+      |                                                          ^~~~~
+daemon/cmdline.c:78:20: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+   78 |                    else opt_special="";                  break;
+      |                    ^~~~
+daemon/cmdline.c:78:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+   78 |                    else opt_special="";                  break;
+      |                                                          ^~~~~
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/find_mouse_by_name.o daemon/find_mouse_by_name.c
+daemon/loadlut.c: In function 'loadlut':
+daemon/loadlut.c:53:26: warning: pointer targets in passing argument 1 of 'getsym' differ in signedness [-Wpointer-sign]
+   53 |       i += getsym(charset+i, &this);
+      |                   ~~~~~~~^~
+      |                          |
+      |                          char *
+In file included from daemon/loadlut.c:30:
+/sources/gpm-1.20.7/src/headers/daemon.h:201:35: note: expected 'const unsigned char *' but argument is of type 'char *'
+  201 | int   getsym(const unsigned char *p0, unsigned char *res);
+      |              ~~~~~~~~~~~~~~~~~~~~~^~
+daemon/loadlut.c:55:31: warning: pointer targets in passing argument 1 of 'getsym' differ in signedness [-Wpointer-sign]
+   55 |          i += getsym(charset+i+1, &next) + 1;
+      |                      ~~~~~~~~~^~
+      |                               |
+      |                               char *
+/sources/gpm-1.20.7/src/headers/daemon.h:201:35: note: expected 'const unsigned char *' but argument is of type 'char *'
+  201 | int   getsym(const unsigned char *p0, unsigned char *res);
+      |              ~~~~~~~~~~~~~~~~~~~~~^~
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/usage.o daemon/usage.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/check_uniqueness.o daemon/check_uniqueness.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/startup.o daemon/startup.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o daemon/wait_text.o daemon/wait_text.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o report.o report.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o tools.o tools.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -DPIC -fPIC -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/liblow.lo lib/liblow.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -DPIC -fPIC -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/libhigh.lo lib/libhigh.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -DPIC -fPIC -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/libxtra.lo lib/libxtra.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -DPIC -fPIC -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/report-lib.lo lib/report-lib.c
+lib/report-lib.c: In function 'gpm_report':
+lib/report-lib.c:51:4: warning: 'log_level' may be used uninitialized [-Wmaybe-uninitialized]
+   51 |    vsyslog(log_level, text, ap);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lib/report-lib.c:30:8: note: 'log_level' was declared here
+   30 |    int log_level;
+      |        ^~~~~~~~~
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -DPIC -fPIC -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o tools.lo tools.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -DPIC -fPIC -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/libcurses.lo lib/libcurses.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/liblow.o lib/liblow.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/libhigh.o lib/libhigh.c
+lib/libcurses.c: In function 'Gpm_Wgetch':
+lib/libcurses.c:148:25: warning: pointer targets in passing argument 1 of 'gpm_convert_event' differ in signedness [-Wpointer-sign]
+  148 |       gpm_convert_event(mdata,&ev);
+      |                         ^~~~~
+      |                         |
+      |                         unsigned char *
+lib/libcurses.c:98:40: note: expected 'char *' but argument is of type 'unsigned char *'
+   98 |     extern int gpm_convert_event(char *data, Gpm_Event *event);
+      |                                  ~~~~~~^~~~
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/libxtra.o lib/libxtra.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/report-lib.o lib/report-lib.c
+gcc -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o lib/libcurses.o lib/libcurses.c
+lib/report-lib.c: In function 'gpm_report':
+lib/report-lib.c:51:4: warning: 'log_level' may be used uninitialized [-Wmaybe-uninitialized]
+   51 |    vsyslog(log_level, text, ap);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lib/report-lib.c:30:8: note: 'log_level' was declared here
+   30 |    int log_level;
+      |        ^~~~~~~~~
+gcc -Iheaders -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o prog/mev.o prog/mev.c
+gcc -Iheaders -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o prog/hltest.o prog/hltest.c
+lib/libcurses.c: In function 'Gpm_Wgetch':
+lib/libcurses.c:148:25: warning: pointer targets in passing argument 1 of 'gpm_convert_event' differ in signedness [-Wpointer-sign]
+  148 |       gpm_convert_event(mdata,&ev);
+      |                         ^~~~~
+      |                         |
+      |                         unsigned char *
+lib/libcurses.c:98:40: note: expected 'char *' but argument is of type 'unsigned char *'
+   98 |     extern int gpm_convert_event(char *data, Gpm_Event *event);
+      |                                  ~~~~~~^~~~
+gcc -Iheaders -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o prog/mouse-test.o prog/mouse-test.c
+gcc -Iheaders -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o prog/open_console.o prog/open_console.c
+gcc -Iheaders -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o prog/disable-paste.o prog/disable-paste.c
+prog/mouse-test.c: In function 'main':
+prog/mouse-test.c:536:52: warning: pointer targets in passing argument 2 of 'cur->this->fun' differ in signedness [-Wpointer-sign]
+  536 |                  if ((*(cur->this->fun))(&event,buf+i)==-1) {
+      |                                                 ~~~^~
+      |                                                    |
+      |                                                    char *
+prog/mouse-test.c:536:52: note: expected 'unsigned char *' but argument is of type 'char *'
+prog/mouse-test.c:205:40: warning: value computed is not used [-Wunused-value]
+  205 | #define CHECKFAIL(count)   ((count)==0 && noneofthem())
+      |                                        ^~
+prog/mouse-test.c:569:4: note: in expansion of macro 'CHECKFAIL'
+  569 |    CHECKFAIL(typecount);
+      |    ^~~~~~~~~
+prog/mouse-test.c:610:50: warning: pointer targets in passing argument 2 of 'cur->this->fun' differ in signedness [-Wpointer-sign]
+  610 |                if ((*(cur->this->fun))(&event,buf+i)==-1) continue;
+      |                                               ~~~^~
+      |                                                  |
+      |                                                  char *
+prog/mouse-test.c:610:50: note: expected 'unsigned char *' but argument is of type 'char *'
+prog/mouse-test.c:205:40: warning: value computed is not used [-Wunused-value]
+  205 | #define CHECKFAIL(count)   ((count)==0 && noneofthem())
+      |                                        ^~
+prog/mouse-test.c:622:4: note: in expansion of macro 'CHECKFAIL'
+  622 |    CHECKFAIL(typecount);
+      |    ^~~~~~~~~
+prog/mouse-test.c:652:50: warning: pointer targets in passing argument 2 of 'cur->this->fun' differ in signedness [-Wpointer-sign]
+  652 |                if ((*(cur->this->fun))(&event,buf+i)==-1) continue;
+      |                                               ~~~^~
+      |                                                  |
+      |                                                  char *
+prog/mouse-test.c:652:50: note: expected 'unsigned char *' but argument is of type 'char *'
+prog/mouse-test.c:205:40: warning: value computed is not used [-Wunused-value]
+  205 | #define CHECKFAIL(count)   ((count)==0 && noneofthem())
+      |                                        ^~
+prog/mouse-test.c:671:4: note: in expansion of macro 'CHECKFAIL'
+  671 |    CHECKFAIL(typecount);
+      |    ^~~~~~~~~
+gcc -Iheaders -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o prog/display-buttons.o prog/display-buttons.c
+gcc -Iheaders -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o prog/display-coords.o prog/display-coords.c
+prog/display-buttons.c: In function 'display_data':
+prog/display-buttons.c:52:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'time_t' {aka 'long int'} [-Wformat=]
+   52 |    printf("[%d] delta: %ds",now,delta);
+      |             ~^              ~~~
+      |              |              |
+      |              int            time_t {aka long int}
+      |             %ld
+gcc -Iheaders -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o prog/get-versions.o prog/get-versions.c
+prog/display-coords.c: In function 'display_data':
+prog/display-coords.c:53:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'time_t' {aka 'long int'} [-Wformat=]
+   53 |    printf("[%d] delta: %ds",now,delta);
+      |             ~^              ~~~
+      |              |              |
+      |              int            time_t {aka long int}
+      |             %ld
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o gpm mice.o twiddler.o synaptics.o daemon/add_mouse.o daemon/init_mice.o daemon/reset_mice.o daemon/build_argv.o daemon/disable_paste.o daemon/do_client.o daemon/do_selection.o daemon/get_console_size.o daemon/get_data.o daemon/getmousedata.o daemon/gpm.o daemon/gpm-killed.o daemon/header.o daemon/main.o daemon/old_main.o daemon/open_console.o daemon/check_kill.o daemon/gpm_exited.o generic/isodigit.o generic/getsym.o daemon/processspecial.o daemon/processconn.o daemon/processmouse.o daemon/processrequest.o daemon/selection_copy.o daemon/selection_paste.o daemon/cmdline.o daemon/loadlut.o daemon/find_mouse_by_name.o daemon/usage.o daemon/check_uniqueness.o daemon/startup.o daemon/wait_text.o report.o tools.o   -lm
+gcc -fPIC -shared -Wl,-soname,libgpm.so.2 \
+-Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o lib/libgpm.so.2.1.0 lib/liblow.lo lib/libhigh.lo lib/libxtra.lo lib/report-lib.lo tools.lo lib/libcurses.lo  -lncurses  -ltinfo  -lc 	
+ar rc lib/libgpm.a lib/liblow.o lib/libhigh.o lib/libxtra.o lib/report-lib.o tools.o lib/libcurses.o
+ranlib lib/libgpm.a
+ln -s -f libgpm.so.2.1.0 lib/libgpm.so.2
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o prog/mev prog/mev.o lib/libgpm.so.2  
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o prog/hltest prog/hltest.o lib/libgpm.so.2  
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o prog/disable-paste prog/disable-paste.o lib/libgpm.so.2  
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o prog/display-buttons prog/display-buttons.o lib/libgpm.so.2  
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o prog/display-coords prog/display-coords.o lib/libgpm.so.2  
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o prog/get-versions prog/get-versions.o lib/libgpm.so.2  
+gcc -I. -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -c -o prog/gpm-root.o prog/gpm-root.c
+/sources/gpm-1.20.7/src/prog/gpm-root.y: In function 'postmenu':
+/sources/gpm-1.20.7/src/prog/gpm-root.y:1030:32: warning: pointer targets in assignment from 'char *' to 'unsigned char *' differ in signedness [-Wpointer-sign]
+ 1030 | #define PUTS(s,f,b)   for(curr2=s;*curr2;PUTC(*(curr2++),f,b))
+      |                                ^
+/sources/gpm-1.20.7/src/prog/gpm-root.y:1045:10: note: in expansion of macro 'PUTS'
+ 1045 |          PUTS(draw->title,draw->head,draw->back);
+      |          ^~~~
+/sources/gpm-1.20.7/src/prog/gpm-root.y:1030:32: warning: pointer targets in assignment from 'char *' to 'unsigned char *' differ in signedness [-Wpointer-sign]
+ 1030 | #define PUTS(s,f,b)   for(curr2=s;*curr2;PUTC(*(curr2++),f,b))
+      |                                ^
+/sources/gpm-1.20.7/src/prog/gpm-root.y:1053:10: note: in expansion of macro 'PUTS'
+ 1053 |          PUTS(item->name,draw->fore,draw->back); i+=strlen(item->name);
+      |          ^~~~
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o prog/mouse-test prog/mouse-test.o mice.o twiddler.o synaptics.o prog/open_console.o lib/libgpm.so.2   -lm
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/sources/gpm-1.20.7/src -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o prog/gpm-root prog/gpm-root.o   lib/libgpm.so.2
+rm prog/mev.o prog/disable-paste.o prog/display-buttons.o prog/hltest.o prog/get-versions.o prog/display-coords.o
+make[1]: Leaving directory '/sources/gpm-1.20.7/src'
+make[1]: Entering directory '/sources/gpm-1.20.7/doc'
+awk -f /sources/gpm-1.20.7/doc/manpager doc.gpm
+/usr/bin/sed -f /sources/gpm-1.20.7/doc/infofilter /sources/gpm-1.20.7/doc/doc.gpm > /sources/gpm-1.20.7/doc/gpm.texinfo
+awk: /sources/gpm-1.20.7/doc/manpager:35: warning: escape sequence `\{' treated as plain `{'
+awk: /sources/gpm-1.20.7/doc/manpager:36: warning: escape sequence `\}' treated as plain `}'
+awk: /sources/gpm-1.20.7/doc/manpager:93: (FILENAME=doc.gpm FNR=196) warning: regexp escape sequence `\%' is not a known regexp operator
+chmod 400 /sources/gpm-1.20.7/doc/gpm.texinfo
+if [ "/usr/bin/makeinfo" != "no" ]; then /usr/bin/makeinfo --no-split /sources/gpm-1.20.7/doc/gpm.texinfo -o /sources/gpm-1.20.7/doc/gpm.info; fi
+for i in gpm-root.1 gpm-types.7 gpm.8 mev.1 mouse-test.1; do \
+	expand $i | sed s/^'[ ]*'//g > $i.new; \
+	mv $i.new $i; \
+done;
+touch gpm.man
+gpm.texinfo:32: warning: undefined flag: version
+gpm.texinfo:84: warning: multiple @setchapternewpage
+gpm.texinfo:89: warning: @subtitle missing argument
+gpm.texinfo:94: warning: multiple @setchapternewpage
+rm /sources/gpm-1.20.7/doc/gpm.texinfo
+make[1]: Leaving directory '/sources/gpm-1.20.7/doc'
+make[1]: Entering directory '/sources/gpm-1.20.7/contrib'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/gpm-1.20.7/contrib'
+make -C src dep
+mkdir -p  /usr/lib /usr/bin /usr/sbin /usr/include /etc; \
+if test "x" != "x" ; then \
+	mkdir -p  /usr/share/emacs/site-lisp ; \
+fi
+make[1]: Entering directory '/sources/gpm-1.20.7/src'
+# make links in srcdir
+make[1]: [Makefile:92: dep] Error 1 (ignored)
+# create dependencies
+for DEPS in `echo *.c */*.c`; do \
+gcc -I. -I /sources/gpm-1.20.7/src -M -DNDEBUG -I/sources/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE -DNDEBUG $DEPS | \
+/usr/bin/sed 's/^\(.*\)\.o\([ :]+\)/\1.o \1.lo\2/g' >> .depend ; done
+make[1]: Leaving directory '/sources/gpm-1.20.7/src'
+make[1]: Entering directory '/sources/gpm-1.20.7/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/gpm-1.20.7/src'
+make[1]: Entering directory '/sources/gpm-1.20.7/src'
+/usr/bin/install -c gpm /usr/sbin/gpm
+if [ -f lib/libgpm.a ] ; then \
+/usr/bin/install -c -m 644 -m 644 lib/libgpm.a /usr/lib/libgpm.a ; \
+fi
+make[1]: Entering directory '/sources/gpm-1.20.7/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/gpm-1.20.7/doc'
+/usr/bin/install -c -m 644 -m 644 /sources/gpm-1.20.7/src/headers/gpm.h /usr/include/gpm.h
+# POSIX requires the range of a for loop be nonempty and Bash
+make[1]: Entering directory '/sources/gpm-1.20.7/contrib'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/gpm-1.20.7/contrib'
+# 2.x goes along; unfortunately that means an additional
+# headache in cases like this
+if test "xlibgpm.so" != "x" ; then \
+	/usr/bin/install -c -m 644 -m 644 lib/libgpm.so.2.1.0 /usr/lib/libgpm.so.2.1.0	;	\
+	cd /usr/lib && ln -s -f libgpm.so.2.1.0 libgpm.so.2 					;	\
+      echo "WARNING: We installed a lib, you should now call ldconfig" 						; 	\
+      echo "f.i.: ldconfig -n -l /usr/lib/libgpm.so.2.1.0" 								;	\
+      echo "Or to update everything just type ldconfig"											;	\
+fi
+WARNING: We installed a lib, you should now call ldconfig
+f.i.: ldconfig -n -l /usr/lib/libgpm.so.2.1.0
+Or to update everything just type ldconfig
+for i in prog/mev prog/hltest prog/mouse-test prog/disable-paste prog/display-buttons prog/display-coords prog/get-versions prog/gpm-root; do \
+	/usr/bin/install -c $i /usr/bin/`echo $i | sed 's,prog/,,'` ;\
+done
+make[1]: Leaving directory '/sources/gpm-1.20.7/src'
+make[1]: Entering directory '/sources/gpm-1.20.7/doc'
+mkdir -p  /usr/share/man/man1 /usr/share/man/man7 /usr/share/man/man8 /usr/share/info	
+/usr/bin/install -c -m 644 -m 644 mev.1          /usr/share/man/man1
+/usr/bin/install -c -m 644 -m 644 mouse-test.1   /usr/share/man/man1
+/usr/bin/install -c -m 644 -m 644 gpm-root.1     /usr/share/man/man1
+/usr/bin/install -c -m 644 -m 644 gpm-types.7    /usr/share/man/man7
+/usr/bin/install -c -m 644 -m 644 gpm.8          /usr/share/man/man8
+/usr/bin/install -c -m 644 -m 644 /sources/gpm-1.20.7/doc/gpm.info       /usr/share/info
+# Use install-info if available
+if /bin/sh -c 'install-info --version' >/dev/null 2>&1; then \
+  if [ -f /usr/share/info/dir ] ; then \
+	install-info --dir-file=/usr/share/info/dir /usr/share/info/gpm.info; \
+  fi; \
+fi
+#itz Sat Dec 26 23:21:05 PST 1998
+#i keep all my infopages compressed and i'm tired to do it by
+#hand, so check if there are any compressed pages and do this
+#one too
+ls /usr/share/info/*[-.]info.gz >/dev/null 2>&1 \
+	&& gzip -f /usr/share/info/gpm.info
+# Hmm.... shouldn't man pages be compressed too?
+make[1]: Leaving directory '/sources/gpm-1.20.7/doc'
+make[1]: Entering directory '/sources/gpm-1.20.7/contrib'
+if [ -n "" ]; then for i in `echo `; do \
+	/usr/bin/install -c -m 644 /sources/gpm-1.20.7/contrib/$i /usr/share/emacs/site-lisp/`basename $i` ;\
+done; fi
+make[1]: Leaving directory '/sources/gpm-1.20.7/contrib'
+removed '/usr/lib/libgpm.a'
+'conf/gpm-root.conf' -> '/etc/gpm-root.conf'
+install: creating directory '/usr/share/doc/gpm'
+'doc/FAQ' -> '/usr/share/doc/gpm/FAQ'
+'doc/HACK_GPM' -> '/usr/share/doc/gpm/HACK_GPM'
+'doc/README.1.20.2' -> '/usr/share/doc/gpm/README.1.20.2'
+'doc/README.etouch' -> '/usr/share/doc/gpm/README.etouch'
+'doc/README.gunze' -> '/usr/share/doc/gpm/README.gunze'
+'doc/README.microtouch' -> '/usr/share/doc/gpm/README.microtouch'
+'doc/README.synaptics' -> '/usr/share/doc/gpm/README.synaptics'
+'doc/README.twiddler' -> '/usr/share/doc/gpm/README.twiddler'
+install: creating directory '/usr/share/doc/gpm/support'
+'doc/support/README' -> '/usr/share/doc/gpm/support/README'
+'doc/support/logitech_1' -> '/usr/share/doc/gpm/support/logitech_1'
+'doc/support/logitech_2' -> '/usr/share/doc/gpm/support/logitech_2'
+'doc/support/logitech_3' -> '/usr/share/doc/gpm/support/logitech_3'
+'doc/support/mouse-maintainer-XFree' -> '/usr/share/doc/gpm/support/mouse-maintainer-XFree'
+'doc/support/mouse-maintainer-XFree.status' -> '/usr/share/doc/gpm/support/mouse-maintainer-XFree.status'
+'/lib/libgpm.so' -> 'libgpm.so.2.1.0'
+Cloning into 'blfs-systemd-units'...
+make: Entering directory '/sources/gpm-1.20.7/blfs-systemd-units'
+install -d -m 755 /etc/default
+install -d -m 755 /usr/lib/tmpfiles.d
+install -d -m 755 /usr/lib/systemd/system
+install -m 644 blfs/units/gpm.service /usr/lib/systemd/system/
+install -m 644 blfs/units/gpm.path    /usr/lib/systemd/system/
+test -n "" || systemctl enable gpm.service
+Created symlink /etc/systemd/system/multi-user.target.wants/gpm.service → /usr/lib/systemd/system/gpm.service.
+make: Leaving directory '/sources/gpm-1.20.7/blfs-systemd-units'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu Mar 28 16:50:28 UTC 2024
+
+Totalseconds: 10
+
+KB: 1833436	/
+

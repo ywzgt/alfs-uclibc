@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="groff"
+PKG="$SRC"
+
+PAGE=A4 ./configure --prefix=/usr
+
+make
+make install

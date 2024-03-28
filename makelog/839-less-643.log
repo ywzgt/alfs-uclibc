@@ -1,0 +1,163 @@
+Thu Mar 28 15:59:53 UTC 2024
+KB: 1159064	/
+
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for library containing strerror... none required
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether gcc needs -traditional... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for tgoto in -ltinfo... yes
+checking for tgoto in -ltinfow... no
+checking for initscr in -lxcurses... no
+checking for initscr in -lncursesw... yes
+checking for initscr in -lncurses... yes
+checking for initscr in -lcurses... yes
+checking for tgetent in -ltermcap... no
+checking for tgetent in -ltermlib... no
+checking for library containing regcmp... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for ctype.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for limits.h... yes
+checking for stdckdint.h... no
+checking for termcap.h... yes
+checking for ncurses/termcap.h... no
+checking for ncursesw/termcap.h... no
+checking for termio.h... yes
+checking for termios.h... yes
+checking for time.h... yes
+checking for values.h... yes
+checking for linux/magic.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/stream.h... no
+checking for sys/wait.h... yes
+checking for wctype.h... yes
+checking whether stat file-mode macros are broken... no
+checking for an ANSI C-conforming const... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for working terminal libraries... using -ltinfo
+checking for void... yes
+checking for const... yes
+checking for time_t... yes
+checking for st_ino in struct stat... yes
+checking for procfs... yes
+checking for ANSI function prototypes... yes
+checking for fchmod... yes
+checking for fsync... yes
+checking for nanosleep... yes
+checking for poll... yes
+checking for popen... yes
+checking for realpath... yes
+checking for _setjmp... yes
+checking for sigprocmask... yes
+checking for sigsetmask... no
+checking for snprintf... yes
+checking for stat... yes
+checking for strsignal... yes
+checking for system... yes
+checking for ttyname... yes
+checking for usleep... yes
+checking for memcpy... yes
+checking for strchr... yes
+checking for strstr... yes
+checking for tcgetattr... yes
+checking for fileno... yes
+checking for strerror... yes
+checking for sys_errlist... yes
+checking for sigset_t... yes
+checking for sigemptyset... yes
+checking for errno... yes - in errno.h
+checking for locale... yes
+checking for ctype functions... yes
+checking for wctype functions... yes
+checking termcap for ospeed... yes - in termcap.h
+checking for POSIX regcomp... yes
+regular expression library:  posix
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating defines.h
+test ! -f stamp-h || CONFIG_FILES= CONFIG_HEADERS=defines.h ./config.status
+touch stamp-h
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections lesskey.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections lessecho.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections main.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections screen.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections brac.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections ch.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections charset.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections cmdbuf.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections command.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections cvt.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections decode.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections edit.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections filename.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections forwback.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections help.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections ifile.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections input.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections jump.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections line.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections linenum.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections lsystem.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections mark.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections optfunc.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections option.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections opttbl.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections os.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections output.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections pattern.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections position.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections prompt.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections search.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections signal.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections tags.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections ttyin.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections version.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections xbuf.c
+gcc -I. -c -DBINDIR=\"/usr/bin\" -DSYSDIR=\"/etc\" -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections lesskey_parse.c
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o lessecho lessecho.o version.o
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o lesskey lesskey.o lesskey_parse.o xbuf.o version.o
+gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o less main.o screen.o brac.o ch.o charset.o cmdbuf.o command.o cvt.o decode.o edit.o filename.o forwback.o help.o ifile.o input.o jump.o line.o linenum.o lsystem.o mark.o optfunc.o option.o opttbl.o os.o output.o pattern.o position.o prompt.o search.o signal.o tags.o ttyin.o version.o xbuf.o   lesskey_parse.o -ltinfo
+./mkinstalldirs /usr/bin /usr/share/man/man1
+/usr/bin/install -c less /usr/bin/less
+/usr/bin/install -c lesskey /usr/bin/lesskey
+/usr/bin/install -c lessecho /usr/bin/lessecho
+/usr/bin/install -c -m 644 ./less.nro /usr/share/man/man1/less.1
+/usr/bin/install -c -m 644 ./lesskey.nro /usr/share/man/man1/lesskey.1
+/usr/bin/install -c -m 644 ./lessecho.nro /usr/share/man/man1/lessecho.1
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu Mar 28 15:59:59 UTC 2024
+
+Totalseconds: 6
+
+KB: 1169424	/
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+# https://gitweb.gentoo.org/repo/gentoo.git/tree/sys-libs/queue-standalone
+# https://gitweb.gentoo.org/repo/gentoo.git/tree/app-arch/libarchive/libarchive-3.7.0.ebuild
+# https://linuxfromscratch.org/blfs/view/git/general/libarchive.html
+# 需要 sys/queue.h
+
+SRC="libarchive"
+PKG="$SRC"
+
+./configure --prefix=/usr
+
+make
+make install

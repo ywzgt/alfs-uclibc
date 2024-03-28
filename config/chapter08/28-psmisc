@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="psmisc"
+PKG="$SRC"
+
+./configure --prefix=/usr
+
+make
+make install
