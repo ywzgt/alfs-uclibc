@@ -1,0 +1,231 @@
+Fri Mar 29 02:37:27 UTC 2024
+KB: 1758896	/
+
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of g++... gcc3
+checking for gcc... gcc
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking dependency style of gcc... gcc3
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking for nm... nm
+checking whether reproducible build is selected (SOURCE_DATE_EPOCH)... no
+checking whether this is a build from SVN... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for locale.h... yes
+checking for byteswap.h... yes
+checking for sys/sysmacros.h... yes
+checking for linux/compiler.h... no
+checking for linux/cciss_ioctl.h... yes
+checking for __int128... yes
+checking for long double with more range or precision than double... yes
+checking for getopt_long... yes
+checking whether byte ordering is bigendian... no
+checking whether g++ supports __attribute__((packed))... yes
+checking for cap-ng.h... no
+checking for systemd/sd-daemon.h... yes
+checking for sd_notify in -lsystemd... yes
+checking for systemdsystemunitdir... /usr/lib/systemd/system
+checking for path of systemd EnvironmentFile... ${sysconfdir}/default/smartmontools
+checking for sigaction... yes
+checking for g++ option to accept C++17... none needed
+checking for g++ option to accept C++14 but not C++17... -std=gnu++14
+checking for g++ option to accept C++11 but not C++14... -std=gnu++11
+checking for regcomp... yes
+checking whether the OS provides a POSIX API... yes
+checking whether os_linux.cpp uses new interface... yes
+checking whether NVMe device scanning could be safely enabled... yes
+checking whether _FORTIFY_SOURCE is predefined... no
+checking whether g++ supports _FORTIFY_SOURCE=3... no
+checking whether g++ supports _FORTIFY_SOURCE=2... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+checking whether make sets $(MAKE)... (cached) yes
+configure:
+-----------------------------------------------------------------------------
+smartmontools-7.4 configuration:
+host operating system:  x86_64-pc-linux-uclibc
+C++ compiler:           g++
+C compiler:             gcc
+preprocessor flags:     -DNDEBUG
+C++ compiler flags:     -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W
+C compiler flags:       -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+linker flags:           -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+OS specific modules:    os_linux.o cciss.o dev_areca.o  
+binary install path:    /usr/sbin
+man page install path:  /usr/share/man
+doc file install path:  /usr/share/doc/smartmontools
+examples install path:  /usr/share/doc/smartmontools/examplescripts
+drive database file:    /usr/share/smartmontools/drivedb.h
+database update script: /usr/sbin/update-smart-drivedb
+database update branch: branches/RELEASE_7_3_DRIVEDB
+download tools:         curl wget lynx svn
+GnuPG for verification: gpg
+local drive database:   /etc/smart_drivedb.h
+smartd config file:     /etc/smartd.conf
+smartd warning script:  /etc/smartd_warning.sh
+smartd plugin path:     /etc/smartd_warning.d
+PATH within scripts:    /usr/local/bin:/usr/bin:/bin
+smartd service file:    /usr/lib/systemd/system/smartd.service
+smartd environ file:    /etc/default/smartmontools
+smartd save files:      [disabled]
+smartd attribute logs:  [disabled]
+SELinux support:        no
+libcap-ng support:      no
+systemd notify support: yes
+NVMe DEVICESCAN:        yes
+-----------------------------------------------------------------------------
+
+make  all-am
+make[1]: Entering directory '/sources/smartmontools-7.4'
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT atacmdnames.o -MD -MP -MF .deps/atacmdnames.Tpo -c -o atacmdnames.o atacmdnames.cpp
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT atacmds.o -MD -MP -MF .deps/atacmds.Tpo -c -o atacmds.o atacmds.cpp
+ cat ChangeLog NEWS $(SOURCES) | $(VERSION_FROM_SVN_IDS) > svnversion.h
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT ataidentify.o -MD -MP -MF .deps/ataidentify.Tpo -c -o ataidentify.o ataidentify.cpp
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT ataprint.o -MD -MP -MF .deps/ataprint.Tpo -c -o ataprint.o ataprint.cpp
+mv -f .deps/atacmdnames.Tpo .deps/atacmdnames.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT dev_ata_cmd_set.o -MD -MP -MF .deps/dev_ata_cmd_set.Tpo -c -o dev_ata_cmd_set.o dev_ata_cmd_set.cpp
+mv -f .deps/ataidentify.Tpo .deps/ataidentify.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT dev_intelliprop.o -MD -MP -MF .deps/dev_intelliprop.Tpo -c -o dev_intelliprop.o dev_intelliprop.cpp
+atacmds.cpp:2616:1: warning: '{anonymous}::parsed_ata_device::~parsed_ata_device()' defined but not used [-Wunused-function]
+ 2616 | parsed_ata_device::~parsed_ata_device()
+      | ^~~~~~~~~~~~~~~~~
+atacmds.cpp:2606:1: warning: '{anonymous}::parsed_ata_device::parsed_ata_device(smart_interface*, const char*)' defined but not used [-Wunused-function]
+ 2606 | parsed_ata_device::parsed_ata_device(smart_interface * intf, const char * dev_name)
+      | ^~~~~~~~~~~~~~~~~
+mv -f .deps/dev_ata_cmd_set.Tpo .deps/dev_ata_cmd_set.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT dev_interface.o -MD -MP -MF .deps/dev_interface.Tpo -c -o dev_interface.o dev_interface.cpp
+mv -f .deps/dev_intelliprop.Tpo .deps/dev_intelliprop.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT dev_jmb39x_raid.o -MD -MP -MF .deps/dev_jmb39x_raid.Tpo -c -o dev_jmb39x_raid.o dev_jmb39x_raid.cpp
+mv -f .deps/dev_interface.Tpo .deps/dev_interface.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT farmcmds.o -MD -MP -MF .deps/farmcmds.Tpo -c -o farmcmds.o farmcmds.cpp
+mv -f .deps/atacmds.Tpo .deps/atacmds.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT farmprint.o -MD -MP -MF .deps/farmprint.Tpo -c -o farmprint.o farmprint.cpp
+dev_jmb39x_raid.cpp: In member function 'virtual ata_device* smart_interface::get_jmb39x_device(const char*, smart_device*)':
+dev_jmb39x_raid.cpp:737:98: warning: 'version' may be used uninitialized [-Wmaybe-uninitialized]
+  737 |   ata_device * jmbdev = new jmb39x::jmb39x_device(this, smartdev, type, version, port, lba, force);
+      |                                                                                                  ^
+dev_jmb39x_raid.cpp:700:11: note: 'version' was declared here
+  700 |   uint8_t version;
+      |           ^~~~~~~
+mv -f .deps/dev_jmb39x_raid.Tpo .deps/dev_jmb39x_raid.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT json.o -MD -MP -MF .deps/json.Tpo -c -o json.o json.cpp
+mv -f .deps/farmcmds.Tpo .deps/farmcmds.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT knowndrives.o -MD -MP -MF .deps/knowndrives.Tpo -c -o knowndrives.o knowndrives.cpp
+mv -f .deps/knowndrives.Tpo .deps/knowndrives.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT nvmecmds.o -MD -MP -MF .deps/nvmecmds.Tpo -c -o nvmecmds.o nvmecmds.cpp
+mv -f .deps/farmprint.Tpo .deps/farmprint.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT nvmeprint.o -MD -MP -MF .deps/nvmeprint.Tpo -c -o nvmeprint.o nvmeprint.cpp
+mv -f .deps/json.Tpo .deps/json.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT scsicmds.o -MD -MP -MF .deps/scsicmds.Tpo -c -o scsicmds.o scsicmds.cpp
+mv -f .deps/nvmecmds.Tpo .deps/nvmecmds.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT scsiata.o -MD -MP -MF .deps/scsiata.Tpo -c -o scsiata.o scsiata.cpp
+mv -f .deps/ataprint.Tpo .deps/ataprint.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT scsinvme.o -MD -MP -MF .deps/scsinvme.Tpo -c -o scsinvme.o scsinvme.cpp
+mv -f .deps/nvmeprint.Tpo .deps/nvmeprint.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT scsiprint.o -MD -MP -MF .deps/scsiprint.Tpo -c -o scsiprint.o scsiprint.cpp
+mv -f .deps/scsicmds.Tpo .deps/scsicmds.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT utility.o -MD -MP -MF .deps/utility.Tpo -c -o utility.o utility.cpp
+mv -f .deps/scsinvme.Tpo .deps/scsinvme.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT os_linux.o -MD -MP -MF .deps/os_linux.Tpo -c -o os_linux.o os_linux.cpp
+mv -f .deps/scsiata.Tpo .deps/scsiata.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT cciss.o -MD -MP -MF .deps/cciss.Tpo -c -o cciss.o cciss.cpp
+mv -f .deps/cciss.Tpo .deps/cciss.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT dev_areca.o -MD -MP -MF .deps/dev_areca.Tpo -c -o dev_areca.o dev_areca.cpp
+mv -f .deps/utility.Tpo .deps/utility.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT smartd.o -MD -MP -MF .deps/smartd.Tpo -c -o smartd.o smartd.cpp
+mv -f .deps/dev_areca.Tpo .deps/dev_areca.Po
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT popen_as_ugid.o -MD -MP -MF .deps/popen_as_ugid.Tpo -c -o popen_as_ugid.o popen_as_ugid.cpp
+mv -f .deps/popen_as_ugid.Tpo .deps/popen_as_ugid.Po
+/bin/sh ./config.status --file=update-smart-drivedb
+config.status: creating update-smart-drivedb
+chmod +x update-smart-drivedb
+/bin/sh ./config.status --file=smartd_warning.sh
+config.status: creating smartd_warning.sh
+chmod +x smartd_warning.sh
+ $(MAN_FILTER) < ./smartd.conf.5.in > smartd.conf.5
+ $(MAN_FILTER) < ./smartctl.8.in > smartctl.8
+ $(MAN_FILTER) < ./smartd.8.in > smartd.8
+ $(MAN_FILTER) < ./update-smart-drivedb.8.in > update-smart-drivedb.8
+ $(SMARTD_SERVICE_FILTER) < ./smartd.service.in > smartd.service
+g++ -DHAVE_CONFIG_H -I.  -DBUILD_INFO='"(local build)"' -DSMARTMONTOOLS_SYSCONFDIR='"/etc"' -DSMARTMONTOOLS_SMARTDSCRIPTDIR='"/etc"' -DSMARTMONTOOLS_DRIVEDBDIR='"/usr/share/smartmontools"'      -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W -MT smartctl.o -MD -MP -MF .deps/smartctl.Tpo -c -o smartctl.o smartctl.cpp
+mv -f .deps/os_linux.Tpo .deps/os_linux.Po
+mv -f .deps/scsiprint.Tpo .deps/scsiprint.Po
+mv -f .deps/smartctl.Tpo .deps/smartctl.Po
+g++  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o smartctl smartctl.o atacmdnames.o atacmds.o ataidentify.o ataprint.o dev_ata_cmd_set.o dev_intelliprop.o dev_interface.o dev_jmb39x_raid.o farmcmds.o farmprint.o json.o knowndrives.o nvmecmds.o nvmeprint.o scsicmds.o scsiata.o scsinvme.o scsiprint.o utility.o     os_linux.o cciss.o dev_areca.o    
+mv -f .deps/smartd.Tpo .deps/smartd.Po
+g++  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -std=gnu++11 -Wall -W  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o smartd smartd.o atacmdnames.o atacmds.o dev_ata_cmd_set.o dev_intelliprop.o dev_interface.o dev_jmb39x_raid.o knowndrives.o nvmecmds.o scsicmds.o scsiata.o scsinvme.o utility.o popen_as_ugid.o     os_linux.o cciss.o dev_areca.o   -lsystemd   
+make[1]: Leaving directory '/sources/smartmontools-7.4'
+make[1]: Entering directory '/sources/smartmontools-7.4'
+/usr/bin/mkdir -p '/etc'
+ /usr/bin/mkdir -p '/usr/sbin'
+ /usr/bin/mkdir -p '/etc/smartd_warning.d'
+ /usr/bin/install -c -m 644 './smartd.conf' '/etc/smartd.conf'
+ /usr/bin/mkdir -p '/usr/share/doc/smartmontools'
+ /usr/bin/mkdir -p '/usr/share/smartmontools'
+ /usr/bin/install -c update-smart-drivedb '/usr/sbin'
+ /usr/bin/mkdir -p '/usr/share/smartmontools'
+ /usr/bin/mkdir -p '/usr/share/doc/smartmontools/examplescripts'
+ /usr/bin/install -c -m 644 AUTHORS ChangeLog ChangeLog-6.0-7.0 COPYING INSTALL NEWS README TODO smartd.conf '/usr/share/doc/smartmontools'
+ /usr/bin/install -c -m 644 drivedb.h '/usr/share/smartmontools'
+ /usr/bin/mkdir -p '/usr/share/doc/smartmontools/examplescripts'
+ /usr/bin/install -c -m 644 examplescripts/README '/usr/share/doc/smartmontools/examplescripts'
+ /usr/bin/mkdir -p '/usr/share/man/man5'
+ /usr/bin/install -c examplescripts/Example1 examplescripts/Example2 examplescripts/Example3 examplescripts/Example4 examplescripts/Example5 examplescripts/Example6 examplescripts/Example7 examplescripts/Example8 '/usr/share/doc/smartmontools/examplescripts'
+ /usr/bin/mkdir -p '/etc'
+ /usr/bin/mkdir -p '/usr/share/man/man8'
+ /usr/bin/install -c smartd_warning.sh '/etc'
+ /usr/bin/mkdir -p '/usr/lib/systemd/system'
+ /usr/bin/install -c -m 644 smartd.conf.5 '/usr/share/man/man5'
+ /usr/bin/mkdir -p '/usr/sbin'
+ /usr/bin/install -c -m 644 smartd.service '/usr/lib/systemd/system'
+ /usr/bin/install -c -m 644 smartctl.8 smartd.8 update-smart-drivedb.8 '/usr/share/man/man8'
+  /usr/bin/install -c smartctl smartd '/usr/sbin'
+make[1]: Leaving directory '/sources/smartmontools-7.4'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 02:37:40 UTC 2024
+
+Totalseconds: 13
+
+KB: 1770976	/
+

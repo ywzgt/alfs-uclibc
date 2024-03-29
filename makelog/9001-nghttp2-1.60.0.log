@@ -1,0 +1,540 @@
+Fri Mar 29 02:23:31 UTC 2024
+KB: 1632156	/
+
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for vfork.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking target system type... x86_64-pc-linux-uclibc
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking dependency style of g++... gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for a Python interpreter with version >= 3.8... python
+checking for python... /usr/bin/python
+checking for python version... 3.12
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.12/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.12/site-packages
+checking whether g++ supports C++14 features by default... yes
+checking whether std::future is available... yes
+checking whether std::map::emplace is available... yes
+checking whether std::atomic_* overloads for std::shared_ptr are available... yes
+checking whether thread_local storage class specifier is available.... yes
+checking for library containing dlopen... none required
+checking whether to enable assertions... yes
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking for limits.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for netinet/ip.h... yes
+checking for pwd.h... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/socket.h... yes
+checking for sys/time.h... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking for windows.h... no
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for uid_t in sys/types.h... yes
+checking for ptrdiff_t... yes
+checking whether byte ordering is bigendian... no
+checking for inline... inline
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for struct tm.tm_gmtoff... yes
+checking for struct sockaddr_in.sin_len... no
+checking for struct sockaddr_in6.sin6_len... no
+checking for working chown... yes
+checking for error_at_line... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for working strnlen... yes
+checking for _Exit... yes
+checking for accept4... yes
+checking for clock_gettime... yes
+checking for dup2... yes
+checking for getcwd... yes
+checking for getpwnam... yes
+checking for localtime_r... yes
+checking for memchr... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkostemp... yes
+checking for socket... yes
+checking for sqrt... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strndup... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for timegm... yes
+checking for timerfd_create... yes
+checking checking for GetTickCount64... no
+checking whether initgroups is declared... yes
+checking whether CLOCK_MONOTONIC is declared... yes
+checking whether C compiler accepts -fvisibility=hidden... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating lib/libnghttp2.pc
+config.status: creating lib/includes/Makefile
+config.status: creating lib/includes/nghttp2/nghttp2ver.h
+config.status: creating tests/Makefile
+config.status: creating tests/testdata/Makefile
+config.status: creating third-party/Makefile
+config.status: creating src/Makefile
+config.status: creating src/testdata/Makefile
+config.status: creating bpf/Makefile
+config.status: creating examples/Makefile
+config.status: creating integration-tests/Makefile
+config.status: creating integration-tests/config.go
+config.status: creating integration-tests/setenv
+config.status: creating doc/Makefile
+config.status: creating doc/conf.py
+config.status: creating doc/index.rst
+config.status: creating doc/package_README.rst
+config.status: creating doc/tutorial-client.rst
+config.status: creating doc/tutorial-server.rst
+config.status: creating doc/tutorial-hpack.rst
+config.status: creating doc/nghttpx-howto.rst
+config.status: creating doc/h2load-howto.rst
+config.status: creating doc/building-android-binary.rst
+config.status: creating doc/nghttp2.h.rst
+config.status: creating doc/nghttp2ver.h.rst
+config.status: creating doc/contribute.rst
+config.status: creating contrib/Makefile
+config.status: creating script/Makefile
+config.status: creating config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
+configure: summary of build options:
+
+    Package version: 1.60.0
+    Library version: 41:0:27
+    Install prefix:  /usr
+    System types:
+      Build:         x86_64-pc-linux-uclibc
+      Host:          x86_64-pc-linux-uclibc
+      Target:        x86_64-pc-linux-uclibc
+    Compiler:
+      C compiler:     gcc
+      CFLAGS:         -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+      LDFLAGS:        -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+      C++ compiler:   g++
+      CXXFLAGS:       -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+      CXXCPP:         g++ -E
+      C preprocessor: gcc -E
+      CPPFLAGS:       -DNDEBUG
+      WARNCFLAGS:     
+      WARNCXXFLAGS:   
+      CXX1XCXXFLAGS:  
+      EXTRACFLAG:     -fvisibility=hidden
+      BPFCFLAGS:      
+      EXTRABPFCFLAGS: 
+      LIBS:           
+      DEFS:           -DHAVE_CONFIG_H
+      EXTRA_DEFS:     
+    Library:
+      Shared:         yes
+      Static:         no
+    Libtool:
+      LIBTOOL_LDFLAGS: 
+    Python:
+      Python:         /usr/bin/python
+      PYTHON_VERSION: 3.12
+    Test:
+      Failmalloc:     yes
+    Libs:
+      OpenSSL:        no (CFLAGS='' LIBS='')
+      Libxml2:        no (CFLAGS='' LIBS='')
+      Libev:          no (CFLAGS='' LIBS='')
+      Libc-ares:      no (CFLAGS='' LIBS='')
+      libngtcp2:      no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_quictls: no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_boringssl: no (CFLAGS='' LIBS='')
+      libnghttp3:     no (CFLAGS='' LIBS='')
+      libbpf:         no (CFLAGS='' LIBS='')
+      Libevent(SSL):  no (CFLAGS='' LIBS='')
+      Jansson:        no (CFLAGS='' LIBS='')
+      Jemalloc:       no (CFLAGS='' LIBS='')
+      Zlib:           no (CFLAGS='' LIBS='')
+      Systemd:        no (CFLAGS='' LIBS='')
+      Libbrotlienc:   no (CFLAGS="' LIBS='')
+      Libbrotlidec:   no (CFLAGS="' LIBS='')
+    Third-party:
+      http-parser:    no
+      MRuby:          no (CFLAGS='' LIBS='')
+      Neverbleed:     no
+    Features:
+      Applications:   no
+      HPACK tools:    no
+      Examples:       no
+      Threading:      yes
+      HTTP/3 (EXPERIMENTAL): no
+
+make  all-recursive
+make[1]: Entering directory '/sources/nghttp2-1.60.0'
+Making all in lib
+make[2]: Entering directory '/sources/nghttp2-1.60.0/lib'
+Making all in includes
+make[3]: Entering directory '/sources/nghttp2-1.60.0/lib/includes'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/lib/includes'
+make[3]: Entering directory '/sources/nghttp2-1.60.0/lib'
+  CC       nghttp2_pq.lo
+  CC       nghttp2_map.lo
+  CC       nghttp2_queue.lo
+  CC       nghttp2_frame.lo
+  CC       nghttp2_buf.lo
+  CC       nghttp2_stream.lo
+  CC       nghttp2_outbound_item.lo
+  CC       nghttp2_session.lo
+  CC       nghttp2_submit.lo
+  CC       nghttp2_helper.lo
+  CC       nghttp2_alpn.lo
+  CC       nghttp2_hd.lo
+  CC       nghttp2_hd_huffman.lo
+  CC       nghttp2_hd_huffman_data.lo
+  CC       nghttp2_version.lo
+  CC       nghttp2_priority_spec.lo
+  CC       nghttp2_option.lo
+  CC       nghttp2_callbacks.lo
+  CC       nghttp2_mem.lo
+  CC       nghttp2_http.lo
+  CC       nghttp2_rcbuf.lo
+  CC       nghttp2_extpri.lo
+  CC       nghttp2_ratelim.lo
+  CC       nghttp2_time.lo
+  CC       nghttp2_debug.lo
+  CC       sfparse.lo
+  CCLD     libnghttp2.la
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/lib'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/lib'
+Making all in third-party
+make[2]: Entering directory '/sources/nghttp2-1.60.0/third-party'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/third-party'
+Making all in src
+make[2]: Entering directory '/sources/nghttp2-1.60.0/src'
+Making all in testdata
+make[3]: Entering directory '/sources/nghttp2-1.60.0/src/testdata'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/src/testdata'
+make[3]: Entering directory '/sources/nghttp2-1.60.0/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/src'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/src'
+Making all in bpf
+make[2]: Entering directory '/sources/nghttp2-1.60.0/bpf'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/bpf'
+Making all in examples
+make[2]: Entering directory '/sources/nghttp2-1.60.0/examples'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/examples'
+Making all in tests
+make[2]: Entering directory '/sources/nghttp2-1.60.0/tests'
+Making all in testdata
+make[3]: Entering directory '/sources/nghttp2-1.60.0/tests/testdata'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/tests/testdata'
+make[3]: Entering directory '/sources/nghttp2-1.60.0/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/tests'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/tests'
+Making all in integration-tests
+make[2]: Entering directory '/sources/nghttp2-1.60.0/integration-tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/integration-tests'
+Making all in doc
+make[2]: Entering directory '/sources/nghttp2-1.60.0/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/doc'
+Making all in contrib
+make[2]: Entering directory '/sources/nghttp2-1.60.0/contrib'
+rm -f nghttpx-init nghttpx-init.tmp
+sed -e 's|@bindir[@]|/usr/bin|g' nghttpx.service.in > nghttpx.service
+sed -e 's|@bindir[@]|/usr/bin|g' nghttpx-upstart.conf.in > nghttpx-upstart.conf
+sed -e 's|@bindir[@]|/usr/bin|g' nghttpx-init.in > nghttpx-init.tmp
+chmod +x nghttpx-init.tmp
+mv nghttpx-init.tmp nghttpx-init
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/contrib'
+Making all in script
+make[2]: Entering directory '/sources/nghttp2-1.60.0/script'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/script'
+make[2]: Entering directory '/sources/nghttp2-1.60.0'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0'
+Making install in lib
+make[1]: Entering directory '/sources/nghttp2-1.60.0/lib'
+Making install in includes
+make[2]: Entering directory '/sources/nghttp2-1.60.0/lib/includes'
+make[3]: Entering directory '/sources/nghttp2-1.60.0/lib/includes'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/include'
+ /usr/bin/mkdir -p '/usr/include/nghttp2'
+ /usr/bin/install -c -m 644  nghttp2/nghttp2.h nghttp2/nghttp2ver.h '/usr/include/nghttp2'
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/lib/includes'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/lib/includes'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/lib'
+make[3]: Entering directory '/sources/nghttp2-1.60.0/lib'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libnghttp2.la '/usr/lib'
+ /usr/bin/install -c -m 644 libnghttp2.pc '/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libnghttp2.so.14.27.0 /usr/lib/libnghttp2.so.14.27.0
+libtool: install: (cd /usr/lib && { ln -s -f libnghttp2.so.14.27.0 libnghttp2.so.14 || { rm -f libnghttp2.so.14 && ln -s libnghttp2.so.14.27.0 libnghttp2.so.14; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libnghttp2.so.14.27.0 libnghttp2.so || { rm -f libnghttp2.so && ln -s libnghttp2.so.14.27.0 libnghttp2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libnghttp2.lai /usr/lib/libnghttp2.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/lib'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/lib'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/lib'
+Making install in third-party
+make[1]: Entering directory '/sources/nghttp2-1.60.0/third-party'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/third-party'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/third-party'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/third-party'
+Making install in src
+make[1]: Entering directory '/sources/nghttp2-1.60.0/src'
+Making install in testdata
+make[2]: Entering directory '/sources/nghttp2-1.60.0/src/testdata'
+make[3]: Entering directory '/sources/nghttp2-1.60.0/src/testdata'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/src/testdata'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/src/testdata'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/src'
+make[3]: Entering directory '/sources/nghttp2-1.60.0/src'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/usr/bin'
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/src'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/src'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/src'
+Making install in bpf
+make[1]: Entering directory '/sources/nghttp2-1.60.0/bpf'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/bpf'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/bpf'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/bpf'
+Making install in examples
+make[1]: Entering directory '/sources/nghttp2-1.60.0/examples'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/examples'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/examples'
+Making install in tests
+make[1]: Entering directory '/sources/nghttp2-1.60.0/tests'
+Making install in testdata
+make[2]: Entering directory '/sources/nghttp2-1.60.0/tests/testdata'
+make[3]: Entering directory '/sources/nghttp2-1.60.0/tests/testdata'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/tests/testdata'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/tests/testdata'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/tests'
+make[3]: Entering directory '/sources/nghttp2-1.60.0/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/nghttp2-1.60.0/tests'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/tests'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/tests'
+Making install in integration-tests
+make[1]: Entering directory '/sources/nghttp2-1.60.0/integration-tests'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/integration-tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/integration-tests'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/integration-tests'
+Making install in doc
+make[1]: Entering directory '/sources/nghttp2-1.60.0/doc'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 nghttp.1 nghttpd.1 nghttpx.1 h2load.1 '/usr/share/man/man1'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/doc'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/doc'
+Making install in contrib
+make[1]: Entering directory '/sources/nghttp2-1.60.0/contrib'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/contrib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/contrib'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/contrib'
+Making install in script
+make[1]: Entering directory '/sources/nghttp2-1.60.0/script'
+make[2]: Entering directory '/sources/nghttp2-1.60.0/script'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/nghttp2'
+ /usr/bin/install -c fetch-ocsp-response '/usr/share/nghttp2'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0/script'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0/script'
+make[1]: Entering directory '/sources/nghttp2-1.60.0'
+make[2]: Entering directory '/sources/nghttp2-1.60.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/doc/nghttp2'
+ /usr/bin/install -c -m 644 README.rst '/usr/share/doc/nghttp2'
+make[2]: Leaving directory '/sources/nghttp2-1.60.0'
+make[1]: Leaving directory '/sources/nghttp2-1.60.0'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 02:23:42 UTC 2024
+
+Totalseconds: 11
+
+KB: 1650936	/
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SRC="iproute2"
+PKG="$SRC"
+
+sed -i /ARPD/d Makefile
+rm -fv man/man8/arpd.8
+
+make NETNS_RUN_DIR=/run/netns
+make SBINDIR=/usr/sbin install
+install -Dt /usr/share/doc/iproute2 -m644 COPYING README*

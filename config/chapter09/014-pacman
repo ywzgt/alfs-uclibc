@@ -1,0 +1,65 @@
+#!/bin/bash
+# https://gitlab.archlinux.org/archlinux/packaging/packages/pacman
+# https://sources.archlinux.org/other/pacman
+
+SRC="pacman"
+PKG="$SRC"
+
+gitlab='https://gitlab.archlinux.org/pacman/pacman/-/commit'
+PATCHES=(
+	"${gitlab}/efd0c24c07b86be014a4edb5a8ece021b87e3900.patch"
+	"${gitlab}/86981383a2f4380bda26311831be94cdc743649b.patch"
+	"${gitlab}/478af273dfe24ded197ec54ae977ddc3719d74a0.patch"
+	"${gitlab}/de11824527ec4e2561e161ac40a5714ec943543c.patch"
+	"${gitlab}/0e938f188692c710be36f9dd9ea7b94381aed1b4.patch"
+	"${gitlab}/05f283b5ad8f5b8f995076e93a27c8772076f872.patch"
+	"${gitlab}/aa3a1bc3b50d797fb75278f79a83cd7dde50c66e.patch"
+	"${gitlab}/843bf21e794c79c5b3bcf8a57e45ef9c62312fee.patch"
+	"${gitlab}/7a4fff3310ba2eadd3d5428cbb92e58eb2ee853b.patch"
+	"${gitlab}/00d2b1f90261bf77eaaf262d2504af016562f2ac.patch"
+	"${gitlab}/3aa096a74f717d31650e0eb3cf34e9a5ebadc313.patch"
+	"${gitlab}/86ec26b2d33372a4b3bda48f22c4a9f226c3ccce.patch"
+	"${gitlab}/16a064701a30d7e1175e1185cc6da44238302fab.patch"
+	"${gitlab}/f8c2e59ec57c86827b1f1b1c2f6760dc3e59fe40.patch"
+)
+
+wget -cP .. "${PATCHES[@]}"
+for p in ${PATCHES[@]}; do
+	printf "Applying patch ${p##*/}...\n"
+	patch -Np1 -i ../${p##*/}
+	printf "\n\n\n"
+done
+
+cat <<"EOF">> scripts/po/zh_CN.po
+
+msgid "Splitting %s files into separate packages..."
+msgstr "正在将 %s 文件拆分为单独的包..."
+
+msgid "Splitting static library files into separate packages..."
+msgstr "正在将静态库文件拆分为单独的包..."
+
+msgid "Removing unwanted man pages..."
+msgstr "正在删除不想要的手册页..."
+
+msgid "Removing unwanted message translation files..."
+msgstr "正在删除不想要的消息翻译文件..."
+
+msgid "Finding %s files..."
+msgstr "正在查找 %s 文件..."
+
+msgid "Adding dependencies by dynamic linked library..."
+msgstr "正在通过动态链接库添加依赖..."
+EOF
+
+LDFLAGS+=" -Wl,-lintl"
+mkdir -v pacman-build
+cd pacman-build
+
+meson setup --prefix=/usr \
+	--buildtype=release \
+	-Ddoc=disabled \
+	-Ddoxygen=disabled \
+	-Dscriptlet-shell=/usr/bin/bash \
+	-Dldconfig=/usr/sbin/ldconfig ..
+ninja
+ninja install

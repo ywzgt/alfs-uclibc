@@ -1,0 +1,346 @@
+Fri Mar 29 01:56:53 UTC 2024
+KB: 1134168	/
+
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking if ld supports --version-script flag... yes
+checking for objdump... (cached) objdump
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking whether ln -s works... yes
+checking for unif01_CreateExternGenBits in -ltestu01... no
+checking for library containing MD5Update... -lmd
+checking for library containing SHA512Update... none required
+checking for sys/ndir.h... no
+checking for sys/dir.h... yes
+checking for ndir.h... no
+checking for dirent.h... yes
+checking for pwd.h... yes
+checking for grp.h... yes
+checking for stdio_ext.h... yes
+checking for procinfo.h... no
+checking for inline... inline
+checking for typeof syntax and keyword spelling... typeof
+checking for int64_t... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking how to run the C preprocessor... gcc -E
+checking for uid_t in sys/types.h... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether F_CLOSEM is declared... no
+checking whether environ is declared... yes
+checking for GNU .init_array section support... no
+checking for program_invocation_short_name... yes
+checking for __progname... yes
+checking for __register_atfork... yes
+checking for clearenv... yes
+checking for dirfd... yes
+checking for flock... yes
+checking for fopencookie... yes
+checking for __fpurge... yes
+checking for funopen... no
+checking for getauxval... yes
+checking for getentropy... yes
+checking for getexecname... no
+checking for getline... yes
+checking for open_memstream... yes
+checking for pstat_getproc... no
+checking for sysconf... yes
+checking for uid_from_user... no
+checking for gid_from_group... no
+checking for user_from_uid... no
+checking for group_from_gid... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating man/Makefile
+config.status: creating src/Makefile
+config.status: creating src/libbsd.pc
+config.status: creating src/libbsd-ctor.pc
+config.status: creating src/libbsd-overlay.pc
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/sources/libbsd-0.11.8'
+Making all in include
+make[2]: Entering directory '/sources/libbsd-0.11.8/include'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/libbsd-0.11.8/include'
+Making all in man
+make[2]: Entering directory '/sources/libbsd-0.11.8/man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/libbsd-0.11.8/man'
+Making all in src
+make[2]: Entering directory '/sources/libbsd-0.11.8/src'
+  CC       closefrom.lo
+  CC       dehumanize_number.lo
+  CC       err.lo
+  CC       expand_number.lo
+  CC       explicit_bzero.lo
+  CC       fgetln.lo
+  CC       fgetwln.lo
+  CC       flopen.lo
+  CC       fmtcheck.lo
+  CC       fparseln.lo
+  CC       freezero.lo
+  CC       getbsize.lo
+  CC       getpeereid.lo
+  CC       heapsort.lo
+  CC       humanize_number.lo
+  CC       inet_net_pton.lo
+  CC       merge.lo
+  CC       pidfile.lo
+  CC       pwcache.lo
+  CC       radixsort.lo
+  CC       readpassphrase.lo
+  CC       reallocarray.lo
+  CC       reallocf.lo
+  CC       recallocarray.lo
+  CC       setmode.lo
+  CC       setproctitle.lo
+  CC       stringlist.lo
+  CC       strnstr.lo
+  CC       strtoi.lo
+  CC       strtonum.lo
+  CC       strtou.lo
+  CC       timeconv.lo
+  CC       unvis.lo
+  CC       vis.lo
+  CC       progname.lo
+  CC       bsd_getopt.lo
+  CC       arc4random.lo
+  CC       arc4random_uniform.lo
+  CC       md5.lo
+  CC       nlist.lo
+  CC       strlcat.lo
+  CC       strlcpy.lo
+  CC       wcslcat.lo
+  CC       wcslcpy.lo
+  CC       strmode.lo
+  CC       fpurge.lo
+  CC       funopen.lo
+  CCLD     libbsd.la
+/usr/bin/ld: .libs/md5.o: in function `libbsd_MD5Init':
+md5.c:(.text.libbsd_MD5Init+0x2): warning: The MD5Init() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: .libs/md5.o: in function `libbsd_MD5Update':
+md5.c:(.text.libbsd_MD5Update+0x2): warning: The MD5Update() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: .libs/md5.o: in function `libbsd_MD5Pad':
+md5.c:(.text.libbsd_MD5Pad+0x2): warning: The MD5Pad() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: .libs/md5.o: in function `libbsd_MD5Final':
+md5.c:(.text.libbsd_MD5Final+0x2): warning: The MD5Final() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: .libs/md5.o: in function `libbsd_MD5Transform':
+md5.c:(.text.libbsd_MD5Transform+0x2): warning: The MD5Transform() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: .libs/md5.o: in function `libbsd_MD5End':
+md5.c:(.text.libbsd_MD5End+0x2): warning: The MD5End() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: .libs/md5.o: in function `libbsd_MD5File':
+md5.c:(.text.libbsd_MD5File+0x2): warning: The MD5File() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: .libs/md5.o: in function `libbsd_MD5FileChunk':
+md5.c:(.text.libbsd_MD5FileChunk+0x2): warning: The MD5FileChunk() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: .libs/md5.o: in function `libbsd_MD5Data':
+md5.c:(.text.libbsd_MD5Data+0x2): warning: The MD5Data() function in libbsd is a deprecated wrapper, use libmd instead.
+make[2]: Leaving directory '/sources/libbsd-0.11.8/src'
+Making all in test
+make[2]: Entering directory '/sources/libbsd-0.11.8/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/libbsd-0.11.8/test'
+make[2]: Entering directory '/sources/libbsd-0.11.8'
+make[2]: Leaving directory '/sources/libbsd-0.11.8'
+make[1]: Leaving directory '/sources/libbsd-0.11.8'
+Making install in include
+make[1]: Entering directory '/sources/libbsd-0.11.8/include'
+make[2]: Entering directory '/sources/libbsd-0.11.8/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/include'
+ /usr/bin/mkdir -p '/usr/include/bsd/netinet'
+ /usr/bin/install -c -m 644  bsd/netinet/ip_icmp.h '/usr/include/bsd/netinet'
+ /usr/bin/mkdir -p '/usr/include/bsd/sys'
+ /usr/bin/install -c -m 644  bsd/sys/bitstring.h bsd/sys/cdefs.h bsd/sys/endian.h bsd/sys/param.h bsd/sys/poll.h bsd/sys/queue.h bsd/sys/time.h bsd/sys/tree.h '/usr/include/bsd/sys'
+ /usr/bin/mkdir -p '/usr/include/bsd'
+ /usr/bin/install -c -m 644  bsd/bitstring.h bsd/bsd.h bsd/err.h bsd/getopt.h bsd/grp.h bsd/inttypes.h bsd/libutil.h bsd/pwd.h bsd/readpassphrase.h bsd/stdio.h bsd/stdlib.h bsd/string.h bsd/stringlist.h bsd/timeconv.h bsd/unistd.h bsd/vis.h bsd/wchar.h bsd/md5.h bsd/nlist.h '/usr/include/bsd'
+make[2]: Leaving directory '/sources/libbsd-0.11.8/include'
+make[1]: Leaving directory '/sources/libbsd-0.11.8/include'
+Making install in man
+make[1]: Entering directory '/sources/libbsd-0.11.8/man'
+make[2]: Entering directory '/sources/libbsd-0.11.8/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/mkdir -p '/usr/share/man/man7'
+ /usr/bin/install -c -m 644 libbsd.7 '/usr/share/man/man7'
+ /usr/bin/install -c -m 644 LIST_CLASS_ENTRY.3bsd LIST_CLASS_HEAD.3bsd LIST_EMPTY.3bsd LIST_ENTRY.3bsd LIST_FIRST.3bsd LIST_FOREACH.3bsd LIST_FOREACH_FROM.3bsd LIST_FOREACH_FROM_SAFE.3bsd LIST_FOREACH_SAFE.3bsd LIST_HEAD.3bsd LIST_HEAD_INITIALIZER.3bsd LIST_INIT.3bsd LIST_INSERT_AFTER.3bsd LIST_INSERT_BEFORE.3bsd LIST_INSERT_HEAD.3bsd LIST_NEXT.3bsd LIST_PREV.3bsd LIST_REMOVE.3bsd LIST_SWAP.3bsd RB_EMPTY.3bsd RB_ENTRY.3bsd RB_FIND.3bsd RB_FOREACH.3bsd RB_FOREACH_REVERSE.3bsd RB_GENERATE.3bsd RB_GENERATE_STATIC.3bsd RB_HEAD.3bsd RB_INIT.3bsd RB_INITIALIZER.3bsd RB_INSERT.3bsd RB_LEFT.3bsd RB_MAX.3bsd RB_MIN.3bsd RB_NEXT.3bsd RB_NFIND.3bsd RB_PARENT.3bsd RB_PREV.3bsd RB_PROTOTYPE.3bsd RB_PROTOTYPE_STATIC.3bsd RB_REMOVE.3bsd '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 RB_RIGHT.3bsd RB_ROOT.3bsd SLIST_CLASS_ENTRY.3bsd SLIST_CLASS_HEAD.3bsd SLIST_EMPTY.3bsd SLIST_ENTRY.3bsd SLIST_FIRST.3bsd SLIST_FOREACH.3bsd SLIST_FOREACH_FROM.3bsd SLIST_FOREACH_FROM_SAFE.3bsd SLIST_FOREACH_SAFE.3bsd SLIST_HEAD.3bsd SLIST_HEAD_INITIALIZER.3bsd SLIST_INIT.3bsd SLIST_INSERT_AFTER.3bsd SLIST_INSERT_HEAD.3bsd SLIST_NEXT.3bsd SLIST_REMOVE.3bsd SLIST_REMOVE_AFTER.3bsd SLIST_REMOVE_HEAD.3bsd SLIST_REMOVE_PREVPTR.3bsd SLIST_SWAP.3bsd SPLAY_EMPTY.3bsd SPLAY_ENTRY.3bsd SPLAY_FIND.3bsd SPLAY_FOREACH.3bsd SPLAY_GENERATE.3bsd SPLAY_HEAD.3bsd SPLAY_INIT.3bsd SPLAY_INITIALIZER.3bsd SPLAY_INSERT.3bsd SPLAY_LEFT.3bsd SPLAY_MAX.3bsd SPLAY_MIN.3bsd SPLAY_NEXT.3bsd SPLAY_PROTOTYPE.3bsd SPLAY_REMOVE.3bsd SPLAY_RIGHT.3bsd SPLAY_ROOT.3bsd STAILQ_CLASS_ENTRY.3bsd '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 STAILQ_CLASS_HEAD.3bsd STAILQ_CONCAT.3bsd STAILQ_EMPTY.3bsd STAILQ_ENTRY.3bsd STAILQ_FIRST.3bsd STAILQ_FOREACH.3bsd STAILQ_FOREACH_FROM.3bsd STAILQ_FOREACH_FROM_SAFE.3bsd STAILQ_FOREACH_SAFE.3bsd STAILQ_HEAD.3bsd STAILQ_HEAD_INITIALIZER.3bsd STAILQ_INIT.3bsd STAILQ_INSERT_AFTER.3bsd STAILQ_INSERT_HEAD.3bsd STAILQ_INSERT_TAIL.3bsd STAILQ_LAST.3bsd STAILQ_NEXT.3bsd STAILQ_REMOVE.3bsd STAILQ_REMOVE_AFTER.3bsd STAILQ_REMOVE_HEAD.3bsd STAILQ_SWAP.3bsd TAILQ_CLASS_ENTRY.3bsd TAILQ_CLASS_HEAD.3bsd TAILQ_CONCAT.3bsd TAILQ_EMPTY.3bsd TAILQ_ENTRY.3bsd TAILQ_FIRST.3bsd TAILQ_FOREACH.3bsd TAILQ_FOREACH_FROM.3bsd TAILQ_FOREACH_FROM_SAFE.3bsd TAILQ_FOREACH_REVERSE.3bsd TAILQ_FOREACH_REVERSE_FROM.3bsd TAILQ_FOREACH_REVERSE_FROM_SAFE.3bsd TAILQ_FOREACH_REVERSE_SAFE.3bsd TAILQ_FOREACH_SAFE.3bsd TAILQ_HEAD.3bsd TAILQ_HEAD_INITIALIZER.3bsd TAILQ_INIT.3bsd TAILQ_INSERT_AFTER.3bsd TAILQ_INSERT_BEFORE.3bsd '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 TAILQ_INSERT_HEAD.3bsd TAILQ_INSERT_TAIL.3bsd TAILQ_LAST.3bsd TAILQ_NEXT.3bsd TAILQ_PREV.3bsd TAILQ_REMOVE.3bsd TAILQ_SWAP.3bsd TIMESPEC_TO_TIMEVAL.3bsd TIMEVAL_TO_TIMESPEC.3bsd arc4random.3bsd arc4random_addrandom.3bsd arc4random_buf.3bsd arc4random_stir.3bsd arc4random_uniform.3bsd be16dec.3bsd be16enc.3bsd be32dec.3bsd be32enc.3bsd be64dec.3bsd be64enc.3bsd bit_alloc.3bsd bit_clear.3bsd bit_decl.3bsd bit_ffc.3bsd bit_ffs.3bsd bit_nclear.3bsd bit_nset.3bsd bit_set.3bsd bit_test.3bsd bitstr_size.3bsd bitstring.3bsd byteorder.3bsd closefrom.3bsd dehumanize_number.3bsd errc.3bsd expand_number.3bsd explicit_bzero.3bsd fgetln.3bsd fgetwln.3bsd flopen.3bsd '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 fmtcheck.3bsd fparseln.3bsd freezero.3bsd getbsize.3bsd getmode.3bsd getpeereid.3bsd group_from_gid.3bsd heapsort.3bsd humanize_number.3bsd le16dec.3bsd le16enc.3bsd le32dec.3bsd le32enc.3bsd le64dec.3bsd le64enc.3bsd mergesort.3bsd pidfile.3bsd pidfile_close.3bsd pidfile_open.3bsd pidfile_remove.3bsd pidfile_write.3bsd pwcache.3bsd queue.3bsd radixsort.3bsd readpassphrase.3bsd reallocarray.3bsd reallocf.3bsd recallocarray.3bsd setmode.3bsd setproctitle.3bsd setproctitle_init.3bsd sl_add.3bsd sl_delete.3bsd sl_find.3bsd sl_free.3bsd sl_init.3bsd sradixsort.3bsd stringlist.3bsd strnstr.3bsd strnunvis.3bsd '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 strnvis.3bsd strtoi.3bsd strtonum.3bsd strtou.3bsd strunvis.3bsd strvis.3bsd strvisx.3bsd timeradd.3bsd timerclear.3bsd timercmp.3bsd timerisset.3bsd timersub.3bsd timespec.3bsd timespecadd.3bsd timespecclear.3bsd timespeccmp.3bsd timespecisset.3bsd timespecsub.3bsd timeval.3bsd tree.3bsd unvis.3bsd user_from_uid.3bsd vis.3bsd getprogname.3bsd setprogname.3bsd md5.3bsd nlist.3bsd strlcat.3bsd strlcpy.3bsd wcslcat.3bsd wcslcpy.3bsd strmode.3bsd uid_from_user.3bsd gid_from_group.3bsd fpurge.3bsd funopen.3bsd '/usr/share/man/man3'
+make[2]: Leaving directory '/sources/libbsd-0.11.8/man'
+make[1]: Leaving directory '/sources/libbsd-0.11.8/man'
+Making install in src
+make[1]: Entering directory '/sources/libbsd-0.11.8/src'
+make[2]: Entering directory '/sources/libbsd-0.11.8/src'
+ /usr/bin/mkdir -p '/usr/lib'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libbsd.la '/usr/lib'
+ /usr/bin/install -c -m 644 libbsd.pc libbsd-overlay.pc '/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libbsd.so.0.11.8 /usr/lib/libbsd.so.0.11.8
+libtool: install: (cd /usr/lib && { ln -s -f libbsd.so.0.11.8 libbsd.so.0 || { rm -f libbsd.so.0 && ln -s libbsd.so.0.11.8 libbsd.so.0; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libbsd.so.0.11.8 libbsd.so || { rm -f libbsd.so && ln -s libbsd.so.0.11.8 libbsd.so; }; })
+libtool: install: /usr/bin/install -c .libs/libbsd.lai /usr/lib/libbsd.la
+libtool: install: /usr/bin/install -c .libs/libbsd.a /usr/lib/libbsd.a
+libtool: install: chmod 644 /usr/lib/libbsd.a
+libtool: install: ranlib /usr/lib/libbsd.a
+libtool: finish: PATH="/usr/bin:/usr/sbin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make  install-exec-hook
+make[3]: Entering directory '/sources/libbsd-0.11.8/src'
+gcc -shared -nostdlib -nostartfiles -x assembler /dev/null -o format.ld.so
+objdump -f format.ld.so | sed -n 's/.*file format \(.*\)/OUTPUT_FORMAT(\1)/;T;p' > format.ld
+rm -f format.ld.so
+if [ "/usr/lib" != "/usr/lib" ]; then \
+	/usr/bin/mkdir -p /usr/lib; \
+	mv /usr/lib/libbsd*.so.* \
+	   /usr/lib/; \
+fi
+soname=`readlink /usr/lib/libbsd.so`; \
+rm -f /usr/lib/libbsd.so; \
+(echo '/* GNU ld script'; \
+ echo ' * The MD5 functions are provided by the libmd library. */'; \
+ cat format.ld; \
+ echo "GROUP(/usr/lib/$soname AS_NEEDED(-lmd))"; \
+)>/usr/lib/libbsd.so
+make[3]: Leaving directory '/sources/libbsd-0.11.8/src'
+make[2]: Leaving directory '/sources/libbsd-0.11.8/src'
+make[1]: Leaving directory '/sources/libbsd-0.11.8/src'
+Making install in test
+make[1]: Entering directory '/sources/libbsd-0.11.8/test'
+make[2]: Entering directory '/sources/libbsd-0.11.8/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/libbsd-0.11.8/test'
+make[1]: Leaving directory '/sources/libbsd-0.11.8/test'
+make[1]: Entering directory '/sources/libbsd-0.11.8'
+make[2]: Entering directory '/sources/libbsd-0.11.8'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/libbsd-0.11.8'
+make[1]: Leaving directory '/sources/libbsd-0.11.8'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 01:57:01 UTC 2024
+
+Totalseconds: 8
+
+KB: 1141620	/
+

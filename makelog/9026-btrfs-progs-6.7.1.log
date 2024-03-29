@@ -1,0 +1,353 @@
+Fri Mar 29 02:36:47 UTC 2024
+KB: 1751516	/
+
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking build system type... x86_64-unknown-linux-uclibc
+checking host system type... x86_64-unknown-linux-uclibc
+checking target system type... x86_64-unknown-linux-uclibc
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking whether byte ordering is bigendian... no
+checking whether C compiler accepts -msse2... yes
+checking whether C compiler accepts -msse4.1... yes
+checking whether C compiler accepts -mavx2... yes
+checking whether C compiler accepts -msha... yes
+checking whether C compiler accepts -std=gnu11... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for ar... ar
+checking for rm... /usr/bin/rm
+checking for rmdir... /usr/bin/rmdir
+checking for openat... yes
+checking for reallocarray... no
+checking for clock_gettime... yes
+checking for __GLIBC__ defined in features.h... yes
+checking for __builtin_add_overflow... yes
+checking for __builtin_sub_overflow... yes
+checking for __builtin_mul_overflow... yes
+checking for __builtin_cpu_supports__pclmul... yes
+checking for linux/perf_event.h... yes
+checking for linux/hw_breakpoint.h... yes
+checking for linux/fsverity.h... yes
+checking for printf.h... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for EXT2FS... yes
+checking for COM_ERR... yes
+checking for REISERFS... no
+checking for FIEMAP_EXTENT_SHARED defined in linux/fiemap.h... yes
+checking for EXT4_EPOCH_MASK defined in ext2fs/ext2_fs.h... yes
+checking for linux/blkzoned.h... yes
+checking for struct blk_zone.capacity... yes
+checking for BLKGETZONESZ defined in linux/blkzoned.h... yes
+checking for BLKID... yes
+checking for UUID... yes
+checking for ZLIB... yes
+checking for ZSTD... yes
+checking for LIBUDEV... yes
+checking for a Python interpreter with version >= 3.4... python
+checking for python... /usr/bin/python
+checking for python version... 3.12
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.12/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.12/site-packages
+checking for PYTHON... yes
+checking for lzo_version in -llzo2... yes
+configure: creating ./config.status
+config.status: creating Makefile.inc
+config.status: creating Documentation/Makefile
+config.status: creating libbtrfs/version.h
+config.status: creating libbtrfsutil/libbtrfsutil.pc
+config.status: creating include/config.h
+
+	btrfs-progs:        v6.7.1
+	libbtrfs:           0.1.2 (deprecated)
+	libbtrfsutil:       1.2.0
+
+	prefix:             /usr
+	exec prefix:        ${prefix}
+
+	bindir:             ${exec_prefix}/bin
+	libdir:             ${exec_prefix}/lib
+	includedir:         ${prefix}/include
+	pkgconfigdir:       ${libdir}/pkgconfig
+
+	compiler:           gcc
+	CFLAGS:             -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+	LDFLAGS:            -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+	programs:           yes
+	shared libraries:   yes
+	static libraries:   no
+	documentation:      no
+	doc generator:      none
+	backtrace support:  no
+	btrfs-convert:      yes (ext2)
+	zstd support:       yes
+	lzo support:        yes
+	fsverity support:   yes
+	Python bindings:    yes
+	Python interpreter: /usr/bin/python
+	crypto provider:    builtin 
+	libudev:            yes
+	zoned device:       yes
+	
+	Type 'make' to compile.
+
+    [CC]     btrfs.o
+    [CC]     kernel-lib/list_sort.o
+    [CC]     kernel-lib/raid56.o
+    [CC]     kernel-lib/rbtree.o
+    [CC]     kernel-lib/tables.o
+    [CC]     kernel-shared/accessors.o
+    [CC]     kernel-shared/async-thread.o
+    [CC]     kernel-shared/backref.o
+    [CC]     kernel-shared/ctree.o
+    [CC]     kernel-shared/delayed-ref.o
+    [CC]     kernel-shared/dir-item.o
+    [CC]     kernel-shared/disk-io.o
+    [CC]     kernel-shared/extent-io-tree.o
+    [CC]     kernel-shared/extent-tree.o
+    [CC]     kernel-shared/extent_io.o
+    [CC]     kernel-shared/file-item.o
+    [CC]     kernel-shared/file.o
+    [CC]     kernel-shared/free-space-cache.o
+    [CC]     kernel-shared/free-space-tree.o
+    [CC]     kernel-shared/inode-item.o
+    [CC]     kernel-shared/inode.o
+    [CC]     kernel-shared/locking.o
+    [CC]     kernel-shared/messages.o
+    [CC]     kernel-shared/print-tree.o
+    [CC]     kernel-shared/root-tree.o
+    [CC]     kernel-shared/transaction.o
+    [CC]     kernel-shared/tree-checker.o
+    [CC]     kernel-shared/ulist.o
+    [CC]     kernel-shared/uuid-tree.o
+    [CC]     kernel-shared/volumes.o
+    [CC]     kernel-shared/zoned.o
+    [CC]     common/array.o
+    [CC]     common/cpu-utils.o
+    [CC]     common/device-scan.o
+kernel-shared/volumes.c: In function 'create_chunk':
+kernel-shared/volumes.c:1557:20: warning: 'offset' may be used uninitialized [-Wmaybe-uninitialized]
+ 1557 |         key.offset = offset;
+      |         ~~~~~~~~~~~^~~~~~~~
+kernel-shared/volumes.c:1544:13: note: 'offset' was declared here
+ 1544 |         u64 offset;
+      |             ^~~~~~
+    [CC]     common/device-utils.o
+    [CC]     common/extent-cache.o
+    [CC]     common/extent-tree-utils.o
+    [CC]     common/filesystem-utils.o
+    [CC]     common/format-output.o
+    [CC]     common/fsfeatures.o
+    [CC]     common/help.o
+    [CC]     common/inject-error.o
+    [CC]     common/messages.o
+    [CC]     common/open-utils.o
+    [CC]     common/parse-utils.o
+    [CC]     common/path-utils.o
+    [CC]     common/rbtree-utils.o
+    [CC]     common/send-stream.o
+    [CC]     common/send-utils.o
+    [CC]     common/sort-utils.o
+    [CC]     common/string-table.o
+    [CC]     common/string-utils.o
+    [CC]     common/sysfs-utils.o
+    [CC]     common/task-utils.o
+    [CC]     common/units.o
+    [CC]     common/utils.o
+    [CC]     check/qgroup-verify.o
+    [CC]     check/repair.o
+    [CC]     cmds/receive-dump.o
+    [CC]     crypto/crc32c.o
+    [CC]     crypto/hash.o
+    [CC]     crypto/xxhash.o
+    [CC]     crypto/sha224-256.o
+    [CC]     crypto/blake2b-ref.o
+    [CC]     crypto/blake2b-sse2.o
+    [CC]     crypto/blake2b-sse41.o
+    [CC]     crypto/blake2b-avx2.o
+    [CC]     crypto/sha256-x86.o
+    [AS]     crypto/crc32c-pcl-intel-asm_64.o
+    [CC]     libbtrfsutil/stubs.o
+    [CC]     libbtrfsutil/subvolume.o
+    [CC]     cmds/subvolume.o
+    [CC]     cmds/subvolume-list.o
+    [CC]     cmds/filesystem.o
+    [CC]     cmds/device.o
+    [CC]     cmds/scrub.o
+    [CC]     cmds/inspect.o
+    [CC]     cmds/balance.o
+cmds/inspect.c: In function '__ino_to_path_fd':
+cmds/inspect.c:85:35: warning: array subscript i is outside array bounds of '__u64[]' {aka 'long long unsigned int[]'} [-Warray-bounds=]
+   85 |                 ptr += fspath->val[i];
+      |                        ~~~~~~~~~~~^~~
+In file included from ./kernel-shared/accessors.h:11,
+                 from cmds/inspect.c:35:
+./kernel-shared/uapi/btrfs.h:724:17: note: while referencing 'val'
+  724 |         __u64   val[];          /* out */
+      |                 ^~~
+    [CC]     cmds/send.o
+    [CC]     cmds/receive.o
+    [CC]     cmds/quota.o
+    [CC]     cmds/qgroup.o
+    [CC]     cmds/replace.o
+    [CC]     check/main.o
+    [CC]     cmds/restore.o
+    [CC]     cmds/rescue.o
+    [CC]     cmds/rescue-chunk-recover.o
+    [CC]     cmds/rescue-super-recover.o
+    [CC]     cmds/property.o
+    [CC]     cmds/filesystem-usage.o
+    [CC]     cmds/inspect-dump-tree.o
+    [CC]     cmds/inspect-dump-super.o
+    [CC]     cmds/inspect-tree-stats.o
+    [CC]     cmds/filesystem-du.o
+    [CC]     cmds/reflink.o
+    [CC]     mkfs/common.o
+    [CC]     check/mode-common.o
+    [CC]     check/mode-lowmem.o
+    [CC]     common/clear-cache.o
+    [CC]     libbtrfsutil/errors.o
+    [CC]     libbtrfsutil/filesystem.o
+    [CC]     libbtrfsutil/qgroup.o
+    [CC]     mkfs/main.o
+    [CC]     mkfs/rootdir.o
+In file included from mkfs/rootdir.c:19:
+mkfs/rootdir.c: In function 'btrfs_mkfs_shrink_fs':
+./include/kerncompat.h:473:47: warning: 'new_size' may be used uninitialized [-Wmaybe-uninitialized]
+  473 | #define IS_ALIGNED(x, a)                (((x) & ((typeof(x))(a) - 1)) == 0)
+      |                                          ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+mkfs/rootdir.c:984:14: note: in expansion of macro 'IS_ALIGNED'
+  984 |         if (!IS_ALIGNED(new_size, fs_info->sectorsize)) {
+      |              ^~~~~~~~~~
+mkfs/rootdir.c:962:13: note: 'new_size' was declared here
+  962 |         u64 new_size;
+      |             ^~~~~~~~
+    [CC]     btrfs-map-logical.o
+    [CC]     image/main.o
+    [CC]     image/sanitize.o
+    [CC]     image/image-create.o
+    [CC]     image/common.o
+    [CC]     image/image-restore.o
+    [CC]     btrfs-find-root.o
+    [CC]     tune/main.o
+    [CC]     tune/seeding.o
+    [CC]     tune/change-uuid.o
+    [CC]     tune/change-metadata-uuid.o
+    [CC]     tune/convert-bgt.o
+    [CC]     tune/change-csum.o
+    [CC]     tune/quota.o
+    [CC]     btrfs-select-super.o
+    [CC]     convert/main.o
+    [CC]     convert/common.o
+    [CC]     convert/source-fs.o
+    [CC]     convert/source-ext2.o
+    [CC]     convert/source-reiserfs.o
+    [CC]     btrfs-corrupt-block.o
+    [CC]     libbtrfs/send-stream.o
+    [CC]     libbtrfs/send-utils.o
+    [CC]     libbtrfs/crc32c.o
+    [LD]     libbtrfsutil.so.1.2.0
+    [AR]     libbtrfsutil.a
+    [LN]     libbtrfsutil.so.1
+    [LN]     libbtrfsutil.so
+    [LD]     btrfs
+    [LD]     mkfs.btrfs
+    [LD]     btrfs-map-logical
+    [LD]     btrfs-image
+    [LD]     btrfs-find-root
+    [LD]     btrfstune
+    [LD]     btrfs-select-super
+    [LD]     btrfs-convert
+    [LN]     btrfsck
+    [LD]     libbtrfs.so.0.1
+    [PY]     libbtrfsutil
+    [LN]     libbtrfs.so.0
+    [LN]     libbtrfs.so
+    [LD]     btrfs-corrupt-block
+/usr/bin/install -c -m755 -d /usr/bin
+/usr/bin/install -c btrfs mkfs.btrfs btrfs-map-logical btrfs-image btrfs-find-root btrfstune btrfs-select-super btrfs-convert /usr/bin
+/usr/bin/install -c fsck.btrfs /usr/bin
+# btrfsck is a link to btrfs in the src tree, make it so for installed file as well
+ln -s -f btrfs /usr/bin/btrfsck
+/usr/bin/install -c -m755 -d /usr/lib/udev/rules.d
+/usr/bin/install -c -m644 64-btrfs-dm.rules 64-btrfs-zoned.rules /usr/lib/udev/rules.d
+/usr/bin/install -c -m755 -d /usr/lib
+/usr/bin/install -c libbtrfs.so.0.1 libbtrfsutil.so.1.2.0 libbtrfs.so.0 libbtrfs.so libbtrfsutil.so.1 libbtrfsutil.so /usr/lib
+cp -d libbtrfs.so.0 libbtrfs.so libbtrfsutil.so.1 libbtrfsutil.so /usr/lib
+/usr/bin/install -c -m755 -d /usr/include/btrfs
+/usr/bin/install -c -m644 libbtrfs/send-stream.h libbtrfs/send-utils.h libbtrfs/send.h kernel-lib/rbtree.h kernel-lib/list.h kernel-lib/rbtree_types.h libbtrfs/kerncompat.h libbtrfs/ioctl.h libbtrfs/ctree.h libbtrfs/version.h /usr/include/btrfs
+/usr/bin/install -c -m644 libbtrfsutil/btrfsutil.h /usr/include
+/usr/bin/install -c -m755 -d /usr/lib/pkgconfig
+/usr/bin/install -c -m644 libbtrfsutil/libbtrfsutil.pc /usr/lib/pkgconfig
+'Documentation/btrfs.5' -> '/usr/share/man/man5/btrfs.5'
+'Documentation/btrfs-balance.8' -> '/usr/share/man/man8/btrfs-balance.8'
+'Documentation/btrfs-check.8' -> '/usr/share/man/man8/btrfs-check.8'
+'Documentation/btrfs-convert.8' -> '/usr/share/man/man8/btrfs-convert.8'
+'Documentation/btrfs-device.8' -> '/usr/share/man/man8/btrfs-device.8'
+'Documentation/btrfs-filesystem.8' -> '/usr/share/man/man8/btrfs-filesystem.8'
+'Documentation/btrfs-find-root.8' -> '/usr/share/man/man8/btrfs-find-root.8'
+'Documentation/btrfs-image.8' -> '/usr/share/man/man8/btrfs-image.8'
+'Documentation/btrfs-inspect-internal.8' -> '/usr/share/man/man8/btrfs-inspect-internal.8'
+'Documentation/btrfs-map-logical.8' -> '/usr/share/man/man8/btrfs-map-logical.8'
+'Documentation/btrfs-property.8' -> '/usr/share/man/man8/btrfs-property.8'
+'Documentation/btrfs-qgroup.8' -> '/usr/share/man/man8/btrfs-qgroup.8'
+'Documentation/btrfs-quota.8' -> '/usr/share/man/man8/btrfs-quota.8'
+'Documentation/btrfs-receive.8' -> '/usr/share/man/man8/btrfs-receive.8'
+'Documentation/btrfs-replace.8' -> '/usr/share/man/man8/btrfs-replace.8'
+'Documentation/btrfs-rescue.8' -> '/usr/share/man/man8/btrfs-rescue.8'
+'Documentation/btrfs-restore.8' -> '/usr/share/man/man8/btrfs-restore.8'
+'Documentation/btrfs-scrub.8' -> '/usr/share/man/man8/btrfs-scrub.8'
+'Documentation/btrfs-select-super.8' -> '/usr/share/man/man8/btrfs-select-super.8'
+'Documentation/btrfs-send.8' -> '/usr/share/man/man8/btrfs-send.8'
+'Documentation/btrfs-subvolume.8' -> '/usr/share/man/man8/btrfs-subvolume.8'
+'Documentation/btrfs.8' -> '/usr/share/man/man8/btrfs.8'
+'Documentation/btrfsck.8' -> '/usr/share/man/man8/btrfsck.8'
+'Documentation/btrfstune.8' -> '/usr/share/man/man8/btrfstune.8'
+'Documentation/fsck.btrfs.8' -> '/usr/share/man/man8/fsck.btrfs.8'
+'Documentation/mkfs.btrfs.8' -> '/usr/share/man/man8/mkfs.btrfs.8'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 02:37:08 UTC 2024
+
+Totalseconds: 21
+
+KB: 1787524	/
+

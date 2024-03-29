@@ -1,0 +1,2306 @@
+Patching uclibc:
+Applying patch '../uClibc-000-add-at_quick_exit.patch'...
+patching file include/stdlib.h
+patching file libc/stdlib/Makefile.in
+patching file libc/stdlib/at_quick_exit.c
+patching file libc/stdlib/quick_exit.c
+
+
+Applying patch '../uClibc-000-add-getentropy-from-musl.patch'...
+patching file include/unistd.h
+patching file libc/misc/Makefile.in
+patching file libc/misc/getentropy/Makefile
+patching file libc/misc/getentropy/Makefile.in
+patching file libc/misc/getentropy/getentropy.c
+
+
+Applying patch '../uClibc-000-add-timespec_get.patch'...
+patching file include/time.h
+patching file librt/timespec_get.c
+patching file librt/timespec_getres.c
+
+
+Applying patch '../uClibc-001-merge_usr.patch'...
+patching file ldso/ldso/dl-elf.c
+patching file utils/ldconfig.c
+patching file utils/ldd.c
+
+
+Applying patch '../uClibc-002-ldconfig-no-warn-default.patch'...
+patching file utils/ldconfig.c
+
+
+Fri Mar 29 01:21:08 UTC 2024
+KB: 986540	/
+
+  MKDIR include/config
+  MKDIR include/generated
+--- .config.old	2024-03-29 01:21:08.366942602 +0000
++++ .config	2024-03-29 01:21:08.366942602 +0000
+@@ -252,7 +252,7 @@
+ # Development/debugging options
+ #
+ CROSS_COMPILER_PREFIX=""
+-UCLIBC_EXTRA_CFLAGS=""
++UCLIBC_EXTRA_CFLAGS="-march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections"
+ # DODEBUG is not set
+ # DOSTRIP is not set
+ # DOASSERTS is not set
+removed 'include/crypt.h'
+removed 'include/libintl.h'
+  MKDIR include/bits
+  GEN include/bits/uClibc_config.h
+  MKDIR libubacktrace/x86_64
+processing /sources/uClibc-ng-1.0.46/extra/locale/../../extra/locale/charmaps/ASCII.pairs... 128 lines  done
+processing /sources/uClibc-ng-1.0.46/extra/locale/../../extra/locale/charmaps/ISO-8859-1.pairs... 256 lines  done
+tt_num = 9   ti_num = 2
+max_wchar = 0xff
+size is 9 * 16  +  2 * 16  + 38 * 2  =  252
+ctype - CTYPE_IDX_SHIFT = 3 -- 2 * 16 + 10 * 4 = 72
+uplow - UPLOW_IDX_SHIFT = 3 -- 2 * 16 + 3 * 8 = 56
+c2wc - C2WC_IDX_SHIFT = 3 -- 2 * 16 + 2 * 17 * 8 = 304
+total size = 684
+../../extra/locale/gen_collate.c: In function 'add_final_col_index':
+../../extra/locale/gen_collate.c:2229:18: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2229 |         e.data = (void *)(final_index);
+      |                  ^
+../../extra/locale/gen_collate.c: In function 'final_index_val0':
+../../extra/locale/gen_collate.c:2299:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2299 |         return (int)(p->data);
+      |                ^
+../../extra/locale/gen_collate.c: In function 'final_index_val':
+../../extra/locale/gen_collate.c:2312:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2312 |         return (int)(p->data);
+      |                ^
+../../extra/locale/gen_collate.c: In function 'finalize_base':
+../../extra/locale/gen_collate.c:2900:56: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2900 |                                         wcs2index[i] = (int)(p->data);
+      |                                                        ^
+Warning: adding UNDEFINED entry for zh_TW
+Warning: adding UNDEFINED entry for zh_CN
+ignoring C locale
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/lowlevelbarrier.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/lowlevelbarrier.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/lowlevelcond.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/lowlevelcond.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/lowlevelrobustlock.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/lowlevelrobustlock.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/lowlevelrwlock.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/lowlevelrwlock.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/pthread-pi-defines.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/pthread-pi-defines.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/structsem.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/structsem.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/unwindbuf.h
+  GEN libpthread/nptl/sysdeps/unix/sysv/linux/unwindbuf.h
+  GEN libpthread/nptl/sysdeps/x86_64/tcb-offsets.h
+  GEN libpthread/nptl/sysdeps/x86_64/tcb-offsets.h
+  GEN libpthread/nptl/pthread-errnos.h
+  GEN libpthread/nptl/pthread-errnos.h
+  GEN libc/sysdeps/linux/x86_64/ucontext_i.h
+  GEN libc/sysdeps/linux/x86_64/ucontext_i.h
+  CC ldso/ldso/ldso.oS
+  CC ldso/ldso/dl-vdso.oS
+  AS ldso/ldso/x86_64/resolve.oS
+  AR cr ldso/ldso/ld64-uClibc_so.a
+  STRIP -x -R .note -R .comment ldso/ldso/ld64-uClibc_so.a
+  MKDIR lib
+  LD ld64-uClibc-1.0.46.so
+# link for backward compatibility
+(cd ./lib; ln -sf ld64-uClibc.so.1 ld64-uClibc.so.0 )
+  CC lib/interp.os
+make[2]: Nothing to be done for 'locale_headers'.
+  CC extra/locale/locale_data.os
+  CC libc/sysdeps/linux/x86_64/brk.os
+  CC libc/sysdeps/linux/x86_64/__syscall_error.os
+  CC libc/sysdeps/linux/x86_64/sigaction.os
+  CC libc/sysdeps/linux/x86_64/makecontext.os
+  AS libc/sysdeps/linux/x86_64/__longjmp.os
+  AS libc/sysdeps/linux/x86_64/setjmp.os
+  AS libc/sysdeps/linux/x86_64/syscall.os
+  AS libc/sysdeps/linux/x86_64/bsd-setjmp.os
+  AS libc/sysdeps/linux/x86_64/bsd-_setjmp.os
+  AS libc/sysdeps/linux/x86_64/vfork.os
+  AS libc/sysdeps/linux/x86_64/clone.os
+  AS libc/sysdeps/linux/x86_64/sched_getcpu.os
+  AS libc/sysdeps/linux/x86_64/setcontext.os
+  AS libc/sysdeps/linux/x86_64/getcontext.os
+  AS libc/sysdeps/linux/x86_64/swapcontext.os
+  AS libc/sysdeps/linux/x86_64/__start_context.os
+  CC libc/sysdeps/linux/common/__rt_sigtimedwait.os
+  CC libc/sysdeps/linux/common/__rt_sigwaitinfo.os
+  CC libc/sysdeps/linux/common/__socketcall.os
+  CC libc/sysdeps/linux/common/__syscall_fcntl.os
+  CC libc/sysdeps/linux/common/__syscall_rt_sigaction.os
+  CC libc/sysdeps/linux/common/__syscall_sigaction.os
+  CC libc/sysdeps/linux/common/_exit.os
+  CC libc/sysdeps/linux/common/access.os
+  CC libc/sysdeps/linux/common/acct.os
+  CC libc/sysdeps/linux/common/adjtimex.os
+  CC libc/sysdeps/linux/common/alarm.os
+  CC libc/sysdeps/linux/common/arch_prctl.os
+  CC libc/sysdeps/linux/common/bdflush.os
+  CC libc/sysdeps/linux/common/capget.os
+  CC libc/sysdeps/linux/common/capset.os
+  CC libc/sysdeps/linux/common/chdir.os
+  CC libc/sysdeps/linux/common/chmod.os
+  CC libc/sysdeps/linux/common/chown.os
+  CC libc/sysdeps/linux/common/chroot.os
+  CC libc/sysdeps/linux/common/clock_adjtime.os
+  CC libc/sysdeps/linux/common/clock_getres.os
+  CC libc/sysdeps/linux/common/clock_settime.os
+  CC libc/sysdeps/linux/common/close.os
+  CC libc/sysdeps/linux/common/cmsg_nxthdr.os
+  CC libc/sysdeps/linux/common/creat.os
+  CC libc/sysdeps/linux/common/dup.os
+  CC libc/sysdeps/linux/common/dup2.os
+  CC libc/sysdeps/linux/common/dup3.os
+  CC libc/sysdeps/linux/common/epoll_create.os
+  CC libc/sysdeps/linux/common/epoll_ctl.os
+  CC libc/sysdeps/linux/common/epoll_pwait.os
+  CC libc/sysdeps/linux/common/epoll_wait.os
+  CC libc/sysdeps/linux/common/euidaccess.os
+  CC libc/sysdeps/linux/common/eventfd.os
+  CC libc/sysdeps/linux/common/eventfd_read.os
+  CC libc/sysdeps/linux/common/eventfd_write.os
+  CC libc/sysdeps/linux/common/execve.os
+  CC libc/sysdeps/linux/common/faccessat.os
+  CC libc/sysdeps/linux/common/fallocate.os
+  CC libc/sysdeps/linux/common/fanotify.os
+  CC libc/sysdeps/linux/common/fchdir.os
+  CC libc/sysdeps/linux/common/fchmod.os
+  CC libc/sysdeps/linux/common/fchmodat.os
+  CC libc/sysdeps/linux/common/fchown.os
+  CC libc/sysdeps/linux/common/fchownat.os
+  CC libc/sysdeps/linux/common/fdatasync.os
+  CC libc/sysdeps/linux/common/fexecve.os
+  CC libc/sysdeps/linux/common/flock.os
+  CC libc/sysdeps/linux/common/fstat.os
+  CC libc/sysdeps/linux/common/fstatat.os
+  CC libc/sysdeps/linux/common/fstatfs.os
+  CC libc/sysdeps/linux/common/fsync.os
+  CC libc/sysdeps/linux/common/ftruncate.os
+  CC libc/sysdeps/linux/common/futimens.os
+  CC libc/sysdeps/linux/common/futimesat.os
+In file included from ./include/sys/syscall.h:34,
+                 from libc/sysdeps/linux/common/futimesat.c:9:
+libc/sysdeps/linux/common/futimesat.c:13:80: warning: argument 3 of type 'const struct timeval *' declared as a pointer [-Warray-parameter=]
+   13 | _syscall3(int, futimesat, int, fd, const char *, file, const struct timeval *, tvp)
+      |                                                        ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./include/bits/syscalls-common.h:82:43: note: in definition of macro 'C_DECL_ARGS_1'
+   82 | #define C_DECL_ARGS_1(t, v)             t v
+      |                                           ^
+./include/bits/syscalls-common.h:84:46: note: in expansion of macro 'C_DECL_ARGS_2'
+   84 | #define C_DECL_ARGS_3(t, v, args...)    t v, C_DECL_ARGS_2(args)
+      |                                              ^~~~~~~~~~~~~
+./include/bits/syscalls-common.h:98:11: note: in expansion of macro 'C_DECL_ARGS_3'
+   98 | type name(C_DECL_ARGS_##nargs(args)) {                                  \
+      |           ^~~~~~~~~~~~
+./include/bits/syscalls-common.h:143:41: note: in expansion of macro 'SYSCALL_FUNC'
+  143 | #define _syscall3(args...)              SYSCALL_FUNC(3, args)
+      |                                         ^~~~~~~~~~~~
+libc/sysdeps/linux/common/futimesat.c:13:1: note: in expansion of macro '_syscall3'
+   13 | _syscall3(int, futimesat, int, fd, const char *, file, const struct timeval *, tvp)
+      | ^~~~~~~~~
+In file included from libc/sysdeps/linux/common/futimesat.c:10:
+./include/sys/time.h:162:44: note: previously declared as an array 'const struct timeval[2]'
+  162 |                       const struct timeval __tvp[2]) __THROW;
+      |                       ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+  CC libc/sysdeps/linux/common/getcwd.os
+  CC libc/sysdeps/linux/common/getdents.os
+  CC libc/sysdeps/linux/common/getdirname.os
+  CC libc/sysdeps/linux/common/getdomainname.os
+  CC libc/sysdeps/linux/common/getdtablesize.os
+  CC libc/sysdeps/linux/common/getegid.os
+  CC libc/sysdeps/linux/common/geteuid.os
+  CC libc/sysdeps/linux/common/getgid.os
+  CC libc/sysdeps/linux/common/getgroups.os
+  CC libc/sysdeps/linux/common/gethostname.os
+  CC libc/sysdeps/linux/common/getitimer.os
+  CC libc/sysdeps/linux/common/getpagesize.os
+  CC libc/sysdeps/linux/common/getpgid.os
+  CC libc/sysdeps/linux/common/getpgrp.os
+  CC libc/sysdeps/linux/common/getppid.os
+  CC libc/sysdeps/linux/common/getpriority.os
+  CC libc/sysdeps/linux/common/getrandom.os
+  CC libc/sysdeps/linux/common/getresgid.os
+  CC libc/sysdeps/linux/common/getresuid.os
+  CC libc/sysdeps/linux/common/getrlimit.os
+  CC libc/sysdeps/linux/common/getrusage.os
+  CC libc/sysdeps/linux/common/getsid.os
+  CC libc/sysdeps/linux/common/gettimeofday.os
+  CC libc/sysdeps/linux/common/getuid.os
+  CC libc/sysdeps/linux/common/inotify.os
+  CC libc/sysdeps/linux/common/ioctl.os
+  CC libc/sysdeps/linux/common/ioperm.os
+  CC libc/sysdeps/linux/common/iopl.os
+  CC libc/sysdeps/linux/common/kill.os
+  CC libc/sysdeps/linux/common/klogctl.os
+  CC libc/sysdeps/linux/common/lchown.os
+  CC libc/sysdeps/linux/common/link.os
+  CC libc/sysdeps/linux/common/linkat.os
+  CC libc/sysdeps/linux/common/longjmp.os
+  CC libc/sysdeps/linux/common/lseek.os
+  CC libc/sysdeps/linux/common/lstat.os
+  CC libc/sysdeps/linux/common/lutimes.os
+  CC libc/sysdeps/linux/common/madvise.os
+  CC libc/sysdeps/linux/common/makedev.os
+  CC libc/sysdeps/linux/common/mincore.os
+  CC libc/sysdeps/linux/common/mkdir.os
+  CC libc/sysdeps/linux/common/mkdirat.os
+  CC libc/sysdeps/linux/common/mkfifo.os
+  CC libc/sysdeps/linux/common/mkfifoat.os
+  CC libc/sysdeps/linux/common/mknod.os
+  CC libc/sysdeps/linux/common/mknodat.os
+  CC libc/sysdeps/linux/common/mlock.os
+  CC libc/sysdeps/linux/common/mlockall.os
+  CC libc/sysdeps/linux/common/mmap.os
+  CC libc/sysdeps/linux/common/modify_ldt.os
+  CC libc/sysdeps/linux/common/module.os
+  CC libc/sysdeps/linux/common/mount.os
+  CC libc/sysdeps/linux/common/mprotect.os
+  CC libc/sysdeps/linux/common/mremap.os
+  CC libc/sysdeps/linux/common/msync.os
+  CC libc/sysdeps/linux/common/munlock.os
+  CC libc/sysdeps/linux/common/munlockall.os
+  CC libc/sysdeps/linux/common/munmap.os
+  CC libc/sysdeps/linux/common/name_to_handle_at.os
+  CC libc/sysdeps/linux/common/nanosleep.os
+  CC libc/sysdeps/linux/common/nice.os
+  CC libc/sysdeps/linux/common/noophooks.os
+  CC libc/sysdeps/linux/common/open.os
+  CC libc/sysdeps/linux/common/open_by_handle_at.os
+  CC libc/sysdeps/linux/common/openat.os
+  CC libc/sysdeps/linux/common/pause.os
+  CC libc/sysdeps/linux/common/personality.os
+  CC libc/sysdeps/linux/common/pipe.os
+In file included from ./include/sys/syscall.h:34,
+                 from libc/sysdeps/linux/common/pipe.c:9:
+libc/sysdeps/linux/common/pipe.c:20:29: warning: argument 1 of type 'int *' declared as a pointer [-Warray-parameter=]
+   20 | _syscall1(int, pipe, int *, filedes)
+      |                      ~~~~~~~^~~~~~~
+./include/bits/syscalls-common.h:82:43: note: in definition of macro 'C_DECL_ARGS_1'
+   82 | #define C_DECL_ARGS_1(t, v)             t v
+      |                                           ^
+./include/bits/syscalls-common.h:139:41: note: in expansion of macro 'SYSCALL_FUNC'
+  139 | #define _syscall1(args...)              SYSCALL_FUNC(1, args)
+      |                                         ^~~~~~~~~~~~
+libc/sysdeps/linux/common/pipe.c:20:1: note: in expansion of macro '_syscall1'
+   20 | _syscall1(int, pipe, int *, filedes)
+      | ^~~~~~~~~
+In file included from libc/sysdeps/linux/common/pipe.c:10:
+./include/unistd.h:439:22: note: previously declared as an array 'int[2]'
+  439 | extern int pipe (int __pipedes[2]) __THROW __wur;
+      |                  ~~~~^~~~~~~~~~~~
+  CC libc/sysdeps/linux/common/pipe2.os
+In file included from ./include/sys/syscall.h:34,
+                 from libc/sysdeps/linux/common/pipe2.c:9:
+libc/sysdeps/linux/common/pipe2.c:13:30: warning: argument 1 of type 'int *' declared as a pointer [-Warray-parameter=]
+   13 | _syscall2(int, pipe2, int *, filedes, int, flags)
+      |                       ~~~~~~~^~~~~~~
+./include/bits/syscalls-common.h:83:43: note: in definition of macro 'C_DECL_ARGS_2'
+   83 | #define C_DECL_ARGS_2(t, v, args...)    t v, C_DECL_ARGS_1(args)
+      |                                           ^
+./include/bits/syscalls-common.h:141:41: note: in expansion of macro 'SYSCALL_FUNC'
+  141 | #define _syscall2(args...)              SYSCALL_FUNC(2, args)
+      |                                         ^~~~~~~~~~~~
+libc/sysdeps/linux/common/pipe2.c:13:1: note: in expansion of macro '_syscall2'
+   13 | _syscall2(int, pipe2, int *, filedes, int, flags)
+      | ^~~~~~~~~
+In file included from libc/sysdeps/linux/common/pipe2.c:10:
+./include/unistd.h:445:23: note: previously declared as an array 'int[2]'
+  445 | extern int pipe2 (int __pipedes[2], int __flags) __THROW __wur;
+      |                   ~~~~^~~~~~~~~~~~
+  CC libc/sysdeps/linux/common/pivot_root.os
+  CC libc/sysdeps/linux/common/poll.os
+  CC libc/sysdeps/linux/common/posix_fadvise.os
+  CC libc/sysdeps/linux/common/posix_fallocate.os
+  CC libc/sysdeps/linux/common/posix_madvise.os
+  CC libc/sysdeps/linux/common/ppoll.os
+  CC libc/sysdeps/linux/common/prctl.os
+  CC libc/sysdeps/linux/common/pread_write.os
+  CC libc/sysdeps/linux/common/preadv.os
+  CC libc/sysdeps/linux/common/prlimit.os
+  CC libc/sysdeps/linux/common/pselect.os
+  CC libc/sysdeps/linux/common/ptrace.os
+  CC libc/sysdeps/linux/common/pwritev.os
+  CC libc/sysdeps/linux/common/quotactl.os
+  CC libc/sysdeps/linux/common/read.os
+  CC libc/sysdeps/linux/common/readahead.os
+  CC libc/sysdeps/linux/common/readlink.os
+  CC libc/sysdeps/linux/common/readlinkat.os
+  CC libc/sysdeps/linux/common/readv.os
+  CC libc/sysdeps/linux/common/reboot.os
+  CC libc/sysdeps/linux/common/remap_file_pages.os
+  CC libc/sysdeps/linux/common/rename.os
+  CC libc/sysdeps/linux/common/renameat.os
+  CC libc/sysdeps/linux/common/rmdir.os
+  CC libc/sysdeps/linux/common/sbrk.os
+  CC libc/sysdeps/linux/common/sched_cpucount.os
+  CC libc/sysdeps/linux/common/sched_get_priority_max.os
+  CC libc/sysdeps/linux/common/sched_get_priority_min.os
+  CC libc/sysdeps/linux/common/sched_getaffinity.os
+  CC libc/sysdeps/linux/common/sched_getparam.os
+  CC libc/sysdeps/linux/common/sched_getscheduler.os
+  CC libc/sysdeps/linux/common/sched_rr_get_interval.os
+  CC libc/sysdeps/linux/common/sched_setaffinity.os
+  CC libc/sysdeps/linux/common/sched_setparam.os
+  CC libc/sysdeps/linux/common/sched_setscheduler.os
+  CC libc/sysdeps/linux/common/sched_yield.os
+  CC libc/sysdeps/linux/common/select.os
+  CC libc/sysdeps/linux/common/sendfile.os
+  CC libc/sysdeps/linux/common/setdomainname.os
+  CC libc/sysdeps/linux/common/setegid.os
+  CC libc/sysdeps/linux/common/seteuid.os
+  CC libc/sysdeps/linux/common/setfsgid.os
+  CC libc/sysdeps/linux/common/setfsuid.os
+  CC libc/sysdeps/linux/common/setgid.os
+  CC libc/sysdeps/linux/common/setgroups.os
+  CC libc/sysdeps/linux/common/sethostname.os
+  CC libc/sysdeps/linux/common/setitimer.os
+  CC libc/sysdeps/linux/common/setns.os
+  CC libc/sysdeps/linux/common/setpgid.os
+  CC libc/sysdeps/linux/common/setpgrp.os
+  CC libc/sysdeps/linux/common/setpriority.os
+  CC libc/sysdeps/linux/common/setregid.os
+  CC libc/sysdeps/linux/common/setresgid.os
+  CC libc/sysdeps/linux/common/setresuid.os
+  CC libc/sysdeps/linux/common/setreuid.os
+  CC libc/sysdeps/linux/common/setrlimit.os
+  CC libc/sysdeps/linux/common/setsid.os
+  CC libc/sysdeps/linux/common/settimeofday.os
+  CC libc/sysdeps/linux/common/setuid.os
+  CC libc/sysdeps/linux/common/sigaltstack.os
+  CC libc/sysdeps/linux/common/signalfd.os
+  CC libc/sysdeps/linux/common/sigpending.os
+  CC libc/sysdeps/linux/common/sigprocmask.os
+  CC libc/sysdeps/linux/common/sigqueue.os
+  CC libc/sysdeps/linux/common/sigsuspend.os
+  CC libc/sysdeps/linux/common/splice.os
+  CC libc/sysdeps/linux/common/ssp.os
+  CC libc/sysdeps/linux/common/stat.os
+  CC libc/sysdeps/linux/common/statfs.os
+  CC libc/sysdeps/linux/common/statx_cp.os
+  CC libc/sysdeps/linux/common/stime.os
+  CC libc/sysdeps/linux/common/stubs.os
+  CC libc/sysdeps/linux/common/swapoff.os
+  CC libc/sysdeps/linux/common/swapon.os
+  CC libc/sysdeps/linux/common/symlink.os
+  CC libc/sysdeps/linux/common/symlinkat.os
+  CC libc/sysdeps/linux/common/sync.os
+  CC libc/sysdeps/linux/common/sync_file_range.os
+  CC libc/sysdeps/linux/common/syncfs.os
+  CC libc/sysdeps/linux/common/sysctl.os
+  CC libc/sysdeps/linux/common/sysfs.os
+  CC libc/sysdeps/linux/common/sysinfo.os
+  CC libc/sysdeps/linux/common/tee.os
+  CC libc/sysdeps/linux/common/time.os
+  CC libc/sysdeps/linux/common/timerfd.os
+  CC libc/sysdeps/linux/common/times.os
+  CC libc/sysdeps/linux/common/truncate.os
+  CC libc/sysdeps/linux/common/ulimit.os
+  CC libc/sysdeps/linux/common/umask.os
+  CC libc/sysdeps/linux/common/umount.os
+  CC libc/sysdeps/linux/common/umount2.os
+  CC libc/sysdeps/linux/common/uname.os
+  CC libc/sysdeps/linux/common/unlink.os
+  CC libc/sysdeps/linux/common/unlinkat.os
+  CC libc/sysdeps/linux/common/unshare.os
+  CC libc/sysdeps/linux/common/uselib.os
+  CC libc/sysdeps/linux/common/utime.os
+  CC libc/sysdeps/linux/common/utimensat.os
+In file included from ./include/sys/syscall.h:34,
+                 from libc/sysdeps/linux/common/utimensat.c:9:
+libc/sysdeps/linux/common/utimensat.c:34:81: warning: argument 3 of type 'const struct timespec *' declared as a pointer [-Warray-parameter=]
+   34 | _syscall4(int, utimensat, int, fd, const char *, path, const struct timespec *, times, int, flags)
+      |                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+./include/bits/syscalls-common.h:83:43: note: in definition of macro 'C_DECL_ARGS_2'
+   83 | #define C_DECL_ARGS_2(t, v, args...)    t v, C_DECL_ARGS_1(args)
+      |                                           ^
+./include/bits/syscalls-common.h:85:46: note: in expansion of macro 'C_DECL_ARGS_3'
+   85 | #define C_DECL_ARGS_4(t, v, args...)    t v, C_DECL_ARGS_3(args)
+      |                                              ^~~~~~~~~~~~~
+./include/bits/syscalls-common.h:98:11: note: in expansion of macro 'C_DECL_ARGS_4'
+   98 | type name(C_DECL_ARGS_##nargs(args)) {                                  \
+      |           ^~~~~~~~~~~~
+./include/bits/syscalls-common.h:144:41: note: in expansion of macro 'SYSCALL_FUNC'
+  144 | #define _syscall4(args...)              SYSCALL_FUNC(4, args)
+      |                                         ^~~~~~~~~~~~
+libc/sysdeps/linux/common/utimensat.c:34:1: note: in expansion of macro '_syscall4'
+   34 | _syscall4(int, utimensat, int, fd, const char *, path, const struct timespec *, times, int, flags)
+      | ^~~~~~~~~
+In file included from libc/sysdeps/linux/common/utimensat.c:10:
+./include/sys/stat.h:379:45: note: previously declared as an array 'const struct timespec[2]'
+  379 |                       const struct timespec __times[2],
+      |                       ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+  CC libc/sysdeps/linux/common/utimes.os
+In file included from ./include/sys/syscall.h:34,
+                 from libc/sysdeps/linux/common/utimes.c:9:
+libc/sysdeps/linux/common/utimes.c:32:68: warning: argument 2 of type 'const struct timeval *' declared as a pointer [-Warray-parameter=]
+   32 | _syscall2(int, utimes, const char *, file, const struct timeval *, tvp)
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./include/bits/syscalls-common.h:82:43: note: in definition of macro 'C_DECL_ARGS_1'
+   82 | #define C_DECL_ARGS_1(t, v)             t v
+      |                                           ^
+./include/bits/syscalls-common.h:98:11: note: in expansion of macro 'C_DECL_ARGS_2'
+   98 | type name(C_DECL_ARGS_##nargs(args)) {                                  \
+      |           ^~~~~~~~~~~~
+./include/bits/syscalls-common.h:141:41: note: in expansion of macro 'SYSCALL_FUNC'
+  141 | #define _syscall2(args...)              SYSCALL_FUNC(2, args)
+      |                                         ^~~~~~~~~~~~
+libc/sysdeps/linux/common/utimes.c:32:1: note: in expansion of macro '_syscall2'
+   32 | _syscall2(int, utimes, const char *, file, const struct timeval *, tvp)
+      | ^~~~~~~~~
+In file included from libc/sysdeps/linux/common/utimes.c:10:
+./include/sys/time.h:142:61: note: previously declared as an array 'const struct timeval[2]'
+  142 | extern int utimes (const char *__file, const struct timeval __tvp[2])
+      |                                        ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+  CC libc/sysdeps/linux/common/vhangup.os
+  CC libc/sysdeps/linux/common/vmsplice.os
+  CC libc/sysdeps/linux/common/wait.os
+  CC libc/sysdeps/linux/common/wait3.os
+  CC libc/sysdeps/linux/common/wait4.os
+  CC libc/sysdeps/linux/common/waitid.os
+  CC libc/sysdeps/linux/common/waitpid.os
+  CC libc/sysdeps/linux/common/write.os
+  CC libc/sysdeps/linux/common/writev.os
+  CC libc/sysdeps/linux/common/xattr.os
+  CC libc/sysdeps/linux/common/xstatconv.os
+  CC libc/sysdeps/linux/common/llseek.os
+  CC libc/sysdeps/linux/common/__syscall_fcntl64.os
+  CC libc/sysdeps/linux/common/creat64.os
+  CC libc/sysdeps/linux/common/fallocate64.os
+  CC libc/sysdeps/linux/common/fstat64.os
+  CC libc/sysdeps/linux/common/fstatat64.os
+  CC libc/sysdeps/linux/common/ftruncate64.os
+  CC libc/sysdeps/linux/common/getdents64.os
+  CC libc/sysdeps/linux/common/getrlimit64.os
+  CC libc/sysdeps/linux/common/lstat64.os
+  CC libc/sysdeps/linux/common/mmap64.os
+  CC libc/sysdeps/linux/common/open64.os
+  CC libc/sysdeps/linux/common/openat64.os
+  CC libc/sysdeps/linux/common/posix_fadvise64.os
+  CC libc/sysdeps/linux/common/posix_fallocate64.os
+  CC libc/sysdeps/linux/common/prlimit64.os
+  CC libc/sysdeps/linux/common/sendfile64.os
+  CC libc/sysdeps/linux/common/setrlimit64.os
+  CC libc/sysdeps/linux/common/stat64.os
+  CC libc/sysdeps/linux/common/truncate64.os
+  CC libc/misc/assert/__assert.os
+  CC libc/misc/auxvt/getauxval.os
+  CC libc/misc/ctype/isalnum.os
+  CC libc/misc/ctype/isalpha.os
+  CC libc/misc/ctype/iscntrl.os
+  CC libc/misc/ctype/isdigit.os
+  CC libc/misc/ctype/isgraph.os
+  CC libc/misc/ctype/islower.os
+  CC libc/misc/ctype/isprint.os
+  CC libc/misc/ctype/ispunct.os
+  CC libc/misc/ctype/isspace.os
+  CC libc/misc/ctype/isupper.os
+  CC libc/misc/ctype/isxdigit.os
+  CC libc/misc/ctype/tolower.os
+  CC libc/misc/ctype/toupper.os
+  CC libc/misc/ctype/isblank.os
+  CC libc/misc/ctype/isascii.os
+  CC libc/misc/ctype/toascii.os
+  CC libc/misc/ctype/__C_ctype_b.os
+  CC libc/misc/ctype/__C_ctype_tolower.os
+  CC libc/misc/ctype/__C_ctype_toupper.os
+  CC libc/misc/ctype/__ctype_b_loc.os
+  CC libc/misc/ctype/__ctype_tolower_loc.os
+  CC libc/misc/ctype/__ctype_toupper_loc.os
+  CC libc/misc/ctype/__ctype_assert.os
+  CC libc/misc/ctype/isctype.os
+  CC libc/misc/ctype/isalnum_l.os
+  CC libc/misc/ctype/isalpha_l.os
+  CC libc/misc/ctype/iscntrl_l.os
+  CC libc/misc/ctype/isdigit_l.os
+  CC libc/misc/ctype/isgraph_l.os
+  CC libc/misc/ctype/islower_l.os
+  CC libc/misc/ctype/isprint_l.os
+  CC libc/misc/ctype/ispunct_l.os
+  CC libc/misc/ctype/isspace_l.os
+  CC libc/misc/ctype/isupper_l.os
+  CC libc/misc/ctype/isxdigit_l.os
+  CC libc/misc/ctype/tolower_l.os
+  CC libc/misc/ctype/toupper_l.os
+  CC libc/misc/ctype/isblank_l.os
+  CC libc/misc/ctype/isascii_l.os
+  CC libc/misc/ctype/toascii_l.os
+  CC libc/misc/dirent/closedir.os
+  CC libc/misc/dirent/dirfd.os
+  CC libc/misc/dirent/opendir.os
+  CC libc/misc/dirent/rewinddir.os
+  CC libc/misc/dirent/seekdir.os
+  CC libc/misc/dirent/telldir.os
+  CC libc/misc/dirent/alphasort.os
+  CC libc/misc/dirent/readdir.os
+  CC libc/misc/dirent/scandir.os
+  CC libc/misc/dirent/versionsort.os
+  CC libc/misc/dirent/readdir_r.os
+  CC libc/misc/dirent/alphasort64.os
+  CC libc/misc/dirent/readdir64.os
+  CC libc/misc/dirent/scandir64.os
+  CC libc/misc/dirent/versionsort64.os
+  CC libc/misc/dirent/readdir64_r.os
+  CC libc/misc/error/err.os
+  CC libc/misc/error/error.os
+  CC libc/misc/file/isfdtype.os
+  CC libc/misc/file/issetugid.os
+  CC libc/misc/file/lockf.os
+  CC libc/misc/file/lockf64.os
+  CC libc/misc/fnmatch/fnmatch.os
+  CC libc/misc/ftw/ftw.os
+  CC libc/misc/ftw/ftw64.os
+  CC libc/misc/getentropy/getentropy.os
+  CC libc/misc/getloadavg/getloadavg.os
+  CC libc/misc/glob/glob.os
+  CC libc/misc/glob/glob64.os
+  CC libc/misc/internals/tempname.os
+  CC libc/misc/internals/errno.os
+  CC libc/misc/internals/h_errno.os
+  CC libc/misc/internals/__errno_location.os
+  CC libc/misc/internals/__h_errno_location.os
+  CC libc/misc/internals/parse_config.os
+  CC libc/misc/internals/version.os
+  CC libc/misc/locale/setlocale.os
+  CC libc/misc/locale/localeconv.os
+  CC libc/misc/locale/_locale_init.os
+  CC libc/misc/locale/nl_langinfo.os
+  CC libc/misc/locale/newlocale.os
+  CC libc/misc/locale/__locale_mbrtowc_l.os
+  CC libc/misc/locale/nl_langinfo_l.os
+  CC libc/misc/locale/duplocale.os
+  CC libc/misc/locale/freelocale.os
+  CC libc/misc/locale/uselocale.os
+  CC libc/misc/locale/__curlocale.os
+  CC libc/misc/mntent/mntent.os
+  CC libc/misc/regex/regex.os
+  CC libc/misc/search/hsearch.os
+  CC libc/misc/search/tsearch.os
+  CC libc/misc/search/tfind.os
+  CC libc/misc/search/tdelete.os
+  CC libc/misc/search/twalk.os
+  CC libc/misc/search/tdestroy.os
+  CC libc/misc/search/lfind.os
+  CC libc/misc/search/lsearch.os
+  CC libc/misc/search/insque.os
+  CC libc/misc/search/remque.os
+  CC libc/misc/search/hcreate_r.os
+  CC libc/misc/search/hdestroy_r.os
+  CC libc/misc/search/hsearch_r.os
+  CC libc/misc/statfs/statvfs.os
+  CC libc/misc/statfs/fstatvfs.os
+  CC libc/misc/statfs/statvfs64.os
+  CC libc/misc/statfs/fstatvfs64.os
+  CC libc/misc/statfs/fstatfs64.os
+  CC libc/misc/statfs/statfs64.os
+  CC libc/misc/syslog/syslog.os
+  CC libc/misc/sysvipc/ftok.os
+  CC libc/misc/sysvipc/__syscall_ipc.os
+  CC libc/misc/sysvipc/semget.os
+  CC libc/misc/sysvipc/semctl.os
+  CC libc/misc/sysvipc/semop.os
+  CC libc/misc/sysvipc/semtimedop.os
+  CC libc/misc/sysvipc/shmat.os
+  CC libc/misc/sysvipc/shmctl.os
+  CC libc/misc/sysvipc/shmdt.os
+  CC libc/misc/sysvipc/shmget.os
+  CC libc/misc/sysvipc/msgctl.os
+  CC libc/misc/sysvipc/msgget.os
+  CC libc/misc/sysvipc/msgrcv.os
+  CC libc/misc/sysvipc/msgsnd.os
+  CC libc/misc/time/adjtime.os
+  CC libc/misc/time/ftime.os
+  CC libc/misc/time/asctime.os
+  CC libc/misc/time/asctime_r.os
+  CC libc/misc/time/clock.os
+  CC libc/misc/time/ctime.os
+  CC libc/misc/time/ctime_r.os
+  CC libc/misc/time/gmtime.os
+  CC libc/misc/time/gmtime_r.os
+  CC libc/misc/time/localtime.os
+  CC libc/misc/time/localtime_r.os
+  CC libc/misc/time/mktime.os
+  CC libc/misc/time/strftime.os
+  CC libc/misc/time/strptime.os
+  CC libc/misc/time/tzset.os
+  CC libc/misc/time/_time_t2tm.os
+  CC libc/misc/time/__time_tm.os
+  CC libc/misc/time/_time_mktime.os
+  CC libc/misc/time/dysize.os
+  CC libc/misc/time/timegm.os
+  CC libc/misc/time/_time_mktime_tzi.os
+  CC libc/misc/time/_time_localtime_tzi.os
+  CC libc/misc/time/difftime.os
+  CC libc/misc/time/strftime_l.os
+  CC libc/misc/time/strptime_l.os
+  CC libc/misc/time/wcsftime.os
+  CC libc/misc/time/wcsftime_l.os
+  CC libc/misc/ttyent/getttyent.os
+  CC libc/misc/utmp/utent.os
+  CC libc/misc/wchar/btowc.os
+  CC libc/misc/wchar/wctob.os
+  CC libc/misc/wchar/mbsinit.os
+  CC libc/misc/wchar/mbrlen.os
+  CC libc/misc/wchar/mbrtowc.os
+  CC libc/misc/wchar/wcrtomb.os
+  CC libc/misc/wchar/mbsrtowcs.os
+  CC libc/misc/wchar/wcsrtombs.os
+  CC libc/misc/wchar/_wchar_utf8sntowcs.os
+  CC libc/misc/wchar/_wchar_wcsntoutf8s.os
+  CC libc/misc/wchar/mbsnrtowcs.os
+  CC libc/misc/wchar/wcsnrtombs.os
+  CC libc/misc/wchar/wcwidth.os
+  CC libc/misc/wchar/wcswidth.os
+  CC libc/misc/wchar/iconv.os
+In file included from libc/misc/wchar/iconv.c:8:
+libc/misc/wchar/wchar.c: In function 'iconv_close':
+libc/misc/wchar/wchar.c:1301:14: warning: passing argument 1 of 'free' makes pointer from integer without a cast [-Wint-conversion]
+ 1301 |         free(cd);
+      |              ^~
+      |              |
+      |              iconv_t {aka long int}
+In file included from libc/misc/wchar/wchar.c:106:
+./include/stdlib.h:508:25: note: expected 'void *' but argument is of type 'iconv_t' {aka 'long int'}
+  508 | extern void free (void *__ptr) __THROW;
+      |                   ~~~~~~^~~~~
+  CC libc/misc/wctype/iswalnum.os
+  CC libc/misc/wctype/iswalpha.os
+  CC libc/misc/wctype/iswcntrl.os
+  CC libc/misc/wctype/iswdigit.os
+  CC libc/misc/wctype/iswgraph.os
+  CC libc/misc/wctype/iswlower.os
+  CC libc/misc/wctype/iswprint.os
+  CC libc/misc/wctype/iswpunct.os
+  CC libc/misc/wctype/iswspace.os
+  CC libc/misc/wctype/iswupper.os
+  CC libc/misc/wctype/iswxdigit.os
+  CC libc/misc/wctype/iswblank.os
+  CC libc/misc/wctype/wctrans.os
+  CC libc/misc/wctype/towctrans.os
+  CC libc/misc/wctype/wctype.os
+  CC libc/misc/wctype/iswctype.os
+  CC libc/misc/wctype/towlower.os
+  CC libc/misc/wctype/towupper.os
+  CC libc/misc/wctype/iswalnum_l.os
+  CC libc/misc/wctype/iswalpha_l.os
+  CC libc/misc/wctype/iswcntrl_l.os
+  CC libc/misc/wctype/iswdigit_l.os
+  CC libc/misc/wctype/iswgraph_l.os
+  CC libc/misc/wctype/iswlower_l.os
+  CC libc/misc/wctype/iswprint_l.os
+  CC libc/misc/wctype/iswpunct_l.os
+  CC libc/misc/wctype/iswspace_l.os
+  CC libc/misc/wctype/iswupper_l.os
+  CC libc/misc/wctype/iswxdigit_l.os
+  CC libc/misc/wctype/iswblank_l.os
+  CC libc/misc/wctype/wctrans_l.os
+  CC libc/misc/wctype/towctrans_l.os
+  CC libc/misc/wctype/wctype_l.os
+  CC libc/misc/wctype/iswctype_l.os
+  CC libc/misc/wctype/towlower_l.os
+  CC libc/misc/wctype/towupper_l.os
+  CC libc/pwd_grp/__getgrouplist_internal.os
+  CC libc/pwd_grp/__parsegrent.os
+  CC libc/pwd_grp/__parsepwent.os
+  CC libc/pwd_grp/__parsespent.os
+  CC libc/pwd_grp/__pgsreader.os
+  CC libc/pwd_grp/fgetgrent.os
+  CC libc/pwd_grp/fgetgrent_r.os
+  CC libc/pwd_grp/fgetpwent.os
+  CC libc/pwd_grp/fgetpwent_r.os
+  CC libc/pwd_grp/fgetspent.os
+  CC libc/pwd_grp/fgetspent_r.os
+  CC libc/pwd_grp/getgrent.os
+  CC libc/pwd_grp/getgrent_r.os
+  CC libc/pwd_grp/getgrgid.os
+  CC libc/pwd_grp/getgrgid_r.os
+  CC libc/pwd_grp/getgrnam.os
+  CC libc/pwd_grp/getgrnam_r.os
+  CC libc/pwd_grp/getgrouplist.os
+  CC libc/pwd_grp/getpw.os
+  CC libc/pwd_grp/getpwent.os
+  CC libc/pwd_grp/getpwent_r.os
+  CC libc/pwd_grp/getpwnam.os
+  CC libc/pwd_grp/getpwnam_r.os
+  CC libc/pwd_grp/getpwuid.os
+  CC libc/pwd_grp/getpwuid_r.os
+  CC libc/pwd_grp/getspent.os
+  CC libc/pwd_grp/getspent_r.os
+  CC libc/pwd_grp/getspnam.os
+  CC libc/pwd_grp/getspnam_r.os
+  CC libc/pwd_grp/initgroups.os
+  CC libc/pwd_grp/lckpwdf.os
+  CC libc/pwd_grp/putgrent.os
+  CC libc/pwd_grp/putpwent.os
+  CC libc/pwd_grp/putspent.os
+  CC libc/pwd_grp/sgetspent.os
+  CC libc/pwd_grp/sgetspent_r.os
+  CC libc/stdio/fclose.os
+  CC libc/stdio/fcloseall.os
+  CC libc/stdio/fdopen.os
+  CC libc/stdio/fgetpos.os
+  CC libc/stdio/fopen.os
+  CC libc/stdio/freopen.os
+  CC libc/stdio/fseeko.os
+  CC libc/stdio/fsetpos.os
+  CC libc/stdio/ftello.os
+  CC libc/stdio/getdelim.os
+  CC libc/stdio/getline.os
+  CC libc/stdio/gets.os
+  CC libc/stdio/getw.os
+  CC libc/stdio/perror.os
+  CC libc/stdio/puts.os
+  CC libc/stdio/putw.os
+  CC libc/stdio/remove.os
+  CC libc/stdio/rewind.os
+  CC libc/stdio/setbuf.os
+  CC libc/stdio/setbuffer.os
+  CC libc/stdio/setlinebuf.os
+  CC libc/stdio/setvbuf.os
+  CC libc/stdio/ungetc.os
+  CC libc/stdio/printf.os
+  CC libc/stdio/vprintf.os
+  CC libc/stdio/vsprintf.os
+  CC libc/stdio/fprintf.os
+  CC libc/stdio/snprintf.os
+  CC libc/stdio/dprintf.os
+  CC libc/stdio/asprintf.os
+  CC libc/stdio/sprintf.os
+  CC libc/stdio/vasprintf.os
+  CC libc/stdio/vdprintf.os
+  CC libc/stdio/vsnprintf.os
+  CC libc/stdio/tmpfile.os
+  CC libc/stdio/popen.os
+  CC libc/stdio/ctermid.os
+  CC libc/stdio/fgetpos64.os
+  CC libc/stdio/fopen64.os
+  CC libc/stdio/freopen64.os
+  CC libc/stdio/fseeko64.os
+  CC libc/stdio/fsetpos64.os
+  CC libc/stdio/ftello64.os
+  CC libc/stdio/tmpnam.os
+  CC libc/stdio/tmpnam_r.os
+  CC libc/stdio/tempnam.os
+  CC libc/stdio/_READ.os
+  CC libc/stdio/_WRITE.os
+  CC libc/stdio/_adjust_pos.os
+  CC libc/stdio/_fopen.os
+  CC libc/stdio/_fwrite.os
+  CC libc/stdio/_rfill.os
+  CC libc/stdio/_stdio.os
+  CC libc/stdio/_trans2r.os
+  CC libc/stdio/_trans2w.os
+  CC libc/stdio/_wcommit.os
+  CC libc/stdio/_cs_funcs.os
+  CC libc/stdio/_load_inttype.os
+  CC libc/stdio/_store_inttype.os
+  CC libc/stdio/_uintmaxtostr.os
+libc/stdio/_uintmaxtostr.c: In function '_uintmaxtostr':
+libc/stdio/_uintmaxtostr.c:109:30: warning: 'g' may be used uninitialized [-Wmaybe-uninitialized]
+  109 |                         if (g[1] != 0) {        /* g[1] == 0 means repeat last grouping. */
+      |                             ~^~~
+libc/stdio/_uintmaxtostr.c:30:21: note: 'g' was declared here
+   30 |         const char *g;             /* This does not need to be initialized. */
+      |                     ^
+  CC libc/stdio/_fpmaxtostr.os
+libc/stdio/_fpmaxtostr.c:165:9: warning: floating constant exceeds range of 'long double' [-Woverflow]
+  165 |         0x1.0p16384L
+      |         ^~~~~~~~~~~~
+libc/stdio/_fpmaxtostr.c: In function '_fpmaxtostr':
+libc/stdio/_fpmaxtostr.c:673:43: warning: 'tslen' may be used uninitialized [-Wmaybe-uninitialized]
+  673 |                         cnt += num_groups * tslen; /* Adjust count now for sep chars. */
+      |                                ~~~~~~~~~~~^~~~~~~
+libc/stdio/_fpmaxtostr.c:200:13: note: 'tslen' was declared here
+  200 |         int tslen;                 /* This does not need to be initialized. */
+      |             ^~~~~
+libc/stdio/_fpmaxtostr.c:718:37: warning: 'ts' may be used uninitialized [-Wmaybe-uninitialized]
+  718 |                                 if (fp_outfunc(fp, FPO_STR_PREC, tslen, (intptr_t) ts) != tslen) {
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libc/stdio/_fpmaxtostr.c:202:21: note: 'ts' was declared here
+  202 |         const char *ts;            /* This does not need to be initialized. */
+      |                     ^~
+libc/stdio/_fpmaxtostr.c:677:36: warning: 'initial_group' may be used uninitialized [-Wmaybe-uninitialized]
+  677 |                                 if (!blk) {             /* Initial group could be 0 digits long! */
+      |                                    ^
+libc/stdio/_fpmaxtostr.c:199:13: note: 'initial_group' was declared here
+  199 |         int initial_group;         /* This does not need to be initialized. */
+      |             ^~~~~~~~~~~~~
+  CC libc/stdio/__fbufsize.os
+  CC libc/stdio/__flbf.os
+  CC libc/stdio/__fpending.os
+  CC libc/stdio/__fpurge.os
+  CC libc/stdio/__freadable.os
+  CC libc/stdio/__freading.os
+  CC libc/stdio/__fsetlocking.os
+  CC libc/stdio/__fwritable.os
+  CC libc/stdio/__fwriting.os
+  CC libc/stdio/_flushlbf.os
+  CC libc/stdio/fopencookie.os
+  CC libc/stdio/fmemopen.os
+  CC libc/stdio/open_memstream.os
+  CC libc/stdio/flockfile.os
+  CC libc/stdio/ftrylockfile.os
+  CC libc/stdio/funlockfile.os
+  CC libc/stdio/vfprintf.os
+  CC libc/stdio/_vfprintf_internal.os
+In file included from libc/stdio/_vfprintf_internal.c:9:
+libc/stdio/_vfprintf.c: In function '_do_one_spec':
+libc/stdio/_vfprintf.c:1563:50: warning: passing argument 1 to 'restrict'-qualified parameter aliases with argument 2 [-Wrestrict]
+ 1563 |                                 slen = wcsrtombs((char *) &ws, &ws, /* Use awful hack! */
+      |                                                  ^~~~~~~~~~~~  ~~~
+In function '_do_one_spec',
+    inlined from '_vfprintf_internal' at libc/stdio/_vfprintf.c:1814:9:
+libc/stdio/_vfprintf.c:1603:54: warning: 'argptr$' may be used uninitialized [-Wmaybe-uninitialized]
+ 1603 |                                 *s = (unsigned char)(*((const int *) *argptr));
+      |                                                     ~^~~~~~~~~~~~~~~~~~~~~~~~~
+libc/stdio/_vfprintf.c: In function '_vfprintf_internal':
+libc/stdio/_vfprintf.c:1381:22: note: 'argptr$' was declared here
+ 1381 |         const void * argptr[MAX_ARGS_PER_SPEC];
+      |                      ^~~~~~
+  CC libc/stdio/_ppfs_init.os
+  CC libc/stdio/_ppfs_prepargs.os
+  CC libc/stdio/_ppfs_setargs.os
+  CC libc/stdio/_ppfs_parsespec.os
+  CC libc/stdio/register_printf_function.os
+  CC libc/stdio/parse_printf_format.os
+  CC libc/stdio/vfscanf.os
+  CC libc/stdio/__scan_cookie.os
+  CC libc/stdio/__psfs_parse_spec.os
+  CC libc/stdio/__psfs_do_numeric.os
+In file included from libc/stdio/__psfs_do_numeric.c:9:
+libc/stdio/_scanf.c: In function '__psfs_do_numeric':
+libc/stdio/_scanf.c:1807:42: warning: variable 'lastblock' set but not used [-Wunused-but-set-variable]
+ 1807 |                 int nblk1, nblk2, nbmax, lastblock, pass, i;
+      |                                          ^~~~~~~~~
+  CC libc/stdio/scanf.os
+  CC libc/stdio/sscanf.os
+  CC libc/stdio/fscanf.os
+  CC libc/stdio/vscanf.os
+  CC libc/stdio/vsscanf.os
+  CC libc/stdio/_wfwrite.os
+  CC libc/stdio/fwprintf.os
+  CC libc/stdio/swprintf.os
+  CC libc/stdio/vswprintf.os
+  CC libc/stdio/vwprintf.os
+  CC libc/stdio/wprintf.os
+  CC libc/stdio/fwide.os
+  CC libc/stdio/ungetwc.os
+  CC libc/stdio/vfwprintf.os
+  CC libc/stdio/_vfwprintf_internal.os
+In file included from libc/stdio/_vfwprintf_internal.c:9:
+libc/stdio/_vfprintf.c: In function '_do_one_spec':
+libc/stdio/_vfprintf.c:1641:66: warning: passing argument 1 to 'restrict'-qualified parameter aliases with argument 4 [-Wrestrict]
+ 1641 |                                                 SLEN = mbsrtowcs((wchar_t *) &mbstate, &q,
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~
+......
+ 1644 |                                                                                  &mbstate);
+      |                                                                                  ~~~~~~~~
+In function '_do_one_spec',
+    inlined from '_vfwprintf_internal' at libc/stdio/_vfprintf.c:1814:9:
+libc/stdio/_vfprintf.c:1658:64: warning: 'argptr$' may be used uninitialized [-Wmaybe-uninitialized]
+ 1658 |                                 *wbuf = btowc( (unsigned char)(*((const int *) *argptr)) );
+      |                                                               ~^~~~~~~~~~~~~~~~~~~~~~~~~
+libc/stdio/_vfprintf.c: In function '_vfwprintf_internal':
+libc/stdio/_vfprintf.c:1381:22: note: 'argptr$' was declared here
+ 1381 |         const void * argptr[MAX_ARGS_PER_SPEC];
+      |                      ^~~~~~
+  CC libc/stdio/wscanf.os
+  CC libc/stdio/swscanf.os
+  CC libc/stdio/fwscanf.os
+  CC libc/stdio/vwscanf.os
+  CC libc/stdio/vswscanf.os
+  CC libc/stdio/vfwscanf.os
+  CC libc/stdio/clearerr.os
+  CC libc/stdio/feof.os
+  CC libc/stdio/ferror.os
+  CC libc/stdio/fflush.os
+  CC libc/stdio/fgetc.os
+  CC libc/stdio/fgets.os
+  CC libc/stdio/fileno.os
+  CC libc/stdio/fputc.os
+  CC libc/stdio/fputs.os
+  CC libc/stdio/fread.os
+  CC libc/stdio/fwrite.os
+  CC libc/stdio/getchar.os
+  CC libc/stdio/putchar.os
+  CC libc/stdio/fgetwc.os
+  CC libc/stdio/getwchar.os
+  CC libc/stdio/fgetws.os
+  CC libc/stdio/fputwc.os
+  CC libc/stdio/putwchar.os
+  CC libc/stdio/fputws.os
+  CC libc/stdio/clearerr_unlocked.os
+  CC libc/stdio/feof_unlocked.os
+  CC libc/stdio/ferror_unlocked.os
+  CC libc/stdio/fflush_unlocked.os
+  CC libc/stdio/fgetc_unlocked.os
+  CC libc/stdio/fgets_unlocked.os
+  CC libc/stdio/fileno_unlocked.os
+  CC libc/stdio/fputc_unlocked.os
+  CC libc/stdio/fputs_unlocked.os
+  CC libc/stdio/fread_unlocked.os
+  CC libc/stdio/fwrite_unlocked.os
+  CC libc/stdio/getchar_unlocked.os
+  CC libc/stdio/putchar_unlocked.os
+  CC libc/stdio/fgetwc_unlocked.os
+  CC libc/stdio/getwchar_unlocked.os
+  CC libc/stdio/fgetws_unlocked.os
+  CC libc/stdio/fputwc_unlocked.os
+  CC libc/stdio/putwchar_unlocked.os
+  CC libc/stdio/fputws_unlocked.os
+  AS libc/string/x86_64/bzero.os
+  AS libc/string/x86_64/memcpy.os
+  AS libc/string/x86_64/mempcpy.os
+  AS libc/string/x86_64/memset.os
+  AS libc/string/x86_64/stpcpy.os
+  AS libc/string/x86_64/strcat.os
+  AS libc/string/x86_64/strchr.os
+  AS libc/string/x86_64/strcmp.os
+  AS libc/string/x86_64/strcpy.os
+  AS libc/string/x86_64/strcspn.os
+  AS libc/string/x86_64/strlen.os
+  AS libc/string/x86_64/strpbrk.os
+  AS libc/string/x86_64/strspn.os
+  CC libc/string/generic/memchr.os
+  CC libc/string/generic/memcmp.os
+  CC libc/string/generic/memmem.os
+  CC libc/string/generic/memmove.os
+  CC libc/string/generic/memrchr.os
+  CC libc/string/generic/rawmemchr.os
+  CC libc/string/generic/strchrnul.os
+  CC libc/string/generic/strncat.os
+  CC libc/string/generic/strncmp.os
+  CC libc/string/generic/strncpy.os
+  CC libc/string/generic/strnlen.os
+  CC libc/string/generic/strrchr.os
+  CC libc/string/generic/strsep.os
+  CC libc/string/generic/strstr.os
+  CC libc/string/generic/strtok_r.os
+  CC libc/string/__glibc_strerror_r.os
+  CC libc/string/__xpg_basename.os
+  CC libc/string/__xpg_strerror_r.os
+  CC libc/string/_string_syserrmsgs.os
+  CC libc/string/_string_syssigmsgs.os
+  CC libc/string/basename.os
+  CC libc/string/bcopy.os
+  CC libc/string/dirname.os
+  CC libc/string/ffs.os
+  CC libc/string/ffsll.os
+  CC libc/string/memccpy.os
+  CC libc/string/psignal.os
+  CC libc/string/stpncpy.os
+  CC libc/string/strcasecmp.os
+  CC libc/string/strcasestr.os
+  CC libc/string/strdup.os
+  CC libc/string/strerror.os
+  CC libc/string/strlcat.os
+  CC libc/string/strlcpy.os
+  CC libc/string/strncasecmp.os
+  CC libc/string/strndup.os
+  CC libc/string/strsignal.os
+  CC libc/string/strtok.os
+  CC libc/string/strverscmp.os
+  CC libc/string/strxfrm.os
+  CC libc/string/sys_errlist.os
+  CC libc/string/sys_siglist.os
+  CC libc/string/wcpcpy.os
+  CC libc/string/wcpncpy.os
+  CC libc/string/wcscasecmp.os
+  CC libc/string/wcscat.os
+  CC libc/string/wcschr.os
+  CC libc/string/wcschrnul.os
+  CC libc/string/wcscmp.os
+  CC libc/string/wcscpy.os
+  CC libc/string/wcscspn.os
+  CC libc/string/wcsdup.os
+  CC libc/string/wcslcpy.os
+  CC libc/string/wcslen.os
+  CC libc/string/wcsncasecmp.os
+  CC libc/string/wcsncat.os
+  CC libc/string/wcsncmp.os
+  CC libc/string/wcsncpy.os
+  CC libc/string/wcsnlen.os
+  CC libc/string/wcspbrk.os
+  CC libc/string/wcsrchr.os
+  CC libc/string/wcsspn.os
+  CC libc/string/wcsstr.os
+  CC libc/string/wcstok.os
+  CC libc/string/wcsxfrm.os
+  CC libc/string/wmemchr.os
+  CC libc/string/wmemcmp.os
+  CC libc/string/wmemcpy.os
+  CC libc/string/wmemmove.os
+  CC libc/string/wmempcpy.os
+  CC libc/string/wmemset.os
+  CC libc/string/strcasecmp_l.os
+  CC libc/string/strncasecmp_l.os
+  CC libc/string/strxfrm_l.os
+  CC libc/string/wcscasecmp_l.os
+  CC libc/string/wcsncasecmp_l.os
+  CC libc/string/wcsxfrm_l.os
+  CC libc/termios/cfmakeraw.os
+  CC libc/termios/cfsetspeed.os
+  CC libc/termios/isatty.os
+  CC libc/termios/speed.os
+  CC libc/termios/tcdrain.os
+  CC libc/termios/tcflow.os
+  CC libc/termios/tcflush.os
+  CC libc/termios/tcgetattr.os
+  CC libc/termios/tcgetpgrp.os
+  CC libc/termios/tcgetsid.os
+  CC libc/termios/tcsendbrk.os
+  CC libc/termios/tcsetattr.os
+  CC libc/termios/tcsetpgrp.os
+  CC libc/termios/ttyname.os
+  CC libc/inet/ntohl.os
+  CC libc/inet/getservice.os
+  CC libc/inet/getproto.os
+  CC libc/inet/getnet.os
+  CC libc/inet/hostid.os
+  CC libc/inet/inet_net.os
+  CC libc/inet/herror.os
+  CC libc/inet/if_index.os
+  CC libc/inet/gai_strerror.os
+  CC libc/inet/getaddrinfo.os
+  CC libc/inet/ifaddrs.os
+  CC libc/inet/ntop.os
+  CC libc/inet/in6_addr.os
+  CC libc/inet/inet_aton.os
+  CC libc/inet/inet_addr.os
+  CC libc/inet/inet_ntoa.os
+  CC libc/inet/inet_makeaddr.os
+  CC libc/inet/inet_lnaof.os
+  CC libc/inet/inet_netof.os
+  CC libc/inet/encodeh.os
+  CC libc/inet/decodeh.os
+  CC libc/inet/encodeq.os
+  CC libc/inet/encodea.os
+  CC libc/inet/read_etc_hosts_r.os
+  CC libc/inet/dnslookup.os
+  CC libc/inet/opennameservers.os
+  CC libc/inet/closenameservers.os
+  CC libc/inet/getnameinfo.os
+  CC libc/inet/gethostent.os
+  CC libc/inet/gethostent_r.os
+  CC libc/inet/get_hosts_byaddr_r.os
+  CC libc/inet/get_hosts_byname_r.os
+  CC libc/inet/gethostbyaddr_r.os
+  CC libc/inet/gethostbyname_r.os
+  CC libc/inet/gethostbyname2_r.os
+  CC libc/inet/gethostbyaddr.os
+  CC libc/inet/gethostbyname.os
+  CC libc/inet/gethostbyname2.os
+  CC libc/inet/ns_netint.os
+  CC libc/inet/ns_parse.os
+  CC libc/inet/res_data.os
+  CC libc/inet/res_init.os
+  CC libc/inet/res_query.os
+  CC libc/inet/res_comp.os
+  CC libc/inet/ns_name.os
+  CC libc/inet/_res_state.os
+  CC libc/inet/accept.os
+  CC libc/inet/bind.os
+  CC libc/inet/connect.os
+  CC libc/inet/getpeername.os
+  CC libc/inet/getsockname.os
+  CC libc/inet/getsockopt.os
+  CC libc/inet/listen.os
+  CC libc/inet/recv.os
+  CC libc/inet/recvfrom.os
+  CC libc/inet/recvmsg.os
+  CC libc/inet/send.os
+  CC libc/inet/sendmsg.os
+  CC libc/inet/sendto.os
+  CC libc/inet/setsockopt.os
+  CC libc/inet/shutdown.os
+  CC libc/inet/socket.os
+  CC libc/inet/socketpair.os
+  CC libc/inet/recvmmsg.os
+  CC libc/inet/sendmmsg.os
+  CC libc/inet/accept4.os
+  CC libc/inet/opensock.os
+  CC libc/inet/sockatmark.os
+  CC libc/inet/ethers.os
+  CC libc/inet/ether_addr.os
+  CC libc/signal/allocrtsig.os
+  CC libc/signal/killpg.os
+  CC libc/signal/sigaddset.os
+  CC libc/signal/sigandset.os
+  CC libc/signal/sigdelset.os
+  CC libc/signal/sigempty.os
+  CC libc/signal/sigfillset.os
+  CC libc/signal/sigisempty.os
+  CC libc/signal/sigismem.os
+  CC libc/signal/sigjmp.os
+  CC libc/signal/signal.os
+  CC libc/signal/sigorset.os
+  CC libc/signal/sigsetops.os
+  CC libc/signal/sigwait.os
+  CC libc/signal/sigintr.os
+  CC libc/signal/sigpause.os
+  CC libc/stdlib/malloc-standard/calloc.os
+  CC libc/stdlib/malloc-standard/free.os
+  CC libc/stdlib/malloc-standard/mallinfo.os
+  CC libc/stdlib/malloc-standard/malloc.os
+  CC libc/stdlib/malloc-standard/malloc_usable_size.os
+  CC libc/stdlib/malloc-standard/mallopt.os
+  CC libc/stdlib/malloc-standard/memalign.os
+  CC libc/stdlib/malloc-standard/realloc.os
+  CC libc/stdlib/abort.os
+  CC libc/stdlib/getenv.os
+  CC libc/stdlib/mkdtemp.os
+  CC libc/stdlib/realpath.os
+  CC libc/stdlib/canonicalize.os
+  CC libc/stdlib/mkstemp.os
+  CC libc/stdlib/mkostemp.os
+  CC libc/stdlib/mkstemps.os
+  CC libc/stdlib/mkostemps.os
+  CC libc/stdlib/rand.os
+  CC libc/stdlib/random.os
+  CC libc/stdlib/random_r.os
+  CC libc/stdlib/setenv.os
+  CC libc/stdlib/div.os
+  CC libc/stdlib/ldiv.os
+  CC libc/stdlib/lldiv.os
+  CC libc/stdlib/getpt.os
+  CC libc/stdlib/drand48-iter.os
+  CC libc/stdlib/jrand48.os
+  CC libc/stdlib/jrand48_r.os
+  CC libc/stdlib/lcong48.os
+  CC libc/stdlib/lrand48.os
+  CC libc/stdlib/lrand48_r.os
+  CC libc/stdlib/mrand48.os
+  CC libc/stdlib/mrand48_r.os
+  CC libc/stdlib/nrand48.os
+  CC libc/stdlib/nrand48_r.os
+  CC libc/stdlib/rand_r.os
+  CC libc/stdlib/srand48.os
+  CC libc/stdlib/srand48_r.os
+  CC libc/stdlib/seed48.os
+  CC libc/stdlib/seed48_r.os
+  CC libc/stdlib/a64l.os
+  CC libc/stdlib/l64a.os
+  CC libc/stdlib/__uc_malloc.os
+  CC libc/stdlib/secure_getenv.os
+  CC libc/stdlib/valloc.os
+  CC libc/stdlib/posix_memalign.os
+  CC libc/stdlib/grantpt.os
+  CC libc/stdlib/unlockpt.os
+  CC libc/stdlib/ptsname.os
+  CC libc/stdlib/mkstemp64.os
+  CC libc/stdlib/mkostemp64.os
+  CC libc/stdlib/mkstemps64.os
+  CC libc/stdlib/mkostemps64.os
+  CC libc/stdlib/drand48.os
+  CC libc/stdlib/drand48_r.os
+  CC libc/stdlib/erand48.os
+  CC libc/stdlib/erand48_r.os
+  CC libc/stdlib/gcvt.os
+  CC libc/stdlib/mktemp.os
+  CC libc/stdlib/abs.os
+  CC libc/stdlib/labs.os
+  CC libc/stdlib/atoi.os
+  CC libc/stdlib/atol.os
+  CC libc/stdlib/strtol.os
+  CC libc/stdlib/strtoul.os
+  CC libc/stdlib/_stdlib_strto_l.os
+  CC libc/stdlib/qsort.os
+  CC libc/stdlib/qsort_r.os
+  CC libc/stdlib/bsearch.os
+  CC libc/stdlib/rpmatch.os
+  CC libc/stdlib/llabs.os
+  CC libc/stdlib/atoll.os
+  CC libc/stdlib/strtoll.os
+  CC libc/stdlib/strtoull.os
+  CC libc/stdlib/_stdlib_strto_ll.os
+  CC libc/stdlib/atof.os
+  CC libc/stdlib/strtol_l.os
+  CC libc/stdlib/strtoul_l.os
+  CC libc/stdlib/_stdlib_strto_l_l.os
+  CC libc/stdlib/strtoll_l.os
+  CC libc/stdlib/strtoull_l.os
+  CC libc/stdlib/_stdlib_strto_ll_l.os
+  CC libc/stdlib/mblen.os
+  CC libc/stdlib/mbtowc.os
+  CC libc/stdlib/wctomb.os
+  CC libc/stdlib/mbstowcs.os
+  CC libc/stdlib/wcstombs.os
+  CC libc/stdlib/_stdlib_mb_cur_max.os
+  CC libc/stdlib/_stdlib_wcsto_l.os
+  CC libc/stdlib/_stdlib_wcsto_ll.os
+  CC libc/stdlib/wcstol.os
+  CC libc/stdlib/wcstoul.os
+  CC libc/stdlib/wcstoll.os
+  CC libc/stdlib/wcstoull.os
+  CC libc/stdlib/_stdlib_wcsto_l_l.os
+  CC libc/stdlib/_stdlib_wcsto_ll_l.os
+  CC libc/stdlib/wcstol_l.os
+  CC libc/stdlib/wcstoul_l.os
+  CC libc/stdlib/wcstoll_l.os
+  CC libc/stdlib/wcstoull_l.os
+  CC libc/stdlib/strtod.os
+  CC libc/stdlib/strtof.os
+  CC libc/stdlib/strtold.os
+  CC libc/stdlib/__strtofpmax.os
+  CC libc/stdlib/__fp_range_check.os
+  CC libc/stdlib/strtod_l.os
+  CC libc/stdlib/strtof_l.os
+  CC libc/stdlib/strtold_l.os
+  CC libc/stdlib/__strtofpmax_l.os
+  CC libc/stdlib/wcstod.os
+  CC libc/stdlib/wcstof.os
+  CC libc/stdlib/wcstold.os
+  CC libc/stdlib/__wcstofpmax.os
+  CC libc/stdlib/wcstod_l.os
+  CC libc/stdlib/wcstof_l.os
+  CC libc/stdlib/wcstold_l.os
+  CC libc/stdlib/__wcstofpmax_l.os
+  CC libc/stdlib/__cxa_atexit.os
+  CC libc/stdlib/__cxa_finalize.os
+  CC libc/stdlib/__exit_handler.os
+  CC libc/stdlib/exit.os
+  CC libc/stdlib/on_exit.os
+  CC libc/stdlib/at_quick_exit.os
+libc/stdlib/at_quick_exit.c:13:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   13 | void __funcs_on_quick_exit()
+      |      ^~~~~~~~~~~~~~~~~~~~~
+  CC libc/stdlib/quick_exit.os
+libc/stdlib/quick_exit.c:3:13: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+    3 | static void dummy() { }
+      |             ^~~~~
+  CC libc/unistd/confstr.os
+  CC libc/unistd/daemon.os
+  CC libc/unistd/execl.os
+  CC libc/unistd/execle.os
+  CC libc/unistd/execlp.os
+  CC libc/unistd/execv.os
+  CC libc/unistd/execvp.os
+  CC libc/unistd/execvpe.os
+  CC libc/unistd/fpathconf.os
+  CC libc/unistd/getlogin.os
+  CC libc/unistd/getopt.os
+  CC libc/unistd/getpass.os
+  CC libc/unistd/getsubopt.os
+  CC libc/unistd/pathconf.os
+  CC libc/unistd/sleep.os
+libc/unistd/sleep.c: In function 'sleep':
+libc/unistd/sleep.c:118:39: warning: passing argument 3 to 'restrict'-qualified parameter aliases with argument 2 [-Wrestrict]
+  118 |         sigprocmask (SIG_BLOCK, &set, &set); /* never fails */
+      |                                 ~~~~  ^~~~
+  CC libc/unistd/swab.os
+  CC libc/unistd/sysconf.os
+  CC libc/unistd/ualarm.os
+  CC libc/unistd/usershell.os
+  CC libc/unistd/usleep.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/libc-cancellation.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/libc-lowlevellock.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/fork.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/libc_pthread_init.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/libc_multiple_threads.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/register-atfork.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/unregister-atfork.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/getpid.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/raise.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/jmp-unwind.oS
+  CC libc/misc/elf/dl-iterate-phdr.oS
+  CC libc/misc/internals/__uClibc_main.oS
+In file included from ./libpthread/nptl/descr.h:24,
+                 from ./libpthread/nptl/sysdeps/x86_64/tls.h:100,
+                 from ./include/tls.h:6,
+                 from ./include/link.h:30,
+                 from libc/misc/internals/__uClibc_main.c:22:
+libc/misc/internals/__uClibc_main.c: In function '__uClibc_main':
+./include/setjmp.h:54:25: warning: '_setjmp' accessing 80 bytes in a region of size 72 [-Wstringop-overflow=]
+   54 | #define setjmp(env)     _setjmp (env)
+      |                         ^~~~~~~~~~~~~
+libc/misc/internals/__uClibc_main.c:523:17: note: in expansion of macro 'setjmp'
+  523 |                 setjmp ((struct __jmp_buf_tag *) unwind_buf.cancel_jmp_buf);
+      |                 ^~~~~~
+./include/setjmp.h:54:25: note: referencing argument 1 of type 'struct __jmp_buf_tag[1]'
+   54 | #define setjmp(env)     _setjmp (env)
+      |                         ^~~~~~~~~~~~~
+libc/misc/internals/__uClibc_main.c:523:17: note: in expansion of macro 'setjmp'
+  523 |                 setjmp ((struct __jmp_buf_tag *) unwind_buf.cancel_jmp_buf);
+      |                 ^~~~~~
+./include/setjmp.h:50:12: note: in a call to function '_setjmp'
+   50 | extern int _setjmp (struct __jmp_buf_tag __env[1]) __THROWNL;
+      |            ^~~~~~~
+  CC libc/misc/pthread/tsd.os
+  CC libc/stdlib/system.oS
+  CC ldso/libdl/libdl.oS
+  CC libm/x86_64/fclrexcpt.os
+  CC libm/x86_64/fedisblxcpt.os
+  CC libm/x86_64/feenablxcpt.os
+  CC libm/x86_64/fegetenv.os
+  CC libm/x86_64/fegetexcept.os
+  CC libm/x86_64/fegetmode.os
+  CC libm/x86_64/fegetround.os
+  CC libm/x86_64/feholdexcpt.os
+  CC libm/x86_64/fesetenv.os
+  CC libm/x86_64/fesetexcept.os
+  CC libm/x86_64/fesetmode.os
+  CC libm/x86_64/fesetround.os
+  CC libm/x86_64/feupdateenv.os
+  CC libm/x86_64/fgetexcptflg.os
+  CC libm/x86_64/fraiseexcpt.os
+  CC libm/x86_64/fsetexcptflg.os
+  CC libm/x86_64/ftestexcept.os
+  CC libm/e_acos.os
+  CC libm/e_acosh.os
+  CC libm/e_asin.os
+  CC libm/e_atan2.os
+  CC libm/e_atanh.os
+  CC libm/e_cosh.os
+  CC libm/e_exp.os
+  CC libm/e_exp10.os
+  CC libm/e_fmod.os
+  CC libm/e_hypot.os
+  CC libm/e_lgamma_r.os
+  CC libm/e_log.os
+  CC libm/e_log2.os
+  CC libm/e_log10.os
+  CC libm/e_pow.os
+  CC libm/e_remainder.os
+  CC libm/e_rem_pio2.os
+  CC libm/e_scalb.os
+  CC libm/e_sinh.os
+  CC libm/e_sqrt.os
+  CC libm/k_cos.os
+  CC libm/k_rem_pio2.os
+  CC libm/k_sin.os
+  CC libm/k_tan.os
+  CC libm/s_asinh.os
+  CC libm/s_atan.os
+  CC libm/s_cbrt.os
+  CC libm/s_ceil.os
+  CC libm/s_copysign.os
+  CC libm/s_cos.os
+  CC libm/s_erf.os
+  CC libm/s_expm1.os
+  CC libm/s_fabs.os
+  CC libm/s_finite.os
+  CC libm/s_floor.os
+  CC libm/s_frexp.os
+  CC libm/s_ilogb.os
+  CC libm/s_ldexp.os
+  CC libm/s_lib_version.os
+  CC libm/s_lrint.os
+  CC libm/s_lround.os
+  CC libm/s_llround.os
+  CC libm/s_log1p.os
+  CC libm/s_logb.os
+  CC libm/s_modf.os
+  CC libm/s_nextafter.os
+In file included from <command-line>:
+libm/s_nextafter.c:71:33: warning: 'nexttoward' alias between functions of incompatible types 'double(double,  long double)' and 'double(double,  double)' [-Wattribute-alias=]
+   71 | strong_alias_untyped(nextafter, nexttoward)
+      |                                 ^~~~~~~~~~
+./include/libc-symbols.h:177:31: note: in definition of macro '_strong_alias_untyped'
+  177 |   extern __typeof (aliasname) aliasname __attribute__ ((alias (#name))) __attribute_copy__ (name);
+      |                               ^~~~~~~~~
+libm/s_nextafter.c:71:1: note: in expansion of macro 'strong_alias_untyped'
+   71 | strong_alias_untyped(nextafter, nexttoward)
+      | ^~~~~~~~~~~~~~~~~~~~
+./include/libc-symbols.h:431:32: note: aliased declaration here
+  431 |         extern __typeof (name) __EI_##name __attribute__((alias (__hidden_asmname1 (,#local)))) \
+      |                                ^~~~~
+./include/libc-symbols.h:435:41: note: in expansion of macro '__hidden_ver1'
+  435 | #  define hidden_def(name)              __hidden_ver1(__GI_##name, name, name);
+      |                                         ^~~~~~~~~~~~~
+./include/libc-symbols.h:539:32: note: in expansion of macro 'hidden_def'
+  539 | # define libm_hidden_def(name) hidden_def (name)
+      |                                ^~~~~~~~~~
+libm/s_nextafter.c:70:1: note: in expansion of macro 'libm_hidden_def'
+   70 | libm_hidden_def(nextafter)
+      | ^~~~~~~~~~~~~~~
+  CC libm/s_nextafterf.os
+  CC libm/s_round.os
+  CC libm/s_rint.os
+  CC libm/s_scalbn.os
+  CC libm/s_signgam.os
+  CC libm/s_significand.os
+  CC libm/s_sin.os
+  CC libm/s_tan.os
+  CC libm/s_tanh.os
+  CC libm/s_trunc.os
+  CC libm/w_cabs.os
+  CC libm/nan.os
+  CC libm/carg.os
+  CC libm/s_llrint.os
+  CC libm/s_fpclassify.os
+  CC libm/s_fpclassifyf.os
+  CC libm/s_signbit.os
+  CC libm/s_signbitf.os
+  CC libm/s_isnan.os
+  CC libm/s_isnanf.os
+  CC libm/s_isinf.os
+  CC libm/s_isinff.os
+  CC libm/s_finitef.os
+  CC libm/s_fdim.os
+  CC libm/s_fma.os
+  CC libm/s_fmax.os
+  CC libm/s_fmin.os
+  CC libm/s_remquo.os
+  CC libm/cexp.os
+  CC libm/sincos.os
+  CC libm/w_acos.os
+  CC libm/w_acosf.os
+  CC libm/w_acosl.os
+  CC libm/w_asin.os
+  CC libm/w_asinf.os
+  CC libm/w_asinl.os
+  CC libm/w_atan2.os
+  CC libm/w_atan2f.os
+  CC libm/w_atan2l.os
+  CC libm/w_hypot.os
+  CC libm/w_hypotf.os
+  CC libm/w_hypotl.os
+  CC libm/w_cosh.os
+  CC libm/w_coshf.os
+  CC libm/w_coshl.os
+  CC libm/w_exp.os
+  CC libm/w_expf.os
+  CC libm/w_expl.os
+  CC libm/w_exp2.os
+  CC libm/w_exp2f.os
+  CC libm/w_exp2l.os
+  CC libm/w_exp10.os
+  CC libm/w_exp10f.os
+  CC libm/w_exp10l.os
+  CC libm/w_lgamma_r.os
+  CC libm/w_lgammaf_r.os
+  CC libm/w_lgammal_r.os
+  CC libm/w_lgamma.os
+  CC libm/w_lgammaf.os
+  CC libm/w_lgammal.os
+  CC libm/w_tgamma.os
+  CC libm/w_tgammaf.os
+  CC libm/w_tgammal.os
+  CC libm/w_log.os
+  CC libm/w_logf.os
+  CC libm/w_logl.os
+  CC libm/w_log2.os
+  CC libm/w_log2f.os
+  CC libm/w_log2l.os
+  CC libm/w_log10.os
+  CC libm/w_log10f.os
+  CC libm/w_log10l.os
+  CC libm/w_pow.os
+  CC libm/w_powf.os
+  CC libm/w_powl.os
+  CC libm/w_sinh.os
+  CC libm/w_sinhf.os
+  CC libm/w_sinhl.os
+  CC libm/w_fmod.os
+  CC libm/w_fmodf.os
+  CC libm/w_fmodl.os
+  CC libm/w_sqrt.os
+  CC libm/w_sqrtf.os
+  CC libm/w_sqrtl.os
+  CC libm/w_remainder.os
+  CC libm/w_remainderf.os
+  CC libm/w_remainderl.os
+  CC libm/w_acosh.os
+  CC libm/w_acoshf.os
+  CC libm/w_acoshl.os
+  CC libm/w_atanh.os
+  CC libm/w_atanhf.os
+  CC libm/w_atanhl.os
+  CC libm/w_scalb.os
+  CC libm/w_scalbf.os
+  CC libm/w_scalbl.os
+  CC libm/k_standard.os
+  CC libm/k_standardf.os
+  CC libm/k_standardl.os
+  CC libm/e_j0.os
+  CC libm/e_j1.os
+  CC libm/e_jn.os
+  CC libm/w_j0.os
+  CC libm/w_j0f.os
+  CC libm/w_j0l.os
+  CC libm/w_j1.os
+  CC libm/w_j1f.os
+  CC libm/w_j1l.os
+  CC libm/w_jn.os
+  CC libm/w_jnf.os
+  CC libm/w_jnl.os
+  CC libm/acosf.os
+  CC libm/acoshf.os
+  CC libm/asinf.os
+  CC libm/asinhf.os
+  CC libm/atan2f.os
+  CC libm/atanf.os
+  CC libm/atanhf.os
+  CC libm/cargf.os
+  CC libm/cbrtf.os
+  CC libm/ceilf.os
+  CC libm/copysignf.os
+  CC libm/cosf.os
+  CC libm/coshf.os
+  CC libm/erfcf.os
+  CC libm/erff.os
+  CC libm/exp2f.os
+  CC libm/expf.os
+  CC libm/expm1f.os
+  CC libm/fabsf.os
+  CC libm/fdimf.os
+  CC libm/floorf.os
+  CC libm/fmaf.os
+  CC libm/fmaxf.os
+  CC libm/fminf.os
+  CC libm/fmodf.os
+  CC libm/frexpf.os
+  CC libm/gammaf.os
+  CC libm/hypotf.os
+  CC libm/ilogbf.os
+  CC libm/ldexpf.os
+  CC libm/lgammaf.os
+  CC libm/llrintf.os
+  CC libm/llroundf.os
+  CC libm/log10f.os
+  CC libm/log1pf.os
+  CC libm/log2f.os
+  CC libm/logbf.os
+  CC libm/logf.os
+  CC libm/lrintf.os
+  CC libm/lroundf.os
+  CC libm/modff.os
+  CC libm/nearbyintf.os
+  CC libm/nexttowardf.os
+  CC libm/powf.os
+  CC libm/remainderf.os
+  CC libm/remquof.os
+  CC libm/rintf.os
+  CC libm/roundf.os
+  CC libm/scalblnf.os
+  CC libm/scalbnf.os
+  CC libm/significandf.os
+  CC libm/sinf.os
+  CC libm/sinhf.os
+  CC libm/sqrtf.os
+  CC libm/tanf.os
+  CC libm/tanhf.os
+  CC libm/tgammaf.os
+  CC libm/truncf.os
+  CC libm/scalbf.os
+  CC libm/__finitel.os
+  CC libm/__fpclassifyl.os
+  CC libm/__isinfl.os
+  CC libm/__isnanl.os
+  CC libm/__signbitl.os
+  CC libm/acoshl.os
+  CC libm/acosl.os
+  CC libm/asinhl.os
+  CC libm/asinl.os
+  CC libm/atan2l.os
+  CC libm/atanhl.os
+  CC libm/atanl.os
+  CC libm/cargl.os
+  CC libm/cbrtl.os
+  CC libm/ceill.os
+  CC libm/copysignl.os
+  CC libm/coshl.os
+  CC libm/cosl.os
+  CC libm/erfcl.os
+  CC libm/erfl.os
+  CC libm/exp2l.os
+  CC libm/expl.os
+  CC libm/expm1l.os
+  CC libm/fabsl.os
+  CC libm/fdiml.os
+  CC libm/floorl.os
+  CC libm/fmal.os
+  CC libm/fmaxl.os
+  CC libm/fminl.os
+  CC libm/fmodl.os
+  CC libm/frexpl.os
+  CC libm/gammal.os
+  CC libm/hypotl.os
+  CC libm/ilogbl.os
+  CC libm/ldexpl.os
+  CC libm/lgammal.os
+  CC libm/llrintl.os
+  CC libm/llroundl.os
+  CC libm/log10l.os
+  CC libm/log1pl.os
+  CC libm/log2l.os
+  CC libm/logbl.os
+  CC libm/logl.os
+  CC libm/lrintl.os
+  CC libm/lroundl.os
+  CC libm/modfl.os
+  CC libm/nearbyintl.os
+  CC libm/nextafterl.os
+  CC libm/nexttowardl.os
+  CC libm/powl.os
+  CC libm/remainderl.os
+  CC libm/remquol.os
+  CC libm/rintl.os
+  CC libm/roundl.os
+  CC libm/scalblnl.os
+  CC libm/scalbnl.os
+  CC libm/significandl.os
+  CC libm/sinhl.os
+  CC libm/sinl.os
+  CC libm/sqrtl.os
+  CC libm/tanhl.os
+  CC libm/tanl.os
+  CC libm/tgammal.os
+  CC libm/truncl.os
+  CC libutil/forkpty.os
+  CC libutil/login.os
+  CC libutil/login_tty.os
+  CC libutil/logout.os
+  CC libutil/logwtmp.os
+  CC libutil/openpty.os
+  CC libuargp/argp-ba.os
+  CC libuargp/argp-eexst.os
+  CC libuargp/argp-fmtstream.os
+  CC libuargp/argp-fs-xinl.os
+  CC libuargp/argp-help.os
+  CC libuargp/argp-parse.os
+  CC libuargp/argp-pv.os
+  CC libuargp/argp-pvh.os
+  CC libuargp/argp-xinl.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_once.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/lowlevellock.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_barrier_wait.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_signal.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_broadcast.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/sem_post.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/sem_timedwait.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/lowlevelrobustlock.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/sem_trywait.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/sem_wait.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_rdlock.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_wrlock.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_timedrdlock.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_timedwrlock.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_unlock.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_spin_unlock.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/cancellation.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_spin_init.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_attr_getaffinity.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_attr_setaffinity.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_getaffinity.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_setaffinity.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_getcpuclockid.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_kill.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_mutex_cond_lock.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_yield.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_sigqueue.oS
+  CC libpthread/nptl/sysdeps/pthread/unwind-forcedunwind.oS
+  CC libpthread/nptl/version.oS
+  CC libpthread/nptl/sysdeps/x86_64/pthread_spin_lock.oS
+  AS libpthread/nptl/sysdeps/x86_64/pthread_spin_trylock.oS
+  CC libpthread/nptl/sysdeps/pthread/pthread_barrier_destroy.oS
+  CC libpthread/nptl/sysdeps/pthread/pthread_barrier_init.oS
+  CC libpthread/nptl/sysdeps/pthread/pthread_cond_timedwait.oS
+  CC libpthread/nptl/sysdeps/pthread/pthread_cond_wait.oS
+  CC libpthread/nptl/sysdeps/pthread/pthread_sigmask.oS
+  CC libpthread/nptl/sysdeps/pthread/pthread_spin_destroy.oS
+  CC libpthread/nptl/sysdeps/pthread/pt-sigaction.oS
+  CC libpthread/nptl/sysdeps/pthread/tpp.oS
+  CC libpthread/nptl/cleanup.oS
+  CC libpthread/nptl/cleanup_compat.oS
+  CC libpthread/nptl/cleanup_defer.oS
+  CC libpthread/nptl/cleanup_defer_compat.oS
+  CC libpthread/nptl/cleanup_routine.oS
+  CC libpthread/nptl/errno_location.oS
+  CC libpthread/nptl/events.oS
+  CC libpthread/nptl/herrno.oS
+  CC libpthread/nptl/init.oS
+  CC libpthread/nptl/pt-cleanup.oS
+  CC libpthread/nptl/pthread_attr_destroy.oS
+  CC libpthread/nptl/pthread_attr_getdetachstate.oS
+  CC libpthread/nptl/pthread_attr_getguardsize.oS
+  CC libpthread/nptl/pthread_attr_getinheritsched.oS
+  CC libpthread/nptl/pthread_attr_getschedparam.oS
+  CC libpthread/nptl/pthread_attr_getschedpolicy.oS
+  CC libpthread/nptl/pthread_attr_getscope.oS
+  CC libpthread/nptl/pthread_attr_getstack.oS
+  CC libpthread/nptl/pthread_attr_getstackaddr.oS
+  CC libpthread/nptl/pthread_attr_getstacksize.oS
+  CC libpthread/nptl/pthread_attr_init.oS
+  CC libpthread/nptl/pthread_attr_setdetachstate.oS
+  CC libpthread/nptl/pthread_attr_setguardsize.oS
+  CC libpthread/nptl/pthread_attr_setinheritsched.oS
+  CC libpthread/nptl/pthread_attr_setschedparam.oS
+  CC libpthread/nptl/pthread_attr_setschedpolicy.oS
+  CC libpthread/nptl/pthread_attr_setscope.oS
+  CC libpthread/nptl/pthread_attr_setstack.oS
+  CC libpthread/nptl/pthread_attr_setstackaddr.oS
+  CC libpthread/nptl/pthread_attr_setstacksize.oS
+  CC libpthread/nptl/pthread_barrierattr_destroy.oS
+  CC libpthread/nptl/pthread_barrierattr_getpshared.oS
+  CC libpthread/nptl/pthread_barrierattr_init.oS
+  CC libpthread/nptl/pthread_barrierattr_setpshared.oS
+  CC libpthread/nptl/pthread_cancel.oS
+  CC libpthread/nptl/pthread_cond_destroy.oS
+  CC libpthread/nptl/pthread_cond_init.oS
+  CC libpthread/nptl/pthread_condattr_destroy.oS
+  CC libpthread/nptl/pthread_condattr_getclock.oS
+  CC libpthread/nptl/pthread_condattr_getpshared.oS
+  CC libpthread/nptl/pthread_condattr_init.oS
+  CC libpthread/nptl/pthread_condattr_setclock.oS
+  CC libpthread/nptl/pthread_condattr_setpshared.oS
+  CC libpthread/nptl/pthread_create.oS
+In file included from libpthread/nptl/pthreadP.h:22,
+                 from libpthread/nptl/pthread_create.c:23:
+libpthread/nptl/pthread_create.c: In function 'start_thread':
+./include/setjmp.h:54:25: warning: '_setjmp' accessing 80 bytes in a region of size 72 [-Wstringop-overflow=]
+   54 | #define setjmp(env)     _setjmp (env)
+      |                         ^~~~~~~~~~~~~
+libpthread/nptl/pthread_create.c:266:20: note: in expansion of macro 'setjmp'
+  266 |   not_first_call = setjmp ((struct __jmp_buf_tag *) unwind_buf.cancel_jmp_buf);
+      |                    ^~~~~~
+./include/setjmp.h:54:25: note: referencing argument 1 of type 'struct __jmp_buf_tag[1]'
+   54 | #define setjmp(env)     _setjmp (env)
+      |                         ^~~~~~~~~~~~~
+libpthread/nptl/pthread_create.c:266:20: note: in expansion of macro 'setjmp'
+  266 |   not_first_call = setjmp ((struct __jmp_buf_tag *) unwind_buf.cancel_jmp_buf);
+      |                    ^~~~~~
+./include/setjmp.h:50:12: note: in a call to function '_setjmp'
+   50 | extern int _setjmp (struct __jmp_buf_tag __env[1]) __THROWNL;
+      |            ^~~~~~~
+  CC libpthread/nptl/pthread_detach.oS
+  CC libpthread/nptl/pthread_equal.oS
+  CC libpthread/nptl/pthread_exit.oS
+  CC libpthread/nptl/pthread_getattr_np.oS
+  CC libpthread/nptl/pthread_getconcurrency.oS
+  CC libpthread/nptl/pthread_getname.oS
+  CC libpthread/nptl/pthread_getschedparam.oS
+  CC libpthread/nptl/pthread_getspecific.oS
+  CC libpthread/nptl/pthread_join.oS
+  CC libpthread/nptl/pthread_key_create.oS
+  CC libpthread/nptl/pthread_key_delete.oS
+  CC libpthread/nptl/pthread_kill_other_threads.oS
+  CC libpthread/nptl/pthread_mutex_consistent.oS
+  CC libpthread/nptl/pthread_mutex_destroy.oS
+  CC libpthread/nptl/pthread_mutex_getprioceiling.oS
+  CC libpthread/nptl/pthread_mutex_init.oS
+  CC libpthread/nptl/pthread_mutex_lock.oS
+  CC libpthread/nptl/pthread_mutex_setprioceiling.oS
+  CC libpthread/nptl/pthread_mutex_timedlock.oS
+  CC libpthread/nptl/pthread_mutex_trylock.oS
+  CC libpthread/nptl/pthread_mutex_unlock.oS
+  CC libpthread/nptl/pthread_mutexattr_destroy.oS
+  CC libpthread/nptl/pthread_mutexattr_getprioceiling.oS
+  CC libpthread/nptl/pthread_mutexattr_getprotocol.oS
+  CC libpthread/nptl/pthread_mutexattr_getpshared.oS
+  CC libpthread/nptl/pthread_mutexattr_getrobust.oS
+  CC libpthread/nptl/pthread_mutexattr_gettype.oS
+  CC libpthread/nptl/pthread_mutexattr_init.oS
+  CC libpthread/nptl/pthread_mutexattr_setprioceiling.oS
+  CC libpthread/nptl/pthread_mutexattr_setprotocol.oS
+  CC libpthread/nptl/pthread_mutexattr_setpshared.oS
+  CC libpthread/nptl/pthread_mutexattr_setrobust.oS
+  CC libpthread/nptl/pthread_mutexattr_settype.oS
+  CC libpthread/nptl/pthread_rwlock_destroy.oS
+  CC libpthread/nptl/pthread_rwlock_init.oS
+  CC libpthread/nptl/pthread_rwlock_tryrdlock.oS
+  CC libpthread/nptl/pthread_rwlock_trywrlock.oS
+  CC libpthread/nptl/pthread_rwlockattr_destroy.oS
+  CC libpthread/nptl/pthread_rwlockattr_getkind_np.oS
+  CC libpthread/nptl/pthread_rwlockattr_getpshared.oS
+  CC libpthread/nptl/pthread_rwlockattr_init.oS
+  CC libpthread/nptl/pthread_rwlockattr_setkind_np.oS
+  CC libpthread/nptl/pthread_rwlockattr_setpshared.oS
+  CC libpthread/nptl/pthread_self.oS
+  CC libpthread/nptl/pthread_setcancelstate.oS
+  CC libpthread/nptl/pthread_setcanceltype.oS
+  CC libpthread/nptl/pthread_setconcurrency.oS
+  CC libpthread/nptl/pthread_setegid.oS
+  CC libpthread/nptl/pthread_seteuid.oS
+  CC libpthread/nptl/pthread_setname.oS
+  CC libpthread/nptl/pthread_setregid.oS
+  CC libpthread/nptl/pthread_setresgid.oS
+  CC libpthread/nptl/pthread_setresuid.oS
+  CC libpthread/nptl/pthread_setreuid.oS
+  CC libpthread/nptl/pthread_setschedparam.oS
+  CC libpthread/nptl/pthread_setschedprio.oS
+  CC libpthread/nptl/pthread_setspecific.oS
+  CC libpthread/nptl/pthread_testcancel.oS
+  CC libpthread/nptl/pthread_timedjoin.oS
+  CC libpthread/nptl/pthread_tryjoin.oS
+  CC libpthread/nptl/sem_close.oS
+  CC libpthread/nptl/sem_destroy.oS
+  CC libpthread/nptl/sem_getvalue.oS
+  CC libpthread/nptl/sem_init.oS
+  CC libpthread/nptl/sem_open.oS
+  CC libpthread/nptl/sem_unlink.oS
+  CC libpthread/nptl/unwind.oS
+In file included from libpthread/nptl/unwind.c:20:
+libpthread/nptl/unwind.c: In function 'unwind_stop':
+./include/setjmp.h:105:42: warning: '__libc_longjmp' accessing 80 bytes in a region of size 72 [-Wstringop-overflow=]
+  105 | # define __libc_unwind_longjmp(buf, val) __libc_longjmp(buf, val)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+libpthread/nptl/unwind.c:95:5: note: in expansion of macro '__libc_unwind_longjmp'
+   95 |     __libc_unwind_longjmp ((struct __jmp_buf_tag *) buf->cancel_jmp_buf, 1);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+./include/setjmp.h:105:42: note: referencing argument 1 of type 'struct __jmp_buf_tag[1]'
+  105 | # define __libc_unwind_longjmp(buf, val) __libc_longjmp(buf, val)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+libpthread/nptl/unwind.c:95:5: note: in expansion of macro '__libc_unwind_longjmp'
+   95 |     __libc_unwind_longjmp ((struct __jmp_buf_tag *) buf->cancel_jmp_buf, 1);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+./include/setjmp.h:97:13: note: in a call to function '__libc_longjmp'
+   97 | extern void __libc_longjmp(struct __jmp_buf_tag __env[1], int __val)
+      |             ^~~~~~~~~~~~~~
+  CC libpthread/nptl/vars.oS
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/librt-cancellation.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/mq_notify.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_create.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_getoverr.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_gettime.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_routines.oS
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_settime.oS
+  CC librt/clock_getcpuclockid.os
+  CC librt/clock_gettime.os
+  CC librt/clock_nanosleep.os
+  CC librt/dso_handle.os
+  CC librt/mq_close.os
+  CC librt/mq_getsetattr.os
+  CC librt/mq_open.os
+  CC librt/mq_receive.os
+  CC librt/mq_send.os
+  CC librt/mq_timedreceive.os
+  CC librt/mq_timedsend.os
+  CC librt/mq_unlink.os
+  CC librt/shm.os
+librt/shm.c: In function 'shm_open':
+librt/shm.c:87:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   87 |     if (fd < 0 && errno == EISDIR)
+      |     ^~
+librt/shm.c:90:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   90 |         free(shm_name); /* doesn't affect errno */
+      |         ^~~~
+  CC librt/spawn.os
+  CC librt/spawn_faction_addclose.os
+  CC librt/spawn_faction_adddup2.os
+  CC librt/spawn_faction_addopen.os
+  CC librt/spawn_faction_init.os
+  CC librt/timespec_get.os
+  CC librt/timespec_getres.os
+  CC libiconv/iconv.os
+libiconv/iconv.c:103:47: warning: missing braces around initializer [-Wmissing-braces]
+  103 | static const unsigned short jis0208[84][94] = {
+      |                                               ^
+  104 | #include "jis0208.h"
+  105 | };
+      | }
+libiconv/iconv.c: In function 'combine_to_from':
+libiconv/iconv.c:145:16: warning: returning 'void *' from a function with return type 'iconv_t' {aka 'long int'} makes integer from pointer without a cast [-Wint-conversion]
+  145 |         return (void *)(f<<16 | t<<1 | 1);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+libiconv/iconv.c: In function 'get_32':
+libiconv/iconv.c:202:20: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  202 |         return s[e]+0U<<24 | s[e^1]<<16 | s[e^2]<<8 | s[e^3];
+      |                ~~~~^~~
+libiconv/iconv.c: In function 'utf8dec_wchar':
+libiconv/iconv.c:307:41: warning: pointer targets in passing argument 1 of 'utf8seq_is_overlong' differ in signedness [-Wpointer-sign]
+  307 |                 if (utf8seq_is_overlong(in, n) ||
+      |                                         ^~
+      |                                         |
+      |                                         unsigned char *
+libiconv/iconv.c:245:45: note: expected 'char *' but argument is of type 'unsigned char *'
+  245 | static inline int utf8seq_is_overlong(char *s, int n)
+      |                                       ~~~~~~^
+libiconv/iconv.c:308:46: warning: pointer targets in passing argument 1 of 'utf8seq_is_surrogate' differ in signedness [-Wpointer-sign]
+  308 |                         utf8seq_is_surrogate(in, n) ||
+      |                                              ^~
+      |                                              |
+      |                                              unsigned char *
+libiconv/iconv.c:271:46: note: expected 'char *' but argument is of type 'unsigned char *'
+  271 | static inline int utf8seq_is_surrogate(char *s, int n)
+      |                                        ~~~~~~^
+libiconv/iconv.c:309:44: warning: pointer targets in passing argument 1 of 'utf8seq_is_illegal' differ in signedness [-Wpointer-sign]
+  309 |                         utf8seq_is_illegal(in, n))
+      |                                            ^~
+      |                                            |
+      |                                            unsigned char *
+libiconv/iconv.c:276:44: note: expected 'char *' but argument is of type 'unsigned char *'
+  276 | static inline int utf8seq_is_illegal(char *s, int n)
+      |                                      ~~~~~~^
+libiconv/iconv.c: In function 'legacy_map':
+libiconv/iconv.c:334:48: warning: suggest parentheses around '-' inside '<<' [-Wparentheses]
+  334 |         x = map[x*5/4]>>2*x%8 | map[x*5/4+1]<<8-2*x%8 & 1023;
+      |                                               ~^~~~~~
+libiconv/iconv.c:334:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  334 |         x = map[x*5/4]>>2*x%8 | map[x*5/4+1]<<8-2*x%8 & 1023;
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+libiconv/iconv.c: In function 'iconv':
+libiconv/iconv.c:385:43: warning: pointer targets in passing argument 1 of 'utf8dec_wchar' differ in signedness [-Wpointer-sign]
+  385 |                         l = utf8dec_wchar(&c, *in, *inb);
+      |                                           ^~
+      |                                           |
+      |                                           unsigned int *
+libiconv/iconv.c:282:42: note: expected 'wchar_t *' {aka 'int *'} but argument is of type 'unsigned int *'
+  282 | static inline int utf8dec_wchar(wchar_t *c, unsigned char *in, size_t inb)
+      |                                 ~~~~~~~~~^
+libiconv/iconv.c:385:47: warning: pointer targets in passing argument 2 of 'utf8dec_wchar' differ in signedness [-Wpointer-sign]
+  385 |                         l = utf8dec_wchar(&c, *in, *inb);
+      |                                               ^~~
+      |                                               |
+      |                                               char *
+libiconv/iconv.c:282:60: note: expected 'unsigned char *' but argument is of type 'char *'
+  282 | static inline int utf8dec_wchar(wchar_t *c, unsigned char *in, size_t inb)
+      |                                             ~~~~~~~~~~~~~~~^~
+  CC libc/misc/internals/__uClibc_main.os
+In file included from ./libpthread/nptl/descr.h:24,
+                 from ./libpthread/nptl/sysdeps/x86_64/tls.h:100,
+                 from ./include/tls.h:6,
+                 from ./include/link.h:30,
+                 from libc/misc/internals/__uClibc_main.c:22:
+libc/misc/internals/__uClibc_main.c: In function '__uClibc_main':
+./include/setjmp.h:54:25: warning: '_setjmp' accessing 80 bytes in a region of size 72 [-Wstringop-overflow=]
+   54 | #define setjmp(env)     _setjmp (env)
+      |                         ^~~~~~~~~~~~~
+libc/misc/internals/__uClibc_main.c:523:17: note: in expansion of macro 'setjmp'
+  523 |                 setjmp ((struct __jmp_buf_tag *) unwind_buf.cancel_jmp_buf);
+      |                 ^~~~~~
+./include/setjmp.h:54:25: note: referencing argument 1 of type 'struct __jmp_buf_tag[1]'
+   54 | #define setjmp(env)     _setjmp (env)
+      |                         ^~~~~~~~~~~~~
+libc/misc/internals/__uClibc_main.c:523:17: note: in expansion of macro 'setjmp'
+  523 |                 setjmp ((struct __jmp_buf_tag *) unwind_buf.cancel_jmp_buf);
+      |                 ^~~~~~
+./include/setjmp.h:50:12: note: in a call to function '_setjmp'
+   50 | extern int _setjmp (struct __jmp_buf_tag __env[1]) __THROWNL;
+      |            ^~~~~~~
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/libc-cancellation.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/libc-lowlevellock.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/fork.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/libc_pthread_init.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/libc_multiple_threads.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/register-atfork.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/unregister-atfork.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/getpid.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/raise.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/jmp-unwind.os
+  CC libpthread/nptl/alloca_cutoff.os
+  CC libpthread/nptl/sysdeps/generic/libc-tls.os
+libpthread/nptl/sysdeps/generic/libc-tls.c: In function '__libc_setup_tls':
+libpthread/nptl/sysdeps/generic/libc-tls.c:251:30: warning: array subscript 1 is outside the bounds of an interior zero-length array 'struct dtv_slotinfo[0]' [-Wzero-length-bounds]
+  251 |   static_slotinfo.si.slotinfo[1].map = &static_map;
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from libpthread/nptl/sysdeps/generic/libc-tls.c:20:
+./ldso/include/ldsodefs.h:103:5: note: while referencing 'slotinfo'
+  103 |   } slotinfo[0];
+      |     ^~~~~~~~
+  CC libpthread/nptl/sysdeps/generic/dl-tls.os
+  CC libc/sysdeps/linux/common/ssp-local.os
+  CC libc/misc/elf/dl-support.os
+  CC libc/misc/elf/dl-core.os
+  CC libc/misc/elf/dl-iterate-phdr.os
+  CC libc/misc/internals/reloc_static_pie.os
+  CC libc/stdlib/atexit.os
+  CC libc/stdlib/system.os
+  CC ldso/libdl/libdl.os
+  AS ldso/ldso/x86_64/resolve.os
+  CC libpthread/nptl/pthread_atfork.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_once.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/lowlevellock.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_barrier_wait.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_signal.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_cond_broadcast.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/sem_post.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/sem_timedwait.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/lowlevelrobustlock.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/sem_trywait.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/sem_wait.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_rdlock.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_wrlock.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_timedrdlock.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_timedwrlock.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_rwlock_unlock.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_spin_unlock.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/cancellation.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/pthread_spin_init.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_attr_getaffinity.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_attr_setaffinity.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_getaffinity.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_setaffinity.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_getcpuclockid.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_kill.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_mutex_cond_lock.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_yield.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/pthread_sigqueue.os
+  CC libpthread/nptl/sysdeps/x86_64/pthread_spin_lock.os
+  AS libpthread/nptl/sysdeps/x86_64/pthread_spin_trylock.os
+  CC libpthread/nptl/sysdeps/pthread/pthread_barrier_destroy.os
+  CC libpthread/nptl/sysdeps/pthread/pthread_barrier_init.os
+  CC libpthread/nptl/sysdeps/pthread/pthread_cond_timedwait.os
+  CC libpthread/nptl/sysdeps/pthread/pthread_cond_wait.os
+  CC libpthread/nptl/sysdeps/pthread/pthread_sigmask.os
+  CC libpthread/nptl/sysdeps/pthread/pthread_spin_destroy.os
+  CC libpthread/nptl/sysdeps/pthread/pt-sigaction.os
+  CC libpthread/nptl/sysdeps/pthread/tpp.os
+  CC libpthread/nptl/cleanup.os
+  CC libpthread/nptl/cleanup_compat.os
+  CC libpthread/nptl/cleanup_defer.os
+  CC libpthread/nptl/cleanup_defer_compat.os
+  CC libpthread/nptl/cleanup_routine.os
+  CC libpthread/nptl/errno_location.os
+  CC libpthread/nptl/events.os
+  CC libpthread/nptl/herrno.os
+  CC libpthread/nptl/init.os
+  CC libpthread/nptl/pt-cleanup.os
+  CC libpthread/nptl/pthread_attr_destroy.os
+  CC libpthread/nptl/pthread_attr_getdetachstate.os
+  CC libpthread/nptl/pthread_attr_getguardsize.os
+  CC libpthread/nptl/pthread_attr_getinheritsched.os
+  CC libpthread/nptl/pthread_attr_getschedparam.os
+  CC libpthread/nptl/pthread_attr_getschedpolicy.os
+  CC libpthread/nptl/pthread_attr_getscope.os
+  CC libpthread/nptl/pthread_attr_getstack.os
+  CC libpthread/nptl/pthread_attr_getstackaddr.os
+  CC libpthread/nptl/pthread_attr_getstacksize.os
+  CC libpthread/nptl/pthread_attr_init.os
+  CC libpthread/nptl/pthread_attr_setdetachstate.os
+  CC libpthread/nptl/pthread_attr_setguardsize.os
+  CC libpthread/nptl/pthread_attr_setinheritsched.os
+  CC libpthread/nptl/pthread_attr_setschedparam.os
+  CC libpthread/nptl/pthread_attr_setschedpolicy.os
+  CC libpthread/nptl/pthread_attr_setscope.os
+  CC libpthread/nptl/pthread_attr_setstack.os
+  CC libpthread/nptl/pthread_attr_setstackaddr.os
+  CC libpthread/nptl/pthread_attr_setstacksize.os
+  CC libpthread/nptl/pthread_barrierattr_destroy.os
+  CC libpthread/nptl/pthread_barrierattr_getpshared.os
+  CC libpthread/nptl/pthread_barrierattr_init.os
+  CC libpthread/nptl/pthread_barrierattr_setpshared.os
+  CC libpthread/nptl/pthread_cancel.os
+  CC libpthread/nptl/pthread_cond_destroy.os
+  CC libpthread/nptl/pthread_cond_init.os
+  CC libpthread/nptl/pthread_condattr_destroy.os
+  CC libpthread/nptl/pthread_condattr_getclock.os
+  CC libpthread/nptl/pthread_condattr_getpshared.os
+  CC libpthread/nptl/pthread_condattr_init.os
+  CC libpthread/nptl/pthread_condattr_setclock.os
+  CC libpthread/nptl/pthread_condattr_setpshared.os
+  CC libpthread/nptl/pthread_create.os
+In file included from libpthread/nptl/pthreadP.h:22,
+                 from libpthread/nptl/pthread_create.c:23:
+libpthread/nptl/pthread_create.c: In function 'start_thread':
+./include/setjmp.h:54:25: warning: '_setjmp' accessing 80 bytes in a region of size 72 [-Wstringop-overflow=]
+   54 | #define setjmp(env)     _setjmp (env)
+      |                         ^~~~~~~~~~~~~
+libpthread/nptl/pthread_create.c:266:20: note: in expansion of macro 'setjmp'
+  266 |   not_first_call = setjmp ((struct __jmp_buf_tag *) unwind_buf.cancel_jmp_buf);
+      |                    ^~~~~~
+./include/setjmp.h:54:25: note: referencing argument 1 of type 'struct __jmp_buf_tag[1]'
+   54 | #define setjmp(env)     _setjmp (env)
+      |                         ^~~~~~~~~~~~~
+libpthread/nptl/pthread_create.c:266:20: note: in expansion of macro 'setjmp'
+  266 |   not_first_call = setjmp ((struct __jmp_buf_tag *) unwind_buf.cancel_jmp_buf);
+      |                    ^~~~~~
+./include/setjmp.h:50:12: note: in a call to function '_setjmp'
+   50 | extern int _setjmp (struct __jmp_buf_tag __env[1]) __THROWNL;
+      |            ^~~~~~~
+  CC libpthread/nptl/pthread_detach.os
+  CC libpthread/nptl/pthread_equal.os
+  CC libpthread/nptl/pthread_exit.os
+  CC libpthread/nptl/pthread_getattr_np.os
+  CC libpthread/nptl/pthread_getconcurrency.os
+  CC libpthread/nptl/pthread_getname.os
+  CC libpthread/nptl/pthread_getschedparam.os
+  CC libpthread/nptl/pthread_getspecific.os
+  CC libpthread/nptl/pthread_join.os
+  CC libpthread/nptl/pthread_key_create.os
+  CC libpthread/nptl/pthread_key_delete.os
+  CC libpthread/nptl/pthread_kill_other_threads.os
+  CC libpthread/nptl/pthread_mutex_consistent.os
+  CC libpthread/nptl/pthread_mutex_destroy.os
+  CC libpthread/nptl/pthread_mutex_getprioceiling.os
+  CC libpthread/nptl/pthread_mutex_init.os
+  CC libpthread/nptl/pthread_mutex_lock.os
+  CC libpthread/nptl/pthread_mutex_setprioceiling.os
+  CC libpthread/nptl/pthread_mutex_timedlock.os
+  CC libpthread/nptl/pthread_mutex_trylock.os
+  CC libpthread/nptl/pthread_mutex_unlock.os
+  CC libpthread/nptl/pthread_mutexattr_destroy.os
+  CC libpthread/nptl/pthread_mutexattr_getprioceiling.os
+  CC libpthread/nptl/pthread_mutexattr_getprotocol.os
+  CC libpthread/nptl/pthread_mutexattr_getpshared.os
+  CC libpthread/nptl/pthread_mutexattr_getrobust.os
+  CC libpthread/nptl/pthread_mutexattr_gettype.os
+  CC libpthread/nptl/pthread_mutexattr_init.os
+  CC libpthread/nptl/pthread_mutexattr_setprioceiling.os
+  CC libpthread/nptl/pthread_mutexattr_setprotocol.os
+  CC libpthread/nptl/pthread_mutexattr_setpshared.os
+  CC libpthread/nptl/pthread_mutexattr_setrobust.os
+  CC libpthread/nptl/pthread_mutexattr_settype.os
+  CC libpthread/nptl/pthread_rwlock_destroy.os
+  CC libpthread/nptl/pthread_rwlock_init.os
+  CC libpthread/nptl/pthread_rwlock_tryrdlock.os
+  CC libpthread/nptl/pthread_rwlock_trywrlock.os
+  CC libpthread/nptl/pthread_rwlockattr_destroy.os
+  CC libpthread/nptl/pthread_rwlockattr_getkind_np.os
+  CC libpthread/nptl/pthread_rwlockattr_getpshared.os
+  CC libpthread/nptl/pthread_rwlockattr_init.os
+  CC libpthread/nptl/pthread_rwlockattr_setkind_np.os
+  CC libpthread/nptl/pthread_rwlockattr_setpshared.os
+  CC libpthread/nptl/pthread_self.os
+  CC libpthread/nptl/pthread_setcancelstate.os
+  CC libpthread/nptl/pthread_setcanceltype.os
+  CC libpthread/nptl/pthread_setconcurrency.os
+  CC libpthread/nptl/pthread_setegid.os
+  CC libpthread/nptl/pthread_seteuid.os
+  CC libpthread/nptl/pthread_setname.os
+  CC libpthread/nptl/pthread_setregid.os
+  CC libpthread/nptl/pthread_setresgid.os
+  CC libpthread/nptl/pthread_setresuid.os
+  CC libpthread/nptl/pthread_setreuid.os
+  CC libpthread/nptl/pthread_setschedparam.os
+  CC libpthread/nptl/pthread_setschedprio.os
+  CC libpthread/nptl/pthread_setspecific.os
+  CC libpthread/nptl/pthread_testcancel.os
+  CC libpthread/nptl/pthread_timedjoin.os
+  CC libpthread/nptl/pthread_tryjoin.os
+  CC libpthread/nptl/sem_close.os
+  CC libpthread/nptl/sem_destroy.os
+  CC libpthread/nptl/sem_getvalue.os
+  CC libpthread/nptl/sem_init.os
+  CC libpthread/nptl/sem_open.os
+  CC libpthread/nptl/sem_unlink.os
+  CC libpthread/nptl/unwind.os
+In file included from libpthread/nptl/unwind.c:20:
+libpthread/nptl/unwind.c: In function 'unwind_stop':
+./include/setjmp.h:105:42: warning: '__libc_longjmp' accessing 80 bytes in a region of size 72 [-Wstringop-overflow=]
+  105 | # define __libc_unwind_longjmp(buf, val) __libc_longjmp(buf, val)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+libpthread/nptl/unwind.c:95:5: note: in expansion of macro '__libc_unwind_longjmp'
+   95 |     __libc_unwind_longjmp ((struct __jmp_buf_tag *) buf->cancel_jmp_buf, 1);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+./include/setjmp.h:105:42: note: referencing argument 1 of type 'struct __jmp_buf_tag[1]'
+  105 | # define __libc_unwind_longjmp(buf, val) __libc_longjmp(buf, val)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+libpthread/nptl/unwind.c:95:5: note: in expansion of macro '__libc_unwind_longjmp'
+   95 |     __libc_unwind_longjmp ((struct __jmp_buf_tag *) buf->cancel_jmp_buf, 1);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+./include/setjmp.h:97:13: note: in a call to function '__libc_longjmp'
+   97 | extern void __libc_longjmp(struct __jmp_buf_tag __env[1], int __val)
+      |             ^~~~~~~~~~~~~~
+  CC libpthread/nptl/vars.os
+  AS libpthread/nptl/sysdeps/unix/sysv/linux/x86_64/librt-cancellation.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/mq_notify.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_create.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_delete.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_getoverr.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_gettime.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_routines.os
+  CC libpthread/nptl/sysdeps/unix/sysv/linux/timer_settime.os
+  AR cr lib/libc.a
+  STRIP -x -R .note -R .comment lib/libc.a
+  AR cr lib/uclibc_nonshared.a
+  STRIP -x -R .note -R .comment lib/uclibc_nonshared.a
+  AR cr libc/libc_so.a
+  STRIP -x -R .note -R .comment libc/libc_so.a
+  CC libpthread/nptl/pthread_atfork.oS
+  AR cr lib/libpthread_nonshared.a
+  STRIP -x -R .note -R .comment lib/libpthread_nonshared.a
+  LD libuClibc-1.0.46.so
+# link for backward compatibility
+  LD libuClibc-1.0.46.so
+  AS lib/crt1.o
+  AS lib/Scrt1.o
+  AS lib/rcrt1.o
+  AS lib/crti.o
+  AS lib/crtn.o
+make[1]: Nothing to be done for 'locale_headers'.
+../extra/locale/programs/locale.c: In function 'find_locale_string':
+../extra/locale/programs/locale.c:238:48: warning: embedded '\0' in format [-Wformat-contains-nul]
+  238 |                         sprintf(loc, "%5.5s%c%s\0", loc, (dotcs != 0) ? '.' : ' ',
+      |                                                ^~
+../extra/locale/programs/locale.c:242:1: warning: passing argument 1 to 'restrict'-qualified parameter aliases with argument 3 [-Wrestrict]
+  242 | : GET_CODESET_NAME(cs)));
+      | ^
+../extra/locale/programs/locale.c:246:51: warning: embedded '\0' in format [-Wformat-contains-nul]
+  246 |                         sprintf(loc, "%5.5s%c%s@%s\0", loc, (dotcs != 0) ? '.' : ' ',
+      |                                                   ^~
+../extra/locale/programs/locale.c:249:41: warning: passing argument 1 to 'restrict'-qualified parameter aliases with argument 3 [-Wrestrict]
+  249 |                                         find_at(at));
+      |                                         ^~~~~~~
+../utils/ldconfig.c: In function 'is_shlib.constprop':
+../utils/ldconfig.c:262:61: warning: array subscript 'Elf64_Ehdr[0]' is partly outside array bounds of 'struct exec[1]' [-Warray-bounds=]
+  262 |                                         if (elf_hdr->e_ident[0] != 0x7f ||
+      |                                             ~~~~~~~~~~~~~~~~^~~
+../utils/ldconfig.c:219:21: note: object 'exec' of size 40
+  219 |         struct exec exec;
+      |                     ^~~~
+../utils/ldconfig.c:276:83: warning: array subscript 'Elf64_Ehdr[0]' is partly outside array bounds of 'struct exec[1]' [-Warray-bounds=]
+  276 |                                                                   elf_hdr->e_ident[EI_CLASS]);
+      |                                                                   ~~~~~~~~~~~~~~~~^~~~~~~~~~
+../utils/ldconfig.c:219:21: note: object 'exec' of size 40
+  219 |         struct exec exec;
+      |                     ^~~~
+make[1]: Nothing to be done for 'locale_headers'.
+install -m 755 ./lib/lib*-1.0.46.so \
+	/lib/
+(cd ./lib && tar --exclude=ld64-uClibc.so.lds -cf - *.so.*) \
+| tar -xf - -C /lib/
+  HOSTCC extra/scripts/unifdef
+  GEN include/generated/unifdef_config.h
+  INSTALL include -> /usr/include
+install -m 644 ./lib/crt1.o ./lib/Scrt1.o ./lib/rcrt1.o ./lib/crti.o ./lib/crtn.o   /usr/lib//
+rm -f ./lib/libdl.a
+ar rc ./lib/libdl.a
+rm -f ./lib/libnsl.a
+ar rc ./lib/libnsl.a
+rm -f ./lib/libresolv.a
+ar rc ./lib/libresolv.a
+rm -f ./lib/libm.a
+ar rc ./lib/libm.a
+rm -f ./lib/libpthread.a
+ar rc ./lib/libpthread.a
+rm -f ./lib/librt.a
+ar rc ./lib/librt.a
+rm -f ./lib/libutil.a
+ar rc ./lib/libutil.a
+rm -f ./lib/libiconv.a
+ar rc ./lib/libiconv.a
+install -m 644 ./lib/*.a /usr/lib//
+for i in `cd ./ && find lib/ -type l -name 'lib[a-zA-Z]*.so' | \
+sed -e 's/lib\///'` ; do \
+	ln -sf ../../lib/$i.1 \
+	/usr/lib//$i; \
+done
+if [ -f ./lib/libc.so -a -f /lib//libc.so.1 ] ; then \
+	rm -f /usr/lib//libc.so; \
+	sed -e 's:uclibc_nonshared.a:/usr/lib//uclibc_nonshared.a:' \
+	    -e 's:libc.so.1:/lib//libc.so.1:' \
+	    -e 's:ld64-uClibc.so.1:/lib//ld64-uClibc.so.1:' \
+	    ./lib/libc.so > /usr/lib//libc.so; \
+	sed -i -e 's://:/:g' /usr/lib//libc.so; \
+fi
+echo "" >> /usr/lib//libc.so
+if [ -d ./lib ] ; then \
+	for i in `cd ./ && find lib/ -type f -name 'lib*.a' | sed -e 's/lib\///'` ; do \
+		ln -sf $i /usr/lib//`echo $i \
+			| sed -e 's/\.a$/_pic.a/'`; \
+	done ; \
+fi
+make[1]: Nothing to be done for 'locale_headers'.
+make[1]: Nothing to be done for 'utils'.
+ar: creating libssp_nonshared.a
+'extra/scripts/getent' -> '/usr/bin/getent'
+'libssp_nonshared.a' -> '/usr/lib/libssp_nonshared.a'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Fri Mar 29 01:23:01 UTC 2024
+
+Totalseconds: 113
+
+KB: 1047220	/
+

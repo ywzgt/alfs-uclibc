@@ -1,0 +1,16 @@
+#!/bin/bash
+
+SRC="zstd"
+PKG="$SRC"
+
+make prefix=/usr
+make prefix=/usr install
+rm -v /usr/lib/libzstd.a
+
+if [[ $MULTILIB ]]; then
+	make clean
+	make CC="gcc -m32"
+	make DESTDIR=$PWD/pkg prefix=/usr install
+	cp -av pkg/usr/lib/* /usr/lib32
+	sed -i '/^libdir/s/lib$/&32/' /usr/lib32/pkgconfig/libzstd.pc
+fi

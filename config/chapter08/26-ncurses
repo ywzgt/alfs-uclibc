@@ -1,0 +1,73 @@
+#!/bin/bash
+
+SRC="ncurses"
+PKG="$SRC"
+PV=${PWD##*/ncurses-}
+PV=${PV%%-*}
+
+./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+	--with-shared \
+	--without-debug \
+	--without-normal \
+	--with-cxx-shared \
+	--enable-pc-files \
+	--enable-widec \
+	--with-pkg-config-libdir=/usr/lib/pkgconfig
+
+make
+make DESTDIR=$PWD/dest install
+install -vm755 dest/usr/lib/libncursesw.so.${PV} /usr/lib
+rm -v  dest/usr/lib/libncursesw.so.${PV}
+cp -av dest/* /
+
+for lib in ncurses form panel menu ; do
+	rm -vf   /usr/lib/lib${lib}.so
+	echo "INPUT(-l${lib}w)" > /usr/lib/lib${lib}.so
+	ln -sfv ${lib}w.pc   /usr/lib/pkgconfig/${lib}.pc
+done
+
+rm -vf /usr/lib/libcursesw.so
+echo "INPUT(-lncursesw)" > /usr/lib/libcursesw.so
+ln -sfv libncurses.so /usr/lib/libcurses.so
+
+for lib in tic tinfo; do
+	echo "INPUT(libncursesw.so.${PV::1})" > /usr/lib/lib${lib}.so
+	ln -sv libncursesw.so.${PV::1} /usr/lib/lib${lib}.so.${PV::1}
+	ln -sv ncursesw.pc /usr/lib/pkgconfig/${lib}.pc
+done
+
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	CC="gcc -m32" CXX="g++ -m32" \
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--mandir=/usr/share/man \
+		--with-shared \
+		--without-debug \
+		--without-normal \
+		--with-cxx-shared \
+		--enable-pc-files \
+		--enable-widec \
+		--with-pkg-config-libdir=/usr/lib32/pkgconfig \
+		cf_cv_func_nanosleep=yes  # 配置脚本检查此项会卡死
+	make
+	find -name Makefile -exec sed -i '/test -z "$(DESTDIR)" && .*\/ldconfig/d' {} \;
+	make DESTDIR=$PWD/pkg install.libs
+	cp -av pkg/usr/lib32/* /usr/lib32
+	for lib in ncurses form panel menu ; do
+		rm -fv /usr/lib32/lib${lib}.so
+		echo "INPUT(-l${lib}w)" > /usr/lib32/lib${lib}.so
+		ln -svf ${lib}w.pc /usr/lib32/pkgconfig/$lib.pc
+	done
+	rm -fv /usr/lib32/libcursesw.so
+	echo "INPUT(-lncursesw)" > /usr/lib32/libcursesw.so
+	ln -sfv libncurses.so /usr/lib32/libcurses.so
+
+	for lib in tic tinfo; do
+		echo "INPUT(libncursesw.so.${PV::1})" > /usr/lib32/lib${lib}.so
+		ln -sv libncursesw.so.${PV::1} /usr/lib32/lib${lib}.so.${PV::1}
+		ln -sv ncursesw.pc /usr/lib32/pkgconfig/${lib}.pc
+	done
+fi

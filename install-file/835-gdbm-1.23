@@ -1,0 +1,32 @@
+/usr/bin/gdbm_dump	37224	root:root	755	
+/usr/bin/gdbm_load	37960	root:root	755	
+/usr/bin/gdbmtool	145784	root:root	755	
+/usr/include/dbm.h	1403	root:root	644	
+/usr/include/gdbm.h	12181	root:root	644	
+/usr/include/ndbm.h	2443	root:root	644	
+/usr/lib/libgdbm.so	16	root:root	777	libgdbm.so.6.0.0
+/usr/lib/libgdbm.so.6	16	root:root	777	libgdbm.so.6.0.0
+/usr/lib/libgdbm.so.6.0.0	73856	root:root	755	
+/usr/lib/libgdbm_compat.so	23	root:root	777	libgdbm_compat.so.4.0.0
+/usr/lib/libgdbm_compat.so.4	23	root:root	777	libgdbm_compat.so.4.0.0
+/usr/lib/libgdbm_compat.so.4.0.0	17096	root:root	755	
+/usr/share/info/dir	7965	root:root	644	
+/usr/share/info/gdbm.info	197329	root:root	644	
+/usr/share/locale/da/LC_MESSAGES/gdbm.mo	11717	root:root	644	
+/usr/share/locale/de/LC_MESSAGES/gdbm.mo	15277	root:root	644	
+/usr/share/locale/eo/LC_MESSAGES/gdbm.mo	14901	root:root	644	
+/usr/share/locale/es/LC_MESSAGES/gdbm.mo	12179	root:root	644	
+/usr/share/locale/fi/LC_MESSAGES/gdbm.mo	10139	root:root	644	
+/usr/share/locale/fr/LC_MESSAGES/gdbm.mo	20389	root:root	644	
+/usr/share/locale/ja/LC_MESSAGES/gdbm.mo	4234	root:root	644	
+/usr/share/locale/pl/LC_MESSAGES/gdbm.mo	19418	root:root	644	
+/usr/share/locale/pt_BR/LC_MESSAGES/gdbm.mo	19584	root:root	644	
+/usr/share/locale/ru/LC_MESSAGES/gdbm.mo	24671	root:root	644	
+/usr/share/locale/sr/LC_MESSAGES/gdbm.mo	24744	root:root	644	
+/usr/share/locale/sv/LC_MESSAGES/gdbm.mo	14879	root:root	644	
+/usr/share/locale/uk/LC_MESSAGES/gdbm.mo	25847	root:root	644	
+/usr/share/locale/vi/LC_MESSAGES/gdbm.mo	14487	root:root	644	
+/usr/share/man/man1/gdbm_dump.1	2859	root:root	644	
+/usr/share/man/man1/gdbm_load.1	3327	root:root	644	
+/usr/share/man/man1/gdbmtool.1	14556	root:root	644	
+/usr/share/man/man3/gdbm.3	43329	root:root	644	

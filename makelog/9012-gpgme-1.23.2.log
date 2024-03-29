@@ -1,0 +1,741 @@
+Fri Mar 29 02:28:30 UTC 2024
+KB: 1699268	/
+
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for locale.h... yes
+checking for sys/select.h... yes
+checking for sys/uio.h... yes
+checking for argp.h... yes
+checking for poll.h... yes
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking for gitlog-to-changelog... no
+checking for cc for build... gcc
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for windres... no
+checking whether C++ compiler accepts -mno-direct-extern-access... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for GPGME_QT5... no
+checking for GPGME_QT5TEST... no
+checking for GPGME_QT6... no
+checking for GPGME_QT6TEST... no
+configure: WARNING:
+***
+*** Qt5 (Qt5Core) and Qt6 (Qt6Core) not found. Qt Binding will be disabled.
+***
+checking whether g++ supports C++11 features with -std=c++11... yes
+checking for __attribute__((visibility))... yes
+checking for swig... no
+checking for swig2.0... no
+checking for inline... inline
+checking for flexible array members... yes
+checking size of unsigned int... 4
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for off_t... yes
+checking for uintptr_t... yes
+checking if gcc supports -Wno-missing-field-initializers... yes
+checking for __thread... yes
+configure: checking for libraries
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether ttyname_r is declared... yes
+checking for unistd.h... (cached) yes
+checking for ttyname_r... yes
+checking whether ttyname_r is compatible with its POSIX signature... yes
+checking whether ttyname_r works with small buffers... guessing yes
+checking whether we are using the GNU C Library 2.1 or newer... yes
+checking for getenv_r... no
+checking for timegm... yes
+checking for setlocale... yes
+checking for gpg-error-config... no
+checking for gpgrt-config... /usr/bin/gpgrt-config
+configure: Use gpgrt-config with /usr/lib as gpg-error-config
+checking for GPG Error - version >= 1.36... yes (1.48)
+configure: Use gpgrt-config as libassuan-config
+checking for LIBASSUAN - version >= 2.4.2... yes (2.5.7)
+checking LIBASSUAN API version... okay
+checking for getgid... yes
+checking for getegid... yes
+checking for closefrom... no
+checking for nanosleep... yes
+checking for stpcpy... yes
+checking for setenv... yes
+checking for struct cmsghdr.cmsg_len... yes
+checking for error_t... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/gpg/Makefile
+config.status: creating tests/gpgsm/Makefile
+config.status: creating tests/opassuan/Makefile
+config.status: creating tests/json/Makefile
+config.status: creating doc/Makefile
+config.status: creating src/versioninfo.rc
+config.status: creating src/gpgme.pc
+config.status: creating src/gpgme-glib.pc
+config.status: creating src/gpgme.h
+config.status: creating src/gpgme-config
+config.status: creating lang/cpp/Makefile
+config.status: creating lang/cpp/src/Makefile
+config.status: creating lang/cpp/tests/Makefile
+config.status: creating lang/cpp/src/GpgmeppConfig-w32.cmake.in
+config.status: creating lang/cpp/src/GpgmeppConfig.cmake.in
+config.status: creating lang/cpp/src/GpgmeppConfigVersion.cmake
+config.status: creating lang/cpp/src/gpgmepp_version.h
+config.status: creating lang/qt/Makefile
+config.status: creating lang/qt/src/Makefile
+config.status: creating lang/qt/tests/Makefile
+config.status: creating lang/qt/src/qgpgme_version.h
+config.status: creating lang/Makefile
+config.status: creating lang/cl/Makefile
+config.status: creating lang/cl/gpgme.asd
+config.status: creating lang/js/Makefile
+config.status: creating lang/js/src/Makefile
+config.status: creating lang/js/BrowserTestExtension/Makefile
+config.status: creating lang/js/DemoExtension/Makefile
+config.status: creating lang/qt/doc/Makefile
+config.status: creating lang/python/Makefile
+config.status: creating lang/python/version.py
+config.status: creating lang/python/tests/Makefile
+config.status: creating lang/python/src/Makefile
+config.status: creating lang/python/examples/Makefile
+config.status: creating lang/python/doc/Makefile
+config.status: creating lang/python/setup.py
+config.status: creating conf/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+        GPGME v1.23.2 has been configured as follows:
+
+        Revision:          1a26db71  (6694)
+        Platform:          x86_64-pc-linux-uclibc
+
+        UI Server:         yes
+        FD Passing:        yes
+
+        Language bindings: cl cpp 
+
+make  all-recursive
+make[1]: Entering directory '/sources/gpgme-1.23.2'
+Making all in src
+make[2]: Entering directory '/sources/gpgme-1.23.2/src'
+gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT gpgme-tool.o -MD -MP -MF .deps/gpgme-tool.Tpo -c -o gpgme-tool.o gpgme-tool.c
+gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT argparse.o -MD -MP -MF .deps/argparse.Tpo -c -o argparse.o argparse.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT conversion.lo -MD -MP -MF .deps/conversion.Tpo -c -o conversion.lo conversion.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT b64dec.lo -MD -MP -MF .deps/b64dec.Tpo -c -o b64dec.lo b64dec.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT b64dec.lo -MD -MP -MF .deps/b64dec.Tpo -c b64dec.c  -fPIC -DPIC -o .libs/b64dec.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT conversion.lo -MD -MP -MF .deps/conversion.Tpo -c conversion.c  -fPIC -DPIC -o .libs/conversion.o
+mv -f .deps/b64dec.Tpo .deps/b64dec.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT get-env.lo -MD -MP -MF .deps/get-env.Tpo -c -o get-env.lo get-env.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT get-env.lo -MD -MP -MF .deps/get-env.Tpo -c get-env.c  -fPIC -DPIC -o .libs/get-env.o
+mv -f .deps/get-env.Tpo .deps/get-env.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT parsetlv.lo -MD -MP -MF .deps/parsetlv.Tpo -c -o parsetlv.lo parsetlv.c
+mv -f .deps/conversion.Tpo .deps/conversion.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT mbox-util.lo -MD -MP -MF .deps/mbox-util.Tpo -c -o mbox-util.lo mbox-util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT parsetlv.lo -MD -MP -MF .deps/parsetlv.Tpo -c parsetlv.c  -fPIC -DPIC -o .libs/parsetlv.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT mbox-util.lo -MD -MP -MF .deps/mbox-util.Tpo -c mbox-util.c  -fPIC -DPIC -o .libs/mbox-util.o
+mv -f .deps/parsetlv.Tpo .deps/parsetlv.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data.lo -MD -MP -MF .deps/data.Tpo -c -o data.lo data.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data.lo -MD -MP -MF .deps/data.Tpo -c data.c  -fPIC -DPIC -o .libs/data.o
+mv -f .deps/mbox-util.Tpo .deps/mbox-util.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-fd.lo -MD -MP -MF .deps/data-fd.Tpo -c -o data-fd.lo data-fd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-fd.lo -MD -MP -MF .deps/data-fd.Tpo -c data-fd.c  -fPIC -DPIC -o .libs/data-fd.o
+mv -f .deps/data-fd.Tpo .deps/data-fd.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-stream.lo -MD -MP -MF .deps/data-stream.Tpo -c -o data-stream.lo data-stream.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-stream.lo -MD -MP -MF .deps/data-stream.Tpo -c data-stream.c  -fPIC -DPIC -o .libs/data-stream.o
+mv -f .deps/argparse.Tpo .deps/argparse.Po
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-mem.lo -MD -MP -MF .deps/data-mem.Tpo -c -o data-mem.lo data-mem.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-mem.lo -MD -MP -MF .deps/data-mem.Tpo -c data-mem.c  -fPIC -DPIC -o .libs/data-mem.o
+mv -f .deps/data-stream.Tpo .deps/data-stream.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-user.lo -MD -MP -MF .deps/data-user.Tpo -c -o data-user.lo data-user.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-user.lo -MD -MP -MF .deps/data-user.Tpo -c data-user.c  -fPIC -DPIC -o .libs/data-user.o
+mv -f .deps/data.Tpo .deps/data.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-estream.lo -MD -MP -MF .deps/data-estream.Tpo -c -o data-estream.lo data-estream.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-estream.lo -MD -MP -MF .deps/data-estream.Tpo -c data-estream.c  -fPIC -DPIC -o .libs/data-estream.o
+mv -f .deps/data-user.Tpo .deps/data-user.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-compat.lo -MD -MP -MF .deps/data-compat.Tpo -c -o data-compat.lo data-compat.c
+mv -f .deps/data-mem.Tpo .deps/data-mem.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-identify.lo -MD -MP -MF .deps/data-identify.Tpo -c -o data-identify.lo data-identify.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-compat.lo -MD -MP -MF .deps/data-compat.Tpo -c data-compat.c  -fPIC -DPIC -o .libs/data-compat.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT data-identify.lo -MD -MP -MF .deps/data-identify.Tpo -c data-identify.c  -fPIC -DPIC -o .libs/data-identify.o
+mv -f .deps/data-estream.Tpo .deps/data-estream.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT signers.lo -MD -MP -MF .deps/signers.Tpo -c -o signers.lo signers.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT signers.lo -MD -MP -MF .deps/signers.Tpo -c signers.c  -fPIC -DPIC -o .libs/signers.o
+data-identify.c: In function 'pgp_binary_detection':
+data-identify.c:226:10: warning: 'pkttype' may be used uninitialized [-Wmaybe-uninitialized]
+  226 |       if (pkttype == PKT_SIGNATURE)
+      |          ^
+data-identify.c:210:7: note: 'pkttype' was declared here
+  210 |   int pkttype;
+      |       ^~~~~~~
+mv -f .deps/data-compat.Tpo .deps/data-compat.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT sig-notation.lo -MD -MP -MF .deps/sig-notation.Tpo -c -o sig-notation.lo sig-notation.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT sig-notation.lo -MD -MP -MF .deps/sig-notation.Tpo -c sig-notation.c  -fPIC -DPIC -o .libs/sig-notation.o
+mv -f .deps/data-identify.Tpo .deps/data-identify.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT wait.lo -MD -MP -MF .deps/wait.Tpo -c -o wait.lo wait.c
+mv -f .deps/signers.Tpo .deps/signers.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT wait-global.lo -MD -MP -MF .deps/wait-global.Tpo -c -o wait-global.lo wait-global.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT wait.lo -MD -MP -MF .deps/wait.Tpo -c wait.c  -fPIC -DPIC -o .libs/wait.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT wait-global.lo -MD -MP -MF .deps/wait-global.Tpo -c wait-global.c  -fPIC -DPIC -o .libs/wait-global.o
+mv -f .deps/sig-notation.Tpo .deps/sig-notation.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT wait-private.lo -MD -MP -MF .deps/wait-private.Tpo -c -o wait-private.lo wait-private.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT wait-private.lo -MD -MP -MF .deps/wait-private.Tpo -c wait-private.c  -fPIC -DPIC -o .libs/wait-private.o
+mv -f .deps/wait.Tpo .deps/wait.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT wait-user.lo -MD -MP -MF .deps/wait-user.Tpo -c -o wait-user.lo wait-user.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT wait-user.lo -MD -MP -MF .deps/wait-user.Tpo -c wait-user.c  -fPIC -DPIC -o .libs/wait-user.o
+mv -f .deps/wait-global.Tpo .deps/wait-global.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT op-support.lo -MD -MP -MF .deps/op-support.Tpo -c -o op-support.lo op-support.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT op-support.lo -MD -MP -MF .deps/op-support.Tpo -c op-support.c  -fPIC -DPIC -o .libs/op-support.o
+mv -f .deps/wait-private.Tpo .deps/wait-private.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT encrypt.lo -MD -MP -MF .deps/encrypt.Tpo -c -o encrypt.lo encrypt.c
+mv -f .deps/gpgme-tool.Tpo .deps/gpgme-tool.Po
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT encrypt-sign.lo -MD -MP -MF .deps/encrypt-sign.Tpo -c -o encrypt-sign.lo encrypt-sign.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT encrypt.lo -MD -MP -MF .deps/encrypt.Tpo -c encrypt.c  -fPIC -DPIC -o .libs/encrypt.o
+mv -f .deps/wait-user.Tpo .deps/wait-user.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT decrypt.lo -MD -MP -MF .deps/decrypt.Tpo -c -o decrypt.lo decrypt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT encrypt-sign.lo -MD -MP -MF .deps/encrypt-sign.Tpo -c encrypt-sign.c  -fPIC -DPIC -o .libs/encrypt-sign.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT decrypt.lo -MD -MP -MF .deps/decrypt.Tpo -c decrypt.c  -fPIC -DPIC -o .libs/decrypt.o
+mv -f .deps/op-support.Tpo .deps/op-support.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT decrypt-verify.lo -MD -MP -MF .deps/decrypt-verify.Tpo -c -o decrypt-verify.lo decrypt-verify.c
+mv -f .deps/encrypt-sign.Tpo .deps/encrypt-sign.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT verify.lo -MD -MP -MF .deps/verify.Tpo -c -o verify.lo verify.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT decrypt-verify.lo -MD -MP -MF .deps/decrypt-verify.Tpo -c decrypt-verify.c  -fPIC -DPIC -o .libs/decrypt-verify.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT verify.lo -MD -MP -MF .deps/verify.Tpo -c verify.c  -fPIC -DPIC -o .libs/verify.o
+mv -f .deps/encrypt.Tpo .deps/encrypt.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT sign.lo -MD -MP -MF .deps/sign.Tpo -c -o sign.lo sign.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT sign.lo -MD -MP -MF .deps/sign.Tpo -c sign.c  -fPIC -DPIC -o .libs/sign.o
+mv -f .deps/decrypt-verify.Tpo .deps/decrypt-verify.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT passphrase.lo -MD -MP -MF .deps/passphrase.Tpo -c -o passphrase.lo passphrase.c
+mv -f .deps/decrypt.Tpo .deps/decrypt.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT progress.lo -MD -MP -MF .deps/progress.Tpo -c -o progress.lo progress.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT passphrase.lo -MD -MP -MF .deps/passphrase.Tpo -c passphrase.c  -fPIC -DPIC -o .libs/passphrase.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT progress.lo -MD -MP -MF .deps/progress.Tpo -c progress.c  -fPIC -DPIC -o .libs/progress.o
+mv -f .deps/progress.Tpo .deps/progress.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT key.lo -MD -MP -MF .deps/key.Tpo -c -o key.lo key.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT key.lo -MD -MP -MF .deps/key.Tpo -c key.c  -fPIC -DPIC -o .libs/key.o
+mv -f .deps/passphrase.Tpo .deps/passphrase.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT keylist.lo -MD -MP -MF .deps/keylist.Tpo -c -o keylist.lo keylist.c
+mv -f .deps/sign.Tpo .deps/sign.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT keysign.lo -MD -MP -MF .deps/keysign.Tpo -c -o keysign.lo keysign.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT keylist.lo -MD -MP -MF .deps/keylist.Tpo -c keylist.c  -fPIC -DPIC -o .libs/keylist.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT keysign.lo -MD -MP -MF .deps/keysign.Tpo -c keysign.c  -fPIC -DPIC -o .libs/keysign.o
+mv -f .deps/keysign.Tpo .deps/keysign.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT trust-item.lo -MD -MP -MF .deps/trust-item.Tpo -c -o trust-item.lo trust-item.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT trust-item.lo -MD -MP -MF .deps/trust-item.Tpo -c trust-item.c  -fPIC -DPIC -o .libs/trust-item.o
+mv -f .deps/verify.Tpo .deps/verify.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT trustlist.lo -MD -MP -MF .deps/trustlist.Tpo -c -o trustlist.lo trustlist.c
+mv -f .deps/key.Tpo .deps/key.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT tofupolicy.lo -MD -MP -MF .deps/tofupolicy.Tpo -c -o tofupolicy.lo tofupolicy.c
+mv -f .deps/trust-item.Tpo .deps/trust-item.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT revsig.lo -MD -MP -MF .deps/revsig.Tpo -c -o revsig.lo revsig.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT trustlist.lo -MD -MP -MF .deps/trustlist.Tpo -c trustlist.c  -fPIC -DPIC -o .libs/trustlist.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT tofupolicy.lo -MD -MP -MF .deps/tofupolicy.Tpo -c tofupolicy.c  -fPIC -DPIC -o .libs/tofupolicy.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT revsig.lo -MD -MP -MF .deps/revsig.Tpo -c revsig.c  -fPIC -DPIC -o .libs/revsig.o
+mv -f .deps/tofupolicy.Tpo .deps/tofupolicy.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT import.lo -MD -MP -MF .deps/import.Tpo -c -o import.lo import.c
+mv -f .deps/revsig.Tpo .deps/revsig.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT export.lo -MD -MP -MF .deps/export.Tpo -c -o export.lo export.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT import.lo -MD -MP -MF .deps/import.Tpo -c import.c  -fPIC -DPIC -o .libs/import.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT export.lo -MD -MP -MF .deps/export.Tpo -c export.c  -fPIC -DPIC -o .libs/export.o
+mv -f .deps/trustlist.Tpo .deps/trustlist.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT genkey.lo -MD -MP -MF .deps/genkey.Tpo -c -o genkey.lo genkey.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT genkey.lo -MD -MP -MF .deps/genkey.Tpo -c genkey.c  -fPIC -DPIC -o .libs/genkey.o
+mv -f .deps/keylist.Tpo .deps/keylist.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT delete.lo -MD -MP -MF .deps/delete.Tpo -c -o delete.lo delete.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT delete.lo -MD -MP -MF .deps/delete.Tpo -c delete.c  -fPIC -DPIC -o .libs/delete.o
+mv -f .deps/export.Tpo .deps/export.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT edit.lo -MD -MP -MF .deps/edit.Tpo -c -o edit.lo edit.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT edit.lo -MD -MP -MF .deps/edit.Tpo -c edit.c  -fPIC -DPIC -o .libs/edit.o
+mv -f .deps/delete.Tpo .deps/delete.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT getauditlog.lo -MD -MP -MF .deps/getauditlog.Tpo -c -o getauditlog.lo getauditlog.c
+mv -f .deps/import.Tpo .deps/import.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT setexpire.lo -MD -MP -MF .deps/setexpire.Tpo -c -o setexpire.lo setexpire.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT getauditlog.lo -MD -MP -MF .deps/getauditlog.Tpo -c getauditlog.c  -fPIC -DPIC -o .libs/getauditlog.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT setexpire.lo -MD -MP -MF .deps/setexpire.Tpo -c setexpire.c  -fPIC -DPIC -o .libs/setexpire.o
+mv -f .deps/genkey.Tpo .deps/genkey.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT opassuan.lo -MD -MP -MF .deps/opassuan.Tpo -c -o opassuan.lo opassuan.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT opassuan.lo -MD -MP -MF .deps/opassuan.Tpo -c opassuan.c  -fPIC -DPIC -o .libs/opassuan.o
+mv -f .deps/getauditlog.Tpo .deps/getauditlog.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT passwd.lo -MD -MP -MF .deps/passwd.Tpo -c -o passwd.lo passwd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT passwd.lo -MD -MP -MF .deps/passwd.Tpo -c passwd.c  -fPIC -DPIC -o .libs/passwd.o
+mv -f .deps/setexpire.Tpo .deps/setexpire.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT spawn.lo -MD -MP -MF .deps/spawn.Tpo -c -o spawn.lo spawn.c
+mv -f .deps/edit.Tpo .deps/edit.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT assuan-support.lo -MD -MP -MF .deps/assuan-support.Tpo -c -o assuan-support.lo assuan-support.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT spawn.lo -MD -MP -MF .deps/spawn.Tpo -c spawn.c  -fPIC -DPIC -o .libs/spawn.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT assuan-support.lo -MD -MP -MF .deps/assuan-support.Tpo -c assuan-support.c  -fPIC -DPIC -o .libs/assuan-support.o
+mv -f .deps/opassuan.Tpo .deps/opassuan.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine.lo -MD -MP -MF .deps/engine.Tpo -c -o engine.lo engine.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine.lo -MD -MP -MF .deps/engine.Tpo -c engine.c  -fPIC -DPIC -o .libs/engine.o
+mv -f .deps/passwd.Tpo .deps/passwd.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-gpg.lo -MD -MP -MF .deps/engine-gpg.Tpo -c -o engine-gpg.lo engine-gpg.c
+mv -f .deps/spawn.Tpo .deps/spawn.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT status-table.lo -MD -MP -MF .deps/status-table.Tpo -c -o status-table.lo status-table.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-gpg.lo -MD -MP -MF .deps/engine-gpg.Tpo -c engine-gpg.c  -fPIC -DPIC -o .libs/engine-gpg.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT status-table.lo -MD -MP -MF .deps/status-table.Tpo -c status-table.c  -fPIC -DPIC -o .libs/status-table.o
+mv -f .deps/assuan-support.Tpo .deps/assuan-support.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-gpgsm.lo -MD -MP -MF .deps/engine-gpgsm.Tpo -c -o engine-gpgsm.lo engine-gpgsm.c
+engine-gpg.c: In function 'build_argv':
+engine-gpg.c:892:27: warning: variable 'allocated_argc' set but not used [-Wunused-but-set-variable]
+  892 |   size_t datac=0, argc=0, allocated_argc=0;
+      |                           ^~~~~~~~~~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-gpgsm.lo -MD -MP -MF .deps/engine-gpgsm.Tpo -c engine-gpgsm.c  -fPIC -DPIC -o .libs/engine-gpgsm.o
+mv -f .deps/status-table.Tpo .deps/status-table.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-assuan.lo -MD -MP -MF .deps/engine-assuan.Tpo -c -o engine-assuan.lo engine-assuan.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-assuan.lo -MD -MP -MF .deps/engine-assuan.Tpo -c engine-assuan.c  -fPIC -DPIC -o .libs/engine-assuan.o
+mv -f .deps/engine.Tpo .deps/engine.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-gpgconf.lo -MD -MP -MF .deps/engine-gpgconf.Tpo -c -o engine-gpgconf.lo engine-gpgconf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-gpgconf.lo -MD -MP -MF .deps/engine-gpgconf.Tpo -c engine-gpgconf.c  -fPIC -DPIC -o .libs/engine-gpgconf.o
+mv -f .deps/engine-assuan.Tpo .deps/engine-assuan.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-uiserver.lo -MD -MP -MF .deps/engine-uiserver.Tpo -c -o engine-uiserver.lo engine-uiserver.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-uiserver.lo -MD -MP -MF .deps/engine-uiserver.Tpo -c engine-uiserver.c  -fPIC -DPIC -o .libs/engine-uiserver.o
+mv -f .deps/engine-gpgconf.Tpo .deps/engine-gpgconf.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-g13.lo -MD -MP -MF .deps/engine-g13.Tpo -c -o engine-g13.lo engine-g13.c
+mv -f .deps/engine-gpgsm.Tpo .deps/engine-gpgsm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT vfs-mount.lo -MD -MP -MF .deps/vfs-mount.Tpo -c -o vfs-mount.lo vfs-mount.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-g13.lo -MD -MP -MF .deps/engine-g13.Tpo -c engine-g13.c  -fPIC -DPIC -o .libs/engine-g13.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT vfs-mount.lo -MD -MP -MF .deps/vfs-mount.Tpo -c vfs-mount.c  -fPIC -DPIC -o .libs/vfs-mount.o
+mv -f .deps/vfs-mount.Tpo .deps/vfs-mount.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT vfs-create.lo -MD -MP -MF .deps/vfs-create.Tpo -c -o vfs-create.lo vfs-create.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT vfs-create.lo -MD -MP -MF .deps/vfs-create.Tpo -c vfs-create.c  -fPIC -DPIC -o .libs/vfs-create.o
+mv -f .deps/engine-uiserver.Tpo .deps/engine-uiserver.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-spawn.lo -MD -MP -MF .deps/engine-spawn.Tpo -c -o engine-spawn.lo engine-spawn.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT engine-spawn.lo -MD -MP -MF .deps/engine-spawn.Tpo -c engine-spawn.c  -fPIC -DPIC -o .libs/engine-spawn.o
+mv -f .deps/vfs-create.Tpo .deps/vfs-create.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT gpgconf.lo -MD -MP -MF .deps/gpgconf.Tpo -c -o gpgconf.lo gpgconf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT gpgconf.lo -MD -MP -MF .deps/gpgconf.Tpo -c gpgconf.c  -fPIC -DPIC -o .libs/gpgconf.o
+mv -f .deps/engine-g13.Tpo .deps/engine-g13.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT queryswdb.lo -MD -MP -MF .deps/queryswdb.Tpo -c -o queryswdb.lo queryswdb.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT queryswdb.lo -MD -MP -MF .deps/queryswdb.Tpo -c queryswdb.c  -fPIC -DPIC -o .libs/queryswdb.o
+mv -f .deps/gpgconf.Tpo .deps/gpgconf.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT posix-util.lo -MD -MP -MF .deps/posix-util.Tpo -c -o posix-util.lo posix-util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT posix-util.lo -MD -MP -MF .deps/posix-util.Tpo -c posix-util.c  -fPIC -DPIC -o .libs/posix-util.o
+mv -f .deps/engine-spawn.Tpo .deps/engine-spawn.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT posix-io.lo -MD -MP -MF .deps/posix-io.Tpo -c -o posix-io.lo posix-io.c
+mv -f .deps/queryswdb.Tpo .deps/queryswdb.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT dirinfo.lo -MD -MP -MF .deps/dirinfo.Tpo -c -o dirinfo.lo dirinfo.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT posix-io.lo -MD -MP -MF .deps/posix-io.Tpo -c posix-io.c  -fPIC -DPIC -o .libs/posix-io.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT dirinfo.lo -MD -MP -MF .deps/dirinfo.Tpo -c dirinfo.c  -fPIC -DPIC -o .libs/dirinfo.o
+mv -f .deps/posix-util.Tpo .deps/posix-util.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT debug.lo -MD -MP -MF .deps/debug.Tpo -c -o debug.lo debug.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT debug.lo -MD -MP -MF .deps/debug.Tpo -c debug.c  -fPIC -DPIC -o .libs/debug.o
+mv -f .deps/engine-gpg.Tpo .deps/engine-gpg.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT gpgme.lo -MD -MP -MF .deps/gpgme.Tpo -c -o gpgme.lo gpgme.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT gpgme.lo -MD -MP -MF .deps/gpgme.Tpo -c gpgme.c  -fPIC -DPIC -o .libs/gpgme.o
+mv -f .deps/dirinfo.Tpo .deps/dirinfo.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT version.lo -MD -MP -MF .deps/version.Tpo -c -o version.lo version.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT version.lo -MD -MP -MF .deps/version.Tpo -c version.c  -fPIC -DPIC -o .libs/version.o
+mv -f .deps/debug.Tpo .deps/debug.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT error.lo -MD -MP -MF .deps/error.Tpo -c -o error.lo error.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT error.lo -MD -MP -MF .deps/error.Tpo -c error.c  -fPIC -DPIC -o .libs/error.o
+mv -f .deps/error.Tpo .deps/error.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT ath.lo -MD -MP -MF .deps/ath.Tpo -c -o ath.lo ath.c
+mv -f .deps/posix-io.Tpo .deps/posix-io.Plo
+gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT gpgme-json.o -MD -MP -MF .deps/gpgme-json.Tpo -c -o gpgme-json.o gpgme-json.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../conf -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT ath.lo -MD -MP -MF .deps/ath.Tpo -c ath.c  -fPIC -DPIC -o .libs/ath.o
+mv -f .deps/version.Tpo .deps/version.Plo
+gcc -DHAVE_CONFIG_H -I. -I../conf   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -MT cJSON.o -MD -MP -MF .deps/cJSON.Tpo -c -o cJSON.o cJSON.c
+mv -f .deps/ath.Tpo .deps/ath.Plo
+mv -f .deps/gpgme.Tpo .deps/gpgme.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div    -Wl,--version-script=./libgpgme.vers -version-info 43:1:32 -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o libgpgme.la -rpath /usr/lib conversion.lo b64dec.lo get-env.lo parsetlv.lo mbox-util.lo data.lo data-fd.lo data-stream.lo data-mem.lo data-user.lo data-estream.lo data-compat.lo data-identify.lo signers.lo sig-notation.lo wait.lo wait-global.lo wait-private.lo wait-user.lo op-support.lo encrypt.lo encrypt-sign.lo decrypt.lo decrypt-verify.lo verify.lo sign.lo passphrase.lo progress.lo key.lo keylist.lo keysign.lo trust-item.lo trustlist.lo tofupolicy.lo revsig.lo import.lo export.lo genkey.lo delete.lo edit.lo getauditlog.lo setexpire.lo opassuan.lo passwd.lo spawn.lo assuan-support.lo engine.lo engine-gpg.lo status-table.lo engine-gpgsm.lo engine-assuan.lo engine-gpgconf.lo engine-uiserver.lo engine-g13.lo vfs-mount.lo vfs-create.lo engine-spawn.lo gpgconf.lo queryswdb.lo posix-util.lo posix-io.lo dirinfo.lo debug.lo gpgme.lo version.lo error.lo ath.lo   -lassuan -lgpg-error  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/conversion.o .libs/b64dec.o .libs/get-env.o .libs/parsetlv.o .libs/mbox-util.o .libs/data.o .libs/data-fd.o .libs/data-stream.o .libs/data-mem.o .libs/data-user.o .libs/data-estream.o .libs/data-compat.o .libs/data-identify.o .libs/signers.o .libs/sig-notation.o .libs/wait.o .libs/wait-global.o .libs/wait-private.o .libs/wait-user.o .libs/op-support.o .libs/encrypt.o .libs/encrypt-sign.o .libs/decrypt.o .libs/decrypt-verify.o .libs/verify.o .libs/sign.o .libs/passphrase.o .libs/progress.o .libs/key.o .libs/keylist.o .libs/keysign.o .libs/trust-item.o .libs/trustlist.o .libs/tofupolicy.o .libs/revsig.o .libs/import.o .libs/export.o .libs/genkey.o .libs/delete.o .libs/edit.o .libs/getauditlog.o .libs/setexpire.o .libs/opassuan.o .libs/passwd.o .libs/spawn.o .libs/assuan-support.o .libs/engine.o .libs/engine-gpg.o .libs/status-table.o .libs/engine-gpgsm.o .libs/engine-assuan.o .libs/engine-gpgconf.o .libs/engine-uiserver.o .libs/engine-g13.o .libs/vfs-mount.o .libs/vfs-create.o .libs/engine-spawn.o .libs/gpgconf.o .libs/queryswdb.o .libs/posix-util.o .libs/posix-io.o .libs/dirinfo.o .libs/debug.o .libs/gpgme.o .libs/version.o .libs/error.o .libs/ath.o   -lassuan -lgpg-error  -march=x86-64-v3 -mtune=haswell -Os -Wl,--version-script=./libgpgme.vers -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd   -Wl,-soname -Wl,libgpgme.so.11 -o .libs/libgpgme.so.11.32.1
+libtool: link: (cd ".libs" && rm -f "libgpgme.so.11" && ln -s "libgpgme.so.11.32.1" "libgpgme.so.11")
+libtool: link: (cd ".libs" && rm -f "libgpgme.so" && ln -s "libgpgme.so.11.32.1" "libgpgme.so")
+libtool: link: ( cd ".libs" && rm -f "libgpgme.la" && ln -s "../libgpgme.la" "libgpgme.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o gpgme-tool gpgme-tool.o argparse.o libgpgme.la -lassuan -lgpg-error 
+mv -f .deps/cJSON.Tpo .deps/cJSON.Po
+libtool: link: gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -o .libs/gpgme-tool gpgme-tool.o argparse.o  ./.libs/libgpgme.so -lassuan -lgpg-error
+mv -f .deps/gpgme-json.Tpo .deps/gpgme-json.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o gpgme-json gpgme-json.o cJSON.o -lm libgpgme.la -lgpg-error 
+libtool: link: gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wcast-align -Wshadow -Wstrict-prototypes -Wno-format-y2k -Wno-missing-field-initializers -Wno-sign-compare -Wno-format-zero-length -Wno-format-truncation -Wno-sizeof-pointer-div -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -o .libs/gpgme-json gpgme-json.o cJSON.o  -lm ./.libs/libgpgme.so -lgpg-error
+make[2]: Leaving directory '/sources/gpgme-1.23.2/src'
+Making all in doc
+make[2]: Entering directory '/sources/gpgme-1.23.2/doc'
+gcc -I. -I../conf  -I. \
+    -o mkdefsinc ./mkdefsinc.c
+incd="`test -f defsincdate || echo './'`defsincdate"; \
+./mkdefsinc -C . --date "`cat $incd 2>/dev/null`" \
+    gpgme.texi uiserver.texi lesser.texi gpl.texi >defs.inc
+make  all-am
+make[3]: Entering directory '/sources/gpgme-1.23.2/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/sources/gpgme-1.23.2/doc'
+make[2]: Leaving directory '/sources/gpgme-1.23.2/doc'
+Making all in lang
+make[2]: Entering directory '/sources/gpgme-1.23.2/lang'
+Making all in cl
+make[3]: Entering directory '/sources/gpgme-1.23.2/lang/cl'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/gpgme-1.23.2/lang/cl'
+Making all in cpp
+make[3]: Entering directory '/sources/gpgme-1.23.2/lang/cpp'
+Making all in src
+make[4]: Entering directory '/sources/gpgme-1.23.2/lang/cpp/src'
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT exception.lo -MD -MP -MF .deps/exception.Tpo -c -o exception.lo exception.cpp
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT context.lo -MD -MP -MF .deps/context.Tpo -c -o context.lo context.cpp
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT key.lo -MD -MP -MF .deps/key.Tpo -c -o key.lo key.cpp
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT trustitem.lo -MD -MP -MF .deps/trustitem.Tpo -c -o trustitem.lo trustitem.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT context.lo -MD -MP -MF .deps/context.Tpo -c context.cpp  -fPIC -DPIC -o .libs/context.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT key.lo -MD -MP -MF .deps/key.Tpo -c key.cpp  -fPIC -DPIC -o .libs/key.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT exception.lo -MD -MP -MF .deps/exception.Tpo -c exception.cpp  -fPIC -DPIC -o .libs/exception.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT trustitem.lo -MD -MP -MF .deps/trustitem.Tpo -c trustitem.cpp  -fPIC -DPIC -o .libs/trustitem.o
+mv -f .deps/exception.Tpo .deps/exception.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT data.lo -MD -MP -MF .deps/data.Tpo -c -o data.lo data.cpp
+mv -f .deps/trustitem.Tpo .deps/trustitem.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT callbacks.lo -MD -MP -MF .deps/callbacks.Tpo -c -o callbacks.lo callbacks.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT data.lo -MD -MP -MF .deps/data.Tpo -c data.cpp  -fPIC -DPIC -o .libs/data.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT callbacks.lo -MD -MP -MF .deps/callbacks.Tpo -c callbacks.cpp  -fPIC -DPIC -o .libs/callbacks.o
+mv -f .deps/callbacks.Tpo .deps/callbacks.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT eventloopinteractor.lo -MD -MP -MF .deps/eventloopinteractor.Tpo -c -o eventloopinteractor.lo eventloopinteractor.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT eventloopinteractor.lo -MD -MP -MF .deps/eventloopinteractor.Tpo -c eventloopinteractor.cpp  -fPIC -DPIC -o .libs/eventloopinteractor.o
+mv -f .deps/data.Tpo .deps/data.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT editinteractor.lo -MD -MP -MF .deps/editinteractor.Tpo -c -o editinteractor.lo editinteractor.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT editinteractor.lo -MD -MP -MF .deps/editinteractor.Tpo -c editinteractor.cpp  -fPIC -DPIC -o .libs/editinteractor.o
+mv -f .deps/eventloopinteractor.Tpo .deps/eventloopinteractor.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT keylistresult.lo -MD -MP -MF .deps/keylistresult.Tpo -c -o keylistresult.lo keylistresult.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT keylistresult.lo -MD -MP -MF .deps/keylistresult.Tpo -c keylistresult.cpp  -fPIC -DPIC -o .libs/keylistresult.o
+mv -f .deps/key.Tpo .deps/key.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT keygenerationresult.lo -MD -MP -MF .deps/keygenerationresult.Tpo -c -o keygenerationresult.lo keygenerationresult.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT keygenerationresult.lo -MD -MP -MF .deps/keygenerationresult.Tpo -c keygenerationresult.cpp  -fPIC -DPIC -o .libs/keygenerationresult.o
+mv -f .deps/editinteractor.Tpo .deps/editinteractor.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT importresult.lo -MD -MP -MF .deps/importresult.Tpo -c -o importresult.lo importresult.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT importresult.lo -MD -MP -MF .deps/importresult.Tpo -c importresult.cpp  -fPIC -DPIC -o .libs/importresult.o
+mv -f .deps/keygenerationresult.Tpo .deps/keygenerationresult.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT decryptionresult.lo -MD -MP -MF .deps/decryptionresult.Tpo -c -o decryptionresult.lo decryptionresult.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT decryptionresult.lo -MD -MP -MF .deps/decryptionresult.Tpo -c decryptionresult.cpp  -fPIC -DPIC -o .libs/decryptionresult.o
+mv -f .deps/keylistresult.Tpo .deps/keylistresult.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT verificationresult.lo -MD -MP -MF .deps/verificationresult.Tpo -c -o verificationresult.lo verificationresult.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT verificationresult.lo -MD -MP -MF .deps/verificationresult.Tpo -c verificationresult.cpp  -fPIC -DPIC -o .libs/verificationresult.o
+mv -f .deps/context.Tpo .deps/context.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT signingresult.lo -MD -MP -MF .deps/signingresult.Tpo -c -o signingresult.lo signingresult.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT signingresult.lo -MD -MP -MF .deps/signingresult.Tpo -c signingresult.cpp  -fPIC -DPIC -o .libs/signingresult.o
+mv -f .deps/decryptionresult.Tpo .deps/decryptionresult.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT encryptionresult.lo -MD -MP -MF .deps/encryptionresult.Tpo -c -o encryptionresult.lo encryptionresult.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT encryptionresult.lo -MD -MP -MF .deps/encryptionresult.Tpo -c encryptionresult.cpp  -fPIC -DPIC -o .libs/encryptionresult.o
+mv -f .deps/importresult.Tpo .deps/importresult.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT engineinfo.lo -MD -MP -MF .deps/engineinfo.Tpo -c -o engineinfo.lo engineinfo.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT engineinfo.lo -MD -MP -MF .deps/engineinfo.Tpo -c engineinfo.cpp  -fPIC -DPIC -o .libs/engineinfo.o
+mv -f .deps/signingresult.Tpo .deps/signingresult.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgsetexpirytimeeditinteractor.lo -MD -MP -MF .deps/gpgsetexpirytimeeditinteractor.Tpo -c -o gpgsetexpirytimeeditinteractor.lo gpgsetexpirytimeeditinteractor.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgsetexpirytimeeditinteractor.lo -MD -MP -MF .deps/gpgsetexpirytimeeditinteractor.Tpo -c gpgsetexpirytimeeditinteractor.cpp  -fPIC -DPIC -o .libs/gpgsetexpirytimeeditinteractor.o
+mv -f .deps/engineinfo.Tpo .deps/engineinfo.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgsetownertrusteditinteractor.lo -MD -MP -MF .deps/gpgsetownertrusteditinteractor.Tpo -c -o gpgsetownertrusteditinteractor.lo gpgsetownertrusteditinteractor.cpp
+mv -f .deps/gpgsetexpirytimeeditinteractor.Tpo .deps/gpgsetexpirytimeeditinteractor.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgsignkeyeditinteractor.lo -MD -MP -MF .deps/gpgsignkeyeditinteractor.Tpo -c -o gpgsignkeyeditinteractor.lo gpgsignkeyeditinteractor.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgsetownertrusteditinteractor.lo -MD -MP -MF .deps/gpgsetownertrusteditinteractor.Tpo -c gpgsetownertrusteditinteractor.cpp  -fPIC -DPIC -o .libs/gpgsetownertrusteditinteractor.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgsignkeyeditinteractor.lo -MD -MP -MF .deps/gpgsignkeyeditinteractor.Tpo -c gpgsignkeyeditinteractor.cpp  -fPIC -DPIC -o .libs/gpgsignkeyeditinteractor.o
+mv -f .deps/verificationresult.Tpo .deps/verificationresult.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgadduserideditinteractor.lo -MD -MP -MF .deps/gpgadduserideditinteractor.Tpo -c -o gpgadduserideditinteractor.lo gpgadduserideditinteractor.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgadduserideditinteractor.lo -MD -MP -MF .deps/gpgadduserideditinteractor.Tpo -c gpgadduserideditinteractor.cpp  -fPIC -DPIC -o .libs/gpgadduserideditinteractor.o
+mv -f .deps/encryptionresult.Tpo .deps/encryptionresult.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpggencardkeyinteractor.lo -MD -MP -MF .deps/gpggencardkeyinteractor.Tpo -c -o gpggencardkeyinteractor.lo gpggencardkeyinteractor.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpggencardkeyinteractor.lo -MD -MP -MF .deps/gpggencardkeyinteractor.Tpo -c gpggencardkeyinteractor.cpp  -fPIC -DPIC -o .libs/gpggencardkeyinteractor.o
+mv -f .deps/gpgadduserideditinteractor.Tpo .deps/gpgadduserideditinteractor.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgaddexistingsubkeyeditinteractor.lo -MD -MP -MF .deps/gpgaddexistingsubkeyeditinteractor.Tpo -c -o gpgaddexistingsubkeyeditinteractor.lo gpgaddexistingsubkeyeditinteractor.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgaddexistingsubkeyeditinteractor.lo -MD -MP -MF .deps/gpgaddexistingsubkeyeditinteractor.Tpo -c gpgaddexistingsubkeyeditinteractor.cpp  -fPIC -DPIC -o .libs/gpgaddexistingsubkeyeditinteractor.o
+mv -f .deps/gpgsetownertrusteditinteractor.Tpo .deps/gpgsetownertrusteditinteractor.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgrevokekeyeditinteractor.lo -MD -MP -MF .deps/gpgrevokekeyeditinteractor.Tpo -c -o gpgrevokekeyeditinteractor.lo gpgrevokekeyeditinteractor.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgrevokekeyeditinteractor.lo -MD -MP -MF .deps/gpgrevokekeyeditinteractor.Tpo -c gpgrevokekeyeditinteractor.cpp  -fPIC -DPIC -o .libs/gpgrevokekeyeditinteractor.o
+mv -f .deps/gpggencardkeyinteractor.Tpo .deps/gpggencardkeyinteractor.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT defaultassuantransaction.lo -MD -MP -MF .deps/defaultassuantransaction.Tpo -c -o defaultassuantransaction.lo defaultassuantransaction.cpp
+mv -f .deps/gpgaddexistingsubkeyeditinteractor.Tpo .deps/gpgaddexistingsubkeyeditinteractor.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT scdgetinfoassuantransaction.lo -MD -MP -MF .deps/scdgetinfoassuantransaction.Tpo -c -o scdgetinfoassuantransaction.lo scdgetinfoassuantransaction.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT defaultassuantransaction.lo -MD -MP -MF .deps/defaultassuantransaction.Tpo -c defaultassuantransaction.cpp  -fPIC -DPIC -o .libs/defaultassuantransaction.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT scdgetinfoassuantransaction.lo -MD -MP -MF .deps/scdgetinfoassuantransaction.Tpo -c scdgetinfoassuantransaction.cpp  -fPIC -DPIC -o .libs/scdgetinfoassuantransaction.o
+mv -f .deps/gpgrevokekeyeditinteractor.Tpo .deps/gpgrevokekeyeditinteractor.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgagentgetinfoassuantransaction.lo -MD -MP -MF .deps/gpgagentgetinfoassuantransaction.Tpo -c -o gpgagentgetinfoassuantransaction.lo gpgagentgetinfoassuantransaction.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT gpgagentgetinfoassuantransaction.lo -MD -MP -MF .deps/gpgagentgetinfoassuantransaction.Tpo -c gpgagentgetinfoassuantransaction.cpp  -fPIC -DPIC -o .libs/gpgagentgetinfoassuantransaction.o
+mv -f .deps/gpgsignkeyeditinteractor.Tpo .deps/gpgsignkeyeditinteractor.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT statusconsumerassuantransaction.lo -MD -MP -MF .deps/statusconsumerassuantransaction.Tpo -c -o statusconsumerassuantransaction.lo statusconsumerassuantransaction.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT statusconsumerassuantransaction.lo -MD -MP -MF .deps/statusconsumerassuantransaction.Tpo -c statusconsumerassuantransaction.cpp  -fPIC -DPIC -o .libs/statusconsumerassuantransaction.o
+mv -f .deps/defaultassuantransaction.Tpo .deps/defaultassuantransaction.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT vfsmountresult.lo -MD -MP -MF .deps/vfsmountresult.Tpo -c -o vfsmountresult.lo vfsmountresult.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT vfsmountresult.lo -MD -MP -MF .deps/vfsmountresult.Tpo -c vfsmountresult.cpp  -fPIC -DPIC -o .libs/vfsmountresult.o
+mv -f .deps/scdgetinfoassuantransaction.Tpo .deps/scdgetinfoassuantransaction.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT configuration.lo -MD -MP -MF .deps/configuration.Tpo -c -o configuration.lo configuration.cpp
+mv -f .deps/statusconsumerassuantransaction.Tpo .deps/statusconsumerassuantransaction.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT tofuinfo.lo -MD -MP -MF .deps/tofuinfo.Tpo -c -o tofuinfo.lo tofuinfo.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT configuration.lo -MD -MP -MF .deps/configuration.Tpo -c configuration.cpp  -fPIC -DPIC -o .libs/configuration.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT tofuinfo.lo -MD -MP -MF .deps/tofuinfo.Tpo -c tofuinfo.cpp  -fPIC -DPIC -o .libs/tofuinfo.o
+mv -f .deps/gpgagentgetinfoassuantransaction.Tpo .deps/gpgagentgetinfoassuantransaction.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT swdbresult.lo -MD -MP -MF .deps/swdbresult.Tpo -c -o swdbresult.lo swdbresult.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT swdbresult.lo -MD -MP -MF .deps/swdbresult.Tpo -c swdbresult.cpp  -fPIC -DPIC -o .libs/swdbresult.o
+mv -f .deps/vfsmountresult.Tpo .deps/vfsmountresult.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT util.lo -MD -MP -MF .deps/util.Tpo -c -o util.lo util.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT util.lo -MD -MP -MF .deps/util.Tpo -c util.cpp  -fPIC -DPIC -o .libs/util.o
+mv -f .deps/tofuinfo.Tpo .deps/tofuinfo.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf  -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT context_vanilla.lo -MD -MP -MF .deps/context_vanilla.Tpo -c -o context_vanilla.lo context_vanilla.cpp
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../conf -I../../../src -fvisibility=hidden -DBUILDING_GPGMEPP -Wsuggest-override -Wzero-as-null-pointer-constant -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -MT context_vanilla.lo -MD -MP -MF .deps/context_vanilla.Tpo -c context_vanilla.cpp  -fPIC -DPIC -o .libs/context_vanilla.o
+mv -f .deps/context_vanilla.Tpo .deps/context_vanilla.Plo
+mv -f .deps/swdbresult.Tpo .deps/swdbresult.Plo
+mv -f .deps/util.Tpo .deps/util.Plo
+mv -f .deps/configuration.Tpo .deps/configuration.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++ -std=c++11  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -no-undefined -version-info 26:1:20 -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o libgpgmepp.la -rpath /usr/lib exception.lo context.lo key.lo trustitem.lo data.lo callbacks.lo eventloopinteractor.lo editinteractor.lo keylistresult.lo keygenerationresult.lo importresult.lo decryptionresult.lo verificationresult.lo signingresult.lo encryptionresult.lo engineinfo.lo gpgsetexpirytimeeditinteractor.lo gpgsetownertrusteditinteractor.lo gpgsignkeyeditinteractor.lo gpgadduserideditinteractor.lo gpggencardkeyinteractor.lo gpgaddexistingsubkeyeditinteractor.lo gpgrevokekeyeditinteractor.lo defaultassuantransaction.lo scdgetinfoassuantransaction.lo gpgagentgetinfoassuantransaction.lo statusconsumerassuantransaction.lo vfsmountresult.lo configuration.lo tofuinfo.lo swdbresult.lo util.lo  context_vanilla.lo   ../../../src/libgpgme.la -lassuan 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/crtbeginS.o  .libs/exception.o .libs/context.o .libs/key.o .libs/trustitem.o .libs/data.o .libs/callbacks.o .libs/eventloopinteractor.o .libs/editinteractor.o .libs/keylistresult.o .libs/keygenerationresult.o .libs/importresult.o .libs/decryptionresult.o .libs/verificationresult.o .libs/signingresult.o .libs/encryptionresult.o .libs/engineinfo.o .libs/gpgsetexpirytimeeditinteractor.o .libs/gpgsetownertrusteditinteractor.o .libs/gpgsignkeyeditinteractor.o .libs/gpgadduserideditinteractor.o .libs/gpggencardkeyinteractor.o .libs/gpgaddexistingsubkeyeditinteractor.o .libs/gpgrevokekeyeditinteractor.o .libs/defaultassuantransaction.o .libs/scdgetinfoassuantransaction.o .libs/gpgagentgetinfoassuantransaction.o .libs/statusconsumerassuantransaction.o .libs/vfsmountresult.o .libs/configuration.o .libs/tofuinfo.o .libs/swdbresult.o .libs/util.o .libs/context_vanilla.o   -Wl,-rpath -Wl,/sources/gpgme-1.23.2/src/.libs ../../../src/.libs/libgpgme.so -lassuan -L/usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0 -L/usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/../../.. -lstdc++ -lm -lssp_nonshared -lc -lgcc_s /usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/../../../../lib/crtn.o  -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd   -Wl,-soname -Wl,libgpgmepp.so.6 -o .libs/libgpgmepp.so.6.20.1
+libtool: link: (cd ".libs" && rm -f "libgpgmepp.so.6" && ln -s "libgpgmepp.so.6.20.1" "libgpgmepp.so.6")
+libtool: link: (cd ".libs" && rm -f "libgpgmepp.so" && ln -s "libgpgmepp.so.6.20.1" "libgpgmepp.so")
+libtool: link: ( cd ".libs" && rm -f "libgpgmepp.la" && ln -s "../libgpgmepp.la" "libgpgmepp.la" )
+make[4]: Leaving directory '/sources/gpgme-1.23.2/lang/cpp/src'
+make[4]: Entering directory '/sources/gpgme-1.23.2/lang/cpp'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/sources/gpgme-1.23.2/lang/cpp'
+make[3]: Leaving directory '/sources/gpgme-1.23.2/lang/cpp'
+make[3]: Entering directory '/sources/gpgme-1.23.2/lang'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/sources/gpgme-1.23.2/lang'
+make[2]: Leaving directory '/sources/gpgme-1.23.2/lang'
+make[2]: Entering directory '/sources/gpgme-1.23.2'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/sources/gpgme-1.23.2'
+make[1]: Leaving directory '/sources/gpgme-1.23.2'
+make  install-recursive
+make[1]: Entering directory '/sources/gpgme-1.23.2'
+Making install in src
+make[2]: Entering directory '/sources/gpgme-1.23.2/src'
+make[3]: Entering directory '/sources/gpgme-1.23.2/src'
+ /usr/bin/mkdir -p '/usr/lib'
+ /usr/bin/mkdir -p '/usr/share/aclocal'
+ /usr/bin/mkdir -p '/usr/include'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgpgme.la '/usr/lib'
+ /usr/bin/install -c -m 644 gpgme.m4 '/usr/share/aclocal'
+ /usr/bin/install -c -m 644 gpgme.h '/usr/include'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 gpgme.pc gpgme-glib.pc '/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libgpgme.so.11.32.1 /usr/lib/libgpgme.so.11.32.1
+libtool: install: (cd /usr/lib && { ln -s -f libgpgme.so.11.32.1 libgpgme.so.11 || { rm -f libgpgme.so.11 && ln -s libgpgme.so.11.32.1 libgpgme.so.11; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libgpgme.so.11.32.1 libgpgme.so || { rm -f libgpgme.so && ln -s libgpgme.so.11.32.1 libgpgme.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgpgme.lai /usr/lib/libgpgme.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c gpgme-tool gpgme-json '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/gpgme-tool /usr/bin/gpgme-tool
+libtool: install: /usr/bin/install -c .libs/gpgme-json /usr/bin/gpgme-json
+make[3]: Leaving directory '/sources/gpgme-1.23.2/src'
+make[2]: Leaving directory '/sources/gpgme-1.23.2/src'
+Making install in doc
+make[2]: Entering directory '/sources/gpgme-1.23.2/doc'
+make  install-am
+make[3]: Entering directory '/sources/gpgme-1.23.2/doc'
+make[4]: Entering directory '/sources/gpgme-1.23.2/doc'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/info'
+ /usr/bin/install -c -m 644 ./gpgme.info ./gpgme.info-1 ./gpgme.info-2 '/usr/share/info'
+ install-info --info-dir='/usr/share/info' '/usr/share/info/gpgme.info'
+make[4]: Leaving directory '/sources/gpgme-1.23.2/doc'
+make[3]: Leaving directory '/sources/gpgme-1.23.2/doc'
+make[2]: Leaving directory '/sources/gpgme-1.23.2/doc'
+Making install in lang
+make[2]: Entering directory '/sources/gpgme-1.23.2/lang'
+Making install in cl
+make[3]: Entering directory '/sources/gpgme-1.23.2/lang/cl'
+make[4]: Entering directory '/sources/gpgme-1.23.2/lang/cl'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/common-lisp/source/gpgme'
+ /usr/bin/install -c -m 644 gpgme.asd gpgme-package.lisp gpgme-grovel.lisp gpgme.lisp '/usr/share/common-lisp/source/gpgme'
+make[4]: Leaving directory '/sources/gpgme-1.23.2/lang/cl'
+make[3]: Leaving directory '/sources/gpgme-1.23.2/lang/cl'
+Making install in cpp
+make[3]: Entering directory '/sources/gpgme-1.23.2/lang/cpp'
+Making install in src
+make[4]: Entering directory '/sources/gpgme-1.23.2/lang/cpp/src'
+make[5]: Entering directory '/sources/gpgme-1.23.2/lang/cpp/src'
+sed -e 's|[@]resolved_libdir@|/usr/lib|g' < "GpgmeppConfig.cmake.in" | \
+sed -e 's|[@]libsuffix@|.so|g' | \
+sed -e 's|[@]resolved_includedir@|/usr/include|g' > GpgmeppConfig.cmake
+ /usr/bin/mkdir -p '/usr/lib'
+ /usr/bin/mkdir -p '/usr/include/gpgme++'
+ /usr/bin/mkdir -p '/usr/include/gpgme++'
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libgpgmepp.la '/usr/lib'
+ /usr/bin/mkdir -p '/usr/include/gpgme++'
+ /usr/bin/install -c -m 644 configuration.h context.h data.h decryptionresult.h defaultassuantransaction.h editinteractor.h encryptionresult.h engineinfo.h error.h eventloopinteractor.h exception.h global.h gpgadduserideditinteractor.h gpgagentgetinfoassuantransaction.h gpgmefw.h gpgsetexpirytimeeditinteractor.h gpgsetownertrusteditinteractor.h gpgsignkeyeditinteractor.h gpggencardkeyinteractor.h gpgaddexistingsubkeyeditinteractor.h gpgrevokekeyeditinteractor.h importresult.h keygenerationresult.h key.h keylistresult.h notation.h result.h scdgetinfoassuantransaction.h signingresult.h statusconsumerassuantransaction.h trustitem.h verificationresult.h vfsmountresult.h gpgmepp_export.h tofuinfo.h swdbresult.h '/usr/include/gpgme++'
+ /usr/bin/mkdir -p '/usr/include/gpgme++/interfaces'
+ /usr/bin/install -c -m 644 gpgmepp_version.h '/usr/include/gpgme++'
+ /usr/bin/install -c -m 644  interfaces/assuantransaction.h interfaces/dataprovider.h interfaces/passphraseprovider.h interfaces/progressprovider.h interfaces/statusconsumer.h '/usr/include/gpgme++/interfaces'
+/usr/bin/install -c -d /usr/lib/cmake/Gpgmepp
+/usr/bin/install -c -m 644 GpgmeppConfig.cmake \
+        /usr/lib/cmake/Gpgmepp/GpgmeppConfig.cmake
+/usr/bin/install -c -m 644 GpgmeppConfigVersion.cmake \
+        /usr/lib/cmake/Gpgmepp/GpgmeppConfigVersion.cmake
+libtool: install: warning: relinking `libgpgmepp.la'
+libtool: install: (cd /sources/gpgme-1.23.2/lang/cpp/src; /bin/sh /sources/gpgme-1.23.2/libtool  --tag CXX --mode=relink g++ -std=c++11 -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -no-undefined -version-info 26:1:20 -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o libgpgmepp.la -rpath /usr/lib exception.lo context.lo key.lo trustitem.lo data.lo callbacks.lo eventloopinteractor.lo editinteractor.lo keylistresult.lo keygenerationresult.lo importresult.lo decryptionresult.lo verificationresult.lo signingresult.lo encryptionresult.lo engineinfo.lo gpgsetexpirytimeeditinteractor.lo gpgsetownertrusteditinteractor.lo gpgsignkeyeditinteractor.lo gpgadduserideditinteractor.lo gpggencardkeyinteractor.lo gpgaddexistingsubkeyeditinteractor.lo gpgrevokekeyeditinteractor.lo defaultassuantransaction.lo scdgetinfoassuantransaction.lo gpgagentgetinfoassuantransaction.lo statusconsumerassuantransaction.lo vfsmountresult.lo configuration.lo tofuinfo.lo swdbresult.lo util.lo context_vanilla.lo ../../../src/libgpgme.la -lassuan )
+libtool: relink: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/crtbeginS.o  .libs/exception.o .libs/context.o .libs/key.o .libs/trustitem.o .libs/data.o .libs/callbacks.o .libs/eventloopinteractor.o .libs/editinteractor.o .libs/keylistresult.o .libs/keygenerationresult.o .libs/importresult.o .libs/decryptionresult.o .libs/verificationresult.o .libs/signingresult.o .libs/encryptionresult.o .libs/engineinfo.o .libs/gpgsetexpirytimeeditinteractor.o .libs/gpgsetownertrusteditinteractor.o .libs/gpgsignkeyeditinteractor.o .libs/gpgadduserideditinteractor.o .libs/gpggencardkeyinteractor.o .libs/gpgaddexistingsubkeyeditinteractor.o .libs/gpgrevokekeyeditinteractor.o .libs/defaultassuantransaction.o .libs/scdgetinfoassuantransaction.o .libs/gpgagentgetinfoassuantransaction.o .libs/statusconsumerassuantransaction.o .libs/vfsmountresult.o .libs/configuration.o .libs/tofuinfo.o .libs/swdbresult.o .libs/util.o .libs/context_vanilla.o   -L/usr/lib -lgpgme -lassuan -L/usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0 -L/usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/../../.. -lstdc++ -lm -lssp_nonshared -lc -lgcc_s /usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-uclibc/13.2.0/../../../../lib/crtn.o  -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd   -Wl,-soname -Wl,libgpgmepp.so.6 -o .libs/libgpgmepp.so.6.20.1
+libtool: install: /usr/bin/install -c .libs/libgpgmepp.so.6.20.1T /usr/lib/libgpgmepp.so.6.20.1
+libtool: install: (cd /usr/lib && { ln -s -f libgpgmepp.so.6.20.1 libgpgmepp.so.6 || { rm -f libgpgmepp.so.6 && ln -s libgpgmepp.so.6.20.1 libgpgmepp.so.6; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libgpgmepp.so.6.20.1 libgpgmepp.so || { rm -f libgpgmepp.so && ln -s libgpgmepp.so.6.20.1 libgpgmepp.so; }; })
+libtool: install: /usr/bin/install -c .libs/libgpgmepp.lai /usr/lib/libgpgmepp.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[5]: Leaving directory '/sources/gpgme-1.23.2/lang/cpp/src'
+make[4]: Leaving directory '/sources/gpgme-1.23.2/lang/cpp/src'
+make[4]: Entering directory '/sources/gpgme-1.23.2/lang/cpp'
+make[5]: Entering directory '/sources/gpgme-1.23.2/lang/cpp'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/sources/gpgme-1.23.2/lang/cpp'
+make[4]: Leaving directory '/sources/gpgme-1.23.2/lang/cpp'
+make[3]: Leaving directory '/sources/gpgme-1.23.2/lang/cpp'
+make[3]: Entering directory '/sources/gpgme-1.23.2/lang'
+make[4]: Entering directory '/sources/gpgme-1.23.2/lang'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/sources/gpgme-1.23.2/lang'
+make[3]: Leaving directory '/sources/gpgme-1.23.2/lang'
+make[2]: Leaving directory '/sources/gpgme-1.23.2/lang'
+make[2]: Entering directory '/sources/gpgme-1.23.2'
+make[3]: Entering directory '/sources/gpgme-1.23.2'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/gpgme-1.23.2'
+make[2]: Leaving directory '/sources/gpgme-1.23.2'
+make[1]: Leaving directory '/sources/gpgme-1.23.2'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 02:28:54 UTC 2024
+
+Totalseconds: 24
+
+KB: 1720768	/
+

@@ -1,0 +1,110 @@
+Fri Mar 29 02:54:36 UTC 2024
+KB: 1857676	/
+
+-- The C compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Build type is 'Release'
+-- Performing Test BROTLI_EMSCRIPTEN
+-- Performing Test BROTLI_EMSCRIPTEN - Failed
+-- Compiler is not EMSCRIPTEN
+-- Looking for log2
+-- Looking for log2 - found
+CMake Warning at CMakeLists.txt:264 (message):
+  Test file tests/testdata/alice29.txt does not exist.
+
+
+CMake Warning at CMakeLists.txt:264 (message):
+  Test file tests/testdata/asyoulik.txt does not exist.
+
+
+CMake Warning at CMakeLists.txt:264 (message):
+  Test file tests/testdata/lcet10.txt does not exist.
+
+
+CMake Warning at CMakeLists.txt:264 (message):
+  Test file tests/testdata/plrabn12.txt does not exist.
+
+
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /sources/brotli-1.1.0/build
+[4 1/39 0.027s] Building C object CMakeFiles/brotlicommon.dir/c/common/constants.c.o
+[4 2/39 0.030s] Building C object CMakeFiles/brotlicommon.dir/c/common/context.c.o
+[4 3/39 0.049s] Building C object CMakeFiles/brotlicommon.dir/c/common/platform.c.o
+[4 4/39 0.102s] Building C object CMakeFiles/brotlicommon.dir/c/common/shared_dictionary.c.o
+[4 5/39 0.136s] Building C object CMakeFiles/brotlidec.dir/c/dec/bit_reader.c.o
+[4 6/39 0.262s] Building C object CMakeFiles/brotlicommon.dir/c/common/transform.c.o
+[4 7/39 0.367s] Building C object CMakeFiles/brotlidec.dir/c/dec/state.c.o
+[4 8/39 0.392s] Building C object CMakeFiles/brotlicommon.dir/c/common/dictionary.c.o
+[4 9/39 0.393s] Building C object CMakeFiles/brotlidec.dir/c/dec/huffman.c.o
+[4 10/39 0.414s] Linking C shared library libbrotlicommon.so.1.1.0
+[4 11/39 0.426s] Creating library symlink libbrotlicommon.so.1 libbrotlicommon.so
+[4 12/39 1.217s] Building C object CMakeFiles/brotlienc.dir/c/enc/bit_cost.c.o
+[4 13/39 2.583s] Building C object CMakeFiles/brotlidec.dir/c/dec/decode.c.o
+[4 14/39 2.603s] Linking C shared library libbrotlidec.so.1.1.0
+[4 15/39 2.615s] Creating library symlink libbrotlidec.so.1 libbrotlidec.so
+[4 16/39 2.766s] Building C object CMakeFiles/brotlienc.dir/c/enc/backward_references_hq.c.o
+[4 17/39 3.284s] Building C object CMakeFiles/brotlienc.dir/c/enc/block_splitter.c.o
+[4 18/39 3.673s] Building C object CMakeFiles/brotlienc.dir/c/enc/command.c.o
+[4 19/39 4.181s] Building C object CMakeFiles/brotlienc.dir/c/enc/compound_dictionary.c.o
+[4 20/39 4.340s] Building C object CMakeFiles/brotlienc.dir/c/enc/brotli_bit_stream.c.o
+[4 21/39 4.662s] Building C object CMakeFiles/brotlienc.dir/c/enc/cluster.c.o
+[4 22/39 4.907s] Building C object CMakeFiles/brotlienc.dir/c/enc/dictionary_hash.c.o
+[4 23/39 6.714s] Building C object CMakeFiles/brotlienc.dir/c/enc/compress_fragment.c.o
+[4 24/39 7.267s] Building C object CMakeFiles/brotlienc.dir/c/enc/compress_fragment_two_pass.c.o
+[4 25/39 7.382s] Building C object CMakeFiles/brotlienc.dir/c/enc/encoder_dict.c.o
+[4 26/39 7.419s] Building C object CMakeFiles/brotlienc.dir/c/enc/fast_log.c.o
+[4 27/39 7.675s] Building C object CMakeFiles/brotlienc.dir/c/enc/encode.c.o
+[4 28/39 7.820s] Building C object CMakeFiles/brotlienc.dir/c/enc/entropy_encode.c.o
+[4 29/39 7.888s] Building C object CMakeFiles/brotlienc.dir/c/enc/memory.c.o
+[4 30/39 7.912s] Building C object CMakeFiles/brotlienc.dir/c/enc/literal_cost.c.o
+[4 31/39 7.913s] Building C object CMakeFiles/brotlienc.dir/c/enc/histogram.c.o
+[4 32/39 8.001s] Building C object CMakeFiles/brotlienc.dir/c/enc/utf8_util.c.o
+[4 33/39 8.651s] Building C object CMakeFiles/brotli.dir/c/tools/brotli.c.o
+[3 34/39 8.943s] Building C object CMakeFiles/brotlienc.dir/c/enc/static_dict.c.o
+[2 35/39 9.285s] Building C object CMakeFiles/brotlienc.dir/c/enc/metablock.c.o
+[1 36/39 12.021s] Building C object CMakeFiles/brotlienc.dir/c/enc/backward_references.c.o
+[1 37/39 12.041s] Linking C shared library libbrotlienc.so.1.1.0
+[1 38/39 12.050s] Creating library symlink libbrotlienc.so.1 libbrotlienc.so
+[1 39/39 12.063s] Linking C executable brotli
+-- Install configuration: "Release"
+-- Installing: /usr/bin/brotli
+-- Set non-toolchain portion of runtime path of "/usr/bin/brotli" to ""
+-- Installing: /usr/lib/libbrotlienc.so.1.1.0
+-- Installing: /usr/lib/libbrotlienc.so.1
+-- Set non-toolchain portion of runtime path of "/usr/lib/libbrotlienc.so.1.1.0" to ""
+-- Installing: /usr/lib/libbrotlienc.so
+-- Installing: /usr/lib/libbrotlidec.so.1.1.0
+-- Installing: /usr/lib/libbrotlidec.so.1
+-- Set non-toolchain portion of runtime path of "/usr/lib/libbrotlidec.so.1.1.0" to ""
+-- Installing: /usr/lib/libbrotlidec.so
+-- Installing: /usr/lib/libbrotlicommon.so.1.1.0
+-- Installing: /usr/lib/libbrotlicommon.so.1
+-- Installing: /usr/lib/libbrotlicommon.so
+-- Installing: /usr/include/brotli
+-- Installing: /usr/include/brotli/shared_dictionary.h
+-- Installing: /usr/include/brotli/encode.h
+-- Installing: /usr/include/brotli/decode.h
+-- Installing: /usr/include/brotli/port.h
+-- Installing: /usr/include/brotli/types.h
+-- Installing: /usr/lib/pkgconfig/libbrotlicommon.pc
+-- Installing: /usr/lib/pkgconfig/libbrotlidec.pc
+-- Installing: /usr/lib/pkgconfig/libbrotlienc.pc
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 02:54:48 UTC 2024
+
+Totalseconds: 12
+
+KB: 1863612	/
+

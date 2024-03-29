@@ -1,0 +1,258 @@
+Fri Mar 29 02:41:44 UTC 2024
+KB: 1778352	/
+
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking for inline... inline
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking dependency style of g++... gcc3
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for windres... no
+checking whether make supports nested variables... (cached) yes
+checking if gcc supports -std=gnu11... yes
+checking operating system... Linux
+checking for nfds_t... yes
+checking for pipe2... yes
+checking if gcc recognizes -pthread... yes
+checking for library containing pthread_create... none required
+checking whether __atomic_load_n is supported... yes
+checking for library containing clock_gettime... none required
+checking for pthread_setname_np... yes
+checking for libudev.h... yes
+checking for udev_new in -ludev... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for umockdev-1.0 >= 0.16.0... no
+checking for umockdev-1.0 >= 0.17.7... no
+checking for sys/time.h... yes
+checking for clock_gettime... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether CLOCK_MONOTONIC is declared... yes
+checking for pthread_condattr_setclock... yes
+checking for sys/eventfd.h... yes
+checking whether EFD_NONBLOCK is declared... yes
+checking whether EFD_CLOEXEC is declared... yes
+checking for eventfd... yes
+checking whether to use eventfd for signalling... yes
+checking for sys/timerfd.h... yes
+checking whether TFD_NONBLOCK is declared... yes
+checking whether TFD_CLOEXEC is declared... yes
+checking for timerfd_create... yes
+checking whether to use timerfd for timing... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libusb-1.0.pc
+config.status: creating Makefile
+config.status: creating libusb/Makefile
+config.status: creating examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/doxygen.cfg
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/sources/libusb-1.0.27'
+Making all in libusb
+make[2]: Entering directory '/sources/libusb-1.0.27/libusb'
+  CC       core.lo
+  CC       descriptor.lo
+  CC       hotplug.lo
+  CC       io.lo
+core.c: In function 'libusb_ref_device':
+core.c:1275:14: warning: variable 'refcnt' set but not used [-Wunused-but-set-variable]
+ 1275 |         long refcnt;
+      |              ^~~~~~
+  CC       strerror.lo
+  CC       sync.lo
+  CC       os/events_posix.lo
+  CC       os/threads_posix.lo
+  CC       os/linux_usbfs.lo
+  CC       os/linux_udev.lo
+  CCLD     libusb-1.0.la
+make[2]: Leaving directory '/sources/libusb-1.0.27/libusb'
+make[2]: Entering directory '/sources/libusb-1.0.27'
+make[2]: Leaving directory '/sources/libusb-1.0.27'
+make[1]: Leaving directory '/sources/libusb-1.0.27'
+Making install in libusb
+make[1]: Entering directory '/sources/libusb-1.0.27/libusb'
+make[2]: Entering directory '/sources/libusb-1.0.27/libusb'
+ /usr/bin/mkdir -p '/usr/lib'
+ /usr/bin/mkdir -p '/usr/include/libusb-1.0'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libusb-1.0.la '/usr/lib'
+ /usr/bin/install -c -m 644 libusb.h '/usr/include/libusb-1.0'
+libtool: install: /usr/bin/install -c .libs/libusb-1.0.so.0.4.0 /usr/lib/libusb-1.0.so.0.4.0
+libtool: install: (cd /usr/lib && { ln -s -f libusb-1.0.so.0.4.0 libusb-1.0.so.0 || { rm -f libusb-1.0.so.0 && ln -s libusb-1.0.so.0.4.0 libusb-1.0.so.0; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libusb-1.0.so.0.4.0 libusb-1.0.so || { rm -f libusb-1.0.so && ln -s libusb-1.0.so.0.4.0 libusb-1.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libusb-1.0.lai /usr/lib/libusb-1.0.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Leaving directory '/sources/libusb-1.0.27/libusb'
+make[1]: Leaving directory '/sources/libusb-1.0.27/libusb'
+make[1]: Entering directory '/sources/libusb-1.0.27'
+make[2]: Entering directory '/sources/libusb-1.0.27'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libusb-1.0.pc '/usr/lib/pkgconfig'
+make[2]: Leaving directory '/sources/libusb-1.0.27'
+make[1]: Leaving directory '/sources/libusb-1.0.27'
+removed '/usr/share/hwdata/pci.ids'
+--2024-03-29 02:41:49--  https://raw.githubusercontent.com/pciutils/pciids/master/pci.ids
+Resolving raw.githubusercontent.com... 2606:50c0:8003::154, 2606:50c0:8002::154, 2606:50c0:8001::154, ...
+Connecting to raw.githubusercontent.com|2606:50c0:8003::154|:443... failed: Network is unreachable.
+Connecting to raw.githubusercontent.com|2606:50c0:8002::154|:443... failed: Network is unreachable.
+Connecting to raw.githubusercontent.com|2606:50c0:8001::154|:443... failed: Network is unreachable.
+Connecting to raw.githubusercontent.com|2606:50c0:8000::154|:443... failed: Network is unreachable.
+Connecting to raw.githubusercontent.com|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1431735 (1.4M) [text/plain]
+Saving to: '/usr/share/hwdata/pci.ids'
+
+     0K .......... .......... .......... .......... ..........  3% 52.0M 0s
+    50K .......... .......... .......... .......... ..........  7% 53.3M 0s
+   100K .......... .......... .......... .......... .......... 10%  192M 0s
+   150K .......... .......... .......... .......... .......... 14% 82.5M 0s
+   200K .......... .......... .......... .......... .......... 17%  191M 0s
+   250K .......... .......... .......... .......... .......... 21%  195M 0s
+   300K .......... .......... .......... .......... .......... 25%  141M 0s
+   350K .......... .......... .......... .......... .......... 28%  193M 0s
+   400K .......... .......... .......... .......... .......... 32%  154M 0s
+   450K .......... .......... .......... .......... .......... 35%  191M 0s
+   500K .......... .......... .......... .......... .......... 39%  196M 0s
+   550K .......... .......... .......... .......... .......... 42%  218M 0s
+   600K .......... .......... .......... .......... .......... 46%  193M 0s
+   650K .......... .......... .......... .......... .......... 50%  150M 0s
+   700K .......... .......... .......... .......... .......... 53%  194M 0s
+   750K .......... .......... .......... .......... .......... 57%  185M 0s
+   800K .......... .......... .......... .......... .......... 60%  196M 0s
+   850K .......... .......... .......... .......... .......... 64%  188M 0s
+   900K .......... .......... .......... .......... .......... 67%  194M 0s
+   950K .......... .......... .......... .......... .......... 71%  196M 0s
+  1000K .......... .......... .......... .......... .......... 75%  198M 0s
+  1050K .......... .......... .......... .......... .......... 78%  142M 0s
+  1100K .......... .......... .......... .......... .......... 82%  211M 0s
+  1150K .......... .......... .......... .......... .......... 85%  200M 0s
+  1200K .......... .......... .......... .......... .......... 89%  197M 0s
+  1250K .......... .......... .......... .......... .......... 92%  190M 0s
+  1300K .......... .......... .......... .......... .......... 96%  196M 0s
+  1350K .......... .......... .......... .......... ........  100%  161M=0.009s
+
+2024-03-29 02:41:49 (151 MB/s) - '/usr/share/hwdata/pci.ids' saved [1431735/1431735]
+
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 02:41:49 UTC 2024
+
+Totalseconds: 5
+
+KB: 1783656	/
+

@@ -1,0 +1,149 @@
+Fri Mar 29 01:52:56 UTC 2024
+KB: 1106324	/
+
+checking whether make sets $(MAKE)... yes
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in lib (/sources/gperf-3.1/lib)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ar... ar
+checking for ranlib... ranlib
+checking for a BSD compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src (/sources/gperf-3.1/src)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for a BSD compatible install... /usr/bin/install -c
+checking for stack-allocated variable-size arrays... yes
+checking for rand in -lm... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in tests (/sources/gperf-3.1/tests)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in doc (/sources/gperf-3.1/doc)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for a BSD compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+cd lib; make all
+make[1]: Entering directory '/sources/gperf-3.1/lib'
+gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -I. -c ./getopt.c
+gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -I. -c ./getopt1.c
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -c ./getline.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -c ./hash.cc
+./getline.cc: In function 'int getstr(char**, size_t*, FILE*, char, size_t)':
+./getline.cc:58:20: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   58 |       register int c = getc (stream);
+      |                    ^
+rm -f libgp.a
+ar rc libgp.a getopt.o getopt1.o getline.o hash.o
+ranlib libgp.a
+make[1]: Leaving directory '/sources/gperf-3.1/lib'
+cd src; make all
+make[1]: Entering directory '/sources/gperf-3.1/src'
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./version.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./positions.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./options.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./keyword.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./keyword-list.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./input.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./bool-array.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./hash-table.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./search.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./output.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -DNDEBUG -I. -I./../lib -c ./main.cc
+g++ -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o gperf version.o positions.o options.o keyword.o keyword-list.o input.o bool-array.o hash-table.o search.o output.o main.o ../lib/libgp.a -lm
+make[1]: Leaving directory '/sources/gperf-3.1/src'
+cd tests; make all
+make[1]: Entering directory '/sources/gperf-3.1/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/gperf-3.1/tests'
+cd doc; make all
+make[1]: Entering directory '/sources/gperf-3.1/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/gperf-3.1/doc'
+cd lib; make install
+make[1]: Entering directory '/sources/gperf-3.1/lib'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/sources/gperf-3.1/lib'
+cd src; make install
+make[1]: Entering directory '/sources/gperf-3.1/src'
+/bin/sh ./../build-aux/mkinstalldirs /usr/bin
+/usr/bin/install -c gperf /usr/bin/gperf
+make[1]: Leaving directory '/sources/gperf-3.1/src'
+cd tests; make install
+make[1]: Entering directory '/sources/gperf-3.1/tests'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/sources/gperf-3.1/tests'
+cd doc; make install
+make[1]: Entering directory '/sources/gperf-3.1/doc'
+/bin/sh ./../build-aux/mkinstalldirs /usr/share/info
+/usr/bin/install -c -m 644 ./gperf.info /usr/share/info/gperf.info
+/bin/sh ./../build-aux/mkinstalldirs /usr/share/man/man1
+/usr/bin/install -c -m 644 ./gperf.1 /usr/share/man/man1/gperf.1
+/bin/sh ./../build-aux/mkinstalldirs /usr/share/doc/
+/usr/bin/install -c -m 644 ./gperf.html /usr/share/doc//gperf.html
+make[1]: Leaving directory '/sources/gperf-3.1/doc'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 01:52:59 UTC 2024
+
+Totalseconds: 3
+
+KB: 1110836	/
+

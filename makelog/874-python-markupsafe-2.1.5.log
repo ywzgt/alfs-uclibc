@@ -1,0 +1,53 @@
+Fri Mar 29 02:16:32 UTC 2024
+KB: 1573060	/
+
+pip 24.0 from /usr/lib/python3.12/site-packages/pip (python 3.12)
+Processing /sources/MarkupSafe-2.1.5
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: MarkupSafe
+  Building wheel for MarkupSafe (setup.py): started
+  Building wheel for MarkupSafe (setup.py): finished with status 'done'
+  Created wheel for MarkupSafe: filename=MarkupSafe-2.1.5-cp312-cp312-linux_x86_64.whl size=24669 sha256=1d5abe70689f60141923fa178d9bf346338d3cae19ef41496c0c67c3cc252382
+  Stored in directory: /root/.cache/pip/wheels/9c/21/74/f259dcee52a6b4bb13a12df2edc72ab5d9a9bb46ad350a1b4e
+Successfully built MarkupSafe
+Looking in links: dist
+Processing ./dist/MarkupSafe-2.1.5-cp312-cp312-linux_x86_64.whl
+Installing collected packages: Markupsafe
+Successfully installed Markupsafe-2.1.5
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+
+removed '/root/.cache/pip/wheels/9c/21/74/f259dcee52a6b4bb13a12df2edc72ab5d9a9bb46ad350a1b4e/MarkupSafe-2.1.5-cp312-cp312-linux_x86_64.whl'
+removed '/root/.cache/pip/wheels/9c/21/74/f259dcee52a6b4bb13a12df2edc72ab5d9a9bb46ad350a1b4e/origin.json'
+removed directory '/root/.cache/pip/wheels/9c/21/74/f259dcee52a6b4bb13a12df2edc72ab5d9a9bb46ad350a1b4e'
+removed directory '/root/.cache/pip/wheels/9c/21/74'
+removed directory '/root/.cache/pip/wheels/9c/21'
+removed directory '/root/.cache/pip/wheels/9c'
+removed directory '/root/.cache/pip/wheels'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a.body'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5/3'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5'
+removed directory '/root/.cache/pip/http-v2/a/1/9'
+removed directory '/root/.cache/pip/http-v2/a/1'
+removed directory '/root/.cache/pip/http-v2/a'
+removed directory '/root/.cache/pip/http-v2'
+removed '/root/.cache/pip/selfcheck/241e69162522ccf5846a2f42ebc24b17464915a155679666b89a9f31'
+removed directory '/root/.cache/pip/selfcheck'
+removed directory '/root/.cache/pip'
+removed directory '/root/.cache'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 02:16:35 UTC 2024
+
+Totalseconds: 3
+
+KB: 1573512	/
+
