@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="check"
+PKG="$SRC"
+
+./configure --prefix=/usr --disable-static
+
+make
+make install

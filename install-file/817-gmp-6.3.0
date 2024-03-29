@@ -1,0 +1,24 @@
+/usr/include/gmp.h	84353	root:root	644	
+/usr/include/gmpxx.h	129502	root:root	644	
+/usr/include/m32/gmp/gmp.h	84389	root:root	644	
+/usr/include/m32/gmp/gmpxx.h	129502	root:root	644	
+/usr/lib/libgmp.so	16	root:root	777	libgmp.so.10.5.0
+/usr/lib/libgmp.so.10	16	root:root	777	libgmp.so.10.5.0
+/usr/lib/libgmp.so.10.5.0	484632	root:root	755	
+/usr/lib/libgmpxx.so	17	root:root	777	libgmpxx.so.4.7.0
+/usr/lib/libgmpxx.so.4	17	root:root	777	libgmpxx.so.4.7.0
+/usr/lib/libgmpxx.so.4.7.0	42168	root:root	755	
+/usr/lib/pkgconfig/gmp.pc	245	root:root	644	
+/usr/lib/pkgconfig/gmpxx.pc	280	root:root	644	
+/usr/lib32/libgmp.so	16	root:root	777	libgmp.so.10.5.0
+/usr/lib32/libgmp.so.10	16	root:root	777	libgmp.so.10.5.0
+/usr/lib32/libgmp.so.10.5.0	458772	root:root	755	
+/usr/lib32/libgmpxx.so	17	root:root	777	libgmpxx.so.4.7.0
+/usr/lib32/libgmpxx.so.4	17	root:root	777	libgmpxx.so.4.7.0
+/usr/lib32/libgmpxx.so.4.7.0	36212	root:root	755	
+/usr/lib32/pkgconfig/gmp.pc	240	root:root	644	
+/usr/lib32/pkgconfig/gmpxx.pc	275	root:root	644	
+/usr/share/info/dir	3569	root:root	644	
+/usr/share/info/gmp.info	5932	root:root	644	
+/usr/share/info/gmp.info-1	300383	root:root	644	
+/usr/share/info/gmp.info-2	223745	root:root	644	

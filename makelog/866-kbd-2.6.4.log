@@ -1,0 +1,769 @@
+Patching kbd:
+Applying patch '../kbd-2.6.4-backspace-1.patch'...
+patching file data/keymaps/i386/dvorak/dvorak-l.map
+patching file data/keymaps/i386/dvorak/dvorak-r.map
+patching file data/keymaps/i386/fgGIod/tr_f-latin5.map
+patching file data/keymaps/i386/qwerty/lt.l4.map
+patching file data/keymaps/i386/qwerty/lt.map
+patching file data/keymaps/i386/qwerty/no-latin1.map
+patching file data/keymaps/i386/qwerty/ru1.map
+patching file data/keymaps/i386/qwerty/ru2.map
+patching file data/keymaps/i386/qwerty/ru-cp1251.map
+patching file data/keymaps/i386/qwerty/ru-ms.map
+patching file data/keymaps/i386/qwerty/ru_win.map
+patching file data/keymaps/i386/qwerty/se-ir209.map
+patching file data/keymaps/i386/qwerty/se-lat6.map
+patching file data/keymaps/i386/qwerty/tr_q-latin5.map
+patching file data/keymaps/i386/qwerty/ua.map
+patching file data/keymaps/i386/qwerty/ua-utf.map
+patching file data/keymaps/i386/qwerty/ua-utf-ws.map
+patching file data/keymaps/i386/qwerty/ua-ws.map
+
+
+Fri Mar 29 18:04:02 UTC 2024
+KB: 1585704	/
+
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether to build with code coverage support... no
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for bison... bison -y
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for vfork.h... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking how to run the C preprocessor... gcc -E
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for fcntl.h... yes
+checking for libintl.h... yes
+checking for locale.h... yes
+checking for memory.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for termios.h... yes
+checking for unistd.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for uid_t in sys/types.h... yes
+checking whether gcc needs -traditional... no
+checking for working chown... yes
+checking whether closedir returns void... no
+checking for pid_t... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether stat accepts an empty string... no
+checking for alarm... yes
+checking for memset... yes
+checking for setlocale... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for setpgrp... yes
+checking for malloc... yes
+checking for realloc... yes
+checking for library containing timer_create... none required
+checking whether C compiler accepts -Werror... yes
+checking whether to add -D_FORTIFY_SOURCE=3 to CPPFLAGS... yes
+checking if gcc supports -Waggregate-return flag... yes
+checking if gcc supports -Wall flag... yes
+checking if gcc supports -Wcast-align flag... yes
+checking if gcc supports -Wconversion flag... yes
+checking if gcc supports -Wdisabled-optimization flag... yes
+checking if gcc supports -Wextra flag... yes
+checking if gcc supports -Wmissing-declarations flag... yes
+checking if gcc supports -Wmissing-format-attribute flag... yes
+checking if gcc supports -Wmissing-noreturn flag... yes
+checking if gcc supports -Wmissing-prototypes flag... yes
+checking if gcc supports -Wpointer-arith flag... yes
+checking if gcc supports -Wredundant-decls flag... yes
+checking if gcc supports -Wshadow flag... yes
+checking if gcc supports -Wstrict-prototypes flag... yes
+checking if gcc supports -Wwrite-strings flag... yes
+checking for doxygen... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating data/Makefile
+config.status: creating docs/Makefile
+config.status: creating docs/man/Makefile
+config.status: creating docs/man/man1/Makefile
+config.status: creating docs/man/man1/dumpkeys.1
+config.status: creating docs/man/man1/loadkeys.1
+config.status: creating docs/man/man1misc/Makefile
+config.status: creating docs/man/man5/Makefile
+config.status: creating docs/man/man8/Makefile
+config.status: creating docs/man/man8/loadunimap.8
+config.status: creating docs/man/man8/mapscrn.8
+config.status: creating docs/man/man8/setfont.8
+config.status: creating docs/man/man8misc/Makefile
+config.status: creating docs/reference/Makefile
+config.status: creating docs/reference/libkeymap/Makefile
+config.status: creating po/Makefile.in
+config.status: creating src/Makefile
+config.status: creating src/libcommon/Makefile
+config.status: creating src/libkbdfile/Makefile
+config.status: creating src/libkfont/Makefile
+config.status: creating src/libkeymap/Makefile
+config.status: creating src/vlock/Makefile
+config.status: creating tests/helpers/Makefile
+config.status: creating tests/libkbdfile/Makefile
+config.status: creating tests/libkeymap/Makefile
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing tests/atconfig commands
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+
+	kbd 2.6.4
+	======
+
+	prefix:                 /usr
+	libdir:                 ${exec_prefix}/lib
+	bindir:                 ${exec_prefix}/bin
+	datadir:                ${datarootdir}
+
+	compiler:               gcc
+	cflags:                 -O2  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -lintl -Waggregate-return -Wall -Wcast-align -Wconversion -Wdisabled-optimization -Wextra -Wmissing-declarations -Wmissing-format-attribute -Wmissing-noreturn -Wmissing-prototypes -Wpointer-arith -Wredundant-decls -Wshadow -Wstrict-prototypes -Wwrite-strings
+
+	{get,set}keycodes:      yes
+	resizecons:             no
+	optional progs:         no
+	vlock:                  no
+	libkbdfile:             no
+	libkeymap:              no
+	libkfont:               no
+
+make  all-recursive
+make[1]: Entering directory '/sources/kbd-2.6.4'
+Making all in src
+make[2]: Entering directory '/sources/kbd-2.6.4/src'
+Making all in libcommon
+make[3]: Entering directory '/sources/kbd-2.6.4/src/libcommon'
+  CC       error.o
+  CC       getfd.o
+  CC       version.o
+  AR       libcommon.a
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/libcommon'
+Making all in libkbdfile
+make[3]: Entering directory '/sources/kbd-2.6.4/src/libkbdfile'
+  CC       init.lo
+  CC       kbdfile.lo
+  CCLD     libkbdfile.la
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/libkbdfile'
+Making all in libkfont
+make[3]: Entering directory '/sources/kbd-2.6.4/src/libkfont'
+  CC       psffontop.lo
+  CC       psfxtable.lo
+  CC       context.lo
+  CC       unicode.lo
+  CC       utf8.lo
+  CC       kdmapop.lo
+  CC       loadunimap.lo
+  CC       mapscrn.lo
+  CC       setfont.lo
+  CC       kdfontop.lo
+  CCLD     libkfont.la
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/libkfont'
+Making all in libkeymap
+make[3]: Entering directory '/sources/kbd-2.6.4/src/libkeymap'
+make  all-am
+make[4]: Entering directory '/sources/kbd-2.6.4/src/libkeymap'
+  CC       array.lo
+  CC       common.lo
+  CC       kernel.lo
+  CC       dump.lo
+dump.c: In function 'lk_dump_funcs':
+dump.c:255:33: warning: conversion to 'unsigned char' from 'char' may change the sign of the result [-Wsign-conversion]
+  255 |                                 fputc(*ptr, fd);
+      |                                 ^~~~~
+dump.c:257:33: warning: conversion to 'unsigned char' from 'char' may change the sign of the result [-Wsign-conversion]
+  257 |                                 fputc(*ptr, fd);
+      |                                 ^~~~~
+  CC       kmap.lo
+  CC       diacr.lo
+  CC       func.lo
+  CC       summary.lo
+  CC       loadkeys.lo
+  CC       parser.lo
+  CC       analyze.lo
+  CC       modifiers.lo
+  CC       ksyms.lo
+  CCLD     libkeymap.la
+make[4]: Leaving directory '/sources/kbd-2.6.4/src/libkeymap'
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/libkeymap'
+Making all in vlock
+make[3]: Entering directory '/sources/kbd-2.6.4/src/vlock'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/vlock'
+make[3]: Entering directory '/sources/kbd-2.6.4/src'
+  CC       mapscrn.o
+  CC       loadunimap.o
+  CC       dumpkeys.o
+  CC       loadkeys.o
+  CC       showkey.o
+  CC       setfont.o
+  CC       showconsolefont.o
+showkey.c: In function 'main':
+showkey.c:275:31: warning: conversion to 'unsigned int' from 'int' may change the sign of the result [-Wsign-conversion]
+  275 |                         alarm(timeout);
+      |                               ^~~~~~~
+showkey.c:287:23: warning: conversion to 'unsigned int' from 'int' may change the sign of the result [-Wsign-conversion]
+  287 |                 alarm(timeout);
+      |                       ^~~~~~~
+  CC       setleds.o
+  CC       setmetamode.o
+  CC       kbd_mode.o
+  CC       psfxtable.o
+  CC       fgconsole.o
+  CC       kbdrate.o
+  CC       chvt.o
+  CC       deallocvt.o
+  CC       openvt.o
+  CC       kbdinfo.o
+  CC       setvtrgb.o
+  CC       getkeycodes.o
+  CC       setkeycodes.o
+  CCLD     mapscrn
+  CCLD     loadunimap
+  CCLD     dumpkeys
+  CCLD     loadkeys
+  CCLD     showkey
+  CCLD     setfont
+  CCLD     showconsolefont
+  CCLD     setleds
+  CCLD     setmetamode
+  CCLD     kbd_mode
+  CCLD     psfxtable
+  CCLD     fgconsole
+  CCLD     kbdrate
+  CCLD     chvt
+  CCLD     deallocvt
+  CCLD     openvt
+  CCLD     kbdinfo
+  CCLD     setvtrgb
+  CCLD     getkeycodes
+  CCLD     setkeycodes
+make[3]: Leaving directory '/sources/kbd-2.6.4/src'
+make[2]: Leaving directory '/sources/kbd-2.6.4/src'
+Making all in data
+make[2]: Entering directory '/sources/kbd-2.6.4/data'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/kbd-2.6.4/data'
+Making all in po
+make[2]: Entering directory '/sources/kbd-2.6.4/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/kbd-2.6.4/po'
+Making all in docs
+make[2]: Entering directory '/sources/kbd-2.6.4/docs'
+Making all in man
+make[3]: Entering directory '/sources/kbd-2.6.4/docs/man'
+Making all in man1
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/man/man1'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/man/man1'
+Making all in man5
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/man/man5'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/man/man5'
+Making all in man8
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/man/man8'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/man/man8'
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/man'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/man'
+make[3]: Leaving directory '/sources/kbd-2.6.4/docs/man'
+Making all in reference
+make[3]: Entering directory '/sources/kbd-2.6.4/docs/reference'
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/reference'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/reference'
+make[3]: Leaving directory '/sources/kbd-2.6.4/docs/reference'
+make[3]: Entering directory '/sources/kbd-2.6.4/docs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/docs'
+make[2]: Leaving directory '/sources/kbd-2.6.4/docs'
+Making all in tests
+make[2]: Entering directory '/sources/kbd-2.6.4/tests'
+:;{ \
+    echo '# Signature of the current package.';                       \
+    echo 'm4_define([AT_PACKAGE_NAME],      [kbd])';      \
+    echo 'm4_define([AT_PACKAGE_TARNAME],   [kbd])';   \
+    echo 'm4_define([AT_PACKAGE_VERSION],   [2.6.4])';   \
+    echo 'm4_define([AT_PACKAGE_STRING],    [kbd 2.6.4])';    \
+    echo 'm4_define([AT_PACKAGE_BUGREPORT], [gladkov.alexey@gmail.com])'; \
+    echo 'm4_define([AT_PACKAGE_URL],       [https://kbd-project.org/])';       \
+} >'/sources/kbd-2.6.4/tests/atpackage'
+/bin/sh ../config/missing --run autom4te --language=autotest -I '.' -o - testsuite.at > /sources/kbd-2.6.4/tests/testsuite
+Making all in helpers
+make[3]: Entering directory '/sources/kbd-2.6.4/tests/helpers'
+  CC       libkeymap-bkeymap.o
+  CC       libkeymap-dumpkeys.o
+  CC       libkeymap-mktable.o
+  CC       libkeymap-showmaps.o
+  CCLD     libkeymap-bkeymap
+  CCLD     libkeymap-mktable
+libkeymap-showmaps.c: In function 'main':
+libkeymap-showmaps.c:36:41: warning: conversion to 'int' from 'unsigned int' may change the sign of the result [-Wsign-conversion]
+   36 |                 if (!lk_map_exists(ctx, i))
+      |                                         ^
+  CCLD     libkeymap-dumpkeys
+  CCLD     libkeymap-showmaps
+make[3]: Leaving directory '/sources/kbd-2.6.4/tests/helpers'
+Making all in libkbdfile
+make[3]: Entering directory '/sources/kbd-2.6.4/tests/libkbdfile'
+  CC       libkbdfile-test01.o
+  CC       libkbdfile-test02.o
+  CC       libkbdfile-test03.o
+  CC       libkbdfile-test04.o
+  CC       libkbdfile-test05.o
+  CC       libkbdfile-test06.o
+  CC       libkbdfile-test07.o
+  CC       libkbdfile-test08.o
+  CC       libkbdfile-test09.o
+  CC       libkbdfile-test10.o
+  CC       libkbdfile-test11.o
+  CC       libkbdfile-test12.o
+  CC       libkbdfile-test13.o
+  CCLD     libkbdfile-test01
+  CCLD     libkbdfile-test02
+  CCLD     libkbdfile-test03
+  CCLD     libkbdfile-test04
+  CCLD     libkbdfile-test05
+  CCLD     libkbdfile-test06
+  CCLD     libkbdfile-test07
+  CCLD     libkbdfile-test08
+  CCLD     libkbdfile-test09
+  CCLD     libkbdfile-test10
+  CCLD     libkbdfile-test11
+  CCLD     libkbdfile-test12
+  CCLD     libkbdfile-test13
+make[3]: Leaving directory '/sources/kbd-2.6.4/tests/libkbdfile'
+Making all in libkeymap
+make[3]: Entering directory '/sources/kbd-2.6.4/tests/libkeymap'
+  CC       libkeymap-test01.o
+  CC       libkeymap-test02.o
+  CC       libkeymap-test03.o
+  CC       libkeymap-test04.o
+  CC       libkeymap-test05.o
+  CC       libkeymap-test06.o
+  CC       libkeymap-test07.o
+  CC       libkeymap-test08.o
+libkeymap-test07.c: In function 'main':
+libkeymap-test07.c:43:41: warning: conversion to 'int' from 'unsigned int' may change the sign of the result [-Wsign-conversion]
+   43 |                 int c = lk_get_key(ctx, i, 17);
+      |                                         ^
+libkeymap-test08.c: In function 'main':
+libkeymap-test08.c:44:41: warning: conversion to 'int' from 'unsigned int' may change the sign of the result [-Wsign-conversion]
+   44 |                 int c = lk_get_key(ctx, i, 17);
+      |                                         ^
+  CC       libkeymap-test09.o
+  CC       libkeymap-test10.o
+  CC       libkeymap-test11.o
+  CC       libkeymap-test12.o
+  CC       libkeymap-test13.o
+  CC       libkeymap-test14.o
+  CC       libkeymap-test15.o
+  CC       libkeymap-test16.o
+libkeymap-test16.c: In function 'main':
+libkeymap-test16.c:18:34: warning: implicit conversion from 'enum <anonymous>' to 'lk_flags' [-Wenum-conversion]
+   18 |         lk_set_parser_flags(ctx, LK_KEYWORD_ALTISMETA);
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+  CC       libkeymap-test17.o
+  CC       libkeymap-test18.o
+  CCLD     libkeymap-test01
+  CCLD     libkeymap-test02
+  CCLD     libkeymap-test03
+  CCLD     libkeymap-test04
+  CCLD     libkeymap-test05
+  CCLD     libkeymap-test06
+  CCLD     libkeymap-test07
+  CCLD     libkeymap-test08
+  CCLD     libkeymap-test09
+  CCLD     libkeymap-test10
+  CCLD     libkeymap-test11
+  CCLD     libkeymap-test12
+  CCLD     libkeymap-test13
+  CCLD     libkeymap-test14
+  CCLD     libkeymap-test15
+  CCLD     libkeymap-test16
+  CCLD     libkeymap-test17
+  CCLD     libkeymap-test18
+make[3]: Leaving directory '/sources/kbd-2.6.4/tests/libkeymap'
+make[3]: Entering directory '/sources/kbd-2.6.4/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/tests'
+make[2]: Leaving directory '/sources/kbd-2.6.4/tests'
+make[2]: Entering directory '/sources/kbd-2.6.4'
+make[2]: Leaving directory '/sources/kbd-2.6.4'
+make[1]: Leaving directory '/sources/kbd-2.6.4'
+Making install in src
+make[1]: Entering directory '/sources/kbd-2.6.4/src'
+Making install in libcommon
+make[2]: Entering directory '/sources/kbd-2.6.4/src/libcommon'
+make[3]: Entering directory '/sources/kbd-2.6.4/src/libcommon'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/libcommon'
+make[2]: Leaving directory '/sources/kbd-2.6.4/src/libcommon'
+Making install in libkbdfile
+make[2]: Entering directory '/sources/kbd-2.6.4/src/libkbdfile'
+make[3]: Entering directory '/sources/kbd-2.6.4/src/libkbdfile'
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/libkbdfile'
+make[2]: Leaving directory '/sources/kbd-2.6.4/src/libkbdfile'
+Making install in libkfont
+make[2]: Entering directory '/sources/kbd-2.6.4/src/libkfont'
+make[3]: Entering directory '/sources/kbd-2.6.4/src/libkfont'
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/libkfont'
+make[2]: Leaving directory '/sources/kbd-2.6.4/src/libkfont'
+Making install in libkeymap
+make[2]: Entering directory '/sources/kbd-2.6.4/src/libkeymap'
+make  install-am
+make[3]: Entering directory '/sources/kbd-2.6.4/src/libkeymap'
+make[4]: Entering directory '/sources/kbd-2.6.4/src/libkeymap'
+make[4]: Leaving directory '/sources/kbd-2.6.4/src/libkeymap'
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/libkeymap'
+make[2]: Leaving directory '/sources/kbd-2.6.4/src/libkeymap'
+Making install in vlock
+make[2]: Entering directory '/sources/kbd-2.6.4/src/vlock'
+make[3]: Entering directory '/sources/kbd-2.6.4/src/vlock'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/src/vlock'
+make[2]: Leaving directory '/sources/kbd-2.6.4/src/vlock'
+make[2]: Entering directory '/sources/kbd-2.6.4/src'
+make[3]: Entering directory '/sources/kbd-2.6.4/src'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/install -c unicode_start unicode_stop '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c mapscrn loadunimap dumpkeys loadkeys showkey setfont showconsolefont setleds setmetamode kbd_mode psfxtable fgconsole kbdrate chvt deallocvt openvt kbdinfo setvtrgb getkeycodes setkeycodes '/usr/bin'
+libtool: install: /usr/bin/install -c mapscrn /usr/bin/mapscrn
+libtool: install: /usr/bin/install -c loadunimap /usr/bin/loadunimap
+libtool: install: /usr/bin/install -c dumpkeys /usr/bin/dumpkeys
+libtool: install: /usr/bin/install -c loadkeys /usr/bin/loadkeys
+libtool: install: /usr/bin/install -c showkey /usr/bin/showkey
+libtool: install: /usr/bin/install -c setfont /usr/bin/setfont
+libtool: install: /usr/bin/install -c showconsolefont /usr/bin/showconsolefont
+libtool: install: /usr/bin/install -c setleds /usr/bin/setleds
+libtool: install: /usr/bin/install -c setmetamode /usr/bin/setmetamode
+libtool: install: /usr/bin/install -c kbd_mode /usr/bin/kbd_mode
+libtool: install: /usr/bin/install -c psfxtable /usr/bin/psfxtable
+libtool: install: /usr/bin/install -c fgconsole /usr/bin/fgconsole
+libtool: install: /usr/bin/install -c kbdrate /usr/bin/kbdrate
+libtool: install: /usr/bin/install -c chvt /usr/bin/chvt
+libtool: install: /usr/bin/install -c deallocvt /usr/bin/deallocvt
+libtool: install: /usr/bin/install -c openvt /usr/bin/openvt
+libtool: install: /usr/bin/install -c kbdinfo /usr/bin/kbdinfo
+libtool: install: /usr/bin/install -c setvtrgb /usr/bin/setvtrgb
+libtool: install: /usr/bin/install -c getkeycodes /usr/bin/getkeycodes
+libtool: install: /usr/bin/install -c setkeycodes /usr/bin/setkeycodes
+make  install-exec-hook
+make[4]: Entering directory '/sources/kbd-2.6.4/src'
+for i in psfaddtable psfgettable psfstriptable; do \
+	rm -f /usr/bin/$i; \
+	ln -s psfxtable /usr/bin/$i || exit $?; \
+done
+make[4]: Leaving directory '/sources/kbd-2.6.4/src'
+make[3]: Leaving directory '/sources/kbd-2.6.4/src'
+make[2]: Leaving directory '/sources/kbd-2.6.4/src'
+make[1]: Leaving directory '/sources/kbd-2.6.4/src'
+Making install in data
+make[1]: Entering directory '/sources/kbd-2.6.4/data'
+make[2]: Entering directory '/sources/kbd-2.6.4/data'
+make[2]: Nothing to be done for 'install-exec-am'.
+make  install-data-hook
+make[3]: Entering directory '/sources/kbd-2.6.4/data'
+cp -r ./keymaps keymaps_Z
+cp -r ./consolefonts consolefonts_Z
+cp -r ./partialfonts partialfonts_Z
+chmod -R u+w consolefonts_Z partialfonts_Z
+chmod -R u+w keymaps_Z
+cd consolefonts_Z && gzip -f -n -9 * && gunzip ERRORS* README*
+cd keymaps_Z; \
+for f in */*.map */*/*.map; do \
+  gzip -f -n -9 < "$f" > "$f.gz"; \
+done; \
+rm -f -- */*.map */*/*.map;
+cd partialfonts_Z && gzip -f -n -9 *
+install -d -m 755 /usr/share
+install -d -m 755 /usr/share/consolefonts
+install -m 644 consolefonts_Z/* /usr/share/consolefonts
+install -d -m 755 /usr/share/consolefonts/partialfonts
+install -m 644 partialfonts_Z/* /usr/share/consolefonts/partialfonts
+install -d -m 755 /usr/share/consoletrans
+install -m 644 ./consoletrans/* /usr/share/consoletrans
+install -d -m 755 /usr/share/unimaps
+install -m 644 ./unimaps/* /usr/share/unimaps
+install -d -m 755 /usr/share/keymaps
+install -d -m 755 /usr/share/keymaps/i386
+install -d -m 755 /usr/share/keymaps/mac
+for i in include sun amiga atari i386/azerty i386/bepo i386/dvorak i386/fgGIod i386/qwerty i386/qwertz i386/include i386/olpc i386/colemak i386/carpalx i386/neo mac/include mac/all pine; do \
+	install -d -m 755 /usr/share/keymaps/$i ;\
+	install -m 644 keymaps_Z/$i/* /usr/share/keymaps/$i ;\
+done
+rm -f /usr/share/keymaps/ppc; ln -s mac /usr/share/keymaps/ppc
+make[3]: Leaving directory '/sources/kbd-2.6.4/data'
+make[2]: Leaving directory '/sources/kbd-2.6.4/data'
+make[1]: Leaving directory '/sources/kbd-2.6.4/data'
+Making install in po
+make[1]: Entering directory '/sources/kbd-2.6.4/po'
+installing cs.gmo as /usr/share/locale/cs/LC_MESSAGES/kbd.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/kbd.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/kbd.mo
+installing el.gmo as /usr/share/locale/el/LC_MESSAGES/kbd.mo
+installing eo.gmo as /usr/share/locale/eo/LC_MESSAGES/kbd.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/kbd.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/kbd.mo
+installing gr.gmo as /usr/share/locale/gr/LC_MESSAGES/kbd.mo
+installing id.gmo as /usr/share/locale/id/LC_MESSAGES/kbd.mo
+installing it.gmo as /usr/share/locale/it/LC_MESSAGES/kbd.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/kbd.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/kbd.mo
+installing pt.gmo as /usr/share/locale/pt/LC_MESSAGES/kbd.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/kbd.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/kbd.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/kbd.mo
+installing sr.gmo as /usr/share/locale/sr/LC_MESSAGES/kbd.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/kbd.mo
+installing tr.gmo as /usr/share/locale/tr/LC_MESSAGES/kbd.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/kbd.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/kbd.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/kbd.mo
+if test "kbd" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/sources/kbd-2.6.4/po'
+Making install in docs
+make[1]: Entering directory '/sources/kbd-2.6.4/docs'
+Making install in man
+make[2]: Entering directory '/sources/kbd-2.6.4/docs/man'
+Making install in man1
+make[3]: Entering directory '/sources/kbd-2.6.4/docs/man/man1'
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/man/man1'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 chvt.1 deallocvt.1 fgconsole.1 kbd_mode.1 openvt.1 psfaddtable.1 psfgettable.1 psfstriptable.1 psfxtable.1 setleds.1 setmetamode.1 showkey.1 unicode_start.1 unicode_stop.1 kbdinfo.1 dumpkeys.1 loadkeys.1 '/usr/share/man/man1'
+make  install-data-hook
+make[5]: Entering directory '/sources/kbd-2.6.4/docs/man/man1'
+cd /usr/share/man/man1 && \
+for f in dumpkeys.1 loadkeys.1; do \
+	/usr/bin/sed -e "s#@DATADIR\@#/usr/share#g" "$f" > "$f.new"; \
+	mv -f -- "$f.new" "$f"; \
+done
+make[5]: Leaving directory '/sources/kbd-2.6.4/docs/man/man1'
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/man/man1'
+make[3]: Leaving directory '/sources/kbd-2.6.4/docs/man/man1'
+Making install in man5
+make[3]: Entering directory '/sources/kbd-2.6.4/docs/man/man5'
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/man/man5'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man5'
+ /usr/bin/install -c -m 644 keymaps.5 '/usr/share/man/man5'
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/man/man5'
+make[3]: Leaving directory '/sources/kbd-2.6.4/docs/man/man5'
+Making install in man8
+make[3]: Entering directory '/sources/kbd-2.6.4/docs/man/man8'
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/man/man8'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man8'
+ /usr/bin/install -c -m 644 getkeycodes.8 kbdrate.8 setkeycodes.8 showconsolefont.8 setvtrgb.8 loadunimap.8 mapscrn.8 setfont.8 '/usr/share/man/man8'
+make  install-data-hook
+make[5]: Entering directory '/sources/kbd-2.6.4/docs/man/man8'
+cd /usr/share/man/man8 && \
+for f in loadunimap.8 mapscrn.8 setfont.8; do \
+	/usr/bin/sed -e "s#@DATADIR\@#/usr/share#g" "$f" > "$f.new"; \
+	mv -f -- "$f.new" "$f"; \
+done
+make[5]: Leaving directory '/sources/kbd-2.6.4/docs/man/man8'
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/man/man8'
+make[3]: Leaving directory '/sources/kbd-2.6.4/docs/man/man8'
+make[3]: Entering directory '/sources/kbd-2.6.4/docs/man'
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/man'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/man'
+make[3]: Leaving directory '/sources/kbd-2.6.4/docs/man'
+make[2]: Leaving directory '/sources/kbd-2.6.4/docs/man'
+Making install in reference
+make[2]: Entering directory '/sources/kbd-2.6.4/docs/reference'
+make[3]: Entering directory '/sources/kbd-2.6.4/docs/reference'
+make[4]: Entering directory '/sources/kbd-2.6.4/docs/reference'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/sources/kbd-2.6.4/docs/reference'
+make[3]: Leaving directory '/sources/kbd-2.6.4/docs/reference'
+make[2]: Leaving directory '/sources/kbd-2.6.4/docs/reference'
+make[2]: Entering directory '/sources/kbd-2.6.4/docs'
+make[3]: Entering directory '/sources/kbd-2.6.4/docs'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/docs'
+make[2]: Leaving directory '/sources/kbd-2.6.4/docs'
+make[1]: Leaving directory '/sources/kbd-2.6.4/docs'
+Making install in tests
+make[1]: Entering directory '/sources/kbd-2.6.4/tests'
+Making install in helpers
+make[2]: Entering directory '/sources/kbd-2.6.4/tests/helpers'
+make[3]: Entering directory '/sources/kbd-2.6.4/tests/helpers'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/tests/helpers'
+make[2]: Leaving directory '/sources/kbd-2.6.4/tests/helpers'
+Making install in libkbdfile
+make[2]: Entering directory '/sources/kbd-2.6.4/tests/libkbdfile'
+make[3]: Entering directory '/sources/kbd-2.6.4/tests/libkbdfile'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/tests/libkbdfile'
+make[2]: Leaving directory '/sources/kbd-2.6.4/tests/libkbdfile'
+Making install in libkeymap
+make[2]: Entering directory '/sources/kbd-2.6.4/tests/libkeymap'
+make[3]: Entering directory '/sources/kbd-2.6.4/tests/libkeymap'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/tests/libkeymap'
+make[2]: Leaving directory '/sources/kbd-2.6.4/tests/libkeymap'
+make[2]: Entering directory '/sources/kbd-2.6.4/tests'
+make[3]: Entering directory '/sources/kbd-2.6.4/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/kbd-2.6.4/tests'
+make[2]: Leaving directory '/sources/kbd-2.6.4/tests'
+make[1]: Leaving directory '/sources/kbd-2.6.4/tests'
+make[1]: Entering directory '/sources/kbd-2.6.4'
+make[2]: Entering directory '/sources/kbd-2.6.4'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/kbd-2.6.4'
+make[1]: Leaving directory '/sources/kbd-2.6.4'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri Mar 29 18:04:16 UTC 2024
+
+Totalseconds: 14
+
+KB: 1618696	/
+

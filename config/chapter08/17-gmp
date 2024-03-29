@@ -1,0 +1,48 @@
+#!/bin/bash
+
+SRC="gmp"
+PKG="$SRC"
+
+_abi() {
+	case $(uname -m) in
+		i?86)  ABI=32 $@;;
+		*) $@;;
+	esac
+}
+
+# GMP 的默认设置会生成针对主机处理器优化的库
+# 如果运行在能力不如主机 CPU 的处理器上，gcc可能报错: 编译器内部错误
+# 所以创建通用库：
+# 1.
+# cp -v config{fsf,}.guess
+# cp -v config{fsf,}.sub
+# 2. 或者添加选项 --host=none-linux-xxx (ABI 不支持指定 standard 以外的任何值)
+# 3. --disable-assembly (未尝试)
+# 4. CFLAGS 指定 -march=i686 x86-64... (! znver3 haswell...)
+
+_abi ./configure --prefix=/usr \
+	--enable-cxx \
+	--disable-static
+
+make
+make install
+
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	CFLAGS+=" -m32 -pedantic -fomit-frame-pointer"
+	CXXFLAGS+=" -m32"
+	ABI=32 \
+	PKG_CONFIG_PATH="/usr/lib32/pkgconfig" \
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--disable-static \
+		--enable-cxx \
+		--includedir=/usr/include/m32/gmp
+	sed -i 's/$(exec_prefix)\/include/$\(includedir\)/' Makefile
+	make
+	make DESTDIR=$PWD/pkg install
+	cp -av pkg/usr/lib32/* /usr/lib32
+	mkdir -pv /usr/include/m32
+	cp -av pkg/usr/include/m32/* /usr/include/m32/
+fi

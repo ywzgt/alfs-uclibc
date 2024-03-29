@@ -1,0 +1,10 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/git/general/libgpg-error.html
+
+SRC="libgpg-error"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static
+make
+make install

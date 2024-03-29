@@ -1,0 +1,18 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/pcre2.html
+
+SRC="pcre2"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static \
+		--enable-unicode \
+		--enable-jit \
+		--enable-pcre2-16 \
+		--enable-pcre2-32 \
+		--enable-pcre2grep-libz \
+		--enable-pcre2grep-libbz2 \
+		--enable-pcre2test-libreadline
+
+make
+make install

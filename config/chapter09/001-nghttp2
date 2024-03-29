@@ -1,0 +1,12 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/basicnet/nghttp2.html
+
+SRC="nghttp2"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--enable-lib-only
+
+make
+make install

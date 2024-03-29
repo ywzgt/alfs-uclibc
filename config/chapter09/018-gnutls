@@ -1,0 +1,15 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/git/postlfs/gnutls.html
+
+SRC="gnutls"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-static \
+	--disable-tests \
+	--disable-gtk-doc \
+	--with-default-trust-store-pkcs11="pkcs11:" \
+	--with-included-unistring
+
+make
+make install

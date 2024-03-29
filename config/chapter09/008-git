@@ -1,0 +1,38 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/git.html
+
+SRC="git"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--with-gitconfig=/etc/gitconfig \
+		--with-libpcre2 \
+		--with-python=python3
+make
+perllibDIR="$(/usr/bin/perl -MConfig -wle 'print $Config{installsitelib}')"
+make perllibdir=${perllibDIR} install
+
+_doc() {
+	local MAN="$(find $SRC_ROOT -iname 'git-manpages-*.tar*')"
+	if [ -n "$MAN" ] && [ -e "$MAN" ]; then
+		tar -xf "$MAN" \
+			-C /usr/share/man --no-same-owner --no-overwrite-dir
+		mkdir DES-man
+		tar -xf "$MAN" -C DES-man
+		(cd DES-man; find . ! -type d|sed 's:^./::') >list
+		while read -r man; do
+			touch -c "/usr/share/man/$man"
+		done <list
+	fi
+
+	local HTML="$(find $SRC_ROOT -iname 'git-htmldocs-*.tar*')"
+	if [ -n "$HTML" ] && [ -e "$HTML" ]; then
+		mkdir -vp   /usr/share/doc/git
+		tar -xvf "$HTML" -C /usr/share/doc/git --no-same-owner --no-overwrite-dir
+		find /usr/share/doc/git -type d -exec chmod 755 {} \;
+		find /usr/share/doc/git -type f -exec chmod 644 {} \;
+		find /usr/share/doc/git -exec touch -c {} +
+	fi
+}
+
+_doc

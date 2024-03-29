@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SRC="bash"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--without-bash-malloc \
+	--with-installed-readline
+
+make
+make install
+ln -sfv bash /usr/bin/sh

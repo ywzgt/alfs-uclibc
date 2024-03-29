@@ -1,0 +1,13 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/git/basicnet/wget.html
+
+SRC="wget"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--disable-static \
+		--with-ssl=openssl
+
+make
+make install

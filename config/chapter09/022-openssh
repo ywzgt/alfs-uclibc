@@ -1,0 +1,29 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/openssh.html
+
+SRC="openssh"
+PKG="$SRC"
+
+install -v -g sys -m700 -d /var/lib/sshd
+groupadd -g 50 sshd
+useradd  -c 'sshd PrivSep' \
+	-d /var/lib/sshd \
+	-g sshd \
+	-s /usr/bin/false \
+	-u 50 sshd
+
+./configure --prefix=/usr \
+	--sysconfdir=/etc/ssh \
+	--with-privsep-path=/var/lib/sshd \
+	--with-default-path=/usr/bin \
+	--with-superuser-path=/usr/sbin:/usr/bin \
+	--with-pid-dir=/run
+
+make
+make install
+install -m755 contrib/ssh-copy-id -vt /usr/bin
+install -Dt /usr/share/man/man1 -vm644 contrib/ssh-copy-id.1
+install -Dt /usr/share/doc/openssh -vm644 INSTALL LICENCE OVERVIEW README*
+
+git clone --depth=1 https://git.linuxfromscratch.org/blfs-systemd-units.git
+make -C blfs-systemd-units install-sshd

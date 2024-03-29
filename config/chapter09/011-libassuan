@@ -1,0 +1,10 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/svn/general/libassuan.html
+
+SRC="libassuan"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static
+make
+make install

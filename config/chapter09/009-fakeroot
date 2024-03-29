@@ -1,0 +1,12 @@
+#!/bin/bash
+# https://gitlab.archlinux.org/archlinux/packaging/packages/fakeroot
+# https://packages.debian.org/source/sid/fakeroot
+
+SRC="fakeroot"
+PKG="$SRC"
+
+./bootstrap
+./configure --prefix=/usr --disable-static
+
+make
+make install
