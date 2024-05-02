@@ -10,3 +10,14 @@ PKG="$SRC"
 
 make
 make install
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	CC="gcc -m32" CXX="g++ -m32" \
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--enable-lib-only
+	make
+	make DESTDIR=$PWD/pkg install
+	cp -av pkg/usr/lib32/* /usr/lib32
+fi

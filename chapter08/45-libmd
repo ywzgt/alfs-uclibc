@@ -1,8 +1,0 @@
-#!/bin/bash
-
-SRC="libmd"
-PKG="$SRC"
-
-./configure --prefix=/usr
-make
-make install

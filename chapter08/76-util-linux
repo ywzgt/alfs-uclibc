@@ -17,7 +17,7 @@ sed -i '/test_mkfds/s/^/#/' tests/helpers/Makemodule.am
 	--disable-setpriv \
 	--disable-runuser \
 	--disable-pylibmount \
-	--disable-static \
+	--disable-{static,liblastlog2} \
 	--without-python \
 	ADJTIME_PATH=/var/lib/hwclock/adjtime
 
@@ -38,7 +38,7 @@ if [[ $MULTILIB ]]; then
 		--disable-setpriv \
 		--disable-runuser \
 		--disable-pylibmount \
-		--disable-static \
+		--disable-{static,liblastlog2} \
 		--without-python \
 		--without-systemd \
 		--without-systemdsystemunitdir \
