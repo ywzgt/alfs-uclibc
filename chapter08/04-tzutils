@@ -6,7 +6,7 @@ SRC="tzutils"
 PKG="$SRC"
 
 CFLAGS+=" -lintl"
-make TZDIR="/usr/share/zoneinfo" CC=cc
+make TZDIR="/usr/share/zoneinfo"
 
 _doman() {
     for i; do

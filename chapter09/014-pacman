@@ -7,20 +7,12 @@ PKG="$SRC"
 
 gitlab='https://gitlab.archlinux.org/pacman/pacman/-/commit'
 PATCHES=(
-	"${gitlab}/efd0c24c07b86be014a4edb5a8ece021b87e3900.patch"
-	"${gitlab}/86981383a2f4380bda26311831be94cdc743649b.patch"
-	"${gitlab}/478af273dfe24ded197ec54ae977ddc3719d74a0.patch"
-	"${gitlab}/de11824527ec4e2561e161ac40a5714ec943543c.patch"
-	"${gitlab}/0e938f188692c710be36f9dd9ea7b94381aed1b4.patch"
-	"${gitlab}/05f283b5ad8f5b8f995076e93a27c8772076f872.patch"
-	"${gitlab}/aa3a1bc3b50d797fb75278f79a83cd7dde50c66e.patch"
-	"${gitlab}/843bf21e794c79c5b3bcf8a57e45ef9c62312fee.patch"
-	"${gitlab}/7a4fff3310ba2eadd3d5428cbb92e58eb2ee853b.patch"
-	"${gitlab}/00d2b1f90261bf77eaaf262d2504af016562f2ac.patch"
-	"${gitlab}/3aa096a74f717d31650e0eb3cf34e9a5ebadc313.patch"
-	"${gitlab}/86ec26b2d33372a4b3bda48f22c4a9f226c3ccce.patch"
-	"${gitlab}/16a064701a30d7e1175e1185cc6da44238302fab.patch"
-	"${gitlab}/f8c2e59ec57c86827b1f1b1c2f6760dc3e59fe40.patch"
+	"${gitlab}/6bb95c8856437513ee0ab19226bc090d6fd0fb06.patch"
+	"${gitlab}/95f148c2222db608a0d72d5c5577d0c71e7fa199.patch"
+	"${gitlab}/5e0496260b7d3f9c9fcf2b1c4899e4dbcc20ff03.patch"
+	"${gitlab}/0571ee82bff0edbd5ffac2228d4e6ac510b9008e.patch"
+	"${gitlab}/111eed0251238a9d3f90e76d62f2ac01aeccce48.patch"
+	"${gitlab}/bae9594ac1806ce30f2af1de27c49bb101a00d44.patch"
 )
 
 wget -cP .. "${PATCHES[@]}"
@@ -29,6 +21,9 @@ for p in ${PATCHES[@]}; do
 	patch -Np1 -i ../${p##*/}
 	printf "\n\n\n"
 done
+wget -nv -O revertme-makepkg-remove-libdepends-and-libprovides.patch \
+	"${gitlab}/354a300cd26bb1c7e6551473596be5ecced921de.patch"
+patch -RNp1 -i revertme-makepkg-remove-libdepends-and-libprovides.patch
 
 cat <<"EOF">> scripts/po/zh_CN.po
 
@@ -42,7 +37,7 @@ msgid "Removing unwanted man pages..."
 msgstr "正在删除不想要的手册页..."
 
 msgid "Removing unwanted message translation files..."
-msgstr "正在删除不想要的消息翻译文件..."
+msgstr "正在删除不想要的翻译文件..."
 
 msgid "Finding %s files..."
 msgstr "正在查找 %s 文件..."

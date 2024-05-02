@@ -47,4 +47,6 @@ if [[ $MULTILIB ]]; then
 	install -vm755 pkg/usr/bin/ldd /usr/bin/ldd32
 	install -vm644 libssp_nonshared.a -t /usr/lib32
 	ln -srfv /lib32/ld-uClibc.so.1 /usr/lib/ld-uClibc.so.1
+	sed -i 's@\s/lib32/@ /usr/lib32/@g' /usr/lib32/libc.so
+	rm -f /lib32
 fi

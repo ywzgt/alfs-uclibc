@@ -3,6 +3,10 @@
 SRC="coreutils"
 PKG="$SRC"
 
+if [ -f lib/mcel.h ]; then
+	sed -i 's/^#if defined __GLIBC__ /\0\&\& !defined __UCLIBC__ /' lib/mcel.h
+fi
+
 autoreconf -fiv
 FORCE_UNSAFE_CONFIGURE=1 ./configure \
 	--prefix=/usr \

@@ -14,6 +14,7 @@ mkdir -pv /var/lib/hwclock
 	--disable-runuser \
 	--disable-pylibmount \
 	--disable-static \
+	--disable-liblastlog2 \
 	--without-python \
 	ADJTIME_PATH=/var/lib/hwclock/adjtime
 
@@ -33,7 +34,7 @@ if [[ $MULTILIB ]]; then
 		--disable-setpriv \
 		--disable-runuser \
 		--disable-pylibmount \
-		--disable-static \
+		--disable-{static,liblastlog2} \
 		--without-python \
 		ADJTIME_PATH=/var/lib/hwclock/adjtime
 	make

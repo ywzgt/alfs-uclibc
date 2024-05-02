@@ -16,6 +16,17 @@ done
 
 cp -v zone.tab zone1970.tab iso3166.tab $ZONEINFO
 zic -d $ZONEINFO -p America/New_York
-unset ZONEINFO
 
+cd $ZONEINFO/posix
+for i in $(find -type f); do
+	dest="../$(dirname $i)"
+	tail -n1 $i > temp-zone
+	if [ "$(cat temp-zone)" != " " ]; then
+		install -d "${dest}"
+		mv temp-zone "${dest}/${i##*/}"
+	fi
+done
+rm -f temp-zone
+
+ln -sfv /usr/share/zoneinfo/UTC /etc/TZ
 #ln -sfv /usr/share/zoneinfo/Asia/Shanghai /etc/localtime

@@ -2,6 +2,10 @@
 
 SRC="coreutils"
 
+if [ -f lib/mcel.h ]; then
+	sed -i 's/^#if defined __GLIBC__ /\0\&\& !defined __UCLIBC__ /' lib/mcel.h
+fi
+
 ./configure --prefix=/usr \
 	--host=$LFS_TGT \
 	--build=$(build-aux/config.guess) \
