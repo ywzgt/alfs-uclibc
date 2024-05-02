@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SRC="linux"
+
+make mrproper
+make distclean
+make headers 2>/dev/null || make headers_install
+
+find usr/include -type f ! -name '*.h' -delete
+cp -rv usr/include $LFS/usr

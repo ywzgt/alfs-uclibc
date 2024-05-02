@@ -1,0 +1,17 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/linux-pam.html
+
+SRC="linux-pam"
+PKG="pam"
+
+LDFLAGS="-Wl,-lintl $LDFLAGS"
+
+./configure --prefix=/usr \
+	--sbindir=/usr/sbin \
+	--sysconfdir=/etc \
+	--libdir=/usr/lib \
+	--enable-securedir=/usr/lib/security
+
+make
+make install
+chmod -v 4755 /usr/sbin/unix_chkpwd

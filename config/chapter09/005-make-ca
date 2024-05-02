@@ -1,0 +1,10 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/postlfs/make-ca.html
+
+SRC="make-ca"
+PKG="$SRC"
+
+make install
+if test -e /usr/lib/systemd/system/update-pki.timer; then
+	rm -fv /usr/lib/systemd/system/update-pki.timer
+fi

@@ -1,0 +1,19 @@
+/usr/bin/bomtool	20808	root:root	755	
+/usr/bin/pkg-config	7	root:root	777	pkgconf
+/usr/bin/pkgconf	44740	root:root	755	
+/usr/include/pkgconf/libpkgconf/bsdstubs.h	1076	root:root	644	
+/usr/include/pkgconf/libpkgconf/iter.h	2016	root:root	644	
+/usr/include/pkgconf/libpkgconf/libpkgconf-api.h	599	root:root	644	
+/usr/include/pkgconf/libpkgconf/libpkgconf.h	18733	root:root	644	
+/usr/include/pkgconf/libpkgconf/stdinc.h	1612	root:root	644	
+/usr/lib/libpkgconf.so	19	root:root	777	libpkgconf.so.5.0.0
+/usr/lib/libpkgconf.so.5	19	root:root	777	libpkgconf.so.5.0.0
+/usr/lib/libpkgconf.so.5.0.0	74332	root:root	755	
+/usr/lib/pkgconfig/libpkgconf.pc	338	root:root	644	
+/usr/share/aclocal/pkg.m4	12735	root:root	644	
+/usr/share/doc/pkgconf/AUTHORS	1498	root:root	644	
+/usr/share/doc/pkgconf/README.md	6599	root:root	644	
+/usr/share/man/man1/pkgconf.1	7702	root:root	644	
+/usr/share/man/man5/pc.5	5980	root:root	644	
+/usr/share/man/man5/pkgconf-personality.5	3417	root:root	644	
+/usr/share/man/man7/pkg.m4.7	4005	root:root	644	

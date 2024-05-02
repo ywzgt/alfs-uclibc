@@ -1,0 +1,400 @@
+Patching readline:
+Applying patch '../readline-8.2-upstream_fixes-3.patch'...
+patching file callback.c
+patching file colors.c
+patching file display.c
+patching file input.c
+patching file nls.c
+patching file patchlevel
+patching file text.c
+patching file bind.c
+patching file rltty.c
+patching file patchlevel
+patching file complete.c
+patching file patchlevel
+patching file complete.c
+patching file patchlevel
+
+
+Thu May  2 15:48:19 UTC 2024
+KB: 979080	/
+
+checking build system type... i686-pc-linux-uclibc
+checking host system type... i686-pc-linux-uclibc
+
+Beginning configuration for readline-8.2 for i686-pc-linux-uclibc
+
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether gcc needs -traditional... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ar... ar
+checking for ranlib... ranlib
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether char is unsigned... no
+checking for working volatile... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking whether stat file-mode macros are broken... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for fcntl... yes
+checking for gettimeofday... yes
+checking for kill... yes
+checking for lstat... yes
+checking for pselect... yes
+checking for readlink... yes
+checking for select... yes
+checking for setitimer... yes
+checking for fnmatch... yes
+checking for memmove... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for strcasecmp... yes
+checking for strpbrk... yes
+checking for sysconf... yes
+checking for tcgetattr... yes
+checking for vsnprintf... yes
+checking for isascii... yes
+checking for isxdigit... yes
+checking for getpwent... yes
+checking for getpwnam... yes
+checking for getpwuid... yes
+checking for uid_t in sys/types.h... yes
+checking for working chown... yes
+checking for working strcoll... yes
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for varargs.h... no
+checking for stdarg.h... yes
+checking for stdbool.h... yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for pwd.h... yes
+checking for memory.h... yes
+checking for termcap.h... yes
+checking for termios.h... yes
+checking for termio.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/pte.h... no
+checking for sys/stream.h... no
+checking for sys/select.h... yes
+checking for sys/time.h... yes
+checking for sys/file.h... yes
+checking for sys/ptem.h... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking for type of signal functions... posix
+checking if signal handlers must be reinstalled when invoked... no
+checking for presence of POSIX-style sigsetjmp/siglongjmp... present
+checking for lstat... yes
+checking whether or not strcoll and strcmp differ... no
+checking whether getpw functions are declared in pwd.h... yes
+checking whether termios.h defines TIOCGWINSZ... no
+checking whether sys/ioctl.h defines TIOCGWINSZ... yes
+checking for inttypes.h... (cached) yes
+checking for sig_atomic_t in signal.h... yes
+checking for TIOCSTAT in sys/ioctl.h... no
+checking for FIONREAD in sys/ioctl.h... yes
+checking for speed_t in sys/types.h... no
+checking for struct winsize in sys/ioctl.h and termios.h... sys/ioctl.h
+checking for struct dirent.d_ino... checking for struct dirent.d_ino... yes
+yes
+checking for struct dirent.d_fileno... checking for struct dirent.d_fileno... yes
+yes
+checking for struct timeval in sys/time.h and time.h... yes
+checking for libaudit.h... no
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether AUDIT_USER_TTY is declared... yes
+checking for tgetent... no
+checking for tgetent in -ltermcap... no
+checking for tgetent in -ltinfo... no
+checking for tgetent in -lcurses... no
+checking for tgetent in -lncurses... yes
+checking which library has the termcap functions... using libncurses
+checking for ncurses/termcap.h... no
+checking for nl_langinfo and CODESET... yes
+checking for wctype.h... yes
+checking for wchar.h... (cached) yes
+checking for langinfo.h... yes
+checking for mbstr.h... no
+checking for mbrlen... yes
+checking for mbscasecmp... no
+checking for mbscmp... no
+checking for mbsnrtowcs... yes
+checking for mbsrtowcs... yes
+checking for mbschr... no
+checking for wcrtomb... yes
+checking for wcscoll... yes
+checking for wcsdup... yes
+checking for wcwidth... yes
+checking for wctype... yes
+checking for wcswidth... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking for iswlower... yes
+checking for iswupper... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for iswctype... yes
+checking for wchar_t in wchar.h... yes
+checking for wctype_t in wctype.h... yes
+checking for wint_t in wctype.h... yes
+checking for wcwidth broken with unicode combining characters... yes
+checking size of wchar_t... 4
+checking configuration for building shared libraries... supported
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating examples/Makefile
+config.status: creating shlib/Makefile
+config.status: creating readline.pc
+config.status: creating history.pc
+config.status: creating config.h
+config.status: executing stamp-h commands
+test -d shlib || mkdir shlib
+( cd shlib ; make -j4 --jobserver-auth=fifo:/tmp/GMfifo650065 all )
+make[1]: Entering directory '/sources/readline-8.2/shlib'
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+rm -f readline.so
+rm -f vi_mode.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o readline.o ../readline.c 
+rm -f funmap.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o vi_mode.o ../vi_mode.c 
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o funmap.o ../funmap.c 
+rm -f keymaps.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o keymaps.o ../keymaps.c 
+mv funmap.o funmap.so
+rm -f parens.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o parens.o ../parens.c 
+mv keymaps.o keymaps.so
+rm -f search.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o search.o ../search.c 
+mv parens.o parens.so
+rm -f rltty.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o rltty.o ../rltty.c 
+mv search.o search.so
+rm -f complete.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o complete.o ../complete.c 
+mv rltty.o rltty.so
+rm -f bind.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o bind.o ../bind.c 
+mv readline.o readline.so
+rm -f isearch.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o isearch.o ../isearch.c 
+mv isearch.o isearch.so
+rm -f display.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o display.o ../display.c 
+mv vi_mode.o vi_mode.so
+rm -f signals.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o signals.o ../signals.c 
+mv signals.o signals.so
+rm -f util.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o util.o ../util.c 
+mv util.o util.so
+rm -f kill.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o kill.o ../kill.c 
+mv complete.o complete.so
+rm -f undo.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o undo.o ../undo.c 
+mv bind.o bind.so
+rm -f macro.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o macro.o ../macro.c 
+mv undo.o undo.so
+rm -f input.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o input.o ../input.c 
+mv kill.o kill.so
+rm -f callback.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o callback.o ../callback.c 
+mv macro.o macro.so
+rm -f terminal.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o terminal.o ../terminal.c 
+mv callback.o callback.so
+rm -f text.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o text.o ../text.c 
+mv input.o input.so
+rm -f nls.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o nls.o ../nls.c 
+mv terminal.o terminal.so
+rm -f misc.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o misc.o ../misc.c 
+mv nls.o nls.so
+rm -f history.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o history.o ../history.c 
+mv misc.o misc.so
+rm -f histexpand.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o histexpand.o ../histexpand.c 
+mv history.o history.so
+rm -f histfile.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o histfile.o ../histfile.c 
+mv display.o display.so
+rm -f histsearch.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o histsearch.o ../histsearch.c 
+mv text.o text.so
+rm -f shell.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o shell.o ../shell.c 
+mv histsearch.o histsearch.so
+rm -f mbutil.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o mbutil.o ../mbutil.c 
+mv shell.o shell.so
+rm -f tilde.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -DREADLINE_LIBRARY -c -o tilde.o ../tilde.c
+mv histfile.o histfile.so
+rm -f colors.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o colors.o ../colors.c 
+mv tilde.o tilde.so
+rm -f parse-colors.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o parse-colors.o ../parse-colors.c 
+mv mbutil.o mbutil.so
+rm -f xmalloc.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o xmalloc.o ../xmalloc.c 
+mv colors.o colors.so
+rm -f xfree.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o xfree.o ../xfree.c 
+mv xfree.o xfree.so
+rm -f compat.so
+gcc -c -DHAVE_CONFIG_H   -I. -I.. -I.. -DNDEBUG -DRL_LIBRARY_VERSION='"8.2"' -DBRACKETED_PASTE_DEFAULT=1 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  -fPIC -o compat.o ../compat.c 
+mv xmalloc.o xmalloc.so
+mv compat.o compat.so
+mv parse-colors.o parse-colors.so
+mv histexpand.o histexpand.so
+rm -f libreadline.so.8.2
+rm -f libhistory.so.8.2
+gcc -shared -Wl,-soname,libreadline.so.8.2 -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -Wl,-rpath,/usr/lib -Wl,-soname,`basename libreadline.so.8.2 .2` -o libreadline.so.8.2 readline.so vi_mode.so funmap.so keymaps.so parens.so search.so rltty.so complete.so bind.so isearch.so display.so signals.so util.so kill.so undo.so macro.so input.so callback.so terminal.so text.so nls.so misc.so history.so histexpand.so histfile.so histsearch.so shell.so mbutil.so tilde.so colors.so parse-colors.so xmalloc.so xfree.so compat.so -lncursesw
+gcc -shared -Wl,-soname,libhistory.so.8.2 -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -Wl,-rpath,/usr/lib -Wl,-soname,`basename libhistory.so.8.2 .2` -o libhistory.so.8.2 history.so histexpand.so histfile.so histsearch.so shell.so mbutil.so xmalloc.so xfree.so -lncursesw
+make[1]: Leaving directory '/sources/readline-8.2/shlib'
+/bin/sh ./support/mkinstalldirs /usr/include \
+	/usr/include/readline /usr/lib \
+	/usr/share/info /usr/share/man/man3 /usr/share/doc/readline \
+	/usr/lib/pkgconfig
+test -d shlib || mkdir shlib
+( cd shlib ; make -j4 --jobserver-auth=fifo:/tmp/GMfifo650249 all )
+mkdir -p -- /usr/include/readline /usr/lib /usr/share/info /usr/share/man/man3 /usr/share/doc/readline /usr/lib/pkgconfig
+for f in readline.h chardefs.h keymaps.h history.h tilde.h rlstdc.h rlconf.h rltypedefs.h; do \
+	/usr/bin/install -c -m 644 ./$f /usr/include/readline ; \
+done
+/usr/bin/install -c -m 644 ./CHANGES ./INSTALL ./README /usr/share/doc/readline
+/usr/bin/install -c -m 644 /sources/readline-8.2/readline.pc /usr/lib/pkgconfig/readline.pc
+make[1]: Entering directory '/sources/readline-8.2/shlib'
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+/usr/bin/install -c -m 644 /sources/readline-8.2/history.pc /usr/lib/pkgconfig/history.pc
+( if test -d doc ; then \
+	cd doc && \
+	make -j4 --jobserver-auth=fifo:/tmp/GMfifo650249 infodir=/usr/share/info DESTDIR= install; \
+  fi )
+make[1]: Entering directory '/sources/readline-8.2/doc'
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+/bin/sh ../support/mkdirs /usr/share/info /usr/share/man/man3
+if test -n "" ; then \
+	/bin/sh ../support/mkdirs  ; \
+fi
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/readline-8.2/shlib'
+if test -f readline.info; then \
+	/usr/bin/install -c -m 644 readline.info /usr/share/info/readline.info; \
+else \
+	/usr/bin/install -c -m 644 ./readline.info /usr/share/info/readline.info; \
+fi
+if test -f rluserman.info; then \
+	/usr/bin/install -c -m 644 rluserman.info /usr/share/info/rluserman.info; \
+else \
+	/usr/bin/install -c -m 644 ./rluserman.info /usr/share/info/rluserman.info; \
+fi
+if test -f history.info; then \
+	/usr/bin/install -c -m 644 history.info /usr/share/info/history.info; \
+else \
+	/usr/bin/install -c -m 644 ./history.info /usr/share/info/history.info; \
+fi
+if /bin/sh -c 'install-info --version' >/dev/null 2>&1; then \
+	install-info --dir-file=/usr/share/info/dir \
+		/usr/share/info/readline.info ; \
+	install-info --dir-file=/usr/share/info/dir \
+		/usr/share/info/history.info ; \
+	install-info --dir-file=/usr/share/info/dir \
+		/usr/share/info/rluserman.info ; \
+else true; fi
+/usr/bin/install -c -m 644 ./readline.3 /usr/share/man/man3/readline.3
+/usr/bin/install -c -m 644 ./history.3 /usr/share/man/man3/history.3
+if test -n "" ; then \
+	if test -f readline.html; then \
+		/usr/bin/install -c -m 644 readline.html /readline.html; \
+	else \
+		/usr/bin/install -c -m 644 ./readline.html /readline.html; \
+	fi ; \
+	if test -f history.html; then \
+		/usr/bin/install -c -m 644 history.html /history.html; \
+	else \
+		/usr/bin/install -c -m 644 ./history.html /history.html; \
+	fi ; \
+	if test -f rluserman.html; then \
+		/usr/bin/install -c -m 644 rluserman.html /rluserman.html; \
+	else \
+		/usr/bin/install -c -m 644 ./rluserman.html /rluserman.html; \
+	fi ; \
+fi
+make[1]: Leaving directory '/sources/readline-8.2/doc'
+( cd shlib ; make -j4 --jobserver-auth=fifo:/tmp/GMfifo650249 DESTDIR= install )
+make[1]: Entering directory '/sources/readline-8.2/shlib'
+make[1]: warning: -j4 forced in submake: resetting jobserver mode.
+/bin/sh ../support/mkdirs /usr/lib
+/bin/sh ../support/mkdirs /usr/bin
+/bin/sh ../support/shlib-install -O linux-uclibc -V pc -d /usr/lib -b /usr/bin -i "/usr/bin/install -c -m 644" libhistory.so.8.2
+/bin/sh ../support/shlib-install -O linux-uclibc -V pc -d /usr/lib -b /usr/bin -i "/usr/bin/install -c -m 644" libreadline.so.8.2
+install: you may need to run ldconfig
+make[1]: Leaving directory '/sources/readline-8.2/shlib'
+'doc/history.ps' -> '/usr/share/doc/readline/history.ps'
+'doc/history_3.ps' -> '/usr/share/doc/readline/history_3.ps'
+'doc/readline.ps' -> '/usr/share/doc/readline/readline.ps'
+'doc/readline_3.ps' -> '/usr/share/doc/readline/readline_3.ps'
+'doc/rluserman.ps' -> '/usr/share/doc/readline/rluserman.ps'
+'doc/history.pdf' -> '/usr/share/doc/readline/history.pdf'
+'doc/readline.pdf' -> '/usr/share/doc/readline/readline.pdf'
+'doc/rluserman.pdf' -> '/usr/share/doc/readline/rluserman.pdf'
+'doc/history.html' -> '/usr/share/doc/readline/history.html'
+'doc/readline.html' -> '/usr/share/doc/readline/readline.html'
+'doc/rluserman.html' -> '/usr/share/doc/readline/rluserman.html'
+'doc/history.dvi' -> '/usr/share/doc/readline/history.dvi'
+'doc/readline.dvi' -> '/usr/share/doc/readline/readline.dvi'
+'doc/rluserman.dvi' -> '/usr/share/doc/readline/rluserman.dvi'
+
+
+CFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Thu May  2 15:48:28 UTC 2024
+
+Totalseconds: 9
+
+KB: 992580	/
+

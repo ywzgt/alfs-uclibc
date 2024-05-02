@@ -1,0 +1,48 @@
+From 92c7f7ad0c28a1e2cc8b8df702221716f1a6818a Mon Sep 17 00:00:00 2001
+From: Mike Frysinger <vapier@gentoo.org>
+Date: Wed, 23 Jan 2008 04:38:26 +0000
+Subject: [PATCH 3/4] dircolors: Add more dir/file colors
+
+--- a/src/dircolors.hin
++++ b/src/dircolors.hin
+@@ -8,6 +8,9 @@
+ # The keywords COLOR, OPTIONS, and EIGHTBIT (honored by the
+ # slackware version of dircolors) are recognized but ignored.
+ 
++# You can copy this file to .dir_colors in your $HOME directory to override
++# the system defaults.
++
+ # Global config options can be specified before TERM or COLORTERM entries
+ 
+ # Below are TERM or COLORTERM entries, which can be glob patterns, which
+@@ -61,8 +64,8 @@ SOCK 01;35	# socket
+ DOOR 01;35	# door
+ BLK 40;33;01	# block device driver
+ CHR 40;33;01	# character device driver
+-ORPHAN 40;31;01 # symlink to nonexistent file, or non-stat'able file ...
+-MISSING 00      # ... and the files they point to
++ORPHAN 01;05;37;41  # symlink to nonexistent file, or non-stat'able file ...
++MISSING 01;05;37;41 # ... and the files they point to
+ SETUID 37;41	# file that is setuid (u+s)
+ SETGID 30;43	# file that is setgid (g+s)
+ CAPABILITY 00	# file with capability (very expensive to lookup)
+@@ -191,6 +194,19 @@ EXEC 01;32
+ .ogv 01;35
+ .ogx 01;35
+ 
++# Text/document files
++.cfg 00;32
++.conf 00;32
++.diff 00;32
++.doc 00;32
++.ini 00;32
++.log 00;32
++.patch 00;32
++.pdf 00;32
++.ps 00;32
++.tex 00;32
++.txt 00;32
++
+ # audio formats
+ .aac 00;36
+ .au 00;36

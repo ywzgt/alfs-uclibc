@@ -1,0 +1,840 @@
+Thu May  2 17:21:27 UTC 2024
+KB: 1655200	/
+
+--2024-05-02 17:21:27--  https://gitlab.archlinux.org/pacman/pacman/-/commit/6bb95c8856437513ee0ab19226bc090d6fd0fb06.patch
+Resolving gitlab.archlinux.org... 2a01:4f8:222:174c::1, 213.133.111.15
+Connecting to gitlab.archlinux.org|2a01:4f8:222:174c::1|:443... failed: Network is unreachable.
+Connecting to gitlab.archlinux.org|213.133.111.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: '../6bb95c8856437513ee0ab19226bc090d6fd0fb06.patch'
+
+     0K .                                                       561M=0s
+
+2024-05-02 17:21:28 (561 MB/s) - '../6bb95c8856437513ee0ab19226bc090d6fd0fb06.patch' saved [1550]
+
+--2024-05-02 17:21:28--  https://gitlab.archlinux.org/pacman/pacman/-/commit/95f148c2222db608a0d72d5c5577d0c71e7fa199.patch
+Reusing existing connection to gitlab.archlinux.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: '../95f148c2222db608a0d72d5c5577d0c71e7fa199.patch'
+
+     0K .                                                       797M=0s
+
+2024-05-02 17:21:28 (797 MB/s) - '../95f148c2222db608a0d72d5c5577d0c71e7fa199.patch' saved [2001]
+
+--2024-05-02 17:21:28--  https://gitlab.archlinux.org/pacman/pacman/-/commit/5e0496260b7d3f9c9fcf2b1c4899e4dbcc20ff03.patch
+Reusing existing connection to gitlab.archlinux.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: '../5e0496260b7d3f9c9fcf2b1c4899e4dbcc20ff03.patch'
+
+     0K .                                                       561M=0s
+
+2024-05-02 17:21:28 (561 MB/s) - '../5e0496260b7d3f9c9fcf2b1c4899e4dbcc20ff03.patch' saved [1160]
+
+--2024-05-02 17:21:28--  https://gitlab.archlinux.org/pacman/pacman/-/commit/0571ee82bff0edbd5ffac2228d4e6ac510b9008e.patch
+Reusing existing connection to gitlab.archlinux.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: '../0571ee82bff0edbd5ffac2228d4e6ac510b9008e.patch'
+
+     0K .                                                       574M=0s
+
+2024-05-02 17:21:28 (574 MB/s) - '../0571ee82bff0edbd5ffac2228d4e6ac510b9008e.patch' saved [1381]
+
+--2024-05-02 17:21:28--  https://gitlab.archlinux.org/pacman/pacman/-/commit/111eed0251238a9d3f90e76d62f2ac01aeccce48.patch
+Reusing existing connection to gitlab.archlinux.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: '../111eed0251238a9d3f90e76d62f2ac01aeccce48.patch'
+
+     0K .                                                       448M=0s
+
+2024-05-02 17:21:28 (448 MB/s) - '../111eed0251238a9d3f90e76d62f2ac01aeccce48.patch' saved [1100]
+
+--2024-05-02 17:21:28--  https://gitlab.archlinux.org/pacman/pacman/-/commit/bae9594ac1806ce30f2af1de27c49bb101a00d44.patch
+Reusing existing connection to gitlab.archlinux.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: '../bae9594ac1806ce30f2af1de27c49bb101a00d44.patch'
+
+     0K .                                                       688M=0s
+
+2024-05-02 17:21:28 (688 MB/s) - '../bae9594ac1806ce30f2af1de27c49bb101a00d44.patch' saved [1575]
+
+FINISHED --2024-05-02 17:21:28--
+Total wall clock time: 1.9s
+Downloaded: 6 files, 8.6K in 0s (605 MB/s)
+Applying patch 6bb95c8856437513ee0ab19226bc090d6fd0fb06.patch...
+patching file lib/libalpm/be_local.c
+patching file lib/libalpm/be_sync.c
+
+
+
+Applying patch 95f148c2222db608a0d72d5c5577d0c71e7fa199.patch...
+patching file doc/index.asciidoc
+
+
+
+Applying patch 5e0496260b7d3f9c9fcf2b1c4899e4dbcc20ff03.patch...
+patching file src/pacman/package.c
+
+
+
+Applying patch 0571ee82bff0edbd5ffac2228d4e6ac510b9008e.patch...
+patching file scripts/repo-add.sh.in
+
+
+
+Applying patch 111eed0251238a9d3f90e76d62f2ac01aeccce48.patch...
+patching file src/pacman/util.c
+
+
+
+Applying patch bae9594ac1806ce30f2af1de27c49bb101a00d44.patch...
+patching file scripts/libmakepkg/executable/debugedit.sh.in
+
+
+
+failed: Network is unreachable.
+2024-05-02 17:21:29 URL:https://gitlab.archlinux.org/pacman/pacman/-/commit/354a300cd26bb1c7e6551473596be5ecced921de.patch [5738] -> "revertme-makepkg-remove-libdepends-and-libprovides.patch" [1]
+patching file doc/PKGBUILD.5.asciidoc
+Hunk #1 succeeded at 180 (offset -7 lines).
+Hunk #2 succeeded at 238 (offset -7 lines).
+patching file scripts/makepkg.sh.in
+Hunk #1 succeeded at 471 (offset 8 lines).
+Hunk #2 succeeded at 627 (offset 10 lines).
+mkdir: created directory 'pacman-build'
+The Meson build system
+Version: 1.4.0
+Source dir: /sources/pacman-6.1.0
+Build dir: /sources/pacman-6.1.0/pacman-build
+Build type: native build
+Project name: pacman
+Project version: 6.1.0
+C compiler for the host machine: cc (gcc 13.2.0 "cc (GCC) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86
+Host machine cpu: i686
+Program python3 found: YES (/usr/bin/python3)
+Program bash found: YES (/usr/bin/bash)
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Did not find CMake 'cmake'
+Found CMake: NO
+Run-time dependency bash-completion found: NO (tried pkgconfig and cmake)
+Checking for function "ngettext" : YES 
+Run-time dependency libarchive found: YES 3.7.4
+Run-time dependency libcurl found: YES 8.7.1
+Run-time dependency gpgme found: YES 1.23.2
+Run-time dependency libcrypto found: YES 3.3.0
+Has header "mntent.h" : YES 
+Has header "sys/mnttab.h" : NO 
+Has header "sys/mount.h" : YES 
+Has header "sys/param.h" : YES 
+Has header "sys/statvfs.h" : YES 
+Has header "sys/types.h" : YES 
+Has header "sys/ucred.h" : NO 
+Has header "termios.h" : YES 
+Checking for function "getmntent" : YES 
+Checking for function "getmntinfo" : NO 
+Checking for function "strndup" : YES 
+Checking for function "strnlen" : YES 
+Checking for function "strsep" : YES 
+Checking for function "swprintf" : YES 
+Checking for function "tcflush" : YES 
+Checking whether type "struct stat" has member "st_blksize" : YES 
+Checking whether type "struct statvfs" has member "f_flag" : YES 
+Checking whether type "struct statfs" has member "f_flags" : NO 
+Checking for type "mode_t" : YES 
+Checking for type "uid_t" : YES 
+Checking for type "off_t" : YES 
+Checking for type "pid_t" : YES 
+Checking for type "size_t" : YES 
+Checking for type "ssize_t" : YES 
+Checking for type "int64_t" : YES 
+Configuring config.h using configuration
+Configuring edit-script.sh using configuration
+Program edit-script.sh found: YES (/usr/bin/bash /sources/pacman-6.1.0/pacman-build/scripts/edit-script.sh)
+Configuring libmakepkg.pc using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program asciidoc skipped: feature doc disabled
+Program a2x skipped: feature doc disabled
+Configuring makepkg using configuration
+Configuring pacman-db-upgrade using configuration
+Configuring pacman-key using configuration
+Configuring repo-add using configuration
+Configuring repo-remove using configuration
+Configuring repo-elephant using configuration
+Configuring makepkg.conf using configuration
+Configuring fortran.conf using configuration
+Configuring rust.conf using configuration
+Configuring pacman.conf using configuration
+Checking for size of "ssize_t" : -1 
+Message: pacman 6.1.0
+    Build information:
+       prefix                  : /usr
+       sysconfdir              : /etc
+           conf file           : /etc/pacman.conf
+       localstatedir           : /var
+           database dir        : /var/lib/pacman/
+           cache dir           : /var/cache/pacman/pkg/
+       keyringdir              : /usr/share/pacman/keyrings
+       compiler                : gcc 13.2.0
+    
+       Architecture            : i686
+       Host Type               : i686-pc-linux-uclibc
+       File inode command      : stat -c '%i %n'
+       File seccomp command    : file -S
+       libalpm version         : 14.0.0
+       pacman version          : 6.1.0
+    
+    Directory and file information:
+       root working directory  : /
+       package extension       : .pkg.tar.gz
+       source pkg extension    : .src.tar.gz
+       build script name       : PKGBUILD
+       template directory      : /usr/share/makepkg-template
+    
+    Compilation options:
+      i18n support             : true
+      Build docs               : false
+      debug build              : false
+      Use libcurl              : true
+      Use GPGME                : true
+      Use OpenSSL              : true
+      Use nettle               : false
+    
+Build targets in project: 245
+
+pacman 6.1.0
+
+  User defined options
+    buildtype      : release
+    prefix         : /usr
+    doc            : disabled
+    doxygen        : disabled
+    ldconfig       : /usr/sbin/ldconfig
+    scriptlet-shell: /usr/bin/bash
+
+Found ninja-1.12.0 at /usr/bin/ninja
+[4 1/288 0.103s] Compiling C object libcommon.a.p/src_common_ini.c.o
+[4 2/288 0.182s] Compiling C object libalpm_objlib.a.p/lib_libalpm_alpm.c.o
+[4 3/288 0.238s] Compiling C object libcommon.a.p/src_common_util-common.c.o
+[4 4/288 0.327s] Compiling C object libalpm_objlib.a.p/lib_libalpm_base64.c.o
+[4 5/288 0.360s] Compiling C object libalpm_objlib.a.p/lib_libalpm_backup.c.o
+[4 6/288 0.449s] Compiling C object libalpm_objlib.a.p/lib_libalpm_alpm_list.c.o
+[4 7/288 0.501s] Compiling C object libalpm_objlib.a.p/lib_libalpm_add.c.o
+[4 8/288 0.952s] Compiling C object libalpm_objlib.a.p/lib_libalpm_be_package.c.o
+[4 9/288 0.975s] Compiling C object libalpm_objlib.a.p/lib_libalpm_conflict.c.o
+[4 10/288 1.150s] Compiling C object libalpm_objlib.a.p/lib_libalpm_be_sync.c.o
+[4 11/288 1.349s] Compiling C object libalpm_objlib.a.p/lib_libalpm_be_local.c.o
+[4 12/288 1.513s] Compiling C object libalpm_objlib.a.p/lib_libalpm_diskspace.c.o
+[4 13/288 1.555s] Compiling C object libalpm_objlib.a.p/lib_libalpm_db.c.o
+[4 14/288 1.573s] Compiling C object libalpm_objlib.a.p/lib_libalpm_deps.c.o
+[4 15/288 1.700s] Compiling C object libalpm_objlib.a.p/lib_libalpm_error.c.o
+[4 16/288 1.710s] Compiling C object libalpm_objlib.a.p/lib_libalpm_graph.c.o
+[4 17/288 1.762s] Compiling C object libalpm_objlib.a.p/lib_libalpm_filelist.c.o
+[4 18/288 1.844s] Compiling C object libalpm_objlib.a.p/lib_libalpm_group.c.o
+[4 19/288 2.018s] Compiling C object libalpm_objlib.a.p/lib_libalpm_log.c.o
+[4 20/288 2.358s] Compiling C object libalpm_objlib.a.p/lib_libalpm_hook.c.o
+[4 21/288 2.420s] Compiling C object libalpm_objlib.a.p/lib_libalpm_handle.c.o
+[4 22/288 2.446s] Compiling C object libalpm_objlib.a.p/lib_libalpm_dload.c.o
+[4 23/288 2.589s] Compiling C object libalpm_objlib.a.p/lib_libalpm_rawstr.c.o
+[4 24/288 2.632s] Compiling C object libalpm_objlib.a.p/lib_libalpm_pkghash.c.o
+[4 25/288 2.752s] Compiling C object libalpm_objlib.a.p/lib_libalpm_package.c.o
+../lib/libalpm/package.c: In function 'alpm_pkg_get_sig':
+../lib/libalpm/package.c:305:105: warning: format '%ld' expects argument of type 'long int', but argument 5 has type 'size_t' {aka 'unsigned int'} [-Wformat=]
+  305 |                         _alpm_log(pkg->handle, ALPM_LOG_DEBUG, "found detached signature %s with size %ld\n",
+      |                                                                                                       ~~^
+      |                                                                                                         |
+      |                                                                                                         long int
+      |                                                                                                       %d
+  306 |                                 sigpath, *sig_len);
+      |                                          ~~~~~~~~                                                        
+      |                                          |
+      |                                          size_t {aka unsigned int}
+[4 26/288 2.971s] Compiling C object libalpm_objlib.a.p/lib_libalpm_remove.c.o
+[4 27/288 3.129s] Compiling C object libalpm_objlib.a.p/lib_libalpm_trans.c.o
+[4 28/288 3.369s] Compiling C object libalpm_objlib.a.p/lib_libalpm_version.c.o
+[4 29/288 3.380s] Generating scripts/repo-add.sh.in with a custom command
+[4 30/288 3.389s] Linking static target libcommon.a
+[4 31/288 3.442s] Compiling C object libalpm_objlib.a.p/lib_libalpm_signing.c.o
+[4 32/288 3.543s] Compiling C object libalpm_objlib.a.p/lib_libalpm_sync.c.o
+../lib/libalpm/sync.c: In function 'check_pkg_matches_db':
+../lib/libalpm/sync.c:1122:87: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'off_t' {aka 'long long int'} [-Wformat=]
+ 1122 |                                 "internal package install size mismatch, expected: '%ld', actual: '%ld'\n",
+      |                                                                                     ~~^
+      |                                                                                       |
+      |                                                                                       long int
+      |                                                                                     %lld
+ 1123 |                                 spkg->isize, pkgfile->isize);
+      |                                 ~~~~~~~~~~~                                            
+      |                                     |
+      |                                     off_t {aka long long int}
+../lib/libalpm/sync.c:1122:102: warning: format '%ld' expects argument of type 'long int', but argument 5 has type 'off_t' {aka 'long long int'} [-Wformat=]
+ 1122 |                                 "internal package install size mismatch, expected: '%ld', actual: '%ld'\n",
+      |                                                                                                    ~~^
+      |                                                                                                      |
+      |                                                                                                      long int
+      |                                                                                                    %lld
+ 1123 |                                 spkg->isize, pkgfile->isize);
+      |                                              ~~~~~~~~~~~~~~                                           
+      |                                                     |
+      |                                                     off_t {aka long long int}
+[4 33/288 3.709s] Compiling C object pacman.p/src_pacman_check.c.o
+[4 34/288 3.772s] Compiling C object pacman.p/src_pacman_database.c.o
+[4 35/288 3.804s] Compiling C object pacman.p/src_pacman_deptest.c.o
+[4 36/288 3.880s] Compiling C object libalpm_objlib.a.p/lib_libalpm_util.c.o
+[4 37/288 4.024s] Linking target libalpm.so.14.0.0
+[4 38/288 4.062s] Compiling C object pacman.p/src_pacman_files.c.o
+[4 39/288 4.063s] Linking static target libalpm_objlib.a
+[4 40/288 4.238s] Generating symbol file libalpm.so.14.0.0.p/libalpm.so.14.0.0.symbols
+[4 41/288 4.256s] Compiling C object pacman.p/src_pacman_package.c.o
+[4 42/288 4.297s] Compiling C object pacman.p/src_pacman_conf.c.o
+[4 43/288 4.430s] Compiling C object pacman.p/src_pacman_remove.c.o
+[4 44/288 4.447s] Compiling C object pacman.p/src_pacman_sighandler.c.o
+[4 45/288 4.589s] Compiling C object pacman.p/src_pacman_query.c.o
+[4 46/288 4.729s] Compiling C object pacman.p/src_pacman_upgrade.c.o
+[4 47/288 4.809s] Compiling C object pacman.p/src_pacman_pacman.c.o
+[4 48/288 5.014s] Compiling C object pacman.p/src_pacman_sync.c.o
+[4 49/288 5.064s] Compiling C object pacman.p/src_pacman_callback.c.o
+../src/pacman/callback.c: In function 'dload_progress_event':
+../src/pacman/callback.c:969:14: warning: variable 'ok' set but not used [-Wunused-but-set-variable]
+  969 |         bool ok;
+      |              ^~
+../src/pacman/callback.c: In function 'dload_retry_event':
+../src/pacman/callback.c:1008:14: warning: unused variable 'ok' [-Wunused-variable]
+ 1008 |         bool ok = find_bar_for_filename(filename, &index, &bar);
+      |              ^~
+../src/pacman/callback.c: In function 'dload_complete_event':
+../src/pacman/callback.c:1033:14: warning: variable 'ok' set but not used [-Wunused-but-set-variable]
+ 1033 |         bool ok;
+      |              ^~
+[4 50/288 5.202s] Compiling C object pacman-conf.p/src_pacman_pacman-conf.c.o
+[4 51/288 5.668s] Compiling C object pacman-conf.p/src_pacman_callback.c.o
+../src/pacman/callback.c: In function 'dload_progress_event':
+../src/pacman/callback.c:969:14: warning: variable 'ok' set but not used [-Wunused-but-set-variable]
+  969 |         bool ok;
+      |              ^~
+../src/pacman/callback.c: In function 'dload_retry_event':
+../src/pacman/callback.c:1008:14: warning: unused variable 'ok' [-Wunused-variable]
+ 1008 |         bool ok = find_bar_for_filename(filename, &index, &bar);
+      |              ^~
+../src/pacman/callback.c: In function 'dload_complete_event':
+../src/pacman/callback.c:1033:14: warning: variable 'ok' set but not used [-Wunused-but-set-variable]
+ 1033 |         bool ok;
+      |              ^~
+[4 52/288 5.842s] Compiling C object testpkg.p/src_util_testpkg.c.o
+[4 53/288 5.916s] Compiling C object vercmp.p/src_util_vercmp.c.o
+[4 54/288 5.926s] Generating scripts/makepkg-template.pl.in with a custom command
+[4 55/288 5.939s] Generating scripts/makepkg.sh.in with a custom command
+[4 56/288 5.950s] Generating scripts/pacman-db-upgrade.sh.in with a custom command
+[4 57/288 5.961s] Generating scripts/pacman-key.sh.in with a custom command
+[4 58/288 5.965s] Generating scripts/repo-remove with a custom command
+[4 59/288 5.969s] Generating scripts/repo-elephant with a custom command
+[4 60/288 5.977s] Generating scripts/libmakepkg/libmakepkg_autodep with a custom command
+[4 61/288 5.985s] Generating scripts/libmakepkg/autodep/autodep_library_depends_sh_in with a custom command
+[4 62/288 5.993s] Generating scripts/libmakepkg/autodep/autodep_library_provides_sh_in with a custom command
+[4 63/288 5.993s] Compiling C object pacman.p/src_pacman_util.c.o
+[4 64/288 6.001s] Generating scripts/libmakepkg/libmakepkg_buildenv with a custom command
+[4 65/288 6.001s] Generating scripts/libmakepkg/buildenv/buildenv_buildflags_sh_in with a custom command
+[4 66/288 6.008s] Generating scripts/libmakepkg/buildenv/buildenv_compiler_sh_in with a custom command
+[4 67/288 6.009s] Generating scripts/libmakepkg/buildenv/buildenv_debugflags_sh_in with a custom command
+[4 68/288 6.017s] Generating scripts/libmakepkg/buildenv/buildenv_lto_sh_in with a custom command
+[4 69/288 6.017s] Generating scripts/libmakepkg/buildenv/buildenv_makeflags_sh_in with a custom command
+[4 70/288 6.024s] Generating scripts/libmakepkg/buildenv/buildenv_rust_sh_in with a custom command
+[4 71/288 6.025s] Generating scripts/libmakepkg/libmakepkg_executable with a custom command
+[4 72/288 6.032s] Generating scripts/libmakepkg/executable/executable_ccache_sh_in with a custom command
+[4 73/288 6.032s] Generating scripts/libmakepkg/executable/executable_checksum_sh_in with a custom command
+[4 74/288 6.040s] Generating scripts/libmakepkg/executable/executable_distcc_sh_in with a custom command
+[4 75/288 6.040s] Generating scripts/libmakepkg/executable/executable_fakeroot_sh_in with a custom command
+[4 76/288 6.048s] Generating scripts/libmakepkg/executable/executable_gpg_sh_in with a custom command
+[4 77/288 6.053s] Generating scripts/libmakepkg/executable/executable_debugedit_sh_in with a custom command
+[4 78/288 6.054s] Compiling C object pacman-conf.p/src_pacman_conf.c.o
+[4 79/288 6.056s] Generating scripts/libmakepkg/executable/executable_gzip_sh_in with a custom command
+[4 80/288 6.061s] Generating scripts/libmakepkg/executable/executable_pacman_sh_in with a custom command
+[4 81/288 6.062s] Generating scripts/libmakepkg/executable/executable_strip_sh_in with a custom command
+[4 82/288 6.064s] Generating scripts/libmakepkg/executable/executable_sudo_sh_in with a custom command
+[4 83/288 6.070s] Generating scripts/libmakepkg/libmakepkg_integrity with a custom command
+[4 84/288 6.070s] Generating scripts/libmakepkg/executable/executable_vcs_sh_in with a custom command
+[4 85/288 6.074s] Generating scripts/libmakepkg/integrity/integrity_generate_checksum_sh_in with a custom command
+[4 86/288 6.078s] Generating scripts/libmakepkg/integrity/integrity_generate_signature_sh_in with a custom command
+[4 87/288 6.079s] Generating scripts/libmakepkg/integrity/integrity_verify_checksum_sh_in with a custom command
+[4 88/288 6.083s] Generating scripts/libmakepkg/integrity/integrity_verify_signature_sh_in with a custom command
+[4 89/288 6.086s] Generating scripts/libmakepkg/libmakepkg_lint_config with a custom command
+[4 90/288 6.087s] Generating scripts/libmakepkg/lint_config/lint_config_ext_sh_in with a custom command
+[4 91/288 6.091s] Generating scripts/libmakepkg/lint_config/lint_config_paths_sh_in with a custom command
+[4 92/288 6.094s] Generating scripts/libmakepkg/lint_config/lint_config_source_date_epoch_sh_in with a custom command
+[4 93/288 6.095s] Generating scripts/libmakepkg/lint_config/lint_config_variable_sh_in with a custom command
+[4 94/288 6.098s] Generating scripts/libmakepkg/libmakepkg_lint_package with a custom command
+[4 95/288 6.102s] Generating scripts/libmakepkg/lint_package/lint_package_build_references_sh_in with a custom command
+[4 96/288 6.104s] Generating scripts/libmakepkg/lint_package/lint_package_dotfiles_sh_in with a custom command
+[4 97/288 6.106s] Generating scripts/libmakepkg/lint_package/lint_package_file_names_sh_in with a custom command
+[4 98/288 6.111s] Generating scripts/libmakepkg/lint_package/lint_package_missing_backup_sh_in with a custom command
+[4 99/288 6.111s] Generating scripts/libmakepkg/libmakepkg_lint_pkgbuild with a custom command
+[4 100/288 6.114s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_arch_sh_in with a custom command
+[4 101/288 6.119s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_arch_specific_sh_in with a custom command
+[4 102/288 6.120s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_backup_sh_in with a custom command
+[4 103/288 6.122s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_changelog_sh_in with a custom command
+[4 104/288 6.127s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_checkdepends_sh_in with a custom command
+[4 105/288 6.128s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_conflicts_sh_in with a custom command
+[4 106/288 6.131s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_depends_sh_in with a custom command
+[4 107/288 6.134s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_epoch_sh_in with a custom command
+[4 108/288 6.136s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_fullpkgver_sh_in with a custom command
+[4 109/288 6.139s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_install_sh_in with a custom command
+[4 110/288 6.142s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_makedepends_sh_in with a custom command
+[4 111/288 6.145s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_optdepends_sh_in with a custom command
+[4 112/288 6.146s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_options_sh_in with a custom command
+[4 113/288 6.150s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_package_function_sh_in with a custom command
+[4 114/288 6.153s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_package_function_variable_sh_in with a custom command
+[4 115/288 6.155s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_pkgbase_sh_in with a custom command
+[4 116/288 6.158s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_pkglist_sh_in with a custom command
+[4 117/288 6.161s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_pkgname_sh_in with a custom command
+[4 118/288 6.163s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_pkgrel_sh_in with a custom command
+[4 119/288 6.167s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_pkgver_sh_in with a custom command
+[4 120/288 6.168s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_provides_sh_in with a custom command
+[4 121/288 6.170s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_source_sh_in with a custom command
+[4 122/288 6.176s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_util_sh_in with a custom command
+[4 123/288 6.176s] Generating scripts/libmakepkg/lint_pkgbuild/lint_pkgbuild_variable_sh_in with a custom command
+[4 124/288 6.178s] Generating scripts/libmakepkg/libmakepkg_reproducible with a custom command
+[4 125/288 6.184s] Generating scripts/libmakepkg/libmakepkg_source with a custom command
+[4 126/288 6.185s] Generating scripts/libmakepkg/reproducible/reproducible_python_sh_in with a custom command
+[4 127/288 6.186s] Generating scripts/libmakepkg/source/source_bzr_sh_in with a custom command
+[4 128/288 6.192s] Generating scripts/libmakepkg/source/source_file_sh_in with a custom command
+[4 129/288 6.193s] Generating scripts/libmakepkg/source/source_fossil_sh_in with a custom command
+[4 130/288 6.194s] Generating scripts/libmakepkg/source/source_git_sh_in with a custom command
+[4 131/288 6.200s] Generating scripts/libmakepkg/source/source_hg_sh_in with a custom command
+[4 132/288 6.202s] Generating scripts/libmakepkg/source/source_local_sh_in with a custom command
+[4 133/288 6.202s] Generating scripts/libmakepkg/source/source_svn_sh_in with a custom command
+[4 134/288 6.209s] Generating scripts/libmakepkg/libmakepkg_srcinfo with a custom command
+[4 135/288 6.210s] Generating scripts/libmakepkg/libmakepkg_tidy with a custom command
+[4 136/288 6.210s] Generating scripts/libmakepkg/tidy/tidy_docs_sh_in with a custom command
+[4 137/288 6.217s] Generating scripts/libmakepkg/tidy/tidy_emptydirs_sh_in with a custom command
+[4 138/288 6.218s] Generating scripts/libmakepkg/tidy/tidy_libtool_sh_in with a custom command
+[4 139/288 6.219s] Generating scripts/libmakepkg/tidy/tidy_purge_sh_in with a custom command
+[4 140/288 6.224s] Generating scripts/libmakepkg/tidy/tidy_staticlibs_sh_in with a custom command
+[4 141/288 6.226s] Generating scripts/libmakepkg/tidy/tidy_strip_sh_in with a custom command
+[4 142/288 6.227s] Generating scripts/libmakepkg/tidy/tidy_zipman_sh_in with a custom command
+[4 143/288 6.232s] Generating scripts/libmakepkg/libmakepkg_util with a custom command
+[4 144/288 6.234s] Generating scripts/libmakepkg/util/util_compress_sh_in with a custom command
+[4 145/288 6.236s] Generating scripts/libmakepkg/util/util_config_sh_in with a custom command
+[4 146/288 6.240s] Generating scripts/libmakepkg/util/util_dirsize_sh_in with a custom command
+[4 147/288 6.243s] Generating scripts/libmakepkg/util/util_error_sh_in with a custom command
+[4 148/288 6.244s] Generating scripts/libmakepkg/util/util_message_sh_in with a custom command
+[4 149/288 6.248s] Generating scripts/libmakepkg/util/util_option_sh_in with a custom command
+[4 150/288 6.251s] Generating scripts/libmakepkg/util/util_parseopts_sh_in with a custom command
+[4 151/288 6.256s] Generating scripts/libmakepkg/util/util_schema_sh_in with a custom command
+[4 152/288 6.257s] Generating scripts/libmakepkg/util/util_pkgbuild_sh_in with a custom command
+[4 153/288 6.257s] Compiling C object pacman-conf.p/src_pacman_util.c.o
+[4 154/288 6.259s] Generating scripts/libmakepkg/util/util_source_sh_in with a custom command
+[4 155/288 6.264s] Generating scripts/bash_completion with a custom command
+[4 156/288 6.265s] Generating scripts/libmakepkg/util/util_util_sh_in with a custom command
+[4 157/288 6.268s] Generating scripts/zsh_completion with a custom command
+[4 158/288 6.268s] Building translation lib/libalpm/po/ar/LC_MESSAGES/libalpm-ar.mo
+[4 159/288 6.273s] Building translation lib/libalpm/po/ast/LC_MESSAGES/libalpm-ast.mo
+[4 160/288 6.274s] Building translation lib/libalpm/po/az_AZ/LC_MESSAGES/libalpm-az_AZ.mo
+[4 161/288 6.277s] Building translation lib/libalpm/po/bg/LC_MESSAGES/libalpm-bg.mo
+[4 162/288 6.278s] Building translation lib/libalpm/po/br/LC_MESSAGES/libalpm-br.mo
+[4 163/288 6.283s] Building translation lib/libalpm/po/ca/LC_MESSAGES/libalpm-ca.mo
+[4 164/288 6.284s] Building translation lib/libalpm/po/cs/LC_MESSAGES/libalpm-cs.mo
+[4 165/288 6.286s] Building translation lib/libalpm/po/da/LC_MESSAGES/libalpm-da.mo
+[4 166/288 6.287s] Building translation lib/libalpm/po/de/LC_MESSAGES/libalpm-de.mo
+[4 167/288 6.293s] Building translation lib/libalpm/po/el/LC_MESSAGES/libalpm-el.mo
+[4 168/288 6.294s] Building translation lib/libalpm/po/en_GB/LC_MESSAGES/libalpm-en_GB.mo
+[4 169/288 6.295s] Building translation lib/libalpm/po/eo/LC_MESSAGES/libalpm-eo.mo
+[4 170/288 6.298s] Building translation lib/libalpm/po/es/LC_MESSAGES/libalpm-es.mo
+[4 171/288 6.302s] Building translation lib/libalpm/po/es_419/LC_MESSAGES/libalpm-es_419.mo
+[4 172/288 6.304s] Building translation lib/libalpm/po/eu_ES/LC_MESSAGES/libalpm-eu_ES.mo
+[4 173/288 6.306s] Building translation lib/libalpm/po/eu/LC_MESSAGES/libalpm-eu.mo
+[4 174/288 6.308s] Building translation lib/libalpm/po/fi/LC_MESSAGES/libalpm-fi.mo
+[4 175/288 6.313s] Building translation lib/libalpm/po/gl/LC_MESSAGES/libalpm-gl.mo
+[4 176/288 6.315s] Building translation lib/libalpm/po/fr/LC_MESSAGES/libalpm-fr.mo
+[4 177/288 6.316s] Building translation lib/libalpm/po/hi/LC_MESSAGES/libalpm-hi.mo
+[4 178/288 6.317s] Building translation lib/libalpm/po/hr/LC_MESSAGES/libalpm-hr.mo
+[4 179/288 6.323s] Building translation lib/libalpm/po/hu/LC_MESSAGES/libalpm-hu.mo
+[4 180/288 6.324s] Building translation lib/libalpm/po/id/LC_MESSAGES/libalpm-id.mo
+[4 181/288 6.326s] Building translation lib/libalpm/po/it/LC_MESSAGES/libalpm-it.mo
+[4 182/288 6.326s] Building translation lib/libalpm/po/ja/LC_MESSAGES/libalpm-ja.mo
+[4 183/288 6.333s] Building translation lib/libalpm/po/kk/LC_MESSAGES/libalpm-kk.mo
+[4 184/288 6.334s] Building translation lib/libalpm/po/ko/LC_MESSAGES/libalpm-ko.mo
+[4 185/288 6.335s] Building translation lib/libalpm/po/lt/LC_MESSAGES/libalpm-lt.mo
+[4 186/288 6.336s] Building translation lib/libalpm/po/nb/LC_MESSAGES/libalpm-nb.mo
+[4 187/288 6.342s] Building translation lib/libalpm/po/nl/LC_MESSAGES/libalpm-nl.mo
+[4 188/288 6.343s] Building translation lib/libalpm/po/pl/LC_MESSAGES/libalpm-pl.mo
+[4 189/288 6.344s] Building translation lib/libalpm/po/pt/LC_MESSAGES/libalpm-pt.mo
+[4 190/288 6.346s] Building translation lib/libalpm/po/pt_BR/LC_MESSAGES/libalpm-pt_BR.mo
+[4 191/288 6.352s] Building translation lib/libalpm/po/ro/LC_MESSAGES/libalpm-ro.mo
+[4 192/288 6.353s] Building translation lib/libalpm/po/ru/LC_MESSAGES/libalpm-ru.mo
+[4 193/288 6.354s] Building translation lib/libalpm/po/sk/LC_MESSAGES/libalpm-sk.mo
+[4 194/288 6.354s] Building translation lib/libalpm/po/sl/LC_MESSAGES/libalpm-sl.mo
+[4 195/288 6.362s] Building translation lib/libalpm/po/sr/LC_MESSAGES/libalpm-sr.mo
+[4 196/288 6.362s] Building translation lib/libalpm/po/sr@latin/LC_MESSAGES/libalpm-sr@latin.mo
+[4 197/288 6.363s] Building translation lib/libalpm/po/sv/LC_MESSAGES/libalpm-sv.mo
+[4 198/288 6.364s] Building translation lib/libalpm/po/tr/LC_MESSAGES/libalpm-tr.mo
+[4 199/288 6.371s] Building translation lib/libalpm/po/zh_CN/LC_MESSAGES/libalpm-zh_CN.mo
+[4 200/288 6.372s] Building translation lib/libalpm/po/uk/LC_MESSAGES/libalpm-uk.mo
+[4 201/288 6.372s] Building translation lib/libalpm/po/zh_TW/LC_MESSAGES/libalpm-zh_TW.mo
+[4 202/288 6.376s] Building translation src/pacman/po/ar/LC_MESSAGES/pacman-ar.mo
+[4 203/288 6.383s] Building translation src/pacman/po/ast/LC_MESSAGES/pacman-ast.mo
+[4 204/288 6.385s] Building translation src/pacman/po/az_AZ/LC_MESSAGES/pacman-az_AZ.mo
+[4 205/288 6.385s] Building translation src/pacman/po/bg/LC_MESSAGES/pacman-bg.mo
+[4 206/288 6.388s] Building translation src/pacman/po/br/LC_MESSAGES/pacman-br.mo
+[4 207/288 6.396s] Building translation src/pacman/po/ca/LC_MESSAGES/pacman-ca.mo
+[4 208/288 6.397s] Building translation src/pacman/po/cs/LC_MESSAGES/pacman-cs.mo
+[4 209/288 6.398s] Building translation src/pacman/po/da/LC_MESSAGES/pacman-da.mo
+[4 210/288 6.402s] Building translation src/pacman/po/de/LC_MESSAGES/pacman-de.mo
+[4 211/288 6.409s] Building translation src/pacman/po/el/LC_MESSAGES/pacman-el.mo
+[4 212/288 6.409s] Building translation src/pacman/po/en_GB/LC_MESSAGES/pacman-en_GB.mo
+[4 213/288 6.410s] Building translation src/pacman/po/eo/LC_MESSAGES/pacman-eo.mo
+[4 214/288 6.415s] Building translation src/pacman/po/es/LC_MESSAGES/pacman-es.mo
+[4 215/288 6.421s] Building translation src/pacman/po/es_419/LC_MESSAGES/pacman-es_419.mo
+[4 216/288 6.421s] Building translation src/pacman/po/eu/LC_MESSAGES/pacman-eu.mo
+[4 217/288 6.422s] Building translation src/pacman/po/eu_ES/LC_MESSAGES/pacman-eu_ES.mo
+[4 218/288 6.428s] Building translation src/pacman/po/fi/LC_MESSAGES/pacman-fi.mo
+[4 219/288 6.433s] Building translation src/pacman/po/fr/LC_MESSAGES/pacman-fr.mo
+[4 220/288 6.434s] Building translation src/pacman/po/gl/LC_MESSAGES/pacman-gl.mo
+[4 221/288 6.435s] Building translation src/pacman/po/hi/LC_MESSAGES/pacman-hi.mo
+[4 222/288 6.441s] Building translation src/pacman/po/hr/LC_MESSAGES/pacman-hr.mo
+[4 223/288 6.445s] Building translation src/pacman/po/hu/LC_MESSAGES/pacman-hu.mo
+[4 224/288 6.446s] Building translation src/pacman/po/id/LC_MESSAGES/pacman-id.mo
+[4 225/288 6.448s] Building translation src/pacman/po/it/LC_MESSAGES/pacman-it.mo
+[4 226/288 6.454s] Building translation src/pacman/po/ja/LC_MESSAGES/pacman-ja.mo
+[4 227/288 6.457s] Building translation src/pacman/po/ko/LC_MESSAGES/pacman-ko.mo
+[4 228/288 6.458s] Building translation src/pacman/po/lt/LC_MESSAGES/pacman-lt.mo
+[4 229/288 6.460s] Building translation src/pacman/po/nb/LC_MESSAGES/pacman-nb.mo
+[4 230/288 6.467s] Building translation src/pacman/po/nl/LC_MESSAGES/pacman-nl.mo
+[4 231/288 6.469s] Building translation src/pacman/po/pl/LC_MESSAGES/pacman-pl.mo
+[4 232/288 6.470s] Building translation src/pacman/po/pt/LC_MESSAGES/pacman-pt.mo
+[4 233/288 6.473s] Building translation src/pacman/po/pt_BR/LC_MESSAGES/pacman-pt_BR.mo
+[4 234/288 6.481s] Building translation src/pacman/po/ro/LC_MESSAGES/pacman-ro.mo
+[4 235/288 6.482s] Building translation src/pacman/po/ru/LC_MESSAGES/pacman-ru.mo
+[4 236/288 6.482s] Building translation src/pacman/po/sk/LC_MESSAGES/pacman-sk.mo
+[4 237/288 6.485s] Building translation src/pacman/po/sl/LC_MESSAGES/pacman-sl.mo
+[4 238/288 6.493s] Building translation src/pacman/po/sr@latin/LC_MESSAGES/pacman-sr@latin.mo
+[4 239/288 6.494s] Building translation src/pacman/po/sv/LC_MESSAGES/pacman-sv.mo
+[4 240/288 6.495s] Building translation src/pacman/po/sr/LC_MESSAGES/pacman-sr.mo
+[4 241/288 6.498s] Building translation src/pacman/po/tr/LC_MESSAGES/pacman-tr.mo
+[4 242/288 6.506s] Building translation src/pacman/po/zh_CN/LC_MESSAGES/pacman-zh_CN.mo
+[4 243/288 6.506s] Building translation src/pacman/po/uk/LC_MESSAGES/pacman-uk.mo
+[4 244/288 6.507s] Building translation src/pacman/po/zh_TW/LC_MESSAGES/pacman-zh_TW.mo
+[4 245/288 6.511s] Building translation scripts/po/az_AZ/LC_MESSAGES/pacman-scripts-az_AZ.mo
+[4 246/288 6.518s] Building translation scripts/po/br/LC_MESSAGES/pacman-scripts-br.mo
+[4 247/288 6.519s] Building translation scripts/po/bg/LC_MESSAGES/pacman-scripts-bg.mo
+[4 248/288 6.520s] Building translation scripts/po/ca/LC_MESSAGES/pacman-scripts-ca.mo
+[4 249/288 6.523s] Building translation scripts/po/cs/LC_MESSAGES/pacman-scripts-cs.mo
+[4 250/288 6.531s] Building translation scripts/po/da/LC_MESSAGES/pacman-scripts-da.mo
+[4 251/288 6.532s] Building translation scripts/po/de/LC_MESSAGES/pacman-scripts-de.mo
+[4 252/288 6.533s] Building translation scripts/po/el/LC_MESSAGES/pacman-scripts-el.mo
+[4 253/288 6.536s] Building translation scripts/po/en_GB/LC_MESSAGES/pacman-scripts-en_GB.mo
+[4 254/288 6.542s] Building translation scripts/po/eo/LC_MESSAGES/pacman-scripts-eo.mo
+[4 255/288 6.544s] Building translation scripts/po/es/LC_MESSAGES/pacman-scripts-es.mo
+[4 256/288 6.546s] Building translation scripts/po/es_419/LC_MESSAGES/pacman-scripts-es_419.mo
+[4 257/288 6.549s] Building translation scripts/po/eu/LC_MESSAGES/pacman-scripts-eu.mo
+[4 258/288 6.555s] Building translation scripts/po/eu_ES/LC_MESSAGES/pacman-scripts-eu_ES.mo
+[4 259/288 6.556s] Building translation scripts/po/fi/LC_MESSAGES/pacman-scripts-fi.mo
+[4 260/288 6.558s] Building translation scripts/po/fr/LC_MESSAGES/pacman-scripts-fr.mo
+[4 261/288 6.561s] Building translation scripts/po/gl/LC_MESSAGES/pacman-scripts-gl.mo
+[4 262/288 6.568s] Building translation scripts/po/hi/LC_MESSAGES/pacman-scripts-hi.mo
+[4 263/288 6.569s] Building translation scripts/po/hu/LC_MESSAGES/pacman-scripts-hu.mo
+[4 264/288 6.570s] Building translation scripts/po/id/LC_MESSAGES/pacman-scripts-id.mo
+[4 265/288 6.574s] Building translation scripts/po/it/LC_MESSAGES/pacman-scripts-it.mo
+[4 266/288 6.580s] Building translation scripts/po/ja/LC_MESSAGES/pacman-scripts-ja.mo
+[4 267/288 6.581s] Building translation scripts/po/ko/LC_MESSAGES/pacman-scripts-ko.mo
+[4 268/288 6.583s] Building translation scripts/po/lt/LC_MESSAGES/pacman-scripts-lt.mo
+[4 269/288 6.587s] Building translation scripts/po/nb/LC_MESSAGES/pacman-scripts-nb.mo
+[4 270/288 6.592s] Building translation scripts/po/nl/LC_MESSAGES/pacman-scripts-nl.mo
+[4 271/288 6.593s] Building translation scripts/po/pl/LC_MESSAGES/pacman-scripts-pl.mo
+[4 272/288 6.595s] Building translation scripts/po/pt/LC_MESSAGES/pacman-scripts-pt.mo
+[4 273/288 6.600s] Building translation scripts/po/pt_BR/LC_MESSAGES/pacman-scripts-pt_BR.mo
+[4 274/288 6.605s] Building translation scripts/po/ro/LC_MESSAGES/pacman-scripts-ro.mo
+[4 275/288 6.606s] Building translation scripts/po/ru/LC_MESSAGES/pacman-scripts-ru.mo
+[4 276/288 6.607s] Building translation scripts/po/sk/LC_MESSAGES/pacman-scripts-sk.mo
+[4 277/288 6.613s] Building translation scripts/po/sl/LC_MESSAGES/pacman-scripts-sl.mo
+[4 278/288 6.617s] Building translation scripts/po/sr/LC_MESSAGES/pacman-scripts-sr.mo
+[4 279/288 6.618s] Building translation scripts/po/sr@latin/LC_MESSAGES/pacman-scripts-sr@latin.mo
+[4 280/288 6.620s] Building translation scripts/po/sv/LC_MESSAGES/pacman-scripts-sv.mo
+[4 281/288 6.626s] Building translation scripts/po/tr/LC_MESSAGES/pacman-scripts-tr.mo
+[4 282/288 6.630s] Building translation scripts/po/zh_CN/LC_MESSAGES/pacman-scripts-zh_CN.mo
+[4 283/288 6.631s] Building translation scripts/po/uk/LC_MESSAGES/pacman-scripts-uk.mo
+[4 284/288 6.632s] Building translation scripts/po/zh_TW/LC_MESSAGES/pacman-scripts-zh_TW.mo
+[4 285/288 6.698s] Linking target vercmp
+[3 286/288 6.709s] Linking target testpkg
+[2 287/288 6.717s] Linking target pacman-conf
+[1 288/288 6.724s] Linking target pacman
+[1 0/1 0.011s] Installing files.
+Installing scripts/makepkg-template to /usr/bin
+Installing scripts/makepkg to /usr/bin
+Installing scripts/pacman-db-upgrade to /usr/bin
+Installing scripts/pacman-key to /usr/bin
+Installing scripts/repo-add to /usr/bin
+Installing scripts/libmakepkg/autodep.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/autodep/library_depends.sh to /usr/share/makepkg/autodep
+Installing scripts/libmakepkg/autodep/library_provides.sh to /usr/share/makepkg/autodep
+Installing scripts/libmakepkg/buildenv.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/buildenv/buildflags.sh to /usr/share/makepkg/buildenv
+Installing scripts/libmakepkg/buildenv/compiler.sh to /usr/share/makepkg/buildenv
+Installing scripts/libmakepkg/buildenv/debugflags.sh to /usr/share/makepkg/buildenv
+Installing scripts/libmakepkg/buildenv/lto.sh to /usr/share/makepkg/buildenv
+Installing scripts/libmakepkg/buildenv/makeflags.sh to /usr/share/makepkg/buildenv
+Installing scripts/libmakepkg/buildenv/rust.sh to /usr/share/makepkg/buildenv
+Installing scripts/libmakepkg/executable.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/executable/ccache.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/checksum.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/distcc.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/fakeroot.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/debugedit.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/gpg.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/gzip.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/pacman.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/strip.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/sudo.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/executable/vcs.sh to /usr/share/makepkg/executable
+Installing scripts/libmakepkg/integrity.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/integrity/generate_checksum.sh to /usr/share/makepkg/integrity
+Installing scripts/libmakepkg/integrity/generate_signature.sh to /usr/share/makepkg/integrity
+Installing scripts/libmakepkg/integrity/verify_checksum.sh to /usr/share/makepkg/integrity
+Installing scripts/libmakepkg/integrity/verify_signature.sh to /usr/share/makepkg/integrity
+Installing scripts/libmakepkg/lint_config.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/lint_config/ext.sh to /usr/share/makepkg/lint_config
+Installing scripts/libmakepkg/lint_config/paths.sh to /usr/share/makepkg/lint_config
+Installing scripts/libmakepkg/lint_config/source_date_epoch.sh to /usr/share/makepkg/lint_config
+Installing scripts/libmakepkg/lint_config/variable.sh to /usr/share/makepkg/lint_config
+Installing scripts/libmakepkg/lint_package.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/lint_package/build_references.sh to /usr/share/makepkg/lint_package
+Installing scripts/libmakepkg/lint_package/dotfiles.sh to /usr/share/makepkg/lint_package
+Installing scripts/libmakepkg/lint_package/file_names.sh to /usr/share/makepkg/lint_package
+Installing scripts/libmakepkg/lint_package/missing_backup.sh to /usr/share/makepkg/lint_package
+Installing scripts/libmakepkg/lint_pkgbuild.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/lint_pkgbuild/arch.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/arch_specific.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/backup.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/changelog.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/checkdepends.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/conflicts.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/depends.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/epoch.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/fullpkgver.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/install.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/makedepends.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/optdepends.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/options.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/package_function.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/package_function_variable.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/pkgbase.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/pkglist.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/pkgname.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/pkgrel.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/pkgver.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/provides.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/source.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/util.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/lint_pkgbuild/variable.sh to /usr/share/makepkg/lint_pkgbuild
+Installing scripts/libmakepkg/reproducible.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/reproducible/python.sh to /usr/share/makepkg/reproducible
+Installing scripts/libmakepkg/source.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/source/bzr.sh to /usr/share/makepkg/source
+Installing scripts/libmakepkg/source/file.sh to /usr/share/makepkg/source
+Installing scripts/libmakepkg/source/fossil.sh to /usr/share/makepkg/source
+Installing scripts/libmakepkg/source/git.sh to /usr/share/makepkg/source
+Installing scripts/libmakepkg/source/hg.sh to /usr/share/makepkg/source
+Installing scripts/libmakepkg/source/local.sh to /usr/share/makepkg/source
+Installing scripts/libmakepkg/source/svn.sh to /usr/share/makepkg/source
+Installing scripts/libmakepkg/srcinfo.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/tidy.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/tidy/docs.sh to /usr/share/makepkg/tidy
+Installing scripts/libmakepkg/tidy/emptydirs.sh to /usr/share/makepkg/tidy
+Installing scripts/libmakepkg/tidy/libtool.sh to /usr/share/makepkg/tidy
+Installing scripts/libmakepkg/tidy/purge.sh to /usr/share/makepkg/tidy
+Installing scripts/libmakepkg/tidy/staticlibs.sh to /usr/share/makepkg/tidy
+Installing scripts/libmakepkg/tidy/strip.sh to /usr/share/makepkg/tidy
+Installing scripts/libmakepkg/tidy/zipman.sh to /usr/share/makepkg/tidy
+Installing scripts/libmakepkg/util.sh to /usr/share/makepkg
+Installing scripts/libmakepkg/util/compress.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/config.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/dirsize.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/error.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/message.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/option.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/parseopts.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/pkgbuild.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/schema.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/source.sh to /usr/share/makepkg/util
+Installing scripts/libmakepkg/util/util.sh to /usr/share/makepkg/util
+Installing scripts/pacman to /usr/share/bash-completion/completions
+Installing scripts/_pacman to /usr/share/zsh/site-functions
+Installing lib/libalpm/po/ar/LC_MESSAGES/libalpm.mo to /usr/share/locale/ar/LC_MESSAGES
+Installing lib/libalpm/po/ast/LC_MESSAGES/libalpm.mo to /usr/share/locale/ast/LC_MESSAGES
+Installing lib/libalpm/po/az_AZ/LC_MESSAGES/libalpm.mo to /usr/share/locale/az_AZ/LC_MESSAGES
+Installing lib/libalpm/po/bg/LC_MESSAGES/libalpm.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing lib/libalpm/po/br/LC_MESSAGES/libalpm.mo to /usr/share/locale/br/LC_MESSAGES
+Installing lib/libalpm/po/ca/LC_MESSAGES/libalpm.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing lib/libalpm/po/cs/LC_MESSAGES/libalpm.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing lib/libalpm/po/da/LC_MESSAGES/libalpm.mo to /usr/share/locale/da/LC_MESSAGES
+Installing lib/libalpm/po/de/LC_MESSAGES/libalpm.mo to /usr/share/locale/de/LC_MESSAGES
+Installing lib/libalpm/po/el/LC_MESSAGES/libalpm.mo to /usr/share/locale/el/LC_MESSAGES
+Installing lib/libalpm/po/en_GB/LC_MESSAGES/libalpm.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing lib/libalpm/po/eo/LC_MESSAGES/libalpm.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing lib/libalpm/po/es/LC_MESSAGES/libalpm.mo to /usr/share/locale/es/LC_MESSAGES
+Installing lib/libalpm/po/es_419/LC_MESSAGES/libalpm.mo to /usr/share/locale/es_419/LC_MESSAGES
+Installing lib/libalpm/po/eu/LC_MESSAGES/libalpm.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing lib/libalpm/po/eu_ES/LC_MESSAGES/libalpm.mo to /usr/share/locale/eu_ES/LC_MESSAGES
+Installing lib/libalpm/po/fi/LC_MESSAGES/libalpm.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing lib/libalpm/po/fr/LC_MESSAGES/libalpm.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing lib/libalpm/po/gl/LC_MESSAGES/libalpm.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing lib/libalpm/po/hi/LC_MESSAGES/libalpm.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing lib/libalpm/po/hr/LC_MESSAGES/libalpm.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing lib/libalpm/po/hu/LC_MESSAGES/libalpm.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing lib/libalpm/po/id/LC_MESSAGES/libalpm.mo to /usr/share/locale/id/LC_MESSAGES
+Installing lib/libalpm/po/it/LC_MESSAGES/libalpm.mo to /usr/share/locale/it/LC_MESSAGES
+Installing lib/libalpm/po/ja/LC_MESSAGES/libalpm.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing lib/libalpm/po/kk/LC_MESSAGES/libalpm.mo to /usr/share/locale/kk/LC_MESSAGES
+Installing lib/libalpm/po/ko/LC_MESSAGES/libalpm.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing lib/libalpm/po/lt/LC_MESSAGES/libalpm.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing lib/libalpm/po/nb/LC_MESSAGES/libalpm.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing lib/libalpm/po/nl/LC_MESSAGES/libalpm.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing lib/libalpm/po/pl/LC_MESSAGES/libalpm.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing lib/libalpm/po/pt/LC_MESSAGES/libalpm.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing lib/libalpm/po/pt_BR/LC_MESSAGES/libalpm.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing lib/libalpm/po/ro/LC_MESSAGES/libalpm.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing lib/libalpm/po/ru/LC_MESSAGES/libalpm.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing lib/libalpm/po/sk/LC_MESSAGES/libalpm.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing lib/libalpm/po/sl/LC_MESSAGES/libalpm.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing lib/libalpm/po/sr/LC_MESSAGES/libalpm.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing lib/libalpm/po/sr@latin/LC_MESSAGES/libalpm.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing lib/libalpm/po/sv/LC_MESSAGES/libalpm.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing lib/libalpm/po/tr/LC_MESSAGES/libalpm.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing lib/libalpm/po/uk/LC_MESSAGES/libalpm.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing lib/libalpm/po/zh_CN/LC_MESSAGES/libalpm.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing lib/libalpm/po/zh_TW/LC_MESSAGES/libalpm.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing src/pacman/po/ar/LC_MESSAGES/pacman.mo to /usr/share/locale/ar/LC_MESSAGES
+Installing src/pacman/po/ast/LC_MESSAGES/pacman.mo to /usr/share/locale/ast/LC_MESSAGES
+Installing src/pacman/po/az_AZ/LC_MESSAGES/pacman.mo to /usr/share/locale/az_AZ/LC_MESSAGES
+Installing src/pacman/po/bg/LC_MESSAGES/pacman.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing src/pacman/po/br/LC_MESSAGES/pacman.mo to /usr/share/locale/br/LC_MESSAGES
+Installing src/pacman/po/ca/LC_MESSAGES/pacman.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing src/pacman/po/cs/LC_MESSAGES/pacman.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing src/pacman/po/da/LC_MESSAGES/pacman.mo to /usr/share/locale/da/LC_MESSAGES
+Installing src/pacman/po/de/LC_MESSAGES/pacman.mo to /usr/share/locale/de/LC_MESSAGES
+Installing src/pacman/po/el/LC_MESSAGES/pacman.mo to /usr/share/locale/el/LC_MESSAGES
+Installing src/pacman/po/en_GB/LC_MESSAGES/pacman.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing src/pacman/po/eo/LC_MESSAGES/pacman.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing src/pacman/po/es/LC_MESSAGES/pacman.mo to /usr/share/locale/es/LC_MESSAGES
+Installing src/pacman/po/es_419/LC_MESSAGES/pacman.mo to /usr/share/locale/es_419/LC_MESSAGES
+Installing src/pacman/po/eu/LC_MESSAGES/pacman.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing src/pacman/po/eu_ES/LC_MESSAGES/pacman.mo to /usr/share/locale/eu_ES/LC_MESSAGES
+Installing src/pacman/po/fi/LC_MESSAGES/pacman.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing src/pacman/po/fr/LC_MESSAGES/pacman.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing src/pacman/po/gl/LC_MESSAGES/pacman.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing src/pacman/po/hi/LC_MESSAGES/pacman.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing src/pacman/po/hr/LC_MESSAGES/pacman.mo to /usr/share/locale/hr/LC_MESSAGES
+Installing src/pacman/po/hu/LC_MESSAGES/pacman.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing src/pacman/po/id/LC_MESSAGES/pacman.mo to /usr/share/locale/id/LC_MESSAGES
+Installing src/pacman/po/it/LC_MESSAGES/pacman.mo to /usr/share/locale/it/LC_MESSAGES
+Installing src/pacman/po/ja/LC_MESSAGES/pacman.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing src/pacman/po/ko/LC_MESSAGES/pacman.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing src/pacman/po/lt/LC_MESSAGES/pacman.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing src/pacman/po/nb/LC_MESSAGES/pacman.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing src/pacman/po/nl/LC_MESSAGES/pacman.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing src/pacman/po/pl/LC_MESSAGES/pacman.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing src/pacman/po/pt/LC_MESSAGES/pacman.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing src/pacman/po/pt_BR/LC_MESSAGES/pacman.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing src/pacman/po/ro/LC_MESSAGES/pacman.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing src/pacman/po/ru/LC_MESSAGES/pacman.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing src/pacman/po/sk/LC_MESSAGES/pacman.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing src/pacman/po/sl/LC_MESSAGES/pacman.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing src/pacman/po/sr/LC_MESSAGES/pacman.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing src/pacman/po/sr@latin/LC_MESSAGES/pacman.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing src/pacman/po/sv/LC_MESSAGES/pacman.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing src/pacman/po/tr/LC_MESSAGES/pacman.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing src/pacman/po/uk/LC_MESSAGES/pacman.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing src/pacman/po/zh_CN/LC_MESSAGES/pacman.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing src/pacman/po/zh_TW/LC_MESSAGES/pacman.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing scripts/po/az_AZ/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/az_AZ/LC_MESSAGES
+Installing scripts/po/bg/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/bg/LC_MESSAGES
+Installing scripts/po/br/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/br/LC_MESSAGES
+Installing scripts/po/ca/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/ca/LC_MESSAGES
+Installing scripts/po/cs/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/cs/LC_MESSAGES
+Installing scripts/po/da/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/da/LC_MESSAGES
+Installing scripts/po/de/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/de/LC_MESSAGES
+'/usr/bin/repo-remove' -> 'repo-add'
+'/usr/bin/repo-elephant' -> 'repo-add'
+'/usr/share/bash-completion/completions/pacman-key' -> 'pacman'
+'/usr/share/bash-completion/completions/makepkg' -> 'pacman'
+Installing scripts/po/el/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/el/LC_MESSAGES
+Installing scripts/po/en_GB/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/en_GB/LC_MESSAGES
+Installing scripts/po/eo/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/eo/LC_MESSAGES
+Installing scripts/po/es/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/es/LC_MESSAGES
+Installing scripts/po/es_419/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/es_419/LC_MESSAGES
+Installing scripts/po/eu/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/eu/LC_MESSAGES
+Installing scripts/po/eu_ES/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/eu_ES/LC_MESSAGES
+Installing scripts/po/fi/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/fi/LC_MESSAGES
+Installing scripts/po/fr/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/fr/LC_MESSAGES
+Installing scripts/po/gl/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/gl/LC_MESSAGES
+Installing scripts/po/hi/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/hi/LC_MESSAGES
+Installing scripts/po/hu/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/hu/LC_MESSAGES
+Installing scripts/po/id/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/id/LC_MESSAGES
+Installing scripts/po/it/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/it/LC_MESSAGES
+Installing scripts/po/ja/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/ja/LC_MESSAGES
+Installing scripts/po/ko/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/ko/LC_MESSAGES
+Installing scripts/po/lt/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/lt/LC_MESSAGES
+Installing scripts/po/nb/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/nb/LC_MESSAGES
+Installing scripts/po/nl/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/nl/LC_MESSAGES
+Installing scripts/po/pl/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/pl/LC_MESSAGES
+Installing scripts/po/pt/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/pt/LC_MESSAGES
+Installing scripts/po/pt_BR/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/pt_BR/LC_MESSAGES
+Installing scripts/po/ro/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/ro/LC_MESSAGES
+Installing scripts/po/ru/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/ru/LC_MESSAGES
+Installing scripts/po/sk/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/sk/LC_MESSAGES
+Installing scripts/po/sl/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/sl/LC_MESSAGES
+Installing scripts/po/sr/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/sr/LC_MESSAGES
+Installing scripts/po/sr@latin/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/sr@latin/LC_MESSAGES
+Installing scripts/po/sv/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/sv/LC_MESSAGES
+Installing scripts/po/tr/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/tr/LC_MESSAGES
+Installing scripts/po/uk/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/uk/LC_MESSAGES
+Installing scripts/po/zh_CN/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/zh_CN/LC_MESSAGES
+Installing scripts/po/zh_TW/LC_MESSAGES/pacman-scripts.mo to /usr/share/locale/zh_TW/LC_MESSAGES
+Installing libalpm.so.14.0.0 to /usr/lib
+Installing pacman to /usr/bin
+Installing pacman-conf to /usr/bin
+Installing testpkg to /usr/bin
+Installing vercmp to /usr/bin
+Installing /sources/pacman-6.1.0/lib/libalpm/alpm.h to /usr/include
+Installing /sources/pacman-6.1.0/lib/libalpm/alpm_list.h to /usr/include
+Installing /sources/pacman-6.1.0/pacman-build/scripts/libmakepkg.pc to /usr/share/pkgconfig
+Installing /sources/pacman-6.1.0/pacman-build/meson-private/libalpm.pc to /usr/lib/pkgconfig
+Installing /sources/pacman-6.1.0/pacman-build/makepkg.conf to /etc
+Installing /sources/pacman-6.1.0/pacman-build/fortran.conf to /etc/makepkg.conf.d
+Installing /sources/pacman-6.1.0/pacman-build/rust.conf to /etc/makepkg.conf.d
+Installing /sources/pacman-6.1.0/pacman-build/pacman.conf to /etc
+Installing /sources/pacman-6.1.0/proto/PKGBUILD-split.proto to /usr/share/pacman
+Installing /sources/pacman-6.1.0/proto/PKGBUILD-vcs.proto to /usr/share/pacman
+Installing /sources/pacman-6.1.0/proto/PKGBUILD.proto to /usr/share/pacman
+Installing /sources/pacman-6.1.0/proto/proto.install to /usr/share/pacman
+Installing symlink pointing to libalpm.so.14.0.0 to /usr/lib/libalpm.so.14
+Installing symlink pointing to libalpm.so.14 to /usr/lib/libalpm.so
+Running custom install script '/bin/sh /sources/pacman-6.1.0/build-aux/meson-make-symlink.sh repo-add /usr/bin/repo-remove'
+Running custom install script '/bin/sh /sources/pacman-6.1.0/build-aux/meson-make-symlink.sh repo-add /usr/bin/repo-elephant'
+Running custom install script '/bin/sh /sources/pacman-6.1.0/build-aux/meson-make-symlink.sh pacman /usr/share/bash-completion/completions/pacman-key'
+Running custom install script '/bin/sh /sources/pacman-6.1.0/build-aux/meson-make-symlink.sh pacman /usr/share/bash-completion/completions/makepkg'
+Running custom install script '/usr/bin/sh -c mkdir -p "$DESTDIR//var/lib/pacman/"'
+Running custom install script '/usr/bin/sh -c mkdir -p "$DESTDIR//var/cache/pacman/pkg/"'
+Running custom install script '/usr/bin/sh -c mkdir -p "$DESTDIR//usr/share/makepkg-template/"'
+Running custom install script '/usr/bin/sh -c mkdir -p "$DESTDIR//usr/share/libalpm/hooks/"'
+
+
+CFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 17:21:39 UTC 2024
+
+Totalseconds: 12
+
+KB: 1679976	/
+

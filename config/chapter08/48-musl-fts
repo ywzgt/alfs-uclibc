@@ -1,0 +1,15 @@
+#!/bin/bash
+# https://git.alpinelinux.org/aports/tree/main/musl-fts/APKBUILD
+# https://github.com/void-linux/void-packages/blob/master/srcpkgs/musl-fts/template
+# https://github.com/void-linux/musl-fts/tags
+
+SRC="musl-fts"
+PKG="$SRC"
+
+./bootstrap.sh
+./configure --prefix=/usr
+
+make
+make install
+install -Dvm644 musl-fts.pc -t /usr/lib/pkgconfig/
+rm -fv /usr/lib/libfts.la

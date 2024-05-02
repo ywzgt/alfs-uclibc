@@ -1,0 +1,1353 @@
+Thu May  2 17:16:48 UTC 2024
+KB: 1599816	/
+
+configure: WARNING: unrecognized options: --disable-static
+configure: configuring for GNU Wget 1.24.5
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/socket.h... yes
+checking for arpa/inet.h... yes
+checking for features.h... yes
+checking for uchar.h... yes
+checking for sys/param.h... yes
+checking for dirent.h... yes
+checking for error.h... yes
+checking for fnmatch.h... yes
+checking for stdio_ext.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for getopt.h... yes
+checking for sys/cdefs.h... yes
+checking for termios.h... yes
+checking for sys/time.h... yes
+checking for threads.h... no
+checking for iconv.h... yes
+checking for limits.h... yes
+checking for crtdefs.h... no
+checking for wctype.h... yes
+checking for langinfo.h... yes
+checking for xlocale.h... yes
+checking for sys/mman.h... yes
+checking for sys/select.h... yes
+checking for malloc.h... yes
+checking for spawn.h... yes
+checking for stdbool.h... yes
+checking for stdckdint.h... no
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/random.h... yes
+checking for sys/uio.h... yes
+checking for sys/wait.h... yes
+checking for utime.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking whether the compiler is clang... (cached) no
+checking for compiler option needed when checking for declarations... (cached) none
+checking dependency style of gcc... (cached) gcc3
+checking build system type... i686-pc-linux-uclibc
+checking host system type... i686-pc-linux-uclibc
+checking whether make supports nested variables... (cached) yes
+checking for library containing dlopen... none required
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... ar
+checking for ranlib... ranlib
+checking for gcc option to enable large file support... -D_FILE_OFFSET_BITS=64
+checking for a Python interpreter with version >= 3.0... python
+checking for python... /usr/bin/python
+checking for python version... 3.12
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.12/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.12/site-packages
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... yes
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib
+od: cannot skip past end of combined input
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... no
+checking for iconv... yes
+checking for working iconv... yes
+checking for GNU gettext in libintl... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... external libintl
+checking how to link with libintl... /usr/lib/libintl.so
+checking for ranlib... (cached) ranlib
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for working volatile... yes
+checking for gcc option to enable large file support... (cached) -D_FILE_OFFSET_BITS=64
+checking size of off_t... 8
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99 or later... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for termios.h... (cached) yes
+checking for sys/ioctl.h... (cached) yes
+checking for sys/select.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for pwd.h... yes
+checking for wchar.h... (cached) yes
+checking for dlfcn.h... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether h_errno is declared... yes
+checking size of long... 4
+checking for size_t... yes
+checking for pid_t... yes
+checking for uint32_t... yes
+checking for uintptr_t... yes
+checking for intptr_t... yes
+checking for int64_t... yes
+checking for sig_atomic_t... yes
+checking for iconv... (cached) yes
+checking for working iconv... (cached) yes
+checking whether iconv is compatible with its POSIX signature... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking for C/C++ restrict keyword... __restrict__
+checking whether <sys/socket.h> is self-contained... yes
+checking for shutdown... yes
+checking whether <sys/socket.h> defines the SHUT_* macros... yes
+checking for struct sockaddr_storage... yes
+checking for sa_family_t... yes
+checking for struct sockaddr_storage.ss_family... yes
+checking for lstat... yes
+checking for btowc... yes
+checking for mbrtowc... yes
+checking for mbsinit... yes
+checking for canonicalize_file_name... yes
+checking for realpath... yes
+checking for _set_invalid_parameter_handler... no
+checking for fchdir... yes
+checking for fcntl... yes
+checking for symlink... yes
+checking for fdopendir... yes
+checking for flock... yes
+checking for fnmatch... yes
+checking for mbsrtowcs... yes
+checking for fpurge... no
+checking for fstatat... yes
+checking for getdtablesize... yes
+checking for getpass... yes
+checking for getexecname... no
+checking for gettimeofday... yes
+checking for isblank... yes
+checking for iswcntrl... yes
+checking for link... yes
+checking for mprotect... yes
+checking for mkstemp... yes
+checking for openat... yes
+checking for pipe... yes
+checking for posix_spawn_file_actions_addchdir... no
+checking for pselect... yes
+checking for pthread_sigmask... yes
+checking for readlink... yes
+checking for iswctype... yes
+checking for secure_getenv... yes
+checking for getuid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getegid... yes
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for siginterrupt... yes
+checking for snprintf... yes
+checking for __xpg_strerror_r... yes
+checking for strndup... yes
+checking for strptime... yes
+checking for localtime_r... yes
+checking for vasnprintf... no
+checking for wcrtomb... yes
+checking for wcwidth... yes
+checking for getpagesize... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking for nl_langinfo and CODESET... yes
+checking for a traditional french locale... none
+checking whether char8_t is correctly defined... no
+checking whether char16_t is correctly defined... yes
+checking whether char32_t is correctly defined... yes
+checking for bit size of wchar_t... 32
+checking for mbstate_t... yes
+checking for a traditional japanese locale... none
+checking for a french Unicode locale... none
+checking for a transitional chinese locale... none
+checking whether mbrtowc handles incomplete characters... guessing yes
+checking whether mbrtowc works as well as mbtowc... guessing yes
+checking whether mbrtoc32 is declared... no
+checking whether malloc is ptrdiff_t safe... no
+checking whether malloc, realloc, calloc set errno on failure... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether // is distinct from /... no
+checking whether realpath works... no
+checking for faccessat... yes
+checking for getcwd... yes
+checking whether linux/if_alg.h has struct sockaddr_alg.... yes
+checking whether byte ordering is bigendian... no
+checking if environ is properly declared... yes
+checking for complete errno.h... yes
+checking for error... yes
+checking whether error_at_line is declared... yes
+checking for error_at_line... yes
+checking for working error function... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking whether ctype.h defines __header_inline... no
+checking for sig_atomic_t... (cached) yes
+checking whether fchdir is declared... yes
+checking for working fcntl.h... yes
+checking for mode_t... yes
+checking for eaccess... yes
+checking whether fopen recognizes a trailing slash... yes
+checking whether fflush works on input streams... no
+checking whether stdin defaults to large file offsets... yes
+checking whether fseeko is declared... yes
+checking for fseeko... yes
+checking whether fflush works on input streams... (cached) no
+checking whether stat file-mode macros are broken... no
+checking for nlink_t... yes
+checking whether ftello is declared... yes
+checking whether ungetc works on arbitrary bytes... yes
+checking for ftello... yes
+checking whether ftello works... yes
+checking for library containing gethostbyname... none required
+checking for gethostbyname... yes
+checking for library containing getservbyname... none required
+checking for getservbyname... yes
+checking for library containing inet_ntop... none required
+checking whether inet_ntop is declared... yes
+checking for IPv4 sockets... yes
+checking for IPv6 sockets... yes
+checking whether getcwd (NULL, 0) allocates memory for result... yes
+checking for getcwd with POSIX signature... yes
+checking whether getcwd is declared... yes
+checking whether getdelim is declared... yes
+checking whether getdtablesize is declared... yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking type of array argument to getgroups... gid_t
+checking whether getline is declared... yes
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... no
+checking whether fflush_unlocked is declared... yes
+checking whether flockfile is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether funlockfile is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether timespec_get is declared... yes
+checking for timespec_get... yes
+checking for struct timeval... yes
+checking for wide-enough struct timeval.tv_sec member... yes
+checking for pthread.h... yes
+checking for pthread_kill in -lpthread... yes
+checking whether POSIX threads API is available... yes
+checking whether setlocale (LC_ALL, NULL) is multithread-safe... guessing no
+checking whether setlocale (category, NULL) is multithread-safe... guessing no
+checking whether imported symbols can be declared weak... yes
+checking whether limits.h has WORD_BIT, BOOL_WIDTH etc.... no
+checking for wint_t... yes
+checking whether wint_t is large enough... yes
+checking whether the compiler produces multi-arch binaries... no
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h works without ISO C predefines... yes
+checking whether stdint.h has UINTMAX_WIDTH etc.... no
+checking whether INT32_MAX < INTMAX_MAX... yes
+checking whether INT64_MAX == LONG_MAX... no
+checking whether UINT32_MAX < UINTMAX_MAX... yes
+checking whether UINT64_MAX == ULONG_MAX... no
+checking whether iswcntrl works... yes
+checking for towlower... yes
+checking for wctype_t... yes
+checking for wctrans_t... yes
+checking whether wctype supports the "blank" and "punct" character classes... yes
+checking whether langinfo.h defines CODESET... yes
+checking whether langinfo.h defines T_FMT_AMPM... yes
+checking whether langinfo.h defines ALTMON_1... no
+checking whether langinfo.h defines ERA... yes
+checking whether langinfo.h defines YESEXPR... yes
+checking whether included libunistring is requested... no
+checking for libunistring... no, consider installing GNU libunistring
+checking for wchar_t... yes
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking for unreachable... no
+checking whether locale.h defines locale_t... yes
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether struct lconv is properly defined... yes
+checking whether imported symbols can be declared weak... (cached) yes
+checking for multithread API to use... posix
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking whether malloc (0) returns nonnull... yes
+checking for mmap... yes
+checking for MAP_ANONYMOUS... yes
+checking whether memchr works... yes
+checking whether memrchr is declared... yes
+checking whether <limits.h> defines MIN and MAX... no
+checking whether <sys/param.h> defines MIN and MAX... yes
+checking whether time_t is signed... yes
+checking whether alarm is declared... yes
+checking for working mktime... no
+checking for O_CLOEXEC... yes
+checking for promoted mode_t type... mode_t
+checking for library containing posix_spawn... none required
+checking for posix_spawn... yes
+checking whether posix_spawn is declared... yes
+checking for posix_spawn_file_actions_addchdir_np... no
+checking whether <sys/select.h> is self-contained... yes
+checking for sigset_t... yes
+checking for SIGPIPE... yes
+checking for sched.h... yes
+checking for struct sched_param... yes
+checking for library containing setsockopt... none needed
+checking for volatile sig_atomic_t... yes
+checking for sighandler_t... yes
+checking for egrep... /usr/bin/grep -E
+checking whether C symbols are prefixed with underscore at the linker level... no
+checking whether snprintf returns a byte count as in C99... yes
+checking whether printf supports POSIX/XSI format strings with positions... yes
+checking whether snprintf is declared... yes
+checking for posix_spawnattr_t... yes
+checking for posix_spawn_file_actions_t... yes
+checking whether fcloseall is declared... yes
+checking whether getw is declared... yes
+checking whether putw is declared... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether ecvt is declared... no
+checking whether fcvt is declared... no
+checking whether gcvt is declared... yes
+checking whether MB_CUR_MAX is correct... guessing yes
+checking whether strdup is declared... yes
+checking whether strerror(0) succeeds... yes
+checking for strerror_r... yes
+checking for strerror_r with POSIX signature... no
+checking whether __xpg_strerror_r works... yes
+checking whether strndup is declared... yes
+checking whether strnlen is declared... yes
+checking for struct tm.tm_gmtoff... yes
+checking whether strtok_r is declared... yes
+checking whether <sys/ioctl.h> declares ioctl... yes
+checking for struct timespec in <time.h>... yes
+checking for TIME_UTC in <time.h>... yes
+checking whether execvpe is declared... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking whether fputc_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getc_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking whether the utimes function works... no
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for intmax_t... yes
+checking whether snprintf truncates the result as in C99... yes
+checking where to find the exponent in a 'double'... word 1 bit 20
+checking for wcslen... yes
+checking for snprintf... (cached) yes
+checking for strnlen... yes
+checking for wcrtomb... (cached) yes
+checking whether _snprintf is declared... no
+checking whether vsnprintf is declared... yes
+checking whether wcsdup is declared... yes
+checking for C compiler option to allow warnings... -Wno-error
+checking whether access honors trailing slash... yes
+checking for alignas and alignof... yes, <stdalign.h> macros
+checking for alloca as a compiler built-in... yes
+checking for static_assert... yes, an <assert.h> macro
+checking whether btowc(0) is correct... yes
+checking whether btowc(EOF) is correct... guessing yes
+checking whether btowc is consistent with mbrtowc in the C locale... no
+checking for __builtin_expect... yes
+checking for byteswap.h... yes
+checking for faccessat... (cached) yes
+checking whether this system supports file names of any length... no
+checking for library containing clock_gettime... none required
+checking for clock_getres... yes
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking for closedir... yes
+checking for d_ino member in directory struct... yes
+checking for dirfd... yes
+checking whether dirfd is declared... yes
+checking whether dirfd is a macro... no
+checking whether // is distinct from /... (cached) no
+checking whether dup works... yes
+checking whether dup2 works... yes
+checking whether fcntl handles F_DUPFD correctly... yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... needs runtime check
+checking whether fdopendir is declared... yes
+checking whether fdopendir works... yes
+checking whether fflush works on input streams... (cached) no
+checking for mempcpy... yes
+checking for flexible array member... yes
+checking whether conversion from 'int' to 'long double' works... yes
+checking for working GNU fnmatch... no
+checking whether fopen supports the mode character 'x'... yes
+checking whether fopen supports the mode character 'e'... no
+checking for __fpurge... yes
+checking whether fpurge is declared... no
+checking for __freading... yes
+checking whether free is known to preserve errno... no
+checking for fseeko... (cached) yes
+checking whether fflush works on input streams... (cached) no
+checking for _fseeki64... no
+checking whether fstatat (..., 0) works... yes
+checking for ftello... (cached) yes
+checking whether ftello works... (cached) yes
+checking for futimens... yes
+checking whether futimens works... no
+checking for library containing getaddrinfo... none required
+checking for getaddrinfo... yes
+checking whether gai_strerror is declared... yes
+checking whether gai_strerrorA is declared... no
+checking for gai_strerror with POSIX signature... yes
+checking for struct sockaddr.sa_len... no
+checking whether getaddrinfo is declared... yes
+checking whether freeaddrinfo is declared... yes
+checking whether getnameinfo is declared... yes
+checking for struct addrinfo... yes
+checking whether getcwd handles long file names properly... no, but it is partly working
+checking for getpagesize... yes
+checking whether getcwd succeeds when 4k < cwd_length < 16k... yes
+checking for getdelim... yes
+checking for working getdelim function... yes
+checking whether getdtablesize works... yes
+checking for getgroups... yes
+checking for working getgroups... yes
+checking whether getgroups handles negative values... yes
+checking for getline... yes
+checking for working getline function... yes
+checking for getpass without length limitations... no
+checking for __fsetlocking... yes
+checking whether __fsetlocking is declared... yes
+checking for tcgetattr... yes
+checking for tcsetattr... yes
+checking for getprogname... no
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... yes
+checking whether __argv is declared... no
+checking for getrandom... yes
+checking whether getrandom is compatible with its GNU+BSD signature... yes
+checking for gettimeofday with POSIX signature... almost
+checking for group_member... no
+checking for library containing gethostbyname... (cached) none required
+checking for gethostbyname... (cached) yes
+checking for library containing inet_ntop... (cached) none required
+checking whether inet_ntop is declared... (cached) yes
+checking whether the compiler generally respects inline... yes
+checking for ioctl... yes
+checking for ioctl with POSIX signature... no
+checking for iswblank... yes
+checking whether iswblank is declared... yes
+checking whether iswdigit is ISO C compliant... guessing yes
+checking whether iswpunct is consistent with ispunct... yes
+checking whether iswxdigit is ISO C compliant... guessing yes
+checking whether the compiler supports the __inline keyword... yes
+checking whether to use the included libunistring... yes
+checking whether link obeys POSIX... yes
+checking whether localeconv works... no
+checking for struct lconv.decimal_point... yes
+checking for struct lconv.int_p_cs_precedes... yes
+checking for pthread_rwlock_t... yes
+checking whether pthread_rwlock_rdlock prefers a writer to a reader... no
+checking whether lseek detects pipes... yes
+checking whether SEEK_DATA works but is incompatible with GNU... no
+checking whether mbrtowc handles a NULL pwc argument... guessing yes
+checking whether mbrtowc handles a NULL string argument... guessing yes
+checking whether mbrtowc has a correct return value... guessing yes
+checking whether mbrtowc returns 0 when parsing a NUL character... guessing yes
+checking whether mbrtowc stores incomplete characters... guessing no
+checking whether mbrtowc works on empty input... no
+checking whether the C locale is free of encoding errors... no
+checking whether mbsrtowcs works... guessing yes
+checking whether the C locale is free of encoding errors... (cached) no
+checking for mbtowc... yes
+checking for mempcpy... (cached) yes
+checking for memrchr... yes
+checking whether mkdir handles trailing slash... yes
+checking whether mkdir handles trailing dot... yes
+checking for mkostemp... yes
+checking for working mkstemp... yes
+checking for __mktime_internal... no
+checking for library containing nanosleep... none required
+checking for working nanosleep... no (mishandles large arguments)
+checking whether <netinet/in.h> is self-contained... yes
+checking for nl_langinfo... yes
+checking whether YESEXPR works... yes
+checking whether open recognizes a trailing slash... yes
+checking for opendir... yes
+checking for pipe2... yes
+checking for paths.h... yes
+checking for confstr... yes
+checking for sched_setparam... yes
+checking for sched_setscheduler... yes
+checking for setegid... yes
+checking for seteuid... yes
+checking for vfork... yes
+checking for posix_spawn_file_actions_addchdir_np... (cached) no
+checking whether signature of pselect conforms to POSIX... yes
+checking whether pselect detects invalid fds... yes
+checking whether pthread_sigmask is a macro... no
+checking whether pthread_sigmask works without -lpthread... yes
+checking whether pthread_sigmask returns error numbers... yes
+checking whether pthread_sigmask unblocks signals correctly... guessing yes
+checking for raise... yes
+checking for sigprocmask... yes
+checking for rawmemchr... yes
+checking for readdir... yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... yes
+checking whether readlink truncates results correctly... yes
+checking whether realloc (0, 0) returns nonnull... yes
+checking for reallocarray... yes
+checking for working re_compile_pattern... no
+checking for libintl.h... yes
+checking whether isblank is declared... yes
+checking whether rename honors trailing slash on destination... yes
+checking whether rename honors trailing slash on source... yes
+checking whether rename manages hard links correctly... yes
+checking whether rename manages existing destinations correctly... yes
+checking for rewinddir... yes
+checking whether rmdir works... yes
+checking whether select supports a 0 argument... yes
+checking whether select detects invalid fds... yes
+checking for library containing getservbyname... (cached) none required
+checking for getservbyname... (cached) yes
+checking whether setlocale (LC_ALL, NULL) is multithread-safe... (cached) guessing no
+checking whether setlocale (category, NULL) is multithread-safe... (cached) guessing no
+checking whether imported symbols can be declared weak... (cached) yes
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for struct sigaction.sa_sigaction... yes
+checking for sigprocmask... (cached) yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for snprintf... (cached) yes
+checking whether snprintf respects a size of 1... yes
+checking for socklen_t... yes
+checking for ssize_t... yes
+checking whether stat handles trailing slashes on files... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for bool, true, false... no
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking whether strncasecmp is declared... yes
+checking for strchrnul... yes
+checking whether strchrnul works... yes
+checking for working strerror function... yes
+checking for catgets... no
+checking for working strndup... yes
+checking for working strnlen... yes
+checking for strpbrk... yes
+checking for strtok_r... yes
+checking whether strtok_r works... yes
+checking for strtol... yes
+checking whether strtol works... no
+checking for strtoll... yes
+checking whether strtoll works... no
+checking whether symlink handles trailing slash correctly... yes
+checking for sys/single_threaded.h... no
+checking whether localtime_r is declared... yes
+checking whether localtime_r is compatible with its POSIX signature... yes
+checking for timegm... yes
+checking whether unlink honors trailing slashes... yes
+checking whether unlink of a parent directory fails as it should... guessing yes
+checking for utime... yes
+checking whether utime handles trailing slashes on files... yes
+checking for futimes... no
+checking for futimesat... yes
+checking for lutimes... yes
+checking for futimens... (cached) yes
+checking for utimensat... yes
+checking for variable-length arrays... yes
+checking for ptrdiff_t... yes
+checking for vasprintf... yes
+checking for vsnprintf... yes
+checking whether snprintf respects a size of 1... (cached) yes
+checking for waitid... yes
+checking whether wcrtomb works in the C locale... yes
+checking whether wcrtomb return value is correct... guessing yes
+checking whether wcwidth is declared... yes
+checking whether wcwidth works reasonably in UTF-8 locales... yes
+checking for wmemchr... yes
+checking for wmempcpy... yes
+checking for stdint.h... (cached) yes
+checking whether to build with code coverage support... no
+checking for working mmap... yes
+checking for declarations of fseeko and ftello... yes
+checking for strptime... (cached) yes
+checking for timegm... (cached) yes
+checking for vsnprintf... (cached) yes
+checking for vasprintf... (cached) yes
+checking for drand48... yes
+checking for pathconf... yes
+checking for strtoll... (cached) yes
+checking for usleep... yes
+checking for ftello... yes
+checking for sigblock... no
+checking for sigsetjmp... no
+checking for memrchr... (cached) yes
+checking for wcwidth... (cached) yes
+checking for mbtowc... (cached) yes
+checking for sleep... yes
+checking for symlink... (cached) yes
+checking for utime... (cached) yes
+checking for strlcpy... yes
+checking for random... yes
+checking for fmemopen... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libpsl... no
+checking for library containing psl_builtin... no
+configure: WARNING: *** libpsl was not found. Fallback to builtin cookie checking.
+checking for zlib... yes
+checking for openssl... yes
+configure: compiling in support for SSL via OpenSSL
+checking for RAND_egd... no
+checking for INET6 protocol support... yes
+checking for struct sockaddr_in6... yes
+checking for struct sockaddr_storage... (cached) yes
+checking for struct sockaddr_in6.sin6_scope_id... yes
+configure: Enabling support for IPv6.
+checking for makeinfo... ${SHELL} '/sources/wget-1.24.5/build-aux/missing' makeinfo
+checking for perl5... no
+checking for perl... /usr/bin/perl
+checking for pod2man... /usr/bin/pod2man
+checking for libidn2 >= 0.14.0... no
+checking for library containing idn2_lookup_u8... no
+configure: WARNING: *** LIBIDN2 was not found. You will not be able to use IDN2008 support
+checking for uuid.h... no
+checking for uuid/uuid.h... yes
+checking for library containing uuid_generate... -luuid
+checking for libpcre2-8... yes
+checking for gpgrt-config... no
+./configure: line 70146: --version: command not found
+checking for gpgme-config... no
+checking for libmetalink... no
+checking for fsetxattr... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating doc/Makefile
+config.status: creating util/Makefile
+config.status: creating po/Makefile.in
+config.status: creating gnulib_po/Makefile.in
+config.status: creating tests/Makefile
+config.status: creating fuzz/Makefile
+config.status: creating lib/Makefile
+config.status: creating testenv/Makefile
+config.status: creating tests/certs/interca.conf
+config.status: creating tests/certs/rootca.conf
+config.status: creating src/config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: creating gnulib_po/POTFILES
+config.status: creating gnulib_po/Makefile
+configure: WARNING: unrecognized options: --disable-static
+configure: Summary of build options:
+
+  Version:           1.24.5
+  Host OS:           linux-uclibc
+  Install prefix:    /usr
+  Compiler:          gcc
+  CFlags:              -DHAVE_LIBSSL  -DNDEBUG -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  
+  LDFlags:           -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+  Libs:              -lpcre2-8 -luuid -lssl -lcrypto -lz 
+  SSL:               openssl
+  Zlib:              yes
+  PSL:               no
+  PCRE:              yes, via libpcre2
+  Digest:            yes
+  NTLM:              yes
+  OPIE:              yes
+  POSIX xattr:       yes
+  Debugging:         yes
+  Assertions:        no
+  Valgrind:          Valgrind testing not enabled
+  Metalink:          no
+  Resolver:          libc, --bind-dns-address and --dns-servers not available
+  GPGME:             no
+  IRI:               no
+  Fuzzing build:     no, 
+  libproxy:          no
+
+make  all-recursive
+make[1]: Entering directory '/sources/wget-1.24.5'
+Making all in lib
+make[2]: Entering directory '/sources/wget-1.24.5/lib'
+  GEN      alloca.h
+  GEN      arpa/inet.h
+  GEN      ctype.h
+  GEN      dirent.h
+  GEN      error.h
+  GEN      fcntl.h
+  GEN      fnmatch.h
+  GEN      getopt.h
+  GEN      getopt-cdefs.h
+  GEN      malloc/dynarray.gl.h
+  GEN      malloc/dynarray-skeleton.gl.h
+  GEN      malloc/scratch_buffer.gl.h
+  GEN      inttypes.h
+  GEN      langinfo.h
+  GEN      limits.h
+  GEN      locale.h
+  GEN      netdb.h
+  GEN      sched.h
+  GEN      signal.h
+  GEN      spawn.h
+  GEN      stdckdint.h
+  GEN      stddef.h
+  GEN      stdint.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      strings.h
+  GEN      sys/file.h
+  GEN      sys/ioctl.h
+  GEN      sys/random.h
+  GEN      sys/select.h
+  GEN      sys/socket.h
+  GEN      sys/stat.h
+  GEN      sys/time.h
+  GEN      sys/types.h
+  GEN      sys/uio.h
+  GEN      sys/wait.h
+  GEN      time.h
+  GEN      uchar.h
+  GEN      unicase.h
+  GEN      unicase/special-casing.h
+  GEN      unictype.h
+  GEN      uninorm.h
+  GEN      unistd.h
+  GEN      unistr.h
+  GEN      unitypes.h
+  GEN      uniwidth.h
+  GEN      utime.h
+  GEN      wchar.h
+  GEN      wctype.h
+make  all-am
+make[3]: Entering directory '/sources/wget-1.24.5/lib'
+  CC       libgnu_a-openat-proc.o
+  CC       libgnu_a-base32.o
+  CC       libgnu_a-basename-lgpl.o
+  CC       libgnu_a-binary-io.o
+  CC       libgnu_a-bitrotate.o
+  CC       libgnu_a-btoc32.o
+  CC       libgnu_a-btowc.o
+  CC       libgnu_a-c-ctype.o
+  CC       libgnu_a-c-strcasecmp.o
+  CC       libgnu_a-c-strncasecmp.o
+  CC       libgnu_a-c-strcasestr.o
+  CC       libgnu_a-c32_apply_type_test.o
+  CC       libgnu_a-c32_get_type_test.o
+  CC       libgnu_a-c32isalnum.o
+  CC       libgnu_a-c32isalpha.o
+  CC       libgnu_a-c32isblank.o
+  CC       libgnu_a-c32iscntrl.o
+  CC       libgnu_a-c32isdigit.o
+  CC       libgnu_a-c32isgraph.o
+  CC       libgnu_a-c32islower.o
+  CC       libgnu_a-c32isprint.o
+  CC       libgnu_a-c32ispunct.o
+  CC       libgnu_a-c32isspace.o
+  CC       libgnu_a-c32isupper.o
+  CC       libgnu_a-c32isxdigit.o
+  CC       libgnu_a-c32tolower.o
+  CC       libgnu_a-c32width.o
+  CC       libgnu_a-canonicalize.o
+  CC       libgnu_a-canonicalize-lgpl.o
+  CC       libgnu_a-chdir-long.o
+  CC       libgnu_a-cloexec.o
+canonicalize-lgpl.c:73: warning: "__mempcpy" redefined
+   73 | # define __mempcpy mempcpy
+      | 
+In file included from ./string.h:41,
+                 from canonicalize-lgpl.c:33:
+/usr/include/string.h:234: note: this is the location of the previous definition
+  234 | # define __mempcpy(dest, src, n) __builtin_mempcpy(dest, src, n)
+      | 
+  CC       libgnu_a-concat-filename.o
+  CC       libgnu_a-af_alg.o
+  CC       libgnu_a-md2-stream.o
+  CC       libgnu_a-md2.o
+  CC       libgnu_a-md4-stream.o
+  CC       libgnu_a-md4.o
+  CC       libgnu_a-md5-stream.o
+  CC       libgnu_a-md5.o
+  CC       libgnu_a-sha1-stream.o
+  CC       libgnu_a-sha1.o
+  CC       libgnu_a-sha256-stream.o
+  CC       libgnu_a-sha256.o
+  CC       libgnu_a-sha512-stream.o
+  CC       libgnu_a-sha512.o
+  CC       libgnu_a-dirname.o
+  CC       libgnu_a-basename.o
+  CC       libgnu_a-dirname-lgpl.o
+  CC       libgnu_a-stripslash.o
+  CC       libgnu_a-exitfail.o
+  CC       libgnu_a-fatal-signal.o
+  CC       libgnu_a-fcntl.o
+  CC       libgnu_a-fd-hook.o
+  CC       libgnu_a-fd-safer-flag.o
+  CC       libgnu_a-dup-safer-flag.o
+  CC       libgnu_a-fflush.o
+  CC       libgnu_a-file-set.o
+  CC       libgnu_a-filenamecat-lgpl.o
+  CC       libgnu_a-findprog-in.o
+  CC       libgnu_a-fpurge.o
+  CC       libgnu_a-freading.o
+  CC       libgnu_a-free.o
+  CC       libgnu_a-fseek.o
+  CC       libgnu_a-fseeko.o
+  CC       libgnu_a-futimens.o
+  CC       libgnu_a-getcwd.o
+  CC       libgnu_a-getcwd-lgpl.o
+  CC       libgnu_a-getopt.o
+  CC       libgnu_a-getopt1.o
+  CC       libgnu_a-getprogname.o
+  CC       libgnu_a-gettime.o
+  CC       libgnu_a-group-member.o
+  CC       libgnu_a-hard-locale.o
+  CC       libgnu_a-hash.o
+  CC       libgnu_a-hash-pjw.o
+  CC       libgnu_a-hash-triple-simple.o
+  CC       libgnu_a-ialloc.o
+  CC       libgnu_a-ioctl.o
+  CC       libgnu_a-localcharset.o
+  CC       libgnu_a-localeconv.o
+  CC       libgnu_a-malloca.o
+  CC       libgnu_a-mbchar.o
+  CC       libgnu_a-mbiter.o
+  CC       libgnu_a-mbrtoc32.o
+  CC       libgnu_a-mbrtowc.o
+  CC       libgnu_a-mbsrtoc32s.o
+  CC       libgnu_a-mbsrtowcs.o
+  CC       libgnu_a-mbszero.o
+  CC       libgnu_a-nanosleep.o
+  CC       libgnu_a-nl_langinfo.o
+  CC       libgnu_a-openat-die.o
+  CC       libgnu_a-pipe2.o
+  CC       libgnu_a-pipe2-safer.o
+  CC       libgnu_a-spawn.o
+  CC       libgnu_a-spawni.o
+  CC       libgnu_a-spawn_faction_addchdir.o
+  CC       libgnu_a-spawn_faction_addclose.o
+  CC       libgnu_a-spawn_faction_adddup2.o
+  CC       libgnu_a-spawn_faction_addopen.o
+  CC       libgnu_a-spawn_faction_destroy.o
+  CC       libgnu_a-spawn_faction_init.o
+  CC       libgnu_a-spawnattr_destroy.o
+  CC       libgnu_a-spawnattr_init.o
+  CC       libgnu_a-spawnattr_setflags.o
+  CC       libgnu_a-spawnattr_setpgroup.o
+  CC       libgnu_a-spawnattr_setsigmask.o
+  CC       libgnu_a-spawnp.o
+  CC       libgnu_a-quotearg.o
+  CC       libgnu_a-reallocarray.o
+  CC       libgnu_a-regex.o
+  CC       libgnu_a-same-inode.o
+  CC       libgnu_a-save-cwd.o
+  CC       libgnu_a-setlocale_null.o
+  CC       libgnu_a-setlocale-lock.o
+  CC       libgnu_a-setlocale_null-unlocked.o
+  CC       libgnu_a-sig-handler.o
+  CC       libgnu_a-sockets.o
+  CC       libgnu_a-spawn-pipe.o
+  CC       libgnu_a-stat-time.o
+  CC       libgnu_a-strnlen1.o
+  CC       libgnu_a-strtol.o
+  CC       libgnu_a-strtoll.o
+  CC       libgnu_a-sys_socket.o
+  CC       libgnu_a-tempname.o
+  CC       glthread/libgnu_a-threadlib.o
+  CC       libgnu_a-timegm.o
+  CC       libgnu_a-timespec.o
+  CC       libgnu_a-tmpdir.o
+  CC       libgnu_a-u64.o
+  CC       libgnu_a-unistd.o
+  CC       libgnu_a-dup-safer.o
+  CC       libgnu_a-fd-safer.o
+  CC       libgnu_a-pipe-safer.o
+  CC       libgnu_a-utimens.o
+  CC       libgnu_a-wait-process.o
+  CC       libgnu_a-wctype-h.o
+  CC       libgnu_a-xmalloc.o
+  CC       libgnu_a-xalloc-die.o
+  CC       libgnu_a-xmemdup0.o
+  CC       libgnu_a-xsize.o
+  CC       libgnu_a-xstrndup.o
+  CC       asnprintf.o
+  CC       calloc.o
+  CC       fnmatch.o
+  CC       fopen.o
+  CC       getpass.o
+  CC       malloc.o
+  CC       mbsrtoc32s-state.o
+  CC       mbsrtowcs-state.o
+  CC       mktime.o
+  CC       printf-args.o
+  CC       printf-parse.o
+  CC       realloc.o
+  CC       strerror_r.o
+  CC       vasnprintf.o
+  CC       malloc/libgnu_a-dynarray_at_failure.o
+  CC       malloc/libgnu_a-dynarray_emplace_enlarge.o
+  CC       malloc/libgnu_a-dynarray_finalize.o
+  CC       malloc/libgnu_a-dynarray_resize.o
+  CC       malloc/libgnu_a-dynarray_resize_clear.o
+  CC       malloc/libgnu_a-scratch_buffer_grow.o
+  CC       malloc/libgnu_a-scratch_buffer_grow_preserve.o
+  CC       malloc/libgnu_a-scratch_buffer_set_array_size.o
+  CC       glthread/libgnu_a-lock.o
+  CC       unicase/libgnu_a-cased.o
+  CC       unicase/libgnu_a-empty-prefix-context.o
+  CC       unicase/libgnu_a-empty-suffix-context.o
+  CC       unicase/libgnu_a-ignorable.o
+  CC       unicase/libgnu_a-special-casing.o
+  CC       unicase/libgnu_a-tolower.o
+  CC       unicase/libgnu_a-u8-casemap.o
+  CC       unicase/libgnu_a-u8-tolower.o
+  CC       unictype/libgnu_a-combiningclass.o
+  CC       unictype/libgnu_a-ctype_alnum.o
+  CC       unictype/libgnu_a-ctype_alpha.o
+  CC       unictype/libgnu_a-ctype_blank.o
+  CC       unictype/libgnu_a-ctype_cntrl.o
+  CC       unictype/libgnu_a-ctype_digit.o
+  CC       unictype/libgnu_a-ctype_graph.o
+  CC       unictype/libgnu_a-ctype_lower.o
+  CC       unictype/libgnu_a-ctype_print.o
+  CC       unictype/libgnu_a-ctype_punct.o
+  CC       unictype/libgnu_a-ctype_space.o
+  CC       unictype/libgnu_a-ctype_upper.o
+  CC       unictype/libgnu_a-ctype_xdigit.o
+  CC       unictype/libgnu_a-pr_soft_dotted.o
+  CC       uninorm/libgnu_a-decompose-internal.o
+  CC       uninorm/libgnu_a-u8-normalize.o
+  CC       unistr/libgnu_a-u32-chr.o
+  CC       unistr/libgnu_a-u32-cpy.o
+  CC       unistr/libgnu_a-u32-pcpy.o
+  CC       unistr/libgnu_a-u32-strcat.o
+  CC       unistr/libgnu_a-u32-strlen.o
+  CC       unistr/libgnu_a-u8-cpy.o
+  CC       unistr/libgnu_a-u8-mbtouc-unsafe.o
+  CC       unistr/libgnu_a-u8-mbtouc-unsafe-aux.o
+  CC       unistr/libgnu_a-u8-strlen.o
+  CC       unistr/libgnu_a-u8-uctomb.o
+  CC       unistr/libgnu_a-u8-uctomb-aux.o
+  CC       uniwidth/libgnu_a-width.o
+  AR       libgnu.a
+make[3]: Leaving directory '/sources/wget-1.24.5/lib'
+make[2]: Leaving directory '/sources/wget-1.24.5/lib'
+Making all in src
+make[2]: Entering directory '/sources/wget-1.24.5/src'
+make  all-am
+make[3]: Entering directory '/sources/wget-1.24.5/src'
+  CC       connect.o
+  CC       convert.o
+  CC       cookies.o
+  CC       ftp.o
+convert.c: In function 'local_quote_string':
+convert.c:806:1: warning: function may return address of local variable [-Wreturn-local-addr]
+  806 | }
+      | ^
+convert.c:745:8: note: declared here
+  745 |   char buf[1024];
+      |        ^~~
+  CC       css_.o
+  CC       css-url.o
+  CC       ftp-basic.o
+  CC       ftp-ls.o
+  CC       hash.o
+  CC       host.o
+  CC       hsts.o
+  CC       html-parse.o
+  CC       html-url.o
+  CC       http.o
+  CC       init.o
+  CC       log.o
+  CC       main.o
+  CC       netrc.o
+  CC       progress.o
+  CC       ptimer.o
+  CC       res.o
+  CC       recur.o
+  CC       retr.o
+  CC       spider.o
+  CC       url.o
+  CC       warc.o
+  CC       utils.o
+  CC       exits.o
+  CC       build_info.o
+  CC       xattr.o
+  CC       ftp-opie.o
+  CC       http-ntlm.o
+http-ntlm.c: In function 'setup_des_key':
+http-ntlm.c:201:3: warning: 'DES_set_odd_parity' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  201 |   DES_set_odd_parity(&key);
+      |   ^~~~~~~~~~~~~~~~~~
+In file included from http-ntlm.c:52:
+/usr/include/openssl/des.h:176:28: note: declared here
+  176 | OSSL_DEPRECATEDIN_3_0 void DES_set_odd_parity(DES_cblock *key);
+      |                            ^~~~~~~~~~~~~~~~~~
+http-ntlm.c:202:3: warning: 'DES_set_key' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  202 |   DES_set_key(&key, ks);
+      |   ^~~~~~~~~~~
+/usr/include/openssl/des.h:186:5: note: declared here
+  186 | int DES_set_key(const_DES_cblock *key, DES_key_schedule *schedule);
+      |     ^~~~~~~~~~~
+http-ntlm.c: In function 'calc_resp':
+http-ntlm.c:229:3: warning: 'DES_ecb_encrypt' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  229 |   DES_ecb_encrypt((DES_cblock*) plaintext, (DES_cblock*) results,
+      |   ^~~~~~~~~~~~~~~
+/usr/include/openssl/des.h:105:6: note: declared here
+  105 | void DES_ecb_encrypt(const_DES_cblock *input, DES_cblock *output,
+      |      ^~~~~~~~~~~~~~~
+http-ntlm.c:233:3: warning: 'DES_ecb_encrypt' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  233 |   DES_ecb_encrypt((DES_cblock*) plaintext, (DES_cblock*) (results+8),
+      |   ^~~~~~~~~~~~~~~
+/usr/include/openssl/des.h:105:6: note: declared here
+  105 | void DES_ecb_encrypt(const_DES_cblock *input, DES_cblock *output,
+      |      ^~~~~~~~~~~~~~~
+http-ntlm.c:237:3: warning: 'DES_ecb_encrypt' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  237 |   DES_ecb_encrypt((DES_cblock*) plaintext, (DES_cblock*) (results+16),
+      |   ^~~~~~~~~~~~~~~
+/usr/include/openssl/des.h:105:6: note: declared here
+  105 | void DES_ecb_encrypt(const_DES_cblock *input, DES_cblock *output,
+      |      ^~~~~~~~~~~~~~~
+http-ntlm.c: In function 'mkhash':
+http-ntlm.c:289:5: warning: 'DES_ecb_encrypt' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  289 |     DES_ecb_encrypt((DES_cblock *) magic, (DES_cblock *) lmbuffer,
+      |     ^~~~~~~~~~~~~~~
+/usr/include/openssl/des.h:105:6: note: declared here
+  105 | void DES_ecb_encrypt(const_DES_cblock *input, DES_cblock *output,
+      |      ^~~~~~~~~~~~~~~
+http-ntlm.c:293:5: warning: 'DES_ecb_encrypt' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  293 |     DES_ecb_encrypt((DES_cblock *) magic, (DES_cblock *) (lmbuffer + 8),
+      |     ^~~~~~~~~~~~~~~
+/usr/include/openssl/des.h:105:6: note: declared here
+  105 | void DES_ecb_encrypt(const_DES_cblock *input, DES_cblock *output,
+      |      ^~~~~~~~~~~~~~~
+http-ntlm.c:328:5: warning: 'MD4_Init' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  328 |     MD4_Init(&MD4);
+      |     ^~~~~~~~
+In file included from http-ntlm.c:53:
+/usr/include/openssl/md4.h:50:27: note: declared here
+   50 | OSSL_DEPRECATEDIN_3_0 int MD4_Init(MD4_CTX *c);
+      |                           ^~~~~~~~
+http-ntlm.c:329:5: warning: 'MD4_Update' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  329 |     MD4_Update(&MD4, pw4, 2 * len);
+      |     ^~~~~~~~~~
+/usr/include/openssl/md4.h:51:27: note: declared here
+   51 | OSSL_DEPRECATEDIN_3_0 int MD4_Update(MD4_CTX *c, const void *data, size_t len);
+      |                           ^~~~~~~~~~
+http-ntlm.c:330:5: warning: 'MD4_Final' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  330 |     MD4_Final(ntbuffer, &MD4);
+      |     ^~~~~~~~~
+/usr/include/openssl/md4.h:52:27: note: declared here
+   52 | OSSL_DEPRECATEDIN_3_0 int MD4_Final(unsigned char *md, MD4_CTX *c);
+      |                           ^~~~~~~~~
+  CC       openssl.o
+echo '/* version.c */' > version.c
+echo '/* Autogenerated by Makefile - DO NOT EDIT */' >> version.c
+echo '' >> version.c
+echo '#include "version.h"' >> version.c
+echo 'const char *version_string = "1.24.5";' >> version.c
+echo 'const char *compilation_string = "'gcc -DHAVE_CONFIG_H -DSYSTEM_WGETRC=\"/etc/wgetrc\" -DLOCALEDIR=\"/usr/share/locale\" -I.  -I../lib -I../lib  -DNDEBUG    -DHAVE_LIBSSL  -DNDEBUG -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections'";' \
+    | sed -e 's/[\\"]/\\&/g' -e 's/\\"/"/' -e 's/\\";$/";/' >> version.c
+echo 'const char *link_string = "'gcc    -DHAVE_LIBSSL  -DNDEBUG -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections \
+ -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -lpcre2-8 -luuid -lssl -lcrypto -lz    ../lib/libgnu.a           /usr/lib/libintl.so   '";' \
+    | sed -e 's/[\\"]/\\&/g' -e 's/\\"/"/' -e 's/\\";$/";/' >> version.c
+  CC       version.o
+  CCLD     wget
+make[3]: Leaving directory '/sources/wget-1.24.5/src'
+make[2]: Leaving directory '/sources/wget-1.24.5/src'
+Making all in doc
+make[2]: Entering directory '/sources/wget-1.24.5/doc'
+./texi2pod.pl -D VERSION="1.24.5" ./wget.texi wget.pod
+/usr/bin/pod2man --center="GNU Wget" --release="GNU Wget 1.24.5" --utf8 wget.pod > wget.1 || \
+/usr/bin/pod2man --center="GNU Wget" --release="GNU Wget 1.24.5" wget.pod > wget.1
+make[2]: Leaving directory '/sources/wget-1.24.5/doc'
+Making all in po
+make[2]: Entering directory '/sources/wget-1.24.5/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/wget-1.24.5/po'
+Making all in gnulib_po
+make[2]: Entering directory '/sources/wget-1.24.5/gnulib_po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/wget-1.24.5/gnulib_po'
+Making all in util
+make[2]: Entering directory '/sources/wget-1.24.5/util'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/wget-1.24.5/util'
+Making all in fuzz
+make[2]: Entering directory '/sources/wget-1.24.5/fuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/wget-1.24.5/fuzz'
+Making all in tests
+make[2]: Entering directory '/sources/wget-1.24.5/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/wget-1.24.5/tests'
+Making all in testenv
+make[2]: Entering directory '/sources/wget-1.24.5/testenv'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/wget-1.24.5/testenv'
+make[2]: Entering directory '/sources/wget-1.24.5'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/sources/wget-1.24.5'
+make[1]: Leaving directory '/sources/wget-1.24.5'
+make  install-recursive
+make[1]: Entering directory '/sources/wget-1.24.5'
+Making install in lib
+make[2]: Entering directory '/sources/wget-1.24.5/lib'
+make  install-am
+make[3]: Entering directory '/sources/wget-1.24.5/lib'
+make[4]: Entering directory '/sources/wget-1.24.5/lib'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/sources/wget-1.24.5/lib'
+make[3]: Leaving directory '/sources/wget-1.24.5/lib'
+make[2]: Leaving directory '/sources/wget-1.24.5/lib'
+Making install in src
+make[2]: Entering directory '/sources/wget-1.24.5/src'
+make[3]: Entering directory '/sources/wget-1.24.5/src'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/usr/bin'
+  /usr/bin/install -c wget '/usr/bin'
+make[3]: Leaving directory '/sources/wget-1.24.5/src'
+make[2]: Leaving directory '/sources/wget-1.24.5/src'
+Making install in doc
+make[2]: Entering directory '/sources/wget-1.24.5/doc'
+make[3]: Entering directory '/sources/wget-1.24.5/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+/bin/sh /sources/wget-1.24.5/build-aux/install-sh -d /etc
+/bin/sh /sources/wget-1.24.5/build-aux/install-sh -d /usr/share/man/man1
+/usr/bin/install -c -m 644 wget.1 /usr/share/man/man1/wget.1
+ /usr/bin/mkdir -p '/usr/share/info'
+ /usr/bin/install -c -m 644 ./wget.info '/usr/share/info'
+ install-info --info-dir='/usr/share/info' '/usr/share/info/wget.info'
+make[3]: Leaving directory '/sources/wget-1.24.5/doc'
+make[2]: Leaving directory '/sources/wget-1.24.5/doc'
+Making install in po
+make[2]: Entering directory '/sources/wget-1.24.5/po'
+installing be.gmo as /usr/share/locale/be/LC_MESSAGES/wget.mo
+installing bg.gmo as /usr/share/locale/bg/LC_MESSAGES/wget.mo
+installing ca.gmo as /usr/share/locale/ca/LC_MESSAGES/wget.mo
+installing cs.gmo as /usr/share/locale/cs/LC_MESSAGES/wget.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/wget.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/wget.mo
+installing el.gmo as /usr/share/locale/el/LC_MESSAGES/wget.mo
+installing en_GB.gmo as /usr/share/locale/en_GB/LC_MESSAGES/wget.mo
+installing eo.gmo as /usr/share/locale/eo/LC_MESSAGES/wget.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/wget.mo
+installing et.gmo as /usr/share/locale/et/LC_MESSAGES/wget.mo
+installing eu.gmo as /usr/share/locale/eu/LC_MESSAGES/wget.mo
+installing fi.gmo as /usr/share/locale/fi/LC_MESSAGES/wget.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/wget.mo
+installing ga.gmo as /usr/share/locale/ga/LC_MESSAGES/wget.mo
+installing gl.gmo as /usr/share/locale/gl/LC_MESSAGES/wget.mo
+installing he.gmo as /usr/share/locale/he/LC_MESSAGES/wget.mo
+installing hr.gmo as /usr/share/locale/hr/LC_MESSAGES/wget.mo
+installing hu.gmo as /usr/share/locale/hu/LC_MESSAGES/wget.mo
+installing id.gmo as /usr/share/locale/id/LC_MESSAGES/wget.mo
+installing it.gmo as /usr/share/locale/it/LC_MESSAGES/wget.mo
+installing ja.gmo as /usr/share/locale/ja/LC_MESSAGES/wget.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/wget.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/wget.mo
+installing lt.gmo as /usr/share/locale/lt/LC_MESSAGES/wget.mo
+installing nb.gmo as /usr/share/locale/nb/LC_MESSAGES/wget.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/wget.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/wget.mo
+installing pt.gmo as /usr/share/locale/pt/LC_MESSAGES/wget.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/wget.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/wget.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/wget.mo
+installing sk.gmo as /usr/share/locale/sk/LC_MESSAGES/wget.mo
+installing sl.gmo as /usr/share/locale/sl/LC_MESSAGES/wget.mo
+installing sr.gmo as /usr/share/locale/sr/LC_MESSAGES/wget.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/wget.mo
+installing tr.gmo as /usr/share/locale/tr/LC_MESSAGES/wget.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/wget.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/wget.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/wget.mo
+installing zh_TW.gmo as /usr/share/locale/zh_TW/LC_MESSAGES/wget.mo
+if test "wget" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/sources/wget-1.24.5/po'
+Making install in gnulib_po
+make[2]: Entering directory '/sources/wget-1.24.5/gnulib_po'
+installing af.gmo as /usr/share/locale/af/LC_MESSAGES/wget-gnulib.mo
+installing be.gmo as /usr/share/locale/be/LC_MESSAGES/wget-gnulib.mo
+installing bg.gmo as /usr/share/locale/bg/LC_MESSAGES/wget-gnulib.mo
+installing ca.gmo as /usr/share/locale/ca/LC_MESSAGES/wget-gnulib.mo
+installing cs.gmo as /usr/share/locale/cs/LC_MESSAGES/wget-gnulib.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/wget-gnulib.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/wget-gnulib.mo
+installing el.gmo as /usr/share/locale/el/LC_MESSAGES/wget-gnulib.mo
+installing eo.gmo as /usr/share/locale/eo/LC_MESSAGES/wget-gnulib.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/wget-gnulib.mo
+installing et.gmo as /usr/share/locale/et/LC_MESSAGES/wget-gnulib.mo
+installing eu.gmo as /usr/share/locale/eu/LC_MESSAGES/wget-gnulib.mo
+installing fi.gmo as /usr/share/locale/fi/LC_MESSAGES/wget-gnulib.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/wget-gnulib.mo
+installing ga.gmo as /usr/share/locale/ga/LC_MESSAGES/wget-gnulib.mo
+installing gl.gmo as /usr/share/locale/gl/LC_MESSAGES/wget-gnulib.mo
+installing hu.gmo as /usr/share/locale/hu/LC_MESSAGES/wget-gnulib.mo
+installing it.gmo as /usr/share/locale/it/LC_MESSAGES/wget-gnulib.mo
+installing ja.gmo as /usr/share/locale/ja/LC_MESSAGES/wget-gnulib.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/wget-gnulib.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/wget-gnulib.mo
+installing ms.gmo as /usr/share/locale/ms/LC_MESSAGES/wget-gnulib.mo
+installing nb.gmo as /usr/share/locale/nb/LC_MESSAGES/wget-gnulib.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/wget-gnulib.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/wget-gnulib.mo
+installing pt.gmo as /usr/share/locale/pt/LC_MESSAGES/wget-gnulib.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/wget-gnulib.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/wget-gnulib.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/wget-gnulib.mo
+installing rw.gmo as /usr/share/locale/rw/LC_MESSAGES/wget-gnulib.mo
+installing sk.gmo as /usr/share/locale/sk/LC_MESSAGES/wget-gnulib.mo
+installing sl.gmo as /usr/share/locale/sl/LC_MESSAGES/wget-gnulib.mo
+installing sr.gmo as /usr/share/locale/sr/LC_MESSAGES/wget-gnulib.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/wget-gnulib.mo
+installing tr.gmo as /usr/share/locale/tr/LC_MESSAGES/wget-gnulib.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/wget-gnulib.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/wget-gnulib.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/wget-gnulib.mo
+installing zh_TW.gmo as /usr/share/locale/zh_TW/LC_MESSAGES/wget-gnulib.mo
+if test "wget" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/sources/wget-1.24.5/gnulib_po'
+Making install in util
+make[2]: Entering directory '/sources/wget-1.24.5/util'
+make[3]: Entering directory '/sources/wget-1.24.5/util'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/wget-1.24.5/util'
+make[2]: Leaving directory '/sources/wget-1.24.5/util'
+Making install in fuzz
+make[2]: Entering directory '/sources/wget-1.24.5/fuzz'
+make[3]: Entering directory '/sources/wget-1.24.5/fuzz'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/wget-1.24.5/fuzz'
+make[2]: Leaving directory '/sources/wget-1.24.5/fuzz'
+Making install in tests
+make[2]: Entering directory '/sources/wget-1.24.5/tests'
+make[3]: Entering directory '/sources/wget-1.24.5/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/wget-1.24.5/tests'
+make[2]: Leaving directory '/sources/wget-1.24.5/tests'
+Making install in testenv
+make[2]: Entering directory '/sources/wget-1.24.5/testenv'
+make[3]: Entering directory '/sources/wget-1.24.5/testenv'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/wget-1.24.5/testenv'
+make[2]: Leaving directory '/sources/wget-1.24.5/testenv'
+make[2]: Entering directory '/sources/wget-1.24.5'
+make[3]: Entering directory '/sources/wget-1.24.5'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/wget-1.24.5'
+make[2]: Leaving directory '/sources/wget-1.24.5'
+make[1]: Leaving directory '/sources/wget-1.24.5'
+
+
+CFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 17:17:37 UTC 2024
+
+Totalseconds: 49
+
+KB: 1639208	/
+

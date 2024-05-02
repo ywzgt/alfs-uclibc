@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="gzip"
+PKG="$SRC"
+
+./configure --prefix=/usr
+
+make
+make install

@@ -1,0 +1,19 @@
+#!/bin/bash
+# https://git.alpinelinux.org/aports/tree/main/tzdata/APKBUILD
+# https://github.com/void-linux/void-packages/blob/master/srcpkgs/tzutils/template
+
+SRC="tzutils"
+PKG="$SRC"
+
+CFLAGS+=" -lintl"
+make TZDIR="/usr/share/zoneinfo"
+
+_doman() {
+    for i; do
+        install -Dvm644 "$i" -t "/usr/share/man/man${i##*.}"
+    done
+}
+
+if [ -e date.1 ]; then mv -v date.1 tzdate.1; fi
+_doman *.[0-9]
+install -t /usr/bin -Dvm755 tzselect zdump zic

@@ -1,0 +1,8 @@
+/usr/include/elfutils/elf-knowledge.h	3927	root:root	644	
+/usr/include/gelf.h	11406	root:root	644	
+/usr/include/libelf.h	20318	root:root	644	
+/usr/include/nlist.h	1601	root:root	644	
+/usr/lib/libelf-0.191.so	106448	root:root	755	
+/usr/lib/libelf.so	11	root:root	777	libelf.so.1
+/usr/lib/libelf.so.1	15	root:root	777	libelf-0.191.so
+/usr/lib/pkgconfig/libelf.pc	290	root:root	644	

@@ -1,0 +1,52 @@
+#!/bin/bash
+
+SRC="gcc"
+PKG="$SRC"
+
+sed '/m64=/s/lib64/lib/' -i.orig gcc/config/i386/t-linux64
+sed '/ld.*-uClibc.so.0/s/0/1/' -i.ori gcc/config/linux.h
+
+_pkgver="${PWD##*/gcc-}"
+mkdir -v build
+cd build
+
+../configure --prefix=/usr \
+	--disable-bootstrap \
+	--disable-fixincludes \
+	--disable-libssp \
+	--disable-libsanitizer \
+	--$([[ $MULTILIB ]] && echo enable-multilib --with-multilib-list=m64,m32 || echo disable-multilib) \
+	--enable-default-pie \
+	--enable-default-ssp \
+	--enable-languages=c,c++ \
+	--with-system-zlib
+
+make
+make install
+ln -svr /usr/bin/cpp /usr/lib
+ln -sfv gcc /usr/bin/cc
+ln -sv gcc.1 /usr/share/man/man1/cc.1
+ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/${_pkgver}/liblto_plugin.so \
+		/usr/lib/bfd-plugins/
+mkdir -pv /usr/share/gdb/auto-load/usr/lib
+mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
+rm -fv /usr/lib{,32}/*.la
+rm -fv /usr/lib32/libstdc++*.py
+
+_check_gcc() {
+	echo -e "\n\nCheck that compiling and linking will work as expected...\n"
+	echo 'int main(){}' > dummy.c
+	for abi in $([[ $MULTILIB ]] && echo 64 32 || echo 64); do
+		printf "\n::ABI $abi..\n"
+		cc -m$abi dummy.c -v -Wl,--verbose &> dummy.log
+		readelf -l a.out | grep ': /lib'
+		grep -E -o '/usr/lib.*/S?crt[1in].*succeeded' dummy.log
+		grep -B4 '^ /usr/include' dummy.log
+		grep 'SEARCH.*/usr/lib' dummy.log |sed 's|; |\n|g'
+		grep "/lib.*/libc.so" dummy.log
+	done
+	rm -v dummy.c a.out dummy.log
+}
+
+_check_gcc || echo "::Verification CC compiler error, continue!"
+find /usr -depth -name $(uname -m)-lfs-linux-\* | xargs rm -rf

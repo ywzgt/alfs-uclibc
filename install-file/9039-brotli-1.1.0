@@ -1,0 +1,6 @@
+/usr/lib/libbrotlicommon.so	20	root:root	777	libbrotlicommon.so.1
+/usr/lib/libbrotlicommon.so.1	24	root:root	777	libbrotlicommon.so.1.1.0
+/usr/lib/libbrotlidec.so	17	root:root	777	libbrotlidec.so.1
+/usr/lib/libbrotlidec.so.1	21	root:root	777	libbrotlidec.so.1.1.0
+/usr/lib/libbrotlienc.so	17	root:root	777	libbrotlienc.so.1
+/usr/lib/libbrotlienc.so.1	21	root:root	777	libbrotlienc.so.1.1.0

@@ -1,0 +1,100 @@
+Thu May  2 15:46:28 UTC 2024
+KB: 965652	/
+
+VERSION=`cat version` && sed \
+	  -e "s'#!/bin/bash'#!"'/bin/bash'\' \
+	  -e s\''\(AWK\)=[^}]*'\''\1=\'\''awk\'\'\' \
+	  -e s\''\(PKGVERSION\)=.*'\''\1=\'\''(tzcode) \'\'\' \
+	  -e s\''\(REPORT_BUGS_TO\)=.*'\''\1=\'\''tz@iana.org\'\'\' \
+	  -e s\''\(TZDIR\)=[^}]*'\''\1=\'\''/usr/share/zoneinfo\'\'\' \
+	  -e s\''\(TZVERSION\)=.*'\''\1=\'"'$VERSION\\''" \
+	  <tzselect.ksh >tzselect.out
+printf '%s\n' >tzdir.h.out \
+	  '#ifndef TZDEFAULT' \
+	  '# define TZDEFAULT "/etc/localtime" /* default zone */' \
+	  '#endif' \
+	  '#ifndef TZDIR' \
+	  '# define TZDIR "/usr/share/zoneinfo" /* TZif directory */' \
+	  '#endif'
+VERSION=`cat version` && printf '%s\n' \
+	  'static char const PKGVERSION[]="(tzcode) ";' \
+	  "static char const TZVERSION[]=\"$VERSION\";" \
+	  'static char const REPORT_BUGS_TO[]="tz@iana.org";' \
+	  >version.h.out
+c99 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -lintl -DNDEBUG  -c -o asctime.o asctime.c
+mv tzdir.h.out tzdir.h
+c99 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -lintl -DNDEBUG  -c -o strftime.o strftime.c
+mv version.h.out version.h
+c99 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -lintl -DNDEBUG  -c -o difftime.o difftime.c
+chmod +x tzselect.out
+mv tzselect.out tzselect
+awk \
+	  -v DATAFORM=`expr main.zi : '\(.*\).zi'` \
+	  -v PACKRATDATA='' \
+	  -v PACKRATLIST='' \
+	  -f ziguard.awk \
+	  africa antarctica asia australasia  europe northamerica southamerica etcetera factory backward  >main.zi.out
+awk \
+	  -v DATAFORM=`expr vanguard.zi : '\(.*\).zi'` \
+	  -v PACKRATDATA='' \
+	  -v PACKRATLIST='' \
+	  -f ziguard.awk \
+	  africa antarctica asia australasia  europe northamerica southamerica etcetera factory backward  >vanguard.zi.out
+mv main.zi.out main.zi
+awk \
+	  -v DATAFORM=`expr rearguard.zi : '\(.*\).zi'` \
+	  -v PACKRATDATA='' \
+	  -v PACKRATLIST='' \
+	  -f ziguard.awk \
+	  africa antarctica asia australasia  europe northamerica southamerica etcetera factory backward  >rearguard.zi.out
+c99 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -lintl -DNDEBUG  -c -o zic.o zic.c
+mv rearguard.zi.out rearguard.zi
+c99 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -lintl -DNDEBUG  -c -o zdump.o zdump.c
+mv vanguard.zi.out vanguard.zi
+c99 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -lintl -DNDEBUG  -c -o localtime.o localtime.c
+version=`sed 1q version` && \
+	  LC_ALL=C awk \
+	    -v dataform='main' \
+	    -v deps='ziguard.awk africa antarctica asia australasia  europe northamerica southamerica etcetera factory backward   zishrink.awk' \
+	    -v redo='posix_right' \
+	    -v version="$version" \
+	    -f zishrink.awk \
+	    main.zi >tzdata.zi.out
+mv tzdata.zi.out tzdata.zi
+c99 -o zdump -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -lintl -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections zdump.o localtime.o asctime.o strftime.o 
+rm -f libtz.a
+ar -rv libtz.a localtime.o asctime.o difftime.o strftime.o
+ar: creating libtz.a
+a - localtime.o
+a - asctime.o
+a - difftime.o
+a - strftime.o
+: libtz.a
+c99 -o zic -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -lintl -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections zic.o 
+renamed 'date.1' -> 'tzdate.1'
+'newctime.3' -> '/usr/share/man/man3/newctime.3'
+'newstrftime.3' -> '/usr/share/man/man3/newstrftime.3'
+'newtzset.3' -> '/usr/share/man/man3/newtzset.3'
+'time2posix.3' -> '/usr/share/man/man3/time2posix.3'
+'tzdate.1' -> '/usr/share/man/man1/tzdate.1'
+'tzfile.5' -> '/usr/share/man/man5/tzfile.5'
+'tzselect.8' -> '/usr/share/man/man8/tzselect.8'
+'zdump.8' -> '/usr/share/man/man8/zdump.8'
+'zic.8' -> '/usr/share/man/man8/zic.8'
+'tzselect' -> '/usr/bin/tzselect'
+'zdump' -> '/usr/bin/zdump'
+'zic' -> '/usr/bin/zic'
+
+
+CFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Thu May  2 15:46:30 UTC 2024
+
+Totalseconds: 2
+
+KB: 970732	/
+

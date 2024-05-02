@@ -1,0 +1,741 @@
+Thu May  2 16:37:02 UTC 2024
+KB: 1110296	/
+
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for utime.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking whether ln -s works... yes
+checking for bison... bison -y
+checking build system type... i686-pc-linux-uclibc
+checking host system type... i686-pc-linux-uclibc
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert i686-pc-linux-uclibc file names to i686-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert i686-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for gcc options needed to detect all undeclared functions... none needed
+checking for library containing dlopen... none required
+checking for dlerror... yes
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dld_link in -ldld... no
+checking for crypt.h... yes
+checking for utmp.h... yes
+checking for termio.h... yes
+checking for sgtty.h... yes
+checking for sys/ioctl.h... yes
+checking for paths.h... yes
+checking for sys/capability.h... yes
+checking for sys/random.h... yes
+checking for gshadow.h... no
+checking for lastlog.h... yes
+checking for rpc/key_prot.h... no
+checking for acl/libacl.h... yes
+checking for attr/libattr.h... yes
+checking for attr/error_context.h... yes
+checking for shadow.h... yes
+checking for arc4random_buf... no
+checking for futimes... no
+checking for getentropy... yes
+checking for getrandom... yes
+checking for getspnam... yes
+checking for getusershell... yes
+checking for initgroups... yes
+checking for lckpwdf... yes
+checking for lutimes... yes
+checking for setgroups... yes
+checking for updwtmpx... yes
+checking for innetgr... no
+checking for getspnam_r... yes
+checking for rpmatch... yes
+checking for memset_explicit... no
+checking for explicit_bzero... yes
+checking for stpecpy... no
+checking for stpeprintf... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking for struct utmpx.ut_name... no
+checking for struct utmpx.ut_host... yes
+checking for struct utmpx.ut_syslen... no
+checking for struct utmpx.ut_addr... no
+checking for struct utmpx.ut_addr_v6... yes
+checking for struct utmpx.ut_time... no
+checking for struct utmpx.ut_xtime... no
+checking how to run the C preprocessor... gcc -E
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking whether utime accepts a null argument... yes
+checking for putgrent... yes
+checking for putpwent... yes
+checking for putspent... yes
+checking for sgetgrent... no
+checking for sgetpwent... no
+checking for sgetspent... yes
+checking for setpgrp... yes
+checking for secure_getenv... yes
+checking for working shadow group support... no
+checking location of shared mail directory... /var/mail
+checking location of user mail file... none
+checking location of utmp... none
+configure: WARNING: utmp file not found
+checking location of faillog/lastlog/wtmp... /var/log
+checking location of the passwd program... /usr/bin
+checking for posix_spawn... yes
+checking for posix_spawn... (cached) yes
+checking for library containing gethostbyname... none required
+checking for econf_readDirs in -leconf... no
+checking size of uid_t... 4
+checking size of gid_t... 4
+checking for sd_session_get_remote_host in -lsystemd... no
+checking for crypt in -lcrypt... yes
+checking for crypt in -lcrypt... (cached) yes
+checking for acl/libacl.h... (cached) yes
+checking for attr/error_context.h... (cached) yes
+checking for perm_copy_file in -lacl... yes
+checking for perm_copy_fd in -lacl... yes
+checking for attr/libattr.h... (cached) yes
+checking for attr/error_context.h... (cached) yes
+checking for attr_copy_file in -lattr... yes
+checking for attr_copy_fd in -lattr... yes
+checking for libaudit.h... no
+checking for sys/statfs.h... yes
+checking for linux/magic.h... yes
+checking for linux/btrfs_tree.h... yes
+checking for selinux/selinux.h... no
+checking for semanage/semanage.h... no
+checking for tcb.h... no
+checking for pam_start in -lpam... no
+checking for openpam_ttyconv in -lpam... no
+checking for misc_conv in -lpam_misc... no
+checking for security/openpam.h... no
+checking for security/pam_misc.h... no
+checking use login and su access checking if PAM not used... yes
+checking for cmocka... no
+configure: WARNING: libcmocka not found, cmocka tests will not be built
+checking for fgetpwent_r... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... no
+checking for iconv... yes
+checking for working iconv... yes
+checking for GNU gettext in libintl... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... external libintl
+checking how to link with libintl... /lib/libintl.so -Wl,-rpath -Wl,/lib
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating doc/Makefile
+config.status: creating man/Makefile
+config.status: creating man/config.xml
+config.status: creating man/po/Makefile
+config.status: creating man/cs/Makefile
+config.status: creating man/da/Makefile
+config.status: creating man/de/Makefile
+config.status: creating man/es/Makefile
+config.status: creating man/fi/Makefile
+config.status: creating man/fr/Makefile
+config.status: creating man/hu/Makefile
+config.status: creating man/id/Makefile
+config.status: creating man/it/Makefile
+config.status: creating man/ja/Makefile
+config.status: creating man/ko/Makefile
+config.status: creating man/pl/Makefile
+config.status: creating man/pt_BR/Makefile
+config.status: creating man/ru/Makefile
+config.status: creating man/sv/Makefile
+config.status: creating man/tr/Makefile
+config.status: creating man/uk/Makefile
+config.status: creating man/zh_CN/Makefile
+config.status: creating man/zh_TW/Makefile
+config.status: creating lib/Makefile
+config.status: creating libsubid/Makefile
+config.status: creating libsubid/subid.h
+config.status: creating src/Makefile
+config.status: creating contrib/Makefile
+config.status: creating etc/Makefile
+config.status: creating etc/pam.d/Makefile
+config.status: creating etc/shadow-maint/Makefile
+config.status: creating tests/unit/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+
+shadow will be compiled with the following features:
+
+	auditing support:		no
+	PAM support:			no
+	SELinux support:		no
+	BtrFS support:			yes
+	ACL support:			yes
+	Extended Attributes support:	yes
+	tcb support (incomplete):	no
+	shadow group support:		yes
+	S/Key support:			no
+	SHA passwords encryption:	yes
+	bcrypt passwords encryption:	yes
+	yescrypt passwords encryption:	yes
+	nscd support:			yes
+	sssd support:			yes
+	subordinate IDs support:	yes
+	enable lastlog:			no
+	enable logind:			no
+	use file caps:			no
+	install su:			yes
+	enabled vendor dir:             
+
+make  all-recursive
+make[1]: Entering directory '/sources/shadow-4.15.1'
+Making all in lib
+make[2]: Entering directory '/sources/shadow-4.15.1/lib'
+  CC       libshadow_la-addgrps.lo
+  CC       libshadow_la-adds.lo
+  CC       libshadow_la-age.lo
+  CC       libshadow_la-agetpass.lo
+  CC       libshadow_la-alloc.lo
+  CC       libshadow_la-audit_help.lo
+  CC       libshadow_la-basename.lo
+  CC       libshadow_la-bit.lo
+  CC       libshadow_la-chkname.lo
+  CC       libshadow_la-chowndir.lo
+  CC       libshadow_la-chowntty.lo
+  CC       libshadow_la-cleanup.lo
+  CC       libshadow_la-cleanup_group.lo
+  CC       libshadow_la-cleanup_user.lo
+  CC       libshadow_la-commonio.lo
+  CC       libshadow_la-console.lo
+  CC       libshadow_la-copydir.lo
+  CC       libshadow_la-csrand.lo
+  CC       libshadow_la-encrypt.lo
+  CC       libshadow_la-env.lo
+  CC       libshadow_la-failure.lo
+  CC       libshadow_la-fd.lo
+  CC       libshadow_la-fields.lo
+  CC       libshadow_la-find_new_gid.lo
+  CC       libshadow_la-find_new_uid.lo
+  CC       libshadow_la-find_new_sub_gids.lo
+  CC       libshadow_la-find_new_sub_uids.lo
+  CC       libshadow_la-fputsx.lo
+  CC       libshadow_la-get_gid.lo
+  CC       libshadow_la-get_pid.lo
+  CC       libshadow_la-get_uid.lo
+  CC       libshadow_la-getdate.lo
+  CC       libshadow_la-getdef.lo
+  CC       libshadow_la-getlong.lo
+  CC       libshadow_la-getgr_nam_gid.lo
+  CC       libshadow_la-getrange.lo
+  CC       libshadow_la-gettime.lo
+  CC       libshadow_la-getulong.lo
+  CC       libshadow_la-groupio.lo
+  CC       libshadow_la-groupmem.lo
+  CC       libshadow_la-gshadow.lo
+  CC       libshadow_la-hushed.lo
+  CC       libshadow_la-idmapping.lo
+  CC       libshadow_la-isexpired.lo
+  CC       libshadow_la-limits.lo
+  CC       libshadow_la-list.lo
+  CC       libshadow_la-lockpw.lo
+  CC       libshadow_la-loginprompt.lo
+  CC       libshadow_la-mail.lo
+  CC       libshadow_la-memzero.lo
+  CC       libshadow_la-motd.lo
+  CC       libshadow_la-myname.lo
+  CC       libshadow_la-nss.lo
+  CC       libshadow_la-nscd.lo
+  CC       libshadow_la-obscure.lo
+  CC       libshadow_la-pam_pass.lo
+  CC       libshadow_la-pam_pass_non_interactive.lo
+  CC       libshadow_la-port.lo
+  CC       libshadow_la-prefix_flag.lo
+  CC       libshadow_la-pwauth.lo
+  CC       libshadow_la-pwio.lo
+  CC       libshadow_la-pwd_init.lo
+  CC       libshadow_la-pwd2spwd.lo
+  CC       libshadow_la-pwdcheck.lo
+  CC       libshadow_la-pwmem.lo
+  CC       libshadow_la-remove_tree.lo
+  CC       libshadow_la-rlogin.lo
+  CC       libshadow_la-root_flag.lo
+  CC       libshadow_la-run_part.lo
+  CC       libshadow_la-salt.lo
+  CC       libshadow_la-selinux.lo
+  CC       libshadow_la-semanage.lo
+  CC       libshadow_la-setugid.lo
+  CC       libshadow_la-setupenv.lo
+  CC       libshadow_la-sgetgrent.lo
+  CC       libshadow_la-sgetpwent.lo
+  CC       libshadow_la-sgetspent.lo
+  CC       libshadow_la-sgroupio.lo
+  CC       libshadow_la-shadow.lo
+  CC       libshadow_la-shadowio.lo
+  CC       libshadow_la-shadowlog.lo
+  CC       libshadow_la-shadowmem.lo
+  CC       libshadow_la-shell.lo
+  CC       libshadow_la-spawn.lo
+  CC       libshadow_la-sssd.lo
+  CC       libshadow_la-strtoday.lo
+  CC       libshadow_la-sub.lo
+  CC       libshadow_la-subordinateio.lo
+  CC       libshadow_la-sulog.lo
+  CC       libshadow_la-ttytype.lo
+  CC       libshadow_la-tz.lo
+  CC       libshadow_la-ulimit.lo
+  CC       libshadow_la-user_busy.lo
+  CC       libshadow_la-valid.lo
+  CC       libshadow_la-write_full.lo
+  CC       libshadow_la-xgetpwnam.lo
+  CC       libshadow_la-xprefix_getpwnam.lo
+  CC       libshadow_la-xgetpwuid.lo
+  CC       libshadow_la-xgetgrnam.lo
+  CC       libshadow_la-xgetgrgid.lo
+  CC       libshadow_la-xgetspnam.lo
+  CC       libshadow_la-yesno.lo
+  CC       libshadow_la-btrfs.lo
+  CC       libshadow_la-utmp.lo
+  CC       libshadow_la-freezero.lo
+  CC       libshadow_la-readpassphrase.lo
+In file included from sizeof.h:15,
+                 from utmp.c:26:
+must_be.h:53:17: warning: anonymous struct declared inside parameter list will not be visible outside of this definition or declaration
+   53 |                 struct {                                                      \
+      |                 ^~~~~~
+must_be.h:96:31: note: in expansion of macro 'must_be'
+   96 | #define must_be_array(a)      must_be(is_array(a))
+      |                               ^~~~~~~
+sizeof.h:20:43: note: in expansion of macro 'must_be_array'
+   20 | #define SIZEOF_ARRAY(a)      (sizeof(a) + must_be_array(a))
+      |                                           ^~~~~~~~~~~~~
+sizeof.h:21:31: note: in expansion of macro 'SIZEOF_ARRAY'
+   21 | #define NITEMS(a)            (SIZEOF_ARRAY((a)) / sizeof((a)[0]))
+      |                               ^~~~~~~~~~~~
+utmp.c:34:23: note: in expansion of macro 'NITEMS'
+   34 | #define UTX_LINESIZE  NITEMS(memberof(struct utmpx, ut_line))
+      |                       ^~~~~~
+utmp.c:41:26: note: in expansion of macro 'UTX_LINESIZE'
+   41 | is_my_tty(const char tty[UTX_LINESIZE])
+      |                          ^~~~~~~~~~~~
+  CC       atoi/libshadow_la-strtoi.lo
+  CC       atoi/libshadow_la-strtou_noneg.lo
+  CC       string/libshadow_la-sprintf.lo
+  CC       string/libshadow_la-stpecpy.lo
+  CC       string/libshadow_la-stpeprintf.lo
+  CC       string/libshadow_la-strftime.lo
+  CC       string/libshadow_la-strtcpy.lo
+  CC       time/libshadow_la-day_to_str.lo
+  CCLD     libshadow.la
+make[2]: Leaving directory '/sources/shadow-4.15.1/lib'
+Making all in libsubid
+make[2]: Entering directory '/sources/shadow-4.15.1/libsubid'
+  CC       api.lo
+  CCLD     libsubid.la
+make[2]: Leaving directory '/sources/shadow-4.15.1/libsubid'
+Making all in src
+make[2]: Entering directory '/sources/shadow-4.15.1/src'
+  CC       login.o
+  CC       login_nopam.o
+  CC       su.o
+  CC       suauth.o
+  CC       getsubids-getsubids.o
+  CC       id.o
+  CC       sulogin.o
+  CC       get_subid_owners-get_subid_owners.o
+  CC       new_subid_range-new_subid_range.o
+  CC       free_subid_range-free_subid_range.o
+  CC       check_subid_range-check_subid_range.o
+  CC       nologin.o
+  CC       faillog.o
+  CC       chage.o
+  CC       chfn.o
+  CC       chsh.o
+  CC       expiry.o
+  CC       gpasswd.o
+  CC       newgrp.o
+  CC       passwd.o
+  CC       newgidmap.o
+  CC       newuidmap.o
+  CC       chgpasswd.o
+  CC       chpasswd.o
+  CC       groupadd.o
+  CC       groupdel.o
+  CC       groupmems.o
+  CC       groupmod.o
+  CC       grpck.o
+  CC       grpconv.o
+  CC       grpunconv.o
+  CC       logoutd.o
+  CC       newusers.o
+  CC       pwck.o
+  CC       pwconv.o
+  CC       pwunconv.o
+  CC       useradd.o
+  CC       userdel.o
+  CC       usermod.o
+  CC       vipw.o
+  CCLD     login
+  CCLD     su
+  CCLD     getsubids
+  CCLD     id
+  CCLD     sulogin
+  CCLD     get_subid_owners
+  CCLD     new_subid_range
+  CCLD     free_subid_range
+  CCLD     check_subid_range
+  CCLD     nologin
+  CCLD     faillog
+  CCLD     chage
+  CCLD     chfn
+  CCLD     chsh
+  CCLD     expiry
+  CCLD     gpasswd
+  CCLD     newgrp
+  CCLD     passwd
+  CCLD     newgidmap
+  CCLD     newuidmap
+  CCLD     chgpasswd
+  CCLD     chpasswd
+  CCLD     groupadd
+  CCLD     groupdel
+  CCLD     groupmems
+  CCLD     groupmod
+  CCLD     grpck
+  CCLD     grpconv
+  CCLD     grpunconv
+  CCLD     logoutd
+  CCLD     newusers
+  CCLD     pwck
+  CCLD     pwconv
+  CCLD     pwunconv
+  CCLD     useradd
+  CCLD     userdel
+  CCLD     usermod
+  CCLD     vipw
+make[2]: Leaving directory '/sources/shadow-4.15.1/src'
+Making all in po
+make[2]: Entering directory '/sources/shadow-4.15.1/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/shadow-4.15.1/po'
+Making all in contrib
+make[2]: Entering directory '/sources/shadow-4.15.1/contrib'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/shadow-4.15.1/contrib'
+Making all in doc
+make[2]: Entering directory '/sources/shadow-4.15.1/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/shadow-4.15.1/doc'
+Making all in etc
+make[2]: Entering directory '/sources/shadow-4.15.1/etc'
+Making all in pam.d
+make[3]: Entering directory '/sources/shadow-4.15.1/etc/pam.d'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/shadow-4.15.1/etc/pam.d'
+Making all in shadow-maint
+make[3]: Entering directory '/sources/shadow-4.15.1/etc/shadow-maint'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/shadow-4.15.1/etc/shadow-maint'
+make[3]: Entering directory '/sources/shadow-4.15.1/etc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/sources/shadow-4.15.1/etc'
+make[2]: Leaving directory '/sources/shadow-4.15.1/etc'
+Making all in tests/unit
+make[2]: Entering directory '/sources/shadow-4.15.1/tests/unit'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/shadow-4.15.1/tests/unit'
+make[2]: Entering directory '/sources/shadow-4.15.1'
+make[2]: Leaving directory '/sources/shadow-4.15.1'
+make[1]: Leaving directory '/sources/shadow-4.15.1'
+Making install in lib
+make[1]: Entering directory '/sources/shadow-4.15.1/lib'
+make[2]: Entering directory '/sources/shadow-4.15.1/lib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/shadow-4.15.1/lib'
+make[1]: Leaving directory '/sources/shadow-4.15.1/lib'
+Making install in libsubid
+make[1]: Entering directory '/sources/shadow-4.15.1/libsubid'
+make[2]: Entering directory '/sources/shadow-4.15.1/libsubid'
+ /usr/bin/mkdir -p '/usr/lib'
+ /usr/bin/mkdir -p '/usr/include/shadow'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libsubid.la '/usr/lib'
+ /usr/bin/install -c -m 644 subid.h '/usr/include/shadow'
+libtool: install: /usr/bin/install -c .libs/libsubid.so.4.0.0 /usr/lib/libsubid.so.4.0.0
+libtool: install: (cd /usr/lib && { ln -s -f libsubid.so.4.0.0 libsubid.so.4 || { rm -f libsubid.so.4 && ln -s libsubid.so.4.0.0 libsubid.so.4; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libsubid.so.4.0.0 libsubid.so || { rm -f libsubid.so && ln -s libsubid.so.4.0.0 libsubid.so; }; })
+libtool: install: /usr/bin/install -c .libs/libsubid.lai /usr/lib/libsubid.la
+libtool: warning: remember to run 'libtool --finish /lib'
+make[2]: Leaving directory '/sources/shadow-4.15.1/libsubid'
+make[1]: Leaving directory '/sources/shadow-4.15.1/libsubid'
+Making install in src
+make[1]: Entering directory '/sources/shadow-4.15.1/src'
+make  install-exec-am install-data-am
+make[2]: Entering directory '/sources/shadow-4.15.1/src'
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/mkdir -p '/usr/sbin'
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/mkdir -p '/usr/sbin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c login su getsubids '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c nologin '/usr/sbin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c faillog chage chfn chsh expiry gpasswd newgrp passwd newgidmap newuidmap '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c chgpasswd chpasswd groupadd groupdel groupmems groupmod grpck grpconv grpunconv logoutd newusers pwck pwconv pwunconv useradd userdel usermod vipw '/usr/sbin'
+libtool: install: /usr/bin/install -c nologin /usr/sbin/nologin
+libtool: install: /usr/bin/install -c login /usr/bin/login
+libtool: install: /usr/bin/install -c su /usr/bin/su
+libtool: install: /usr/bin/install -c faillog /usr/bin/faillog
+libtool: install: /usr/bin/install -c chage /usr/bin/chage
+libtool: install: /usr/bin/install -c chgpasswd /usr/sbin/chgpasswd
+libtool: install: /usr/bin/install -c chfn /usr/bin/chfn
+libtool: install: /usr/bin/install -c chsh /usr/bin/chsh
+libtool: install: /usr/bin/install -c chpasswd /usr/sbin/chpasswd
+libtool: install: /usr/bin/install -c .libs/getsubids /usr/bin/getsubids
+libtool: install: /usr/bin/install -c expiry /usr/bin/expiry
+libtool: install: /usr/bin/install -c groupadd /usr/sbin/groupadd
+libtool: install: /usr/bin/install -c gpasswd /usr/bin/gpasswd
+libtool: install: /usr/bin/install -c groupdel /usr/sbin/groupdel
+libtool: install: /usr/bin/install -c newgrp /usr/bin/newgrp
+libtool: install: /usr/bin/install -c groupmems /usr/sbin/groupmems
+libtool: install: /usr/bin/install -c passwd /usr/bin/passwd
+libtool: install: /usr/bin/install -c groupmod /usr/sbin/groupmod
+libtool: install: /usr/bin/install -c newgidmap /usr/bin/newgidmap
+libtool: install: /usr/bin/install -c grpck /usr/sbin/grpck
+libtool: install: /usr/bin/install -c newuidmap /usr/bin/newuidmap
+libtool: install: /usr/bin/install -c grpconv /usr/sbin/grpconv
+libtool: install: /usr/bin/install -c grpunconv /usr/sbin/grpunconv
+libtool: install: /usr/bin/install -c logoutd /usr/sbin/logoutd
+libtool: install: /usr/bin/install -c newusers /usr/sbin/newusers
+libtool: install: /usr/bin/install -c pwck /usr/sbin/pwck
+libtool: install: /usr/bin/install -c pwconv /usr/sbin/pwconv
+libtool: install: /usr/bin/install -c pwunconv /usr/sbin/pwunconv
+libtool: install: /usr/bin/install -c useradd /usr/sbin/useradd
+libtool: install: /usr/bin/install -c userdel /usr/sbin/userdel
+libtool: install: /usr/bin/install -c usermod /usr/sbin/usermod
+libtool: install: /usr/bin/install -c vipw /usr/sbin/vipw
+make[2]: Leaving directory '/sources/shadow-4.15.1/src'
+ln -sf newgrp	/usr/bin/sg
+ln -sf vipw	/usr/sbin/vigr
+set -e; for i in su; do \
+	chmod 4755 /usr/bin/$i; \
+done
+set -e; for i in chage chfn chsh expiry gpasswd newgrp passwd newgidmap newuidmap; do \
+	chmod 4755 /usr/bin/$i; \
+done
+set -e; for i in ; do \
+	chmod 4755 /usr/sbin/$i; \
+done
+make[1]: Leaving directory '/sources/shadow-4.15.1/src'
+Making install in po
+make[1]: Entering directory '/sources/shadow-4.15.1/po'
+installing bs.gmo as /usr/share/locale/bs/LC_MESSAGES/shadow.mo
+installing ca.gmo as /usr/share/locale/ca/LC_MESSAGES/shadow.mo
+installing cs.gmo as /usr/share/locale/cs/LC_MESSAGES/shadow.mo
+installing da.gmo as /usr/share/locale/da/LC_MESSAGES/shadow.mo
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/shadow.mo
+installing dz.gmo as /usr/share/locale/dz/LC_MESSAGES/shadow.mo
+installing el.gmo as /usr/share/locale/el/LC_MESSAGES/shadow.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/shadow.mo
+installing eu.gmo as /usr/share/locale/eu/LC_MESSAGES/shadow.mo
+installing fi.gmo as /usr/share/locale/fi/LC_MESSAGES/shadow.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/shadow.mo
+installing gl.gmo as /usr/share/locale/gl/LC_MESSAGES/shadow.mo
+installing he.gmo as /usr/share/locale/he/LC_MESSAGES/shadow.mo
+installing hu.gmo as /usr/share/locale/hu/LC_MESSAGES/shadow.mo
+installing id.gmo as /usr/share/locale/id/LC_MESSAGES/shadow.mo
+installing it.gmo as /usr/share/locale/it/LC_MESSAGES/shadow.mo
+installing ja.gmo as /usr/share/locale/ja/LC_MESSAGES/shadow.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/shadow.mo
+installing kk.gmo as /usr/share/locale/kk/LC_MESSAGES/shadow.mo
+installing km.gmo as /usr/share/locale/km/LC_MESSAGES/shadow.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/shadow.mo
+installing nb.gmo as /usr/share/locale/nb/LC_MESSAGES/shadow.mo
+installing ne.gmo as /usr/share/locale/ne/LC_MESSAGES/shadow.mo
+installing nl.gmo as /usr/share/locale/nl/LC_MESSAGES/shadow.mo
+installing nn.gmo as /usr/share/locale/nn/LC_MESSAGES/shadow.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/shadow.mo
+installing pt.gmo as /usr/share/locale/pt/LC_MESSAGES/shadow.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/shadow.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/shadow.mo
+installing ru.gmo as /usr/share/locale/ru/LC_MESSAGES/shadow.mo
+installing sk.gmo as /usr/share/locale/sk/LC_MESSAGES/shadow.mo
+installing sq.gmo as /usr/share/locale/sq/LC_MESSAGES/shadow.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/shadow.mo
+installing tl.gmo as /usr/share/locale/tl/LC_MESSAGES/shadow.mo
+installing tr.gmo as /usr/share/locale/tr/LC_MESSAGES/shadow.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/shadow.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/shadow.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/shadow.mo
+installing zh_TW.gmo as /usr/share/locale/zh_TW/LC_MESSAGES/shadow.mo
+if test "shadow" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/sources/shadow-4.15.1/po'
+Making install in contrib
+make[1]: Entering directory '/sources/shadow-4.15.1/contrib'
+make[2]: Entering directory '/sources/shadow-4.15.1/contrib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/shadow-4.15.1/contrib'
+make[1]: Leaving directory '/sources/shadow-4.15.1/contrib'
+Making install in doc
+make[1]: Entering directory '/sources/shadow-4.15.1/doc'
+make[2]: Entering directory '/sources/shadow-4.15.1/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/shadow-4.15.1/doc'
+make[1]: Leaving directory '/sources/shadow-4.15.1/doc'
+Making install in etc
+make[1]: Entering directory '/sources/shadow-4.15.1/etc'
+Making install in pam.d
+make[2]: Entering directory '/sources/shadow-4.15.1/etc/pam.d'
+make[3]: Entering directory '/sources/shadow-4.15.1/etc/pam.d'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Leaving directory '/sources/shadow-4.15.1/etc/pam.d'
+make[2]: Leaving directory '/sources/shadow-4.15.1/etc/pam.d'
+Making install in shadow-maint
+make[2]: Entering directory '/sources/shadow-4.15.1/etc/shadow-maint'
+make[3]: Entering directory '/sources/shadow-4.15.1/etc/shadow-maint'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/shadow-4.15.1/etc/shadow-maint'
+make[2]: Leaving directory '/sources/shadow-4.15.1/etc/shadow-maint'
+make[2]: Entering directory '/sources/shadow-4.15.1/etc'
+make[3]: Entering directory '/sources/shadow-4.15.1/etc'
+ /usr/bin/mkdir -p '/etc'
+ /usr/bin/mkdir -p '/etc'
+ /usr/bin/install -c -m 644 login.defs '/etc'
+ /usr/bin/install -c -m 644 limits login.access '/etc'
+make[3]: Leaving directory '/sources/shadow-4.15.1/etc'
+make[2]: Leaving directory '/sources/shadow-4.15.1/etc'
+make[1]: Leaving directory '/sources/shadow-4.15.1/etc'
+Making install in tests/unit
+make[1]: Entering directory '/sources/shadow-4.15.1/tests/unit'
+make[2]: Entering directory '/sources/shadow-4.15.1/tests/unit'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/shadow-4.15.1/tests/unit'
+make[1]: Leaving directory '/sources/shadow-4.15.1/tests/unit'
+make[1]: Entering directory '/sources/shadow-4.15.1'
+make[2]: Entering directory '/sources/shadow-4.15.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/shadow-4.15.1'
+make[1]: Leaving directory '/sources/shadow-4.15.1'
+make: Entering directory '/sources/shadow-4.15.1/man'
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/mkdir -p '/usr/share/man/man5'
+ /usr/bin/mkdir -p '/usr/share/man/man8'
+ /usr/bin/install -c -m 644 man3/shadow.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 man5/faillog.5 man5/gshadow.5 man5/login.defs.5 man5/shadow.5 man5/suauth.5 man5/limits.5 man5/login.access.5 man5/porttime.5 man5/subgid.5 man5/subuid.5 '/usr/share/man/man5'
+ /usr/bin/install -c -m 644 man8/chgpasswd.8 man8/chpasswd.8 man8/faillog.8 man8/groupadd.8 man8/groupdel.8 man8/groupmems.8 man8/groupmod.8 man8/grpck.8 man8/grpconv.8 man8/grpunconv.8 man8/logoutd.8 man8/newusers.8 man8/nologin.8 man8/pwck.8 man8/pwconv.8 man8/pwunconv.8 man8/useradd.8 man8/userdel.8 man8/usermod.8 man8/vigr.8 man8/vipw.8 '/usr/share/man/man8'
+ /usr/bin/install -c -m 644 man1/chage.1 man1/chfn.1 man1/chsh.1 man1/expiry.1 man1/gpasswd.1 man1/login.1 man1/newgrp.1 man1/passwd.1 man1/sg.1 man1/su.1 man1/getsubids.1 man1/newgidmap.1 man1/newuidmap.1 '/usr/share/man/man1'
+make: Leaving directory '/sources/shadow-4.15.1/man'
+install: creating directory '/etc/default'
+'/dev/stdin' -> '/etc/default/useradd'
+
+
+CFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 16:37:22 UTC 2024
+
+Totalseconds: 20
+
+KB: 1144444	/
+

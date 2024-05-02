@@ -1,0 +1,159 @@
+Thu May  2 15:55:34 UTC 2024
+KB: 1013664	/
+
+make -C libcap all
+make[1]: Entering directory '/sources/libcap-2.69/libcap'
+sed -e 's,@prefix@,/usr,' \
+	-e 's,@exec_prefix@,/usr,' \
+	-e 's,@libdir@,/usr/lib,' \
+	-e 's,@includedir@,/usr/include,' \
+	-e 's,@VERSION@,2.69,' \
+	-e 's,@deps@,,' \
+	libcap.pc.in >libcap.pc
+=> making cap_names.list.h from /sources/libcap-2.69/libcap/../libcap/include/uapi/linux/capability.h
+grep -E '^#define\s+CAP_([^\s]+)\s+[0-9]+\s*$' include/uapi/linux/capability.h | sed -e 's/^#define\s\+/{"/' -e 's/\s*$/},/' -e 's/\s\+/",/' -e 'y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/' > cap_names.list.h
+make libpsx.pc
+make[2]: Entering directory '/sources/libcap-2.69/libcap'
+gcc -O2 -Dlinux -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code  -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include _makenames.c -o _makenames
+sed -e 's,@prefix@,/usr,' \
+	-e 's,@exec_prefix@,/usr,' \
+	-e 's,@libdir@,/usr/lib,' \
+	-e 's,@includedir@,/usr/include,' \
+	-e 's,@VERSION@,2.69,' \
+	-e 's,@deps@,,' \
+	libpsx.pc.in >libpsx.pc
+make[2]: Leaving directory '/sources/libcap-2.69/libcap'
+./_makenames > cap_names.h
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -c cap_alloc.c -o cap_alloc.o
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -c cap_proc.c -o cap_proc.o
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -c cap_extint.c -o cap_extint.o
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -c cap_flag.c -o cap_flag.o
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include  -c cap_text.c -o cap_text.o
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -c cap_file.c -o cap_file.o
+ar rcs libcap.a cap_alloc.o cap_proc.o cap_extint.o cap_flag.o cap_text.o cap_file.o
+ranlib libcap.a
+make libcap.so
+make[2]: Entering directory '/sources/libcap-2.69/libcap'
+gcc -o empty empty.c
+objcopy --dump-section .interp=loader.txt empty /dev/null
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -DLIBRARY_VERSION=\"libcap-2.69\" -DSHARED_LOADER=\"/lib/ld-uClibc.so.1\" -include ./libcap.h -c execable.c -o cap_magic.o
+gcc -Wl,-x -shared -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-soname,libcap.so.2 -o libcap.so.2.69 cap_alloc.o cap_proc.o cap_extint.o cap_flag.o cap_text.o cap_file.o cap_magic.o -Wl,-e,__so_start
+ln -sf libcap.so.2.69 libcap.so.2
+ln -sf libcap.so.2 libcap.so
+make[2]: Leaving directory '/sources/libcap-2.69/libcap'
+make libpsx.a
+make[2]: Entering directory '/sources/libcap-2.69/libcap'
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -c ../psx/psx.c -o ../psx/psx.o
+rm -f include/sys/psx_syscall.h
+ln -s ../../../psx/psx_syscall.h include/sys/psx_syscall.h
+ar rcs libpsx.a ../psx/psx.o
+ranlib libpsx.a
+make[2]: Leaving directory '/sources/libcap-2.69/libcap'
+make libpsx.so
+make[2]: Entering directory '/sources/libcap-2.69/libcap'
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/../libcap/include/uapi -I/sources/libcap-2.69/libcap/../libcap/include -DLIBRARY_VERSION=\"libpsx-2.69\" -DSHARED_LOADER=\"/lib/ld-uClibc.so.1\" -c psx_exec.c -o psx_magic.o
+gcc -Wl,-x -shared -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -fPIC -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-soname,libpsx.so.2 -o libpsx.so.2.69 ../psx/psx.o psx_magic.o -Wl,-e,__so_start -lpthread -Wl,-wrap,pthread_create
+ln -sf libpsx.so.2.69 libpsx.so.2
+ln -sf libpsx.so.2 libpsx.so
+make[2]: Leaving directory '/sources/libcap-2.69/libcap'
+make[1]: Leaving directory '/sources/libcap-2.69/libcap'
+make -C tests all
+make[1]: Entering directory '/sources/libcap-2.69/tests'
+leave test building to test target
+make[1]: Leaving directory '/sources/libcap-2.69/tests'
+make -C progs all
+make[1]: Entering directory '/sources/libcap-2.69/progs'
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/progs/../libcap/include/uapi -I/sources/libcap-2.69/progs/../libcap/include -c getpcaps.c -o getpcaps.o
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/progs/../libcap/include/uapi -I/sources/libcap-2.69/progs/../libcap/include -c getcap.c -o getcap.o
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/progs/../libcap/include/uapi -I/sources/libcap-2.69/progs/../libcap/include -c setcap.c -o setcap.o
+./mkcapshdoc.sh > capshdoc.c.cf
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd getcap.o -L/sources/libcap-2.69/progs/../libcap -lcap  -o getcap
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd getpcaps.o -L/sources/libcap-2.69/progs/../libcap -lcap  -o getpcaps
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd setcap.o -L/sources/libcap-2.69/progs/../libcap -lcap  -o setcap
+diff -u capshdoc.c capshdoc.c.cf || (rm capshdoc.c.cf ; exit 1)
+gcc -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -Wall -Wwrite-strings -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wshadow -Wunreachable-code -DNDEBUG -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/libcap/include/uapi -I/sources/libcap-2.69/libcap/include -Dlinux -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I/sources/libcap-2.69/progs/../libcap/include/uapi -I/sources/libcap-2.69/progs/../libcap/include  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd capsh.c capshdoc.c -L/sources/libcap-2.69/progs/../libcap -lcap  -o capsh
+make[1]: Leaving directory '/sources/libcap-2.69/progs'
+make -C doc all
+make[1]: Entering directory '/sources/libcap-2.69/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/libcap-2.69/doc'
+make -C libcap install
+make[1]: Entering directory '/sources/libcap-2.69/libcap'
+mkdir -p -m 0755 /usr/include/sys
+mkdir -p -m 0755 /usr/lib/pkgconfig
+mkdir -p -m 0755 /usr/lib
+install -m 0644 include/sys/capability.h /usr/include/sys
+install -m 0644 libcap.pc /usr/lib/pkgconfig/libcap.pc
+make install-static-psx
+make[2]: Entering directory '/sources/libcap-2.69/libcap'
+mkdir -p -m 0755 /usr/include/sys
+mkdir -p -m 0755 /usr/lib/pkgconfig
+mkdir -p -m 0755 /usr/lib
+install -m 0644 include/sys/psx_syscall.h /usr/include/sys
+install -m 0644 libpsx.pc /usr/lib/pkgconfig/libpsx.pc
+make[2]: Leaving directory '/sources/libcap-2.69/libcap'
+make install-shared
+make[2]: Entering directory '/sources/libcap-2.69/libcap'
+mkdir -p -m 0755 /usr/include/sys
+mkdir -p -m 0755 /usr/lib/pkgconfig
+mkdir -p -m 0755 /usr/lib
+install -m 0644 include/sys/capability.h /usr/include/sys
+install -m 0644 libcap.pc /usr/lib/pkgconfig/libcap.pc
+install -m 0755 libcap.so.2.69 /usr/lib/libcap.so.2.69
+ln -sf libcap.so.2.69 /usr/lib/libcap.so.2
+ln -sf libcap.so.2 /usr/lib/libcap.so
+/sbin/ldconfig
+make install-shared-psx
+make[3]: Entering directory '/sources/libcap-2.69/libcap'
+mkdir -p -m 0755 /usr/include/sys
+mkdir -p -m 0755 /usr/lib/pkgconfig
+mkdir -p -m 0755 /usr/lib
+install -m 0644 include/sys/psx_syscall.h /usr/include/sys
+install -m 0644 libpsx.pc /usr/lib/pkgconfig/libpsx.pc
+install -m 0755 libpsx.so.2.69 /usr/lib/libpsx.so.2.69
+ln -sf libpsx.so.2.69 /usr/lib/libpsx.so.2
+ln -sf libpsx.so.2 /usr/lib/libpsx.so
+/sbin/ldconfig
+make[3]: Leaving directory '/sources/libcap-2.69/libcap'
+make[2]: Leaving directory '/sources/libcap-2.69/libcap'
+make[1]: Leaving directory '/sources/libcap-2.69/libcap'
+make -C tests install
+make[1]: Entering directory '/sources/libcap-2.69/tests'
+nothing to install from tests
+make[1]: Leaving directory '/sources/libcap-2.69/tests'
+make -C progs install
+make[1]: Entering directory '/sources/libcap-2.69/progs'
+mkdir -p -m 0755 /usr/sbin
+for p in getpcaps getcap setcap capsh ; do \
+	install -m 0755 $p /usr/sbin ; \
+done
+make[1]: Leaving directory '/sources/libcap-2.69/progs'
+make -C doc install
+make[1]: Entering directory '/sources/libcap-2.69/doc'
+mkdir -p -m 755 /usr/share/man/man1 /usr/share/man/man3 /usr/share/man/man8
+for man in \
+	/usr/share/man/man1 capsh.1 \
+	/usr/share/man/man3 cap_init.3 cap_free.3 cap_dup.3 cap_clear.3 cap_clear_flag.3 cap_get_flag.3 cap_set_flag.3 cap_fill.3 cap_fill_flag.3 cap_max_bits.3 cap_compare.3 cap_get_proc.3 cap_get_pid.3 cap_set_proc.3 cap_get_file.3 cap_get_fd.3 cap_set_file.3 cap_set_fd.3 cap_set_nsowner.3 cap_get_nsowner.3 cap_copy_ext.3 cap_size.3 cap_copy_int.3 cap_mode.3 cap_copy_int_check.3 cap_set_syscall.3 cap_from_text.3 cap_to_text.3 cap_from_name.3 cap_to_name.3 capsetp.3 capgetp.3 libcap.3 cap_get_bound.3 cap_drop_bound.3 cap_get_mode.3 cap_set_mode.3 cap_mode_name.3 cap_get_secbits.3 cap_set_secbits.3 cap_setuid.3 cap_setgroups.3 cap_launch.3 cap_func_launcher.3 cap_launcher_callback.3 cap_launcher_set_chroot.3 cap_launcher_set_mode.3 cap_launcher_setgroups.3 cap_launcher_setuid.3 cap_launcher_set_iab.3 cap_new_launcher.3 cap_iab.3 cap_iab_init.3 cap_iab_dup.3 cap_iab_compare.3 cap_iab_get_proc.3 cap_iab_get_pid.3 cap_iab_set_proc.3 cap_iab_to_text.3 cap_iab_from_text.3 cap_iab_get_vector.3 cap_iab_set_vector.3 cap_iab_fill.3 cap_proc_root.3 cap_prctl.3 cap_prctlw.3 psx_syscall.3 psx_syscall3.3 psx_syscall6.3 psx_set_sensitivity.3 psx_load_syscalls.3 __psx_syscall.3 libpsx.3 \
+	/usr/share/man/man8 getcap.8 setcap.8 getpcaps.8 captree.8 \
+	; \
+do \
+	case $man in \
+	/*)	sub=$man ; continue ;; \
+	esac; \
+	install -m 644 $man $sub ; \
+done
+make[1]: Leaving directory '/sources/libcap-2.69/doc'
+
+
+CFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 15:55:37 UTC 2024
+
+Totalseconds: 3
+
+KB: 1016412	/
+

@@ -1,0 +1,20 @@
+/usr/bin/lspci	129996	root:root	755	
+/usr/include/pci/config.h	852	root:root	644	
+/usr/include/pci/header.h	88886	root:root	644	
+/usr/include/pci/pci.h	13101	root:root	644	
+/usr/include/pci/types.h	1542	root:root	644	
+/usr/lib/libpci.so	11	root:root	777	libpci.so.3
+/usr/lib/libpci.so.3	16	root:root	777	libpci.so.3.12.0
+/usr/lib/libpci.so.3.12.0	99260	root:root	755	
+/usr/lib/pkgconfig/libpci.pc	210	root:root	644	
+/usr/sbin/pcilmr	42244	root:root	755	
+/usr/sbin/setpci	21768	root:root	755	
+/usr/sbin/update-pciids	2180	root:root	755	
+/usr/share/hwdata/pci.ids	1450318	root:root	644	
+/usr/share/hwdata/pci.ids.gz	330605	root:root	644	
+/usr/share/man/man5/pci.ids.5	3783	root:root	644	
+/usr/share/man/man7/pcilib.7	9601	root:root	644	
+/usr/share/man/man8/lspci.8	11106	root:root	644	
+/usr/share/man/man8/pcilmr.8	6357	root:root	644	
+/usr/share/man/man8/setpci.8	6588	root:root	644	
+/usr/share/man/man8/update-pciids.8	812	root:root	644	

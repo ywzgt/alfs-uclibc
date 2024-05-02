@@ -1,0 +1,10 @@
+/usr/include/uv.h	70509	root:root	644	
+/usr/include/uv/errno.h	11094	root:root	644	
+/usr/include/uv/linux.h	1781	root:root	644	
+/usr/include/uv/threadpool.h	1505	root:root	644	
+/usr/include/uv/unix.h	19817	root:root	644	
+/usr/include/uv/version.h	1831	root:root	644	
+/usr/lib/libuv.so	14	root:root	777	libuv.so.1.0.0
+/usr/lib/libuv.so.1	14	root:root	777	libuv.so.1.0.0
+/usr/lib/libuv.so.1.0.0	420940	root:root	755	
+/usr/lib/pkgconfig/libuv.pc	307	root:root	644	

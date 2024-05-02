@@ -1,0 +1,8 @@
+#!/bin/bash
+
+SRC="texinfo"
+
+./configure --prefix=/usr
+
+make
+make install

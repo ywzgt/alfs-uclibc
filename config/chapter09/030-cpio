@@ -1,0 +1,17 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/cpio.html
+
+SRC="cpio"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--enable-mt \
+	--with-rmt=/usr/libexec/rmt
+
+make
+makeinfo --html            -o doc/html      doc/cpio.texi
+makeinfo --html --no-split -o doc/cpio.html doc/cpio.texi
+makeinfo --plaintext       -o doc/cpio.txt  doc/cpio.texi
+make install
+install -Dt /usr/share/doc/cpio/html -vm644 doc/html/*
+install -vm644 doc/cpio.{html,txt} -t /usr/share/doc/cpio

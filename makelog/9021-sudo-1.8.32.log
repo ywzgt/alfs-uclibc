@@ -1,0 +1,1110 @@
+Thu May  2 17:27:50 UTC 2024
+KB: 1686432	/
+
+configure: Configuring Sudo version 1.8.32
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether to lecture users the first time they run sudo... yes
+checking whether sudo should log via syslog or to a file by default... syslog
+checking at which syslog priority to log commands... notice
+checking at which syslog priority to log failures... alert
+checking how long a line in the log file should be... 80
+checking whether sudo should ignore '.' or '' in $PATH... no
+checking whether to send mail when a user is not in sudoers... yes
+checking whether to send mail when user listed but not for this host... no
+checking whether to send mail when a user tries a disallowed command... no
+checking who should get the mail that sudo sends... root
+checking for bad password prompt...  🔐 %p : 
+checking for bad password message... Sorry, try again.
+checking whether to expect fully qualified hosts in sudoers... no
+checking for umask programs should be run with... 0022
+checking for default user to run commands as... root
+checking for editor that visudo should use... vi
+checking whether to obey EDITOR and VISUAL environment variables... yes
+checking number of tries a user gets to enter their password... 3
+checking time in minutes after which sudo will ask for a password again... 5
+checking time in minutes after the password prompt will time out... 5
+checking whether to include insults... no
+checking whether to override the user's path... /bin:/usr/ucb:/usr/bin:/usr/sbin:/sbin:/usr/etc:/etc
+checking whether to get ip addresses from the network interfaces... yes
+checking whether to use an askpass helper... no
+checking whether to do user authentication by default... yes
+checking whether to disable running the mailer as root... no
+checking whether to disable shadow password support... no
+checking whether root should be allowed to use sudo... yes
+checking whether to log the hostname in the log file... no
+checking whether to invoke a shell if sudo is given no arguments... no
+checking whether to set $HOME to target user in shell mode... no
+checking whether to disable 'command not found' messages... no
+checking whether to enable environment debugging... no
+checking whether to enable environment resetting by default... yes
+checking for library containing strerror... none required
+checking how to run the C preprocessor... gcc -E
+checking for ar... ar
+checking for ranlib... ranlib
+checking build system type... i686-pc-linux-uclibc
+checking host system type... i686-pc-linux-uclibc
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert i686-pc-linux-uclibc file names to i686-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert i686-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... (cached) ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking path to sudo_noexec.so... /usr/lib/sudo/sudo_noexec.so
+checking for uname... /usr/bin/uname
+checking for tr... /usr/bin/tr
+checking for mandoc... mandoc
+checking for nroff... /usr/bin/nroff
+checking which macro set to use for manual pages... mdoc
+checking whether SECCOMP_SET_MODE_FILTER is declared... yes
+checking linux/random.h usability... yes
+checking linux/random.h presence... yes
+checking for linux/random.h... yes
+checking for gcc option to accept ISO C99... none needed
+checking for gcc option to accept ISO Standard C... (cached) none needed
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for working volatile... yes
+checking for variadic macro support in cpp... yes
+checking for gawk... (cached) gawk
+checking for bison... bison -y
+checking for flex... /usr/bin/flex
+checking for mv... /usr/bin/mv
+checking for sh... /usr/bin/sh
+checking for sendmail... no
+checking for vi... /usr/bin/vi
+checking which syslog facility sudo should log with... authpriv
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for sys/types.h... (cached) yes
+checking for netgroup.h... no
+checking for paths.h... yes
+checking for spawn.h... yes
+checking for wordexp.h... no
+checking for sys/sockio.h... no
+checking for sys/bsdtypes.h... no
+checking for sys/select.h... yes
+checking for sys/stropts.h... no
+checking for sys/sysmacros.h... yes
+checking for sys/syscall.h... yes
+checking for sys/statvfs.h... yes
+checking sys/mkdev.h usability... no
+checking sys/mkdev.h presence... no
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... (cached) yes
+checking utmps.h usability... no
+checking utmps.h presence... no
+checking for utmps.h... no
+checking utmpx.h usability... yes
+checking utmpx.h presence... yes
+checking for utmpx.h... yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking procfs.h usability... no
+checking procfs.h presence... no
+checking for procfs.h... no
+checking sys/procfs.h usability... yes
+checking sys/procfs.h presence... yes
+checking for sys/procfs.h... yes
+checking for struct psinfo.pr_ttydev... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking POSIX termios... yes
+checking for mode_t... yes
+checking for uid_t in sys/types.h... yes
+checking for clockid_t... yes
+checking for sig_atomic_t... yes
+checking for struct in6_addr... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for uint8_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for socklen_t... yes
+checking for rsize_t... no
+checking for errno_t... no
+checking max length of uid_t... 10
+checking for struct sockaddr.sa_len... no
+checking for struct sockaddr_in.sin_len... no
+checking size of id_t... 4
+checking size of long long... 8
+checking size of time_t... 8
+checking for struct utmpx.ut_id... yes
+checking for struct utmpx.ut_pid... yes
+checking for struct utmpx.ut_tv... yes
+checking for struct utmpx.ut_type... yes
+checking for struct utmpx.ut_exit.__e_termination... no
+checking for struct utmpx.ut_exit.e_termination... yes
+checking type of array argument to getgroups... gid_t
+checking for size_t... yes
+checking for getgroups... yes
+checking for working getgroups... yes
+checking for fexecve... yes
+checking for killpg... yes
+checking for nl_langinfo... yes
+checking for pread... yes
+checking for pwrite... yes
+checking for faccessat... yes
+checking for wordexp... no
+checking for getauxval... yes
+checking for seteuid... yes
+checking for getgrouplist... yes
+checking for getdelim... yes
+checking whether getdelim is declared... yes
+checking for getusershell... yes
+checking for reallocarray... yes
+checking for arc4random_uniform... no
+checking for arc4random... no
+checking for getentropy... yes
+checking sys/random.h usability... yes
+checking sys/random.h presence... yes
+checking for sys/random.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for main in -lpthread... yes
+checking for pthread_atfork... yes
+checking for getutsid... no
+checking for getutxid... yes
+checking for sysctl... yes
+checking for devname... no
+checking for struct kinfo_proc.ki_structsize... no
+checking for struct kinfo_proc2.p_paddr... no
+checking for struct kinfo_proc.p_paddr... no
+checking for struct kinfo_proc.kp_proc... no
+checking for openpty... yes
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking util.h usability... no
+checking util.h presence... no
+checking for util.h... no
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking for unsetenv... yes
+checking whether unsetenv returns void... no
+checking whether putenv takes a const argument... no
+checking for setresuid... yes
+checking whether setresuid is declared... yes
+checking for getresuid... yes
+checking whether getresuid is declared... yes
+checking for getifaddrs... yes
+checking for freeifaddrs... yes
+checking for lockf... yes
+checking for innetgr... no
+checking for _innetgr... no
+checking for getdomainname... yes
+checking whether getdomainname is declared... yes
+checking for utimensat... yes
+checking for futimens... yes
+checking for working fnmatch with FNM_CASEFOLD... yes
+checking for isblank... yes
+checking for glob... yes
+checking for memrchr... yes
+checking for memset_s... no
+checking for nanosleep... yes
+checking for openat... yes
+checking for unlinkat... yes
+checking for pipe2... yes
+checking for pw_dup... no
+checking for strlcpy... yes
+checking for strlcat... yes
+checking for strnlen... yes
+checking for working strnlen... yes
+checking for strndup... yes
+checking for clock_gettime... yes
+checking for getopt_long... yes
+checking for closefrom... no
+checking whether F_CLOSEM is declared... no
+checking for mkstemps... yes
+checking for mkdtemp... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for working snprintf... yes
+checking for working vsnprintf... yes
+checking for asprintf... yes
+checking for vasprintf... yes
+checking for struct tm.tm_gmtoff... no
+checking for struct stat.st_mtim... yes
+checking for struct stat.st_mtim.st__tim... no
+checking sha2.h usability... no
+checking sha2.h presence... no
+checking for sha2.h... no
+checking for vsyslog... yes
+checking for setpassent... no
+checking for setgroupent... no
+checking for exect... no
+checking for execvP... no
+checking for execvpe... yes
+checking for posix_spawn... yes
+checking for posix_spawnp... yes
+checking for struct dirent.d_type... yes
+checking for struct dirent.d_namlen... no
+checking for socket... yes
+checking for inet_pton... yes
+checking for inet_ntop... yes
+checking for syslog... yes
+checking for getaddrinfo... yes
+checking for getprogname... no
+checking for __progname... yes
+checking for __func__... yes
+checking for gettext... no
+checking for gettext in -lintl... yes
+checking for ngettext... yes
+checking for gzdopen in -lz... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking whether errno is declared... yes
+checking whether h_errno is declared... yes
+checking whether LLONG_MAX is declared... yes
+checking whether LLONG_MIN is declared... yes
+checking whether ULLONG_MAX is declared... yes
+checking whether PATH_MAX is declared... yes
+checking whether SIZE_MAX is declared... yes
+checking for strsignal... yes
+checking for sig2str... no
+checking for str2sig... no
+checking whether sys_signame is declared... no
+checking whether _sys_signame is declared... no
+checking whether sys_sigabbrev is declared... no
+checking for undeclared sys_sigabbrev... no
+checking for dl_iterate_phdr... yes
+checking for library containing crypt... -lcrypt
+checking for getspnam... yes
+checking for ppoll... yes
+checking for log file location... /var/log/sudo.log
+checking for sudo run dir location... /run/sudo
+checking for sudo var dir location... /var/lib/sudo
+checking for I/O log dir location... /var/log/sudo-io
+checking time zone data directory... /usr/share/zoneinfo
+checking whether _FORTIFY_SOURCE may be specified... yes
+checking whether C compiler accepts -fvisibility=hidden... yes
+checking whether C compiler accepts -fPIE... yes
+checking whether the linker accepts -pie... yes
+checking for working PIE support... yes
+checking for compiler stack protector support... -fstack-protector-strong
+checking whether the linker accepts -Wl,-z,relro... yes
+configure: using the following authentication methods: passwd
+configure: creating ./config.status
+config.status: creating init.d/sudo.conf
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating examples/Makefile
+config.status: creating include/Makefile
+config.status: creating lib/util/Makefile
+config.status: creating lib/util/util.exp
+config.status: creating src/sudo_usage.h
+config.status: creating src/Makefile
+config.status: creating plugins/sample/Makefile
+config.status: creating plugins/group_file/Makefile
+config.status: creating plugins/system_group/Makefile
+config.status: creating plugins/sudoers/Makefile
+config.status: creating plugins/sudoers/sudoers
+config.status: creating config.h
+config.status: creating pathnames.h
+config.status: executing libtool commands
+for d in lib/util  plugins/group_file plugins/sudoers plugins/system_group src include doc examples; do \
+    (cd $d && exec make all) && continue; \
+    exit $?; \
+done
+make[1]: Entering directory '/sources/sudo-1.8.32/lib/util'
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o digest.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./digest.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o event.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./event.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o fatal.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./fatal.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o key_val.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./key_val.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./event.c  -fPIC -DPIC -o .libs/event.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./fatal.c  -fPIC -DPIC -o .libs/fatal.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./digest.c  -fPIC -DPIC -o .libs/digest.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./key_val.c  -fPIC -DPIC -o .libs/key_val.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o gethostname.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./gethostname.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o gettime.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./gettime.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o getgrouplist.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./getgrouplist.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gethostname.c  -fPIC -DPIC -o .libs/gethostname.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gettime.c  -fPIC -DPIC -o .libs/gettime.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o gidlist.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./gidlist.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./getgrouplist.c  -fPIC -DPIC -o .libs/getgrouplist.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o lbuf.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./lbuf.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o locking.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./locking.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gidlist.c  -fPIC -DPIC -o .libs/gidlist.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o parseln.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./parseln.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./lbuf.c  -fPIC -DPIC -o .libs/lbuf.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o progname.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./progname.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./locking.c  -fPIC -DPIC -o .libs/locking.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./parseln.c  -fPIC -DPIC -o .libs/parseln.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o secure_path.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./secure_path.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./progname.c  -fPIC -DPIC -o .libs/progname.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o setgroups.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./setgroups.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o strsplit.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./strsplit.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o strtobool.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./strtobool.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./secure_path.c  -fPIC -DPIC -o .libs/secure_path.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o strtoid.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./strtoid.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./setgroups.c  -fPIC -DPIC -o .libs/setgroups.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./strsplit.c  -fPIC -DPIC -o .libs/strsplit.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./strtobool.c  -fPIC -DPIC -o .libs/strtobool.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o strtomode.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./strtomode.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o strtonum.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./strtonum.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o sudo_conf.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudo_conf.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./strtoid.c  -fPIC -DPIC -o .libs/strtoid.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./strtonum.c  -fPIC -DPIC -o .libs/strtonum.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./strtomode.c  -fPIC -DPIC -o .libs/strtomode.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o sudo_debug.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudo_debug.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudo_conf.c  -fPIC -DPIC -o .libs/sudo_conf.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o sudo_dso.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudo_dso.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o term.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./term.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudo_debug.c  -fPIC -DPIC -o .libs/sudo_debug.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudo_dso.c  -fPIC -DPIC -o .libs/sudo_dso.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./term.c  -fPIC -DPIC -o .libs/term.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o ttyname_dev.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./ttyname_dev.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o ttysize.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./ttysize.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./ttyname_dev.c  -fPIC -DPIC -o .libs/ttyname_dev.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o event_poll.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./event_poll.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./ttysize.c  -fPIC -DPIC -o .libs/ttysize.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o arc4random_uniform.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./arc4random_uniform.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./event_poll.c  -fPIC -DPIC -o .libs/event_poll.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o arc4random.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./arc4random.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o memset_s.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./memset_s.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./arc4random_uniform.c  -fPIC -DPIC -o .libs/arc4random_uniform.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./arc4random.c  -fPIC -DPIC -o .libs/arc4random.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./memset_s.c  -fPIC -DPIC -o .libs/memset_s.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o pw_dup.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./pw_dup.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o closefrom.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./closefrom.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o sha2.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sha2.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./pw_dup.c  -fPIC -DPIC -o .libs/pw_dup.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./closefrom.c  -fPIC -DPIC -o .libs/closefrom.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sha2.c  -fPIC -DPIC -o .libs/sha2.o
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o sig2str.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sig2str.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o str2sig.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./str2sig.c
+gcc -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden ./mksigname.c -o mksigname
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sig2str.c  -fPIC -DPIC -o .libs/sig2str.o
+./mksigname > signame.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -o signame.lo -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong signame.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./str2sig.c  -fPIC -DPIC -o .libs/str2sig.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I../.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong signame.c  -fPIC -DPIC -o .libs/signame.o
+case "" in \
+*-no-install*) \
+    /bin/sh ../../libtool --tag=disable-static --mode=link gcc -o libsudo_util.la -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  digest.lo event.lo fatal.lo key_val.lo gethostname.lo gettime.lo getgrouplist.lo gidlist.lo lbuf.lo locking.lo parseln.lo progname.lo secure_path.lo setgroups.lo strsplit.lo strtobool.lo strtoid.lo strtomode.lo strtonum.lo sudo_conf.lo sudo_debug.lo sudo_dso.lo term.lo ttyname_dev.lo ttysize.lo  event_poll.lo  arc4random_uniform.lo arc4random.lo memset_s.lo pw_dup.lo closefrom.lo sha2.lo sig2str.lo str2sig.lo signame.lo  -lintl  -lpthread  ;; \
+*) \
+    /bin/sh ../../libtool --tag=disable-static --mode=link gcc -o libsudo_util.la -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -Wc,-fstack-protector-strong  digest.lo event.lo fatal.lo key_val.lo gethostname.lo gettime.lo getgrouplist.lo gidlist.lo lbuf.lo locking.lo parseln.lo progname.lo secure_path.lo setgroups.lo strsplit.lo strtobool.lo strtoid.lo strtomode.lo strtonum.lo sudo_conf.lo sudo_debug.lo sudo_dso.lo term.lo ttyname_dev.lo ttysize.lo  event_poll.lo  arc4random_uniform.lo arc4random.lo memset_s.lo pw_dup.lo closefrom.lo sha2.lo sig2str.lo str2sig.lo signame.lo -version-info 0:0:0 -rpath /usr/lib/sudo  -lintl  -lpthread  ;; \
+esac
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/digest.o .libs/event.o .libs/fatal.o .libs/key_val.o .libs/gethostname.o .libs/gettime.o .libs/getgrouplist.o .libs/gidlist.o .libs/lbuf.o .libs/locking.o .libs/parseln.o .libs/progname.o .libs/secure_path.o .libs/setgroups.o .libs/strsplit.o .libs/strtobool.o .libs/strtoid.o .libs/strtomode.o .libs/strtonum.o .libs/sudo_conf.o .libs/sudo_debug.o .libs/sudo_dso.o .libs/term.o .libs/ttyname_dev.o .libs/ttysize.o .libs/event_poll.o .libs/arc4random_uniform.o .libs/arc4random.o .libs/memset_s.o .libs/pw_dup.o .libs/closefrom.o .libs/sha2.o .libs/sig2str.o .libs/str2sig.o .libs/signame.o   -lintl -lpthread  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fstack-protector-strong   -Wl,-soname -Wl,libsudo_util.so.0 -o .libs/libsudo_util.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libsudo_util.so.0" && ln -s "libsudo_util.so.0.0.0" "libsudo_util.so.0")
+libtool: link: (cd ".libs" && rm -f "libsudo_util.so" && ln -s "libsudo_util.so.0.0.0" "libsudo_util.so")
+libtool: link: ( cd ".libs" && rm -f "libsudo_util.la" && ln -s "../libsudo_util.la" "libsudo_util.la" )
+make[1]: Leaving directory '/sources/sudo-1.8.32/lib/util'
+make[1]: Entering directory '/sources/sudo-1.8.32/plugins/group_file'
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -I../../include -I../.. -I../.. -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./group_file.c
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -I../../include -I../.. -I../.. -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./getgrent.c
+libtool: compile:  gcc -c -I../../include -I../.. -I../.. -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./group_file.c  -fPIC -DPIC -o .libs/group_file.o
+libtool: compile:  gcc -c -I../../include -I../.. -I../.. -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./getgrent.c  -fPIC -DPIC -o .libs/getgrent.o
+/bin/sh ../../libtool --tag=disable-static --mode=link gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -Wc,-fstack-protector-strong  -o group_file.la group_file.lo getgrent.lo ../../lib/util/libsudo_util.la -module -avoid-version -rpath /usr/lib/sudo -shrext .so
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/group_file.o .libs/getgrent.o   -Wl,-rpath -Wl,/sources/sudo-1.8.32/lib/util/.libs -Wl,-rpath -Wl,/usr/lib/sudo ../../lib/util/.libs/libsudo_util.so -lintl -lpthread  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fstack-protector-strong   -Wl,-soname -Wl,group_file.so -o .libs/group_file.so
+libtool: link: ( cd ".libs" && rm -f "group_file.la" && ln -s "../group_file.la" "group_file.la" )
+make[1]: Leaving directory '/sources/sudo-1.8.32/plugins/group_file'
+make[1]: Entering directory '/sources/sudo-1.8.32/plugins/sudoers'
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./auth/sudo_auth.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./getspwuid.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./auth/passwd.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./boottime.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./auth/passwd.c  -fPIC -DPIC -o .libs/passwd.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./boottime.c  -fPIC -DPIC -o .libs/boottime.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./getspwuid.c  -fPIC -DPIC -o .libs/getspwuid.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./auth/sudo_auth.c  -fPIC -DPIC -o .libs/sudo_auth.o
+./auth/passwd.c: In function 'sudo_passwd_verify':
+./auth/passwd.c:90:22: warning: implicit declaration of function 'crypt' [-Wimplicit-function-declaration]
+   90 |     epass = (char *) crypt(pass, pw_epasswd);
+      |                      ^~~~~
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./boottime.c -fPIE -o boottime.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./getspwuid.c -fPIE -o getspwuid.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./auth/passwd.c -fPIE -o passwd.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./check.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./editor.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./env.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./auth/sudo_auth.c -fPIE -o sudo_auth.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./check.c  -fPIC -DPIC -o .libs/check.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./editor.c  -fPIC -DPIC -o .libs/editor.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./env.c  -fPIC -DPIC -o .libs/env.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./env_pattern.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./editor.c -fPIE -o editor.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./check.c -fPIE -o check.o >/dev/null 2>&1
+echo "/*" > prologue
+echo " * This is an open source non-commercial project. Dear PVS-Studio, please check it." >> prologue
+echo " * PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com" >> prologue
+echo " */" >> prologue
+echo "" >> prologue
+echo "#include <config.h>" >> prologue
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./find_path.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./env_pattern.c  -fPIC -DPIC -o .libs/env_pattern.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./gc.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./env_pattern.c -fPIE -o env_pattern.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./goodpath.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./find_path.c  -fPIC -DPIC -o .libs/find_path.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gc.c  -fPIC -DPIC -o .libs/gc.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./env.c -fPIE -o env.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gc.c -fPIE -o gc.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./find_path.c -fPIE -o find_path.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./group_plugin.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./goodpath.c  -fPIC -DPIC -o .libs/goodpath.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./interfaces.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./goodpath.c -fPIE -o goodpath.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./iolog.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./group_plugin.c  -fPIC -DPIC -o .libs/group_plugin.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./interfaces.c  -fPIC -DPIC -o .libs/interfaces.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./group_plugin.c -fPIE -o group_plugin.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./iolog.c  -fPIC -DPIC -o .libs/iolog.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./interfaces.c -fPIE -o interfaces.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./iolog_path.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./locale.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./logging.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./iolog_path.c  -fPIC -DPIC -o .libs/iolog_path.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./locale.c  -fPIC -DPIC -o .libs/locale.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./logging.c  -fPIC -DPIC -o .libs/logging.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./locale.c -fPIE -o locale.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./iolog_path.c -fPIE -o iolog_path.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./logwrap.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./iolog.c -fPIE -o iolog.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./mkdir_parents.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./logwrap.c  -fPIC -DPIC -o .libs/logwrap.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./logwrap.c -fPIE -o logwrap.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./mkdir_parents.c  -fPIC -DPIC -o .libs/mkdir_parents.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./policy.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./mkdir_parents.c -fPIE -o mkdir_parents.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./logging.c -fPIE -o logging.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./prompt.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./policy.c  -fPIC -DPIC -o .libs/policy.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./set_perms.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./prompt.c  -fPIC -DPIC -o .libs/prompt.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./prompt.c -fPIE -o prompt.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./set_perms.c  -fPIC -DPIC -o .libs/set_perms.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./starttime.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudo_nss.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./starttime.c  -fPIC -DPIC -o .libs/starttime.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./policy.c -fPIE -o policy.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudo_nss.c  -fPIC -DPIC -o .libs/sudo_nss.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./starttime.c -fPIE -o starttime.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudo_nss.c -fPIE -o sudo_nss.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./set_perms.c -fPIE -o set_perms.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudoers.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./timestamp.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudoers.c  -fPIC -DPIC -o .libs/sudoers.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./timestamp.c  -fPIC -DPIC -o .libs/timestamp.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./audit.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./base64.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./audit.c  -fPIC -DPIC -o .libs/audit.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./base64.c  -fPIC -DPIC -o .libs/base64.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./audit.c -fPIE -o audit.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./timestamp.c -fPIE -o timestamp.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./digestname.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./base64.c -fPIE -o base64.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudoers.c -fPIE -o sudoers.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./filedigest.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./digestname.c  -fPIC -DPIC -o .libs/digestname.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./digestname.c -fPIE -o digestname.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./gentime.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./filedigest.c  -fPIC -DPIC -o .libs/filedigest.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./filedigest.c -fPIE -o filedigest.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./gmtoff.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gentime.c  -fPIC -DPIC -o .libs/gentime.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./hexchar.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gentime.c -fPIE -o gentime.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gmtoff.c  -fPIC -DPIC -o .libs/gmtoff.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gmtoff.c -fPIE -o gmtoff.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./match_addr.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./pwutil.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./hexchar.c  -fPIC -DPIC -o .libs/hexchar.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./pwutil_impl.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./hexchar.c -fPIE -o hexchar.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./rcstr.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./match_addr.c  -fPIC -DPIC -o .libs/match_addr.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./pwutil.c  -fPIC -DPIC -o .libs/pwutil.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./pwutil_impl.c  -fPIC -DPIC -o .libs/pwutil_impl.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./match_addr.c -fPIE -o match_addr.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./rcstr.c  -fPIC -DPIC -o .libs/rcstr.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./rcstr.c -fPIE -o rcstr.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./pwutil_impl.c -fPIE -o pwutil_impl.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./redblack.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudoers_debug.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./timeout.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./redblack.c  -fPIC -DPIC -o .libs/redblack.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudoers_debug.c  -fPIC -DPIC -o .libs/sudoers_debug.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./pwutil.c -fPIE -o pwutil.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudoers_debug.c -fPIE -o sudoers_debug.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./timeout.c  -fPIC -DPIC -o .libs/timeout.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./redblack.c -fPIE -o redblack.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./timestr.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./timeout.c -fPIE -o timeout.o >/dev/null 2>&1
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./stubs.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudo_printf.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudoreplay.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./timestr.c  -fPIC -DPIC -o .libs/timestr.o
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./iolog_util.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./timestr.c -fPIE -o timestr.o >/dev/null 2>&1
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./cvtsudoers_pwutil.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./strlist.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ../../src/net_ifs.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./tsgetgrpw.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./gram.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./match.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gram.c  -fPIC -DPIC -o .libs/gram.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./match_command.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./match.c  -fPIC -DPIC -o .libs/match.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./match_command.c  -fPIC -DPIC -o .libs/match_command.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./match_digest.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./match_digest.c  -fPIC -DPIC -o .libs/match_digest.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./match.c -fPIE -o match.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./match_command.c -fPIE -o match_command.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./match_digest.c -fPIE -o match_digest.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./toke.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./gram.c -fPIE -o gram.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./toke_util.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./visudo.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./toke.c  -fPIC -DPIC -o .libs/toke.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./toke_util.c  -fPIC -DPIC -o .libs/toke_util.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./toke_util.c -fPIE -o toke_util.o >/dev/null 2>&1
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./getdate.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./cvtsudoers.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./cvtsudoers_json.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./cvtsudoers_ldif.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./toke.c -fPIE -o toke.o >/dev/null 2>&1
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./parse_ldif.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./ldap_util.c
+gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./testsudoers.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./ldap_util.c  -fPIC -DPIC -o .libs/ldap_util.o
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./file.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./fmtsudoers.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./ldap_util.c -fPIE -o ldap_util.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./file.c  -fPIC -DPIC -o .libs/file.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./fmtsudoers.c  -fPIC -DPIC -o .libs/fmtsudoers.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./file.c -fPIE -o file.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./parse.c
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./alias.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./fmtsudoers.c -fPIE -o fmtsudoers.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=compile gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./defaults.c
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./parse.c  -fPIC -DPIC -o .libs/parse.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./alias.c  -fPIC -DPIC -o .libs/alias.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./defaults.c  -fPIC -DPIC -o .libs/defaults.o
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./alias.c -fPIE -o alias.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=link gcc -o sudoreplay getdate.o sudoreplay.o iolog_util.o -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -Wc,-fPIE -pie -Wc,-fstack-protector-strong timestr.lo ../../lib/util/libsudo_util.la -lz
+libtool: link: gcc -o .libs/sudoreplay getdate.o sudoreplay.o iolog_util.o -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fPIE -pie -fstack-protector-strong .libs/timestr.o  ../../lib/util/.libs/libsudo_util.so -lintl -lpthread -lz  -Wl,-rpath -Wl,/usr/lib/sudo
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./parse.c -fPIE -o parse.o >/dev/null 2>&1
+libtool: compile:  gcc -c -I../../include -I../.. -I. -I. -I../.. -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\" -D_PATH_SUDOERS=\"/etc/sudoers\" -D_PATH_CVTSUDOERS_CONF=\"/etc/cvtsudoers.conf\" -DSUDOERS_UID=0 -DSUDOERS_GID=0 -DSUDOERS_MODE=0440 -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./defaults.c -fPIE -o defaults.o >/dev/null 2>&1
+/bin/sh ../../libtool  --mode=link gcc -o libparsesudoers.la alias.lo audit.lo base64.lo defaults.lo digestname.lo filedigest.lo gentime.lo gmtoff.lo gram.lo hexchar.lo match.lo match_addr.lo match_command.lo match_digest.lo pwutil.lo pwutil_impl.lo rcstr.lo redblack.lo sudoers_debug.lo timeout.lo timestr.lo toke.lo toke_util.lo -no-install
+libtool: link: ar cru .libs/libparsesudoers.a .libs/alias.o .libs/audit.o .libs/base64.o .libs/defaults.o .libs/digestname.o .libs/filedigest.o .libs/gentime.o .libs/gmtoff.o .libs/gram.o .libs/hexchar.o .libs/match.o .libs/match_addr.o .libs/match_command.o .libs/match_digest.o .libs/pwutil.o .libs/pwutil_impl.o .libs/rcstr.o .libs/redblack.o .libs/sudoers_debug.o .libs/timeout.o .libs/timestr.o .libs/toke.o .libs/toke_util.o 
+libtool: link: ranlib .libs/libparsesudoers.a
+libtool: link: ( cd ".libs" && rm -f "libparsesudoers.la" && ln -s "../libparsesudoers.la" "libparsesudoers.la" )
+case "" in \
+*-no-install*) \
+    /bin/sh ../../libtool  --tag=disable-static --mode=link gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -o sudoers.la sudo_auth.lo getspwuid.lo passwd.lo boottime.lo check.lo editor.lo env.lo env_pattern.lo file.lo find_path.lo fmtsudoers.lo gc.lo goodpath.lo group_plugin.lo interfaces.lo iolog.lo iolog_path.lo locale.lo logging.lo logwrap.lo mkdir_parents.lo parse.lo policy.lo prompt.lo set_perms.lo starttime.lo sudo_nss.lo sudoers.lo timestamp.lo  libparsesudoers.la -lcrypt   ../../lib/util/libsudo_util.la  -lz -module;; \
+*) \
+    /bin/sh ../../libtool  --tag=disable-static --mode=link gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -Wc,-fstack-protector-strong  -o sudoers.la sudo_auth.lo getspwuid.lo passwd.lo boottime.lo check.lo editor.lo env.lo env_pattern.lo file.lo find_path.lo fmtsudoers.lo gc.lo goodpath.lo group_plugin.lo interfaces.lo iolog.lo iolog_path.lo locale.lo logging.lo logwrap.lo mkdir_parents.lo parse.lo policy.lo prompt.lo set_perms.lo starttime.lo sudo_nss.lo sudoers.lo timestamp.lo  libparsesudoers.la -lcrypt   ../../lib/util/libsudo_util.la  -lz -module -avoid-version -rpath /usr/lib/sudo -shrext .so;; \
+esac
+/bin/sh ../../libtool  --mode=link gcc -o visudo editor.lo find_path.lo goodpath.lo locale.lo stubs.o sudo_printf.o visudo.o -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -Wc,-fPIE -pie -Wc,-fstack-protector-strong libparsesudoers.la ../../lib/util/libsudo_util.la 
+/bin/sh ../../libtool  --mode=link gcc -o cvtsudoers cvtsudoers.o cvtsudoers_json.o cvtsudoers_ldif.o cvtsudoers_pwutil.o fmtsudoers.lo locale.lo parse_ldif.o strlist.o stubs.o sudo_printf.o ldap_util.lo -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -Wc,-fPIE -pie -Wc,-fstack-protector-strong libparsesudoers.la ../../lib/util/libsudo_util.la 
+/bin/sh ../../libtool  --mode=link gcc -o testsudoers fmtsudoers.lo group_plugin.lo interfaces.lo ldap_util.lo locale.lo net_ifs.o parse_ldif.o strlist.o sudo_printf.o testsudoers.o tsgetgrpw.o -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -Wc,-fPIE -pie -Wc,-fstack-protector-strong libparsesudoers.la ../../lib/util/libsudo_util.la 
+libtool: link: gcc -o .libs/visudo .libs/editor.o .libs/find_path.o .libs/goodpath.o .libs/locale.o stubs.o sudo_printf.o visudo.o -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fPIE -pie -fstack-protector-strong  ./.libs/libparsesudoers.a ../../lib/util/.libs/libsudo_util.so -lintl -lpthread  -Wl,-rpath -Wl,/usr/lib/sudo
+libtool: link: gcc -o .libs/cvtsudoers cvtsudoers.o cvtsudoers_json.o cvtsudoers_ldif.o cvtsudoers_pwutil.o .libs/fmtsudoers.o .libs/locale.o parse_ldif.o strlist.o stubs.o sudo_printf.o .libs/ldap_util.o -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fPIE -pie -fstack-protector-strong  ./.libs/libparsesudoers.a ../../lib/util/.libs/libsudo_util.so -lintl -lpthread  -Wl,-rpath -Wl,/usr/lib/sudo
+libtool: link: gcc -o .libs/testsudoers .libs/fmtsudoers.o .libs/group_plugin.o .libs/interfaces.o .libs/ldap_util.o .libs/locale.o net_ifs.o parse_ldif.o strlist.o sudo_printf.o testsudoers.o tsgetgrpw.o -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fPIE -pie -fstack-protector-strong  ./.libs/libparsesudoers.a ../../lib/util/.libs/libsudo_util.so -lintl -lpthread  -Wl,-rpath -Wl,/usr/lib/sudo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/sudo_auth.o .libs/getspwuid.o .libs/passwd.o .libs/boottime.o .libs/check.o .libs/editor.o .libs/env.o .libs/env_pattern.o .libs/file.o .libs/find_path.o .libs/fmtsudoers.o .libs/gc.o .libs/goodpath.o .libs/group_plugin.o .libs/interfaces.o .libs/iolog.o .libs/iolog_path.o .libs/locale.o .libs/logging.o .libs/logwrap.o .libs/mkdir_parents.o .libs/parse.o .libs/policy.o .libs/prompt.o .libs/set_perms.o .libs/starttime.o .libs/sudo_nss.o .libs/sudoers.o .libs/timestamp.o  -Wl,--whole-archive ./.libs/libparsesudoers.a -Wl,--no-whole-archive  -Wl,-rpath -Wl,/sources/sudo-1.8.32/lib/util/.libs -Wl,-rpath -Wl,/usr/lib/sudo -lcrypt ../../lib/util/.libs/libsudo_util.so -lintl -lpthread -lz  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fstack-protector-strong   -Wl,-soname -Wl,sudoers.so -o .libs/sudoers.so
+libtool: link: ( cd ".libs" && rm -f "sudoers.la" && ln -s "../sudoers.la" "sudoers.la" )
+make[1]: Leaving directory '/sources/sudo-1.8.32/plugins/sudoers'
+make[1]: Entering directory '/sources/sudo-1.8.32/plugins/system_group'
+/bin/sh ../../libtool --tag=disable-static --mode=compile gcc -c -I../../include -I../.. -I../.. -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./system_group.c
+libtool: compile:  gcc -c -I../../include -I../.. -I../.. -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./system_group.c  -fPIC -DPIC -o .libs/system_group.o
+/bin/sh ../../libtool --tag=disable-static --mode=link gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -Wc,-fstack-protector-strong  -o system_group.la system_group.lo ../../lib/util/libsudo_util.la -module -avoid-version -rpath /usr/lib/sudo -shrext .so
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/system_group.o   -Wl,-rpath -Wl,/sources/sudo-1.8.32/lib/util/.libs -Wl,-rpath -Wl,/usr/lib/sudo ../../lib/util/.libs/libsudo_util.so -lintl -lpthread  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fstack-protector-strong   -Wl,-soname -Wl,system_group.so -o .libs/system_group.so
+libtool: link: ( cd ".libs" && rm -f "system_group.la" && ln -s "../system_group.la" "system_group.la" )
+make[1]: Leaving directory '/sources/sudo-1.8.32/plugins/system_group'
+make[1]: Entering directory '/sources/sudo-1.8.32/src'
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./conversation.c
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./copy_file.c
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./edit_open.c
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./env_hooks.c
+In file included from ./env_hooks.c:38:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ./copy_file.c:32:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ./conversation.c:43:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ./edit_open.c:37:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./exec.c
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./exec_common.c
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./exec_monitor.c
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./exec_nopty.c
+In file included from ./exec.c:53:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ./exec_common.c:43:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ./exec_monitor.c:45:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ./exec_nopty.c:41:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./exec_pty.c
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./get_pty.c
+In file included from ./exec_pty.c:45:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ./get_pty.c:56:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./hooks.c
+In file included from ./hooks.c:38:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./limits.c
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./load_plugins.c
+In file included from ./limits.c:43:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./net_ifs.c
+In file included from ./load_plugins.c:39:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./parse_args.c
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./preserve_fds.c
+In file included from ./parse_args.c:47:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ./preserve_fds.c:41:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./signal.c
+In file included from ./signal.c:40:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudo.c
+In file included from ./sudo.c:68:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./sudo_edit.c
+In file included from ./sudo_edit.c:46:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./tcsetpgrp_nobg.c
+In file included from ./tcsetpgrp_nobg.c:39:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./tgetpass.c
+In file included from ./tgetpass.c:51:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./ttyname.c
+In file included from ./ttyname.c:68:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden  -fPIE -fstack-protector-strong ./utmp.c
+/bin/sh ../libtool --tag=disable-static --mode=compile gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fPIE -fstack-protector-strong ./sudo_noexec.c
+In file included from ./utmp.c:52:
+./sudo.h:50: warning: "NDEBUG" redefined
+   50 | # define NDEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+libtool: compile:  gcc -c -I../include -I.. -I. -I. -I.. -D_PATH_SUDO_CONF=\"/etc/sudo.conf\" -DLOCALEDIR=\"/usr/share/locale\" -DNDEBUG -DZLIB_CONST -D_FORTIFY_SOURCE=2 -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -fvisibility=hidden -fstack-protector-strong ./sudo_noexec.c  -fPIC -DPIC -o .libs/sudo_noexec.o
+/bin/sh ../libtool --tag=disable-static --mode=link gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro  -Wc,-fstack-protector-strong  -o libsudo_noexec.la sudo_noexec.lo -avoid-version -rpath /usr/lib/sudo -shrext .so
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/sudo_noexec.o    -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fstack-protector-strong   -Wl,-soname -Wl,libsudo_noexec.so -o .libs/libsudo_noexec.so
+/bin/sh ../libtool --tag=disable-static --mode=link gcc -o sudo conversation.o copy_file.o edit_open.o env_hooks.o exec.o exec_common.o exec_monitor.o exec_nopty.o exec_pty.o get_pty.o hooks.o limits.o load_plugins.o net_ifs.o parse_args.o preserve_fds.o signal.o sudo.o sudo_edit.o tcsetpgrp_nobg.o tgetpass.o ttyname.o utmp.o  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro   -Wc,-fPIE -pie -Wc,-fstack-protector-strong ../lib/util/libsudo_util.la 
+libtool: link: ( cd ".libs" && rm -f "libsudo_noexec.la" && ln -s "../libsudo_noexec.la" "libsudo_noexec.la" )
+sed 's/libsudo_noexec/sudo_noexec/g' libsudo_noexec.la > sudo_noexec.la
+if test -f .libs/libsudo_noexec.lai; then sed 's/libsudo_noexec/sudo_noexec/g' .libs/libsudo_noexec.lai > .libs/sudo_noexec.lai; fi
+cp -p .libs/libsudo_noexec.so .libs/sudo_noexec.so
+libtool: link: gcc -o .libs/sudo conversation.o copy_file.o edit_open.o env_hooks.o exec.o exec_common.o exec_monitor.o exec_nopty.o exec_pty.o get_pty.o hooks.o limits.o load_plugins.o net_ifs.o parse_args.o preserve_fds.o signal.o sudo.o sudo_edit.o tcsetpgrp_nobg.o tgetpass.o ttyname.o utmp.o -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fPIE -pie -fstack-protector-strong  ../lib/util/.libs/libsudo_util.so -lintl -lpthread -Wl,-rpath -Wl,/usr/lib/sudo
+make[1]: Leaving directory '/sources/sudo-1.8.32/src'
+make[1]: Entering directory '/sources/sudo-1.8.32/include'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/sudo-1.8.32/include'
+make[1]: Entering directory '/sources/sudo-1.8.32/doc'
+cd .. && /bin/sh config.status --file=doc/cvtsudoers.mdoc
+cd .. && /bin/sh config.status --file=doc/sudo.mdoc
+cd .. && /bin/sh config.status --file=doc/sudo.conf.mdoc
+cd .. && /bin/sh config.status --file=doc/sudo_plugin.mdoc
+config.status: creating doc/cvtsudoers.mdoc
+config.status: creating doc/sudo.conf.mdoc
+config.status: creating doc/sudo.mdoc
+config.status: creating doc/sudo_plugin.mdoc
+(cd .. && /bin/sh config.status --file=-) < ./sudoers.mdoc.in | /usr/bin/sed -f ./fixmdoc.sed > sudoers.mdoc
+cd .. && /bin/sh config.status --file=doc/sudoers.ldap.mdoc
+cd .. && /bin/sh config.status --file=doc/sudoers_timestamp.mdoc
+cd .. && /bin/sh config.status --file=doc/sudoreplay.mdoc
+config.status: creating doc/sudoers_timestamp.mdoc
+config.status: creating doc/sudoers.ldap.mdoc
+config.status: creating doc/sudoreplay.mdoc
+cd .. && /bin/sh config.status --file=doc/visudo.mdoc
+config.status: creating doc/visudo.mdoc
+make[1]: Leaving directory '/sources/sudo-1.8.32/doc'
+make[1]: Entering directory '/sources/sudo-1.8.32/examples'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/sudo-1.8.32/examples'
+if test -d ./.hg && cd .; then \
+    if hg log --style=changelog -r "sort(branch(.) or follow(), -date)" > ChangeLog.tmp; then \
+	mv -f ChangeLog.tmp ChangeLog; \
+    else \
+	rm -f ChangeLog.tmp; \
+    fi; \
+elif test -d ./.git && cd .; then \
+    ./log2cl.pl -b master > ChangeLog; \
+else \
+    echo "ChangeLog data not available" > ChangeLog; \
+fi
+for d in lib/util  plugins/group_file plugins/sudoers plugins/system_group src include doc examples; do \
+    (cd $d && exec make pre-install) && continue; \
+    exit $?; \
+done
+Installing sudo message catalogs: astmake[1]: Entering directory '/sources/sudo-1.8.32/lib/util'
+make[1]: Nothing to be done for 'pre-install'.
+make[1]: Leaving directory '/sources/sudo-1.8.32/lib/util'
+make[1]: Entering directory '/sources/sudo-1.8.32/plugins/group_file'
+make[1]: Nothing to be done for 'pre-install'.
+make[1]: Leaving directory '/sources/sudo-1.8.32/plugins/group_file'
+make[1]: Entering directory '/sources/sudo-1.8.32/plugins/sudoers'
+make[1]: Leaving directory '/sources/sudo-1.8.32/plugins/sudoers'
+make[1]: Entering directory '/sources/sudo-1.8.32/plugins/system_group'
+make[1]: Nothing to be done for 'pre-install'.
+make[1]: Leaving directory '/sources/sudo-1.8.32/plugins/system_group'
+ camake[1]: Entering directory '/sources/sudo-1.8.32/src'
+make[1]: Nothing to be done for 'pre-install'.
+make[1]: Leaving directory '/sources/sudo-1.8.32/src'
+make[1]: Entering directory '/sources/sudo-1.8.32/include'
+make[1]: Nothing to be done for 'pre-install'.
+make[1]: Leaving directory '/sources/sudo-1.8.32/include'
+make[1]: Entering directory '/sources/sudo-1.8.32/doc'
+make[1]: Nothing to be done for 'pre-install'.
+make[1]: Leaving directory '/sources/sudo-1.8.32/doc'
+make[1]: Entering directory '/sources/sudo-1.8.32/examples'
+make[1]: Nothing to be done for 'pre-install'.
+make[1]: Leaving directory '/sources/sudo-1.8.32/examples'
+ cs da de eo es eu fi fr fur gl hr hu it ja ko nb nl nn pl pt pt_BR ru sk sl sr sv tr uk vi zh_CN zh_TW
+Installing sudoers message catalogs: ast ca cs da de el eo eu fi fr fur hr hu it ja ko lt nb nl pl pt pt_BR ru sk sl sr sv tr uk vi zh_CN zh_TW
+for d in lib/util  plugins/group_file plugins/sudoers plugins/system_group src include doc examples; do \
+    (cd $d && exec make "INSTALL_OWNER=-o 0 -g 0" install) && continue; \
+    exit $?; \
+done
+make[1]: Entering directory '/sources/sudo-1.8.32/lib/util'
+/bin/sh ../../mkinstalldirs /usr/lib/sudo
+mkdir /usr/lib/sudo
+case "" in \
+*-no-install*) ;; \
+*)  if [ X"yes" = X"yes" ]; then \
+	INSTALL_BACKUP='' /bin/sh ../../libtool --tag=disable-static --quiet --mode=install /bin/sh ../../install-sh -c -o 0 -g 0 libsudo_util.la /usr/lib/sudo; \
+    fi;; \
+esac
+make[1]: Leaving directory '/sources/sudo-1.8.32/lib/util'
+make[1]: Entering directory '/sources/sudo-1.8.32/plugins/group_file'
+/bin/sh ../../mkinstalldirs /usr/lib/sudo
+if [ X"yes" = X"yes" ]; then \
+    INSTALL_BACKUP='' /bin/sh ../../libtool --tag=disable-static --mode=install /bin/sh ../../install-sh -c -o 0 -g 0 -m 0644 group_file.la /usr/lib/sudo; \
+fi
+libtool: warning: relinking 'group_file.la'
+libtool: install: (cd /sources/sudo-1.8.32/plugins/group_file; /bin/sh "/sources/sudo-1.8.32/libtool"  --tag disable-static --mode=relink gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro -Wc,-fstack-protector-strong -o group_file.la group_file.lo getgrent.lo ../../lib/util/libsudo_util.la -module -avoid-version -rpath /usr/lib/sudo -shrext .so )
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/group_file.o .libs/getgrent.o   -Wl,-rpath -Wl,/usr/lib/sudo -L/usr/lib/sudo -lsudo_util -lintl -lpthread  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fstack-protector-strong   -Wl,-soname -Wl,group_file.so -o .libs/group_file.so
+libtool: install: /bin/sh ../../install-sh -c -o 0 -g 0 -m 0644 .libs/group_file.soT /usr/lib/sudo/group_file.so
+libtool: install: /bin/sh ../../install-sh -c -o 0 -g 0 -m 0644 .libs/group_file.lai /usr/lib/sudo/group_file.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib/sudo
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib/sudo
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[1]: Leaving directory '/sources/sudo-1.8.32/plugins/group_file'
+make[1]: Entering directory '/sources/sudo-1.8.32/plugins/sudoers'
+/bin/sh ../../mkinstalldirs /usr/lib/sudo \
+    /usr/sbin /usr/bin \
+    /etc /usr/share/doc/sudo \
+    `echo /run/sudo|/usr/bin/sed 's,/[^/]*$,,'` \
+    `echo /var/lib/sudo|/usr/bin/sed 's,/[^/]*$,,'`
+mkdir /usr/share/doc/sudo
+/bin/sh ../../install-sh -c -d -o 0 -g 0 -m 0711 /run/sudo
+/bin/sh ../../install-sh -c -d -o 0 -g 0 -m 0711 /var/lib/sudo
+/bin/sh ../../install-sh -c -d -o 0 -g 0 -m 0700 /var/lib/sudo/lectured
+case "" in \
+*-no-install*) ;; \
+*)  if [ X"yes" = X"yes" ]; then \
+	INSTALL_BACKUP='' /bin/sh ../../libtool  --mode=install /bin/sh ../../install-sh -c -o 0 -g 0 -m 0644 sudoers.la /usr/lib/sudo; \
+    fi;; \
+esac
+INSTALL_BACKUP='' /bin/sh ../../libtool  --mode=install /bin/sh ../../install-sh -c -o 0 -g 0 -m 0755 cvtsudoers /usr/bin/cvtsudoers
+/bin/sh ../../install-sh -c -d -o 0 -g 0 -m 0750 /etc/sudoers.d
+/bin/sh ../../install-sh -c -o 0 -g 0 -m 0440 sudoers /etc/sudoers.dist
+test -r /etc/sudoers || \
+    cp -p /etc/sudoers.dist /etc/sudoers
+libtool: warning: relinking 'sudoers.la'
+libtool: install: (cd /sources/sudo-1.8.32/plugins/sudoers; /bin/sh "/sources/sudo-1.8.32/libtool"  --tag disable-static --mode=relink gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro -Wc,-fstack-protector-strong -o sudoers.la sudo_auth.lo getspwuid.lo passwd.lo boottime.lo check.lo editor.lo env.lo env_pattern.lo file.lo find_path.lo fmtsudoers.lo gc.lo goodpath.lo group_plugin.lo interfaces.lo iolog.lo iolog_path.lo locale.lo logging.lo logwrap.lo mkdir_parents.lo parse.lo policy.lo prompt.lo set_perms.lo starttime.lo sudo_nss.lo sudoers.lo timestamp.lo libparsesudoers.la -lcrypt ../../lib/util/libsudo_util.la -lz -module -avoid-version -rpath /usr/lib/sudo -shrext .so )
+libtool: install: /bin/sh ../../install-sh -c -o 0 -g 0 -m 0755 .libs/cvtsudoers /usr/bin/cvtsudoers
+INSTALL_BACKUP='' /bin/sh ../../libtool  --mode=install /bin/sh ../../install-sh -c -o 0 -g 0 -m 0755 sudoreplay /usr/bin/sudoreplay
+libtool: install: /bin/sh ../../install-sh -c -o 0 -g 0 -m 0755 .libs/sudoreplay /usr/bin/sudoreplay
+INSTALL_BACKUP='' /bin/sh ../../libtool  --mode=install /bin/sh ../../install-sh -c -o 0 -g 0 -m 0755 visudo /usr/sbin/visudo
+libtool: install: /bin/sh ../../install-sh -c -o 0 -g 0 -m 0755 .libs/visudo /usr/sbin/visudo
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/sudo_auth.o .libs/getspwuid.o .libs/passwd.o .libs/boottime.o .libs/check.o .libs/editor.o .libs/env.o .libs/env_pattern.o .libs/file.o .libs/find_path.o .libs/fmtsudoers.o .libs/gc.o .libs/goodpath.o .libs/group_plugin.o .libs/interfaces.o .libs/iolog.o .libs/iolog_path.o .libs/locale.o .libs/logging.o .libs/logwrap.o .libs/mkdir_parents.o .libs/parse.o .libs/policy.o .libs/prompt.o .libs/set_perms.o .libs/starttime.o .libs/sudo_nss.o .libs/sudoers.o .libs/timestamp.o  -Wl,--whole-archive ./.libs/libparsesudoers.a -Wl,--no-whole-archive  -Wl,-rpath -Wl,/usr/lib/sudo -lcrypt -L/usr/lib/sudo -lsudo_util -lintl -lpthread -lz  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fstack-protector-strong   -Wl,-soname -Wl,sudoers.so -o .libs/sudoers.so
+libtool: install: /bin/sh ../../install-sh -c -o 0 -g 0 -m 0644 .libs/sudoers.soT /usr/lib/sudo/sudoers.so
+libtool: install: /bin/sh ../../install-sh -c -o 0 -g 0 -m 0644 .libs/sudoers.lai /usr/lib/sudo/sudoers.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib/sudo
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib/sudo
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[1]: Leaving directory '/sources/sudo-1.8.32/plugins/sudoers'
+make[1]: Entering directory '/sources/sudo-1.8.32/plugins/system_group'
+/bin/sh ../../mkinstalldirs /usr/lib/sudo
+if [ X"yes" = X"yes" ]; then \
+    INSTALL_BACKUP='' /bin/sh ../../libtool --tag=disable-static --mode=install /bin/sh ../../install-sh -c -o 0 -g 0 -m 0644 system_group.la /usr/lib/sudo; \
+fi
+libtool: warning: relinking 'system_group.la'
+libtool: install: (cd /sources/sudo-1.8.32/plugins/system_group; /bin/sh "/sources/sudo-1.8.32/libtool"  --tag disable-static --mode=relink gcc -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -Wl,-z,relro -Wc,-fstack-protector-strong -o system_group.la system_group.lo ../../lib/util/libsudo_util.la -module -avoid-version -rpath /usr/lib/sudo -shrext .so )
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/system_group.o   -Wl,-rpath -Wl,/usr/lib/sudo -L/usr/lib/sudo -lsudo_util -lintl -lpthread  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd -Wl,-z -Wl,relro -fstack-protector-strong   -Wl,-soname -Wl,system_group.so -o .libs/system_group.so
+libtool: install: /bin/sh ../../install-sh -c -o 0 -g 0 -m 0644 .libs/system_group.soT /usr/lib/sudo/system_group.so
+libtool: install: /bin/sh ../../install-sh -c -o 0 -g 0 -m 0644 .libs/system_group.lai /usr/lib/sudo/system_group.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib/sudo
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib/sudo
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[1]: Leaving directory '/sources/sudo-1.8.32/plugins/system_group'
+make[1]: Entering directory '/sources/sudo-1.8.32/src'
+# We only create the rc.d dir when installing to the actual system dir
+/bin/sh ../mkinstalldirs /usr/bin \
+    /usr/lib/sudo /usr/lib/sudo
+if test -n ""; then \
+    /bin/sh ../mkinstalldirs ; \
+    if test -z ""; then \
+	/bin/sh ../mkinstalldirs \
+	    `echo  | /usr/bin/sed 's,/[^/]*$,,'`; \
+    fi; \
+elif test -n "/usr/lib/tmpfiles.d"; then \
+    /bin/sh ../mkinstalldirs /usr/lib/tmpfiles.d; \
+fi
+INSTALL_BACKUP='' /bin/sh ../libtool --tag=disable-static --mode=install /bin/sh ../install-sh -c -o 0 -g 0 -m 04755 sudo /usr/bin/sudo
+# We only create the rc.d link when installing to the actual system dir
+INSTALL_BACKUP='' /bin/sh ../libtool --tag=disable-static --mode=install /bin/sh ../install-sh -c -o 0 -g 0 -m 0644 sudo_noexec.la /usr/lib/sudo
+if [ -n "" ]; then \
+    /bin/sh ../install-sh -c -o 0 -g 0 -m 0755 ../init.d/ /sudo; \
+    if test -z ""; then \
+	rm -f ; \
+	ln -s /sudo ; \
+    fi; \
+elif test -n "/usr/lib/tmpfiles.d"; then \
+    /bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ../init.d/sudo.conf /usr/lib/tmpfiles.d/sudo.conf; \
+fi
+libtool: install: /bin/sh ../install-sh -c -o 0 -g 0 -m 0644 .libs/sudo_noexec.so /usr/lib/sudo/sudo_noexec.so
+libtool: install: /bin/sh ../install-sh -c -o 0 -g 0 -m 04755 .libs/sudo /usr/bin/sudo
+libtool: install: /bin/sh ../install-sh -c -o 0 -g 0 -m 0644 .libs/sudo_noexec.lai /usr/lib/sudo/sudo_noexec.la
+rm -f /usr/bin/sudoedit
+ln -s sudo /usr/bin/sudoedit
+if [ -f sesh ]; then \
+    INSTALL_BACKUP='' /bin/sh ../libtool --tag=disable-static --mode=install /bin/sh ../install-sh -c -o 0 -g 0 -m 0755 sesh /usr/lib/sudo/sesh; \
+fi
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib/sudo
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib/sudo
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[1]: Leaving directory '/sources/sudo-1.8.32/src'
+make[1]: Entering directory '/sources/sudo-1.8.32/include'
+/bin/sh ../mkinstalldirs /usr/include
+/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./sudo_plugin.h /usr/include
+make[1]: Leaving directory '/sources/sudo-1.8.32/include'
+make[1]: Entering directory '/sources/sudo-1.8.32/doc'
+/bin/sh ../mkinstalldirs /usr/share/doc/sudo \
+    /usr/share/man/man1 /usr/share/man/man5 /usr/share/man/man8
+for f in ../ChangeLog ../README ../NEWS ./HISTORY ./CONTRIBUTORS ./LICENSE ./TROUBLESHOOTING ./UPGRADE; do /bin/sh ../install-sh -c -o 0 -g 0 -m 0644 $f /usr/share/doc/sudo; done
+#for f in ../README.LDAP ./schema.*; do /bin/sh ../install-sh -c -o 0 -g 0 -m 0644 $f /usr/share/doc/sudo; done
+/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./cvtsudoers.mdoc /usr/share/man/man1/cvtsudoers.1
+/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./sudo.mdoc /usr/share/man/man8/sudo.8
+/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./sudo_plugin.mdoc /usr/share/man/man8/sudo_plugin.8
+/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./sudoreplay.mdoc /usr/share/man/man8/sudoreplay.8
+/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./visudo.mdoc /usr/share/man/man8/visudo.8
+/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./sudo.conf.mdoc /usr/share/man/man5/sudo.conf.5
+/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./sudoers.mdoc /usr/share/man/man5/sudoers.5
+/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./sudoers_timestamp.mdoc /usr/share/man/man5/sudoers_timestamp.5
+#/bin/sh ../install-sh -c -o 0 -g 0 -m 0644 ./sudoers.ldap.mdoc /usr/share/man/man5/sudoers.ldap.5
+ln -s sudo.8 /usr/share/man/man8/sudoedit.8
+make[1]: Leaving directory '/sources/sudo-1.8.32/doc'
+make[1]: Entering directory '/sources/sudo-1.8.32/examples'
+/bin/sh ../mkinstalldirs /usr/share/doc/sudo/examples
+mkdir /usr/share/doc/sudo/examples
+for f in ./pam.conf ./sudo.conf ./sudoers ./syslog.conf; do /bin/sh ../install-sh -c -o 0 -g 0 -m 0644 $f /usr/share/doc/sudo/examples; done
+make[1]: Leaving directory '/sources/sudo-1.8.32/examples'
+
+
+CFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=i686 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 17:28:27 UTC 2024
+
+Totalseconds: 37
+
+KB: 1710652	/
+

@@ -1,0 +1,52 @@
+#!/bin/bash
+
+SRC="uclibc-ng"
+PKG="uclibc"
+
+case $(uname -m) in
+	i?86)
+		cp "$SRC_ROOT/config-i686" .config
+		;;
+	*)
+		cp "$SRC_ROOT/config-$(uname -m)" .config
+		;;
+esac
+
+sed -i.old "/^UCLIBC_EXTRA_CFLAGS/s/=.*/=\"$CFLAGS $LDFLAGS\"/" .config
+timeout 10 make silentoldconfig
+diff -u .config{.old,} || true
+
+sed -i '/\(libintl\|crypt\).h$/d' Makefile.in
+rm -fv include/{crypt,libintl}.h
+make
+make utils
+make install
+make install_utils
+ar r libssp_nonshared.a libc/sysdeps/linux/common/ssp-local.os
+install -vt /usr/bin -m755 extra/scripts/getent
+install -vt /usr/lib -m644 libssp_nonshared.a
+
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	cp "$SRC_ROOT/config-multilib" .config
+	timeout 10 make silentoldconfig
+	patch -Np1 -i $SRC_ROOT/uClibc-*-x86_64-multilib.diff
+	sed -i "/^UCLIBC_EXTRA_CFLAGS/s/=.*/=\"$CFLAGS $LDFLAGS\"/" .config
+	make CC="gcc -m32"
+	make CC="gcc -m32" utils
+	make CC="gcc -m32" DESTDIR=$PWD/pkg install
+	make CC="gcc -m32" DESTDIR=$PWD/pkg install_utils
+	ar r libssp_nonshared.a libc/sysdeps/linux/common/ssp-local.os
+	cp -a pkg/{,usr/}lib32/* -vt /usr/lib32/
+	sed -e '/^#include <bits\/sysnum.h>$/i\# ifdef __LP64__' \
+		-e '/^#include <bits\/sysnum.h>$/a\# else\n#include <bits\/sysnum-32.h>\n# endif' \
+		-i /usr/include/sys/syscall.h
+	install -Dm644 pkg/usr/include/bits/sysnum.h -v /usr/include/bits/sysnum-32.h
+	install -vm755 pkg/sbin/ldconfig /usr/sbin/ldconfig32
+	install -vm755 pkg/usr/bin/ldd /usr/bin/ldd32
+	install -vm644 libssp_nonshared.a -t /usr/lib32
+	ln -srfv /lib32/ld-uClibc.so.1 /usr/lib/ld-uClibc.so.1
+	sed -i 's@\s/lib32/@ /usr/lib32/@g' /usr/lib32/libc.so
+	rm -f /lib32
+fi
