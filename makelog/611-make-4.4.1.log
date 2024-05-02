@@ -1,0 +1,411 @@
+Thu May  2 15:09:39 UTC 2024
+KB: 868356	/lfs_build
+
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for x86_64-lfs-linux-uclibc-strip... x86_64-lfs-linux-uclibc-strip
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-lfs-linux-uclibc-gcc... x86_64-lfs-linux-uclibc-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-lfs-linux-uclibc-gcc accepts -g... yes
+checking for x86_64-lfs-linux-uclibc-gcc option to enable C11 features... none needed
+checking whether x86_64-lfs-linux-uclibc-gcc understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking dependency style of x86_64-lfs-linux-uclibc-gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/param.h... yes
+checking for stdbool.h... yes
+checking for vfork.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for x86_64-lfs-linux-uclibc-gcc... (cached) x86_64-lfs-linux-uclibc-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether x86_64-lfs-linux-uclibc-gcc accepts -g... (cached) yes
+checking for x86_64-lfs-linux-uclibc-gcc option to enable C11 features... (cached) none needed
+checking whether x86_64-lfs-linux-uclibc-gcc understands -c and -o together... (cached) yes
+checking whether the compiler is clang... (cached) no
+checking for compiler option needed when checking for declarations... (cached) none
+checking dependency style of x86_64-lfs-linux-uclibc-gcc... (cached) gcc3
+checking for x86_64-lfs-linux-uclibc-g++... x86_64-lfs-linux-uclibc-g++
+checking whether the compiler supports GNU C++... yes
+checking whether x86_64-lfs-linux-uclibc-g++ accepts -g... yes
+checking for x86_64-lfs-linux-uclibc-g++ option to enable C++11 features... none needed
+checking dependency style of x86_64-lfs-linux-uclibc-g++... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-lfs-linux-uclibc
+checking how to run the C preprocessor... x86_64-lfs-linux-uclibc-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for x86_64-lfs-linux-uclibc-ar... x86_64-lfs-linux-uclibc-ar
+checking for x86_64-lfs-linux-uclibc-ranlib... x86_64-lfs-linux-uclibc-ranlib
+checking for x86_64-lfs-linux-uclibc-gcc option to enable large file support... none needed
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for eaccess... yes
+checking for x86_64-lfs-linux-uclibc-gcc options needed to detect all undeclared functions... none needed
+checking host CPU and C ABI... x86_64
+checking for C compiler option to allow warnings... -Wno-error
+checking for alloca as a compiler built-in... yes
+checking for getloadavg... yes
+checking for sys/loadavg.h... no
+checking whether getloadavg is declared... yes
+checking if system libc has working GNU glob... no
+checking whether system uses MSDOS-style paths... no
+checking for bool, true, false... no
+checking for x86_64-lfs-linux-uclibc-ranlib... (cached) x86_64-lfs-linux-uclibc-ranlib
+checking how to run the C preprocessor... x86_64-lfs-linux-uclibc-gcc -E
+checking for ar... (cached) x86_64-lfs-linux-uclibc-ar
+checking for perl... perl
+checking whether byte ordering is bigendian... no
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld used by x86_64-lfs-linux-uclibc-gcc... /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld
+checking if the linker (/lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... no
+checking for iconv... yes
+checking for working iconv... guessing yes
+checking for GNU gettext in libintl... no
+checking whether to use NLS... no
+checking for library containing strerror... none required
+checking for library containing getpwnam... none required
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether stat file-mode macros are broken... no
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for locale.h... yes
+checking for unistd.h... (cached) yes
+checking for limits.h... yes
+checking for memory.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/resource.h... yes
+checking for sys/timeb.h... yes
+checking for sys/time.h... yes
+checking for sys/select.h... yes
+checking for sys/file.h... yes
+checking for fcntl.h... yes
+checking for spawn.h... yes
+checking for an ANSI C-conforming const... yes
+checking for uid_t in sys/types.h... yes
+checking for pid_t... yes
+checking for off_t... yes
+checking for size_t... (cached) yes
+checking for ssize_t... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for sig_atomic_t... yes
+checking for nanoseconds field of struct stat... st_mtim.tv_nsec
+checking whether to use high resolution file timestamps... yes
+checking for library containing clock_gettime... none required
+checking for standard gettimeofday... no (cross-compiling)
+checking for strtoll... yes
+checking for strdup... yes
+checking for strndup... yes
+checking for stpcpy... yes
+checking for memrchr... yes
+checking for mempcpy... yes
+checking for umask... yes
+checking for mkstemp... yes
+checking for mktemp... yes
+checking for fdopen... yes
+checking for dup... yes
+checking for dup2... yes
+checking for getcwd... yes
+checking for realpath... yes
+checking for sigsetmask... no
+checking for sigaction... yes
+checking for getgroups... yes
+checking for seteuid... yes
+checking for setegid... yes
+checking for setlinebuf... yes
+checking for setreuid... yes
+checking for setregid... yes
+checking for mkfifo... yes
+checking for getrlimit... yes
+checking for setrlimit... yes
+checking for setvbuf... yes
+checking for pipe... yes
+checking for strerror... yes
+checking for strsignal... yes
+checking for lstat... yes
+checking for readlink... yes
+checking for atexit... yes
+checking for isatty... yes
+checking for ttyname... yes
+checking for pselect... yes
+checking for posix_spawn... yes
+checking for posix_spawnattr_setsigmask... no
+checking whether bsd_signal is declared... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... cross
+configure: WARNING: result yes guessed because of cross compilation
+checking for working vfork... (cached) yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking for strcmpi... no
+checking for strncmpi... no
+checking for stricmp... no
+checking for strnicmp... no
+checking for working strcoll... no
+checking whether closedir returns void... no
+checking for struct dirent.d_type... yes
+checking for x86_64-lfs-linux-uclibc-pkg-config... no
+checking for pkg-config... /usr/bin/pkg-config
+configure: WARNING: using cross tools not prefixed with host triplet
+checking pkg-config is at least version 0.9.0... yes
+checking whether sys_siglist is declared... no
+checking whether _sys_siglist is declared... no
+checking whether __sys_siglist is declared... no
+checking for sys/wait.h... yes
+checking for waitpid... yes
+checking for wait3... yes
+checking for union wait... no
+checking for SA_RESTART... yes
+checking whether dlopen is declared... yes
+checking whether dlsym is declared... yes
+checking whether dlerror is declared... yes
+checking for library containing dlopen... none required
+checking if the linker accepts -Wl,--export-dynamic... yes
+checking for posix_spawn that fails synchronously... no (cross-compiling)
+checking for location of SCCS get command... get
+checking if malloc debugging is wanted... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating build.cfg
+config.status: creating tests/config-flags.pm
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating doc/Makefile
+config.status: creating po/Makefile.in
+config.status: creating src/config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+Making all in lib
+make[1]: Entering directory '/lfs_build/sources/make-4.4.1/lib'
+sed -e 1h -e '1s,.*,/* DO NOT EDIT! GENERATED AUTOMATICALLY! */,' -e 1G \
+  -e 's|@''HAVE_ALLOCA_H''@|1|g' \
+  ./alloca.in.h > alloca.h-t
+rm -f fnmatch.h-t fnmatch.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ./fnmatch.in.h; \
+} > fnmatch.h-t && \
+mv -f fnmatch.h-t fnmatch.h
+rm -f glob.h-t glob.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ./glob.in.h; \
+} > glob.h-t && \
+mv -f glob.h-t glob.h
+mv alloca.h-t alloca.h
+make  all-recursive
+make[2]: Entering directory '/lfs_build/sources/make-4.4.1/lib'
+make[3]: Entering directory '/lfs_build/sources/make-4.4.1/lib'
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I../src   -DNDEBUG  -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -Wno-unsuffixed-float-constants -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libgnu_a-concat-filename.o -MD -MP -MF .deps/libgnu_a-concat-filename.Tpo -c -o libgnu_a-concat-filename.o `test -f 'concat-filename.c' || echo './'`concat-filename.c
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I../src   -DNDEBUG  -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -Wno-unsuffixed-float-constants -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libgnu_a-findprog-in.o -MD -MP -MF .deps/libgnu_a-findprog-in.Tpo -c -o libgnu_a-findprog-in.o `test -f 'findprog-in.c' || echo './'`findprog-in.c
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I../src   -DNDEBUG  -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -Wno-unsuffixed-float-constants -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libgnu_a-fnmatch.o -MD -MP -MF .deps/libgnu_a-fnmatch.Tpo -c -o libgnu_a-fnmatch.o `test -f 'fnmatch.c' || echo './'`fnmatch.c
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I../src   -DNDEBUG  -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -Wno-unsuffixed-float-constants -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT libgnu_a-glob.o -MD -MP -MF .deps/libgnu_a-glob.Tpo -c -o libgnu_a-glob.o `test -f 'glob.c' || echo './'`glob.c
+mv -f .deps/libgnu_a-glob.Tpo .deps/libgnu_a-glob.Po
+mv -f .deps/libgnu_a-fnmatch.Tpo .deps/libgnu_a-fnmatch.Po
+mv -f .deps/libgnu_a-concat-filename.Tpo .deps/libgnu_a-concat-filename.Po
+mv -f .deps/libgnu_a-findprog-in.Tpo .deps/libgnu_a-findprog-in.Po
+rm -f libgnu.a
+x86_64-lfs-linux-uclibc-ar cr libgnu.a libgnu_a-concat-filename.o libgnu_a-findprog-in.o  libgnu_a-fnmatch.o libgnu_a-glob.o  
+x86_64-lfs-linux-uclibc-ranlib libgnu.a
+make[3]: Leaving directory '/lfs_build/sources/make-4.4.1/lib'
+make[2]: Leaving directory '/lfs_build/sources/make-4.4.1/lib'
+make[1]: Leaving directory '/lfs_build/sources/make-4.4.1/lib'
+Making all in po
+make[1]: Entering directory '/lfs_build/sources/make-4.4.1/po'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/lfs_build/sources/make-4.4.1/po'
+Making all in doc
+make[1]: Entering directory '/lfs_build/sources/make-4.4.1/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/lfs_build/sources/make-4.4.1/doc'
+make[1]: Entering directory '/lfs_build/sources/make-4.4.1'
+depbase=`echo src/ar.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/ar.o -MD -MP -MF $depbase.Tpo -c -o src/ar.o src/ar.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/arscan.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/arscan.o -MD -MP -MF $depbase.Tpo -c -o src/arscan.o src/arscan.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/commands.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/commands.o -MD -MP -MF $depbase.Tpo -c -o src/commands.o src/commands.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/default.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/default.o -MD -MP -MF $depbase.Tpo -c -o src/default.o src/default.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/dir.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/dir.o -MD -MP -MF $depbase.Tpo -c -o src/dir.o src/dir.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/expand.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/expand.o -MD -MP -MF $depbase.Tpo -c -o src/expand.o src/expand.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/file.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/file.o -MD -MP -MF $depbase.Tpo -c -o src/file.o src/file.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/function.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/function.o -MD -MP -MF $depbase.Tpo -c -o src/function.o src/function.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/getopt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/getopt.o -MD -MP -MF $depbase.Tpo -c -o src/getopt.o src/getopt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/getopt1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/getopt1.o -MD -MP -MF $depbase.Tpo -c -o src/getopt1.o src/getopt1.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/guile.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/guile.o -MD -MP -MF $depbase.Tpo -c -o src/guile.o src/guile.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/hash.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/hash.o -MD -MP -MF $depbase.Tpo -c -o src/hash.o src/hash.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/implicit.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/implicit.o -MD -MP -MF $depbase.Tpo -c -o src/implicit.o src/implicit.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/job.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/job.o -MD -MP -MF $depbase.Tpo -c -o src/job.o src/job.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/load.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/load.o -MD -MP -MF $depbase.Tpo -c -o src/load.o src/load.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/loadapi.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/loadapi.o -MD -MP -MF $depbase.Tpo -c -o src/loadapi.o src/loadapi.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/main.o -MD -MP -MF $depbase.Tpo -c -o src/main.o src/main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/misc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/misc.o -MD -MP -MF $depbase.Tpo -c -o src/misc.o src/misc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/output.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/output.o -MD -MP -MF $depbase.Tpo -c -o src/output.o src/output.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/read.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/read.o -MD -MP -MF $depbase.Tpo -c -o src/read.o src/read.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/remake.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/remake.o -MD -MP -MF $depbase.Tpo -c -o src/remake.o src/remake.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/rule.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/rule.o -MD -MP -MF $depbase.Tpo -c -o src/rule.o src/rule.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/shuffle.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/shuffle.o -MD -MP -MF $depbase.Tpo -c -o src/shuffle.o src/shuffle.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/signame.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/signame.o -MD -MP -MF $depbase.Tpo -c -o src/signame.o src/signame.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/strcache.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/strcache.o -MD -MP -MF $depbase.Tpo -c -o src/strcache.o src/strcache.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/variable.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/variable.o -MD -MP -MF $depbase.Tpo -c -o src/variable.o src/variable.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/version.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/version.o -MD -MP -MF $depbase.Tpo -c -o src/version.o src/version.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/vpath.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/vpath.o -MD -MP -MF $depbase.Tpo -c -o src/vpath.o src/vpath.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/posixos.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/posixos.o -MD -MP -MF $depbase.Tpo -c -o src/posixos.o src/posixos.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo src/remote-stub.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H   -Isrc -I./src -Ilib -I./lib -DLIBDIR=\"/usr/lib\" -DLOCALEDIR=\"/usr/share/locale\"   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT src/remote-stub.o -MD -MP -MF $depbase.Tpo -c -o src/remote-stub.o src/remote-stub.c &&\
+mv -f $depbase.Tpo $depbase.Po
+x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wl,--export-dynamic -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -o make src/ar.o src/arscan.o src/commands.o src/default.o src/dir.o src/expand.o src/file.o src/function.o src/getopt.o src/getopt1.o src/guile.o src/hash.o src/implicit.o src/job.o src/load.o src/loadapi.o src/main.o src/misc.o src/output.o src/read.o src/remake.o src/rule.o src/shuffle.o src/signame.o src/strcache.o src/variable.o src/version.o src/vpath.o  src/posixos.o  src/remote-stub.o   lib/libgnu.a   
+make[1]: Leaving directory '/lfs_build/sources/make-4.4.1'
+Making install in lib
+make[1]: Entering directory '/lfs_build/sources/make-4.4.1/lib'
+make  install-recursive
+make[2]: Entering directory '/lfs_build/sources/make-4.4.1/lib'
+make[3]: Entering directory '/lfs_build/sources/make-4.4.1/lib'
+make[4]: Entering directory '/lfs_build/sources/make-4.4.1/lib'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/lfs_build/sources/make-4.4.1/lib'
+make[3]: Leaving directory '/lfs_build/sources/make-4.4.1/lib'
+make[2]: Leaving directory '/lfs_build/sources/make-4.4.1/lib'
+make[1]: Leaving directory '/lfs_build/sources/make-4.4.1/lib'
+Making install in po
+make[1]: Entering directory '/lfs_build/sources/make-4.4.1/po'
+if test "make" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /lfs_build/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /lfs_build/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /lfs_build/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/lfs_build/sources/make-4.4.1/po'
+Making install in doc
+make[1]: Entering directory '/lfs_build/sources/make-4.4.1/doc'
+make[2]: Entering directory '/lfs_build/sources/make-4.4.1/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/lfs_build/usr/share/info'
+ /usr/bin/install -c -m 644 ./make.info ./make.info-1 ./make.info-2 ./make.info-3 '/lfs_build/usr/share/info'
+ install-info --info-dir='/lfs_build/usr/share/info' '/lfs_build/usr/share/info/make.info'
+make[2]: Leaving directory '/lfs_build/sources/make-4.4.1/doc'
+make[1]: Leaving directory '/lfs_build/sources/make-4.4.1/doc'
+make[1]: Entering directory '/lfs_build/sources/make-4.4.1'
+make[2]: Entering directory '/lfs_build/sources/make-4.4.1'
+ /usr/bin/mkdir -p '/lfs_build/usr/include'
+ /usr/bin/mkdir -p '/lfs_build/usr/share/man/man1'
+ /usr/bin/mkdir -p '/lfs_build/usr/bin'
+ /usr/bin/install -c -m 644 src/gnumake.h '/lfs_build/usr/include'
+  /usr/bin/install -c make '/lfs_build/usr/bin'
+ /usr/bin/install -c -m 644 doc/make.1 '/lfs_build/usr/share/man/man1'
+make[2]: Leaving directory '/lfs_build/sources/make-4.4.1'
+make[1]: Leaving directory '/lfs_build/sources/make-4.4.1'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Thu May  2 15:09:46 UTC 2024
+
+Totalseconds: 7
+
+KB: 880500	/lfs_build
+

@@ -1,0 +1,18 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/git/postlfs/make-ca.html
+# curl -s https://curl.se/docs/caextract.html| awk '/\/ca\/cacert-.*.pem/{print$3}'|head -1|sed 's/^.*cacert-\|.pem.*$\|-//g'
+
+SRC=""
+PKG="ca-certificates"
+PV="20231212"
+
+install -vdm755 /etc/ssl/local
+/usr/sbin/make-ca -g
+
+mkdir -pv /etc/profile.d
+cat > /etc/profile.d/pythoncerts.sh << "EOF"
+# Begin /etc/profile.d/pythoncerts.sh
+
+export _PIP_STANDALONE_CERT=/etc/pki/tls/certs/ca-bundle.crt
+
+# End /etc/profile.d/pythoncerts.sh

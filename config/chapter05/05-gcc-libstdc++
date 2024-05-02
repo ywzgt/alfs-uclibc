@@ -1,0 +1,23 @@
+#!/bin/bash
+
+SRC="gcc"
+PV="${PWD##*/}"
+PV="${PV#$SRC-}"
+
+mkdir -v build
+cd build
+
+../libstdc++-v3/configure \
+	--host=$LFS_TGT \
+	--build=$(../config.guess) \
+	--prefix=/usr \
+	--$([[ $MULTILIB ]] && echo en || echo dis)able-multilib \
+	--disable-nls \
+	--disable-libstdcxx-pch \
+	--with-gxx-include-dir=/tools/$LFS_TGT/include/c++/$PV
+
+unset PV
+make
+make DESTDIR=$LFS install
+rm -fv $LFS/usr/lib/lib{stdc++,stdc++fs,supc++,stdc++exp}.la
+rm -fv $LFS/usr/lib32/{libstdc++*.py,*.la}

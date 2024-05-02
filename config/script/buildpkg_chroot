@@ -1,0 +1,107 @@
+#!/bin/bash
+
+source envars
+
+BOLD () { echo -e "\e[0;1m$1"; }
+BLUE () { echo -e "\e[1;34m$1"; }
+WHITE () { echo -e "\e[00m$1"; }
+
+unpack() {
+	_ext() {
+		local f d="\n"
+		for f; do
+			printf "$d  -> Extracting the '$f'... \n"
+			tar xf $f; [ $# -le 1 ] || d=
+		done
+	}
+	find . -maxdepth 1 -type d -iname "${1}*" -exec rm -rf {} +
+	local archive="$(find . -maxdepth 1 -iname ${1}'-[0-9]*.tar*' -exec basename {} \;)"
+	if [[ -n "$archive" ]]; then
+		_ext ${archive}
+	elif [[ -n "$(find . -maxdepth 1 -iname ${1}'[0-9]*.tar*' -exec basename {} +)" ]]
+	then
+		_ext $(find . -maxdepth 1 -iname ${1}'[0-9]*.tar*' -exec basename {} \;)
+	else
+		local srcfile="$(find . -maxdepth 1 -iname ${1}'*.tar*' -exec basename {} \;)"
+		_ext ${srcfile}
+	fi
+}
+
+get_pkg_root() {
+	local srcdir="$(find . -maxdepth 1 -type d -iname ${1}\*|head -n1)"
+	[ -z "$srcdir" ] || cd "$srcdir"
+}
+
+_patch() {
+	local pkgname="$2"
+	local patch_file="$(find .. -maxdepth 1 -type f -iname ${pkgname}\*.patch|sort)"
+	if [ -n "$patch_file" ] && [ -n "${pkgname}" ]; then
+		echo "Patching ${pkgname}:" >"$1"
+		for p in $patch_file; do
+			echo "Applying patch '$p'..." >>"$1"
+			patch -Np1 -i "$p" >> "$1" 2>&1
+			echo -e '\n' >>"$1"
+		done
+	fi
+}
+
+make_pkg() {
+	local target="$(basename $1)"
+	local chapter="${1%/*}"
+	local PKG PV PVE SRC
+	chapter="${chapter##*/}"
+	source "${SRC_ROOT}/tmp"
+	source "${BLD_ROOT}/envars"
+	if ! test "$PV"; then
+		PV=${PWD##*/}
+		case "$PV" in
+			*-[0-9]*) PV=${PV##*-};;
+			*) 	PV="$(echo ${PV##*-}|sed 's/[A-Za-z]\|_//g')";;
+		esac
+	fi
+	if [ -n "$PV" ]; then PVE="-${PV}"; else PVE=""; fi
+	mkdir -p "${LOG_DIR}" "${FILE_DIR}"
+	_patch "${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log" "${PKG}"
+	echo $(BOLD --------------------------------------------------------------------------------)$(WHITE)
+	echo $(BOLD Building) target $(BLUE "${chapter/chapter0}${target}")$(BOLD)$(WHITE)
+	touch $BLD_ROOT/timestamp-marker && sleep 1
+	date >>"${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log"
+	echo -e "KB: ${DU}\n" >>"${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log"
+	bash -e "$1" >> "${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log" 2>&1
+	local marker="$(ls -l --time-style=+%s $BLD_ROOT/timestamp-marker | awk '{print$6}')"
+	local now="$(date +%s)"
+	echo -e "\n\nCFLAGS:: ${CFLAGS}\nCXXFLAGS:: ${CXXFLAGS}\nCPPFLAGS:: ${CPPFLAGS}\nLDFLAGS:: ${LDFLAGS}" >>"${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log"
+	echo -e "\n\n$(date)\n\nTotalseconds: $((now-marker-1))\n" >>"${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log"
+	echo -e "KB: $(du -skx --exclude=${BLD_ROOT#/} --exclude=lost+found --exclude var/lib $BUILDDIR)\n" >>"${LOG_DIR}/${chapter/chapter0}${target}${PVE}.log"
+	rm -f /etc/ld*.so.cache /usr/lib*/*.la
+	find / -xdev ! -path "${SRC_ROOT}/*" ! -path "/tmp/*" ! -path "${BLD_ROOT}/*" \
+		-newer ${BLD_ROOT}/timestamp-marker -not -type d \
+		-printf "%p\t%s\t%u:%g\t%m\t%l\n" | sort > "${FILE_DIR}/${chapter/chapter0}${target}${PVE}"
+	echo  -e "\n" $(BOLD Target) $(BLUE "${target}") $(WHITE)$(BOLD OK)
+	echo --------------------------------------------------------------------------------$(WHITE)
+	cd "${SRC_ROOT}"
+	find . -maxdepth 1 -type d -iname "${SRC}*" ! -name . -exec rm -rf {} +
+}
+
+for i in $@
+do
+	pushd "${SRC_ROOT}" >/dev/null
+	grep -E '^SRC=|^PKG=|^PV=' "${BLD_ROOT}/$i" > tmp
+	. ./tmp
+	DU="$(du -skx --exclude=${BLD_ROOT#/} --exclude=lost+found --exclude var/lib $BUILDDIR)"
+	if [ -n "${SRC}" ]; then
+		unpack "${SRC}"
+		get_pkg_root "${SRC}"
+	fi
+	make_pkg "${BLD_ROOT}/$i"
+	unset SRC PKG PV DU
+	popd >/dev/null
+done
+
+if [ "${1::9}" = "chapter08" ]; then
+	echo "$(cc -dumpmachine)" > "$LOG_DIR/target"
+	echo "$(du -skx --exclude=${BLD_ROOT#/} --exclude=lost+found --exclude var/lib $BUILDDIR | cut -f1)" > "$LOG_DIR/end8"
+elif [ "${1::9}" = "chapter09" ]
+then
+	echo "$(du -skx --exclude=${BLD_ROOT#/} --exclude=lost+found --exclude var/lib $BUILDDIR | cut -f1)" > "$LOG_DIR/end"
+fi

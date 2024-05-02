@@ -1,0 +1,424 @@
+Thu May  2 16:50:20 UTC 2024
+KB: 1752428	/
+
+configure: Configuring LZO 2.10
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking target system type... x86_64-pc-linux-uclibc
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether the C preprocessor needs special flags... none needed
+checking for an ANSI C-conforming const... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether time.h and sys/time.h may both be included... yes
+checking assert.h usability... yes
+checking assert.h presence... yes
+checking for assert.h... yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for memory.h... (cached) yes
+checking setjmp.h usability... yes
+checking setjmp.h presence... yes
+checking for setjmp.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking whether limits.h is sane... yes
+checking for off_t... yes
+checking for ptrdiff_t... yes
+checking for size_t... yes
+checking return type of signal handlers... void
+checking size of short... 2
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of __int16... 0
+checking size of __int32... 0
+checking size of __int64... 0
+checking size of void *... 8
+checking size of size_t... 8
+checking size of ptrdiff_t... 8
+checking size of __int32... (cached) 0
+checking size of intmax_t... 8
+checking size of uintmax_t... 8
+checking size of intptr_t... 8
+checking size of uintptr_t... 8
+checking size of float... 4
+checking size of double... 8
+checking size of long double... 16
+checking size of dev_t... 8
+checking size of fpos_t... 24
+checking size of mode_t... 4
+checking size of off_t... 8
+checking size of ssize_t... 8
+checking size of time_t... 8
+checking for access... yes
+checking for alloca... no
+checking for atexit... yes
+checking for atoi... yes
+checking for atol... yes
+checking for chmod... yes
+checking for chown... yes
+checking for clock_getcpuclockid... yes
+checking for clock_getres... yes
+checking for clock_gettime... yes
+checking for ctime... yes
+checking for difftime... yes
+checking for fstat... yes
+checking for getenv... yes
+checking for getpagesize... yes
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for gmtime... yes
+checking for isatty... yes
+checking for localtime... yes
+checking for longjmp... yes
+checking for lstat... yes
+checking for memcmp... yes
+checking for memcpy... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mktime... yes
+checking for mmap... yes
+checking for mprotect... yes
+checking for munmap... yes
+checking for qsort... yes
+checking for raise... yes
+checking for rmdir... yes
+checking for setjmp... yes
+checking for signal... yes
+checking for snprintf... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for stricmp... no
+checking for strncasecmp... yes
+checking for strnicmp... no
+checking for strrchr... yes
+checking for strstr... yes
+checking for time... yes
+checking for umask... yes
+checking for utime... yes
+checking for vsnprintf... yes
+checking whether to build assembly versions... no
+checking whether your compiler passes the LZO conformance test... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lzo2.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+   LZO configuration summary
+   -------------------------
+   LZO version                : 2.10
+   configured for host        : x86_64-pc-linux-uclibc
+   source code location       : .
+   compiler                   : gcc
+   preprocessor definitions   : -DLZO_HAVE_CONFIG_H=1
+   preprocessor flags         : -DNDEBUG
+   compiler flags             : -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+   build static library       : no
+   build shared library       : yes
+   enable i386 assembly code  : no
+
+
+   LZO 2.10 configured.
+
+   Copyright (C) 1996-2017 Markus Franz Xaver Johannes Oberhumer
+   All Rights Reserved.
+
+   The LZO library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License as
+   published by the Free Software Foundation; either version 2 of
+   the License, or (at your option) any later version.
+
+   The LZO library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   Markus F.X.J. Oberhumer
+   <markus@oberhumer.com>
+   http://www.oberhumer.com/opensource/lzo/
+
+
+Type 'make' to build LZO.
+Type 'make check' and 'make test' to test LZO.
+Type 'make install' to install LZO.
+After installing LZO, please have a look at 'examples/simple.c'.
+
+make  all-am
+make[1]: Entering directory '/sources/lzo-2.10'
+  CC       src/lzo1.lo
+  CC       src/lzo1_99.lo
+  CC       src/lzo1a.lo
+  CC       src/lzo1a_99.lo
+  CC       src/lzo1b_1.lo
+  CC       src/lzo1b_2.lo
+  CC       src/lzo1b_3.lo
+  CC       src/lzo1b_4.lo
+  CC       src/lzo1b_5.lo
+  CC       src/lzo1b_6.lo
+  CC       src/lzo1b_7.lo
+  CC       src/lzo1b_8.lo
+  CC       src/lzo1b_9.lo
+  CC       src/lzo1b_99.lo
+  CC       src/lzo1b_9x.lo
+  CC       src/lzo1b_cc.lo
+  CC       src/lzo1b_d1.lo
+  CC       src/lzo1b_d2.lo
+  CC       src/lzo1b_rr.lo
+  CC       src/lzo1b_xx.lo
+  CC       src/lzo1c_1.lo
+  CC       src/lzo1c_2.lo
+  CC       src/lzo1c_3.lo
+  CC       src/lzo1c_4.lo
+  CC       src/lzo1c_5.lo
+  CC       src/lzo1c_6.lo
+  CC       src/lzo1c_7.lo
+  CC       src/lzo1c_8.lo
+  CC       src/lzo1c_9.lo
+  CC       src/lzo1c_99.lo
+  CC       src/lzo1c_9x.lo
+  CC       src/lzo1c_cc.lo
+  CC       src/lzo1c_d1.lo
+  CC       src/lzo1c_d2.lo
+  CC       src/lzo1c_rr.lo
+  CC       src/lzo1c_xx.lo
+  CC       src/lzo1f_1.lo
+  CC       src/lzo1f_9x.lo
+  CC       src/lzo1f_d1.lo
+  CC       src/lzo1f_d2.lo
+  CC       src/lzo1x_1.lo
+  CC       src/lzo1x_1k.lo
+  CC       src/lzo1x_1l.lo
+  CC       src/lzo1x_1o.lo
+  CC       src/lzo1x_9x.lo
+  CC       src/lzo1x_d1.lo
+  CC       src/lzo1x_d2.lo
+  CC       src/lzo1x_d3.lo
+  CC       src/lzo1x_o.lo
+  CC       src/lzo1y_1.lo
+  CC       src/lzo1y_9x.lo
+  CC       src/lzo1y_d1.lo
+  CC       src/lzo1y_d2.lo
+  CC       src/lzo1y_d3.lo
+  CC       src/lzo1y_o.lo
+  CC       src/lzo1z_9x.lo
+  CC       src/lzo1z_d1.lo
+  CC       src/lzo1z_d2.lo
+  CC       src/lzo1z_d3.lo
+  CC       src/lzo2a_9x.lo
+  CC       src/lzo2a_d1.lo
+  CC       src/lzo2a_d2.lo
+  CC       src/lzo_crc.lo
+  CC       src/lzo_init.lo
+  CC       src/lzo_ptr.lo
+  CC       src/lzo_str.lo
+  CC       src/lzo_util.lo
+  CC       examples/dict.o
+  CC       examples/lzopack.o
+  CC       examples/overlap.o
+  CC       examples/precomp.o
+  CC       examples/precomp2.o
+  CC       examples/simple.o
+  CC       lzotest/lzotest.o
+  CC       tests/align.o
+  CC       tests/chksum.o
+  CC       tests/promote.o
+  CC       tests/sizes.o
+  CC       minilzo/t-testmini.o
+  CC       minilzo/t-minilzo.o
+  CCLD     src/liblzo2.la
+  CCLD     tests/promote
+  CCLD     tests/sizes
+  CCLD     minilzo/testmini
+  CCLD     examples/dict
+  CCLD     examples/lzopack
+  CCLD     examples/overlap
+  CCLD     examples/precomp
+  CCLD     examples/precomp2
+  CCLD     examples/simple
+  CCLD     lzotest/lzotest
+  CCLD     tests/align
+  CCLD     tests/chksum
+make[1]: Leaving directory '/sources/lzo-2.10'
+make[1]: Entering directory '/sources/lzo-2.10'
+ /usr/bin/mkdir -p '/usr/share/doc/lzo'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/usr/include/lzo'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   src/liblzo2.la '/usr/lib'
+ /usr/bin/install -c -m 644 AUTHORS COPYING NEWS THANKS doc/LZO.FAQ doc/LZO.TXT doc/LZOAPI.TXT '/usr/share/doc/lzo'
+ /usr/bin/install -c -m 644 lzo2.pc '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 include/lzo/lzo1.h include/lzo/lzo1a.h include/lzo/lzo1b.h include/lzo/lzo1c.h include/lzo/lzo1f.h include/lzo/lzo1x.h include/lzo/lzo1y.h include/lzo/lzo1z.h include/lzo/lzo2a.h include/lzo/lzo_asm.h include/lzo/lzoconf.h include/lzo/lzodefs.h include/lzo/lzoutil.h '/usr/include/lzo'
+libtool: install: /usr/bin/install -c src/.libs/liblzo2.so.2.0.0 /usr/lib/liblzo2.so.2.0.0
+libtool: install: (cd /usr/lib && { ln -s -f liblzo2.so.2.0.0 liblzo2.so.2 || { rm -f liblzo2.so.2 && ln -s liblzo2.so.2.0.0 liblzo2.so.2; }; })
+libtool: install: (cd /usr/lib && { ln -s -f liblzo2.so.2.0.0 liblzo2.so || { rm -f liblzo2.so && ln -s liblzo2.so.2.0.0 liblzo2.so; }; })
+libtool: install: /usr/bin/install -c src/.libs/liblzo2.lai /usr/lib/liblzo2.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[1]: Leaving directory '/sources/lzo-2.10'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 16:50:36 UTC 2024
+
+Totalseconds: 16
+
+KB: 1758956	/
+

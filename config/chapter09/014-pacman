@@ -1,0 +1,60 @@
+#!/bin/bash
+# https://gitlab.archlinux.org/archlinux/packaging/packages/pacman
+# https://sources.archlinux.org/other/pacman
+
+SRC="pacman"
+PKG="$SRC"
+
+gitlab='https://gitlab.archlinux.org/pacman/pacman/-/commit'
+PATCHES=(
+	"${gitlab}/6bb95c8856437513ee0ab19226bc090d6fd0fb06.patch"
+	"${gitlab}/95f148c2222db608a0d72d5c5577d0c71e7fa199.patch"
+	"${gitlab}/5e0496260b7d3f9c9fcf2b1c4899e4dbcc20ff03.patch"
+	"${gitlab}/0571ee82bff0edbd5ffac2228d4e6ac510b9008e.patch"
+	"${gitlab}/111eed0251238a9d3f90e76d62f2ac01aeccce48.patch"
+	"${gitlab}/bae9594ac1806ce30f2af1de27c49bb101a00d44.patch"
+)
+
+wget -cP .. "${PATCHES[@]}"
+for p in ${PATCHES[@]}; do
+	printf "Applying patch ${p##*/}...\n"
+	patch -Np1 -i ../${p##*/}
+	printf "\n\n\n"
+done
+wget -nv -O revertme-makepkg-remove-libdepends-and-libprovides.patch \
+	"${gitlab}/354a300cd26bb1c7e6551473596be5ecced921de.patch"
+patch -RNp1 -i revertme-makepkg-remove-libdepends-and-libprovides.patch
+
+cat <<"EOF">> scripts/po/zh_CN.po
+
+msgid "Splitting %s files into separate packages..."
+msgstr "正在将 %s 文件拆分为单独的包..."
+
+msgid "Splitting static library files into separate packages..."
+msgstr "正在将静态库文件拆分为单独的包..."
+
+msgid "Removing unwanted man pages..."
+msgstr "正在删除不想要的手册页..."
+
+msgid "Removing unwanted message translation files..."
+msgstr "正在删除不想要的翻译文件..."
+
+msgid "Finding %s files..."
+msgstr "正在查找 %s 文件..."
+
+msgid "Adding dependencies by dynamic linked library..."
+msgstr "正在通过动态链接库添加依赖..."
+EOF
+
+LDFLAGS+=" -Wl,-lintl"
+mkdir -v pacman-build
+cd pacman-build
+
+meson setup --prefix=/usr \
+	--buildtype=release \
+	-Ddoc=disabled \
+	-Ddoxygen=disabled \
+	-Dscriptlet-shell=/usr/bin/bash \
+	-Dldconfig=/usr/sbin/ldconfig ..
+ninja
+ninja install

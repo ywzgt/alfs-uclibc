@@ -1,0 +1,24 @@
+/usr/include/lzo/lzo1.h	2634	root:root	644	
+/usr/include/lzo/lzo1a.h	2638	root:root	644	
+/usr/include/lzo/lzo1b.h	5387	root:root	644	
+/usr/include/lzo/lzo1c.h	5384	root:root	644	
+/usr/include/lzo/lzo1f.h	3073	root:root	644	
+/usr/include/lzo/lzo1x.h	5873	root:root	644	
+/usr/include/lzo/lzo1y.h	4641	root:root	644	
+/usr/include/lzo/lzo1z.h	3771	root:root	644	
+/usr/include/lzo/lzo2a.h	2525	root:root	644	
+/usr/include/lzo/lzo_asm.h	5566	root:root	644	
+/usr/include/lzo/lzoconf.h	16006	root:root	644	
+/usr/include/lzo/lzodefs.h	127289	root:root	644	
+/usr/include/lzo/lzoutil.h	1823	root:root	644	
+/usr/lib/liblzo2.so	16	root:root	777	liblzo2.so.2.0.0
+/usr/lib/liblzo2.so.2	16	root:root	777	liblzo2.so.2.0.0
+/usr/lib/liblzo2.so.2.0.0	122936	root:root	755	
+/usr/lib/pkgconfig/lzo2.pc	520	root:root	644	
+/usr/share/doc/lzo/AUTHORS	112	root:root	644	
+/usr/share/doc/lzo/COPYING	18092	root:root	644	
+/usr/share/doc/lzo/LZO.FAQ	7616	root:root	644	
+/usr/share/doc/lzo/LZO.TXT	13009	root:root	644	
+/usr/share/doc/lzo/LZOAPI.TXT	6228	root:root	644	
+/usr/share/doc/lzo/NEWS	12599	root:root	644	
+/usr/share/doc/lzo/THANKS	690	root:root	644	

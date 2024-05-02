@@ -1,0 +1,1754 @@
+Thu May  2 16:37:49 UTC 2024
+KB: 1636004	/
+
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports nested variables... yes
+checking whether to enable debug build options... no
+checking whether to enable compiler optimizer... (assumed) yes
+checking whether to enable strict compiler warnings... no
+checking whether to enable compiler warnings as errors... no
+checking whether to enable curl debug memory tracking... no
+checking whether to enable hiding of library internal symbols... yes
+checking whether to enable c-ares for DNS lookups... no
+checking whether to disable dependency on -lrt... (assumed no)
+checking whether to enable ECH support... no
+checking for path separator... :
+checking for sed... /usr/bin/sed
+checking for grep... /usr/bin/grep
+checking that grep -E works... yes
+checking for ar... /usr/bin/ar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for stdatomic.h... yes
+checking if _Atomic is available... yes
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for code coverage support... no
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking curl version... 8.7.1
+checking for httpd... no
+checking for apache2... no
+checking for apachectl... no
+checking for apxs... no
+configure: httpd/apache2 not in PATH, http tests disabled
+configure: apxs not in PATH, http tests disabled
+checking for nghttpx... no
+checking for caddy... no
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking for grep that handles long lines and -e... (cached) /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking if OS is AIX (to define _ALL_SOURCE)... no
+checking if _THREAD_SAFE is already defined... no
+checking if _THREAD_SAFE is actually needed... no
+checking if _THREAD_SAFE is onwards defined... no
+checking if _REENTRANT is already defined... no
+checking if _REENTRANT is actually needed... no
+checking if _REENTRANT is onwards defined... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking whether to build shared libraries with -version-info... yes
+checking whether to build shared libraries with -no-undefined... no
+checking whether to build shared libraries with -mimpure-text... no
+checking whether to build shared libraries with PIC... yes
+checking whether to build static libraries with PIC... yes
+checking whether to build shared libraries only... no
+checking whether to build static libraries only... no
+checking for windres... no
+checking for inline... inline
+checking if cpp -P is needed... yes
+checking if cpp -P works... yes
+checking if compiler is DEC/Compaq/HP C... no
+checking if compiler is HP-UX C... no
+checking if compiler is IBM C... no
+checking if compiler is Intel C... no
+checking if compiler is clang... no
+checking if compiler is GNU C... yes
+checking compiler version... gcc '1302' (raw: '13.2.0')
+checking if compiler is SGI MIPSpro C... no
+checking if compiler is SGI MIPS C... no
+checking if compiler is SunPro C... no
+checking if compiler is Tiny C... no
+checking whether build target is a native Windows one... no
+checking if compiler accepts some basic options... yes
+configure: compiler options added: -Werror-implicit-function-declaration 
+checking if compiler optimizer assumed setting might be used... no
+checking if compiler accepts strict warning options... yes
+configure: compiler options added: -Wno-system-headers 
+checking if compiler halts on compilation errors... yes
+checking if compiler halts on negative sized arrays... yes
+checking if compiler halts on function prototype mismatch... yes
+checking if compiler supports hiding library internal symbols... yes
+checking whether build target supports WIN32 file API... no
+checking whether build target supports WIN32 crypto API... no
+checking for good-to-use Darwin CFLAGS... no
+checking whether to link macOS CoreFoundation, CoreServices, and SystemConfiguration frameworks... no
+checking to see if the compiler supports __builtin_available()... no
+checking whether to support http... yes
+checking whether to support ftp... yes
+checking whether to support file... yes
+checking whether to support ldap... yes
+checking whether to support ldaps... yes
+checking whether to support rtsp... yes
+checking whether to support proxies... yes
+checking whether to support dict... yes
+checking whether to support telnet... yes
+checking whether to support tftp... yes
+checking whether to support pop3... yes
+checking whether to support imap... yes
+checking whether to support smb... yes
+checking whether to support smtp... yes
+checking whether to support gopher... yes
+checking whether to support mqtt... no
+checking whether to build documentation... yes
+checking whether to provide built-in manual... yes
+checking whether to enable generation of C code... yes
+checking whether to use libgcc... no
+checking if X/Open network library is required... no
+checking for gethostbyname... yes
+checking whether build target is a native Windows one... (cached) no
+checking for proto/bsdsocket.h... no
+checking for connect in libraries... yes
+checking for sys/types.h... (cached) yes
+checking for sys/time.h... yes
+checking for monotonic clock_gettime... yes
+checking for clock_gettime in libraries... no additional lib required
+checking if monotonic clock_gettime works... yes
+checking for sys/types.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for raw monotonic clock_gettime... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking for zlib options with pkg-config... found
+checking for zlib.h... yes
+configure: found both libz and libz.h header
+checking for BrotliDecoderDecompress in -lbrotlidec... no
+checking for brotli/decode.h... no
+checking for ZSTD_createDStream in -lzstd... yes
+checking for zstd.h... yes
+checking for lber.h... no
+checking for ldap.h... no
+checking for ldap_ssl.h... no
+checking for LDAP libraries... cannot find LDAP libraries
+configure: WARNING: Cannot find libraries for LDAP support: LDAP disabled
+checking whether to enable IPv6... yes
+checking if struct sockaddr_in6 has sin6_scope_id member... yes
+checking if argv can be written to... yes
+checking if GSS-API support is requested... no
+checking whether to enable Windows native SSL/TLS... no
+checking whether to enable Secure Transport... no
+checking whether to enable Amiga native SSL/TLS (AmiSSL v5)... no
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking for openssl options with pkg-config... found
+configure: pkg-config: SSL_LIBS: "-lssl -lcrypto"
+configure: pkg-config: SSL_LDFLAGS: ""
+configure: pkg-config: SSL_CPPFLAGS: ""
+checking for HMAC_Update in -lcrypto... yes
+checking for SSL_connect in -lssl... yes
+checking for openssl/x509.h... yes
+checking for openssl/rsa.h... yes
+checking for openssl/crypto.h... yes
+checking for openssl/pem.h... yes
+checking for openssl/ssl.h... yes
+checking for openssl/err.h... yes
+checking for BoringSSL... no
+checking for AWS-LC... no
+checking for libressl... no
+checking for OpenSSL >= v3... yes
+checking for SSL_set_quic_use_legacy_codepoint... no
+configure: OpenSSL version does not speak QUIC API
+checking for "/dev/urandom"... yes
+checking for SRP support in OpenSSL... yes
+checking for QUIC support in OpenSSL... yes
+configure: built with one SSL backend
+checking default CA cert bundle/path... /etc/ssl/certs (capath)
+checking whether to use builtin CA store of SSL library... no
+checking for library containing gsasl_init... no
+configure: WARNING: libgsasl was not found
+checking for RTMP_Init in -lrtmp... no
+checking whether versioned symbols are wanted... no
+checking whether to enable Windows native IDN (Windows native builds only)... no
+checking whether to build with libidn2... (assumed) yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking for libidn2 options with pkg-config... no
+configure: IDN_LIBS: "-lidn2"
+configure: IDN_LDFLAGS: ""
+configure: IDN_CPPFLAGS: ""
+configure: IDN_DIR: ""
+checking if idn2_lookup_ul can be linked... no
+checking for idn2.h... no
+configure: WARNING: Cannot find libraries for IDN support: IDN disabled
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking for libnghttp2 options with pkg-config... found
+configure: -l is -lnghttp2
+configure: -I is 
+configure: -L is 
+checking for nghttp2_session_get_stream_local_window_size in -lnghttp2... yes
+checking for nghttp2/nghttp2.h... yes
+configure: Added  to CURL_LIBRARY_PATH
+checking for sys/types.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/select.h... yes
+checking for sys/socket.h... yes
+checking for sys/ioctl.h... yes
+checking for unistd.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for arpa/inet.h... yes
+checking for net/if.h... yes
+checking for netinet/in.h... yes
+checking for netinet/in6.h... no
+checking for sys/un.h... yes
+checking for linux/tcp.h... yes
+checking for netinet/tcp.h... yes
+checking for netinet/udp.h... yes
+checking for netdb.h... yes
+checking for sys/sockio.h... no
+checking for sys/stat.h... (cached) yes
+checking for sys/param.h... yes
+checking for termios.h... yes
+checking for termio.h... yes
+checking for fcntl.h... yes
+checking for io.h... no
+checking for pwd.h... yes
+checking for utime.h... yes
+checking for sys/utime.h... no
+checking for sys/poll.h... yes
+checking for poll.h... yes
+checking for socket.h... no
+checking for sys/resource.h... yes
+checking for libgen.h... yes
+checking for locale.h... yes
+checking for stdbool.h... yes
+checking for sys/filio.h... no
+checking for sys/wait.h... yes
+checking for setjmp.h... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for sys/types.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for struct timeval... yes
+checking run-time libs availability... fine
+checking size of size_t... 8
+checking size of long... 8
+checking size of int... 4
+checking size of time_t... 8
+checking size of off_t... 8
+checking size of curl_off_t... 8
+checking size of curl_socket_t... 4
+checking for long long... yes
+checking for ssize_t... yes
+checking for bool... yes
+checking for sa_family_t... yes
+checking for suseconds_t... yes
+checking if time_t is unsigned... no
+checking for in_addr_t... yes
+checking for struct sockaddr_storage... yes
+checking for sys/select.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for select... yes
+checking for sys/types.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for recv... yes
+checking for sys/types.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for send... yes
+checking for sys/types.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for MSG_NOSIGNAL... yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking if alarm can be linked... yes
+checking if alarm is prototyped... yes
+checking if alarm is compilable... yes
+checking if alarm usage allowed... yes
+checking if alarm might be used... yes
+checking for sys/types.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for libgen.h... (cached) yes
+checking if basename can be linked... yes
+checking if basename is prototyped... yes
+checking if basename is compilable... yes
+checking if basename usage allowed... yes
+checking if basename might be used... yes
+checking for sys/types.h... (cached) yes
+checking for socket.h... (cached) no
+checking if closesocket can be linked... no
+checking if closesocket might be used... no
+checking for sys/types.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking if CloseSocket can be linked... no
+checking if CloseSocket might be used... no
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for fcntl.h... (cached) yes
+checking if fcntl can be linked... yes
+checking if fcntl is prototyped... yes
+checking if fcntl is compilable... yes
+checking if fcntl usage allowed... yes
+checking if fcntl might be used... yes
+checking if fcntl O_NONBLOCK is compilable... yes
+checking if fcntl O_NONBLOCK usage allowed... yes
+checking if fcntl O_NONBLOCK might be used... yes
+checking whether build target is a native Windows one... (cached) no
+checking for sys/types.h... (cached) yes
+checking for netdb.h... (cached) yes
+checking if freeaddrinfo can be linked... yes
+checking if freeaddrinfo is prototyped... yes
+checking if freeaddrinfo is compilable... yes
+checking if freeaddrinfo usage allowed... yes
+checking if freeaddrinfo might be used... yes
+checking for sys/types.h... (cached) yes
+checking for sys/xattr.h... yes
+checking if fsetxattr can be linked... yes
+checking if fsetxattr is prototyped... yes
+checking if fsetxattr takes 5 args.... yes
+checking if fsetxattr is compilable... yes
+checking if fsetxattr usage allowed... yes
+checking if fsetxattr might be used... yes
+checking if ftruncate can be linked... yes
+checking if ftruncate is prototyped... yes
+checking if ftruncate is compilable... yes
+checking if ftruncate usage allowed... yes
+checking if ftruncate might be used... yes
+checking for sys/types.h... (cached) yes
+checking if getaddrinfo can be linked... yes
+checking if getaddrinfo is prototyped... yes
+checking if getaddrinfo is compilable... yes
+checking if getaddrinfo seems to work... yes
+checking if getaddrinfo usage allowed... yes
+checking if getaddrinfo might be used... yes
+checking if getaddrinfo is threadsafe... yes
+checking if gethostbyname can be linked... yes
+checking if gethostbyname is prototyped... yes
+checking if gethostbyname is compilable... yes
+checking if gethostbyname usage allowed... yes
+checking if gethostbyname might be used... yes
+checking if gethostbyname_r can be linked... yes
+checking if gethostbyname_r is prototyped... yes
+checking if gethostbyname_r takes 3 args.... no
+checking if gethostbyname_r takes 5 args.... no
+checking if gethostbyname_r takes 6 args.... yes
+checking if gethostbyname_r is compilable... yes
+checking if gethostbyname_r usage allowed... yes
+checking if gethostbyname_r might be used... yes
+checking if gethostname can be linked... yes
+checking if gethostname is prototyped... yes
+checking if gethostname is compilable... yes
+checking for gethostname arg 2 data type... size_t
+checking if gethostname usage allowed... yes
+checking if gethostname might be used... yes
+checking if getpeername can be linked... yes
+checking if getpeername is prototyped... yes
+checking if getpeername is compilable... yes
+checking if getpeername usage allowed... yes
+checking if getpeername might be used... yes
+checking if getsockname can be linked... yes
+checking if getsockname is prototyped... yes
+checking if getsockname is compilable... yes
+checking if getsockname usage allowed... yes
+checking if getsockname might be used... yes
+checking for net/if.h... (cached) yes
+checking if if_nametoindex can be linked... yes
+checking if if_nametoindex is prototyped... yes
+checking if if_nametoindex is compilable... yes
+checking if if_nametoindex usage allowed... yes
+checking if if_nametoindex might be used... yes
+checking for sys/types.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for netinet/in.h... (cached) yes
+checking for ifaddrs.h... yes
+checking if getifaddrs can be linked... yes
+checking if getifaddrs is prototyped... yes
+checking if getifaddrs is compilable... yes
+checking if getifaddrs seems to work... yes
+checking if getifaddrs usage allowed... yes
+checking if getifaddrs might be used... yes
+checking for sys/types.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking if gmtime_r can be linked... yes
+checking if gmtime_r is prototyped... yes
+checking if gmtime_r is compilable... yes
+checking if gmtime_r seems to work... yes
+checking if gmtime_r usage allowed... yes
+checking if gmtime_r might be used... yes
+checking for sys/types.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for netinet/in.h... (cached) yes
+checking for arpa/inet.h... (cached) yes
+checking if inet_ntop can be linked... yes
+checking if inet_ntop is prototyped... yes
+checking if inet_ntop is compilable... yes
+checking if inet_ntop seems to work... yes
+checking if inet_ntop usage allowed... yes
+checking if inet_ntop might be used... yes
+checking if inet_pton can be linked... yes
+checking if inet_pton is prototyped... yes
+checking if inet_pton is compilable... yes
+checking if inet_pton seems to work... yes
+checking if inet_pton usage allowed... yes
+checking if inet_pton might be used... yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for sys/ioctl.h... (cached) yes
+checking for stropts.h... no
+checking if ioctl can be linked... yes
+checking if ioctl is prototyped... yes
+checking if ioctl is compilable... yes
+checking if ioctl usage allowed... yes
+checking if ioctl might be used... yes
+checking if ioctl FIONBIO is compilable... yes
+checking if ioctl FIONBIO usage allowed... yes
+checking if ioctl FIONBIO might be used... yes
+checking if ioctl SIOCGIFADDR is compilable... yes
+checking if ioctl SIOCGIFADDR usage allowed... yes
+checking if ioctl SIOCGIFADDR might be used... yes
+checking if ioctlsocket can be linked... no
+checking if ioctlsocket might be used... no
+checking if IoctlSocket can be linked... no
+checking if IoctlSocket might be used... no
+checking if memrchr can be linked... yes
+checking if memrchr is prototyped... no
+checking if memrchr might be used... no
+checking for sys/types.h... (cached) yes
+checking for poll.h... (cached) yes
+checking for sys/poll.h... (cached) yes
+checking if poll can be linked... yes
+checking if poll is prototyped... yes
+checking if poll is compilable... yes
+checking if poll seems to work... yes
+checking if poll usage allowed... yes
+checking if poll might be used... yes
+checking for sys/types.h... (cached) yes
+checking if sigaction can be linked... yes
+checking if sigaction is prototyped... yes
+checking if sigaction is compilable... yes
+checking if sigaction usage allowed... yes
+checking if sigaction might be used... yes
+checking if siginterrupt can be linked... yes
+checking if siginterrupt is prototyped... yes
+checking if siginterrupt is compilable... yes
+checking if siginterrupt usage allowed... yes
+checking if siginterrupt might be used... yes
+checking if signal can be linked... yes
+checking if signal is prototyped... yes
+checking if signal is compilable... yes
+checking if signal usage allowed... yes
+checking if signal might be used... yes
+checking for sys/types.h... (cached) yes
+checking if sigsetjmp can be linked... no
+checking if sigsetjmp seems a macro... yes
+checking if sigsetjmp is compilable... yes
+checking if sigsetjmp usage allowed... yes
+checking if sigsetjmp might be used... yes
+checking if socket can be linked... yes
+checking if socket is prototyped... yes
+checking if socket is compilable... yes
+checking if socket usage allowed... yes
+checking if socket might be used... yes
+checking if socketpair can be linked... yes
+checking if socketpair is prototyped... yes
+checking if socketpair is compilable... yes
+checking if socketpair usage allowed... yes
+checking if socketpair might be used... yes
+checking if strcasecmp can be linked... yes
+checking if strcasecmp is prototyped... yes
+checking if strcasecmp is compilable... yes
+checking if strcasecmp usage allowed... yes
+checking if strcasecmp might be used... yes
+checking if strcmpi can be linked... no
+checking if strcmpi might be used... no
+checking if strdup can be linked... yes
+checking if strdup is prototyped... yes
+checking if strdup is compilable... yes
+checking if strdup usage allowed... yes
+checking if strdup might be used... yes
+checking if strerror_r can be linked... yes
+checking if strerror_r is prototyped... yes
+checking if strerror_r is compilable... yes
+checking if strerror_r is glibc like... no
+checking if strerror_r is POSIX like... yes
+checking if strerror_r seems to work... yes
+checking if strerror_r usage allowed... yes
+checking if strerror_r might be used... yes
+checking if stricmp can be linked... no
+checking if stricmp might be used... no
+checking if strtok_r can be linked... yes
+checking if strtok_r is prototyped... yes
+checking if strtok_r is compilable... yes
+checking if strtok_r usage allowed... yes
+checking if strtok_r might be used... yes
+checking if strtoll can be linked... yes
+checking if strtoll is prototyped... yes
+checking if strtoll is compilable... yes
+checking if strtoll usage allowed... yes
+checking if strtoll might be used... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether getpwuid_r is declared... yes
+checking for _fseeki64... no
+checking deeper for _fseeki64... but still no
+checking for arc4random... no
+checking deeper for arc4random... but still no
+checking for fnmatch... yes
+checking for fseeko... yes
+checking for geteuid... yes
+checking for getpass_r... no
+checking deeper for getpass_r... but still no
+checking for getppid... yes
+checking for getpwuid... yes
+checking for getpwuid_r... yes
+checking for getrlimit... yes
+checking for gettimeofday... yes
+checking for if_nametoindex... yes
+checking for mach_absolute_time... no
+checking deeper for mach_absolute_time... but still no
+checking for pipe... yes
+checking for sched_yield... yes
+checking for sendmsg... yes
+checking for setlocale... yes
+checking for setmode... no
+checking deeper for setmode... but still no
+checking for setrlimit... yes
+checking for snprintf... yes
+checking for utime... yes
+checking for utimes... yes
+checking whether fseeko is declared... yes
+checking how to set a socket into non-blocking mode... fcntl O_NONBLOCK
+checking for perl... /usr/bin/perl
+checking whether to enable the threaded resolver... yes
+checking whether to use POSIX threads for threaded resolver... auto
+checking for pthread.h... yes
+checking for pthread_create... yes
+checking convert -I options to -isystem... yes
+checking whether to enable verbose strings... yes
+checking whether to enable SSPI support (Windows native builds only)... no
+checking whether to enable basic authentication method... yes
+checking whether to enable bearer authentication method... yes
+checking whether to enable digest authentication method... yes
+checking whether to enable kerberos authentication method... yes
+checking whether to enable negotiate authentication method... yes
+checking whether to enable aws sig methods... yes
+checking whether to support NTLM... yes
+checking whether to enable NTLM delegation to winbind's helper... no
+checking whether to enable TLS-SRP authentication... yes
+checking whether to enable Unix domain sockets... auto
+checking for struct sockaddr_un.sun_path... yes
+checking whether to support cookies... yes
+checking whether to support socketpair... yes
+checking whether to support HTTP authentication... yes
+checking whether to support DoH... yes
+checking whether to support the MIME API... yes
+checking whether to support binding connections locally... yes
+checking whether to support the form API... yes
+checking whether to support date parsing... yes
+checking whether to support netrc parsing... yes
+checking whether to support progress-meter... yes
+checking whether to support DNS shuffling... yes
+checking whether to support curl_easy_option*... yes
+checking whether to support alt-svc... yes
+checking whether to support headers-api... yes
+checking whether to support HSTS... yes
+checking for SSL_set0_wbio... yes
+checking whether to support WebSockets... no
+checking whether hiding of library internal symbols will actually happen... yes
+checking if this build supports HTTPS-proxy... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating docs/Makefile
+config.status: creating docs/examples/Makefile
+config.status: creating docs/libcurl/Makefile
+config.status: creating docs/libcurl/opts/Makefile
+config.status: creating docs/cmdline-opts/Makefile
+config.status: creating include/Makefile
+config.status: creating include/curl/Makefile
+config.status: creating src/Makefile
+config.status: creating lib/Makefile
+config.status: creating scripts/Makefile
+config.status: creating lib/libcurl.vers
+config.status: creating lib/libcurl.plist
+config.status: creating tests/Makefile
+config.status: creating tests/config
+config.status: creating tests/certs/Makefile
+config.status: creating tests/certs/scripts/Makefile
+config.status: creating tests/data/Makefile
+config.status: creating tests/server/Makefile
+config.status: creating tests/libtest/Makefile
+config.status: creating tests/unit/Makefile
+config.status: creating tests/http/config.ini
+config.status: creating tests/http/Makefile
+config.status: creating tests/http/clients/Makefile
+config.status: creating packages/Makefile
+config.status: creating packages/vms/Makefile
+config.status: creating curl-config
+config.status: creating libcurl.pc
+config.status: creating lib/curl_config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: Configured to build curl/libcurl:
+
+  Host setup:       x86_64-pc-linux-uclibc
+  Install prefix:   /usr
+  Compiler:         gcc
+   CFLAGS:          -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Werror-implicit-function-declaration -Wno-system-headers
+   CPPFLAGS:        -DNDEBUG
+   LDFLAGS:         -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+   LIBS:            -lnghttp2 -lssl -lcrypto -lssl -lcrypto -lzstd -lz
+
+  curl version:     8.7.1
+  SSL:              enabled (OpenSSL v3+)
+  SSH:              no      (--with-{libssh,libssh2})
+  zlib:             enabled
+  brotli:           no      (--with-brotli)
+  zstd:             enabled (libzstd)
+  GSS-API:          no      (--with-gssapi)
+  GSASL:            no      (libgsasl not found)
+  TLS-SRP:          enabled
+  resolver:         POSIX threaded
+  IPv6:             enabled
+  Unix sockets:     enabled
+  IDN:              no      (--with-{libidn2,winidn})
+  Build docs:       enabled (--disable-docs)
+  Build libcurl:    Shared=yes, Static=yes
+  Built-in manual:  enabled
+  --libcurl option: enabled (--disable-libcurl-option)
+  Verbose errors:   enabled (--disable-verbose)
+  Code coverage:    disabled
+  SSPI:             no      (--enable-sspi)
+  ca cert bundle:   no
+  ca cert path:     /etc/ssl/certs   (warning: certs not found)
+  ca fallback:      no
+  LDAP:             no      (--enable-ldap / --with-ldap-lib / --with-lber-lib)
+  LDAPS:            no      (--enable-ldaps)
+  RTSP:             enabled
+  RTMP:             no      (--with-librtmp)
+  PSL:              no      (--with-libpsl)
+  Alt-svc:          enabled (--disable-alt-svc)
+  Headers API:      enabled (--disable-headers-api)
+  HSTS:             enabled (--disable-hsts)
+  HTTP1:            enabled (internal)
+  HTTP2:            enabled (nghttp2)
+  HTTP3:            no      (--with-ngtcp2 --with-nghttp3, --with-quiche, --with-openssl-quic, --with-msh3)
+  ECH:              no      (--enable-ech)
+  WebSockets:       no      (--enable-websockets)
+  Protocols:        DICT FILE FTP FTPS GOPHER GOPHERS HTTP HTTPS IMAP IMAPS IPFS IPNS MQTT POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP
+  Features:         AsynchDNS HSTS HTTP2 HTTPS-proxy IPv6 Largefile NTLM SSL TLS-SRP UnixSockets alt-svc libz threadsafe zstd
+
+Making all in lib
+make[1]: Entering directory '/sources/curl-8.7.1/lib'
+make  all-am
+make[2]: Entering directory '/sources/curl-8.7.1/lib'
+  CC       libcurl_la-altsvc.lo
+  CC       libcurl_la-amigaos.lo
+  CC       libcurl_la-asyn-ares.lo
+  CC       libcurl_la-asyn-thread.lo
+  CC       libcurl_la-base64.lo
+  CC       libcurl_la-bufq.lo
+  CC       libcurl_la-bufref.lo
+  CC       libcurl_la-c-hyper.lo
+  CC       libcurl_la-cf-h1-proxy.lo
+  CC       libcurl_la-cf-h2-proxy.lo
+  CC       libcurl_la-cf-haproxy.lo
+  CC       libcurl_la-cf-https-connect.lo
+  CC       libcurl_la-cf-socket.lo
+  CC       libcurl_la-cfilters.lo
+  CC       libcurl_la-conncache.lo
+  CC       libcurl_la-connect.lo
+  CC       libcurl_la-content_encoding.lo
+  CC       libcurl_la-cookie.lo
+  CC       libcurl_la-curl_addrinfo.lo
+  CC       libcurl_la-curl_des.lo
+  CC       libcurl_la-curl_endian.lo
+  CC       libcurl_la-curl_fnmatch.lo
+  CC       libcurl_la-curl_get_line.lo
+  CC       libcurl_la-curl_gethostname.lo
+  CC       libcurl_la-curl_gssapi.lo
+  CC       libcurl_la-curl_memrchr.lo
+  CC       libcurl_la-curl_multibyte.lo
+  CC       libcurl_la-curl_ntlm_core.lo
+  CC       libcurl_la-curl_ntlm_wb.lo
+  CC       libcurl_la-curl_path.lo
+  CC       libcurl_la-curl_range.lo
+  CC       libcurl_la-curl_rtmp.lo
+  CC       libcurl_la-curl_sasl.lo
+  CC       libcurl_la-curl_sha512_256.lo
+  CC       libcurl_la-curl_sspi.lo
+  CC       libcurl_la-curl_threads.lo
+  CC       libcurl_la-curl_trc.lo
+  CC       libcurl_la-cw-out.lo
+  CC       libcurl_la-dict.lo
+  CC       libcurl_la-doh.lo
+  CC       libcurl_la-dynbuf.lo
+  CC       libcurl_la-dynhds.lo
+  CC       libcurl_la-easy.lo
+  CC       libcurl_la-easygetopt.lo
+  CC       libcurl_la-easyoptions.lo
+  CC       libcurl_la-escape.lo
+  CC       libcurl_la-file.lo
+  CC       libcurl_la-fileinfo.lo
+  CC       libcurl_la-fopen.lo
+  CC       libcurl_la-formdata.lo
+  CC       libcurl_la-ftp.lo
+  CC       libcurl_la-ftplistparser.lo
+  CC       libcurl_la-getenv.lo
+  CC       libcurl_la-getinfo.lo
+  CC       libcurl_la-gopher.lo
+  CC       libcurl_la-hash.lo
+  CC       libcurl_la-headers.lo
+  CC       libcurl_la-hmac.lo
+  CC       libcurl_la-hostasyn.lo
+  CC       libcurl_la-hostip.lo
+  CC       libcurl_la-hostip4.lo
+  CC       libcurl_la-hostip6.lo
+  CC       libcurl_la-hostsyn.lo
+  CC       libcurl_la-hsts.lo
+  CC       libcurl_la-http.lo
+  CC       libcurl_la-http1.lo
+  CC       libcurl_la-http2.lo
+  CC       libcurl_la-http_aws_sigv4.lo
+  CC       libcurl_la-http_chunks.lo
+  CC       libcurl_la-http_digest.lo
+  CC       libcurl_la-http_negotiate.lo
+  CC       libcurl_la-http_ntlm.lo
+  CC       libcurl_la-http_proxy.lo
+  CC       libcurl_la-idn.lo
+  CC       libcurl_la-if2ip.lo
+  CC       libcurl_la-imap.lo
+  CC       libcurl_la-inet_ntop.lo
+  CC       libcurl_la-inet_pton.lo
+  CC       libcurl_la-krb5.lo
+  CC       libcurl_la-ldap.lo
+  CC       libcurl_la-llist.lo
+  CC       libcurl_la-macos.lo
+  CC       libcurl_la-md4.lo
+  CC       libcurl_la-md5.lo
+  CC       libcurl_la-memdebug.lo
+  CC       libcurl_la-mime.lo
+  CC       libcurl_la-mprintf.lo
+  CC       libcurl_la-mqtt.lo
+  CC       libcurl_la-multi.lo
+  CC       libcurl_la-netrc.lo
+  CC       libcurl_la-nonblock.lo
+  CC       libcurl_la-noproxy.lo
+  CC       libcurl_la-openldap.lo
+  CC       libcurl_la-parsedate.lo
+  CC       libcurl_la-pingpong.lo
+  CC       libcurl_la-pop3.lo
+  CC       libcurl_la-progress.lo
+  CC       libcurl_la-psl.lo
+  CC       libcurl_la-rand.lo
+  CC       libcurl_la-rename.lo
+  CC       libcurl_la-request.lo
+  CC       libcurl_la-rtsp.lo
+  CC       libcurl_la-select.lo
+  CC       libcurl_la-sendf.lo
+  CC       libcurl_la-setopt.lo
+  CC       libcurl_la-sha256.lo
+  CC       libcurl_la-share.lo
+  CC       libcurl_la-slist.lo
+  CC       libcurl_la-smb.lo
+  CC       libcurl_la-smtp.lo
+  CC       libcurl_la-socketpair.lo
+  CC       libcurl_la-socks.lo
+  CC       libcurl_la-socks_gssapi.lo
+  CC       libcurl_la-socks_sspi.lo
+  CC       libcurl_la-speedcheck.lo
+  CC       libcurl_la-splay.lo
+  CC       libcurl_la-strcase.lo
+  CC       libcurl_la-strdup.lo
+  CC       libcurl_la-strerror.lo
+  CC       libcurl_la-strtok.lo
+  CC       libcurl_la-strtoofft.lo
+  CC       libcurl_la-system_win32.lo
+  CC       libcurl_la-telnet.lo
+  CC       libcurl_la-tftp.lo
+  CC       libcurl_la-timediff.lo
+  CC       libcurl_la-timeval.lo
+  CC       libcurl_la-transfer.lo
+  CC       libcurl_la-url.lo
+  CC       libcurl_la-urlapi.lo
+  CC       libcurl_la-version.lo
+  CC       libcurl_la-version_win32.lo
+  CC       libcurl_la-warnless.lo
+  CC       libcurl_la-ws.lo
+  CC       vauth/libcurl_la-cleartext.lo
+  CC       vauth/libcurl_la-cram.lo
+  CC       vauth/libcurl_la-digest.lo
+  CC       vauth/libcurl_la-digest_sspi.lo
+  CC       vauth/libcurl_la-gsasl.lo
+  CC       vauth/libcurl_la-krb5_gssapi.lo
+  CC       vauth/libcurl_la-krb5_sspi.lo
+  CC       vauth/libcurl_la-ntlm.lo
+  CC       vauth/libcurl_la-ntlm_sspi.lo
+  CC       vauth/libcurl_la-oauth2.lo
+  CC       vauth/libcurl_la-spnego_gssapi.lo
+  CC       vauth/libcurl_la-spnego_sspi.lo
+  CC       vauth/libcurl_la-vauth.lo
+  CC       vtls/libcurl_la-bearssl.lo
+  CC       vtls/libcurl_la-gtls.lo
+  CC       vtls/libcurl_la-hostcheck.lo
+  CC       vtls/libcurl_la-keylog.lo
+  CC       vtls/libcurl_la-mbedtls.lo
+  CC       vtls/libcurl_la-mbedtls_threadlock.lo
+  CC       vtls/libcurl_la-openssl.lo
+  CC       vtls/libcurl_la-rustls.lo
+  CC       vtls/libcurl_la-schannel.lo
+  CC       vtls/libcurl_la-schannel_verify.lo
+  CC       vtls/libcurl_la-sectransp.lo
+  CC       vtls/libcurl_la-vtls.lo
+  CC       vtls/libcurl_la-wolfssl.lo
+  CC       vtls/libcurl_la-x509asn1.lo
+  CC       vquic/libcurl_la-curl_msh3.lo
+  CC       vquic/libcurl_la-curl_ngtcp2.lo
+  CC       vquic/libcurl_la-curl_osslq.lo
+  CC       vquic/libcurl_la-curl_quiche.lo
+  CC       vquic/libcurl_la-vquic.lo
+  CC       vquic/libcurl_la-vquic-tls.lo
+  CC       vssh/libcurl_la-libssh.lo
+  CC       vssh/libcurl_la-libssh2.lo
+  CC       vssh/libcurl_la-wolfssh.lo
+  CCLD     libcurl.la
+make[2]: Leaving directory '/sources/curl-8.7.1/lib'
+make[1]: Leaving directory '/sources/curl-8.7.1/lib'
+Making all in docs
+make[1]: Entering directory '/sources/curl-8.7.1/docs'
+  RENDER  mk-ca-bundle.1
+Making all in .
+make[2]: Entering directory '/sources/curl-8.7.1/docs'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/sources/curl-8.7.1/docs'
+Making all in cmdline-opts
+make[2]: Entering directory '/sources/curl-8.7.1/docs/cmdline-opts'
+  GENERATE curl.1
+  GENERATE curl.txt
+make[2]: Leaving directory '/sources/curl-8.7.1/docs/cmdline-opts'
+Making all in libcurl
+make[2]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+Making all in opts
+make[3]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+  RENDER  CURLINFO_ACTIVESOCKET.3
+  RENDER  CURLINFO_APPCONNECT_TIME.3
+  RENDER  CURLINFO_APPCONNECT_TIME_T.3
+  RENDER  CURLINFO_CAINFO.3
+  RENDER  CURLINFO_CAPATH.3
+  RENDER  CURLINFO_CERTINFO.3
+  RENDER  CURLINFO_CONDITION_UNMET.3
+  RENDER  CURLINFO_CONNECT_TIME.3
+  RENDER  CURLINFO_CONNECT_TIME_T.3
+  RENDER  CURLINFO_CONTENT_LENGTH_DOWNLOAD.3
+  RENDER  CURLINFO_CONN_ID.3
+  RENDER  CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3
+  RENDER  CURLINFO_CONTENT_LENGTH_UPLOAD.3
+  RENDER  CURLINFO_CONTENT_LENGTH_UPLOAD_T.3
+  RENDER  CURLINFO_CONTENT_TYPE.3
+  RENDER  CURLINFO_COOKIELIST.3
+  RENDER  CURLINFO_EFFECTIVE_METHOD.3
+  RENDER  CURLINFO_EFFECTIVE_URL.3
+  RENDER  CURLINFO_FILETIME.3
+  RENDER  CURLINFO_FILETIME_T.3
+  RENDER  CURLINFO_FTP_ENTRY_PATH.3
+  RENDER  CURLINFO_HEADER_SIZE.3
+  RENDER  CURLINFO_HTTP_CONNECTCODE.3
+  RENDER  CURLINFO_HTTP_VERSION.3
+  RENDER  CURLINFO_HTTPAUTH_AVAIL.3
+  RENDER  CURLINFO_LOCAL_IP.3
+  RENDER  CURLINFO_LASTSOCKET.3
+  RENDER  CURLINFO_LOCAL_PORT.3
+  RENDER  CURLINFO_NAMELOOKUP_TIME.3
+  RENDER  CURLINFO_NAMELOOKUP_TIME_T.3
+  RENDER  CURLINFO_NUM_CONNECTS.3
+  RENDER  CURLINFO_OS_ERRNO.3
+  RENDER  CURLINFO_PRETRANSFER_TIME_T.3
+  RENDER  CURLINFO_PRETRANSFER_TIME.3
+  RENDER  CURLINFO_PRIMARY_PORT.3
+  RENDER  CURLINFO_PRIMARY_IP.3
+  RENDER  CURLINFO_PRIVATE.3
+  RENDER  CURLINFO_PROTOCOL.3
+  RENDER  CURLINFO_PROXY_ERROR.3
+  RENDER  CURLINFO_PROXY_SSL_VERIFYRESULT.3
+  RENDER  CURLINFO_PROXYAUTH_AVAIL.3
+  RENDER  CURLINFO_REDIRECT_COUNT.3
+  RENDER  CURLINFO_REDIRECT_TIME.3
+  RENDER  CURLINFO_QUEUE_TIME_T.3
+  RENDER  CURLINFO_REDIRECT_TIME_T.3
+  RENDER  CURLINFO_REDIRECT_URL.3
+  RENDER  CURLINFO_REFERER.3
+  RENDER  CURLINFO_REQUEST_SIZE.3
+  RENDER  CURLINFO_RESPONSE_CODE.3
+  RENDER  CURLINFO_RETRY_AFTER.3
+  RENDER  CURLINFO_RTSP_CLIENT_CSEQ.3
+  RENDER  CURLINFO_RTSP_CSEQ_RECV.3
+  RENDER  CURLINFO_RTSP_SERVER_CSEQ.3
+  RENDER  CURLINFO_RTSP_SESSION_ID.3
+  RENDER  CURLINFO_SCHEME.3
+  RENDER  CURLINFO_SIZE_DOWNLOAD.3
+  RENDER  CURLINFO_SIZE_DOWNLOAD_T.3
+  RENDER  CURLINFO_SIZE_UPLOAD.3
+  RENDER  CURLINFO_SIZE_UPLOAD_T.3
+  RENDER  CURLINFO_SPEED_DOWNLOAD.3
+  RENDER  CURLINFO_SPEED_DOWNLOAD_T.3
+  RENDER  CURLINFO_SPEED_UPLOAD_T.3
+  RENDER  CURLINFO_SSL_ENGINES.3
+  RENDER  CURLINFO_SPEED_UPLOAD.3
+  RENDER  CURLINFO_SSL_VERIFYRESULT.3
+  RENDER  CURLINFO_STARTTRANSFER_TIME.3
+  RENDER  CURLINFO_STARTTRANSFER_TIME_T.3
+  RENDER  CURLINFO_TLS_SESSION.3
+  RENDER  CURLINFO_TLS_SSL_PTR.3
+  RENDER  CURLINFO_TOTAL_TIME.3
+  RENDER  CURLINFO_TOTAL_TIME_T.3
+  RENDER  CURLINFO_USED_PROXY.3
+  RENDER  CURLINFO_XFER_ID.3
+  RENDER  CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3
+  RENDER  CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3
+  RENDER  CURLMOPT_MAX_CONCURRENT_STREAMS.3
+  RENDER  CURLMOPT_MAX_HOST_CONNECTIONS.3
+  RENDER  CURLMOPT_MAX_PIPELINE_LENGTH.3
+  RENDER  CURLMOPT_MAX_TOTAL_CONNECTIONS.3
+  RENDER  CURLMOPT_MAXCONNECTS.3
+  RENDER  CURLMOPT_PIPELINING.3
+  RENDER  CURLMOPT_PIPELINING_SERVER_BL.3
+  RENDER  CURLMOPT_PIPELINING_SITE_BL.3
+  RENDER  CURLMOPT_PUSHDATA.3
+  RENDER  CURLMOPT_PUSHFUNCTION.3
+  RENDER  CURLMOPT_SOCKETDATA.3
+  RENDER  CURLMOPT_SOCKETFUNCTION.3
+  RENDER  CURLMOPT_TIMERDATA.3
+  RENDER  CURLMOPT_TIMERFUNCTION.3
+  RENDER  CURLOPT_ABSTRACT_UNIX_SOCKET.3
+  RENDER  CURLOPT_ACCEPT_ENCODING.3
+  RENDER  CURLOPT_ACCEPTTIMEOUT_MS.3
+  RENDER  CURLOPT_ADDRESS_SCOPE.3
+  RENDER  CURLOPT_ALTSVC.3
+  RENDER  CURLOPT_ALTSVC_CTRL.3
+  RENDER  CURLOPT_APPEND.3
+  RENDER  CURLOPT_AUTOREFERER.3
+  RENDER  CURLOPT_BUFFERSIZE.3
+  RENDER  CURLOPT_CAINFO.3
+  RENDER  CURLOPT_AWS_SIGV4.3
+  RENDER  CURLOPT_CAINFO_BLOB.3
+  RENDER  CURLOPT_CAPATH.3
+  RENDER  CURLOPT_CA_CACHE_TIMEOUT.3
+  RENDER  CURLOPT_CERTINFO.3
+  RENDER  CURLOPT_CHUNK_BGN_FUNCTION.3
+  RENDER  CURLOPT_CHUNK_DATA.3
+  RENDER  CURLOPT_CHUNK_END_FUNCTION.3
+  RENDER  CURLOPT_CLOSESOCKETDATA.3
+  RENDER  CURLOPT_CLOSESOCKETFUNCTION.3
+  RENDER  CURLOPT_CONNECT_ONLY.3
+  RENDER  CURLOPT_CONNECT_TO.3
+  RENDER  CURLOPT_CONNECTTIMEOUT.3
+  RENDER  CURLOPT_CONNECTTIMEOUT_MS.3
+  RENDER  CURLOPT_CONV_FROM_NETWORK_FUNCTION.3
+  RENDER  CURLOPT_CONV_FROM_UTF8_FUNCTION.3
+  RENDER  CURLOPT_CONV_TO_NETWORK_FUNCTION.3
+  RENDER  CURLOPT_COOKIE.3
+  RENDER  CURLOPT_COOKIEFILE.3
+  RENDER  CURLOPT_COOKIEJAR.3
+  RENDER  CURLOPT_COOKIELIST.3
+  RENDER  CURLOPT_COPYPOSTFIELDS.3
+  RENDER  CURLOPT_COOKIESESSION.3
+  RENDER  CURLOPT_CRLF.3
+  RENDER  CURLOPT_CRLFILE.3
+  RENDER  CURLOPT_CURLU.3
+  RENDER  CURLOPT_CUSTOMREQUEST.3
+  RENDER  CURLOPT_DEBUGDATA.3
+  RENDER  CURLOPT_DEBUGFUNCTION.3
+  RENDER  CURLOPT_DEFAULT_PROTOCOL.3
+  RENDER  CURLOPT_DIRLISTONLY.3
+  RENDER  CURLOPT_DISALLOW_USERNAME_IN_URL.3
+  RENDER  CURLOPT_DNS_CACHE_TIMEOUT.3
+  RENDER  CURLOPT_DNS_INTERFACE.3
+  RENDER  CURLOPT_DNS_LOCAL_IP4.3
+  RENDER  CURLOPT_DNS_LOCAL_IP6.3
+  RENDER  CURLOPT_DNS_SERVERS.3
+  RENDER  CURLOPT_DNS_SHUFFLE_ADDRESSES.3
+  RENDER  CURLOPT_DNS_USE_GLOBAL_CACHE.3
+  RENDER  CURLOPT_DOH_SSL_VERIFYHOST.3
+  RENDER  CURLOPT_DOH_SSL_VERIFYPEER.3
+  RENDER  CURLOPT_DOH_SSL_VERIFYSTATUS.3
+  RENDER  CURLOPT_DOH_URL.3
+  RENDER  CURLOPT_EGDSOCKET.3
+  RENDER  CURLOPT_ERRORBUFFER.3
+  RENDER  CURLOPT_EXPECT_100_TIMEOUT_MS.3
+  RENDER  CURLOPT_FILETIME.3
+  RENDER  CURLOPT_FAILONERROR.3
+  RENDER  CURLOPT_FNMATCH_DATA.3
+  RENDER  CURLOPT_FNMATCH_FUNCTION.3
+  RENDER  CURLOPT_FOLLOWLOCATION.3
+  RENDER  CURLOPT_FORBID_REUSE.3
+  RENDER  CURLOPT_FRESH_CONNECT.3
+  RENDER  CURLOPT_FTP_ACCOUNT.3
+  RENDER  CURLOPT_FTP_ALTERNATIVE_TO_USER.3
+  RENDER  CURLOPT_FTP_CREATE_MISSING_DIRS.3
+  RENDER  CURLOPT_FTP_FILEMETHOD.3
+  RENDER  CURLOPT_FTP_SSL_CCC.3
+  RENDER  CURLOPT_FTP_SKIP_PASV_IP.3
+  RENDER  CURLOPT_FTP_USE_EPRT.3
+  RENDER  CURLOPT_FTP_USE_EPSV.3
+  RENDER  CURLOPT_FTP_USE_PRET.3
+  RENDER  CURLOPT_FTPSSLAUTH.3
+  RENDER  CURLOPT_FTPPORT.3
+  RENDER  CURLOPT_GSSAPI_DELEGATION.3
+  RENDER  CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3
+  RENDER  CURLOPT_HAPROXYPROTOCOL.3
+  RENDER  CURLOPT_HAPROXY_CLIENT_IP.3
+  RENDER  CURLOPT_HEADER.3
+  RENDER  CURLOPT_HEADERDATA.3
+  RENDER  CURLOPT_HEADERFUNCTION.3
+  RENDER  CURLOPT_HEADEROPT.3
+  RENDER  CURLOPT_HSTS.3
+  RENDER  CURLOPT_HSTS_CTRL.3
+  RENDER  CURLOPT_HSTSREADDATA.3
+  RENDER  CURLOPT_HSTSREADFUNCTION.3
+  RENDER  CURLOPT_HSTSWRITEDATA.3
+  RENDER  CURLOPT_HSTSWRITEFUNCTION.3
+  RENDER  CURLOPT_HTTP09_ALLOWED.3
+  RENDER  CURLOPT_HTTP200ALIASES.3
+  RENDER  CURLOPT_HTTP_CONTENT_DECODING.3
+  RENDER  CURLOPT_HTTP_VERSION.3
+  RENDER  CURLOPT_HTTPAUTH.3
+  RENDER  CURLOPT_HTTP_TRANSFER_DECODING.3
+  RENDER  CURLOPT_HTTPGET.3
+  RENDER  CURLOPT_HTTPHEADER.3
+  RENDER  CURLOPT_HTTPPOST.3
+  RENDER  CURLOPT_HTTPPROXYTUNNEL.3
+  RENDER  CURLOPT_IGNORE_CONTENT_LENGTH.3
+  RENDER  CURLOPT_INFILESIZE.3
+  RENDER  CURLOPT_INTERFACE.3
+  RENDER  CURLOPT_INFILESIZE_LARGE.3
+  RENDER  CURLOPT_INTERLEAVEDATA.3
+  RENDER  CURLOPT_IOCTLDATA.3
+  RENDER  CURLOPT_INTERLEAVEFUNCTION.3
+  RENDER  CURLOPT_IOCTLFUNCTION.3
+  RENDER  CURLOPT_IPRESOLVE.3
+  RENDER  CURLOPT_ISSUERCERT.3
+  RENDER  CURLOPT_ISSUERCERT_BLOB.3
+  RENDER  CURLOPT_KEEP_SENDING_ON_ERROR.3
+  RENDER  CURLOPT_KEYPASSWD.3
+  RENDER  CURLOPT_KRBLEVEL.3
+  RENDER  CURLOPT_LOCALPORT.3
+  RENDER  CURLOPT_LOCALPORTRANGE.3
+  RENDER  CURLOPT_LOGIN_OPTIONS.3
+  RENDER  CURLOPT_LOW_SPEED_LIMIT.3
+  RENDER  CURLOPT_LOW_SPEED_TIME.3
+  RENDER  CURLOPT_MAIL_AUTH.3
+  RENDER  CURLOPT_MAIL_FROM.3
+  RENDER  CURLOPT_MAIL_RCPT.3
+  RENDER  CURLOPT_MAIL_RCPT_ALLOWFAILS.3
+  RENDER  CURLOPT_MAX_RECV_SPEED_LARGE.3
+  RENDER  CURLOPT_MAX_SEND_SPEED_LARGE.3
+  RENDER  CURLOPT_MAXAGE_CONN.3
+  RENDER  CURLOPT_MAXCONNECTS.3
+  RENDER  CURLOPT_MAXFILESIZE.3
+  RENDER  CURLOPT_MAXFILESIZE_LARGE.3
+  RENDER  CURLOPT_MAXLIFETIME_CONN.3
+  RENDER  CURLOPT_MAXREDIRS.3
+  RENDER  CURLOPT_MIMEPOST.3
+  RENDER  CURLOPT_MIME_OPTIONS.3
+  RENDER  CURLOPT_NETRC.3
+  RENDER  CURLOPT_NETRC_FILE.3
+  RENDER  CURLOPT_NEW_DIRECTORY_PERMS.3
+  RENDER  CURLOPT_NEW_FILE_PERMS.3
+  RENDER  CURLOPT_NOBODY.3
+  RENDER  CURLOPT_NOPROGRESS.3
+  RENDER  CURLOPT_NOPROXY.3
+  RENDER  CURLOPT_NOSIGNAL.3
+  RENDER  CURLOPT_OPENSOCKETDATA.3
+  RENDER  CURLOPT_OPENSOCKETFUNCTION.3
+  RENDER  CURLOPT_PASSWORD.3
+  RENDER  CURLOPT_PATH_AS_IS.3
+  RENDER  CURLOPT_PINNEDPUBLICKEY.3
+  RENDER  CURLOPT_PIPEWAIT.3
+  RENDER  CURLOPT_PORT.3
+  RENDER  CURLOPT_POST.3
+  RENDER  CURLOPT_POSTFIELDS.3
+  RENDER  CURLOPT_POSTFIELDSIZE.3
+  RENDER  CURLOPT_POSTFIELDSIZE_LARGE.3
+  RENDER  CURLOPT_POSTQUOTE.3
+  RENDER  CURLOPT_POSTREDIR.3
+  RENDER  CURLOPT_PRE_PROXY.3
+  RENDER  CURLOPT_PREQUOTE.3
+  RENDER  CURLOPT_PREREQDATA.3
+  RENDER  CURLOPT_PREREQFUNCTION.3
+  RENDER  CURLOPT_PRIVATE.3
+  RENDER  CURLOPT_PROGRESSDATA.3
+  RENDER  CURLOPT_PROGRESSFUNCTION.3
+  RENDER  CURLOPT_PROTOCOLS.3
+  RENDER  CURLOPT_PROTOCOLS_STR.3
+  RENDER  CURLOPT_PROXY.3
+  RENDER  CURLOPT_PROXY_CAINFO.3
+  RENDER  CURLOPT_PROXY_CAINFO_BLOB.3
+  RENDER  CURLOPT_PROXY_CAPATH.3
+  RENDER  CURLOPT_PROXY_CRLFILE.3
+  RENDER  CURLOPT_PROXY_ISSUERCERT.3
+  RENDER  CURLOPT_PROXY_ISSUERCERT_BLOB.3
+  RENDER  CURLOPT_PROXY_KEYPASSWD.3
+  RENDER  CURLOPT_PROXY_SERVICE_NAME.3
+  RENDER  CURLOPT_PROXY_PINNEDPUBLICKEY.3
+  RENDER  CURLOPT_PROXY_SSL_CIPHER_LIST.3
+  RENDER  CURLOPT_PROXY_SSL_OPTIONS.3
+  RENDER  CURLOPT_PROXY_SSL_VERIFYHOST.3
+  RENDER  CURLOPT_PROXY_SSL_VERIFYPEER.3
+  RENDER  CURLOPT_PROXY_SSLCERT.3
+  RENDER  CURLOPT_PROXY_SSLCERT_BLOB.3
+  RENDER  CURLOPT_PROXY_SSLCERTTYPE.3
+  RENDER  CURLOPT_PROXY_SSLKEY.3
+  RENDER  CURLOPT_PROXY_SSLKEY_BLOB.3
+  RENDER  CURLOPT_PROXY_SSLKEYTYPE.3
+  RENDER  CURLOPT_PROXY_SSLVERSION.3
+  RENDER  CURLOPT_PROXY_TLS13_CIPHERS.3
+  RENDER  CURLOPT_PROXY_TLSAUTH_PASSWORD.3
+  RENDER  CURLOPT_PROXY_TLSAUTH_TYPE.3
+  RENDER  CURLOPT_PROXY_TLSAUTH_USERNAME.3
+  RENDER  CURLOPT_PROXY_TRANSFER_MODE.3
+  RENDER  CURLOPT_PROXYAUTH.3
+  RENDER  CURLOPT_PROXYHEADER.3
+  RENDER  CURLOPT_PROXYPASSWORD.3
+  RENDER  CURLOPT_PROXYPORT.3
+  RENDER  CURLOPT_PROXYUSERNAME.3
+  RENDER  CURLOPT_PROXYTYPE.3
+  RENDER  CURLOPT_PROXYUSERPWD.3
+  RENDER  CURLOPT_PUT.3
+  RENDER  CURLOPT_QUICK_EXIT.3
+  RENDER  CURLOPT_QUOTE.3
+  RENDER  CURLOPT_RANDOM_FILE.3
+  RENDER  CURLOPT_RANGE.3
+  RENDER  CURLOPT_READDATA.3
+  RENDER  CURLOPT_READFUNCTION.3
+  RENDER  CURLOPT_REDIR_PROTOCOLS.3
+  RENDER  CURLOPT_REDIR_PROTOCOLS_STR.3
+  RENDER  CURLOPT_REFERER.3
+  RENDER  CURLOPT_REQUEST_TARGET.3
+  RENDER  CURLOPT_RESOLVE.3
+  RENDER  CURLOPT_RESOLVER_START_DATA.3
+  RENDER  CURLOPT_RESOLVER_START_FUNCTION.3
+  RENDER  CURLOPT_RESUME_FROM.3
+  RENDER  CURLOPT_RESUME_FROM_LARGE.3
+  RENDER  CURLOPT_RTSP_CLIENT_CSEQ.3
+  RENDER  CURLOPT_RTSP_REQUEST.3
+  RENDER  CURLOPT_RTSP_SESSION_ID.3
+  RENDER  CURLOPT_RTSP_STREAM_URI.3
+  RENDER  CURLOPT_RTSP_SERVER_CSEQ.3
+  RENDER  CURLOPT_RTSP_TRANSPORT.3
+  RENDER  CURLOPT_SASL_AUTHZID.3
+  RENDER  CURLOPT_SASL_IR.3
+  RENDER  CURLOPT_SEEKDATA.3
+  RENDER  CURLOPT_SEEKFUNCTION.3
+  RENDER  CURLOPT_SERVER_RESPONSE_TIMEOUT.3
+  RENDER  CURLOPT_SERVER_RESPONSE_TIMEOUT_MS.3
+  RENDER  CURLOPT_SERVICE_NAME.3
+  RENDER  CURLOPT_SHARE.3
+  RENDER  CURLOPT_SOCKOPTDATA.3
+  RENDER  CURLOPT_SOCKOPTFUNCTION.3
+  RENDER  CURLOPT_SOCKS5_AUTH.3
+  RENDER  CURLOPT_SOCKS5_GSSAPI_NEC.3
+  RENDER  CURLOPT_SSH_AUTH_TYPES.3
+  RENDER  CURLOPT_SOCKS5_GSSAPI_SERVICE.3
+  RENDER  CURLOPT_SSH_COMPRESSION.3
+  RENDER  CURLOPT_SSH_HOSTKEYDATA.3
+  RENDER  CURLOPT_SSH_HOSTKEYFUNCTION.3
+  RENDER  CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3
+  RENDER  CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256.3
+  RENDER  CURLOPT_SSH_KEYDATA.3
+  RENDER  CURLOPT_SSH_KEYFUNCTION.3
+  RENDER  CURLOPT_SSH_KNOWNHOSTS.3
+  RENDER  CURLOPT_SSH_PRIVATE_KEYFILE.3
+  RENDER  CURLOPT_SSH_PUBLIC_KEYFILE.3
+  RENDER  CURLOPT_SSL_CIPHER_LIST.3
+  RENDER  CURLOPT_SSL_CTX_DATA.3
+  RENDER  CURLOPT_SSL_CTX_FUNCTION.3
+  RENDER  CURLOPT_SSL_EC_CURVES.3
+  RENDER  CURLOPT_SSL_ENABLE_NPN.3
+  RENDER  CURLOPT_SSL_ENABLE_ALPN.3
+  RENDER  CURLOPT_SSL_FALSESTART.3
+  RENDER  CURLOPT_SSL_OPTIONS.3
+  RENDER  CURLOPT_SSL_VERIFYHOST.3
+  RENDER  CURLOPT_SSL_SESSIONID_CACHE.3
+  RENDER  CURLOPT_SSL_VERIFYPEER.3
+  RENDER  CURLOPT_SSL_VERIFYSTATUS.3
+  RENDER  CURLOPT_SSLCERT.3
+  RENDER  CURLOPT_SSLCERT_BLOB.3
+  RENDER  CURLOPT_SSLCERTTYPE.3
+  RENDER  CURLOPT_SSLENGINE.3
+  RENDER  CURLOPT_SSLKEY.3
+  RENDER  CURLOPT_SSLENGINE_DEFAULT.3
+  RENDER  CURLOPT_SSLKEY_BLOB.3
+  RENDER  CURLOPT_SSLKEYTYPE.3
+  RENDER  CURLOPT_SSLVERSION.3
+  RENDER  CURLOPT_STDERR.3
+  RENDER  CURLOPT_STREAM_DEPENDS.3
+  RENDER  CURLOPT_STREAM_DEPENDS_E.3
+  RENDER  CURLOPT_STREAM_WEIGHT.3
+  RENDER  CURLOPT_SUPPRESS_CONNECT_HEADERS.3
+  RENDER  CURLOPT_TCP_FASTOPEN.3
+  RENDER  CURLOPT_TCP_KEEPALIVE.3
+  RENDER  CURLOPT_TCP_KEEPINTVL.3
+  RENDER  CURLOPT_TCP_KEEPIDLE.3
+  RENDER  CURLOPT_TCP_NODELAY.3
+  RENDER  CURLOPT_TELNETOPTIONS.3
+  RENDER  CURLOPT_TFTP_BLKSIZE.3
+  RENDER  CURLOPT_TFTP_NO_OPTIONS.3
+  RENDER  CURLOPT_TIMECONDITION.3
+  RENDER  CURLOPT_TIMEOUT.3
+  RENDER  CURLOPT_TIMEVALUE.3
+  RENDER  CURLOPT_TIMEOUT_MS.3
+  RENDER  CURLOPT_TIMEVALUE_LARGE.3
+  RENDER  CURLOPT_TLS13_CIPHERS.3
+  RENDER  CURLOPT_TLSAUTH_TYPE.3
+  RENDER  CURLOPT_TLSAUTH_PASSWORD.3
+  RENDER  CURLOPT_TLSAUTH_USERNAME.3
+  RENDER  CURLOPT_TRAILERDATA.3
+  RENDER  CURLOPT_TRAILERFUNCTION.3
+  RENDER  CURLOPT_TRANSFER_ENCODING.3
+  RENDER  CURLOPT_TRANSFERTEXT.3
+  RENDER  CURLOPT_UNIX_SOCKET_PATH.3
+  RENDER  CURLOPT_UNRESTRICTED_AUTH.3
+  RENDER  CURLOPT_UPKEEP_INTERVAL_MS.3
+  RENDER  CURLOPT_UPLOAD.3
+  RENDER  CURLOPT_UPLOAD_BUFFERSIZE.3
+  RENDER  CURLOPT_URL.3
+  RENDER  CURLOPT_USE_SSL.3
+  RENDER  CURLOPT_USERAGENT.3
+  RENDER  CURLOPT_USERNAME.3
+  RENDER  CURLOPT_VERBOSE.3
+  RENDER  CURLOPT_USERPWD.3
+  RENDER  CURLOPT_WILDCARDMATCH.3
+  RENDER  CURLOPT_WRITEDATA.3
+  RENDER  CURLOPT_WRITEFUNCTION.3
+  RENDER  CURLOPT_WS_OPTIONS.3
+  RENDER  CURLOPT_XFERINFOFUNCTION.3
+  RENDER  CURLOPT_XFERINFODATA.3
+  RENDER  CURLOPT_XOAUTH2_BEARER.3
+  RENDER  CURLSHOPT_LOCKFUNC.3
+  RENDER  CURLSHOPT_SHARE.3
+  RENDER  CURLSHOPT_UNLOCKFUNC.3
+  RENDER  CURLSHOPT_UNSHARE.3
+  RENDER  CURLSHOPT_USERDATA.3
+make[3]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[3]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+  RENDER  curl_easy_cleanup.3
+  RENDER  curl_easy_duphandle.3
+  RENDER  curl_easy_escape.3
+  RENDER  curl_easy_getinfo.3
+  RENDER  curl_easy_header.3
+  RENDER  curl_easy_init.3
+  RENDER  curl_easy_nextheader.3
+  RENDER  curl_easy_option_by_id.3
+  RENDER  curl_easy_option_by_name.3
+  RENDER  curl_easy_option_next.3
+  RENDER  curl_easy_pause.3
+  RENDER  curl_easy_perform.3
+  RENDER  curl_easy_recv.3
+  RENDER  curl_easy_reset.3
+  RENDER  curl_easy_send.3
+  RENDER  curl_easy_setopt.3
+  RENDER  curl_easy_strerror.3
+  RENDER  curl_easy_unescape.3
+  RENDER  curl_easy_upkeep.3
+  RENDER  curl_escape.3
+  RENDER  curl_formadd.3
+  RENDER  curl_formfree.3
+  RENDER  curl_formget.3
+  RENDER  curl_free.3
+  RENDER  curl_getdate.3
+  RENDER  curl_getenv.3
+  RENDER  curl_global_cleanup.3
+  RENDER  curl_global_init.3
+  RENDER  curl_global_init_mem.3
+  RENDER  curl_global_trace.3
+  RENDER  curl_global_sslset.3
+  RENDER  curl_mime_addpart.3
+  RENDER  curl_mime_data.3
+  RENDER  curl_mime_data_cb.3
+  RENDER  curl_mime_encoder.3
+  RENDER  curl_mime_filename.3
+  RENDER  curl_mime_filedata.3
+  RENDER  curl_mime_free.3
+  RENDER  curl_mime_headers.3
+  RENDER  curl_mime_name.3
+  RENDER  curl_mime_init.3
+  RENDER  curl_mime_subparts.3
+  RENDER  curl_mime_type.3
+  RENDER  curl_mprintf.3
+  RENDER  curl_multi_assign.3
+  RENDER  curl_multi_add_handle.3
+  RENDER  curl_multi_cleanup.3
+  RENDER  curl_multi_fdset.3
+  RENDER  curl_multi_get_handles.3
+  RENDER  curl_multi_info_read.3
+  RENDER  curl_multi_init.3
+  RENDER  curl_multi_perform.3
+  RENDER  curl_multi_poll.3
+  RENDER  curl_multi_remove_handle.3
+  RENDER  curl_multi_setopt.3
+  RENDER  curl_multi_socket.3
+  RENDER  curl_multi_socket_action.3
+  RENDER  curl_multi_socket_all.3
+  RENDER  curl_multi_strerror.3
+  RENDER  curl_multi_timeout.3
+  RENDER  curl_multi_wakeup.3
+  RENDER  curl_multi_wait.3
+  RENDER  curl_pushheader_bynum.3
+  RENDER  curl_share_cleanup.3
+  RENDER  curl_pushheader_byname.3
+  RENDER  curl_share_init.3
+  RENDER  curl_share_setopt.3
+  RENDER  curl_share_strerror.3
+  RENDER  curl_slist_free_all.3
+  RENDER  curl_slist_append.3
+  RENDER  curl_strequal.3
+  RENDER  curl_strnequal.3
+  RENDER  curl_unescape.3
+  RENDER  curl_url.3
+  RENDER  curl_url_cleanup.3
+  RENDER  curl_url_dup.3
+  RENDER  curl_url_get.3
+  RENDER  curl_url_set.3
+  RENDER  curl_url_strerror.3
+  RENDER  curl_version.3
+  RENDER  curl_version_info.3
+  RENDER  curl_ws_meta.3
+  RENDER  curl_ws_recv.3
+  RENDER  curl_ws_send.3
+  RENDER  libcurl-easy.3
+  RENDER  libcurl-env.3
+  RENDER  libcurl-env-dbg.3
+  RENDER  libcurl-errors.3
+  RENDER  libcurl-multi.3
+  RENDER  libcurl-security.3
+  RENDER  libcurl-share.3
+  RENDER  libcurl-symbols.3
+  RENDER  libcurl-thread.3
+  RENDER  libcurl-tutorial.3
+  RENDER  libcurl-url.3
+  RENDER  libcurl-ws.3
+  RENDER  libcurl.3
+make[3]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[2]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[1]: Leaving directory '/sources/curl-8.7.1/docs'
+Making all in src
+make[1]: Entering directory '/sources/curl-8.7.1/src'
+Making all in ../docs
+make[2]: Entering directory '/sources/curl-8.7.1/docs'
+Making all in .
+make[3]: Entering directory '/sources/curl-8.7.1/docs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/sources/curl-8.7.1/docs'
+Making all in cmdline-opts
+make[3]: Entering directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/sources/curl-8.7.1/docs/cmdline-opts'
+Making all in libcurl
+make[3]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+Making all in opts
+make[4]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[4]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[3]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[2]: Leaving directory '/sources/curl-8.7.1/docs'
+make[2]: Entering directory '/sources/curl-8.7.1/src'
+  CC       slist_wc.o
+  CC       tool_binmode.o
+  CC       tool_bname.o
+  CC       tool_cb_dbg.o
+  CC       tool_cb_hdr.o
+  CC       tool_cb_prg.o
+  CC       tool_cb_rea.o
+  CC       tool_cb_see.o
+  CC       tool_cb_wrt.o
+  CC       tool_cfgable.o
+  CC       tool_dirhie.o
+  CC       tool_doswin.o
+  CC       tool_easysrc.o
+  CC       tool_filetime.o
+  CC       tool_findfile.o
+  CC       tool_formparse.o
+  CC       tool_getparam.o
+  CC       tool_getpass.o
+  CC       tool_help.o
+  CC       tool_helpers.o
+  HUGE     tool_hugehelp.c
+  CC       tool_ipfs.o
+  CC       tool_libinfo.o
+  CC       tool_listhelp.o
+  CC       tool_main.o
+  CC       tool_msgs.o
+  CC       tool_operate.o
+  CC       tool_operhlp.o
+  CC       tool_paramhlp.o
+  CC       tool_parsecfg.o
+  CC       tool_progress.o
+  CC       tool_setopt.o
+  CC       tool_sleep.o
+  CC       tool_stderr.o
+  CC       tool_strdup.o
+  CC       tool_urlglob.o
+  CC       tool_util.o
+  CC       tool_vms.o
+  CC       tool_writeout.o
+  CC       tool_writeout_json.o
+  CC       tool_xattr.o
+  CC       var.o
+  CC       tool_hugehelp.o
+  CC       ../lib/base64.o
+  CC       ../lib/curl_multibyte.o
+  CC       ../lib/dynbuf.o
+  CC       ../lib/nonblock.o
+  CC       ../lib/strtoofft.o
+  CC       ../lib/timediff.o
+  CC       ../lib/version_win32.o
+  CC       ../lib/warnless.o
+  CCLD     curl
+make[2]: Leaving directory '/sources/curl-8.7.1/src'
+make[1]: Leaving directory '/sources/curl-8.7.1/src'
+Making all in scripts
+make[1]: Entering directory '/sources/curl-8.7.1/scripts'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/sources/curl-8.7.1/scripts'
+make[1]: Entering directory '/sources/curl-8.7.1'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/sources/curl-8.7.1'
+Making install in lib
+make[1]: Entering directory '/sources/curl-8.7.1/lib'
+make[2]: Entering directory '/sources/curl-8.7.1/lib'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libcurl.la '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libcurl.so.4.8.0 /usr/lib/libcurl.so.4.8.0
+libtool: install: (cd /usr/lib && { ln -s -f libcurl.so.4.8.0 libcurl.so.4 || { rm -f libcurl.so.4 && ln -s libcurl.so.4.8.0 libcurl.so.4; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libcurl.so.4.8.0 libcurl.so || { rm -f libcurl.so && ln -s libcurl.so.4.8.0 libcurl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcurl.lai /usr/lib/libcurl.la
+libtool: install: /usr/bin/install -c .libs/libcurl.a /usr/lib/libcurl.a
+libtool: install: chmod 644 /usr/lib/libcurl.a
+libtool: install: ranlib /usr/lib/libcurl.a
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Leaving directory '/sources/curl-8.7.1/lib'
+make[1]: Leaving directory '/sources/curl-8.7.1/lib'
+Making install in docs
+make[1]: Entering directory '/sources/curl-8.7.1/docs'
+Making install in .
+make[2]: Entering directory '/sources/curl-8.7.1/docs'
+make[3]: Entering directory '/sources/curl-8.7.1/docs'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl-config.1 '/usr/share/man/man1'
+make[3]: Leaving directory '/sources/curl-8.7.1/docs'
+make[2]: Leaving directory '/sources/curl-8.7.1/docs'
+Making install in cmdline-opts
+make[2]: Entering directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[3]: Entering directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl.1 '/usr/share/man/man1'
+make[3]: Leaving directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[2]: Leaving directory '/sources/curl-8.7.1/docs/cmdline-opts'
+Making install in libcurl
+make[2]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+Making install in opts
+make[3]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[4]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_ACTIVESOCKET.3 CURLINFO_APPCONNECT_TIME.3 CURLINFO_APPCONNECT_TIME_T.3 CURLINFO_CAINFO.3 CURLINFO_CAPATH.3 CURLINFO_CERTINFO.3 CURLINFO_CONDITION_UNMET.3 CURLINFO_CONNECT_TIME.3 CURLINFO_CONNECT_TIME_T.3 CURLINFO_CONN_ID.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3 CURLINFO_CONTENT_LENGTH_UPLOAD.3 CURLINFO_CONTENT_LENGTH_UPLOAD_T.3 CURLINFO_CONTENT_TYPE.3 CURLINFO_COOKIELIST.3 CURLINFO_EFFECTIVE_METHOD.3 CURLINFO_EFFECTIVE_URL.3 CURLINFO_FILETIME.3 CURLINFO_FILETIME_T.3 CURLINFO_FTP_ENTRY_PATH.3 CURLINFO_HEADER_SIZE.3 CURLINFO_HTTP_CONNECTCODE.3 CURLINFO_HTTP_VERSION.3 CURLINFO_HTTPAUTH_AVAIL.3 CURLINFO_LASTSOCKET.3 CURLINFO_LOCAL_IP.3 CURLINFO_LOCAL_PORT.3 CURLINFO_NAMELOOKUP_TIME.3 CURLINFO_NAMELOOKUP_TIME_T.3 CURLINFO_NUM_CONNECTS.3 CURLINFO_OS_ERRNO.3 CURLINFO_PRETRANSFER_TIME.3 CURLINFO_PRETRANSFER_TIME_T.3 CURLINFO_PRIMARY_IP.3 CURLINFO_PRIMARY_PORT.3 CURLINFO_PRIVATE.3 CURLINFO_PROTOCOL.3 CURLINFO_PROXY_ERROR.3 CURLINFO_PROXY_SSL_VERIFYRESULT.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_PROXYAUTH_AVAIL.3 CURLINFO_QUEUE_TIME_T.3 CURLINFO_REDIRECT_COUNT.3 CURLINFO_REDIRECT_TIME.3 CURLINFO_REDIRECT_TIME_T.3 CURLINFO_REDIRECT_URL.3 CURLINFO_REFERER.3 CURLINFO_REQUEST_SIZE.3 CURLINFO_RESPONSE_CODE.3 CURLINFO_RETRY_AFTER.3 CURLINFO_RTSP_CLIENT_CSEQ.3 CURLINFO_RTSP_CSEQ_RECV.3 CURLINFO_RTSP_SERVER_CSEQ.3 CURLINFO_RTSP_SESSION_ID.3 CURLINFO_SCHEME.3 CURLINFO_SIZE_DOWNLOAD.3 CURLINFO_SIZE_DOWNLOAD_T.3 CURLINFO_SIZE_UPLOAD.3 CURLINFO_SIZE_UPLOAD_T.3 CURLINFO_SPEED_DOWNLOAD.3 CURLINFO_SPEED_DOWNLOAD_T.3 CURLINFO_SPEED_UPLOAD.3 CURLINFO_SPEED_UPLOAD_T.3 CURLINFO_SSL_ENGINES.3 CURLINFO_SSL_VERIFYRESULT.3 CURLINFO_STARTTRANSFER_TIME.3 CURLINFO_STARTTRANSFER_TIME_T.3 CURLINFO_TLS_SESSION.3 CURLINFO_TLS_SSL_PTR.3 CURLINFO_TOTAL_TIME.3 CURLINFO_TOTAL_TIME_T.3 CURLINFO_USED_PROXY.3 CURLINFO_XFER_ID.3 CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3 CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3 CURLMOPT_MAX_CONCURRENT_STREAMS.3 CURLMOPT_MAX_HOST_CONNECTIONS.3 CURLMOPT_MAX_PIPELINE_LENGTH.3 CURLMOPT_MAX_TOTAL_CONNECTIONS.3 CURLMOPT_MAXCONNECTS.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLMOPT_PIPELINING.3 CURLMOPT_PIPELINING_SERVER_BL.3 CURLMOPT_PIPELINING_SITE_BL.3 CURLMOPT_PUSHDATA.3 CURLMOPT_PUSHFUNCTION.3 CURLMOPT_SOCKETDATA.3 CURLMOPT_SOCKETFUNCTION.3 CURLMOPT_TIMERDATA.3 CURLMOPT_TIMERFUNCTION.3 CURLOPT_ABSTRACT_UNIX_SOCKET.3 CURLOPT_ACCEPT_ENCODING.3 CURLOPT_ACCEPTTIMEOUT_MS.3 CURLOPT_ADDRESS_SCOPE.3 CURLOPT_ALTSVC.3 CURLOPT_ALTSVC_CTRL.3 CURLOPT_APPEND.3 CURLOPT_AUTOREFERER.3 CURLOPT_AWS_SIGV4.3 CURLOPT_BUFFERSIZE.3 CURLOPT_CAINFO.3 CURLOPT_CAINFO_BLOB.3 CURLOPT_CAPATH.3 CURLOPT_CA_CACHE_TIMEOUT.3 CURLOPT_CERTINFO.3 CURLOPT_CHUNK_BGN_FUNCTION.3 CURLOPT_CHUNK_DATA.3 CURLOPT_CHUNK_END_FUNCTION.3 CURLOPT_CLOSESOCKETDATA.3 CURLOPT_CLOSESOCKETFUNCTION.3 CURLOPT_CONNECT_ONLY.3 CURLOPT_CONNECT_TO.3 CURLOPT_CONNECTTIMEOUT.3 CURLOPT_CONNECTTIMEOUT_MS.3 CURLOPT_CONV_FROM_NETWORK_FUNCTION.3 CURLOPT_CONV_FROM_UTF8_FUNCTION.3 CURLOPT_CONV_TO_NETWORK_FUNCTION.3 CURLOPT_COOKIE.3 CURLOPT_COOKIEFILE.3 CURLOPT_COOKIEJAR.3 CURLOPT_COOKIELIST.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_COOKIESESSION.3 CURLOPT_COPYPOSTFIELDS.3 CURLOPT_CRLF.3 CURLOPT_CRLFILE.3 CURLOPT_CURLU.3 CURLOPT_CUSTOMREQUEST.3 CURLOPT_DEBUGDATA.3 CURLOPT_DEBUGFUNCTION.3 CURLOPT_DEFAULT_PROTOCOL.3 CURLOPT_DIRLISTONLY.3 CURLOPT_DISALLOW_USERNAME_IN_URL.3 CURLOPT_DNS_CACHE_TIMEOUT.3 CURLOPT_DNS_INTERFACE.3 CURLOPT_DNS_LOCAL_IP4.3 CURLOPT_DNS_LOCAL_IP6.3 CURLOPT_DNS_SERVERS.3 CURLOPT_DNS_SHUFFLE_ADDRESSES.3 CURLOPT_DNS_USE_GLOBAL_CACHE.3 CURLOPT_DOH_SSL_VERIFYHOST.3 CURLOPT_DOH_SSL_VERIFYPEER.3 CURLOPT_DOH_SSL_VERIFYSTATUS.3 CURLOPT_DOH_URL.3 CURLOPT_EGDSOCKET.3 CURLOPT_ERRORBUFFER.3 CURLOPT_EXPECT_100_TIMEOUT_MS.3 CURLOPT_FAILONERROR.3 CURLOPT_FILETIME.3 CURLOPT_FNMATCH_DATA.3 CURLOPT_FNMATCH_FUNCTION.3 CURLOPT_FOLLOWLOCATION.3 CURLOPT_FORBID_REUSE.3 CURLOPT_FRESH_CONNECT.3 CURLOPT_FTP_ACCOUNT.3 CURLOPT_FTP_ALTERNATIVE_TO_USER.3 CURLOPT_FTP_CREATE_MISSING_DIRS.3 CURLOPT_FTP_FILEMETHOD.3 CURLOPT_FTP_SKIP_PASV_IP.3 CURLOPT_FTP_SSL_CCC.3 CURLOPT_FTP_USE_EPRT.3 CURLOPT_FTP_USE_EPSV.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_FTP_USE_PRET.3 CURLOPT_FTPPORT.3 CURLOPT_FTPSSLAUTH.3 CURLOPT_GSSAPI_DELEGATION.3 CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3 CURLOPT_HAPROXYPROTOCOL.3 CURLOPT_HAPROXY_CLIENT_IP.3 CURLOPT_HEADER.3 CURLOPT_HEADERDATA.3 CURLOPT_HEADERFUNCTION.3 CURLOPT_HEADEROPT.3 CURLOPT_HSTS.3 CURLOPT_HSTS_CTRL.3 CURLOPT_HSTSREADDATA.3 CURLOPT_HSTSREADFUNCTION.3 CURLOPT_HSTSWRITEDATA.3 CURLOPT_HSTSWRITEFUNCTION.3 CURLOPT_HTTP09_ALLOWED.3 CURLOPT_HTTP200ALIASES.3 CURLOPT_HTTP_CONTENT_DECODING.3 CURLOPT_HTTP_TRANSFER_DECODING.3 CURLOPT_HTTP_VERSION.3 CURLOPT_HTTPAUTH.3 CURLOPT_HTTPGET.3 CURLOPT_HTTPHEADER.3 CURLOPT_HTTPPOST.3 CURLOPT_HTTPPROXYTUNNEL.3 CURLOPT_IGNORE_CONTENT_LENGTH.3 CURLOPT_INFILESIZE.3 CURLOPT_INFILESIZE_LARGE.3 CURLOPT_INTERFACE.3 CURLOPT_INTERLEAVEDATA.3 CURLOPT_INTERLEAVEFUNCTION.3 CURLOPT_IOCTLDATA.3 CURLOPT_IOCTLFUNCTION.3 CURLOPT_IPRESOLVE.3 CURLOPT_ISSUERCERT.3 CURLOPT_ISSUERCERT_BLOB.3 CURLOPT_KEEP_SENDING_ON_ERROR.3 CURLOPT_KEYPASSWD.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_KRBLEVEL.3 CURLOPT_LOCALPORT.3 CURLOPT_LOCALPORTRANGE.3 CURLOPT_LOGIN_OPTIONS.3 CURLOPT_LOW_SPEED_LIMIT.3 CURLOPT_LOW_SPEED_TIME.3 CURLOPT_MAIL_AUTH.3 CURLOPT_MAIL_FROM.3 CURLOPT_MAIL_RCPT.3 CURLOPT_MAIL_RCPT_ALLOWFAILS.3 CURLOPT_MAX_RECV_SPEED_LARGE.3 CURLOPT_MAX_SEND_SPEED_LARGE.3 CURLOPT_MAXAGE_CONN.3 CURLOPT_MAXCONNECTS.3 CURLOPT_MAXFILESIZE.3 CURLOPT_MAXFILESIZE_LARGE.3 CURLOPT_MAXLIFETIME_CONN.3 CURLOPT_MAXREDIRS.3 CURLOPT_MIME_OPTIONS.3 CURLOPT_MIMEPOST.3 CURLOPT_NETRC.3 CURLOPT_NETRC_FILE.3 CURLOPT_NEW_DIRECTORY_PERMS.3 CURLOPT_NEW_FILE_PERMS.3 CURLOPT_NOBODY.3 CURLOPT_NOPROGRESS.3 CURLOPT_NOPROXY.3 CURLOPT_NOSIGNAL.3 CURLOPT_OPENSOCKETDATA.3 CURLOPT_OPENSOCKETFUNCTION.3 CURLOPT_PASSWORD.3 CURLOPT_PATH_AS_IS.3 CURLOPT_PINNEDPUBLICKEY.3 CURLOPT_PIPEWAIT.3 CURLOPT_PORT.3 CURLOPT_POST.3 CURLOPT_POSTFIELDS.3 CURLOPT_POSTFIELDSIZE.3 CURLOPT_POSTFIELDSIZE_LARGE.3 CURLOPT_POSTQUOTE.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_POSTREDIR.3 CURLOPT_PRE_PROXY.3 CURLOPT_PREQUOTE.3 CURLOPT_PREREQDATA.3 CURLOPT_PREREQFUNCTION.3 CURLOPT_PRIVATE.3 CURLOPT_PROGRESSDATA.3 CURLOPT_PROGRESSFUNCTION.3 CURLOPT_PROTOCOLS.3 CURLOPT_PROTOCOLS_STR.3 CURLOPT_PROXY.3 CURLOPT_PROXY_CAINFO.3 CURLOPT_PROXY_CAINFO_BLOB.3 CURLOPT_PROXY_CAPATH.3 CURLOPT_PROXY_CRLFILE.3 CURLOPT_PROXY_ISSUERCERT.3 CURLOPT_PROXY_ISSUERCERT_BLOB.3 CURLOPT_PROXY_KEYPASSWD.3 CURLOPT_PROXY_PINNEDPUBLICKEY.3 CURLOPT_PROXY_SERVICE_NAME.3 CURLOPT_PROXY_SSL_CIPHER_LIST.3 CURLOPT_PROXY_SSL_OPTIONS.3 CURLOPT_PROXY_SSL_VERIFYHOST.3 CURLOPT_PROXY_SSL_VERIFYPEER.3 CURLOPT_PROXY_SSLCERT.3 CURLOPT_PROXY_SSLCERT_BLOB.3 CURLOPT_PROXY_SSLCERTTYPE.3 CURLOPT_PROXY_SSLKEY.3 CURLOPT_PROXY_SSLKEY_BLOB.3 CURLOPT_PROXY_SSLKEYTYPE.3 CURLOPT_PROXY_SSLVERSION.3 CURLOPT_PROXY_TLS13_CIPHERS.3 CURLOPT_PROXY_TLSAUTH_PASSWORD.3 CURLOPT_PROXY_TLSAUTH_TYPE.3 CURLOPT_PROXY_TLSAUTH_USERNAME.3 CURLOPT_PROXY_TRANSFER_MODE.3 CURLOPT_PROXYAUTH.3 CURLOPT_PROXYHEADER.3 CURLOPT_PROXYPASSWORD.3 CURLOPT_PROXYPORT.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_PROXYTYPE.3 CURLOPT_PROXYUSERNAME.3 CURLOPT_PROXYUSERPWD.3 CURLOPT_PUT.3 CURLOPT_QUICK_EXIT.3 CURLOPT_QUOTE.3 CURLOPT_RANDOM_FILE.3 CURLOPT_RANGE.3 CURLOPT_READDATA.3 CURLOPT_READFUNCTION.3 CURLOPT_REDIR_PROTOCOLS.3 CURLOPT_REDIR_PROTOCOLS_STR.3 CURLOPT_REFERER.3 CURLOPT_REQUEST_TARGET.3 CURLOPT_RESOLVE.3 CURLOPT_RESOLVER_START_DATA.3 CURLOPT_RESOLVER_START_FUNCTION.3 CURLOPT_RESUME_FROM.3 CURLOPT_RESUME_FROM_LARGE.3 CURLOPT_RTSP_CLIENT_CSEQ.3 CURLOPT_RTSP_REQUEST.3 CURLOPT_RTSP_SERVER_CSEQ.3 CURLOPT_RTSP_SESSION_ID.3 CURLOPT_RTSP_STREAM_URI.3 CURLOPT_RTSP_TRANSPORT.3 CURLOPT_SASL_AUTHZID.3 CURLOPT_SASL_IR.3 CURLOPT_SEEKDATA.3 CURLOPT_SEEKFUNCTION.3 CURLOPT_SERVER_RESPONSE_TIMEOUT.3 CURLOPT_SERVER_RESPONSE_TIMEOUT_MS.3 CURLOPT_SERVICE_NAME.3 CURLOPT_SHARE.3 CURLOPT_SOCKOPTDATA.3 CURLOPT_SOCKOPTFUNCTION.3 CURLOPT_SOCKS5_AUTH.3 CURLOPT_SOCKS5_GSSAPI_NEC.3 CURLOPT_SOCKS5_GSSAPI_SERVICE.3 CURLOPT_SSH_AUTH_TYPES.3 CURLOPT_SSH_COMPRESSION.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_SSH_HOSTKEYDATA.3 CURLOPT_SSH_HOSTKEYFUNCTION.3 CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3 CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256.3 CURLOPT_SSH_KEYDATA.3 CURLOPT_SSH_KEYFUNCTION.3 CURLOPT_SSH_KNOWNHOSTS.3 CURLOPT_SSH_PRIVATE_KEYFILE.3 CURLOPT_SSH_PUBLIC_KEYFILE.3 CURLOPT_SSL_CIPHER_LIST.3 CURLOPT_SSL_CTX_DATA.3 CURLOPT_SSL_CTX_FUNCTION.3 CURLOPT_SSL_EC_CURVES.3 CURLOPT_SSL_ENABLE_ALPN.3 CURLOPT_SSL_ENABLE_NPN.3 CURLOPT_SSL_FALSESTART.3 CURLOPT_SSL_OPTIONS.3 CURLOPT_SSL_SESSIONID_CACHE.3 CURLOPT_SSL_VERIFYHOST.3 CURLOPT_SSL_VERIFYPEER.3 CURLOPT_SSL_VERIFYSTATUS.3 CURLOPT_SSLCERT.3 CURLOPT_SSLCERT_BLOB.3 CURLOPT_SSLCERTTYPE.3 CURLOPT_SSLENGINE.3 CURLOPT_SSLENGINE_DEFAULT.3 CURLOPT_SSLKEY.3 CURLOPT_SSLKEY_BLOB.3 CURLOPT_SSLKEYTYPE.3 CURLOPT_SSLVERSION.3 CURLOPT_STDERR.3 CURLOPT_STREAM_DEPENDS.3 CURLOPT_STREAM_DEPENDS_E.3 CURLOPT_STREAM_WEIGHT.3 CURLOPT_SUPPRESS_CONNECT_HEADERS.3 CURLOPT_TCP_FASTOPEN.3 CURLOPT_TCP_KEEPALIVE.3 CURLOPT_TCP_KEEPIDLE.3 CURLOPT_TCP_KEEPINTVL.3 CURLOPT_TCP_NODELAY.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_TELNETOPTIONS.3 CURLOPT_TFTP_BLKSIZE.3 CURLOPT_TFTP_NO_OPTIONS.3 CURLOPT_TIMECONDITION.3 CURLOPT_TIMEOUT.3 CURLOPT_TIMEOUT_MS.3 CURLOPT_TIMEVALUE.3 CURLOPT_TIMEVALUE_LARGE.3 CURLOPT_TLS13_CIPHERS.3 CURLOPT_TLSAUTH_PASSWORD.3 CURLOPT_TLSAUTH_TYPE.3 CURLOPT_TLSAUTH_USERNAME.3 CURLOPT_TRAILERDATA.3 CURLOPT_TRAILERFUNCTION.3 CURLOPT_TRANSFER_ENCODING.3 CURLOPT_TRANSFERTEXT.3 CURLOPT_UNIX_SOCKET_PATH.3 CURLOPT_UNRESTRICTED_AUTH.3 CURLOPT_UPKEEP_INTERVAL_MS.3 CURLOPT_UPLOAD.3 CURLOPT_UPLOAD_BUFFERSIZE.3 CURLOPT_URL.3 CURLOPT_USE_SSL.3 CURLOPT_USERAGENT.3 CURLOPT_USERNAME.3 CURLOPT_USERPWD.3 CURLOPT_VERBOSE.3 CURLOPT_WILDCARDMATCH.3 CURLOPT_WRITEDATA.3 CURLOPT_WRITEFUNCTION.3 CURLOPT_WS_OPTIONS.3 CURLOPT_XFERINFODATA.3 CURLOPT_XFERINFOFUNCTION.3 CURLOPT_XOAUTH2_BEARER.3 CURLSHOPT_LOCKFUNC.3 CURLSHOPT_SHARE.3 CURLSHOPT_UNLOCKFUNC.3 CURLSHOPT_UNSHARE.3 CURLSHOPT_USERDATA.3 '/usr/share/man/man3'
+make[4]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[3]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[3]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+make[4]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/aclocal'
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 libcurl.m4 '/usr/share/aclocal'
+ /usr/bin/install -c -m 644 curl_easy_cleanup.3 curl_easy_duphandle.3 curl_easy_escape.3 curl_easy_getinfo.3 curl_easy_header.3 curl_easy_init.3 curl_easy_nextheader.3 curl_easy_option_by_id.3 curl_easy_option_by_name.3 curl_easy_option_next.3 curl_easy_pause.3 curl_easy_perform.3 curl_easy_recv.3 curl_easy_reset.3 curl_easy_send.3 curl_easy_setopt.3 curl_easy_strerror.3 curl_easy_unescape.3 curl_easy_upkeep.3 curl_escape.3 curl_formadd.3 curl_formfree.3 curl_formget.3 curl_free.3 curl_getdate.3 curl_getenv.3 curl_global_cleanup.3 curl_global_init.3 curl_global_init_mem.3 curl_global_trace.3 curl_global_sslset.3 curl_mime_addpart.3 curl_mime_data.3 curl_mime_data_cb.3 curl_mime_encoder.3 curl_mime_filedata.3 curl_mime_filename.3 curl_mime_free.3 curl_mime_headers.3 curl_mime_init.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_mime_name.3 curl_mime_subparts.3 curl_mime_type.3 curl_mprintf.3 curl_multi_add_handle.3 curl_multi_assign.3 curl_multi_cleanup.3 curl_multi_fdset.3 curl_multi_get_handles.3 curl_multi_info_read.3 curl_multi_init.3 curl_multi_perform.3 curl_multi_poll.3 curl_multi_remove_handle.3 curl_multi_setopt.3 curl_multi_socket.3 curl_multi_socket_action.3 curl_multi_socket_all.3 curl_multi_strerror.3 curl_multi_timeout.3 curl_multi_wakeup.3 curl_multi_wait.3 curl_pushheader_bynum.3 curl_pushheader_byname.3 curl_share_cleanup.3 curl_share_init.3 curl_share_setopt.3 curl_share_strerror.3 curl_slist_append.3 curl_slist_free_all.3 curl_strequal.3 curl_strnequal.3 curl_unescape.3 curl_url.3 curl_url_cleanup.3 curl_url_dup.3 curl_url_get.3 curl_url_set.3 curl_url_strerror.3 curl_version.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_version_info.3 curl_ws_meta.3 curl_ws_recv.3 curl_ws_send.3 libcurl-easy.3 libcurl-env.3 libcurl-env-dbg.3 libcurl-errors.3 libcurl-multi.3 libcurl-security.3 libcurl-share.3 libcurl-symbols.3 libcurl-thread.3 libcurl-tutorial.3 libcurl-url.3 libcurl-ws.3 libcurl.3 '/usr/share/man/man3'
+make[4]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[3]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[2]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[1]: Leaving directory '/sources/curl-8.7.1/docs'
+Making install in src
+make[1]: Entering directory '/sources/curl-8.7.1/src'
+Making install in ../docs
+make[2]: Entering directory '/sources/curl-8.7.1/docs'
+Making install in .
+make[3]: Entering directory '/sources/curl-8.7.1/docs'
+make[4]: Entering directory '/sources/curl-8.7.1/docs'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl-config.1 '/usr/share/man/man1'
+make[4]: Leaving directory '/sources/curl-8.7.1/docs'
+make[3]: Leaving directory '/sources/curl-8.7.1/docs'
+Making install in cmdline-opts
+make[3]: Entering directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[4]: Entering directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl.1 '/usr/share/man/man1'
+make[4]: Leaving directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[3]: Leaving directory '/sources/curl-8.7.1/docs/cmdline-opts'
+Making install in libcurl
+make[3]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+Making install in opts
+make[4]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[5]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_ACTIVESOCKET.3 CURLINFO_APPCONNECT_TIME.3 CURLINFO_APPCONNECT_TIME_T.3 CURLINFO_CAINFO.3 CURLINFO_CAPATH.3 CURLINFO_CERTINFO.3 CURLINFO_CONDITION_UNMET.3 CURLINFO_CONNECT_TIME.3 CURLINFO_CONNECT_TIME_T.3 CURLINFO_CONN_ID.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3 CURLINFO_CONTENT_LENGTH_UPLOAD.3 CURLINFO_CONTENT_LENGTH_UPLOAD_T.3 CURLINFO_CONTENT_TYPE.3 CURLINFO_COOKIELIST.3 CURLINFO_EFFECTIVE_METHOD.3 CURLINFO_EFFECTIVE_URL.3 CURLINFO_FILETIME.3 CURLINFO_FILETIME_T.3 CURLINFO_FTP_ENTRY_PATH.3 CURLINFO_HEADER_SIZE.3 CURLINFO_HTTP_CONNECTCODE.3 CURLINFO_HTTP_VERSION.3 CURLINFO_HTTPAUTH_AVAIL.3 CURLINFO_LASTSOCKET.3 CURLINFO_LOCAL_IP.3 CURLINFO_LOCAL_PORT.3 CURLINFO_NAMELOOKUP_TIME.3 CURLINFO_NAMELOOKUP_TIME_T.3 CURLINFO_NUM_CONNECTS.3 CURLINFO_OS_ERRNO.3 CURLINFO_PRETRANSFER_TIME.3 CURLINFO_PRETRANSFER_TIME_T.3 CURLINFO_PRIMARY_IP.3 CURLINFO_PRIMARY_PORT.3 CURLINFO_PRIVATE.3 CURLINFO_PROTOCOL.3 CURLINFO_PROXY_ERROR.3 CURLINFO_PROXY_SSL_VERIFYRESULT.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_PROXYAUTH_AVAIL.3 CURLINFO_QUEUE_TIME_T.3 CURLINFO_REDIRECT_COUNT.3 CURLINFO_REDIRECT_TIME.3 CURLINFO_REDIRECT_TIME_T.3 CURLINFO_REDIRECT_URL.3 CURLINFO_REFERER.3 CURLINFO_REQUEST_SIZE.3 CURLINFO_RESPONSE_CODE.3 CURLINFO_RETRY_AFTER.3 CURLINFO_RTSP_CLIENT_CSEQ.3 CURLINFO_RTSP_CSEQ_RECV.3 CURLINFO_RTSP_SERVER_CSEQ.3 CURLINFO_RTSP_SESSION_ID.3 CURLINFO_SCHEME.3 CURLINFO_SIZE_DOWNLOAD.3 CURLINFO_SIZE_DOWNLOAD_T.3 CURLINFO_SIZE_UPLOAD.3 CURLINFO_SIZE_UPLOAD_T.3 CURLINFO_SPEED_DOWNLOAD.3 CURLINFO_SPEED_DOWNLOAD_T.3 CURLINFO_SPEED_UPLOAD.3 CURLINFO_SPEED_UPLOAD_T.3 CURLINFO_SSL_ENGINES.3 CURLINFO_SSL_VERIFYRESULT.3 CURLINFO_STARTTRANSFER_TIME.3 CURLINFO_STARTTRANSFER_TIME_T.3 CURLINFO_TLS_SESSION.3 CURLINFO_TLS_SSL_PTR.3 CURLINFO_TOTAL_TIME.3 CURLINFO_TOTAL_TIME_T.3 CURLINFO_USED_PROXY.3 CURLINFO_XFER_ID.3 CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3 CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3 CURLMOPT_MAX_CONCURRENT_STREAMS.3 CURLMOPT_MAX_HOST_CONNECTIONS.3 CURLMOPT_MAX_PIPELINE_LENGTH.3 CURLMOPT_MAX_TOTAL_CONNECTIONS.3 CURLMOPT_MAXCONNECTS.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLMOPT_PIPELINING.3 CURLMOPT_PIPELINING_SERVER_BL.3 CURLMOPT_PIPELINING_SITE_BL.3 CURLMOPT_PUSHDATA.3 CURLMOPT_PUSHFUNCTION.3 CURLMOPT_SOCKETDATA.3 CURLMOPT_SOCKETFUNCTION.3 CURLMOPT_TIMERDATA.3 CURLMOPT_TIMERFUNCTION.3 CURLOPT_ABSTRACT_UNIX_SOCKET.3 CURLOPT_ACCEPT_ENCODING.3 CURLOPT_ACCEPTTIMEOUT_MS.3 CURLOPT_ADDRESS_SCOPE.3 CURLOPT_ALTSVC.3 CURLOPT_ALTSVC_CTRL.3 CURLOPT_APPEND.3 CURLOPT_AUTOREFERER.3 CURLOPT_AWS_SIGV4.3 CURLOPT_BUFFERSIZE.3 CURLOPT_CAINFO.3 CURLOPT_CAINFO_BLOB.3 CURLOPT_CAPATH.3 CURLOPT_CA_CACHE_TIMEOUT.3 CURLOPT_CERTINFO.3 CURLOPT_CHUNK_BGN_FUNCTION.3 CURLOPT_CHUNK_DATA.3 CURLOPT_CHUNK_END_FUNCTION.3 CURLOPT_CLOSESOCKETDATA.3 CURLOPT_CLOSESOCKETFUNCTION.3 CURLOPT_CONNECT_ONLY.3 CURLOPT_CONNECT_TO.3 CURLOPT_CONNECTTIMEOUT.3 CURLOPT_CONNECTTIMEOUT_MS.3 CURLOPT_CONV_FROM_NETWORK_FUNCTION.3 CURLOPT_CONV_FROM_UTF8_FUNCTION.3 CURLOPT_CONV_TO_NETWORK_FUNCTION.3 CURLOPT_COOKIE.3 CURLOPT_COOKIEFILE.3 CURLOPT_COOKIEJAR.3 CURLOPT_COOKIELIST.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_COOKIESESSION.3 CURLOPT_COPYPOSTFIELDS.3 CURLOPT_CRLF.3 CURLOPT_CRLFILE.3 CURLOPT_CURLU.3 CURLOPT_CUSTOMREQUEST.3 CURLOPT_DEBUGDATA.3 CURLOPT_DEBUGFUNCTION.3 CURLOPT_DEFAULT_PROTOCOL.3 CURLOPT_DIRLISTONLY.3 CURLOPT_DISALLOW_USERNAME_IN_URL.3 CURLOPT_DNS_CACHE_TIMEOUT.3 CURLOPT_DNS_INTERFACE.3 CURLOPT_DNS_LOCAL_IP4.3 CURLOPT_DNS_LOCAL_IP6.3 CURLOPT_DNS_SERVERS.3 CURLOPT_DNS_SHUFFLE_ADDRESSES.3 CURLOPT_DNS_USE_GLOBAL_CACHE.3 CURLOPT_DOH_SSL_VERIFYHOST.3 CURLOPT_DOH_SSL_VERIFYPEER.3 CURLOPT_DOH_SSL_VERIFYSTATUS.3 CURLOPT_DOH_URL.3 CURLOPT_EGDSOCKET.3 CURLOPT_ERRORBUFFER.3 CURLOPT_EXPECT_100_TIMEOUT_MS.3 CURLOPT_FAILONERROR.3 CURLOPT_FILETIME.3 CURLOPT_FNMATCH_DATA.3 CURLOPT_FNMATCH_FUNCTION.3 CURLOPT_FOLLOWLOCATION.3 CURLOPT_FORBID_REUSE.3 CURLOPT_FRESH_CONNECT.3 CURLOPT_FTP_ACCOUNT.3 CURLOPT_FTP_ALTERNATIVE_TO_USER.3 CURLOPT_FTP_CREATE_MISSING_DIRS.3 CURLOPT_FTP_FILEMETHOD.3 CURLOPT_FTP_SKIP_PASV_IP.3 CURLOPT_FTP_SSL_CCC.3 CURLOPT_FTP_USE_EPRT.3 CURLOPT_FTP_USE_EPSV.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_FTP_USE_PRET.3 CURLOPT_FTPPORT.3 CURLOPT_FTPSSLAUTH.3 CURLOPT_GSSAPI_DELEGATION.3 CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3 CURLOPT_HAPROXYPROTOCOL.3 CURLOPT_HAPROXY_CLIENT_IP.3 CURLOPT_HEADER.3 CURLOPT_HEADERDATA.3 CURLOPT_HEADERFUNCTION.3 CURLOPT_HEADEROPT.3 CURLOPT_HSTS.3 CURLOPT_HSTS_CTRL.3 CURLOPT_HSTSREADDATA.3 CURLOPT_HSTSREADFUNCTION.3 CURLOPT_HSTSWRITEDATA.3 CURLOPT_HSTSWRITEFUNCTION.3 CURLOPT_HTTP09_ALLOWED.3 CURLOPT_HTTP200ALIASES.3 CURLOPT_HTTP_CONTENT_DECODING.3 CURLOPT_HTTP_TRANSFER_DECODING.3 CURLOPT_HTTP_VERSION.3 CURLOPT_HTTPAUTH.3 CURLOPT_HTTPGET.3 CURLOPT_HTTPHEADER.3 CURLOPT_HTTPPOST.3 CURLOPT_HTTPPROXYTUNNEL.3 CURLOPT_IGNORE_CONTENT_LENGTH.3 CURLOPT_INFILESIZE.3 CURLOPT_INFILESIZE_LARGE.3 CURLOPT_INTERFACE.3 CURLOPT_INTERLEAVEDATA.3 CURLOPT_INTERLEAVEFUNCTION.3 CURLOPT_IOCTLDATA.3 CURLOPT_IOCTLFUNCTION.3 CURLOPT_IPRESOLVE.3 CURLOPT_ISSUERCERT.3 CURLOPT_ISSUERCERT_BLOB.3 CURLOPT_KEEP_SENDING_ON_ERROR.3 CURLOPT_KEYPASSWD.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_KRBLEVEL.3 CURLOPT_LOCALPORT.3 CURLOPT_LOCALPORTRANGE.3 CURLOPT_LOGIN_OPTIONS.3 CURLOPT_LOW_SPEED_LIMIT.3 CURLOPT_LOW_SPEED_TIME.3 CURLOPT_MAIL_AUTH.3 CURLOPT_MAIL_FROM.3 CURLOPT_MAIL_RCPT.3 CURLOPT_MAIL_RCPT_ALLOWFAILS.3 CURLOPT_MAX_RECV_SPEED_LARGE.3 CURLOPT_MAX_SEND_SPEED_LARGE.3 CURLOPT_MAXAGE_CONN.3 CURLOPT_MAXCONNECTS.3 CURLOPT_MAXFILESIZE.3 CURLOPT_MAXFILESIZE_LARGE.3 CURLOPT_MAXLIFETIME_CONN.3 CURLOPT_MAXREDIRS.3 CURLOPT_MIME_OPTIONS.3 CURLOPT_MIMEPOST.3 CURLOPT_NETRC.3 CURLOPT_NETRC_FILE.3 CURLOPT_NEW_DIRECTORY_PERMS.3 CURLOPT_NEW_FILE_PERMS.3 CURLOPT_NOBODY.3 CURLOPT_NOPROGRESS.3 CURLOPT_NOPROXY.3 CURLOPT_NOSIGNAL.3 CURLOPT_OPENSOCKETDATA.3 CURLOPT_OPENSOCKETFUNCTION.3 CURLOPT_PASSWORD.3 CURLOPT_PATH_AS_IS.3 CURLOPT_PINNEDPUBLICKEY.3 CURLOPT_PIPEWAIT.3 CURLOPT_PORT.3 CURLOPT_POST.3 CURLOPT_POSTFIELDS.3 CURLOPT_POSTFIELDSIZE.3 CURLOPT_POSTFIELDSIZE_LARGE.3 CURLOPT_POSTQUOTE.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_POSTREDIR.3 CURLOPT_PRE_PROXY.3 CURLOPT_PREQUOTE.3 CURLOPT_PREREQDATA.3 CURLOPT_PREREQFUNCTION.3 CURLOPT_PRIVATE.3 CURLOPT_PROGRESSDATA.3 CURLOPT_PROGRESSFUNCTION.3 CURLOPT_PROTOCOLS.3 CURLOPT_PROTOCOLS_STR.3 CURLOPT_PROXY.3 CURLOPT_PROXY_CAINFO.3 CURLOPT_PROXY_CAINFO_BLOB.3 CURLOPT_PROXY_CAPATH.3 CURLOPT_PROXY_CRLFILE.3 CURLOPT_PROXY_ISSUERCERT.3 CURLOPT_PROXY_ISSUERCERT_BLOB.3 CURLOPT_PROXY_KEYPASSWD.3 CURLOPT_PROXY_PINNEDPUBLICKEY.3 CURLOPT_PROXY_SERVICE_NAME.3 CURLOPT_PROXY_SSL_CIPHER_LIST.3 CURLOPT_PROXY_SSL_OPTIONS.3 CURLOPT_PROXY_SSL_VERIFYHOST.3 CURLOPT_PROXY_SSL_VERIFYPEER.3 CURLOPT_PROXY_SSLCERT.3 CURLOPT_PROXY_SSLCERT_BLOB.3 CURLOPT_PROXY_SSLCERTTYPE.3 CURLOPT_PROXY_SSLKEY.3 CURLOPT_PROXY_SSLKEY_BLOB.3 CURLOPT_PROXY_SSLKEYTYPE.3 CURLOPT_PROXY_SSLVERSION.3 CURLOPT_PROXY_TLS13_CIPHERS.3 CURLOPT_PROXY_TLSAUTH_PASSWORD.3 CURLOPT_PROXY_TLSAUTH_TYPE.3 CURLOPT_PROXY_TLSAUTH_USERNAME.3 CURLOPT_PROXY_TRANSFER_MODE.3 CURLOPT_PROXYAUTH.3 CURLOPT_PROXYHEADER.3 CURLOPT_PROXYPASSWORD.3 CURLOPT_PROXYPORT.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_PROXYTYPE.3 CURLOPT_PROXYUSERNAME.3 CURLOPT_PROXYUSERPWD.3 CURLOPT_PUT.3 CURLOPT_QUICK_EXIT.3 CURLOPT_QUOTE.3 CURLOPT_RANDOM_FILE.3 CURLOPT_RANGE.3 CURLOPT_READDATA.3 CURLOPT_READFUNCTION.3 CURLOPT_REDIR_PROTOCOLS.3 CURLOPT_REDIR_PROTOCOLS_STR.3 CURLOPT_REFERER.3 CURLOPT_REQUEST_TARGET.3 CURLOPT_RESOLVE.3 CURLOPT_RESOLVER_START_DATA.3 CURLOPT_RESOLVER_START_FUNCTION.3 CURLOPT_RESUME_FROM.3 CURLOPT_RESUME_FROM_LARGE.3 CURLOPT_RTSP_CLIENT_CSEQ.3 CURLOPT_RTSP_REQUEST.3 CURLOPT_RTSP_SERVER_CSEQ.3 CURLOPT_RTSP_SESSION_ID.3 CURLOPT_RTSP_STREAM_URI.3 CURLOPT_RTSP_TRANSPORT.3 CURLOPT_SASL_AUTHZID.3 CURLOPT_SASL_IR.3 CURLOPT_SEEKDATA.3 CURLOPT_SEEKFUNCTION.3 CURLOPT_SERVER_RESPONSE_TIMEOUT.3 CURLOPT_SERVER_RESPONSE_TIMEOUT_MS.3 CURLOPT_SERVICE_NAME.3 CURLOPT_SHARE.3 CURLOPT_SOCKOPTDATA.3 CURLOPT_SOCKOPTFUNCTION.3 CURLOPT_SOCKS5_AUTH.3 CURLOPT_SOCKS5_GSSAPI_NEC.3 CURLOPT_SOCKS5_GSSAPI_SERVICE.3 CURLOPT_SSH_AUTH_TYPES.3 CURLOPT_SSH_COMPRESSION.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_SSH_HOSTKEYDATA.3 CURLOPT_SSH_HOSTKEYFUNCTION.3 CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3 CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256.3 CURLOPT_SSH_KEYDATA.3 CURLOPT_SSH_KEYFUNCTION.3 CURLOPT_SSH_KNOWNHOSTS.3 CURLOPT_SSH_PRIVATE_KEYFILE.3 CURLOPT_SSH_PUBLIC_KEYFILE.3 CURLOPT_SSL_CIPHER_LIST.3 CURLOPT_SSL_CTX_DATA.3 CURLOPT_SSL_CTX_FUNCTION.3 CURLOPT_SSL_EC_CURVES.3 CURLOPT_SSL_ENABLE_ALPN.3 CURLOPT_SSL_ENABLE_NPN.3 CURLOPT_SSL_FALSESTART.3 CURLOPT_SSL_OPTIONS.3 CURLOPT_SSL_SESSIONID_CACHE.3 CURLOPT_SSL_VERIFYHOST.3 CURLOPT_SSL_VERIFYPEER.3 CURLOPT_SSL_VERIFYSTATUS.3 CURLOPT_SSLCERT.3 CURLOPT_SSLCERT_BLOB.3 CURLOPT_SSLCERTTYPE.3 CURLOPT_SSLENGINE.3 CURLOPT_SSLENGINE_DEFAULT.3 CURLOPT_SSLKEY.3 CURLOPT_SSLKEY_BLOB.3 CURLOPT_SSLKEYTYPE.3 CURLOPT_SSLVERSION.3 CURLOPT_STDERR.3 CURLOPT_STREAM_DEPENDS.3 CURLOPT_STREAM_DEPENDS_E.3 CURLOPT_STREAM_WEIGHT.3 CURLOPT_SUPPRESS_CONNECT_HEADERS.3 CURLOPT_TCP_FASTOPEN.3 CURLOPT_TCP_KEEPALIVE.3 CURLOPT_TCP_KEEPIDLE.3 CURLOPT_TCP_KEEPINTVL.3 CURLOPT_TCP_NODELAY.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_TELNETOPTIONS.3 CURLOPT_TFTP_BLKSIZE.3 CURLOPT_TFTP_NO_OPTIONS.3 CURLOPT_TIMECONDITION.3 CURLOPT_TIMEOUT.3 CURLOPT_TIMEOUT_MS.3 CURLOPT_TIMEVALUE.3 CURLOPT_TIMEVALUE_LARGE.3 CURLOPT_TLS13_CIPHERS.3 CURLOPT_TLSAUTH_PASSWORD.3 CURLOPT_TLSAUTH_TYPE.3 CURLOPT_TLSAUTH_USERNAME.3 CURLOPT_TRAILERDATA.3 CURLOPT_TRAILERFUNCTION.3 CURLOPT_TRANSFER_ENCODING.3 CURLOPT_TRANSFERTEXT.3 CURLOPT_UNIX_SOCKET_PATH.3 CURLOPT_UNRESTRICTED_AUTH.3 CURLOPT_UPKEEP_INTERVAL_MS.3 CURLOPT_UPLOAD.3 CURLOPT_UPLOAD_BUFFERSIZE.3 CURLOPT_URL.3 CURLOPT_USE_SSL.3 CURLOPT_USERAGENT.3 CURLOPT_USERNAME.3 CURLOPT_USERPWD.3 CURLOPT_VERBOSE.3 CURLOPT_WILDCARDMATCH.3 CURLOPT_WRITEDATA.3 CURLOPT_WRITEFUNCTION.3 CURLOPT_WS_OPTIONS.3 CURLOPT_XFERINFODATA.3 CURLOPT_XFERINFOFUNCTION.3 CURLOPT_XOAUTH2_BEARER.3 CURLSHOPT_LOCKFUNC.3 CURLSHOPT_SHARE.3 CURLSHOPT_UNLOCKFUNC.3 CURLSHOPT_UNSHARE.3 CURLSHOPT_USERDATA.3 '/usr/share/man/man3'
+make[5]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[4]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[4]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+make[5]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/aclocal'
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 libcurl.m4 '/usr/share/aclocal'
+ /usr/bin/install -c -m 644 curl_easy_cleanup.3 curl_easy_duphandle.3 curl_easy_escape.3 curl_easy_getinfo.3 curl_easy_header.3 curl_easy_init.3 curl_easy_nextheader.3 curl_easy_option_by_id.3 curl_easy_option_by_name.3 curl_easy_option_next.3 curl_easy_pause.3 curl_easy_perform.3 curl_easy_recv.3 curl_easy_reset.3 curl_easy_send.3 curl_easy_setopt.3 curl_easy_strerror.3 curl_easy_unescape.3 curl_easy_upkeep.3 curl_escape.3 curl_formadd.3 curl_formfree.3 curl_formget.3 curl_free.3 curl_getdate.3 curl_getenv.3 curl_global_cleanup.3 curl_global_init.3 curl_global_init_mem.3 curl_global_trace.3 curl_global_sslset.3 curl_mime_addpart.3 curl_mime_data.3 curl_mime_data_cb.3 curl_mime_encoder.3 curl_mime_filedata.3 curl_mime_filename.3 curl_mime_free.3 curl_mime_headers.3 curl_mime_init.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_mime_name.3 curl_mime_subparts.3 curl_mime_type.3 curl_mprintf.3 curl_multi_add_handle.3 curl_multi_assign.3 curl_multi_cleanup.3 curl_multi_fdset.3 curl_multi_get_handles.3 curl_multi_info_read.3 curl_multi_init.3 curl_multi_perform.3 curl_multi_poll.3 curl_multi_remove_handle.3 curl_multi_setopt.3 curl_multi_socket.3 curl_multi_socket_action.3 curl_multi_socket_all.3 curl_multi_strerror.3 curl_multi_timeout.3 curl_multi_wakeup.3 curl_multi_wait.3 curl_pushheader_bynum.3 curl_pushheader_byname.3 curl_share_cleanup.3 curl_share_init.3 curl_share_setopt.3 curl_share_strerror.3 curl_slist_append.3 curl_slist_free_all.3 curl_strequal.3 curl_strnequal.3 curl_unescape.3 curl_url.3 curl_url_cleanup.3 curl_url_dup.3 curl_url_get.3 curl_url_set.3 curl_url_strerror.3 curl_version.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_version_info.3 curl_ws_meta.3 curl_ws_recv.3 curl_ws_send.3 libcurl-easy.3 libcurl-env.3 libcurl-env-dbg.3 libcurl-errors.3 libcurl-multi.3 libcurl-security.3 libcurl-share.3 libcurl-symbols.3 libcurl-thread.3 libcurl-tutorial.3 libcurl-url.3 libcurl-ws.3 libcurl.3 '/usr/share/man/man3'
+make[5]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[4]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[3]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[2]: Leaving directory '/sources/curl-8.7.1/docs'
+make[2]: Entering directory '/sources/curl-8.7.1/src'
+make[3]: Entering directory '/sources/curl-8.7.1/src'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c curl '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/curl /usr/bin/curl
+make[3]: Leaving directory '/sources/curl-8.7.1/src'
+make[2]: Leaving directory '/sources/curl-8.7.1/src'
+make[1]: Leaving directory '/sources/curl-8.7.1/src'
+Making install in scripts
+make[1]: Entering directory '/sources/curl-8.7.1/scripts'
+make[2]: Entering directory '/sources/curl-8.7.1/scripts'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/sources/curl-8.7.1/scripts'
+make[1]: Leaving directory '/sources/curl-8.7.1/scripts'
+make[1]: Entering directory '/sources/curl-8.7.1'
+make[2]: Entering directory '/sources/curl-8.7.1'
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libcurl.pc '/usr/lib/pkgconfig'
+ /usr/bin/install -c curl-config '/usr/bin'
+make  install-data-hook
+make[3]: Entering directory '/sources/curl-8.7.1'
+(cd include && make install)
+make[4]: Entering directory '/sources/curl-8.7.1/include'
+Making install in curl
+make[5]: Entering directory '/sources/curl-8.7.1/include/curl'
+make[6]: Entering directory '/sources/curl-8.7.1/include/curl'
+make[6]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/include/curl'
+ /usr/bin/install -c -m 644 curl.h curlver.h easy.h mprintf.h stdcheaders.h multi.h typecheck-gcc.h system.h urlapi.h options.h header.h websockets.h '/usr/include/curl'
+make[6]: Leaving directory '/sources/curl-8.7.1/include/curl'
+make[5]: Leaving directory '/sources/curl-8.7.1/include/curl'
+make[5]: Entering directory '/sources/curl-8.7.1/include'
+make[6]: Entering directory '/sources/curl-8.7.1/include'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/sources/curl-8.7.1/include'
+make[5]: Leaving directory '/sources/curl-8.7.1/include'
+make[4]: Leaving directory '/sources/curl-8.7.1/include'
+(cd docs && make install)
+make[4]: Entering directory '/sources/curl-8.7.1/docs'
+Making install in .
+make[5]: Entering directory '/sources/curl-8.7.1/docs'
+make[6]: Entering directory '/sources/curl-8.7.1/docs'
+make[6]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl-config.1 '/usr/share/man/man1'
+make[6]: Leaving directory '/sources/curl-8.7.1/docs'
+make[5]: Leaving directory '/sources/curl-8.7.1/docs'
+Making install in cmdline-opts
+make[5]: Entering directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[6]: Entering directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[6]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl.1 '/usr/share/man/man1'
+make[6]: Leaving directory '/sources/curl-8.7.1/docs/cmdline-opts'
+make[5]: Leaving directory '/sources/curl-8.7.1/docs/cmdline-opts'
+Making install in libcurl
+make[5]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+Making install in opts
+make[6]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[7]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[7]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_ACTIVESOCKET.3 CURLINFO_APPCONNECT_TIME.3 CURLINFO_APPCONNECT_TIME_T.3 CURLINFO_CAINFO.3 CURLINFO_CAPATH.3 CURLINFO_CERTINFO.3 CURLINFO_CONDITION_UNMET.3 CURLINFO_CONNECT_TIME.3 CURLINFO_CONNECT_TIME_T.3 CURLINFO_CONN_ID.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3 CURLINFO_CONTENT_LENGTH_UPLOAD.3 CURLINFO_CONTENT_LENGTH_UPLOAD_T.3 CURLINFO_CONTENT_TYPE.3 CURLINFO_COOKIELIST.3 CURLINFO_EFFECTIVE_METHOD.3 CURLINFO_EFFECTIVE_URL.3 CURLINFO_FILETIME.3 CURLINFO_FILETIME_T.3 CURLINFO_FTP_ENTRY_PATH.3 CURLINFO_HEADER_SIZE.3 CURLINFO_HTTP_CONNECTCODE.3 CURLINFO_HTTP_VERSION.3 CURLINFO_HTTPAUTH_AVAIL.3 CURLINFO_LASTSOCKET.3 CURLINFO_LOCAL_IP.3 CURLINFO_LOCAL_PORT.3 CURLINFO_NAMELOOKUP_TIME.3 CURLINFO_NAMELOOKUP_TIME_T.3 CURLINFO_NUM_CONNECTS.3 CURLINFO_OS_ERRNO.3 CURLINFO_PRETRANSFER_TIME.3 CURLINFO_PRETRANSFER_TIME_T.3 CURLINFO_PRIMARY_IP.3 CURLINFO_PRIMARY_PORT.3 CURLINFO_PRIVATE.3 CURLINFO_PROTOCOL.3 CURLINFO_PROXY_ERROR.3 CURLINFO_PROXY_SSL_VERIFYRESULT.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_PROXYAUTH_AVAIL.3 CURLINFO_QUEUE_TIME_T.3 CURLINFO_REDIRECT_COUNT.3 CURLINFO_REDIRECT_TIME.3 CURLINFO_REDIRECT_TIME_T.3 CURLINFO_REDIRECT_URL.3 CURLINFO_REFERER.3 CURLINFO_REQUEST_SIZE.3 CURLINFO_RESPONSE_CODE.3 CURLINFO_RETRY_AFTER.3 CURLINFO_RTSP_CLIENT_CSEQ.3 CURLINFO_RTSP_CSEQ_RECV.3 CURLINFO_RTSP_SERVER_CSEQ.3 CURLINFO_RTSP_SESSION_ID.3 CURLINFO_SCHEME.3 CURLINFO_SIZE_DOWNLOAD.3 CURLINFO_SIZE_DOWNLOAD_T.3 CURLINFO_SIZE_UPLOAD.3 CURLINFO_SIZE_UPLOAD_T.3 CURLINFO_SPEED_DOWNLOAD.3 CURLINFO_SPEED_DOWNLOAD_T.3 CURLINFO_SPEED_UPLOAD.3 CURLINFO_SPEED_UPLOAD_T.3 CURLINFO_SSL_ENGINES.3 CURLINFO_SSL_VERIFYRESULT.3 CURLINFO_STARTTRANSFER_TIME.3 CURLINFO_STARTTRANSFER_TIME_T.3 CURLINFO_TLS_SESSION.3 CURLINFO_TLS_SSL_PTR.3 CURLINFO_TOTAL_TIME.3 CURLINFO_TOTAL_TIME_T.3 CURLINFO_USED_PROXY.3 CURLINFO_XFER_ID.3 CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3 CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3 CURLMOPT_MAX_CONCURRENT_STREAMS.3 CURLMOPT_MAX_HOST_CONNECTIONS.3 CURLMOPT_MAX_PIPELINE_LENGTH.3 CURLMOPT_MAX_TOTAL_CONNECTIONS.3 CURLMOPT_MAXCONNECTS.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLMOPT_PIPELINING.3 CURLMOPT_PIPELINING_SERVER_BL.3 CURLMOPT_PIPELINING_SITE_BL.3 CURLMOPT_PUSHDATA.3 CURLMOPT_PUSHFUNCTION.3 CURLMOPT_SOCKETDATA.3 CURLMOPT_SOCKETFUNCTION.3 CURLMOPT_TIMERDATA.3 CURLMOPT_TIMERFUNCTION.3 CURLOPT_ABSTRACT_UNIX_SOCKET.3 CURLOPT_ACCEPT_ENCODING.3 CURLOPT_ACCEPTTIMEOUT_MS.3 CURLOPT_ADDRESS_SCOPE.3 CURLOPT_ALTSVC.3 CURLOPT_ALTSVC_CTRL.3 CURLOPT_APPEND.3 CURLOPT_AUTOREFERER.3 CURLOPT_AWS_SIGV4.3 CURLOPT_BUFFERSIZE.3 CURLOPT_CAINFO.3 CURLOPT_CAINFO_BLOB.3 CURLOPT_CAPATH.3 CURLOPT_CA_CACHE_TIMEOUT.3 CURLOPT_CERTINFO.3 CURLOPT_CHUNK_BGN_FUNCTION.3 CURLOPT_CHUNK_DATA.3 CURLOPT_CHUNK_END_FUNCTION.3 CURLOPT_CLOSESOCKETDATA.3 CURLOPT_CLOSESOCKETFUNCTION.3 CURLOPT_CONNECT_ONLY.3 CURLOPT_CONNECT_TO.3 CURLOPT_CONNECTTIMEOUT.3 CURLOPT_CONNECTTIMEOUT_MS.3 CURLOPT_CONV_FROM_NETWORK_FUNCTION.3 CURLOPT_CONV_FROM_UTF8_FUNCTION.3 CURLOPT_CONV_TO_NETWORK_FUNCTION.3 CURLOPT_COOKIE.3 CURLOPT_COOKIEFILE.3 CURLOPT_COOKIEJAR.3 CURLOPT_COOKIELIST.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_COOKIESESSION.3 CURLOPT_COPYPOSTFIELDS.3 CURLOPT_CRLF.3 CURLOPT_CRLFILE.3 CURLOPT_CURLU.3 CURLOPT_CUSTOMREQUEST.3 CURLOPT_DEBUGDATA.3 CURLOPT_DEBUGFUNCTION.3 CURLOPT_DEFAULT_PROTOCOL.3 CURLOPT_DIRLISTONLY.3 CURLOPT_DISALLOW_USERNAME_IN_URL.3 CURLOPT_DNS_CACHE_TIMEOUT.3 CURLOPT_DNS_INTERFACE.3 CURLOPT_DNS_LOCAL_IP4.3 CURLOPT_DNS_LOCAL_IP6.3 CURLOPT_DNS_SERVERS.3 CURLOPT_DNS_SHUFFLE_ADDRESSES.3 CURLOPT_DNS_USE_GLOBAL_CACHE.3 CURLOPT_DOH_SSL_VERIFYHOST.3 CURLOPT_DOH_SSL_VERIFYPEER.3 CURLOPT_DOH_SSL_VERIFYSTATUS.3 CURLOPT_DOH_URL.3 CURLOPT_EGDSOCKET.3 CURLOPT_ERRORBUFFER.3 CURLOPT_EXPECT_100_TIMEOUT_MS.3 CURLOPT_FAILONERROR.3 CURLOPT_FILETIME.3 CURLOPT_FNMATCH_DATA.3 CURLOPT_FNMATCH_FUNCTION.3 CURLOPT_FOLLOWLOCATION.3 CURLOPT_FORBID_REUSE.3 CURLOPT_FRESH_CONNECT.3 CURLOPT_FTP_ACCOUNT.3 CURLOPT_FTP_ALTERNATIVE_TO_USER.3 CURLOPT_FTP_CREATE_MISSING_DIRS.3 CURLOPT_FTP_FILEMETHOD.3 CURLOPT_FTP_SKIP_PASV_IP.3 CURLOPT_FTP_SSL_CCC.3 CURLOPT_FTP_USE_EPRT.3 CURLOPT_FTP_USE_EPSV.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_FTP_USE_PRET.3 CURLOPT_FTPPORT.3 CURLOPT_FTPSSLAUTH.3 CURLOPT_GSSAPI_DELEGATION.3 CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3 CURLOPT_HAPROXYPROTOCOL.3 CURLOPT_HAPROXY_CLIENT_IP.3 CURLOPT_HEADER.3 CURLOPT_HEADERDATA.3 CURLOPT_HEADERFUNCTION.3 CURLOPT_HEADEROPT.3 CURLOPT_HSTS.3 CURLOPT_HSTS_CTRL.3 CURLOPT_HSTSREADDATA.3 CURLOPT_HSTSREADFUNCTION.3 CURLOPT_HSTSWRITEDATA.3 CURLOPT_HSTSWRITEFUNCTION.3 CURLOPT_HTTP09_ALLOWED.3 CURLOPT_HTTP200ALIASES.3 CURLOPT_HTTP_CONTENT_DECODING.3 CURLOPT_HTTP_TRANSFER_DECODING.3 CURLOPT_HTTP_VERSION.3 CURLOPT_HTTPAUTH.3 CURLOPT_HTTPGET.3 CURLOPT_HTTPHEADER.3 CURLOPT_HTTPPOST.3 CURLOPT_HTTPPROXYTUNNEL.3 CURLOPT_IGNORE_CONTENT_LENGTH.3 CURLOPT_INFILESIZE.3 CURLOPT_INFILESIZE_LARGE.3 CURLOPT_INTERFACE.3 CURLOPT_INTERLEAVEDATA.3 CURLOPT_INTERLEAVEFUNCTION.3 CURLOPT_IOCTLDATA.3 CURLOPT_IOCTLFUNCTION.3 CURLOPT_IPRESOLVE.3 CURLOPT_ISSUERCERT.3 CURLOPT_ISSUERCERT_BLOB.3 CURLOPT_KEEP_SENDING_ON_ERROR.3 CURLOPT_KEYPASSWD.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_KRBLEVEL.3 CURLOPT_LOCALPORT.3 CURLOPT_LOCALPORTRANGE.3 CURLOPT_LOGIN_OPTIONS.3 CURLOPT_LOW_SPEED_LIMIT.3 CURLOPT_LOW_SPEED_TIME.3 CURLOPT_MAIL_AUTH.3 CURLOPT_MAIL_FROM.3 CURLOPT_MAIL_RCPT.3 CURLOPT_MAIL_RCPT_ALLOWFAILS.3 CURLOPT_MAX_RECV_SPEED_LARGE.3 CURLOPT_MAX_SEND_SPEED_LARGE.3 CURLOPT_MAXAGE_CONN.3 CURLOPT_MAXCONNECTS.3 CURLOPT_MAXFILESIZE.3 CURLOPT_MAXFILESIZE_LARGE.3 CURLOPT_MAXLIFETIME_CONN.3 CURLOPT_MAXREDIRS.3 CURLOPT_MIME_OPTIONS.3 CURLOPT_MIMEPOST.3 CURLOPT_NETRC.3 CURLOPT_NETRC_FILE.3 CURLOPT_NEW_DIRECTORY_PERMS.3 CURLOPT_NEW_FILE_PERMS.3 CURLOPT_NOBODY.3 CURLOPT_NOPROGRESS.3 CURLOPT_NOPROXY.3 CURLOPT_NOSIGNAL.3 CURLOPT_OPENSOCKETDATA.3 CURLOPT_OPENSOCKETFUNCTION.3 CURLOPT_PASSWORD.3 CURLOPT_PATH_AS_IS.3 CURLOPT_PINNEDPUBLICKEY.3 CURLOPT_PIPEWAIT.3 CURLOPT_PORT.3 CURLOPT_POST.3 CURLOPT_POSTFIELDS.3 CURLOPT_POSTFIELDSIZE.3 CURLOPT_POSTFIELDSIZE_LARGE.3 CURLOPT_POSTQUOTE.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_POSTREDIR.3 CURLOPT_PRE_PROXY.3 CURLOPT_PREQUOTE.3 CURLOPT_PREREQDATA.3 CURLOPT_PREREQFUNCTION.3 CURLOPT_PRIVATE.3 CURLOPT_PROGRESSDATA.3 CURLOPT_PROGRESSFUNCTION.3 CURLOPT_PROTOCOLS.3 CURLOPT_PROTOCOLS_STR.3 CURLOPT_PROXY.3 CURLOPT_PROXY_CAINFO.3 CURLOPT_PROXY_CAINFO_BLOB.3 CURLOPT_PROXY_CAPATH.3 CURLOPT_PROXY_CRLFILE.3 CURLOPT_PROXY_ISSUERCERT.3 CURLOPT_PROXY_ISSUERCERT_BLOB.3 CURLOPT_PROXY_KEYPASSWD.3 CURLOPT_PROXY_PINNEDPUBLICKEY.3 CURLOPT_PROXY_SERVICE_NAME.3 CURLOPT_PROXY_SSL_CIPHER_LIST.3 CURLOPT_PROXY_SSL_OPTIONS.3 CURLOPT_PROXY_SSL_VERIFYHOST.3 CURLOPT_PROXY_SSL_VERIFYPEER.3 CURLOPT_PROXY_SSLCERT.3 CURLOPT_PROXY_SSLCERT_BLOB.3 CURLOPT_PROXY_SSLCERTTYPE.3 CURLOPT_PROXY_SSLKEY.3 CURLOPT_PROXY_SSLKEY_BLOB.3 CURLOPT_PROXY_SSLKEYTYPE.3 CURLOPT_PROXY_SSLVERSION.3 CURLOPT_PROXY_TLS13_CIPHERS.3 CURLOPT_PROXY_TLSAUTH_PASSWORD.3 CURLOPT_PROXY_TLSAUTH_TYPE.3 CURLOPT_PROXY_TLSAUTH_USERNAME.3 CURLOPT_PROXY_TRANSFER_MODE.3 CURLOPT_PROXYAUTH.3 CURLOPT_PROXYHEADER.3 CURLOPT_PROXYPASSWORD.3 CURLOPT_PROXYPORT.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_PROXYTYPE.3 CURLOPT_PROXYUSERNAME.3 CURLOPT_PROXYUSERPWD.3 CURLOPT_PUT.3 CURLOPT_QUICK_EXIT.3 CURLOPT_QUOTE.3 CURLOPT_RANDOM_FILE.3 CURLOPT_RANGE.3 CURLOPT_READDATA.3 CURLOPT_READFUNCTION.3 CURLOPT_REDIR_PROTOCOLS.3 CURLOPT_REDIR_PROTOCOLS_STR.3 CURLOPT_REFERER.3 CURLOPT_REQUEST_TARGET.3 CURLOPT_RESOLVE.3 CURLOPT_RESOLVER_START_DATA.3 CURLOPT_RESOLVER_START_FUNCTION.3 CURLOPT_RESUME_FROM.3 CURLOPT_RESUME_FROM_LARGE.3 CURLOPT_RTSP_CLIENT_CSEQ.3 CURLOPT_RTSP_REQUEST.3 CURLOPT_RTSP_SERVER_CSEQ.3 CURLOPT_RTSP_SESSION_ID.3 CURLOPT_RTSP_STREAM_URI.3 CURLOPT_RTSP_TRANSPORT.3 CURLOPT_SASL_AUTHZID.3 CURLOPT_SASL_IR.3 CURLOPT_SEEKDATA.3 CURLOPT_SEEKFUNCTION.3 CURLOPT_SERVER_RESPONSE_TIMEOUT.3 CURLOPT_SERVER_RESPONSE_TIMEOUT_MS.3 CURLOPT_SERVICE_NAME.3 CURLOPT_SHARE.3 CURLOPT_SOCKOPTDATA.3 CURLOPT_SOCKOPTFUNCTION.3 CURLOPT_SOCKS5_AUTH.3 CURLOPT_SOCKS5_GSSAPI_NEC.3 CURLOPT_SOCKS5_GSSAPI_SERVICE.3 CURLOPT_SSH_AUTH_TYPES.3 CURLOPT_SSH_COMPRESSION.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_SSH_HOSTKEYDATA.3 CURLOPT_SSH_HOSTKEYFUNCTION.3 CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3 CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256.3 CURLOPT_SSH_KEYDATA.3 CURLOPT_SSH_KEYFUNCTION.3 CURLOPT_SSH_KNOWNHOSTS.3 CURLOPT_SSH_PRIVATE_KEYFILE.3 CURLOPT_SSH_PUBLIC_KEYFILE.3 CURLOPT_SSL_CIPHER_LIST.3 CURLOPT_SSL_CTX_DATA.3 CURLOPT_SSL_CTX_FUNCTION.3 CURLOPT_SSL_EC_CURVES.3 CURLOPT_SSL_ENABLE_ALPN.3 CURLOPT_SSL_ENABLE_NPN.3 CURLOPT_SSL_FALSESTART.3 CURLOPT_SSL_OPTIONS.3 CURLOPT_SSL_SESSIONID_CACHE.3 CURLOPT_SSL_VERIFYHOST.3 CURLOPT_SSL_VERIFYPEER.3 CURLOPT_SSL_VERIFYSTATUS.3 CURLOPT_SSLCERT.3 CURLOPT_SSLCERT_BLOB.3 CURLOPT_SSLCERTTYPE.3 CURLOPT_SSLENGINE.3 CURLOPT_SSLENGINE_DEFAULT.3 CURLOPT_SSLKEY.3 CURLOPT_SSLKEY_BLOB.3 CURLOPT_SSLKEYTYPE.3 CURLOPT_SSLVERSION.3 CURLOPT_STDERR.3 CURLOPT_STREAM_DEPENDS.3 CURLOPT_STREAM_DEPENDS_E.3 CURLOPT_STREAM_WEIGHT.3 CURLOPT_SUPPRESS_CONNECT_HEADERS.3 CURLOPT_TCP_FASTOPEN.3 CURLOPT_TCP_KEEPALIVE.3 CURLOPT_TCP_KEEPIDLE.3 CURLOPT_TCP_KEEPINTVL.3 CURLOPT_TCP_NODELAY.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_TELNETOPTIONS.3 CURLOPT_TFTP_BLKSIZE.3 CURLOPT_TFTP_NO_OPTIONS.3 CURLOPT_TIMECONDITION.3 CURLOPT_TIMEOUT.3 CURLOPT_TIMEOUT_MS.3 CURLOPT_TIMEVALUE.3 CURLOPT_TIMEVALUE_LARGE.3 CURLOPT_TLS13_CIPHERS.3 CURLOPT_TLSAUTH_PASSWORD.3 CURLOPT_TLSAUTH_TYPE.3 CURLOPT_TLSAUTH_USERNAME.3 CURLOPT_TRAILERDATA.3 CURLOPT_TRAILERFUNCTION.3 CURLOPT_TRANSFER_ENCODING.3 CURLOPT_TRANSFERTEXT.3 CURLOPT_UNIX_SOCKET_PATH.3 CURLOPT_UNRESTRICTED_AUTH.3 CURLOPT_UPKEEP_INTERVAL_MS.3 CURLOPT_UPLOAD.3 CURLOPT_UPLOAD_BUFFERSIZE.3 CURLOPT_URL.3 CURLOPT_USE_SSL.3 CURLOPT_USERAGENT.3 CURLOPT_USERNAME.3 CURLOPT_USERPWD.3 CURLOPT_VERBOSE.3 CURLOPT_WILDCARDMATCH.3 CURLOPT_WRITEDATA.3 CURLOPT_WRITEFUNCTION.3 CURLOPT_WS_OPTIONS.3 CURLOPT_XFERINFODATA.3 CURLOPT_XFERINFOFUNCTION.3 CURLOPT_XOAUTH2_BEARER.3 CURLSHOPT_LOCKFUNC.3 CURLSHOPT_SHARE.3 CURLSHOPT_UNLOCKFUNC.3 CURLSHOPT_UNSHARE.3 CURLSHOPT_USERDATA.3 '/usr/share/man/man3'
+make[7]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[6]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[6]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+make[7]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+make[7]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/aclocal'
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 libcurl.m4 '/usr/share/aclocal'
+ /usr/bin/install -c -m 644 curl_easy_cleanup.3 curl_easy_duphandle.3 curl_easy_escape.3 curl_easy_getinfo.3 curl_easy_header.3 curl_easy_init.3 curl_easy_nextheader.3 curl_easy_option_by_id.3 curl_easy_option_by_name.3 curl_easy_option_next.3 curl_easy_pause.3 curl_easy_perform.3 curl_easy_recv.3 curl_easy_reset.3 curl_easy_send.3 curl_easy_setopt.3 curl_easy_strerror.3 curl_easy_unescape.3 curl_easy_upkeep.3 curl_escape.3 curl_formadd.3 curl_formfree.3 curl_formget.3 curl_free.3 curl_getdate.3 curl_getenv.3 curl_global_cleanup.3 curl_global_init.3 curl_global_init_mem.3 curl_global_trace.3 curl_global_sslset.3 curl_mime_addpart.3 curl_mime_data.3 curl_mime_data_cb.3 curl_mime_encoder.3 curl_mime_filedata.3 curl_mime_filename.3 curl_mime_free.3 curl_mime_headers.3 curl_mime_init.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_mime_name.3 curl_mime_subparts.3 curl_mime_type.3 curl_mprintf.3 curl_multi_add_handle.3 curl_multi_assign.3 curl_multi_cleanup.3 curl_multi_fdset.3 curl_multi_get_handles.3 curl_multi_info_read.3 curl_multi_init.3 curl_multi_perform.3 curl_multi_poll.3 curl_multi_remove_handle.3 curl_multi_setopt.3 curl_multi_socket.3 curl_multi_socket_action.3 curl_multi_socket_all.3 curl_multi_strerror.3 curl_multi_timeout.3 curl_multi_wakeup.3 curl_multi_wait.3 curl_pushheader_bynum.3 curl_pushheader_byname.3 curl_share_cleanup.3 curl_share_init.3 curl_share_setopt.3 curl_share_strerror.3 curl_slist_append.3 curl_slist_free_all.3 curl_strequal.3 curl_strnequal.3 curl_unescape.3 curl_url.3 curl_url_cleanup.3 curl_url_dup.3 curl_url_get.3 curl_url_set.3 curl_url_strerror.3 curl_version.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_version_info.3 curl_ws_meta.3 curl_ws_recv.3 curl_ws_send.3 libcurl-easy.3 libcurl-env.3 libcurl-env-dbg.3 libcurl-errors.3 libcurl-multi.3 libcurl-security.3 libcurl-share.3 libcurl-symbols.3 libcurl-thread.3 libcurl-tutorial.3 libcurl-url.3 libcurl-ws.3 libcurl.3 '/usr/share/man/man3'
+make[7]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[6]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[5]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[4]: Leaving directory '/sources/curl-8.7.1/docs'
+(cd docs/libcurl && make install)
+make[4]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+Making install in opts
+make[5]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[6]: Entering directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[6]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_ACTIVESOCKET.3 CURLINFO_APPCONNECT_TIME.3 CURLINFO_APPCONNECT_TIME_T.3 CURLINFO_CAINFO.3 CURLINFO_CAPATH.3 CURLINFO_CERTINFO.3 CURLINFO_CONDITION_UNMET.3 CURLINFO_CONNECT_TIME.3 CURLINFO_CONNECT_TIME_T.3 CURLINFO_CONN_ID.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3 CURLINFO_CONTENT_LENGTH_UPLOAD.3 CURLINFO_CONTENT_LENGTH_UPLOAD_T.3 CURLINFO_CONTENT_TYPE.3 CURLINFO_COOKIELIST.3 CURLINFO_EFFECTIVE_METHOD.3 CURLINFO_EFFECTIVE_URL.3 CURLINFO_FILETIME.3 CURLINFO_FILETIME_T.3 CURLINFO_FTP_ENTRY_PATH.3 CURLINFO_HEADER_SIZE.3 CURLINFO_HTTP_CONNECTCODE.3 CURLINFO_HTTP_VERSION.3 CURLINFO_HTTPAUTH_AVAIL.3 CURLINFO_LASTSOCKET.3 CURLINFO_LOCAL_IP.3 CURLINFO_LOCAL_PORT.3 CURLINFO_NAMELOOKUP_TIME.3 CURLINFO_NAMELOOKUP_TIME_T.3 CURLINFO_NUM_CONNECTS.3 CURLINFO_OS_ERRNO.3 CURLINFO_PRETRANSFER_TIME.3 CURLINFO_PRETRANSFER_TIME_T.3 CURLINFO_PRIMARY_IP.3 CURLINFO_PRIMARY_PORT.3 CURLINFO_PRIVATE.3 CURLINFO_PROTOCOL.3 CURLINFO_PROXY_ERROR.3 CURLINFO_PROXY_SSL_VERIFYRESULT.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_PROXYAUTH_AVAIL.3 CURLINFO_QUEUE_TIME_T.3 CURLINFO_REDIRECT_COUNT.3 CURLINFO_REDIRECT_TIME.3 CURLINFO_REDIRECT_TIME_T.3 CURLINFO_REDIRECT_URL.3 CURLINFO_REFERER.3 CURLINFO_REQUEST_SIZE.3 CURLINFO_RESPONSE_CODE.3 CURLINFO_RETRY_AFTER.3 CURLINFO_RTSP_CLIENT_CSEQ.3 CURLINFO_RTSP_CSEQ_RECV.3 CURLINFO_RTSP_SERVER_CSEQ.3 CURLINFO_RTSP_SESSION_ID.3 CURLINFO_SCHEME.3 CURLINFO_SIZE_DOWNLOAD.3 CURLINFO_SIZE_DOWNLOAD_T.3 CURLINFO_SIZE_UPLOAD.3 CURLINFO_SIZE_UPLOAD_T.3 CURLINFO_SPEED_DOWNLOAD.3 CURLINFO_SPEED_DOWNLOAD_T.3 CURLINFO_SPEED_UPLOAD.3 CURLINFO_SPEED_UPLOAD_T.3 CURLINFO_SSL_ENGINES.3 CURLINFO_SSL_VERIFYRESULT.3 CURLINFO_STARTTRANSFER_TIME.3 CURLINFO_STARTTRANSFER_TIME_T.3 CURLINFO_TLS_SESSION.3 CURLINFO_TLS_SSL_PTR.3 CURLINFO_TOTAL_TIME.3 CURLINFO_TOTAL_TIME_T.3 CURLINFO_USED_PROXY.3 CURLINFO_XFER_ID.3 CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3 CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3 CURLMOPT_MAX_CONCURRENT_STREAMS.3 CURLMOPT_MAX_HOST_CONNECTIONS.3 CURLMOPT_MAX_PIPELINE_LENGTH.3 CURLMOPT_MAX_TOTAL_CONNECTIONS.3 CURLMOPT_MAXCONNECTS.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLMOPT_PIPELINING.3 CURLMOPT_PIPELINING_SERVER_BL.3 CURLMOPT_PIPELINING_SITE_BL.3 CURLMOPT_PUSHDATA.3 CURLMOPT_PUSHFUNCTION.3 CURLMOPT_SOCKETDATA.3 CURLMOPT_SOCKETFUNCTION.3 CURLMOPT_TIMERDATA.3 CURLMOPT_TIMERFUNCTION.3 CURLOPT_ABSTRACT_UNIX_SOCKET.3 CURLOPT_ACCEPT_ENCODING.3 CURLOPT_ACCEPTTIMEOUT_MS.3 CURLOPT_ADDRESS_SCOPE.3 CURLOPT_ALTSVC.3 CURLOPT_ALTSVC_CTRL.3 CURLOPT_APPEND.3 CURLOPT_AUTOREFERER.3 CURLOPT_AWS_SIGV4.3 CURLOPT_BUFFERSIZE.3 CURLOPT_CAINFO.3 CURLOPT_CAINFO_BLOB.3 CURLOPT_CAPATH.3 CURLOPT_CA_CACHE_TIMEOUT.3 CURLOPT_CERTINFO.3 CURLOPT_CHUNK_BGN_FUNCTION.3 CURLOPT_CHUNK_DATA.3 CURLOPT_CHUNK_END_FUNCTION.3 CURLOPT_CLOSESOCKETDATA.3 CURLOPT_CLOSESOCKETFUNCTION.3 CURLOPT_CONNECT_ONLY.3 CURLOPT_CONNECT_TO.3 CURLOPT_CONNECTTIMEOUT.3 CURLOPT_CONNECTTIMEOUT_MS.3 CURLOPT_CONV_FROM_NETWORK_FUNCTION.3 CURLOPT_CONV_FROM_UTF8_FUNCTION.3 CURLOPT_CONV_TO_NETWORK_FUNCTION.3 CURLOPT_COOKIE.3 CURLOPT_COOKIEFILE.3 CURLOPT_COOKIEJAR.3 CURLOPT_COOKIELIST.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_COOKIESESSION.3 CURLOPT_COPYPOSTFIELDS.3 CURLOPT_CRLF.3 CURLOPT_CRLFILE.3 CURLOPT_CURLU.3 CURLOPT_CUSTOMREQUEST.3 CURLOPT_DEBUGDATA.3 CURLOPT_DEBUGFUNCTION.3 CURLOPT_DEFAULT_PROTOCOL.3 CURLOPT_DIRLISTONLY.3 CURLOPT_DISALLOW_USERNAME_IN_URL.3 CURLOPT_DNS_CACHE_TIMEOUT.3 CURLOPT_DNS_INTERFACE.3 CURLOPT_DNS_LOCAL_IP4.3 CURLOPT_DNS_LOCAL_IP6.3 CURLOPT_DNS_SERVERS.3 CURLOPT_DNS_SHUFFLE_ADDRESSES.3 CURLOPT_DNS_USE_GLOBAL_CACHE.3 CURLOPT_DOH_SSL_VERIFYHOST.3 CURLOPT_DOH_SSL_VERIFYPEER.3 CURLOPT_DOH_SSL_VERIFYSTATUS.3 CURLOPT_DOH_URL.3 CURLOPT_EGDSOCKET.3 CURLOPT_ERRORBUFFER.3 CURLOPT_EXPECT_100_TIMEOUT_MS.3 CURLOPT_FAILONERROR.3 CURLOPT_FILETIME.3 CURLOPT_FNMATCH_DATA.3 CURLOPT_FNMATCH_FUNCTION.3 CURLOPT_FOLLOWLOCATION.3 CURLOPT_FORBID_REUSE.3 CURLOPT_FRESH_CONNECT.3 CURLOPT_FTP_ACCOUNT.3 CURLOPT_FTP_ALTERNATIVE_TO_USER.3 CURLOPT_FTP_CREATE_MISSING_DIRS.3 CURLOPT_FTP_FILEMETHOD.3 CURLOPT_FTP_SKIP_PASV_IP.3 CURLOPT_FTP_SSL_CCC.3 CURLOPT_FTP_USE_EPRT.3 CURLOPT_FTP_USE_EPSV.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_FTP_USE_PRET.3 CURLOPT_FTPPORT.3 CURLOPT_FTPSSLAUTH.3 CURLOPT_GSSAPI_DELEGATION.3 CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3 CURLOPT_HAPROXYPROTOCOL.3 CURLOPT_HAPROXY_CLIENT_IP.3 CURLOPT_HEADER.3 CURLOPT_HEADERDATA.3 CURLOPT_HEADERFUNCTION.3 CURLOPT_HEADEROPT.3 CURLOPT_HSTS.3 CURLOPT_HSTS_CTRL.3 CURLOPT_HSTSREADDATA.3 CURLOPT_HSTSREADFUNCTION.3 CURLOPT_HSTSWRITEDATA.3 CURLOPT_HSTSWRITEFUNCTION.3 CURLOPT_HTTP09_ALLOWED.3 CURLOPT_HTTP200ALIASES.3 CURLOPT_HTTP_CONTENT_DECODING.3 CURLOPT_HTTP_TRANSFER_DECODING.3 CURLOPT_HTTP_VERSION.3 CURLOPT_HTTPAUTH.3 CURLOPT_HTTPGET.3 CURLOPT_HTTPHEADER.3 CURLOPT_HTTPPOST.3 CURLOPT_HTTPPROXYTUNNEL.3 CURLOPT_IGNORE_CONTENT_LENGTH.3 CURLOPT_INFILESIZE.3 CURLOPT_INFILESIZE_LARGE.3 CURLOPT_INTERFACE.3 CURLOPT_INTERLEAVEDATA.3 CURLOPT_INTERLEAVEFUNCTION.3 CURLOPT_IOCTLDATA.3 CURLOPT_IOCTLFUNCTION.3 CURLOPT_IPRESOLVE.3 CURLOPT_ISSUERCERT.3 CURLOPT_ISSUERCERT_BLOB.3 CURLOPT_KEEP_SENDING_ON_ERROR.3 CURLOPT_KEYPASSWD.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_KRBLEVEL.3 CURLOPT_LOCALPORT.3 CURLOPT_LOCALPORTRANGE.3 CURLOPT_LOGIN_OPTIONS.3 CURLOPT_LOW_SPEED_LIMIT.3 CURLOPT_LOW_SPEED_TIME.3 CURLOPT_MAIL_AUTH.3 CURLOPT_MAIL_FROM.3 CURLOPT_MAIL_RCPT.3 CURLOPT_MAIL_RCPT_ALLOWFAILS.3 CURLOPT_MAX_RECV_SPEED_LARGE.3 CURLOPT_MAX_SEND_SPEED_LARGE.3 CURLOPT_MAXAGE_CONN.3 CURLOPT_MAXCONNECTS.3 CURLOPT_MAXFILESIZE.3 CURLOPT_MAXFILESIZE_LARGE.3 CURLOPT_MAXLIFETIME_CONN.3 CURLOPT_MAXREDIRS.3 CURLOPT_MIME_OPTIONS.3 CURLOPT_MIMEPOST.3 CURLOPT_NETRC.3 CURLOPT_NETRC_FILE.3 CURLOPT_NEW_DIRECTORY_PERMS.3 CURLOPT_NEW_FILE_PERMS.3 CURLOPT_NOBODY.3 CURLOPT_NOPROGRESS.3 CURLOPT_NOPROXY.3 CURLOPT_NOSIGNAL.3 CURLOPT_OPENSOCKETDATA.3 CURLOPT_OPENSOCKETFUNCTION.3 CURLOPT_PASSWORD.3 CURLOPT_PATH_AS_IS.3 CURLOPT_PINNEDPUBLICKEY.3 CURLOPT_PIPEWAIT.3 CURLOPT_PORT.3 CURLOPT_POST.3 CURLOPT_POSTFIELDS.3 CURLOPT_POSTFIELDSIZE.3 CURLOPT_POSTFIELDSIZE_LARGE.3 CURLOPT_POSTQUOTE.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_POSTREDIR.3 CURLOPT_PRE_PROXY.3 CURLOPT_PREQUOTE.3 CURLOPT_PREREQDATA.3 CURLOPT_PREREQFUNCTION.3 CURLOPT_PRIVATE.3 CURLOPT_PROGRESSDATA.3 CURLOPT_PROGRESSFUNCTION.3 CURLOPT_PROTOCOLS.3 CURLOPT_PROTOCOLS_STR.3 CURLOPT_PROXY.3 CURLOPT_PROXY_CAINFO.3 CURLOPT_PROXY_CAINFO_BLOB.3 CURLOPT_PROXY_CAPATH.3 CURLOPT_PROXY_CRLFILE.3 CURLOPT_PROXY_ISSUERCERT.3 CURLOPT_PROXY_ISSUERCERT_BLOB.3 CURLOPT_PROXY_KEYPASSWD.3 CURLOPT_PROXY_PINNEDPUBLICKEY.3 CURLOPT_PROXY_SERVICE_NAME.3 CURLOPT_PROXY_SSL_CIPHER_LIST.3 CURLOPT_PROXY_SSL_OPTIONS.3 CURLOPT_PROXY_SSL_VERIFYHOST.3 CURLOPT_PROXY_SSL_VERIFYPEER.3 CURLOPT_PROXY_SSLCERT.3 CURLOPT_PROXY_SSLCERT_BLOB.3 CURLOPT_PROXY_SSLCERTTYPE.3 CURLOPT_PROXY_SSLKEY.3 CURLOPT_PROXY_SSLKEY_BLOB.3 CURLOPT_PROXY_SSLKEYTYPE.3 CURLOPT_PROXY_SSLVERSION.3 CURLOPT_PROXY_TLS13_CIPHERS.3 CURLOPT_PROXY_TLSAUTH_PASSWORD.3 CURLOPT_PROXY_TLSAUTH_TYPE.3 CURLOPT_PROXY_TLSAUTH_USERNAME.3 CURLOPT_PROXY_TRANSFER_MODE.3 CURLOPT_PROXYAUTH.3 CURLOPT_PROXYHEADER.3 CURLOPT_PROXYPASSWORD.3 CURLOPT_PROXYPORT.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_PROXYTYPE.3 CURLOPT_PROXYUSERNAME.3 CURLOPT_PROXYUSERPWD.3 CURLOPT_PUT.3 CURLOPT_QUICK_EXIT.3 CURLOPT_QUOTE.3 CURLOPT_RANDOM_FILE.3 CURLOPT_RANGE.3 CURLOPT_READDATA.3 CURLOPT_READFUNCTION.3 CURLOPT_REDIR_PROTOCOLS.3 CURLOPT_REDIR_PROTOCOLS_STR.3 CURLOPT_REFERER.3 CURLOPT_REQUEST_TARGET.3 CURLOPT_RESOLVE.3 CURLOPT_RESOLVER_START_DATA.3 CURLOPT_RESOLVER_START_FUNCTION.3 CURLOPT_RESUME_FROM.3 CURLOPT_RESUME_FROM_LARGE.3 CURLOPT_RTSP_CLIENT_CSEQ.3 CURLOPT_RTSP_REQUEST.3 CURLOPT_RTSP_SERVER_CSEQ.3 CURLOPT_RTSP_SESSION_ID.3 CURLOPT_RTSP_STREAM_URI.3 CURLOPT_RTSP_TRANSPORT.3 CURLOPT_SASL_AUTHZID.3 CURLOPT_SASL_IR.3 CURLOPT_SEEKDATA.3 CURLOPT_SEEKFUNCTION.3 CURLOPT_SERVER_RESPONSE_TIMEOUT.3 CURLOPT_SERVER_RESPONSE_TIMEOUT_MS.3 CURLOPT_SERVICE_NAME.3 CURLOPT_SHARE.3 CURLOPT_SOCKOPTDATA.3 CURLOPT_SOCKOPTFUNCTION.3 CURLOPT_SOCKS5_AUTH.3 CURLOPT_SOCKS5_GSSAPI_NEC.3 CURLOPT_SOCKS5_GSSAPI_SERVICE.3 CURLOPT_SSH_AUTH_TYPES.3 CURLOPT_SSH_COMPRESSION.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_SSH_HOSTKEYDATA.3 CURLOPT_SSH_HOSTKEYFUNCTION.3 CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3 CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256.3 CURLOPT_SSH_KEYDATA.3 CURLOPT_SSH_KEYFUNCTION.3 CURLOPT_SSH_KNOWNHOSTS.3 CURLOPT_SSH_PRIVATE_KEYFILE.3 CURLOPT_SSH_PUBLIC_KEYFILE.3 CURLOPT_SSL_CIPHER_LIST.3 CURLOPT_SSL_CTX_DATA.3 CURLOPT_SSL_CTX_FUNCTION.3 CURLOPT_SSL_EC_CURVES.3 CURLOPT_SSL_ENABLE_ALPN.3 CURLOPT_SSL_ENABLE_NPN.3 CURLOPT_SSL_FALSESTART.3 CURLOPT_SSL_OPTIONS.3 CURLOPT_SSL_SESSIONID_CACHE.3 CURLOPT_SSL_VERIFYHOST.3 CURLOPT_SSL_VERIFYPEER.3 CURLOPT_SSL_VERIFYSTATUS.3 CURLOPT_SSLCERT.3 CURLOPT_SSLCERT_BLOB.3 CURLOPT_SSLCERTTYPE.3 CURLOPT_SSLENGINE.3 CURLOPT_SSLENGINE_DEFAULT.3 CURLOPT_SSLKEY.3 CURLOPT_SSLKEY_BLOB.3 CURLOPT_SSLKEYTYPE.3 CURLOPT_SSLVERSION.3 CURLOPT_STDERR.3 CURLOPT_STREAM_DEPENDS.3 CURLOPT_STREAM_DEPENDS_E.3 CURLOPT_STREAM_WEIGHT.3 CURLOPT_SUPPRESS_CONNECT_HEADERS.3 CURLOPT_TCP_FASTOPEN.3 CURLOPT_TCP_KEEPALIVE.3 CURLOPT_TCP_KEEPIDLE.3 CURLOPT_TCP_KEEPINTVL.3 CURLOPT_TCP_NODELAY.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_TELNETOPTIONS.3 CURLOPT_TFTP_BLKSIZE.3 CURLOPT_TFTP_NO_OPTIONS.3 CURLOPT_TIMECONDITION.3 CURLOPT_TIMEOUT.3 CURLOPT_TIMEOUT_MS.3 CURLOPT_TIMEVALUE.3 CURLOPT_TIMEVALUE_LARGE.3 CURLOPT_TLS13_CIPHERS.3 CURLOPT_TLSAUTH_PASSWORD.3 CURLOPT_TLSAUTH_TYPE.3 CURLOPT_TLSAUTH_USERNAME.3 CURLOPT_TRAILERDATA.3 CURLOPT_TRAILERFUNCTION.3 CURLOPT_TRANSFER_ENCODING.3 CURLOPT_TRANSFERTEXT.3 CURLOPT_UNIX_SOCKET_PATH.3 CURLOPT_UNRESTRICTED_AUTH.3 CURLOPT_UPKEEP_INTERVAL_MS.3 CURLOPT_UPLOAD.3 CURLOPT_UPLOAD_BUFFERSIZE.3 CURLOPT_URL.3 CURLOPT_USE_SSL.3 CURLOPT_USERAGENT.3 CURLOPT_USERNAME.3 CURLOPT_USERPWD.3 CURLOPT_VERBOSE.3 CURLOPT_WILDCARDMATCH.3 CURLOPT_WRITEDATA.3 CURLOPT_WRITEFUNCTION.3 CURLOPT_WS_OPTIONS.3 CURLOPT_XFERINFODATA.3 CURLOPT_XFERINFOFUNCTION.3 CURLOPT_XOAUTH2_BEARER.3 CURLSHOPT_LOCKFUNC.3 CURLSHOPT_SHARE.3 CURLSHOPT_UNLOCKFUNC.3 CURLSHOPT_UNSHARE.3 CURLSHOPT_USERDATA.3 '/usr/share/man/man3'
+make[6]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[5]: Leaving directory '/sources/curl-8.7.1/docs/libcurl/opts'
+make[5]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+make[6]: Entering directory '/sources/curl-8.7.1/docs/libcurl'
+make[6]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/share/aclocal'
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 libcurl.m4 '/usr/share/aclocal'
+ /usr/bin/install -c -m 644 curl_easy_cleanup.3 curl_easy_duphandle.3 curl_easy_escape.3 curl_easy_getinfo.3 curl_easy_header.3 curl_easy_init.3 curl_easy_nextheader.3 curl_easy_option_by_id.3 curl_easy_option_by_name.3 curl_easy_option_next.3 curl_easy_pause.3 curl_easy_perform.3 curl_easy_recv.3 curl_easy_reset.3 curl_easy_send.3 curl_easy_setopt.3 curl_easy_strerror.3 curl_easy_unescape.3 curl_easy_upkeep.3 curl_escape.3 curl_formadd.3 curl_formfree.3 curl_formget.3 curl_free.3 curl_getdate.3 curl_getenv.3 curl_global_cleanup.3 curl_global_init.3 curl_global_init_mem.3 curl_global_trace.3 curl_global_sslset.3 curl_mime_addpart.3 curl_mime_data.3 curl_mime_data_cb.3 curl_mime_encoder.3 curl_mime_filedata.3 curl_mime_filename.3 curl_mime_free.3 curl_mime_headers.3 curl_mime_init.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_mime_name.3 curl_mime_subparts.3 curl_mime_type.3 curl_mprintf.3 curl_multi_add_handle.3 curl_multi_assign.3 curl_multi_cleanup.3 curl_multi_fdset.3 curl_multi_get_handles.3 curl_multi_info_read.3 curl_multi_init.3 curl_multi_perform.3 curl_multi_poll.3 curl_multi_remove_handle.3 curl_multi_setopt.3 curl_multi_socket.3 curl_multi_socket_action.3 curl_multi_socket_all.3 curl_multi_strerror.3 curl_multi_timeout.3 curl_multi_wakeup.3 curl_multi_wait.3 curl_pushheader_bynum.3 curl_pushheader_byname.3 curl_share_cleanup.3 curl_share_init.3 curl_share_setopt.3 curl_share_strerror.3 curl_slist_append.3 curl_slist_free_all.3 curl_strequal.3 curl_strnequal.3 curl_unescape.3 curl_url.3 curl_url_cleanup.3 curl_url_dup.3 curl_url_get.3 curl_url_set.3 curl_url_strerror.3 curl_version.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_version_info.3 curl_ws_meta.3 curl_ws_recv.3 curl_ws_send.3 libcurl-easy.3 libcurl-env.3 libcurl-env-dbg.3 libcurl-errors.3 libcurl-multi.3 libcurl-security.3 libcurl-share.3 libcurl-symbols.3 libcurl-thread.3 libcurl-tutorial.3 libcurl-url.3 libcurl-ws.3 libcurl.3 '/usr/share/man/man3'
+make[6]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[5]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[4]: Leaving directory '/sources/curl-8.7.1/docs/libcurl'
+make[3]: Leaving directory '/sources/curl-8.7.1'
+make[2]: Leaving directory '/sources/curl-8.7.1'
+make[1]: Leaving directory '/sources/curl-8.7.1'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 16:38:37 UTC 2024
+
+Totalseconds: 48
+
+KB: 1691864	/
+

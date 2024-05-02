@@ -1,0 +1,77 @@
+--- a/include/stdlib.h
++++ b/include/stdlib.h
+@@ -999,4 +999,14 @@ extern struct drand48_data __libc_drand48_data attribute_hidden;
+
+ __END_DECLS
+
++#if defined __USE_ISOC11 || defined __USE_ISOCXX11
++# ifdef __cplusplus
++extern "C++" int at_quick_exit (void (*__func) (void))
++     __THROW __asm ("at_quick_exit") __nonnull ((1));
++# else
++extern int at_quick_exit (void (*__func) (void)) __THROW __nonnull ((1));
++# endif
++extern void quick_exit (int __status) __THROW __attribute__ ((__noreturn__));
++#endif
++
+ #endif /* stdlib.h  */
+--- a/libc/stdlib/Makefile.in
++++ b/libc/stdlib/Makefile.in
+@@ -59,7 +59,7 @@ CSRC-$(if $(findstring yyy,$(UCLIBC_HAS_FLOATS)$(UCLIBC_HAS_WCHAR)$(UCLIBC_HAS_X
+ # wcstod wcstof wcstold
+
+ # multi source _atexit.c
+-CSRC-y += __cxa_atexit.c __cxa_finalize.c __exit_handler.c exit.c on_exit.c
++CSRC-y += __cxa_atexit.c __cxa_finalize.c __exit_handler.c exit.c on_exit.c at_quick_exit.c quick_exit.c
+
+ STDLIB_DIR := $(top_srcdir)libc/stdlib
+ STDLIB_OUT := $(top_builddir)libc/stdlib
+--- /dev/null
++++ b/libc/stdlib/at_quick_exit.c
+@@ -0,0 +1,33 @@
++#include <stdlib.h>
++#include <libc-lock.h>
++
++#define COUNT 32
++#define LOCK __libc_lock_lock
++#define UNLOCK __libc_lock_unlock
++
++static void (*funcs[COUNT])(void);
++static int count;
++static volatile int lock[1];
++volatile int *const __at_quick_exit_lockptr = lock;
++
++void __funcs_on_quick_exit()
++{
++	void (*func)(void);
++	LOCK(lock);
++	while (count > 0) {
++		func = funcs[--count];
++		UNLOCK(lock);
++		func();
++		LOCK(lock);
++	}
++}
++
++int at_quick_exit(void (*func)(void))
++{
++	int r = 0;
++	LOCK(lock);
++	if (count == 32) r = -1;
++	else funcs[count++] = func;
++	UNLOCK(lock);
++	return r;
++}
+--- /dev/null
++++ b/libc/stdlib/quick_exit.c
+@@ -0,0 +1,10 @@
++#include <stdlib.h>
++
++static void dummy() { }
++weak_alias(dummy, __funcs_on_quick_exit);
++
++_Noreturn void quick_exit(int code)
++{
++	__funcs_on_quick_exit();
++	_Exit(code);
++}

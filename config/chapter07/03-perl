@@ -1,0 +1,23 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/lfs/view/development/chapter07/perl.html
+
+SRC="perl"
+
+pkgver="$(find .. -maxdepth 1  -type f -name 'perl*.tar.*' -exec basename {} +|head -1)"
+pkgver=${pkgver#perl-}
+pkgver=${pkgver%.tar*}
+_baseVER="${pkgver%.*}"
+
+sh Configure -des \
+	-Dprefix=/usr \
+	-Dvendorprefix=/usr \
+	-Duseshrplib \
+	-Dprivlib=/usr/lib/perl5/${_baseVER}/core_perl \
+	-Darchlib=/usr/lib/perl5/${_baseVER}/core_perl \
+	-Dsitelib=/usr/lib/perl5/${_baseVER}/site_perl \
+	-Dsitearch=/usr/lib/perl5/${_baseVER}/site_perl \
+	-Dvendorlib=/usr/lib/perl5/${_baseVER}/vendor_perl \
+	-Dvendorarch=/usr/lib/perl5/${_baseVER}/vendor_perl
+
+make
+make install

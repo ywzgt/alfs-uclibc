@@ -1,0 +1,54 @@
+Thu May  2 16:30:42 UTC 2024
+KB: 1576292	/
+
+pip 24.0 from /usr/lib/python3.12/site-packages/pip (python 3.12)
+Processing /sources/Jinja2-3.1.3
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: Jinja2
+  Building wheel for Jinja2 (setup.py): started
+  Building wheel for Jinja2 (setup.py): finished with status 'done'
+  Created wheel for Jinja2: filename=Jinja2-3.1.3-py3-none-any.whl size=133237 sha256=068433cffc47f112807e24148cf1ed37b5fb236f0adeab2f9e8a03f3d6d84dac
+  Stored in directory: /root/.cache/pip/wheels/fb/ef/cf/1f58c0e9cb1941e91e76da88c981090a45a8e6928aaaad649a
+Successfully built Jinja2
+Looking in links: dist
+Processing ./dist/Jinja2-3.1.3-py3-none-any.whl
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/lib/python3.12/site-packages (from Jinja2) (2.1.5)
+Installing collected packages: Jinja2
+Successfully installed Jinja2-3.1.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+
+removed '/root/.cache/pip/selfcheck/241e69162522ccf5846a2f42ebc24b17464915a155679666b89a9f31'
+removed directory '/root/.cache/pip/selfcheck'
+removed '/root/.cache/pip/wheels/fb/ef/cf/1f58c0e9cb1941e91e76da88c981090a45a8e6928aaaad649a/origin.json'
+removed '/root/.cache/pip/wheels/fb/ef/cf/1f58c0e9cb1941e91e76da88c981090a45a8e6928aaaad649a/Jinja2-3.1.3-py3-none-any.whl'
+removed directory '/root/.cache/pip/wheels/fb/ef/cf/1f58c0e9cb1941e91e76da88c981090a45a8e6928aaaad649a'
+removed directory '/root/.cache/pip/wheels/fb/ef/cf'
+removed directory '/root/.cache/pip/wheels/fb/ef'
+removed directory '/root/.cache/pip/wheels/fb'
+removed directory '/root/.cache/pip/wheels'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a.body'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5/3'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5'
+removed directory '/root/.cache/pip/http-v2/a/1/9'
+removed directory '/root/.cache/pip/http-v2/a/1'
+removed directory '/root/.cache/pip/http-v2/a'
+removed directory '/root/.cache/pip/http-v2'
+removed directory '/root/.cache/pip'
+removed directory '/root/.cache'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 16:30:44 UTC 2024
+
+Totalseconds: 2
+
+KB: 1579528	/
+

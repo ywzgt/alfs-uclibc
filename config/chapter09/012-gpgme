@@ -1,0 +1,23 @@
+#!/bin/bash
+# https://git.alpinelinux.org/aports/tree/community/gpgme
+# https://linuxfromscratch.org/blfs/view/svn/postlfs/gpgme.html
+
+SRC="gpgme"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--disable-gpg-test
+
+make
+make install
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	PKG_CONFIG_PATH="/usr/lib32/pkgconfig" \
+	CC="gcc -m32" CXX="g++ -m32" \
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 ${_env[@]}
+	make
+	make DESTDIR=$PWD/pkg install
+	cp -av pkg/usr/lib32/* /usr/lib32
+fi

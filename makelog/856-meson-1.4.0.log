@@ -1,0 +1,82 @@
+Thu May  2 16:22:20 UTC 2024
+KB: 1461448	/
+
+Collecting setuptools
+  Downloading setuptools-69.5.1-py3-none-any.whl.metadata (6.2 kB)
+Downloading setuptools-69.5.1-py3-none-any.whl (894 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 894.6/894.6 kB 28.3 MB/s eta 0:00:00
+Installing collected packages: setuptools
+Successfully installed setuptools-69.5.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Processing /sources/meson-1.4.0
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: meson
+  Building wheel for meson (pyproject.toml): started
+  Building wheel for meson (pyproject.toml): finished with status 'done'
+  Created wheel for meson: filename=meson-1.4.0-py3-none-any.whl size=935471 sha256=3c3798697864b9a6518cc56fd3fb26035753a8239d326890d03f85229728851e
+  Stored in directory: /root/.cache/pip/wheels/8f/de/1b/be6da75323536158049f8d2c1c545fd5b4ae8071d89faa0d70
+Successfully built meson
+Looking in links: dist
+Processing ./dist/meson-1.4.0-py3-none-any.whl
+Installing collected packages: meson
+Successfully installed meson-1.4.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+'data/shell-completions/bash/meson' -> '/usr/share/bash-completion/completions/meson'
+'data/shell-completions/zsh/_meson' -> '/usr/share/zsh/site-functions/_meson'
+
+
+removed '/root/.cache/pip/selfcheck/241e69162522ccf5846a2f42ebc24b17464915a155679666b89a9f31'
+removed directory '/root/.cache/pip/selfcheck'
+removed '/root/.cache/pip/wheels/8f/de/1b/be6da75323536158049f8d2c1c545fd5b4ae8071d89faa0d70/origin.json'
+removed '/root/.cache/pip/wheels/8f/de/1b/be6da75323536158049f8d2c1c545fd5b4ae8071d89faa0d70/meson-1.4.0-py3-none-any.whl'
+removed directory '/root/.cache/pip/wheels/8f/de/1b/be6da75323536158049f8d2c1c545fd5b4ae8071d89faa0d70'
+removed directory '/root/.cache/pip/wheels/8f/de/1b'
+removed directory '/root/.cache/pip/wheels/8f/de'
+removed directory '/root/.cache/pip/wheels/8f'
+removed directory '/root/.cache/pip/wheels'
+removed '/root/.cache/pip/http-v2/8/a/5/c/2/8a5c25879e0fa519e71f04bee44e5e53079068201b0a03c4049f85f2.body'
+removed '/root/.cache/pip/http-v2/8/a/5/c/2/8a5c25879e0fa519e71f04bee44e5e53079068201b0a03c4049f85f2'
+removed directory '/root/.cache/pip/http-v2/8/a/5/c/2'
+removed directory '/root/.cache/pip/http-v2/8/a/5/c'
+removed directory '/root/.cache/pip/http-v2/8/a/5'
+removed directory '/root/.cache/pip/http-v2/8/a'
+removed directory '/root/.cache/pip/http-v2/8'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a.body'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5/3'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5'
+removed directory '/root/.cache/pip/http-v2/a/1/9'
+removed directory '/root/.cache/pip/http-v2/a/1'
+removed directory '/root/.cache/pip/http-v2/a'
+removed '/root/.cache/pip/http-v2/d/5/b/8/f/d5b8f7236b35f73bfa1e1650bd9052da6bbb6dda20b04258b629c27d'
+removed '/root/.cache/pip/http-v2/d/5/b/8/f/d5b8f7236b35f73bfa1e1650bd9052da6bbb6dda20b04258b629c27d.body'
+removed directory '/root/.cache/pip/http-v2/d/5/b/8/f'
+removed directory '/root/.cache/pip/http-v2/d/5/b/8'
+removed directory '/root/.cache/pip/http-v2/d/5/b'
+removed directory '/root/.cache/pip/http-v2/d/5'
+removed directory '/root/.cache/pip/http-v2/d'
+removed '/root/.cache/pip/http-v2/0/4/1/8/c/0418c83b80f7f7bfaec2738bfbbee53d2c1562196c0781702f6eddc8.body'
+removed '/root/.cache/pip/http-v2/0/4/1/8/c/0418c83b80f7f7bfaec2738bfbbee53d2c1562196c0781702f6eddc8'
+removed directory '/root/.cache/pip/http-v2/0/4/1/8/c'
+removed directory '/root/.cache/pip/http-v2/0/4/1/8'
+removed directory '/root/.cache/pip/http-v2/0/4/1'
+removed directory '/root/.cache/pip/http-v2/0/4'
+removed directory '/root/.cache/pip/http-v2/0'
+removed directory '/root/.cache/pip/http-v2'
+removed directory '/root/.cache/pip'
+removed directory '/root/.cache'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 16:22:25 UTC 2024
+
+Totalseconds: 5
+
+KB: 1512236	/
+

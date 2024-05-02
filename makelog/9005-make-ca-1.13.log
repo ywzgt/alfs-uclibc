@@ -1,0 +1,52 @@
+Thu May  2 16:39:49 UTC 2024
+KB: 1647204	/
+
+chmod 755 make-ca
+install -vdm755 /usr/sbin
+if test -x /usr/sbin/systemctl -o -x /usr/bin/systemctl; then \
+    if test -d /usr/lib/systemd/system; then \
+        install -vdm755 /usr/lib/systemd/system; \
+        install -vm644  systemd/* /usr/lib/systemd/system; \
+    elif test -d /lib/systemd/system; then \
+        install -vdm755 /lib/systemd/system; \
+        install -vm644  systemd/* /lib/systemd/system; \
+    fi; \
+fi
+install -vdm755 /etc/make-ca
+install -vdm755 /etc/make-ca
+install -vm755  make-ca /usr/sbin
+install: creating directory '/etc/make-ca'
+install -vm644 make-ca.conf.dist /etc/make-ca
+install -vm644  CS.txt /etc/make-ca
+'make-ca' -> '/usr/sbin/make-ca'
+install -vdm755 /usr/libexec/make-ca
+'make-ca.conf.dist' -> '/etc/make-ca/make-ca.conf.dist'
+install -vdm755 /etc/make-ca
+'CS.txt' -> '/etc/make-ca/CS.txt'
+chmod 755 help2man
+install: creating directory '/usr/libexec/make-ca'
+install -vm700  copy-trust-modifications /usr/libexec/make-ca
+install -vm644 mozilla-ca-root.pem /etc/make-ca
+./help2man -s 8 -N ./make-ca -i include.h2m -o make-ca.8
+'copy-trust-modifications' -> '/usr/libexec/make-ca/copy-trust-modifications'
+'mozilla-ca-root.pem' -> '/etc/make-ca/mozilla-ca-root.pem'
+'systemd/update-pki.service' -> '/usr/lib/systemd/system/update-pki.service'
+'systemd/update-pki.timer' -> '/usr/lib/systemd/system/update-pki.timer'
+install -vdm755 /usr/share/man/man8
+install -vm644 make-ca.8 /usr/share/man/man8
+'make-ca.8' -> '/usr/share/man/man8/make-ca.8'
+removed '/usr/lib/systemd/system/update-pki.timer'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 16:39:49 UTC 2024
+
+Totalseconds: 0
+
+KB: 1647436	/
+

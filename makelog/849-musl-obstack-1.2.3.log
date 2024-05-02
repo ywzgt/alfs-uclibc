@@ -1,0 +1,173 @@
+Thu May  2 16:16:18 UTC 2024
+KB: 1184844	/
+
+libtoolize: putting auxiliary files in '.'.
+libtoolize: linking file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: linking file 'm4/libtool.m4'
+libtoolize: linking file 'm4/ltoptions.m4'
+libtoolize: linking file 'm4/ltsugar.m4'
+libtoolize: linking file 'm4/ltversion.m4'
+libtoolize: linking file 'm4/lt~obsolete.m4'
+configure.ac:12: warning: The macro 'AC_PROG_LIBTOOL' is obsolete.
+configure.ac:12: You should run autoupdate.
+m4/libtool.m4:100: AC_PROG_LIBTOOL is expanded from...
+configure.ac:12: the top level
+configure.ac:11: installing './compile'
+configure.ac:12: installing './config.guess'
+configure.ac:12: installing './config.sub'
+configure.ac:7: installing './install-sh'
+configure.ac:7: installing './missing'
+Makefile.am: installing './INSTALL'
+Makefile.am: installing './depcomp'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for stddef.h... yes
+checking for stdio.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating musl-obstack.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-am
+make[1]: Entering directory '/sources/musl-obstack-1.2.3'
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT obstack.lo -MD -MP -MF .deps/obstack.Tpo -c -o obstack.lo obstack.c
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT obstack_printf.lo -MD -MP -MF .deps/obstack_printf.Tpo -c -o obstack_printf.lo obstack_printf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT obstack.lo -MD -MP -MF .deps/obstack.Tpo -c obstack.c  -fPIC -DPIC -o .libs/obstack.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT obstack_printf.lo -MD -MP -MF .deps/obstack_printf.Tpo -c obstack_printf.c  -fPIC -DPIC -o .libs/obstack_printf.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT obstack_printf.lo -MD -MP -MF .deps/obstack_printf.Tpo -c obstack_printf.c -o obstack_printf.o >/dev/null 2>&1
+mv -f .deps/obstack_printf.Tpo .deps/obstack_printf.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -MT obstack.lo -MD -MP -MF .deps/obstack.Tpo -c obstack.c -o obstack.o >/dev/null 2>&1
+mv -f .deps/obstack.Tpo .deps/obstack.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -version-info 1 -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -o libobstack.la -rpath /usr/lib obstack.lo obstack_printf.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/obstack.o .libs/obstack_printf.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections -Wl,--compress-debug-sections=zstd   -Wl,-soname -Wl,libobstack.so.1 -o .libs/libobstack.so.1.0.0
+libtool: link: (cd ".libs" && rm -f "libobstack.so.1" && ln -s "libobstack.so.1.0.0" "libobstack.so.1")
+libtool: link: (cd ".libs" && rm -f "libobstack.so" && ln -s "libobstack.so.1.0.0" "libobstack.so")
+libtool: link: ar cr .libs/libobstack.a  obstack.o obstack_printf.o
+libtool: link: ranlib .libs/libobstack.a
+libtool: link: ( cd ".libs" && rm -f "libobstack.la" && ln -s "../libobstack.la" "libobstack.la" )
+make[1]: Leaving directory '/sources/musl-obstack-1.2.3'
+make[1]: Entering directory '/sources/musl-obstack-1.2.3'
+ /usr/bin/mkdir -p '/usr/include'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libobstack.la '/usr/lib'
+ /usr/bin/install -c -m 644 obstack.h '/usr/include'
+ /usr/bin/install -c -m 644 musl-obstack.pc '/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libobstack.so.1.0.0 /usr/lib/libobstack.so.1.0.0
+libtool: install: (cd /usr/lib && { ln -s -f libobstack.so.1.0.0 libobstack.so.1 || { rm -f libobstack.so.1 && ln -s libobstack.so.1.0.0 libobstack.so.1; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libobstack.so.1.0.0 libobstack.so || { rm -f libobstack.so && ln -s libobstack.so.1.0.0 libobstack.so; }; })
+libtool: install: /usr/bin/install -c .libs/libobstack.lai /usr/lib/libobstack.la
+libtool: install: /usr/bin/install -c .libs/libobstack.a /usr/lib/libobstack.a
+libtool: install: chmod 644 /usr/lib/libobstack.a
+libtool: install: ranlib /usr/lib/libobstack.a
+libtool: finish: PATH="/usr/bin:/usr/sbin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[1]: Leaving directory '/sources/musl-obstack-1.2.3'
+removed '/usr/lib/libobstack.la'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 16:16:22 UTC 2024
+
+Totalseconds: 4
+
+KB: 1188184	/
+

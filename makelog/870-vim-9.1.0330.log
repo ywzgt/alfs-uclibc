@@ -1,0 +1,1047 @@
+Thu May  2 16:29:24 UTC 2024
+KB: 1534152	/
+
+configure: creating cache auto/config.cache
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for gawk... gawk
+checking for strip... strip
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking if the compiler supports trailing commas... yes
+checking if the compiler supports C++ comments... yes
+checking --enable-fail-if-missing argument... no
+checking for clang version... N/A
+checking for buggy tools... - sh is	'GNU bash, version 5.2.25(1)-release (x86_64-pc-linux-uclibc)
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.' - probably OK.
+checking uname... Linux
+checking uname -r... 6.5.0-1018-azure
+checking uname -m... x86_64
+checking for Haiku... no
+checking for QNX... no
+checking for Darwin (Mac OS X)... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/time.h... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... yes
+checking for AvailabilityMacros.h... no
+checking for dispatch/dispatch.h... no
+checking --with-local-dir argument... Defaulting to /usr/local
+checking --with-vim-name argument... Defaulting to vim
+checking --with-ex-name argument... Defaulting to ex
+checking --with-view-name argument... Defaulting to view
+checking --with-global-runtime argument... no
+checking --with-modified-by argument... no
+checking if character set is EBCDIC... no
+checking --disable-smack argument... no
+checking for linux/xattr.h... yes
+checking for sys/xattr.h... yes
+checking for XATTR_NAME_SMACKEXEC in linux/xattr.h... no
+checking --disable-selinux argument... no
+checking for is_selinux_enabled in -lselinux... no
+checking --enable-xattr argument... yes
+checking for sys/xattr.h... (cached) yes
+checking --with-features argument... Defaulting to huge
+checking --with-compiledby argument... no
+checking --disable-xsmp argument... no
+checking --disable-xsmp-interact argument... no
+checking diff feature... enabled
+checking --enable-luainterp argument... no
+checking --enable-mzschemeinterp argument... no
+checking --enable-perlinterp argument... no
+checking --enable-pythoninterp argument... no
+checking --enable-python3interp argument... no
+checking --enable-tclinterp argument... no
+checking --enable-rubyinterp argument... no
+checking --enable-cscope argument... no
+checking --disable-netbeans argument... no
+checking --disable-channel argument... no
+checking for socket in -lsocket... no
+checking whether compiling with IPv6 networking is possible... yes
+checking for inet_ntop... yes
+checking --enable-terminal argument... defaulting to yes
+checking --enable-autoservername argument... no
+checking --enable-multibyte argument... yes
+checking --disable-rightleft argument... no
+checking --disable-arabic argument... no
+checking --enable-xim argument... defaulting to auto
+checking --enable-fontset argument... no
+defaulting to: don't HAVE_X11
+checking --enable-gui argument... no GUI support
+checking for pkg-config... /usr/bin/pkg-config
+checking for X11/SM/SMlib.h... no
+checking for /proc link to executable... /proc/self/exe
+checking for CYGWIN or MSYS environment... no
+checking whether toupper is broken... no
+checking whether __DATE__ and __TIME__ work... yes
+checking whether __attribute__((unused)) is allowed... yes
+checking for elf.h... yes
+checking for main in -lelf... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/select.h... (cached) yes
+checking for sys/utsname.h... yes
+checking for termcap.h... yes
+checking for fcntl.h... yes
+checking for sgtty.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/time.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for termio.h... yes
+checking for iconv.h... yes
+checking for inttypes.h... (cached) yes
+checking for langinfo.h... yes
+checking for math.h... yes
+checking for unistd.h... (cached) yes
+checking for stropts.h... no
+checking for errno.h... yes
+checking for sys/resource.h... yes
+checking for sys/systeminfo.h... no
+checking for locale.h... yes
+checking for sys/stream.h... no
+checking for termios.h... yes
+checking for libc.h... no
+checking for sys/statfs.h... yes
+checking for poll.h... yes
+checking for sys/poll.h... yes
+checking for pwd.h... yes
+checking for utime.h... yes
+checking for sys/param.h... yes
+checking for sys/ptms.h... no
+checking for libintl.h... yes
+checking for libgen.h... yes
+checking for util/debug.h... no
+checking for util/msg18n.h... no
+checking for frame.h... no
+checking for sys/acl.h... yes
+checking for sys/access.h... no
+checking for sys/sysinfo.h... yes
+checking for wchar.h... yes
+checking for wctype.h... yes
+checking for sys/ptem.h... no
+checking for sys/sysctl.h... yes
+checking for pthread_np.h... no
+checking for strings.h... (cached) yes
+checking if strings.h can be included after string.h... yes
+checking whether gcc needs -traditional... no
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking for uint32_t... yes
+checking for ino_t... yes
+checking for dev_t... yes
+checking whether byte ordering is bigendian... no
+checking for inline... inline
+checking for rlim_t... yes
+checking for stack_t... yes
+checking whether stack_t has an ss_base field... no
+checking --with-tlib argument... empty: automatic terminal library selection
+checking for tgetent in -ltinfo... yes
+checking whether we talk terminfo... yes
+checking what tgetent() returns for an unknown terminal... zero
+checking whether termcap.h contains ospeed... yes
+checking whether termcap.h contains UP, BC and PC... yes
+checking whether tputs() uses outfuntype... no
+checking whether del_curterm() can be used... yes
+checking whether sys/select.h and sys/time.h may both be included... yes
+checking for /dev/ptc... no
+checking for SVR4 ptys... yes
+checking for ptyranges... don't know
+checking for struct sigcontext... yes
+checking getcwd implementation is broken... no
+checking for fchdir... yes
+checking for fchown... yes
+checking for fchmod... yes
+checking for fsync... yes
+checking for getcwd... yes
+checking for getpseudotty... no
+checking for getpwent... yes
+checking for getpwnam... yes
+checking for getpwuid... yes
+checking for getrlimit... yes
+checking for gettimeofday... yes
+checking for localtime_r... yes
+checking for lstat... yes
+checking for memset... yes
+checking for mkdtemp... yes
+checking for nanosleep... yes
+checking for opendir... yes
+checking for putenv... yes
+checking for qsort... yes
+checking for readlink... yes
+checking for select... yes
+checking for setenv... yes
+checking for getpgid... yes
+checking for setpgid... yes
+checking for setsid... yes
+checking for sigaltstack... yes
+checking for sigstack... no
+checking for sigset... no
+checking for sigsetjmp... no
+checking for sigaction... yes
+checking for sigprocmask... yes
+checking for sigvec... no
+checking for strcasecmp... yes
+checking for strcoll... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for stricmp... no
+checking for strncasecmp... yes
+checking for strnicmp... no
+checking for strpbrk... yes
+checking for strptime... yes
+checking for strtol... yes
+checking for tgetent... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for iswupper... yes
+checking for tzset... yes
+checking for usleep... yes
+checking for utime... yes
+checking for utimes... yes
+checking for mblen... yes
+checking for ftruncate... yes
+checking for unsetenv... yes
+checking for posix_openpt... yes
+checking for clock_gettime... yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking --enable-canberra argument... Defaulting to yes
+checking for libcanberra... no; try installing libcanberra-dev
+checking --enable-libsodium argument... Defaulting to yes
+checking for libsodium... no; try installing libsodium-dev
+checking for st_blksize... yes
+checking for timer_create without -lrt... yes
+checking whether stat() ignores a trailing slash... no
+checking for nanoseconds field of struct stat... st_mtim.tv_nsec
+checking for iconv_open()... yes; with -liconv
+checking for nl_langinfo(CODESET)... yes
+checking for strtod in -lm... yes
+checking for isinf()... yes
+checking for isnan()... yes
+checking --disable-acl argument... no
+checking for acl_get_file in -lposix1e... no
+checking for acl_get_file in -lacl... yes
+checking for fgetxattr in -lattr... yes
+checking for POSIX ACL support... yes
+checking for acl_get in -lsec... no
+checking for Solaris ACL support... no
+checking for AIX ACL support... no
+checking --enable-gpm argument... yes
+checking for gpm... no
+checking --disable-sysmouse argument... no
+checking for sysmouse... no
+checking for FD_CLOEXEC... yes
+checking for rename... yes
+checking for dirfd... yes
+checking for flock... yes
+checking for sysctl... not usable
+checking for sysinfo... yes
+checking for sysinfo.mem_unit... yes
+checking for sysinfo.uptime... yes
+checking for sysconf... yes
+checking for _SC_SIGSTKSZ via sysconf()... not usable
+checking size of int... 4
+checking size of long... 8
+checking size of time_t... 8
+checking size of off_t... 8
+checking uint32_t is 32 bits... ok
+checking whether memmove handles overlaps... yes
+checking for _xpg4_setrunelocale in -lxpg4... no
+checking how to create tags... ctags
+checking how to run man with a section nr... man
+checking --disable-nls argument... no
+checking for msgfmt... msgfmt
+checking for NLS... gettext() works with -lintl
+checking for bind_textdomain_codeset... yes
+checking for _nl_msg_cat_cntr... yes
+checking if msgfmt supports --desktop... yes
+checking if msgfmt supports --no-convert... yes
+checking for dlfcn.h... yes
+checking for dlopen()... yes
+checking for dlsym()... yes
+checking for setjmp.h... yes
+checking for GCC 3 or later... yes
+checking whether we need -D_FORTIFY_SOURCE=1... yes
+checking whether we need to force -D_FILE_OFFSET_BITS=64... no
+checking linker --as-needed support... yes
+configure: updating cache auto/config.cache
+configure: creating auto/config.status
+config.status: creating auto/config.mk
+config.status: creating auto/config.h
+Starting make in the src directory.
+If there are problems, cd to the src directory and run make there
+cd src && make first
+make[1]: Entering directory '/sources/vim-9.1.0330/src'
+/bin/sh install-sh -c -d objects
+CC="gcc -Iproto -DHAVE_CONFIG_H   -DNDEBUG    " srcdir=. sh ./osdef.sh
+creating auto/pathdef.c
+cd xxd; CC="gcc" CFLAGS="-DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1" LDFLAGS="-Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/usr/local/lib" \
+	make -f Makefile
+make[2]: Entering directory '/sources/vim-9.1.0330/src/xxd'
+gcc -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1 -DNDEBUG -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/usr/local/lib -DUNIX -o xxd xxd.c 
+touch objects/.dirstamp
+make[2]: Entering directory '/sources/vim-9.1.0330/src/po'
+OLD_PO_FILE_INPUT=yes msgfmt --no-convert -v -o hu.mo hu.po
+1684 translated messages.
+OLD_PO_FILE_INPUT=yes msgfmt --no-convert -v -o zh_CN.UTF-8.mo zh_CN.UTF-8.po
+gcc -c -I. -Ilibvterm/include -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -DINLINE="" -DVSNPRINTF=vim_vsnprintf -DSNPRINTF=vim_snprintf -DIS_COMBINING_FUNCTION=utf_iscomposing_uint -DWCWIDTH_FUNCTION=utf_uint2cells -o objects/vterm_encoding.o libvterm/src/encoding.c
+2800 translated messages.
+OLD_PO_FILE_INPUT=yes msgfmt --no-convert -v -o zh_TW.UTF-8.mo zh_TW.UTF-8.po
+1410 translated messages.
+make[2]: Leaving directory '/sources/vim-9.1.0330/src/po'
+make[2]: Entering directory '/sources/vim-9.1.0330/src/po'
+OLD_PO_FILE_INPUT=yes msgfmt --no-convert -v -o zh_CN.mo zh_CN.po
+2800 translated messages.
+OLD_PO_FILE_INPUT=yes msgfmt --no-convert -v -o zh_CN.cp936.mo zh_CN.cp936.po
+2800 translated messages.
+OLD_PO_FILE_INPUT=yes msgfmt --no-convert -v -o zh_TW.mo zh_TW.po
+1410 translated messages.
+make[2]: Leaving directory '/sources/vim-9.1.0330/src/po'
+gcc -c -I. -Ilibvterm/include -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -DINLINE="" -DVSNPRINTF=vim_vsnprintf -DSNPRINTF=vim_snprintf -DIS_COMBINING_FUNCTION=utf_iscomposing_uint -DWCWIDTH_FUNCTION=utf_uint2cells -o objects/vterm_keyboard.o libvterm/src/keyboard.c
+gcc -c -I. -Ilibvterm/include -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -DINLINE="" -DVSNPRINTF=vim_vsnprintf -DSNPRINTF=vim_snprintf -DIS_COMBINING_FUNCTION=utf_iscomposing_uint -DWCWIDTH_FUNCTION=utf_uint2cells -o objects/vterm_mouse.o libvterm/src/mouse.c
+gcc -c -I. -Ilibvterm/include -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -DINLINE="" -DVSNPRINTF=vim_vsnprintf -DSNPRINTF=vim_snprintf -DIS_COMBINING_FUNCTION=utf_iscomposing_uint -DWCWIDTH_FUNCTION=utf_uint2cells -o objects/vterm_parser.o libvterm/src/parser.c
+gcc -c -I. -Ilibvterm/include -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -DINLINE="" -DVSNPRINTF=vim_vsnprintf -DSNPRINTF=vim_snprintf -DIS_COMBINING_FUNCTION=utf_iscomposing_uint -DWCWIDTH_FUNCTION=utf_uint2cells -o objects/vterm_pen.o libvterm/src/pen.c
+gcc -c -I. -Ilibvterm/include -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -DINLINE="" -DVSNPRINTF=vim_vsnprintf -DSNPRINTF=vim_snprintf -DIS_COMBINING_FUNCTION=utf_iscomposing_uint -DWCWIDTH_FUNCTION=utf_uint2cells -o objects/vterm_screen.o libvterm/src/screen.c
+gcc -c -I. -Ilibvterm/include -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -DINLINE="" -DVSNPRINTF=vim_vsnprintf -DSNPRINTF=vim_snprintf -DIS_COMBINING_FUNCTION=utf_iscomposing_uint -DWCWIDTH_FUNCTION=utf_uint2cells -o objects/vterm_state.o libvterm/src/state.c
+gcc -c -I. -Ilibvterm/include -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -DINLINE="" -DVSNPRINTF=vim_vsnprintf -DSNPRINTF=vim_snprintf -DIS_COMBINING_FUNCTION=utf_iscomposing_uint -DWCWIDTH_FUNCTION=utf_uint2cells -o objects/vterm_unicode.o libvterm/src/unicode.c
+make[2]: Leaving directory '/sources/vim-9.1.0330/src/xxd'
+gcc -c -I. -Ilibvterm/include -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -DINLINE="" -DVSNPRINTF=vim_vsnprintf -DSNPRINTF=vim_snprintf -DIS_COMBINING_FUNCTION=utf_iscomposing_uint -DWCWIDTH_FUNCTION=utf_uint2cells -o objects/vterm_vterm.o libvterm/src/vterm.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/netbeans.o netbeans.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/job.o job.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/channel.o channel.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/xdiffi.o xdiff/xdiffi.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/xemit.o xdiff/xemit.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/xprepare.o xdiff/xprepare.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/xutils.o xdiff/xutils.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/xhistogram.o xdiff/xhistogram.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/xpatience.o xdiff/xpatience.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/charset.o charset.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/json.o json.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/main.o main.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/memfile.o memfile.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/message.o message.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/alloc.o alloc.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/arabic.o arabic.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/arglist.o arglist.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/autocmd.o autocmd.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/beval.o beval.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/buffer.o buffer.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/change.o change.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/blob.o blob.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/blowfish.o blowfish.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/cindent.o cindent.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/clientserver.o clientserver.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/clipboard.o clipboard.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/cmdexpand.o cmdexpand.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/cmdhist.o cmdhist.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/crypt.o crypt.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/crypt_zip.o crypt_zip.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/debugger.o debugger.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/dict.o dict.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/diff.o diff.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/digraph.o digraph.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/drawline.o drawline.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/drawscreen.o drawscreen.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/edit.o edit.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/eval.o eval.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/evalbuffer.o evalbuffer.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/evalfunc.o evalfunc.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/evalvars.o evalvars.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/evalwindow.o evalwindow.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/ex_cmds.o ex_cmds.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/ex_cmds2.o ex_cmds2.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/ex_docmd.o ex_docmd.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/ex_eval.o ex_eval.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/ex_getln.o ex_getln.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/fileio.o fileio.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/filepath.o filepath.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/findfile.o findfile.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/float.o float.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/fold.o fold.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/getchar.o getchar.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/gui_xim.o gui_xim.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/hardcopy.o hardcopy.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/hashtab.o hashtab.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/help.o help.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/highlight.o highlight.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/if_cscope.o if_cscope.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/if_xcmdsrv.o if_xcmdsrv.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/indent.o indent.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/insexpand.o insexpand.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/list.o list.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/locale.o locale.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/logfile.o logfile.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/map.o map.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/mark.o mark.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/match.o match.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/mbyte.o mbyte.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/memline.o memline.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/menu.o menu.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/misc1.o misc1.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/misc2.o misc2.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/mouse.o mouse.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/move.o move.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/normal.o normal.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/ops.o ops.c
+gcc -c -I.       -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1              -o objects/option.o option.c
+gcc -c -I.       -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1              -o objects/optionstr.o optionstr.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/os_unix.o os_unix.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/pathdef.o auto/pathdef.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/popupmenu.o popupmenu.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/popupwin.o popupwin.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/profiler.o profiler.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/pty.o pty.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/quickfix.o quickfix.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/regexp.o regexp.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/register.o register.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/screen.o screen.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/scriptfile.o scriptfile.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/search.o search.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/session.o session.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/sha256.o sha256.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/sign.o sign.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/sound.o sound.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/spell.o spell.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/spellfile.o spellfile.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/spellsuggest.o spellsuggest.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/strings.o strings.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/syntax.o syntax.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/tag.o tag.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/term.o term.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/terminal.o terminal.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/testing.o testing.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/textformat.o textformat.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/textobject.o textobject.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/textprop.o textprop.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/time.o time.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/typval.o typval.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/ui.o ui.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/undo.o undo.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/usercmd.o usercmd.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/userfunc.o userfunc.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/version.o version.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/vim9class.o vim9class.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/vim9cmds.o vim9cmds.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/vim9compile.o vim9compile.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/vim9execute.o vim9execute.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/vim9expr.o vim9expr.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/vim9instr.o vim9instr.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/vim9script.o vim9script.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/vim9type.o vim9type.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/viminfo.o viminfo.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/window.o window.c
+gcc -c -I. -Iproto -DHAVE_CONFIG_H   -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -D_REENTRANT -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1        -o objects/bufwrite.o bufwrite.c
+link.sh: $LINK_AS_NEEDED set to 'yes': invoking linker directly.
+  gcc   -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd -L/usr/local/lib 	-o vim objects/alloc.o objects/arabic.o objects/arglist.o objects/autocmd.o objects/beval.o objects/buffer.o objects/change.o objects/blob.o objects/blowfish.o objects/cindent.o objects/clientserver.o objects/clipboard.o objects/cmdexpand.o objects/cmdhist.o objects/crypt.o objects/crypt_zip.o objects/debugger.o objects/dict.o objects/diff.o objects/digraph.o objects/drawline.o objects/drawscreen.o objects/edit.o objects/eval.o objects/evalbuffer.o objects/evalfunc.o objects/evalvars.o objects/evalwindow.o objects/ex_cmds.o objects/ex_cmds2.o objects/ex_docmd.o objects/ex_eval.o objects/ex_getln.o objects/fileio.o objects/filepath.o objects/findfile.o objects/float.o objects/fold.o objects/getchar.o objects/gui_xim.o objects/hardcopy.o objects/hashtab.o objects/help.o objects/highlight.o objects/if_cscope.o objects/if_xcmdsrv.o objects/indent.o objects/insexpand.o objects/list.o objects/locale.o objects/logfile.o objects/map.o objects/mark.o objects/match.o objects/mbyte.o objects/memline.o objects/menu.o objects/misc1.o objects/misc2.o objects/mouse.o objects/move.o objects/normal.o objects/ops.o objects/option.o objects/optionstr.o objects/os_unix.o objects/pathdef.o objects/popupmenu.o objects/popupwin.o objects/profiler.o objects/pty.o objects/quickfix.o objects/regexp.o objects/register.o objects/screen.o objects/scriptfile.o objects/search.o objects/session.o objects/sha256.o objects/sign.o objects/sound.o objects/spell.o objects/spellfile.o objects/spellsuggest.o objects/strings.o objects/syntax.o objects/tag.o objects/term.o objects/terminal.o objects/testing.o objects/textformat.o objects/textobject.o objects/textprop.o objects/time.o objects/typval.o objects/ui.o objects/undo.o objects/usercmd.o objects/userfunc.o objects/version.o objects/vim9class.o objects/vim9cmds.o objects/vim9compile.o objects/vim9execute.o objects/vim9expr.o objects/vim9instr.o objects/vim9script.o objects/vim9type.o objects/viminfo.o objects/window.o objects/bufwrite.o  objects/vterm_encoding.o objects/vterm_keyboard.o objects/vterm_mouse.o objects/vterm_parser.o objects/vterm_pen.o objects/vterm_screen.o objects/vterm_state.o objects/vterm_unicode.o objects/vterm_vterm.o         objects/netbeans.o objects/job.o objects/channel.o objects/xdiffi.o objects/xemit.o objects/xprepare.o objects/xutils.o objects/xhistogram.o objects/xpatience.o  objects/charset.o objects/json.o objects/main.o objects/memfile.o objects/message.o        -lm -ltinfo -lelf  -liconv -lacl -lattr -lintl           
+link.sh: Linked fine
+make[1]: Leaving directory '/sources/vim-9.1.0330/src'
+Starting make in the src directory.
+If there are problems, cd to the src directory and run make there
+cd src && make install
+make[1]: Entering directory '/sources/vim-9.1.0330/src'
+if test -f /usr/bin/vim; then \
+  mv -f /usr/bin/vim /usr/bin/vim.rm; \
+  rm -f /usr/bin/vim.rm; \
+fi
+cp vimtutor /usr/bin/vimtutor
+/bin/sh install-sh -c -d /usr/share/vim
+/bin/sh install-sh -c -d /usr/share/vim/vim91
+chmod 755 /usr/bin/vimtutor
+cp vim /usr/bin
+/bin/sh install-sh -c -d /usr/share/vim/vim91/doc
+strip /usr/bin/vim
+chmod 755 /usr/share/vim
+chmod 755 /usr/share/vim/vim91
+/bin/sh install-sh -c -d /usr/share/vim/vim91/print
+/bin/sh install-sh -c -d /usr/share/vim/vim91/colors
+chmod 755 /usr/share/vim/vim91/doc
+/bin/sh install-sh -c -d /usr/share/vim/vim91/syntax
+chmod 755 /usr/share/vim/vim91/print
+chmod 755 /usr/share/vim/vim91/colors
+/bin/sh install-sh -c -d /usr/share/vim/vim91/syntax/modula2
+/bin/sh install-sh -c -d /usr/share/vim/vim91/syntax/modula2/opt
+chmod 755 /usr/share/vim/vim91/syntax
+/bin/sh install-sh -c -d /usr/share/vim/vim91/syntax/shared
+chmod 755 /usr/bin/vim
+/bin/sh install-sh -c -d /usr/share/vim/vim91/indent
+chmod 755 /usr/share/vim/vim91/syntax/modula2
+chmod 755 /usr/share/vim/vim91/syntax/modula2/opt
+/bin/sh install-sh -c -d /usr/share/vim/vim91/ftplugin
+/bin/sh install-sh -c -d /usr/share/vim/vim91/autoload
+chmod 755 /usr/share/vim/vim91/syntax/shared
+/bin/sh install-sh -c -d /usr/share/vim/vim91/autoload/dist
+chmod 755 /usr/share/vim/vim91/indent
+/bin/sh install-sh -c -d /usr/share/vim/vim91/autoload/xml
+chmod 755 /usr/share/vim/vim91/ftplugin
+chmod 755 /usr/share/vim/vim91/autoload
+/bin/sh install-sh -c -d /usr/share/vim/vim91/autoload/zig
+/bin/sh install-sh -c -d /usr/share/vim/vim91/import
+chmod 755 /usr/share/vim/vim91/autoload/dist
+/bin/sh install-sh -c -d /usr/share/vim/vim91/import/dist
+chmod 755 /usr/share/vim/vim91/autoload/xml
+/bin/sh install-sh -c -d /usr/share/vim/vim91/plugin
+chmod 755 /usr/share/vim/vim91/autoload/zig
+chmod 755 /usr/share/vim/vim91/import
+/bin/sh install-sh -c -d /usr/share/vim/vim91/tutor
+/bin/sh install-sh -c -d /usr/share/vim/vim91/spell
+chmod 755 /usr/share/vim/vim91/import/dist
+chmod 755 /usr/share/vim/vim91/plugin
+/bin/sh install-sh -c -d /usr/share/vim/vim91/compiler
+/bin/sh install-sh -c -d /usr/share/vim/vim91/macros
+chmod 755 /usr/share/vim/vim91/tutor
+chmod 755 /usr/share/vim/vim91/spell
+/bin/sh install-sh -c -d /usr/share/vim/vim91/pack
+cp ../runtime/tutor/README* ../runtime/tutor/tutor* /usr/share/vim/vim91/tutor
+chmod 755 /usr/share/vim/vim91/macros
+chmod 755 /usr/share/vim/vim91/compiler
+if test -f ../runtime/spell/en.latin1.spl; then \
+  cp ../runtime/spell/*.spl ../runtime/spell/*.sug ../runtime/spell/*.vim /usr/share/vim/vim91/spell; \
+  chmod 644 /usr/share/vim/vim91/spell/*.spl /usr/share/vim/vim91/spell/*.sug /usr/share/vim/vim91/spell/*.vim; \
+fi
+cd /usr/bin; ln -s vim ex
+cd /usr/bin; ln -s vim view
+cd /usr/bin; ln -s vim rvim
+chmod 755 /usr/share/vim/vim91/pack
+cd /usr/bin; ln -s vim rview
+cd /usr/bin; ln -s vim vimdiff
+rm -f /usr/share/vim/vim91/tutor/*.info
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+/bin/sh install-sh -c -d /usr/share/vim/vim91/tools
+/bin/sh ./installman.sh xxd /usr/share/man/da/man1 "-da" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+chmod 644 /usr/share/vim/vim91/tutor/*
+/bin/sh ./installman.sh xxd /usr/share/man/da.ISO8859-1/man1 "-da" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh install-sh -c -d /usr/share/vim/vim91/lang
+make[2]: Entering directory '/sources/vim-9.1.0330/src/po'
+make[2]: Nothing to be done for 'originals'.
+make[2]: Leaving directory '/sources/vim-9.1.0330/src/po'
+creating /usr/share/man/da.ISO8859-1/man1
+chmod 755 /usr/share/vim/vim91/tools
+/bin/sh install-sh -c -d /usr/share/vim/vim91/keymap
+make[2]: Entering directory '/sources/vim-9.1.0330/src/po'
+make[2]: Nothing to be done for 'converted'.
+make[2]: Leaving directory '/sources/vim-9.1.0330/src/po'
+if test -n ""; then \
+	/bin/sh install-sh -c -d /usr/share/icons/hicolor/48x48/apps /usr/share/icons/locolor/32x32/apps \
+	/usr/share/icons/locolor/16x16/apps /usr/share/applications; \
+fi
+if test -d /usr/share/icons/hicolor/48x48/apps -a -w /usr/share/icons/hicolor/48x48/apps \
+	-a ! -f /usr/share/icons/hicolor/48x48/apps/gvim.png; then \
+   cp ../runtime/vim48x48.png /usr/share/icons/hicolor/48x48/apps/gvim.png; \
+   if test -z "" -a -x "" \
+	   -a -w /usr/share/icons/hicolor \
+	   -a -f /usr/share/icons/hicolor/index.theme; then \
+	 -q /usr/share/icons/hicolor; \
+   fi \
+fi
+chmod 755 /usr/share/vim/vim91/lang
+if test -d /usr/share/icons/locolor/32x32/apps -a -w /usr/share/icons/locolor/32x32/apps \
+	-a ! -f /usr/share/icons/locolor/32x32/apps/gvim.png; then \
+   cp ../runtime/vim32x32.png /usr/share/icons/locolor/32x32/apps/gvim.png; \
+fi
+/bin/sh ./installman.sh install /usr/share/man/man1 "" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+if test -d /usr/share/icons/locolor/16x16/apps -a -w /usr/share/icons/locolor/16x16/apps \
+	-a ! -f /usr/share/icons/locolor/16x16/apps/gvim.png; then \
+   cp ../runtime/vim16x16.png /usr/share/icons/locolor/16x16/apps/gvim.png; \
+fi
+if test -d /usr/share/applications -a -w /usr/share/applications; then \
+   if test -f po/vim.desktop -a -f po/gvim.desktop; then \
+	cp po/vim.desktop po/gvim.desktop \
+		/usr/share/applications; \
+   else \
+	cp ../runtime/vim.desktop \
+		../runtime/gvim.desktop \
+		/usr/share/applications; \
+   fi; \
+   if test -z "" -a -x ""; then \
+       -q /usr/share/applications; \
+   fi \
+fi
+installing /usr/share/man/man1/vim.1
+/bin/sh ./installman.sh xxd /usr/share/man/da.UTF-8/man1 "-da.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+cp -r ../runtime/macros/* /usr/share/vim/vim91/macros
+creating /usr/share/man/da.UTF-8/man1
+chmod 755 /usr/share/vim/vim91/keymap
+cp -r ../runtime/pack/* /usr/share/vim/vim91/pack
+installing /usr/share/man/man1/vimtutor.1
+chmod 755 `find /usr/share/vim/vim91/macros -type d -print`
+installing /usr/share/man/man1/vimdiff.1
+installing /usr/share/man/man1/evim.1
+chmod 644 `find /usr/share/vim/vim91/macros -type f -print`
+chmod 755 `find /usr/share/vim/vim91/pack -type d -print`
+cd ../runtime/doc; if test -z "" -a -f tags; then \
+	mv -f tags tags.dist; fi
+chmod 755 /usr/share/vim/vim91/macros/less.sh
+cvs=`find /usr/share/vim/vim91/macros \( -name CVS -o -name AAPDIR -o -name "*.info" \) -print`; \
+      if test -n "$cvs"; then \
+	 rm -rf $cvs; \
+      fi
+chmod 644 `find /usr/share/vim/vim91/pack -type f -print`
+/bin/sh ./installman.sh xxd /usr/share/man/de/man1 "-de" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+generating help tags
+# We can assume Vim was build, but it may not have been installed,
+# thus use the executable in the current directory.
+/bin/sh ./installman.sh xxd /usr/share/man/de.ISO8859-1/man1 "-de" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh install /usr/share/man/da/man1 "-da" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+creating /usr/share/man/de.ISO8859-1/man1
+installing /usr/share/man/da/man1/vim.1
+make[2]: Entering directory '/sources/vim-9.1.0330/runtime/doc'
+installing /usr/share/man/da/man1/vimtutor.1
+installing /usr/share/man/da/man1/vimdiff.1
+/bin/sh ./installman.sh install /usr/share/man/da.ISO8859-1/man1 "-da" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/de.UTF-8/man1 "-de.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/da.ISO8859-1/man1/vim.1
+creating /usr/share/man/de.UTF-8/man1
+installing /usr/share/man/da.ISO8859-1/man1/vimtutor.1
+installing /usr/share/man/da.ISO8859-1/man1/vimdiff.1
+/bin/sh ./installman.sh install /usr/share/man/da.UTF-8/man1 "-da.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/fr/man1 "-fr" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/da.UTF-8/man1/vim.1
+installing /usr/share/man/fr/man1/xxd.1
+/bin/sh ./installman.sh xxd /usr/share/man/fr.ISO8859-1/man1 "-fr" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/da.UTF-8/man1/vimtutor.1
+creating /usr/share/man/fr.ISO8859-1/man1
+installing /usr/share/man/da.UTF-8/man1/vimdiff.1
+/bin/sh ./installman.sh install /usr/share/man/de/man1 "-de" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/de/man1/vim.1
+installing /usr/share/man/fr.ISO8859-1/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/de.ISO8859-1/man1 "-de" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/fr.UTF-8/man1 "-fr.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/de.ISO8859-1/man1/vim.1
+creating /usr/share/man/fr.UTF-8/man1
+/bin/sh ./installman.sh install /usr/share/man/de.UTF-8/man1 "-de.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/de.UTF-8/man1/vim.1
+installing /usr/share/man/fr.UTF-8/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/fr/man1 "-fr" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/it/man1 "-it" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+creating /usr/share/man/it/man1
+installing /usr/share/man/fr/man1/vim.1
+installing /usr/share/man/fr/man1/vimtutor.1
+installing /usr/share/man/fr/man1/vimdiff.1
+installing /usr/share/man/fr/man1/evim.1
+installing /usr/share/man/it/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/fr.ISO8859-1/man1 "-fr" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/it.ISO8859-1/man1 "-it" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+help tags updated
+make[2]: Leaving directory '/sources/vim-9.1.0330/runtime/doc'
+cd ../runtime/doc; \
+	files=`ls *.txt tags`; \
+	files="$files `ls *.??x tags-?? 2>/dev/null || true`"; \
+	cp $files  /usr/share/vim/vim91/doc; \
+	cd /usr/share/vim/vim91/doc; \
+	chmod 644 $files
+creating /usr/share/man/it.ISO8859-1/man1
+installing /usr/share/man/fr.ISO8859-1/man1/vim.1
+installing /usr/share/man/fr.ISO8859-1/man1/vimtutor.1
+installing /usr/share/man/fr.ISO8859-1/man1/vimdiff.1
+installing /usr/share/man/fr.ISO8859-1/man1/evim.1
+installing /usr/share/man/it.ISO8859-1/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/fr.UTF-8/man1 "-fr.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/it.UTF-8/man1 "-it.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+creating /usr/share/man/it.UTF-8/man1
+installing /usr/share/man/fr.UTF-8/man1/vim.1
+installing /usr/share/man/fr.UTF-8/man1/vimtutor.1
+installing /usr/share/man/fr.UTF-8/man1/vimdiff.1
+installing /usr/share/man/fr.UTF-8/man1/evim.1
+installing /usr/share/man/it.UTF-8/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/it/man1 "-it" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/ja/man1 "-ja.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/it/man1/vim.1
+creating /usr/share/man/ja/man1
+cp  ../runtime/doc/*.pl /usr/share/vim/vim91/doc
+installing /usr/share/man/it/man1/vimtutor.1
+chmod 755 /usr/share/vim/vim91/doc/*.pl
+installing /usr/share/man/it/man1/vimdiff.1
+cd ../runtime/doc; if test -f tags.dist; then mv -f tags.dist tags; fi
+installing /usr/share/man/it/man1/evim.1
+cp ../runtime/menu.vim /usr/share/vim/vim91/menu.vim
+chmod 644 /usr/share/vim/vim91/menu.vim
+/bin/sh ./installman.sh install /usr/share/man/it.ISO8859-1/man1 "-it" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+cp ../runtime/synmenu.vim /usr/share/vim/vim91/synmenu.vim
+installing /usr/share/man/ja/man1/xxd.1
+chmod 644 /usr/share/vim/vim91/synmenu.vim
+cp ../runtime/delmenu.vim /usr/share/vim/vim91/delmenu.vim
+chmod 644 /usr/share/vim/vim91/delmenu.vim
+/bin/sh ./installman.sh xxd /usr/share/man/pl/man1 "-pl" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/it.ISO8859-1/man1/vim.1
+cp ../runtime/defaults.vim /usr/share/vim/vim91/defaults.vim
+chmod 644 /usr/share/vim/vim91/defaults.vim
+cp ../runtime/evim.vim /usr/share/vim/vim91/evim.vim
+creating /usr/share/man/pl/man1
+chmod 644 /usr/share/vim/vim91/evim.vim
+cp ../runtime/mswin.vim /usr/share/vim/vim91/mswin.vim
+chmod 644 /usr/share/vim/vim91/mswin.vim
+cp ../runtime/bugreport.vim /usr/share/vim/vim91/bugreport.vim
+installing /usr/share/man/it.ISO8859-1/man1/vimtutor.1
+chmod 644 /usr/share/vim/vim91/bugreport.vim
+cp ../runtime/vimrc_example.vim /usr/share/vim/vim91
+chmod 644 /usr/share/vim/vim91/vimrc_example.vim
+installing /usr/share/man/it.ISO8859-1/man1/vimdiff.1
+cp ../runtime/gvimrc_example.vim /usr/share/vim/vim91
+chmod 644 /usr/share/vim/vim91/gvimrc_example.vim
+cp ../runtime/filetype.vim /usr/share/vim/vim91/filetype.vim
+installing /usr/share/man/it.ISO8859-1/man1/evim.1
+chmod 644 /usr/share/vim/vim91/filetype.vim
+cp ../runtime/ftoff.vim /usr/share/vim/vim91/ftoff.vim
+chmod 644 /usr/share/vim/vim91/ftoff.vim
+installing /usr/share/man/pl/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/it.UTF-8/man1 "-it.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+cp ../runtime/scripts.vim /usr/share/vim/vim91/scripts.vim
+chmod 644 /usr/share/vim/vim91/scripts.vim
+cp ../runtime/ftplugin.vim /usr/share/vim/vim91/ftplugin.vim
+/bin/sh ./installman.sh xxd /usr/share/man/pl.ISO8859-2/man1 "-pl" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+chmod 644 /usr/share/vim/vim91/ftplugin.vim
+cp ../runtime/ftplugof.vim /usr/share/vim/vim91/ftplugof.vim
+installing /usr/share/man/it.UTF-8/man1/vim.1
+chmod 644 /usr/share/vim/vim91/ftplugof.vim
+creating /usr/share/man/pl.ISO8859-2/man1
+cp ../runtime/indent.vim /usr/share/vim/vim91/indent.vim
+chmod 644 /usr/share/vim/vim91/indent.vim
+cp ../runtime/indoff.vim /usr/share/vim/vim91/indoff.vim
+chmod 644 /usr/share/vim/vim91/indoff.vim
+cp ../runtime/optwin.vim /usr/share/vim/vim91/optwin.vim
+installing /usr/share/man/it.UTF-8/man1/vimtutor.1
+chmod 644 /usr/share/vim/vim91/optwin.vim
+cd ../runtime/print; cp *.ps /usr/share/vim/vim91/print
+installing /usr/share/man/it.UTF-8/man1/vimdiff.1
+installing /usr/share/man/it.UTF-8/man1/evim.1
+cd /usr/share/vim/vim91/print; chmod 644 *.ps
+installing /usr/share/man/pl.ISO8859-2/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/ja/man1 "-ja.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/pl.UTF-8/man1 "-pl.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+cd ../runtime/colors; cp -r *.vim lists tools README.txt /usr/share/vim/vim91/colors
+installing /usr/share/man/ja/man1/vim.1
+creating /usr/share/man/pl.UTF-8/man1
+cd /usr/share/vim/vim91/colors; chmod 755 lists tools
+cd /usr/share/vim/vim91/colors; chmod 644 *.vim README.txt lists/*.vim tools/*.vim
+installing /usr/share/man/ja/man1/vimtutor.1
+installing /usr/share/man/ja/man1/vimdiff.1
+cd ../runtime/syntax; cp *.vim README.txt /usr/share/vim/vim91/syntax
+installing /usr/share/man/ja/man1/evim.1
+installing /usr/share/man/pl.UTF-8/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/pl/man1 "-pl" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/ru.KOI8-R/man1 "-ru" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/pl/man1/vim.1
+creating /usr/share/man/ru.KOI8-R/man1
+installing /usr/share/man/pl/man1/vimtutor.1
+installing /usr/share/man/pl/man1/vimdiff.1
+installing /usr/share/man/pl/man1/evim.1
+installing /usr/share/man/ru.KOI8-R/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/pl.ISO8859-2/man1 "-pl" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/ru.UTF-8/man1 "-ru.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/pl.ISO8859-2/man1/vim.1
+creating /usr/share/man/ru.UTF-8/man1
+installing /usr/share/man/pl.ISO8859-2/man1/vimtutor.1
+installing /usr/share/man/pl.ISO8859-2/man1/vimdiff.1
+installing /usr/share/man/pl.ISO8859-2/man1/evim.1
+installing /usr/share/man/ru.UTF-8/man1/xxd.1
+/bin/sh ./installman.sh install /usr/share/man/pl.UTF-8/man1 "-pl.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh xxd /usr/share/man/tr/man1 "-tr" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/pl.UTF-8/man1/vim.1
+creating /usr/share/man/tr/man1
+installing /usr/share/man/pl.UTF-8/man1/vimtutor.1
+installing /usr/share/man/pl.UTF-8/man1/vimdiff.1
+installing /usr/share/man/pl.UTF-8/man1/evim.1
+/bin/sh ./installman.sh xxd /usr/share/man/tr.ISO8859-9/man1 "-tr" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+/bin/sh ./installman.sh install /usr/share/man/ru.KOI8-R/man1 "-ru" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+creating /usr/share/man/tr.ISO8859-9/man1
+installing /usr/share/man/ru.KOI8-R/man1/vim.1
+installing /usr/share/man/ru.KOI8-R/man1/vimtutor.1
+installing /usr/share/man/ru.KOI8-R/man1/vimdiff.1
+/bin/sh ./installman.sh xxd /usr/share/man/tr.UTF-8/man1 "-tr.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/ru.KOI8-R/man1/evim.1
+cd /usr/share/vim/vim91/syntax; chmod 644 *.vim README.txt
+creating /usr/share/man/tr.UTF-8/man1
+/bin/sh ./installman.sh install /usr/share/man/ru.UTF-8/man1 "-ru.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+cd ../runtime/syntax/shared; cp *.vim README.txt /usr/share/vim/vim91/syntax/shared
+installing /usr/share/man/ru.UTF-8/man1/vim.1
+cd /usr/share/vim/vim91/syntax/shared; chmod 644 *.vim README.txt
+cd ../runtime/syntax/modula2/opt; cp *.vim /usr/share/vim/vim91/syntax/modula2/opt
+if test -f /usr/bin/xxd; then \
+  mv -f /usr/bin/xxd /usr/bin/xxd.rm; \
+  rm -f /usr/bin/xxd.rm; \
+fi
+installing /usr/share/man/ru.UTF-8/man1/vimtutor.1
+cp xxd/xxd /usr/bin
+cd /usr/share/vim/vim91/syntax/modula2/opt; chmod 644 *.vim
+strip /usr/bin/xxd
+installing /usr/share/man/ru.UTF-8/man1/vimdiff.1
+cd ../runtime/indent; cp *.vim README.txt /usr/share/vim/vim91/indent
+chmod 755 /usr/bin/xxd
+/bin/sh ./installman.sh xxd /usr/share/man/man1 "" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/ru.UTF-8/man1/evim.1
+/bin/sh ./installman.sh install /usr/share/man/tr/man1 "-tr" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/man1/xxd.1
+cp -r ../runtime/tools/* /usr/share/vim/vim91/tools
+installing /usr/share/man/tr/man1/vim.1
+cvs=`find /usr/share/vim/vim91/tools \( -name CVS -o -name AAPDIR \) -print`; \
+      if test -n "$cvs"; then \
+	 rm -rf $cvs; \
+      fi
+installing /usr/share/man/tr/man1/vimtutor.1
+chmod 644 /usr/share/vim/vim91/tools/*
+cd /usr/share/vim/vim91/indent; chmod 644 *.vim README.txt
+perlpath=`./which.sh perl` && sed -e "s+/usr/bin/perl+$perlpath+" ../runtime/tools/efm_perl.pl >/usr/share/vim/vim91/tools/efm_perl.pl
+installing /usr/share/man/tr/man1/vimdiff.1
+cd ../runtime/autoload; cp *.vim README.txt /usr/share/vim/vim91/autoload
+installing /usr/share/man/tr/man1/evim.1
+awkpath=`./which.sh nawk` && sed -e "s+/usr/bin/nawk+$awkpath+" ../runtime/tools/mve.awk >/usr/share/vim/vim91/tools/mve.awk; if test -z "$awkpath"; then \
+	awkpath=`./which.sh gawk` && sed -e "s+/usr/bin/nawk+$awkpath+" ../runtime/tools/mve.awk >/usr/share/vim/vim91/tools/mve.awk; if test -z "$awkpath"; then \
+	awkpath=`./which.sh awk` && sed -e "s+/usr/bin/nawk+$awkpath+" ../runtime/tools/mve.awk >/usr/share/vim/vim91/tools/mve.awk; fi; fi
+/bin/sh ./installman.sh install /usr/share/man/tr.ISO8859-9/man1 "-tr" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+installing /usr/share/man/tr.ISO8859-9/man1/vim.1
+cd /usr/share/vim/vim91/autoload; chmod 644 *.vim README.txt
+cd ../runtime/autoload/dist; cp *.vim /usr/share/vim/vim91/autoload/dist
+installing /usr/share/man/tr.ISO8859-9/man1/vimtutor.1
+chmod 755 `grep -l "^#!" /usr/share/vim/vim91/tools/*`
+cd /usr/share/vim/vim91/autoload/dist; chmod 644 *.vim
+installing /usr/share/man/tr.ISO8859-9/man1/vimdiff.1
+cd ../runtime/autoload/xml; cp *.vim /usr/share/vim/vim91/autoload/xml
+installing /usr/share/man/tr.ISO8859-9/man1/evim.1
+/bin/sh ./installman.sh install /usr/share/man/tr.UTF-8/man1 "-tr.UTF-8" /usr/share/vim /usr/share/vim/vim91 /usr/share/vim ../runtime/doc 644 vim vimdiff evim
+cd /usr/share/vim/vim91/autoload/xml; chmod 644 *.vim
+installing /usr/share/man/tr.UTF-8/man1/vim.1
+cd ../runtime/autoload/zig; cp *.vim /usr/share/vim/vim91/autoload/zig
+cd /usr/share/vim/vim91/autoload/zig; chmod 644 *.vim
+cd ../runtime/import/dist; cp *.vim /usr/share/vim/vim91/import/dist
+installing /usr/share/man/tr.UTF-8/man1/vimtutor.1
+cd /usr/share/vim/vim91/import/dist; chmod 644 *.vim
+installing /usr/share/man/tr.UTF-8/man1/vimdiff.1
+cd ../runtime/plugin; cp *.vim README.txt /usr/share/vim/vim91/plugin
+installing /usr/share/man/tr.UTF-8/man1/evim.1
+cd /usr/share/vim/vim91/plugin; chmod 644 *.vim README.txt
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/da/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+cd ../runtime/ftplugin; cp *.vim README.txt logtalk.dict /usr/share/vim/vim91/ftplugin
+creating link /usr/share/man/da/man1/ex.1
+creating link /usr/share/man/da/man1/view.1
+creating link /usr/share/man/da/man1/rvim.1
+creating link /usr/share/man/da/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/da.ISO8859-1/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/da.ISO8859-1/man1/ex.1
+creating link /usr/share/man/da.ISO8859-1/man1/view.1
+creating link /usr/share/man/da.ISO8859-1/man1/rvim.1
+creating link /usr/share/man/da.ISO8859-1/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/da.UTF-8/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/da.UTF-8/man1/ex.1
+creating link /usr/share/man/da.UTF-8/man1/view.1
+creating link /usr/share/man/da.UTF-8/man1/rvim.1
+creating link /usr/share/man/da.UTF-8/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/de/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/de/man1/ex.1
+creating link /usr/share/man/de/man1/view.1
+creating link /usr/share/man/de/man1/rvim.1
+creating link /usr/share/man/de/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/de.ISO8859-1/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+cd /usr/share/vim/vim91/ftplugin; chmod 644 *.vim README.txt logtalk.dict
+creating link /usr/share/man/de.ISO8859-1/man1/ex.1
+creating link /usr/share/man/de.ISO8859-1/man1/view.1
+cd ../runtime/compiler; cp *.vim README.txt /usr/share/vim/vim91/compiler
+creating link /usr/share/man/de.ISO8859-1/man1/rvim.1
+creating link /usr/share/man/de.ISO8859-1/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/de.UTF-8/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/de.UTF-8/man1/ex.1
+creating link /usr/share/man/de.UTF-8/man1/view.1
+creating link /usr/share/man/de.UTF-8/man1/rvim.1
+creating link /usr/share/man/de.UTF-8/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/fr/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+cd /usr/share/vim/vim91/compiler; chmod 644 *.vim README.txt
+creating link /usr/share/man/fr/man1/ex.1
+creating link /usr/share/man/fr/man1/view.1
+creating link /usr/share/man/fr/man1/rvim.1
+creating link /usr/share/man/fr/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/fr.ISO8859-1/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/fr.ISO8859-1/man1/ex.1
+creating link /usr/share/man/fr.ISO8859-1/man1/view.1
+creating link /usr/share/man/fr.ISO8859-1/man1/rvim.1
+creating link /usr/share/man/fr.ISO8859-1/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/fr.UTF-8/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/fr.UTF-8/man1/ex.1
+creating link /usr/share/man/fr.UTF-8/man1/view.1
+creating link /usr/share/man/fr.UTF-8/man1/rvim.1
+creating link /usr/share/man/fr.UTF-8/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/it/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/it/man1/ex.1
+creating link /usr/share/man/it/man1/view.1
+creating link /usr/share/man/it/man1/rvim.1
+creating link /usr/share/man/it/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/it.ISO8859-1/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/it.ISO8859-1/man1/ex.1
+creating link /usr/share/man/it.ISO8859-1/man1/view.1
+creating link /usr/share/man/it.ISO8859-1/man1/rvim.1
+creating link /usr/share/man/it.ISO8859-1/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/it.UTF-8/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/it.UTF-8/man1/ex.1
+creating link /usr/share/man/it.UTF-8/man1/view.1
+creating link /usr/share/man/it.UTF-8/man1/rvim.1
+creating link /usr/share/man/it.UTF-8/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/ja/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/ja/man1/ex.1
+creating link /usr/share/man/ja/man1/view.1
+creating link /usr/share/man/ja/man1/rvim.1
+creating link /usr/share/man/ja/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/pl/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/pl/man1/ex.1
+creating link /usr/share/man/pl/man1/view.1
+creating link /usr/share/man/pl/man1/rvim.1
+creating link /usr/share/man/pl/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/pl.ISO8859-2/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/pl.ISO8859-2/man1/ex.1
+creating link /usr/share/man/pl.ISO8859-2/man1/view.1
+creating link /usr/share/man/pl.ISO8859-2/man1/rvim.1
+creating link /usr/share/man/pl.ISO8859-2/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/pl.UTF-8/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/pl.UTF-8/man1/ex.1
+creating link /usr/share/man/pl.UTF-8/man1/view.1
+creating link /usr/share/man/pl.UTF-8/man1/rvim.1
+creating link /usr/share/man/pl.UTF-8/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/ru.KOI8-R/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/ru.KOI8-R/man1/ex.1
+creating link /usr/share/man/ru.KOI8-R/man1/view.1
+creating link /usr/share/man/ru.KOI8-R/man1/rvim.1
+creating link /usr/share/man/ru.KOI8-R/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/ru.UTF-8/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/ru.UTF-8/man1/ex.1
+creating link /usr/share/man/ru.UTF-8/man1/view.1
+creating link /usr/share/man/ru.UTF-8/man1/rvim.1
+creating link /usr/share/man/ru.UTF-8/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/tr/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/tr/man1/ex.1
+creating link /usr/share/man/tr/man1/view.1
+creating link /usr/share/man/tr/man1/rvim.1
+creating link /usr/share/man/tr/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/tr.ISO8859-9/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/tr.ISO8859-9/man1/ex.1
+creating link /usr/share/man/tr.ISO8859-9/man1/view.1
+creating link /usr/share/man/tr.ISO8859-9/man1/rvim.1
+creating link /usr/share/man/tr.ISO8859-9/man1/rview.1
+/bin/sh ./installml.sh install "" \
+	/usr/share/man/tr.UTF-8/man1 vim vimdiff evim ex view rvim rview gvim gview rgvim rgview gvimdiff eview
+creating link /usr/share/man/tr.UTF-8/man1/ex.1
+creating link /usr/share/man/tr.UTF-8/man1/view.1
+creating link /usr/share/man/tr.UTF-8/man1/rvim.1
+creating link /usr/share/man/tr.UTF-8/man1/rview.1
+if test -n "yes" -a -f po/Makefile; then \
+   cd po; make prefix=/usr LOCALEDIR=/usr/share/vim/vim91/lang \
+   INSTALL_DATA=cp FILEMOD=644 install; \
+fi
+make[2]: Entering directory '/sources/vim-9.1.0330/src/po'
+make[3]: Entering directory '/sources/vim-9.1.0330/src/po'
+make[3]: Leaving directory '/sources/vim-9.1.0330/src/po'
+for lang in hu zh_CN zh_CN.UTF-8 zh_CN.cp936 zh_TW zh_TW.UTF-8 ; do \
+  dir=/usr/share/vim/vim91/lang/$lang/; \
+  if test ! -x "$dir"; then \
+    mkdir $dir; chmod 755 $dir; \
+  fi; \
+  dir=/usr/share/vim/vim91/lang/$lang/LC_MESSAGES; \
+  if test ! -x "$dir"; then \
+    mkdir $dir; chmod 755 $dir; \
+  fi; \
+  if test -r $lang.mo; then \
+    cp $lang.mo $dir/vim.mo; \
+    chmod 644 $dir/vim.mo; \
+  fi; \
+done
+make[2]: Leaving directory '/sources/vim-9.1.0330/src/po'
+if test -d ../runtime/lang; then \
+   cp ../runtime/lang/README.txt ../runtime/lang/*.vim /usr/share/vim/vim91/lang; \
+   chmod 644 /usr/share/vim/vim91/lang/README.txt /usr/share/vim/vim91/lang/*.vim; \
+fi
+if test -d ../runtime/keymap; then \
+   cp ../runtime/keymap/README.txt ../runtime/keymap/*.vim /usr/share/vim/vim91/keymap; \
+   chmod 644 /usr/share/vim/vim91/keymap/README.txt /usr/share/vim/vim91/keymap/*.vim; \
+fi
+make[1]: Leaving directory '/sources/vim-9.1.0330/src'
+'/usr/bin/vi' -> 'vim'
+'/usr/share/man/man1/vi.1' -> 'vim.1'
+'/usr/share/man/da.ISO8859-1/man1/vi.1' -> 'vim.1'
+'/usr/share/man/da.UTF-8/man1/vi.1' -> 'vim.1'
+'/usr/share/man/da/man1/vi.1' -> 'vim.1'
+'/usr/share/man/de.ISO8859-1/man1/vi.1' -> 'vim.1'
+'/usr/share/man/de.UTF-8/man1/vi.1' -> 'vim.1'
+'/usr/share/man/de/man1/vi.1' -> 'vim.1'
+'/usr/share/man/fr.ISO8859-1/man1/vi.1' -> 'vim.1'
+'/usr/share/man/fr.UTF-8/man1/vi.1' -> 'vim.1'
+'/usr/share/man/fr/man1/vi.1' -> 'vim.1'
+'/usr/share/man/it.ISO8859-1/man1/vi.1' -> 'vim.1'
+'/usr/share/man/it.UTF-8/man1/vi.1' -> 'vim.1'
+'/usr/share/man/it/man1/vi.1' -> 'vim.1'
+'/usr/share/man/ja/man1/vi.1' -> 'vim.1'
+'/usr/share/man/pl.ISO8859-2/man1/vi.1' -> 'vim.1'
+'/usr/share/man/pl.UTF-8/man1/vi.1' -> 'vim.1'
+'/usr/share/man/pl/man1/vi.1' -> 'vim.1'
+'/usr/share/man/ru.KOI8-R/man1/vi.1' -> 'vim.1'
+'/usr/share/man/ru.UTF-8/man1/vi.1' -> 'vim.1'
+'/usr/share/man/tr.ISO8859-9/man1/vi.1' -> 'vim.1'
+'/usr/share/man/tr.UTF-8/man1/vi.1' -> 'vim.1'
+'/usr/share/man/tr/man1/vi.1' -> 'vim.1'
+'/usr/share/doc/vim' -> '../vim/vim91/doc'
+'/usr/share/vim/vim91/vimrc_example.vim' -> '/etc/vimrc'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Thu May  2 16:30:12 UTC 2024
+
+Totalseconds: 48
+
+KB: 1665068	/
+
