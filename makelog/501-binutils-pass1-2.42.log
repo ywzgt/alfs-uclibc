@@ -1,0 +1,2923 @@
+Fri May  3 08:09:16 UTC 2024
+KB: 603164	/lfs_build
+
+mkdir: created directory 'build'
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-lfs-linux-uclibc
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln works... yes
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for gawk... gawk
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for gcc option to accept ISO C99... none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking whether g++ accepts -static-libstdc++ -static-libgcc... yes
+checking for gnatbind... no
+checking for gnatmake... no
+checking whether compiler driver understands Ada and is recent enough... no
+checking for gdc... no
+checking whether the D compiler works... no
+checking how to compare bootstrapped objects... cmp --ignore-initial=16 $$f1 $$f2
+checking for objdir... .libs
+checking for isl 0.15 or later... no
+required isl version is 0.15 or later
+checking for default BUILD_CONFIG... 
+checking for --enable-vtable-verify... no
+checking for bison... bison -y
+checking for bison... bison
+checking for gm4... no
+checking for gnum4... no
+checking for m4... m4
+checking for flex... flex
+checking for flex... flex
+checking for makeinfo... makeinfo
+checking for expect... no
+checking for runtest... no
+checking for ar... ar
+checking for as... as
+checking for dlltool... no
+checking for dsymutil... no
+checking for ld... ld
+checking for lipo... no
+checking for nm... nm
+checking for ranlib... ranlib
+checking for strip... strip
+checking for windres... no
+checking for windmc... no
+checking for objcopy... objcopy
+checking for objdump... objdump
+checking for otool... no
+checking for readelf... readelf
+checking for -plugin option... --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-lfs-linux-uclibc-cc... no
+checking for x86_64-lfs-linux-uclibc-gcc... no
+checking for x86_64-lfs-linux-uclibc-c++... no
+checking for x86_64-lfs-linux-uclibc-g++... no
+checking for x86_64-lfs-linux-uclibc-cxx... no
+checking for x86_64-lfs-linux-uclibc-gxx... no
+checking for x86_64-lfs-linux-uclibc-gcc... no
+checking for x86_64-lfs-linux-uclibc-gfortran... no
+checking for x86_64-lfs-linux-uclibc-gccgo... no
+checking for x86_64-lfs-linux-uclibc-gdc... no
+checking for x86_64-lfs-linux-uclibc-gm2... no
+checking for x86_64-lfs-linux-uclibc-ar... no
+checking for x86_64-lfs-linux-uclibc-as... no
+checking for x86_64-lfs-linux-uclibc-dlltool... no
+checking for x86_64-lfs-linux-uclibc-dsymutil... no
+checking for x86_64-lfs-linux-uclibc-ld... no
+checking for x86_64-lfs-linux-uclibc-lipo... no
+checking for x86_64-lfs-linux-uclibc-nm... no
+checking for x86_64-lfs-linux-uclibc-objcopy... no
+checking for x86_64-lfs-linux-uclibc-objdump... no
+checking for x86_64-lfs-linux-uclibc-otool... no
+checking for x86_64-lfs-linux-uclibc-ranlib... no
+checking for x86_64-lfs-linux-uclibc-readelf... no
+checking for x86_64-lfs-linux-uclibc-strip... no
+checking for x86_64-lfs-linux-uclibc-windres... no
+checking for x86_64-lfs-linux-uclibc-windmc... no
+checking where to find the target ar... just compiled
+checking where to find the target as... just compiled
+checking where to find the target cc... pre-installed
+checking where to find the target c++... pre-installed
+checking where to find the target c++ for libstdc++... pre-installed
+checking where to find the target dlltool... just compiled
+checking where to find the target dsymutil... pre-installed
+checking where to find the target gcc... pre-installed
+checking where to find the target gfortran... pre-installed
+checking where to find the target gccgo... pre-installed
+checking where to find the target gdc... pre-installed
+checking where to find the target gm2... pre-installed
+checking where to find the target ld... just compiled
+checking where to find the target lipo... pre-installed
+checking where to find the target nm... just compiled
+checking where to find the target objcopy... just compiled
+checking where to find the target objdump... just compiled
+checking where to find the target otool... pre-installed
+checking where to find the target ranlib... just compiled
+checking where to find the target readelf... just compiled
+checking where to find the target strip... just compiled
+checking where to find the target windres... just compiled
+checking where to find the target windmc... just compiled
+checking whether to enable maintainer-specific portions of Makefiles... no
+configure: creating ./config.status
+config.status: creating Makefile
+make[1]: Entering directory '/lfs_build/sources/binutils-2.42/build'
+mkdir -p -- ./libiberty
+mkdir -p -- ./zlib
+mkdir -p -- ./libsframe
+mkdir -p -- ./binutils
+Configuring in ./libiberty
+Configuring in ./zlib
+Configuring in ./libsframe
+Configuring in ./binutils
+configure: creating cache ./config.cache
+configure: creating cache ./config.cache
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for makeinfo... makeinfo --split-size=5000000
+checking for x86_64-pc-linux-gnu-gcc... gcc
+configure: creating cache ./config.cache
+configure: creating cache ./config.cache
+checking build system type... checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking target system type... checking whether the C compiler works... x86_64-lfs-linux-uclibc
+x86_64-lfs-linux-uclibc
+checking for a BSD-compatible install... checking for a BSD-compatible install... /usr/bin/install -c
+/usr/bin/install -c
+checking whether build environment is sane... checking whether build environment is sane... yes
+yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+yes
+checking whether make supports nested variables... checking whether make supports nested variables... yes
+yes
+yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for x86_64-pc-linux-gnu-gcc... gcc
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc... gcc
+
+checking whether the C compiler works... checking whether we are cross compiling... checking for perl... perl
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for -plugin option... checking for x86_64-pc-linux-gnu-ar... (cached) ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+--plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... checking whether to install libiberty headers and static library... no
+configure: target_header_dir = 
+checking for x86_64-pc-linux-gnu-gcc... gcc
+no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... 
+yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... checking whether we are cross compiling... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... 
+checking whether we are cross compiling... checking whether the C compiler works... no
+checking for suffix of object files... none needed
+checking whether gcc understands -c and -o together... o
+checking whether we are using the GNU C compiler... no
+checking for suffix of object files... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... yes
+checking whether gcc accepts -g... yes
+checking how to run the C preprocessor... o
+checking whether we are using the GNU C compiler... yes
+checking for gcc option to accept ISO C89... yes
+checking whether gcc accepts -g... 
+checking whether we are cross compiling... gcc -E
+yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... no
+checking for suffix of object files... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... o
+checking whether we are using the GNU C compiler... GNU
+checking dependency style of gcc... yes
+checking whether gcc accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... yes
+checking for gcc option to accept ISO C89... gcc3
+checking how to print strings... gcc -E
+none needed
+checking how to run the C preprocessor... yes
+checking for grep that handles long lines and -e... checking for sys/types.h... /usr/bin/grep
+checking for egrep... gcc -E
+/usr/bin/grep -E
+checking for ANSI C header files... yes
+printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... checking for grep that handles long lines and -e... checking for sys/stat.h... /usr/bin/grep
+checking for egrep... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -E
+checking for ANSI C header files... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for sys/types.h... yes
+checking for memory.h... yes
+yes
+checking for sys/stat.h... checking for sys/types.h... yes
+checking for strings.h... yes
+yes
+checking for stdlib.h... checking for sys/stat.h... yes
+yes
+yes
+checking for inttypes.h... checking for stdlib.h... checking for string.h... yes
+checking for string.h... yes
+yes
+checking for memory.h... checking for stdint.h... yes
+yes
+checking for memory.h... checking for strings.h... yes
+checking for unistd.h... yes
+yes
+checking for strings.h... checking for inttypes.h... yes
+checking minix/config.h usability... yes
+yes
+checking for inttypes.h... checking for stdint.h... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+yes
+checking for stdint.h... checking for unistd.h... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... checking for unistd.h... yes
+checking minix/config.h usability... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking dependency style of gcc... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... gcc3
+checking whether make supports nested variables... (cached) yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether we are using the GNU C compiler... checking how to print strings... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking the archiver (ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so) interface... ar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... no
+checking whether gcc supports -W... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... yes
+checking whether gcc supports -Wall... yes
+checking whether gcc supports -Wwrite-strings... yes
+checking whether gcc supports -Wc++-compat... yes
+checking whether gcc supports -Wstrict-prototypes... yes
+checking whether gcc supports -Wshadow=local... yes
+checking whether gcc supports -pedantic ... yes
+checking whether gcc and cc understand -c and -o together... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether byte ordering is bigendian... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for CET support... yes
+checking target system type... x86_64-lfs-linux-uclibc
+checking for sys/file.h... yes
+checking for sys/param.h... yes
+checking for limits.h... yes
+checking for stdlib.h... (cached) yes
+checking for malloc.h... yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/time.h... yes
+checking for time.h... yes
+checking for sys/resource.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/mman.h... yes
+checking for fcntl.h... yes
+checking for alloca.h... yes
+checking for sys/pstat.h... no
+checking for sys/sysmp.h... no
+checking for sys/sysinfo.h... yes
+checking for machine/hal_sysinfo.h... no
+checking for sys/table.h... no
+checking for sys/sysctl.h... no
+checking for sys/systemcfg.h... no
+checking for stdint.h... (cached) yes
+checking for stdio_ext.h... yes
+checking for process.h... no
+checking for sys/prctl.h... yes
+checking for spawn.h... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether errno must be declared... no
+checking size of int... 4
+checking size of long... 8
+checking size of size_t... 8
+checking for long long... yes
+checking size of long long... 8
+checking for a 64-bit type... uint64_t
+checking for intptr_t... yes
+checking for uintptr_t... yes
+checking for ssize_t... yes
+checking for pid_t... yes
+checking for library containing strerror... none required
+checking for asprintf... yes
+checking for atexit... yes
+checking for basename... yes
+checking for bcmp... yes
+checking for bcopy... yes
+checking for bsearch... yes
+checking for bzero... yes
+checking for calloc... yes
+checking for clock... yes
+checking for ffs... yes
+checking for getcwd... yes
+checking for getpagesize... yes
+checking for gettimeofday... yes
+checking for index... yes
+checking for insque... yes
+checking for memchr... yes
+checking for memcmp... yes
+checking for memcpy... yes
+checking for memmem... yes
+checking for memmove... yes
+checking for mempcpy... yes
+checking for memset... yes
+checking for mkstemps... yes
+checking for putenv... yes
+checking for random... yes
+checking for rename... yes
+checking for rindex... yes
+checking for setenv... yes
+checking for snprintf... yes
+checking for sigsetmask... yes
+checking for stpcpy... yes
+checking for stpncpy... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strncasecmp... yes
+checking for strndup... yes
+checking for strnlen... yes
+checking for strrchr... yes
+checking for strstr... yes
+checking for strtod... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for strtoll... yes
+checking for strtoull... yes
+checking for strverscmp... yes
+checking for tmpnam... yes
+checking for vasprintf... yes
+checking for vfprintf... yes
+checking for vprintf... yes
+checking for vsnprintf... yes
+checking for vsprintf... yes
+checking for waitpid... yes
+checking for setproctitle... no
+checking whether alloca needs Cray hooks... no
+checking stack direction for C alloca... -1
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for _doprnt... no
+checking for sys_errlist... no
+checking for sys_nerr... no
+checking for sys_siglist... no
+checking for external symbol _system_configuration... no
+checking for __fsetlocking... yes
+checking for canonicalize_file_name... yes
+checking for dup3... yes
+checking for getrlimit... yes
+checking for getrusage... yes
+checking for getsysinfo... no
+checking for gettimeofday... (cached) yes
+checking for on_exit... yes
+checking for pipe2... yes
+checking for posix_spawn... yes
+checking for posix_spawnp... yes
+checking for psignal... yes
+checking for pstat_getdynamic... no
+checking for pstat_getstatic... no
+checking for realpath... yes
+checking for setrlimit... yes
+checking for spawnve... no
+checking for spawnvpe... no
+checking for strerror... yes
+checking for strsignal... yes
+checking for sysconf... yes
+checking for sysctl... no
+checking for sysmp... no
+checking for table... no
+checking for times... yes
+checking for wait3... yes
+checking for wait4... yes
+checking for sbrk... yes
+checking whether basename is declared... yes
+checking whether ffs is declared... yes
+checking whether asprintf is declared... yes
+checking whether vasprintf is declared... yes
+checking whether snprintf is declared... yes
+checking whether vsnprintf is declared... yes
+checking whether calloc is declared... yes
+checking whether getenv is declared... yes
+checking whether getopt is declared... yes
+checking whether malloc is declared... yes
+checking whether realloc is declared... yes
+checking whether sbrk is declared... yes
+checking whether strtol is declared... yes
+checking whether strtoul is declared... yes
+checking whether strtoll is declared... yes
+checking whether strtoull is declared... yes
+checking whether strverscmp is declared... yes
+checking whether strnlen is declared... yes
+checking whether canonicalize_file_name must be declared... no
+checking for SHA1 HW acceleration support... x86 SHA1
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for getpagesize... (cached) yes
+checking for working mmap... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... /usr/bin/nm -B
+/usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... checking the name lister (/usr/bin/nm -B) interface... yes
+checking for working strncmp... yes
+configure: updating cache ./config.cache
+configure: creating ./config.status
+BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... BSD nm
+BSD nm
+checking whether ln -s works... checking whether ln -s works... yes
+yes
+checking the maximum length of command line arguments... checking the maximum length of command line arguments... 1572864
+1572864
+checking whether the shell understands some XSI constructs... checking whether the shell understands some XSI constructs... 1572864
+checking whether the shell understands some XSI constructs... yes
+yes
+checking whether the shell understands "+="... checking whether the shell understands "+="... yes
+checking whether the shell understands "+="... yes
+yes
+yes
+checking for ld option to reload object files... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking for ld option to reload object files... checking how to recognize dependent libraries... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking for ld option to reload object files... pass_all
+checking how to recognize dependent libraries... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+pass_all
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-ar... (cached) ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-strip... checking for x86_64-pc-linux-gnu-strip... no
+no
+checking for strip... checking for strip... strip
+strip
+checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-strip... checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+no
+checking for strip... strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking command to parse /usr/bin/nm -B output from gcc object... checking command to parse /usr/bin/nm -B output from gcc object... checking command to parse /usr/bin/nm -B output from gcc object... config.status: creating Makefile
+config.status: creating testsuite/Makefile
+ok
+ok
+ok
+config.status: creating config.h
+config.status: executing default commands
+mkdir -p -- ./gas
+Configuring in ./gas
+checking how to run the C preprocessor... checking for dlfcn.h... checking for dlfcn.h... gcc -E
+yes
+checking for objdir... yes
+checking for objdir... .libs
+.libs
+checking for ANSI C header files... configure: creating cache ./config.cache
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... checking if gcc supports -fno-rtti -fno-exceptions... checking if gcc supports -fno-rtti -fno-exceptions... x86_64-pc-linux-gnu
+checking target system type... x86_64-lfs-linux-uclibc
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+yes
+checking if gcc static flag -static works... yes
+checking if gcc static flag -static works... checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc... gcc
+yes
+checking for sys/types.h... checking whether the C compiler works... yes
+checking for sys/stat.h... yes
+yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... checking for stdlib.h... yes
+checking for string.h... 
+checking whether we are cross compiling... yes
+checking for memory.h... no
+checking for suffix of object files... yes
+checking for strings.h... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for inttypes.h... yes
+checking for gcc option to accept ISO C89... yes
+checking for stdint.h... none needed
+checking whether gcc understands -c and -o together... yes
+checking for unistd.h... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... yes
+checking for dlfcn.h... gcc3
+checking how to run the C preprocessor... yes
+checking for objdir... .libs
+gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... yes
+checking for sys/types.h... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... checking for sys/stat.h... yes
+checking dynamic linker characteristics... yes
+checking if gcc supports -c -o file.o... yes
+checking dynamic linker characteristics... yes
+checking for stdlib.h... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... yes
+checking for string.h... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking for memory.h... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking for strings.h... yes
+yes
+checking if libtool supports shared libraries... yes
+yes
+checking if libtool supports shared libraries... checking if libtool supports shared libraries... checking whether to build shared libraries... yes
+yes
+checking whether to build shared libraries... no
+checking whether to build shared libraries... checking whether to build static libraries... no
+no
+yes
+checking whether to build static libraries... checking whether to build static libraries... yes
+yes
+checking how to run the C preprocessor... gcc -E
+checking for special C compiler options needed for large files... checking for dlfcn.h... no
+(cached) checking for _FILE_OFFSET_BITS value needed for large files... yes
+checking for windows.h... yes
+checking for inttypes.h... no
+checking for aclocal... ${SHELL} /lfs_build/sources/binutils-2.42/missing aclocal-1.15
+checking for autoconf... ${SHELL} /lfs_build/sources/binutils-2.42/missing autoconf
+checking for autoheader... ${SHELL} /lfs_build/sources/binutils-2.42/missing autoheader
+checking whether gcc supports -Wall... checking for stdlib.h... (cached) yes
+no
+checking for library containing dlsym... yes
+checking for unistd.h... (cached) yes
+yes
+checking for stdint.h... checking for sys/param.h... checking whether gcc supports -Wextra... yes
+yes
+checking whether gcc supports -Wwrite-strings... checking for unistd.h... none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... yes
+checking for getpagesize... yes
+no
+checking whether gcc supports -Wmissing-format-attribute... yes
+checking for x86_64-pc-linux-gnu-pkg-config... /usr/bin/x86_64-pc-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... checking minix/config.h usability... yes
+checking whether to use debuginfod... auto
+checking for libdebuginfod >= 0.188... no
+yes
+configure: WARNING: libdebuginfod is missing or some features may be unavailable.
+checking for libdebuginfod >= 0.179... yes
+checking for working mmap... checking whether gcc supports -Wstrict-prototypes... no
+configure: WARNING: libdebuginfod is missing or unusable; some features may be unavailable.
+no
+checking minix/config.h presence... yes
+checking whether gcc supports -Wmissing-prototypes... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for incompatibility between DejaGnu and GCC... 
+no
+checking for makeinfo... makeinfo --split-size=5000000
+checking if using Solaris linker... yes
+no
+checking how to print strings... yes
+yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether to install libbfd... no
+checking for memcpy... checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking for bison... bison -y
+checking for flex... flex
+checking for sys/param.h... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... yes
+checking lex output file root... lex.yy
+yes
+checking lex library... checking for strerror... checking for getpagesize... yes
+checking for unistd.h... (cached) yes
+yes
+checking for working mmap... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+yes
+checking for ld option to reload object files... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking byteswap.h usability... checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking command to parse /usr/bin/nm -B output from gcc object... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking whether bswap_16 is declared... yes
+checking whether bswap_32 is declared... ok
+checking for dlfcn.h... yes
+checking whether bswap_64 is declared... yes
+yes
+checking for objdir... .libs
+configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... none needed
+checking whether yytext is a pointer... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for dlfcn.h... (cached) yes
+checking for windows.h... no
+checking for library containing dlsym... config.status: creating Makefile
+config.status: executing depfiles commands
+none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking how to compare bootstrapped objects... cmp --ignore-initial=16 $$f1 $$f2
+config.status: executing libtool commands
+Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking whether byte ordering is bigendian... mkdir -p -- ./etc
+Configuring in ./etc
+no
+checking whether NLS is requested... no
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld used by GCC... ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+no
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... checking for bison... bison -y
+checking for flex... flex
+config.status: creating Makefile
+checking lex output file root... lex.yy
+checking lex library... no
+checking whether to use NLS... no
+checking whether NLS is requested... no
+checking for msgfmt... (cached) no
+checking for gmsgfmt... (cached) :
+checking for xgettext... (cached) no
+config.status: creating config.h
+checking for msgmerge... (cached) no
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking fcntl.h usability... config.status: executing depfiles commands
+configure: creating cache ./config.cache
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+yes
+checking fcntl.h presence... checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for fcntl.h... yes
+config.status: executing libtool commands
+yes
+checking whether make supports nested variables... checking for inttypes.h... (cached) yes
+yes
+checking for stdint.h... (cached) yes
+checking whether make supports nested variables... (cached) yes
+checking sys/file.h usability... configure: updating cache ./config.cache
+checking that generated files are newer than configure... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+mkdir -p -- ./gprof
+checking for sys/stat.h... (cached) yes
+Configuring in ./gprof
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... configure: creating cache ./config.cache
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... yes
+x86_64-lfs-linux-uclibc
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... checking for getpagesize... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+yes
+checking for x86_64-pc-linux-gnu-gcc... gcc
+checking for working mmap... checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... yes
+checking for fseeko... 
+checking whether we are cross compiling... yes
+checking for fseeko64... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+yes
+checking whether gcc accepts -g... checking for getc_unlocked... yes
+checking for gcc option to accept ISO C89... yes
+checking for mkdtemp... none needed
+checking whether gcc understands -c and -o together... yes
+none needed
+checking whether yytext is a pointer... yes
+checking for mkstemp... checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... yes
+checking for utimensat... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for utimes... yes
+checking for mbstate_t... yes
+checking for struct stat.st_atim.tv_nsec... yes
+yes
+checking for sys/types.h... checking whether struct stat.st_atim is of type struct timespec... no
+checking whether NLS is requested... no
+checking for msgfmt... no
+checking for gmsgfmt... :
+yes
+checking for xgettext... no
+yes
+checking for library containing frexp... checking for sys/stat.h... checking for msgmerge... no
+checking for ld used by GCC... ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... yes
+checking for stdlib.h... done
+checking for CFPreferencesCopyAppValue... none required
+checking for LC_MESSAGES... yes
+no
+checking for CFLocaleCopyPreferredLanguages... checking for string.h... no
+checking whether to use NLS... no
+checking whether NLS is requested... no
+yes
+checking for msgfmt... (cached) no
+checking for gmsgfmt... (cached) :
+yes
+checking for a known getopt prototype in unistd.h... checking for xgettext... (cached) no
+checking for memory.h... checking for msgmerge... (cached) no
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for memory.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+yes
+checking for utime.h... checking for sys/types.h... (cached) yes
+yes
+checking for strings.h... checking for unistd.h... (cached) yes
+checking whether compiling a cross-assembler... yes
+checking for strsignal... yes
+checking whether asprintf is declared... yes
+checking for inttypes.h... yes
+checking for LC_MESSAGES... yes
+checking for stdint.h... yes
+done
+configure: creating ./config.status
+checking whether environ is declared... yes
+yes
+checking for working assert macro... checking for unistd.h... yes
+checking whether getc_unlocked is declared... yes
+checking minix/config.h usability... yes
+checking for a known getopt prototype in unistd.h... yes
+checking whether stpcpy is declared... no
+checking minix/config.h presence... yes
+checking whether declaration is required for environ... config.status: creating Makefile
+no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether strnlen is declared... yes
+checking how to print strings... no
+checking whether declaration is required for ffs... make[1]: Nothing to be done for 'all-target'.
+mkdir -p -- ./ld
+Configuring in ./ld
+yes
+checking for libzstd >= 1.4.0... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... no
+checking whether asprintf is declared... yes
+checking for msgpack... yes
+no
+checking iconv.h usability... checking whether mempcpy is declared... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... yes
+checking iconv.h presence... yes
+checking whether stpcpy is declared... yes
+checking for iconv.h... yes
+checking for iconv... configure: creating cache ./config.cache
+BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... checking build system type... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+x86_64-pc-linux-gnu
+checking host system type... checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+yes
+x86_64-pc-linux-gnu
+checking target system type... checking for x86_64-pc-linux-gnu-pkg-config... /usr/bin/x86_64-pc-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libzstd >= 1.4.0... checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+x86_64-lfs-linux-uclibc
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for working iconv... checking command to parse /usr/bin/nm -B output from gcc object... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for x86_64-pc-linux-gnu-gcc... gcc
+yes
+checking for struct stat.st_mtim.tv_sec in sys/stat.h... checking whether the C compiler works... yes
+checking for struct stat.st_mtim.tv_nsec in sys/stat.h... yes
+yes
+checking whether iconv is compatible with its POSIX signature... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... ok
+yes
+configure: updating cache ./config.cache
+checking for dlfcn.h... checking that generated files are newer than configure... done
+configure: creating ./config.status
+
+checking whether we are cross compiling... yes
+checking for objdir... .libs
+configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to accept ISO C89... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... none needed
+checking whether gcc understands -c and -o together... yes
+checking if gcc static flag -static works... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+yes
+checking if gcc supports -c -o file.o... checking whether we are using the GNU C++ compiler... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking whether g++ accepts -g... yes
+checking dynamic linker characteristics... yes
+checking dependency style of g++... gcc3
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking how to run the C preprocessor... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for dlfcn.h... (cached) yes
+checking for windows.h... gcc -E
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... no
+checking for library containing dlsym... none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/types.h... yes
+checking for sys/time.h... yes
+checking for setitimer... yes
+checking for sys/stat.h... yes
+checking whether NLS is requested... no
+yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for stdlib.h... checking for msgmerge... no
+checking for ld used by GCC... ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... config.status: creating .gdbinit
+yes
+checking for shared library run path origin... yes
+config.status: creating Makefile
+checking for string.h... done
+checking for CFPreferencesCopyAppValue... config.status: creating po/Makefile.in
+yes
+no
+checking for CFLocaleCopyPreferredLanguages... config.status: creating Makefile
+checking for memory.h... config.status: creating config.h
+no
+checking whether to use NLS... no
+config.status: executing depfiles commands
+checking whether NLS is requested... no
+config.status: creating po/Makefile.in
+checking for msgfmt... (cached) no
+checking for gmsgfmt... (cached) :
+checking for xgettext... (cached) no
+yes
+checking for msgmerge... (cached) no
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking sys/gmon_out.h usability... checking for strings.h... config.status: creating config.h
+config.status: executing depfiles commands
+yes
+yes
+checking sys/gmon_out.h presence... checking for inttypes.h... yes
+checking for sys/gmon_out.h... yes
+checking for a known getopt prototype in unistd.h... yes
+checking for stdint.h... yes
+checking for library containing fabs... yes
+checking for unistd.h... yes
+checking minix/config.h usability... config.status: executing libtool commands
+-lm
+no
+checking minix/config.h presence... config.status: executing default-1 commands
+no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing default-2 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+yes
+checking for x86_64-pc-linux-gnu-pkg-config... /usr/bin/x86_64-pc-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking how to print strings... Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+config.status: executing libtool commands
+printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... config.status: executing default-1 commands
+configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+mkdir -p -- ./bfd
+config.status: creating po/POTFILES
+Configuring in ./bfd
+config.status: creating po/Makefile
+config.status: executing default-2 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing default commands
+/usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/libiberty'
+if [ x"" != x ] && [ ! -d pic ]; then \
+  mkdir pic; \
+else true; fi
+touch stamp-picdir
+if [ x"" != x ] && [ ! -d noasan ]; then \
+  mkdir noasan; \
+else true; fi
+touch stamp-noasandir
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/dwarfnames.c -o pic/dwarfnames.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/dwarfnames.c -o noasan/dwarfnames.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/dwarfnames.c -o dwarfnames.o
+BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking command to parse /usr/bin/nm -B output from gcc object... configure: creating cache ./config.cache
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-lfs-linux-uclibc
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/dyn-string.c -o pic/dyn-string.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/dyn-string.c -o noasan/dyn-string.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/dyn-string.c -o dyn-string.o
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-gcc... gcc
+checking whether the C compiler works... ok
+checking for dlfcn.h... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/fdmatch.c -o pic/fdmatch.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/fdmatch.c -o noasan/fdmatch.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/fdmatch.c -o fdmatch.o
+yes
+checking for objdir... 
+.libs
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/fibheap.c -o pic/fibheap.o; \
+else true; fi
+checking whether we are cross compiling... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/fibheap.c -o noasan/fibheap.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/fibheap.c -o fibheap.o
+no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking whether gcc accepts -g... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/filedescriptor.c -o pic/filedescriptor.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/filedescriptor.c -o noasan/filedescriptor.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/filedescriptor.c -o filedescriptor.o
+yes
+checking for gcc option to accept ISO C89... yes
+checking if gcc static flag -static works... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/filename_cmp.c -o pic/filename_cmp.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/filename_cmp.c -o noasan/filename_cmp.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/filename_cmp.c -o filename_cmp.o
+none needed
+checking whether gcc understands -c and -o together... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/floatformat.c -o pic/floatformat.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/floatformat.c -o noasan/floatformat.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/floatformat.c -o floatformat.o
+yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... yes
+checking if gcc supports -c -o file.o... gcc3
+checking how to run the C preprocessor... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... gcc -E
+yes
+checking dynamic linker characteristics... checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... config.status: creating Makefile
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/fnmatch.c -o pic/fnmatch.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/fnmatch.c -o noasan/fnmatch.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/fnmatch.c -o fnmatch.o
+config.status: creating po/Makefile.in
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/fopen_unlocked.c -o pic/fopen_unlocked.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/fopen_unlocked.c -o noasan/fopen_unlocked.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/fopen_unlocked.c -o fopen_unlocked.o
+GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... config.status: creating gconfig.h
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/getopt.c -o pic/getopt.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/getopt.c -o noasan/getopt.o; \
+else true; fi
+config.status: executing depfiles commands
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/getopt.c -o getopt.o
+g++ -E
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/getopt1.c -o pic/getopt1.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/getopt1.c -o noasan/getopt1.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/getopt1.c -o getopt1.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/getpwd.c -o pic/getpwd.o; \
+else true; fi
+yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/getpwd.c -o noasan/getpwd.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/getpwd.c -o getpwd.o
+checking for sys/types.h... yes
+config.status: executing libtool commands
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/getruntime.c -o pic/getruntime.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/getruntime.c -o noasan/getruntime.o; \
+else true; fi
+checking for sys/stat.h... gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/getruntime.c -o getruntime.o
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+yes
+checking for ld used by g++... config.status: creating po/Makefile
+ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/hashtab.c -o pic/hashtab.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/hashtab.c -o noasan/hashtab.o; \
+else true; fi
+config.status: executing default-2 commands
+yes
+checking for stdlib.h... gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/hashtab.c -o hashtab.o
+checking whether the g++ linker (ld -m elf_x86_64) supports shared libraries... yes
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+yes
+checking for string.h... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... checking for memory.h... yes
+checking if g++ static flag -static works... yes
+checking for strings.h... make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/zlib'
+  CC       libz_a-adler32.o
+yes
+checking for inttypes.h... yes
+checking for stdint.h... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/hex.c -o pic/hex.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/hex.c -o noasan/hex.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/hex.c -o hex.o
+  CC       libz_a-compress.o
+yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/lbasename.c -o pic/lbasename.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/lbasename.c -o noasan/lbasename.o; \
+else true; fi
+checking for unistd.h... gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/lbasename.c -o lbasename.o
+yes
+checking if g++ supports -c -o file.o...   CC       libz_a-crc32.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/lrealpath.c -o pic/lrealpath.o; \
+else true; fi
+yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/lrealpath.c -o noasan/lrealpath.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/lrealpath.c -o lrealpath.o
+checking minix/config.h usability... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for dlfcn.h... (cached) yes
+checking for windows.h... no
+checking minix/config.h presence... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/make-relative-prefix.c -o pic/make-relative-prefix.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/make-relative-prefix.c -o noasan/make-relative-prefix.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/make-relative-prefix.c -o make-relative-prefix.o
+no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... no
+checking for library containing dlsym... yes
+  CC       libz_a-deflate.o
+checking how to print strings... none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... no
+yes
+checking for BSD- or MS-compatible name lister (nm)... checking size of void *... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/make-temp-file.c -o pic/make-temp-file.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/make-temp-file.c -o noasan/make-temp-file.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/make-temp-file.c -o make-temp-file.o
+8
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/objalloc.c -o pic/objalloc.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/objalloc.c -o noasan/objalloc.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/objalloc.c -o objalloc.o
+/usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/obstack.c -o pic/obstack.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/obstack.c -o noasan/obstack.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/obstack.c -o obstack.o
+BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking for LC_MESSAGES... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/partition.c -o pic/partition.o; \
+else true; fi
+checking command to parse /usr/bin/nm -B output from gcc object... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/partition.c -o noasan/partition.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/partition.c -o partition.o
+yes
+checking whether NLS is requested... no
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld used by GCC... ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/pexecute.c -o pic/pexecute.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/pexecute.c -o noasan/pexecute.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/pexecute.c -o pexecute.o
+done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/physmem.c -o pic/physmem.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/physmem.c -o noasan/physmem.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/physmem.c -o physmem.o
+no
+checking whether to use NLS... no
+checking whether NLS is requested... no
+checking for msgfmt... (cached) no
+checking for gmsgfmt... (cached) :
+checking for xgettext... (cached) no
+ok
+checking for msgmerge... (cached) no
+checking for bison... bison -y
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... checking for dlfcn.h... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/pex-common.c -o pic/pex-common.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/pex-common.c -o noasan/pex-common.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/pex-common.c -o pex-common.o
+yes
+checking for objdir... .libs
+  CC       libz_a-gzread.o
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/pex-one.c -o pic/pex-one.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/pex-one.c -o noasan/pex-one.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/pex-one.c -o pex-one.o
+yes
+checking if gcc static flag -static works... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/pex-unix.c -o pic/pex-unix.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/pex-unix.c -o noasan/pex-unix.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/pex-unix.c -o pex-unix.o
+  CC       libz_a-gzclose.o
+  CC       libz_a-gzwrite.o
+yes
+checking if gcc supports -c -o file.o... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/vprintf-support.c -o pic/vprintf-support.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/vprintf-support.c -o noasan/vprintf-support.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/vprintf-support.c -o vprintf-support.o
+yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/rust-demangle.c -o pic/rust-demangle.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/rust-demangle.c -o noasan/rust-demangle.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/rust-demangle.c -o rust-demangle.o
+  CC       libz_a-gzlib.o
+GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen...   CC       libz_a-infback.o
+yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/safe-ctype.c -o pic/safe-ctype.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/safe-ctype.c -o noasan/safe-ctype.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/safe-ctype.c -o safe-ctype.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/simple-object.c -o pic/simple-object.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/simple-object.c -o noasan/simple-object.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/simple-object.c -o simple-object.o
+none needed
+checking whether yytext is a pointer... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for dlfcn.h... (cached) yes
+checking for windows.h...   CC       libz_a-inffast.o
+no
+checking for library containing dlsym... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/simple-object-coff.c -o pic/simple-object-coff.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/simple-object-coff.c -o noasan/simple-object-coff.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/simple-object-coff.c -o simple-object-coff.o
+none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files...   CC       libz_a-inflate.o
+no
+checking size of void *... 8
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/simple-object-elf.c -o pic/simple-object-elf.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/simple-object-elf.c -o noasan/simple-object-elf.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/simple-object-elf.c -o simple-object-elf.o
+no
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking how to compare bootstrapped objects... cmp --ignore-initial=16 $$f1 $$f2
+checking fcntl.h usability... Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether to install libbfd... no
+checking whether byte ordering is bigendian... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking elf-hints.h usability... no
+checking elf-hints.h presence... no
+checking for elf-hints.h... no
+no
+checking whether NLS is requested... no
+checking limits.h usability... checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld used by GCC... ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+done
+checking for CFPreferencesCopyAppValue... checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking sys/file.h usability... no
+checking for CFLocaleCopyPreferredLanguages...   CC       libz_a-inftrees.o
+no
+checking whether to use NLS... no
+checking whether NLS is requested... no
+checking for msgfmt... (cached) no
+checking for gmsgfmt... (cached) :
+checking for xgettext... (cached) no
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/simple-object-mach-o.c -o pic/simple-object-mach-o.o; \
+else true; fi
+checking for msgmerge... (cached) no
+checking size of long long... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/simple-object-mach-o.c -o noasan/simple-object-mach-o.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/simple-object-mach-o.c -o simple-object-mach-o.o
+yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/mman.h usability...   CC       libz_a-trees.o
+yes
+checking sys/mman.h presence... 8
+checking size of void *... (cached) 8
+checking size of long... yes
+checking for sys/mman.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... 8
+checking size of int... yes
+checking for sys/param.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/simple-object-xcoff.c -o pic/simple-object-xcoff.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/simple-object-xcoff.c -o noasan/simple-object-xcoff.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/simple-object-xcoff.c -o simple-object-xcoff.o
+4
+yes
+checking for sys/time.h... yes
+checking fcntl.h usability... checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for close... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking sys/file.h usability... yes
+checking for glob... yes
+checking sys/file.h presence...   CC       libz_a-uncompr.o
+yes
+checking for sys/file.h... yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/sort.c -o pic/sort.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/sort.c -o noasan/sort.o; \
+else true; fi
+checking sys/resource.h usability... yes
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/sort.c -o sort.o
+checking for lseek...   CC       libz_a-zutil.o
+yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/spaces.c -o pic/spaces.o; \
+else true; fi
+checking for sys/stat.h... (cached) yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/spaces.c -o noasan/spaces.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/spaces.c -o spaces.o
+yes
+checking for sys/types.h... (cached) yes
+checking for mkstemp... true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections    " "CXXFLAGS=-march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS    " "CFLAGS_FOR_BUILD=-march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections" "CFLAGS_FOR_TARGET=-g -O2" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/install -c -m 644" "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "LDFLAGS=-Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections" "LIBCFLAGS=-march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  " "LIBCFLAGS_FOR_TARGET=-g -O2" "MAKE=make" "MAKEINFO=makeinfo --split-size=5000000 --split-size=5000000 " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/sh" "EXPECT=expect" "RUNTEST=runtest" "RUNTESTFLAGS=" "exec_prefix=/lfs_build/tools" "infodir=/lfs_build/tools/share/info" "libdir=/lfs_build/tools/lib" "prefix=/lfs_build/tools" "tooldir=/lfs_build/tools/x86_64-lfs-linux-uclibc" "AR=ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so" "AS=as" "CC=gcc" "CXX=g++" "LD=ld" "LIBCFLAGS=-march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections  " "NM=nm" "PICFLAG=" "RANLIB=ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so" "DESTDIR=" DO=all multi-do # make
+checking for unistd.h... (cached) yes
+  AR       libz.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+checking for fcntl... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/splay-tree.c -o pic/splay-tree.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/splay-tree.c -o noasan/splay-tree.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/splay-tree.c -o splay-tree.o
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/zlib'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/libsframe'
+make  all-am
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/libsframe'
+  CC       libsframe_la-sframe.lo
+yes
+yes
+checking for open... checking for fdopen... ../../libsframe/sframe.c: In function 'sframe_encoder_write_fre':
+../../libsframe/sframe.c:1717:12: warning: unused variable 'bitmask' [-Wunused-variable]
+ 1717 |   uint64_t bitmask = SFRAME_BITMASK_OF_SIZE (fre_start_addr_sz);
+      |            ^~~~~~~
+yes
+yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/stack-limit.c -o pic/stack-limit.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/stack-limit.c -o noasan/stack-limit.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/stack-limit.c -o stack-limit.o
+checking for realpath... checking for fileno... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/strerror.c -o pic/strerror.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/strerror.c -o noasan/strerror.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/strerror.c -o strerror.o
+yes
+yes
+checking for waitpid... checking for fls... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/strsignal.c -o pic/strsignal.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/strsignal.c -o noasan/strsignal.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/strsignal.c -o strsignal.o
+yes
+no
+checking whether asprintf is declared... checking for getgid... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/timeval-utils.c -o pic/timeval-utils.o; \
+else true; fi
+yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/timeval-utils.c -o noasan/timeval-utils.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/timeval-utils.c -o timeval-utils.o
+yes
+checking whether environ is declared... checking for getpagesize... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/unlink-if-ordinary.c -o pic/unlink-if-ordinary.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/unlink-if-ordinary.c -o noasan/unlink-if-ordinary.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/unlink-if-ordinary.c -o unlink-if-ordinary.o
+  CC       libsframe_la-sframe-dump.lo
+yes
+yes
+checking whether stpcpy is declared... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/xasprintf.c -o pic/xasprintf.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/xasprintf.c -o noasan/xasprintf.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/xasprintf.c -o xasprintf.o
+checking for getrlimit... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/xatexit.c -o pic/xatexit.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/xatexit.c -o noasan/xatexit.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/xatexit.c -o xatexit.o
+yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+  CC       libsframe_la-sframe-error.lo
+yes
+checking for sys/param.h... (cached) yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/xexit.c -o pic/xexit.o; \
+else true; fi
+checking for getuid... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/xexit.c -o noasan/xexit.o; \
+else true; fi
+checking for getpagesize... gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/xexit.c -o xexit.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/xmalloc.c -o pic/xmalloc.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/xmalloc.c -o noasan/xmalloc.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/xmalloc.c -o xmalloc.o
+  CCLD     libsframe.la
+yes
+yes
+checking for working mmap... checking for sysconf... libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/xmemdup.c -o pic/xmemdup.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/xmemdup.c -o noasan/xmemdup.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/xmemdup.c -o xmemdup.o
+yes
+checking whether basename is declared... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/xstrdup.c -o pic/xstrdup.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/xstrdup.c -o noasan/xstrdup.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/xstrdup.c -o xstrdup.o
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libsframe'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libsframe'
+yes
+checking for library containing dlopen... make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/etc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/etc'
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/xstrerror.c -o pic/xstrerror.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/xstrerror.c -o noasan/xstrerror.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/xstrerror.c -o xstrerror.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/xstrndup.c -o pic/xstrndup.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/xstrndup.c -o noasan/xstrndup.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/xstrndup.c -o xstrndup.o
+yes
+checking whether ffs is declared... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/xvasprintf.c -o pic/xvasprintf.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/xvasprintf.c -o noasan/xvasprintf.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/xvasprintf.c -o xvasprintf.o
+none required
+checking for a known getopt prototype in unistd.h... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/setproctitle.c -o pic/setproctitle.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/setproctitle.c -o noasan/setproctitle.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/setproctitle.c -o setproctitle.o
+echo ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./bsearch_r.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./d-demangle.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filedescriptor.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./vprintf-support.o ./rust-demangle.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./simple-object-xcoff.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xasprintf.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o ./xvasprintf.o > required-list
+yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/regex.c -o pic/regex.o; \
+else true; fi
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/libiberty/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libiberty/testsuite'
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/cplus-dem.c -o pic/cplus-dem.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/regex.c -o noasan/regex.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/cplus-dem.c -o noasan/cplus-dem.o; \
+else true; fi
+yes
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/regex.c -o regex.o
+checking for libzstd >= 1.4.0... checking whether stpcpy is declared... gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/cplus-dem.c -o cplus-dem.o
+yes
+checking whether asprintf is declared... yes
+yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/cp-demangle.c -o pic/cp-demangle.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/cp-demangle.c -o noasan/cp-demangle.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/cp-demangle.c -o cp-demangle.o
+checking whether vasprintf is declared... yes
+configure: updating cache ./config.cache
+checking whether strnlen is declared... checking that generated files are newer than configure... done
+configure: creating ./config.status
+yes
+checking whether ___lc_codepage_func is declared... no
+checking for thread local storage (TLS) class... _Thread_local
+checking for x86_64-pc-linux-gnu-pkg-config... /usr/bin/x86_64-pc-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libzstd >= 1.4.0... yes
+checking compiler support for hidden visibility... yes
+checking linker --as-needed support... yes
+checking for cos in -lm... yes
+checking for gcc version with buggy 64-bit support... no
+checking for ftello... yes
+checking for ftello64... yes
+checking for fseeko... yes
+checking for fseeko64... yes
+checking for fopen64... yes
+checking whether ftello is declared... yes
+checking whether ftello64 is declared... yes
+checking whether fseeko is declared... yes
+checking whether fseeko64 is declared... yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/md5.c -o pic/md5.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/md5.c -o noasan/md5.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/md5.c -o md5.o
+checking whether fopen64 is declared... yes
+checking size of off_t... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/sha1.c -o pic/sha1.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/sha1.c -o noasan/sha1.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/sha1.c -o sha1.o
+8
+checking file_ptr type... int64_t
+config.status: creating Makefile
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/alloca.c -o pic/alloca.o; \
+else true; fi
+checking for stdlib.h... (cached) yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/alloca.c -o noasan/alloca.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/alloca.c -o alloca.o
+checking for unistd.h... (cached) yes
+checking for sys/param.h... config.status: creating po/Makefile.in
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/argv.c -o pic/argv.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/argv.c -o noasan/argv.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/argv.c -o argv.o
+config.status: creating config.h
+yes
+config.status: executing depfiles commands
+checking for getpagesize... (cached) yes
+checking for working mmap... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/bsearch_r.c -o pic/bsearch_r.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/bsearch_r.c -o noasan/bsearch_r.o; \
+else true; fi
+yes
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/bsearch_r.c -o bsearch_r.o
+checking for madvise... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/choose-temp.c -o pic/choose-temp.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/choose-temp.c -o noasan/choose-temp.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/choose-temp.c -o choose-temp.o
+yes
+checking for mprotect... if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/concat.c -o pic/concat.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/concat.c -o noasan/concat.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/concat.c -o concat.o
+yes
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/cp-demint.c -o pic/cp-demint.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/cp-demint.c -o noasan/cp-demint.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/cp-demint.c -o cp-demint.o
+configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/crc32.c -o pic/crc32.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/crc32.c -o noasan/crc32.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/crc32.c -o crc32.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection   ../../libiberty/d-demangle.c -o pic/d-demangle.o; \
+else true; fi
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection    ../../libiberty/d-demangle.c -o noasan/d-demangle.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -DNDEBUG -I. -I../../libiberty/../include  -W -Wall -Wwrite-strings -Wc++-compat -Wstrict-prototypes -Wshadow=local -pedantic  -D_GNU_SOURCE -fcf-protection  ../../libiberty/d-demangle.c -o d-demangle.o
+rm -f ./libiberty.a pic/./libiberty.a noasan/./libiberty.a
+ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so rc ./libiberty.a \
+  ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./bsearch_r.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./d-demangle.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filedescriptor.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./vprintf-support.o ./rust-demangle.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./simple-object-xcoff.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xasprintf.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o ./xvasprintf.o  ./setproctitle.o
+ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so ./libiberty.a
+if [ x"" != x ]; then \
+  cd pic; \
+  ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so rc ./libiberty.a \
+    ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./bsearch_r.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./d-demangle.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filedescriptor.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./vprintf-support.o ./rust-demangle.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./simple-object-xcoff.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xasprintf.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o ./xvasprintf.o  ./setproctitle.o; \
+  ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so ./libiberty.a; \
+  cd ..; \
+else true; fi; \
+if [ x"" != x ]; then \
+  cd noasan; \
+  ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so rc ./libiberty.a \
+    ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./bsearch_r.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./d-demangle.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filedescriptor.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./vprintf-support.o ./rust-demangle.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./simple-object-xcoff.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xasprintf.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o ./xvasprintf.o  ./setproctitle.o; \
+  ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so ./libiberty.a; \
+  cd ..; \
+else true; fi
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libiberty'
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: executing default-2 commands
+config.status: executing default commands
+config.status: creating Makefile
+config.status: creating bfd-in3.h
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: executing default-2 commands
+config.status: executing default commands
+mkdir -p -- ./opcodes
+Configuring in ./opcodes
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd'
+  GEN      bfdver.h
+  GEN      elf32-target.h
+  GEN      elf64-target.h
+  GEN      targmatch.h
+Making info in po
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd/po'
+( if test 'x../../../bfd/po' != 'x.'; then \
+    posrcprefix='../../../bfd/'; \
+  else \
+    posrcprefix="../"; \
+  fi; \
+  rm -f SRC-POTFILES-t SRC-POTFILES \
+    && (sed -e '/^#/d' \
+            -e '/^[ 	]*$/d' \
+	    -e "s@.*@	$posrcprefix& \\\\@" < ../../../bfd/po/SRC-POTFILES.in \
+	| sed -e '$s/\\$//') > SRC-POTFILES-t \
+    && chmod a-w SRC-POTFILES-t \
+    && mv SRC-POTFILES-t SRC-POTFILES )
+( rm -f BLD-POTFILES-t BLD-POTFILES \
+    && (sed -e '/^#/d' \
+            -e '/^[ 	]*$/d' \
+	    -e "s@.*@	../& \\\\@" < ../../../bfd/po/BLD-POTFILES.in \
+	| sed -e '$s/\\$//') > BLD-POTFILES-t \
+    && chmod a-w BLD-POTFILES-t \
+    && mv BLD-POTFILES-t BLD-POTFILES )
+cd .. \
+  && CONFIG_FILES=po/Makefile.in:po/Make-in \
+     CONFIG_HEADERS= /bin/sh ./config.status
+configure: creating cache ./config.cache
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-lfs-linux-uclibc
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... config.status: creating po/Makefile.in
+yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc... gcc
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+checking whether the C compiler works... config.status: executing default-2 commands
+config.status: executing default commands
+make[3]: Nothing to be done for 'info'.
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd/po'
+yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd'
+  CCLD     doc/chew.stamp
+
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files...   GEN      doc/aoutx.stamp
+  GEN      doc/archive.stamp
+  GEN      doc/archures.stamp
+  GEN      doc/bfdio.stamp
+  GEN      doc/bfdt.stamp
+  GEN      doc/bfdwin.stamp
+  GEN      doc/cache.stamp
+  GEN      doc/coffcode.stamp
+  GEN      doc/corefile.stamp
+  GEN      doc/elfcode.stamp
+  GEN      doc/elf.stamp
+  GEN      doc/format.stamp
+  GEN      doc/hash.stamp
+  GEN      doc/libbfd.stamp
+  GEN      doc/linker.stamp
+yes
+checking for sys/types.h...   GEN      doc/mmo.stamp
+  GEN      doc/reloc.stamp
+  GEN      doc/opncls.stamp
+  GEN      doc/section.stamp
+  GEN      doc/syms.stamp
+  GEN      doc/targets.stamp
+yes
+checking for sys/stat.h...   MAKEINFO doc/bfd.info
+yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether to install libbfd... no
+checking whether NLS is requested... no
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld used by GCC... ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking whether to use NLS... no
+checking whether NLS is requested... no
+checking for msgfmt... (cached) no
+checking for gmsgfmt... (cached) :
+checking for xgettext... (cached) no
+checking for msgmerge... (cached) no
+checking size of void *... 8
+checking whether basename is declared... yes
+checking whether stpcpy is declared... yes
+checking for sigsetjmp... 
+checking linker --as-needed support... yes
+checking for cos in -lm... yes
+configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing default-2 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make  all-recursive
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd'
+Making all in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd/po'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd'
+rm -f bfd-tmp.h
+cp bfd-in3.h bfd-tmp.h
+/bin/sh ../../bfd/../move-if-change bfd-tmp.h bfd.h
+rm -f tofiles
+  GEN      peigen.c
+f=""; \
+for i in elf64-x86-64.lo elfxx-x86.lo elf-ifunc.lo elf-vxworks.lo elf64.lo elf.lo elflink.lo elf-attrs.lo elf-strtab.lo elf-eh-frame.lo elf-sframe.lo dwarf1.lo dwarf2.lo elf32-i386.lo elf32.lo pei-i386.lo peigen.lo cofflink.lo coffgen.lo pe-x86_64.lo pex64igen.lo pei-x86_64.lo elf64-gen.lo elf32-gen.lo plugin.lo cpu-i386.lo cpu-iamcu.lo  archive64.lo ; do \
+  case " $f " in \
+    *" $i "*) ;; \
+    *) f="$f $i" ;; \
+  esac ; \
+done ; \
+echo $f > tofiles
+  GEN      pex64igen.c
+/bin/sh ../../bfd/../move-if-change tofiles ofiles
+rm -f bfd-tmp.h
+touch stmp-bfd-h
+touch stamp-ofiles
+  CC       archive.lo
+  CC       archures.lo
+  CC       bfd.lo
+  CC       bfdio.lo
+  CC       bfdwin.lo
+  CC       cache.lo
+  CC       coff-bfd.lo
+  CC       compress.lo
+  CC       corefile.lo
+  CC       elf-properties.lo
+  CC       format.lo
+  CC       hash.lo
+  CC       libbfd.lo
+  CC       linker.lo
+  CC       merge.lo
+  CC       opncls.lo
+  CC       reloc.lo
+  CC       section.lo
+  CC       simple.lo
+  CC       stab-syms.lo
+  CC       stabs.lo
+  CC       syms.lo
+  CC       targets.lo
+  CC       binary.lo
+  CC       ihex.lo
+  CC       srec.lo
+  CC       tekhex.lo
+  CC       verilog.lo
+  CC       elf64-x86-64.lo
+  CC       elfxx-x86.lo
+  CC       elf-ifunc.lo
+  CC       elf-vxworks.lo
+  CC       elf64.lo
+  CC       elf.lo
+  CC       elflink.lo
+  CC       elf-attrs.lo
+  CC       elf-strtab.lo
+  CC       elf-eh-frame.lo
+  CC       elf-sframe.lo
+  CC       dwarf1.lo
+  CC       dwarf2.lo
+  CC       elf32-i386.lo
+  CC       elf32.lo
+  CC       pei-i386.lo
+  CC       peigen.lo
+  CC       cofflink.lo
+  CC       coffgen.lo
+  CC       pe-x86_64.lo
+  CC       pex64igen.lo
+  CC       pei-x86_64.lo
+  CC       elf64-gen.lo
+  CC       elf32-gen.lo
+  CC       plugin.lo
+  CC       cpu-i386.lo
+  CC       cpu-iamcu.lo
+  CC       archive64.lo
+  CCLD     libbfd.la
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd'
+mkdir -p -- ./libctf
+Configuring in ./libctf
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+make  all-recursive
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+Making all in .
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+  CC       dis-buf.lo
+  CC       disassemble.lo
+  CC       dis-init.lo
+  CC       i386-dis.lo
+configure: creating cache ./config.cache
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-lfs-linux-uclibc
+checking for x86_64-pc-linux-gnu-gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for x86_64-pc-linux-gnu-ranlib... ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-ar... ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking the archiver (ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so) interface... ar
+checking whether NLS is requested... no
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld used by GCC... ld
+checking if the linker (ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking whether to use NLS... no
+checking whether NLS is requested... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs...   CCLD     libopcodes.la
+yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... -r
+checking for x86_64-pc-linux-gnu-objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so
+checking command to parse /usr/bin/nm -B output from gcc object... libtooldir=`/bin/sh ./libtool --config | sed -n -e 's/^objdir=//p'`; \
+if [ -f $libtooldir/libopcodes.a ]; then \
+  cp $libtooldir/libopcodes.a libopcodes.tmp; \
+  ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so libopcodes.tmp; \
+  /bin/sh ../../opcodes/../move-if-change libopcodes.tmp libopcodes.a; \
+else true; fi
+touch stamp-lib
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+Making all in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/opcodes/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/opcodes/po'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/gas'
+make  all-recursive
+ok
+checking for dlfcn.h... make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/gas'
+Making all in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/gas/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gas/po'
+yes
+checking for objdir... make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/gas'
+.libs
+  CC       app.o
+  CC       as.o
+  CC       atof-generic.o
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works...   CC       codeview.o
+yes
+checking if gcc supports -c -o file.o...   CC       compress-debug.o
+  CC       cond.o
+yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics...   CC       depend.o
+  CC       dwarf2dbg.o
+GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+configure: creating ./config.lt
+  CC       dw2gencfi.o
+  CC       ecoff.o
+  CC       ehopt.o
+  CC       expr.o
+  CC       flonum-copy.o
+  CC       flonum-konst.o
+  CC       flonum-mult.o
+  CC       frags.o
+  CC       gen-sframe.o
+config.lt: creating libtool
+checking for aclocal... ${SHELL} /lfs_build/sources/binutils-2.42/missing aclocal-1.15
+checking for autoconf... ${SHELL} /lfs_build/sources/binutils-2.42/missing autoconf
+checking for autoheader... ${SHELL} /lfs_build/sources/binutils-2.42/missing autoheader
+checking whether gcc supports -W... yes
+  CC       ginsn.o
+checking whether gcc supports -Wall... yes
+checking whether gcc supports -Wnarrowing...   CC       hash.o
+  CC       input-file.o
+yes
+checking whether gcc supports -Wwrite-strings... yes
+checking whether gcc supports -Wmissing-format-attribute... yes
+checking whether gcc supports -Wstrict-prototypes...   CC       input-scrub.o
+yes
+checking whether gcc supports -Wmissing-prototypes...   CC       listing.o
+yes
+checking whether gcc supports -Wold-style-definition... yes
+checking whether gcc supports -pedantic -Wlong-long... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether to install libbfd... no
+checking whether gcc supports -Wall... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h...   CC       literal.o
+  CC       macro.o
+yes
+checking for getpagesize...   CC       messages.o
+yes
+checking for working mmap... yes
+checking for library containing dlsym...   CC       output-file.o
+none required
+checking for ELF support in BFD...   CC       read.o
+  CC       remap.o
+  CC       sb.o
+  CC       scfidw2gen.o
+yes
+checking whether byte ordering is bigendian...   CC       scfi.o
+  CC       sframe-opt.o
+no
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking endian.h usability...   CC       stabs.o
+yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking for pread... yes
+checking whether bswap_16 is declared... yes
+checking whether bswap_32 is declared...   CC       subsegs.o
+yes
+checking whether bswap_64 is declared...   CC       symbols.o
+yes
+checking whether asprintf is declared... yes
+checking whether vasprintf is declared...   CC       write.o
+yes
+checking whether stpcpy is declared... yes
+checking for qsort_r... yes
+checking for qsort_r signature... GNU
+checking for O_CLOEXEC... yes
+checking for makeinfo... makeinfo --split-size=5000000
+checking for expect... no
+checking for Tcl supporting try/catch... no
+checking for linker versioning flags... -Wl,--version-script='../../libctf/libctf.ver'
+  GEN      doc/asconfig.texi
+  CC       config/tc-i386.o
+configure: updating cache ./config.cache
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+  CC       config/obj-elf.o
+  CC       config/atof-ieee.o
+  GEN      doc/as.1
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing default-1 commands
+config.status: executing libtool commands
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/libctf'
+make  all-recursive
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/libctf'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/libctf'
+  CC       libctf_la-ctf-archive.lo
+  CC       libctf_la-ctf-dump.lo
+  CC       libctf_la-ctf-create.lo
+  CC       libctf_la-ctf-decl.lo
+  CC       libctf_la-ctf-error.lo
+  CC       libctf_la-ctf-hash.lo
+  CC       libctf_la-ctf-labels.lo
+  CC       libctf_la-ctf-dedup.lo
+  CC       libctf_la-ctf-link.lo
+  CC       libctf_la-ctf-lookup.lo
+  CC       libctf_la-ctf-open.lo
+  CC       libctf_la-ctf-serialize.lo
+  CC       libctf_la-ctf-sha1.lo
+  CC       libctf_la-ctf-string.lo
+../../libctf/ctf-serialize.c: In function 'symtypetab_density':
+../../libctf/ctf-serialize.c:211:25: warning: 'sym' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  211 |           if (*max < sym->st_symidx)
+      |                      ~~~^~~~~~~~~~~
+  CC       libctf_la-ctf-subr.lo
+  CC       libctf_la-ctf-types.lo
+  CC       libctf_la-ctf-util.lo
+  CC       libctf_la-ctf-open-bfd.lo
+  CC       libctf_nobfd_la-ctf-archive.lo
+  CC       libctf_nobfd_la-ctf-dump.lo
+  CC       libctf_nobfd_la-ctf-create.lo
+  CC       libctf_nobfd_la-ctf-decl.lo
+  CC       libctf_nobfd_la-ctf-error.lo
+  CC       libctf_nobfd_la-ctf-hash.lo
+  CC       libctf_nobfd_la-ctf-labels.lo
+  CC       libctf_nobfd_la-ctf-dedup.lo
+  CC       libctf_nobfd_la-ctf-link.lo
+  CC       libctf_nobfd_la-ctf-lookup.lo
+  CC       libctf_nobfd_la-ctf-open.lo
+  CC       libctf_nobfd_la-ctf-serialize.lo
+  CC       libctf_nobfd_la-ctf-sha1.lo
+  CC       libctf_nobfd_la-ctf-string.lo
+../../libctf/ctf-serialize.c: In function 'symtypetab_density':
+../../libctf/ctf-serialize.c:211:25: warning: 'sym' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  211 |           if (*max < sym->st_symidx)
+      |                      ~~~^~~~~~~~~~~
+  CC       libctf_nobfd_la-ctf-subr.lo
+  CC       libctf_nobfd_la-ctf-types.lo
+  CC       libctf_nobfd_la-ctf-util.lo
+  CCLD     libctf.la
+libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
+  CCLD     libctf-nobfd.la
+libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libctf'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libctf'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libctf'
+  CCLD     as-new
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gas'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gas'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gas'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make  all-recursive
+  CC       sysinfo.o
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/gprof'
+  CC       syslex_wrap.o
+Making info in po
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils/po'
+make[3]: Nothing to be done for 'info'.
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils/po'
+Making all in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/gprof/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gprof/po'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/gprof'
+  CC       basic_blocks.o
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils'
+  GEN      doc/addr2line.1
+  GEN      doc/ar.1
+  CC       call_graph.o
+  CC       cg_arcs.o
+  CCLD     sysinfo
+  CC       cg_dfn.o
+  GEN      sysroff.h
+  GEN      doc/dlltool.1
+  GEN      doc/nm.1
+  CC       cg_print.o
+  GEN      doc/objcopy.1
+  CC       corefile.o
+  GEN      doc/objdump.1
+  GEN      doc/ranlib.1
+  GEN      doc/readelf.1
+  CC       gmon_io.o
+  CC       gprof.o
+  GEN      doc/size.1
+  GEN      doc/strings.1
+  GEN      doc/strip.1
+  CC       hertz.o
+  CC       hist.o
+  CC       source.o
+  GEN      doc/elfedit.1
+  GEN      doc/windres.1
+  CC       search_list.o
+  GEN      doc/windmc.1
+  GEN      doc/cxxfilt.man
+  CC       symtab.o
+  CC       sym_ids.o
+  CC       utils.o
+  GEN      doc/c++filt.1
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make  all-recursive
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils'
+Making all in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils/po'
+  CC       i386.o
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils'
+  CC       size.o
+  CC       alpha.o
+  CC       vax.o
+  CC       sparc.o
+  CC       mips.o
+  CC       aarch64.o
+  CC       flat_bl.o
+  CC       bucomm.o
+  CC       fsf_callg_bl.o
+  CC       bsd_callg_bl.o
+  CC       version.o
+  CC       filemode.o
+  CCLD     gprof
+  CC       objdump.o
+  CC       dwarf.o
+  CC       prdbg.o
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gprof'
+  CC       demanguse.o
+  CC       rddbg.o
+  CC       debug.o
+  CC       stabs.o
+  CC       rdcoff.o
+  CC       elfcomm.o
+  CC       arparse.o
+  CC       arlex.o
+  CC       ar.o
+  CC       not-ranlib.o
+  CC       arsup.o
+  CC       rename.o
+  CC       binemul.o
+  CC       emul_vanilla.o
+  CC       strings.o
+  CC       is-ranlib.o
+  CC       objcopy.o
+  CC       not-strip.o
+  CC       wrstabs.o
+  CC       addr2line.o
+  CC       readelf.o
+  CC       unwind-ia64.o
+  CC       elfedit.o
+  CC       nm.o
+  CC       is-strip.o
+  CC       cxxfilt.o
+  CC       bfdtest1.o
+  CC       bfdtest2.o
+  CCLD     size
+  CCLD     ar
+  CCLD     strings
+  CCLD     ranlib
+  CCLD     objcopy
+  CCLD     addr2line
+  CCLD     elfedit
+  CCLD     nm-new
+  CCLD     strip-new
+  CCLD     cxxfilt
+  CCLD     bfdtest1
+  CCLD     bfdtest2
+  CC       testsuite/gentestdlls.o
+  CCLD     objdump
+  CCLD     testsuite/gentestdlls
+  CCLD     readelf
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/ld'
+(echo "/* This file is automatically generated.  DO NOT EDIT! */";\
+for f in `echo " " eelf_x86_64.o eelf32_x86_64.o eelf_i386.o eelf_iamcu.o "" \
+ | sed -e 's/ e/ ld/g' -e 's/ ld/ /g' -e 's/[.]o//g'`; do \
+    echo "extern ld_emulation_xfer_type ld_${f}_emulation;"; \
+done;\
+echo "";\
+echo "#define EMULATION_LIST \\";\
+for f in `echo " " eelf_x86_64.o eelf32_x86_64.o eelf_i386.o eelf_iamcu.o "" \
+ | sed -e 's/ e/ ld/g' -e 's/ ld/ /g' -e 's/[.]o//g'`; do \
+    echo "  &ld_${f}_emulation, \\"; \
+done;\
+echo "  0") >ldemul-tmp.h
+mv ldemul-tmp.h ldemul-list.h
+make  all-recursive
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/ld'
+Making all in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/ld/po'
+( if test 'x../../../ld/po' != 'x.'; then \
+    posrcprefix='../../../ld/'; \
+  else \
+    posrcprefix="../"; \
+  fi; \
+  rm -f SRC-POTFILES-t SRC-POTFILES \
+    && (sed -e '/^#/d' -e '/^[	 ]*$/d' \
+	    -e "s@.*@	$posrcprefix& \\\\@" < ../../../ld/po/SRC-POTFILES.in \
+	| sed -e '$s/\\$//') > SRC-POTFILES-t \
+    && chmod a-w SRC-POTFILES-t \
+    && mv SRC-POTFILES-t SRC-POTFILES )
+rm -f BLD-POTFILES-t BLD-POTFILES \
+  && sed -e '/^#/d' -e '/^[	 ]*$/d' \
+	 -e "s@.*@	../& \\\\@" < ../../../ld/po/BLD-POTFILES.in \
+     | sed -e '$s/\\$//' > BLD-POTFILES-t \
+  && chmod a-w BLD-POTFILES-t \
+  && mv BLD-POTFILES-t BLD-POTFILES
+cd .. \
+  && CONFIG_FILES=po/Makefile.in:po/Make-in \
+     CONFIG_HEADERS= /bin/sh ./config.status
+config.status: creating po/Makefile.in
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: executing default-2 commands
+config.status: executing default commands
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/ld/po'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/ld'
+  CC       libdep_plugin.lo
+  CC       libldtestplug_la-testplug.lo
+  CC       libldtestplug2_la-testplug2.lo
+  CC       libldtestplug3_la-testplug3.lo
+  CC       libldtestplug4_la-testplug4.lo
+  CC       ldgram.o
+  CC       ldlex-wrapper.o
+  CC       lexsup.o
+  CC       ldlang.o
+  CC       mri.o
+  CC       ldctor.o
+  CC       ldmain.o
+  CC       ldwrite.o
+  CC       ldexp.o
+  CC       ldemul.o
+  CC       ldver.o
+  CC       ldmisc.o
+  CC       ldfile.o
+  CC       ldcref.o
+  CC       plugin.o
+  CC       ldbuildid.o
+  GEN      ldscripts/stamp
+  CC       ldelf.o
+  CC       ldelfgen.o
+  GEN      libdep.la
+  CCLD     libldtestplug.la
+libtool: link: warning: ignoring multiple `-rpath's for a libtool library
+  CCLD     libldtestplug2.la
+  CCLD     libldtestplug3.la
+  CCLD     libldtestplug4.la
+  GEN      eelf_x86_64.c
+  GEN      eelf32_x86_64.c
+  GEN      eelf_i386.c
+  GEN      eelf_iamcu.c
+  CC       eelf_x86_64.o
+  CC       eelf32_x86_64.o
+  CC       eelf_i386.o
+  CC       eelf_iamcu.o
+  CCLD     ld-new
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/ld'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/ld'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/ld'
+make[1]: Leaving directory '/lfs_build/sources/binutils-2.42/build'
+make[1]: Entering directory '/lfs_build/sources/binutils-2.42/build'
+/bin/sh ../mkinstalldirs /lfs_build/tools /lfs_build/tools
+make[1]: Nothing to be done for 'install-target'.
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/etc'
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/etc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/etc'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/etc'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/libsframe'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make  install-recursive
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/libsframe'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/libiberty'
+ /usr/bin/mkdir -p '/lfs_build/tools/share/info'
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/gprof'
+ /usr/bin/install -c -m 644 ../../libsframe/doc/sframe-spec.info '/lfs_build/tools/share/info'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/gas'
+Making install in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/gprof/po'
+make[4]: Nothing to be done for 'install'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gprof/po'
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/libiberty/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libiberty/testsuite'
+Making install in po
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/gas/po'
+make[3]: Nothing to be done for 'install'.
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gas/po'
+ install-info --info-dir='/lfs_build/tools/share/info' '/lfs_build/tools/share/info/sframe-spec.info'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libsframe'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libsframe'
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/libiberty/testsuite'
+make[3]: Nothing to be done for 'install'.
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libiberty/testsuite'
+if test -n ""; then \
+	/bin/sh ../../libiberty/../mkinstalldirs /lfs_build/tools/lib/`gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -print-multi-os-directory`; \
+	/usr/bin/install -c -m 644 ./libiberty.a /lfs_build/tools/lib/`gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -print-multi-os-directory`/./libiberty.an; \
+	( cd /lfs_build/tools/lib/`gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -print-multi-os-directory` ; chmod 644 ./libiberty.an ;ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so ./libiberty.an ); \
+	mv -f /lfs_build/tools/lib/`gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -print-multi-os-directory`/./libiberty.an /lfs_build/tools/lib/`gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections     -print-multi-os-directory`/./libiberty.a; \
+	case "" in \
+	  /*)    thd=;; \
+	  *)     thd=/lfs_build/tools/include/;; \
+	esac; \
+	/bin/sh ../../libiberty/../mkinstalldirs ${thd}; \
+	for h in ../../libiberty/../include/ansidecl.h ../../libiberty/../include/demangle.h ../../libiberty/../include/dyn-string.h ../../libiberty/../include/fibheap.h ../../libiberty/../include/floatformat.h ../../libiberty/../include/hashtab.h ../../libiberty/../include/libiberty.h ../../libiberty/../include/objalloc.h ../../libiberty/../include/partition.h ../../libiberty/../include/safe-ctype.h ../../libiberty/../include/sort.h ../../libiberty/../include/splay-tree.h ../../libiberty/../include/timeval-utils.h; do \
+	  /usr/bin/install -c -m 644 $h ${thd}; \
+	done; \
+fi
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libiberty'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/gas'
+  GEN      doc/asconfig.texi
+make[5]: Entering directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make  install-recursive
+ /usr/bin/mkdir -p '/lfs_build/tools/share/info'
+ /usr/bin/install -c -m 644 ../../gprof/gprof.info '/lfs_build/tools/share/info'
+ /usr/bin/mkdir -p '/lfs_build/tools/share/man/man1'
+ /usr/bin/install -c -m 644 '../../gprof/gprof.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-gprof.1'
+ install-info --info-dir='/lfs_build/tools/share/info' '/lfs_build/tools/share/info/gprof.info'
+ /usr/bin/mkdir -p '/lfs_build/tools/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c gprof '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-gprof'
+libtool: install: /usr/bin/install -c gprof /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-gprof
+make[5]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gprof'
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/gas'
+Making install in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd/po'
+make[4]: Nothing to be done for 'install'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd/po'
+/bin/sh ../../gas/../mkinstalldirs /lfs_build/tools/bin
+  GEN      doc/asconfig.texi
+  /bin/sh ./libtool  --mode=install /usr/bin/install -c as-new /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-as
+ /usr/bin/mkdir -p '/lfs_build/tools/share/man/man1'
+ /usr/bin/mkdir -p '/lfs_build/tools/share/info'
+ /usr/bin/install -c -m 644 'doc/as.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-as.1'
+ /usr/bin/install -c -m 644 ../../gas/doc/as.info '/lfs_build/tools/share/info'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd'
+libtool: install: /usr/bin/install -c as-new /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-as
+/bin/sh ../../gas/../mkinstalldirs /lfs_build/tools/x86_64-lfs-linux-uclibc/bin
+ install-info --info-dir='/lfs_build/tools/share/info' '/lfs_build/tools/share/info/as.info'
+mkdir -p -- /lfs_build/tools/x86_64-lfs-linux-uclibc/bin
+n=`echo as | sed 's&^&x86_64-lfs-linux-uclibc-&'`; \
+if [ "/lfs_build/tools/bin/$n" != "/lfs_build/tools/x86_64-lfs-linux-uclibc/bin/as" ]; then \
+  rm -f /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/as; \
+  ln /lfs_build/tools/bin/$n /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/as >/dev/null 2>/dev/null \
+    ||  /bin/sh ./libtool --mode=install /usr/bin/install -c as-new /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/as; \
+else \
+  true ; \
+fi
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gas'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gas'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/gas'
+make[5]: Entering directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/lfs_build/tools/share/info'
+ /usr/bin/install -c -m 644 ./doc/bfd.info '/lfs_build/tools/share/info'
+ install-info --info-dir='/lfs_build/tools/share/info' '/lfs_build/tools/share/info/bfd.info'
+make[5]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/bfd'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/libctf'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+Making install in .
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/libctf'
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/libctf'
+ /usr/bin/mkdir -p '/lfs_build/tools/share/info'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+Making install in po
+ /usr/bin/install -c -m 644 ../../libctf/doc/ctf-spec.info '/lfs_build/tools/share/info'
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/opcodes/po'
+make[3]: Nothing to be done for 'install'.
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/opcodes/po'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/opcodes'
+ install-info --info-dir='/lfs_build/tools/share/info' '/lfs_build/tools/share/info/ctf-spec.info'
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libctf'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libctf'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/libctf'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make  install-recursive
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils'
+Making install in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils/po'
+make[4]: Nothing to be done for 'install'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils/po'
+make[2]: Entering directory '/lfs_build/sources/binutils-2.42/build/ld'
+make  install-recursive
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make[3]: Entering directory '/lfs_build/sources/binutils-2.42/build/ld'
+Making install in po
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/ld/po'
+make[4]: Nothing to be done for 'install'.
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/ld/po'
+make[5]: Entering directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make[4]: Entering directory '/lfs_build/sources/binutils-2.42/build/ld'
+ /usr/bin/mkdir -p '/lfs_build/tools/share/man/man1'
+ /usr/bin/mkdir -p '/lfs_build/tools/share/info'
+ /usr/bin/install -c -m 644 'doc/addr2line.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-addr2line.1'
+ /usr/bin/mkdir -p '/lfs_build/tools/bin'
+ /usr/bin/install -c -m 644 'doc/ar.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-ar.1'
+ /usr/bin/install -c -m 644 'doc/dlltool.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-dlltool.1'
+ /usr/bin/install -c -m 644 ../../binutils/doc/binutils.info '/lfs_build/tools/share/info'
+ /usr/bin/install -c -m 644 'doc/nm.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-nm.1'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c size '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-size'
+ /usr/bin/install -c -m 644 'doc/objcopy.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-objcopy.1'
+ /usr/bin/install -c -m 644 'doc/objdump.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-objdump.1'
+ /usr/bin/install -c -m 644 'doc/ranlib.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-ranlib.1'
+ install-info --info-dir='/lfs_build/tools/share/info' '/lfs_build/tools/share/info/binutils.info'
+ /usr/bin/install -c -m 644 'doc/readelf.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-readelf.1'
+ /usr/bin/install -c -m 644 'doc/size.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-size.1'
+ /usr/bin/install -c -m 644 'doc/strings.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-strings.1'
+libtool: install: /usr/bin/install -c size /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-size
+ /usr/bin/install -c -m 644 'doc/strip.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-strip.1'
+ /usr/bin/install -c -m 644 'doc/elfedit.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-elfedit.1'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c objdump '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-objdump'
+ /usr/bin/install -c -m 644 'doc/windres.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-windres.1'
+ /usr/bin/install -c -m 644 'doc/windmc.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-windmc.1'
+ /usr/bin/install -c -m 644 'doc/c++filt.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-c++filt.1'
+libtool: install: /usr/bin/install -c objdump /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-objdump
+make[5]: Entering directory '/lfs_build/sources/binutils-2.42/build/ld'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c ar '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-ar'
+libtool: install: /usr/bin/install -c ar /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-ar
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c strings '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-strings'
+libtool: install: /usr/bin/install -c strings /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-strings
+ /usr/bin/mkdir -p '/lfs_build/tools/bin'
+ /usr/bin/mkdir -p '/lfs_build/tools/share/man/man1'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c ranlib '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-ranlib'
+ /usr/bin/mkdir -p '/lfs_build/tools/share/info'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c ld-new '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-ld.bfd'
+ /usr/bin/install -c -m 644 '../../ld/ld.1' '/lfs_build/tools/share/man/man1/x86_64-lfs-linux-uclibc-ld.1'
+ /usr/bin/install -c -m 644 ../../ld/ld.info ../../ld/ldint.info '/lfs_build/tools/share/info'
+ /usr/bin/mkdir -p '/lfs_build/tools/lib/bfd-plugins'
+libtool: install: /usr/bin/install -c ranlib /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-ranlib
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libdep.la '/lfs_build/tools/lib/bfd-plugins'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c objcopy '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-objcopy'
+ install-info --info-dir='/lfs_build/tools/share/info' '/lfs_build/tools/share/info/ld.info'
+libtool: install: /usr/bin/install -c ld-new /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-ld.bfd
+libtool: install: /usr/bin/install -c .libs/libdep.lai /lfs_build/tools/lib/bfd-plugins/libdep.la
+libtool: install: /usr/bin/install -c .libs/libdep.a /lfs_build/tools/lib/bfd-plugins/libdep.a
+ install-info --info-dir='/lfs_build/tools/share/info' '/lfs_build/tools/share/info/ldint.info'
+/bin/sh ../../ld/../mkinstalldirs /lfs_build/tools/x86_64-lfs-linux-uclibc/bin
+libtool: install: chmod 644 /lfs_build/tools/lib/bfd-plugins/libdep.a
+n=`echo ld.bfd | sed 's/^ld-new$/ld.bfd/;s&^&x86_64-lfs-linux-uclibc-&'`; \
+if test "/lfs_build/tools/bin" != "/lfs_build/tools/x86_64-lfs-linux-uclibc/bin"; then \
+  rm -f /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld.bfd; \
+  ln /lfs_build/tools/bin/$n /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld.bfd >/dev/null 2>/dev/null \
+  ||  /bin/sh ./libtool --mode=install /usr/bin/install -c ld-new /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld.bfd; \
+fi; \
+if test "xyes" = "xyes"; then \
+  ld=`echo ld | sed 's/^ld-new$/ld.bfd/;s&^&x86_64-lfs-linux-uclibc-&'`; \
+  rm -f /lfs_build/tools/bin/$ld; \
+  ln /lfs_build/tools/bin/$n /lfs_build/tools/bin/$ld >/dev/null 2>/dev/null \
+  ||  /bin/sh ./libtool --mode=install /usr/bin/install -c ld-new /lfs_build/tools/bin/$ld; \
+  if test "/lfs_build/tools/bin" != "/lfs_build/tools/x86_64-lfs-linux-uclibc/bin"; then \
+    rm -f /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld; \
+    ln /lfs_build/tools/bin/$n /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld >/dev/null 2>/dev/null \
+    ||  /bin/sh ./libtool --mode=install /usr/bin/install -c ld-new /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld; \
+  fi; \
+fi
+libtool: install: ranlib --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so --plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so /lfs_build/tools/lib/bfd-plugins/libdep.a
+libtool: install: /usr/bin/install -c objcopy /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-objcopy
+libtool: install: warning: remember to run `libtool --finish /nowhere'
+/bin/sh ../../ld/../mkinstalldirs /lfs_build/tools/x86_64-lfs-linux-uclibc/lib/ldscripts
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c addr2line '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-addr2line'
+mkdir -p -- /lfs_build/tools/x86_64-lfs-linux-uclibc/lib/ldscripts
+for f in ldscripts/* ; do \
+  case $f in \
+    stamp) ;; \
+    *) /usr/bin/install -c -m 644 $f /lfs_build/tools/x86_64-lfs-linux-uclibc/lib/$f ; \
+  esac \
+done
+libtool: install: /usr/bin/install -c addr2line /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-addr2line
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c readelf '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-readelf'
+libtool: install: /usr/bin/install -c readelf /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-readelf
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c elfedit '/lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-elfedit'
+libtool: install: /usr/bin/install -c elfedit /lfs_build/tools/bin/./x86_64-lfs-linux-uclibc-elfedit
+  /bin/sh ./libtool  --mode=install /usr/bin/install -c nm-new /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-nm
+libtool: install: /usr/bin/install -c nm-new /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-nm
+  /bin/sh ./libtool  --mode=install /usr/bin/install -c strip-new /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-strip
+libtool: install: /usr/bin/install -c strip-new /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-strip
+  /bin/sh ./libtool  --mode=install /usr/bin/install -c cxxfilt /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-c++filt
+libtool: install: /usr/bin/install -c cxxfilt /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-c++filt
+/bin/sh ../../binutils/../mkinstalldirs /lfs_build/tools/x86_64-lfs-linux-uclibc/bin
+for i in nm-new strip-new ar ranlib dlltool objdump objcopy readelf; do \
+  if [ -f $i ]; then \
+    j=`echo $i | sed -e 's/-new//'`; \
+    k=`echo $j | sed 's&^&x86_64-lfs-linux-uclibc-&'`; \
+    if [ "/lfs_build/tools/bin/$k" != "/lfs_build/tools/x86_64-lfs-linux-uclibc/bin/$j" ]; then \
+      rm -f /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/$j; \
+      ln /lfs_build/tools/bin/$k /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/$j >/dev/null 2>/dev/null \
+	||  /bin/sh ./libtool --mode=install /usr/bin/install -c $i /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/$j; \
+    fi; \
+  else true; \
+  fi; \
+done
+rm -f /lfs_build/tools/lib/bfd-plugins/libdep.la
+rm -f /lfs_build/tools/lib/bfd-plugins/libdep.dll.a
+make[5]: Leaving directory '/lfs_build/sources/binutils-2.42/build/ld'
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/ld'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/ld'
+make[5]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/ld'
+make[4]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make[3]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make[2]: Leaving directory '/lfs_build/sources/binutils-2.42/build/binutils'
+make[1]: Leaving directory '/lfs_build/sources/binutils-2.42/build'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Fri May  3 08:10:08 UTC 2024
+
+Totalseconds: 52
+
+KB: 1058756	/lfs_build
+

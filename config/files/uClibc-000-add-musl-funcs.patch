@@ -1,0 +1,85 @@
+--- a/include/sys/uio.h
++++ b/include/sys/uio.h
+@@ -76,4 +76,24 @@ extern ssize_t pwritev (int __fd, const struct iovec *__iovec, int __count,
+
+ __END_DECLS
+
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++#ifdef _GNU_SOURCE
++ssize_t process_vm_writev(pid_t, const struct iovec *, unsigned long, const struct iovec *, unsigned long, unsigned long);
++ssize_t process_vm_readv(pid_t, const struct iovec *, unsigned long, const struct iovec *, unsigned long, unsigned long);
++ssize_t preadv2 (int, const struct iovec *, int, off_t, int);
++ssize_t pwritev2 (int, const struct iovec *, int, off_t, int);
++#define RWF_HIPRI 0x00000001
++#define RWF_DSYNC 0x00000002
++#define RWF_SYNC 0x00000004
++#define RWF_NOWAIT 0x00000008
++#define RWF_APPEND 0x00000010
++#endif
++
++#ifdef __cplusplus
++}
++#endif
++
+ #endif /* sys/uio.h */
+--- a/libc/misc/Makefile.in
++++ b/libc/misc/Makefile.in
+@@ -22,6 +22,7 @@ include $(top_srcdir)libc/misc/glob/Makefile.in
+ include $(top_srcdir)libc/misc/internals/Makefile.in
+ include $(top_srcdir)libc/misc/locale/Makefile.in
+ include $(top_srcdir)libc/misc/mntent/Makefile.in
++include $(top_srcdir)libc/misc/musl/Makefile.in
+ include $(top_srcdir)libc/misc/pthread/Makefile.in
+ include $(top_srcdir)libc/misc/regex/Makefile.in
+ include $(top_srcdir)libc/misc/search/Makefile.in
+--- /dev/null
++++ b/libc/misc/musl/Makefile
+@@ -0,0 +1,6 @@
++top_srcdir=../../../
++top_builddir=../../../
++all: objs
++include $(top_builddir)Rules.mak
++include Makefile.in
++include $(top_srcdir)Makerules
+--- /dev/null
++++ b/libc/misc/musl/Makefile.in
+@@ -0,0 +1,18 @@
++# Funcs from musl libc
++
++subdirs += libc/misc/musl
++
++CSRC-y := process_vm.c
++
++MISC_MUSL_DIR := $(top_srcdir)libc/misc/musl
++MISC_MUSL_OUT := $(top_builddir)libc/misc/musl
++
++MISC_MUSL_SRC := $(patsubst %.c,$(MISC_MUSL_DIR)/%.c,$(CSRC-y))
++MISC_MUSL_OBJ := $(patsubst %.c,$(MISC_MUSL_OUT)/%.o,$(CSRC-y))
++
++libc-y += $(MISC_MUSL_OBJ)
++
++objclean-y += CLEAN_libc/misc/musl
++
++CLEAN_libc/misc/musl:
++	$(do_rm) $(addprefix $(MISC_MUSL_OUT)/*., o os)
+--- /dev/null
++++ b/libc/misc/musl/process_vm.c
+@@ -0,0 +1,15 @@
++#ifndef _GNU_SOURCE
++#define _GNU_SOURCE
++#endif
++#include <sys/uio.h>
++#include <syscall.h>
++
++ssize_t process_vm_writev(pid_t pid, const struct iovec *lvec, unsigned long liovcnt, const struct iovec *rvec, unsigned long riovcnt, unsigned long flags)
++{
++	return syscall(SYS_process_vm_writev, pid, lvec, liovcnt, rvec, riovcnt, flags);
++}
++
++ssize_t process_vm_readv(pid_t pid, const struct iovec *lvec, unsigned long liovcnt, const struct iovec *rvec, unsigned long riovcnt, unsigned long flags)
++{
++	return syscall(SYS_process_vm_readv, pid, lvec, liovcnt, rvec, riovcnt, flags);
++}

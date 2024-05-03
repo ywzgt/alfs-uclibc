@@ -1,0 +1,807 @@
+Fri May  3 08:32:30 UTC 2024
+KB: 878220	/lfs_build
+
+checking for a BSD-compatible install... ./build-aux/install-sh -c
+checking whether build environment is sane... yes
+checking for x86_64-lfs-linux-uclibc-strip... x86_64-lfs-linux-uclibc-strip
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-lfs-linux-uclibc
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-lfs-linux-uclibc-gcc... x86_64-lfs-linux-uclibc-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-lfs-linux-uclibc-gcc accepts -g... yes
+checking for x86_64-lfs-linux-uclibc-gcc option to enable C11 features... none needed
+checking whether x86_64-lfs-linux-uclibc-gcc understands -c and -o together... yes
+checking dependency style of x86_64-lfs-linux-uclibc-gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for stdbool.h... yes
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for bison... bison -y
+checking whether ln -s works... yes
+checking for x86_64-lfs-linux-uclibc-gcc... (cached) x86_64-lfs-linux-uclibc-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether x86_64-lfs-linux-uclibc-gcc accepts -g... (cached) yes
+checking for x86_64-lfs-linux-uclibc-gcc option to enable C11 features... (cached) none needed
+checking whether x86_64-lfs-linux-uclibc-gcc understands -c and -o together... (cached) yes
+checking dependency style of x86_64-lfs-linux-uclibc-gcc... (cached) gcc3
+checking how to run the C preprocessor... x86_64-lfs-linux-uclibc-gcc -E
+checking for variable-length arrays... yes
+checking how to run the C preprocessor... x86_64-lfs-linux-uclibc-gcc -E
+checking for x86_64-lfs-linux-uclibc-ranlib... x86_64-lfs-linux-uclibc-ranlib
+checking whether make sets $(MAKE)... (cached) yes
+checking for x86_64-lfs-linux-uclibc-ar... x86_64-lfs-linux-uclibc-ar
+checking the archiver (x86_64-lfs-linux-uclibc-ar) interface... ar
+checking for special development options... no
+checking for z/OS USS compilation... no
+checking for library containing strerror... none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking if we are using EBCDIC... no
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld used by x86_64-lfs-linux-uclibc-gcc... /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld
+checking if the linker (/lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... no
+checking for iconv... yes
+checking for working iconv... guessing yes
+checking for GNU gettext in libintl... no
+checking whether to use NLS... no
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for locale.h... yes
+checking for libintl.h... no
+checking for mcheck.h... no
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for stddef.h... yes
+checking for string.h... (cached) yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... yes
+checking for sys/time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for termios.h... yes
+checking for stropts.h... no
+checking for wchar.h... (cached) yes
+checking for wctype.h... yes
+checking for bool, true, false... no
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for memory.h... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for unsigned long long int... (cached) yes
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for ssize_t... yes
+checking size of unsigned int... 4
+checking size of unsigned long... 8
+checking for socklen_t... yes
+checking for alarm... yes
+checking for working mktime... no
+checking for getaddrinfo... yes
+checking for library containing fmod... none required
+checking for library containing isinf... no
+checking for library containing ismod... no
+checking for library containing isnan... none required
+checking for __etoa_l... no
+checking for atexit... yes
+checking for btowc... yes
+checking for fmod... yes
+checking for fwrite_unlocked... yes
+checking for gai_strerror... yes
+checking for getgrent... yes
+checking for getgroups... yes
+checking for grantpt... yes
+checking for isascii... yes
+checking for isblank... yes
+checking for iswctype... yes
+checking for iswlower... yes
+checking for iswupper... yes
+checking for lstat... yes
+checking for mbrlen... yes
+checking for memcmp... yes
+checking for memcpy... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkstemp... yes
+checking for mtrace... no
+checking for posix_openpt... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for setsid... yes
+checking for sigprocmask... yes
+checking for snprintf... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcoll... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for strncasecmp... yes
+checking for strsignal... yes
+checking for strtod... yes
+checking for strtoul... yes
+checking for system... yes
+checking for timegm... yes
+checking for tmpfile... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for tzset... yes
+checking for usleep... yes
+checking for waitpid... yes
+checking for wcrtomb... yes
+checking for wcscoll... yes
+checking for wctype... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking whether C compiler accepts ... yes
+checking size of void *... 8
+checking for mmap... yes
+checking for munmap... yes
+checking whether C compiler accepts -no-pie... yes
+checking for dlfcn.h... yes
+checking for library containing dlopen... none required
+checking whether getpgrp requires zero arguments... yes
+checking for printf %F format... no
+checking for printf %a format... no
+checking for gethostbyname... yes
+checking for connect... yes
+checking where to find the socket library calls... the standard library
+checking whether readline via "-lreadline" is present and sane... no
+checking whether readline via "-lreadline -ltermcap" is present and sane... no
+checking whether readline via "-lreadline -lcurses" is present and sane... no
+checking whether readline via "-lreadline -lncurses" is present and sane... no
+checking whether mpfr via "-lmpfr -lgmp" is present and usable... no
+checking for struct stat.st_blksize... yes
+checking for struct passwd.pw_passwd... yes
+checking for struct group.gr_passwd... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for x86_64-lfs-linux-uclibc-gcc options needed to detect all undeclared functions... none needed
+checking for struct tm.tm_zone... yes
+checking whether char is unsigned... no
+checking for an ANSI C-conforming const... yes
+checking for C/C++ restrict keyword... __restrict__
+checking for inline... inline
+checking for preprocessor stringizing operator... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating support/Makefile
+config.status: creating awklib/Makefile
+config.status: creating doc/Makefile
+config.status: creating extras/Makefile
+config.status: creating po/Makefile.in
+config.status: creating test/Makefile
+config.status: creating gawkbug
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+=== configuring in extension (/lfs_build/sources/gawk-5.3.0/extension)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  '--host=x86_64-lfs-linux-uclibc' '--build=x86_64-pc-linux-gnu' 'build_alias=x86_64-pc-linux-gnu' 'host_alias=x86_64-lfs-linux-uclibc' 'CFLAGS=-march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections' 'LDFLAGS=-Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections' 'CPPFLAGS=-DNDEBUG' --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... ./build-aux/install-sh -c
+checking whether build environment is sane... yes
+checking for x86_64-lfs-linux-uclibc-strip... x86_64-lfs-linux-uclibc-strip
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-lfs-linux-uclibc
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-lfs-linux-uclibc-gcc... x86_64-lfs-linux-uclibc-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-lfs-linux-uclibc-gcc accepts -g... yes
+checking for x86_64-lfs-linux-uclibc-gcc option to enable C11 features... none needed
+checking whether x86_64-lfs-linux-uclibc-gcc understands -c and -o together... yes
+checking dependency style of x86_64-lfs-linux-uclibc-gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for z/OS USS compilation... no
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld used by x86_64-lfs-linux-uclibc-gcc... /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld
+checking if the linker (/lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... x86_64-lfs-linux-uclibc-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... no
+checking for iconv... yes
+checking for working iconv... guessing yes
+checking for GNU gettext in libintl... no
+checking whether to use NLS... no
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for struct stat.st_blksize... yes
+checking for x86_64-lfs-linux-uclibc-ar... x86_64-lfs-linux-uclibc-ar
+checking the archiver (x86_64-lfs-linux-uclibc-ar) interface... ar
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether C compiler accepts ... yes
+checking size of void *... 8
+checking for mmap... yes
+checking for munmap... yes
+checking whether C compiler accepts -no-pie... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-lfs-linux-uclibc-gcc... /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld
+checking if the linker (/lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-nm -B
+checking the name lister (/lfs_build/tools/bin/x86_64-lfs-linux-uclibc-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-lfs-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld option to reload object files... -r
+checking for x86_64-lfs-linux-uclibc-file... no
+checking for file... file
+configure: WARNING: using cross tools not prefixed with host triplet
+checking for x86_64-lfs-linux-uclibc-objdump... x86_64-lfs-linux-uclibc-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-lfs-linux-uclibc-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-lfs-linux-uclibc-ar... (cached) x86_64-lfs-linux-uclibc-ar
+checking for archiver @FILE support... @
+checking for x86_64-lfs-linux-uclibc-strip... (cached) x86_64-lfs-linux-uclibc-strip
+checking for x86_64-lfs-linux-uclibc-ranlib... x86_64-lfs-linux-uclibc-ranlib
+checking command to parse /lfs_build/tools/bin/x86_64-lfs-linux-uclibc-nm -B output from x86_64-lfs-linux-uclibc-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for x86_64-lfs-linux-uclibc-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-lfs-linux-uclibc-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-lfs-linux-uclibc-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-lfs-linux-uclibc-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-lfs-linux-uclibc-gcc static flag -static works... yes
+checking if x86_64-lfs-linux-uclibc-gcc supports -c -o file.o... yes
+checking if x86_64-lfs-linux-uclibc-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-lfs-linux-uclibc-gcc linker (/lfs_build/tools/x86_64-lfs-linux-uclibc/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for special development options... no
+checking for fnmatch.h... yes
+checking for limits.h... yes
+checking for sys/mkdev.h... no
+checking for sys/param.h... yes
+checking for sys/select.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/sysmacros.h... yes
+checking for sys/time.h... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether mpfr via "-lmpfr -lgmp" is present and usable... no
+checking for library containing fmod... none required
+checking for fdopendir... yes
+checking for fmod... yes
+checking for fnmatch... yes
+checking for getdtablesize... yes
+checking for gettimeofday... yes
+checking for nanosleep... yes
+checking for select... yes
+checking for statvfs... yes
+checking for GetSystemTimeAsFileTime... no
+checking for strptime... yes
+checking for x86_64-lfs-linux-uclibc-gcc options needed to detect all undeclared functions... none needed
+checking for dirfd... yes
+checking whether dirfd is declared... yes
+checking whether dirfd is a macro... no
+checking how to get the file descriptor associated with an open DIR*... no_such_member
+checking for inline... inline
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/lfs_build/sources/gawk-5.3.0'
+Making all in support
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/support'
+depbase=`echo dfa.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT dfa.o -MD -MP -MF $depbase.Tpo -c -o dfa.o dfa.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo getopt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT getopt.o -MD -MP -MF $depbase.Tpo -c -o getopt.o getopt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo getopt1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT getopt1.o -MD -MP -MF $depbase.Tpo -c -o getopt1.o getopt1.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo localeinfo.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT localeinfo.o -MD -MP -MF $depbase.Tpo -c -o localeinfo.o localeinfo.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo random.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT random.o -MD -MP -MF $depbase.Tpo -c -o random.o random.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo regex.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT regex.o -MD -MP -MF $depbase.Tpo -c -o regex.o regex.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo pma.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT pma.o -MD -MP -MF $depbase.Tpo -c -o pma.o pma.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_at_failure.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT malloc/dynarray_at_failure.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_at_failure.o malloc/dynarray_at_failure.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_emplace_enlarge.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT malloc/dynarray_emplace_enlarge.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_emplace_enlarge.o malloc/dynarray_emplace_enlarge.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_finalize.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT malloc/dynarray_finalize.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_finalize.o malloc/dynarray_finalize.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_resize.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT malloc/dynarray_resize.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_resize.o malloc/dynarray_resize.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_resize_clear.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -DNDEBUG -MT malloc/dynarray_resize_clear.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_resize_clear.o malloc/dynarray_resize_clear.c &&\
+mv -f $depbase.Tpo $depbase.Po
+rm -f libsupport.a
+x86_64-lfs-linux-uclibc-ar cru libsupport.a dfa.o getopt.o getopt1.o localeinfo.o random.o regex.o malloc/dynarray_at_failure.o malloc/dynarray_emplace_enlarge.o malloc/dynarray_finalize.o malloc/dynarray_resize.o malloc/dynarray_resize_clear.o pma.o 
+x86_64-lfs-linux-uclibc-ranlib libsupport.a
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/support'
+Making all in .
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0'
+depbase=`echo array.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT array.o -MD -MP -MF $depbase.Tpo -c -o array.o array.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo awkgram.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT awkgram.o -MD -MP -MF $depbase.Tpo -c -o awkgram.o awkgram.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo builtin.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT builtin.o -MD -MP -MF $depbase.Tpo -c -o builtin.o builtin.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo cint_array.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT cint_array.o -MD -MP -MF $depbase.Tpo -c -o cint_array.o cint_array.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo command.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT command.o -MD -MP -MF $depbase.Tpo -c -o command.o command.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo debug.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT debug.o -MD -MP -MF $depbase.Tpo -c -o debug.o debug.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo eval.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT eval.o -MD -MP -MF $depbase.Tpo -c -o eval.o eval.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ext.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT ext.o -MD -MP -MF $depbase.Tpo -c -o ext.o ext.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo field.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT field.o -MD -MP -MF $depbase.Tpo -c -o field.o field.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo floatcomp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT floatcomp.o -MD -MP -MF $depbase.Tpo -c -o floatcomp.o floatcomp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo gawkapi.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT gawkapi.o -MD -MP -MF $depbase.Tpo -c -o gawkapi.o gawkapi.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo gawkmisc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT gawkmisc.o -MD -MP -MF $depbase.Tpo -c -o gawkmisc.o gawkmisc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo int_array.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT int_array.o -MD -MP -MF $depbase.Tpo -c -o int_array.o int_array.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo io.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT io.o -MD -MP -MF $depbase.Tpo -c -o io.o io.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo mpfr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT mpfr.o -MD -MP -MF $depbase.Tpo -c -o mpfr.o mpfr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo msg.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT msg.o -MD -MP -MF $depbase.Tpo -c -o msg.o msg.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo node.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT node.o -MD -MP -MF $depbase.Tpo -c -o node.o node.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo profile.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT profile.o -MD -MP -MF $depbase.Tpo -c -o profile.o profile.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo re.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT re.o -MD -MP -MF $depbase.Tpo -c -o re.o re.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo replace.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT replace.o -MD -MP -MF $depbase.Tpo -c -o replace.o replace.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo str_array.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT str_array.o -MD -MP -MF $depbase.Tpo -c -o str_array.o str_array.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo symbol.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT symbol.o -MD -MP -MF $depbase.Tpo -c -o symbol.o symbol.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo version.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.   -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT version.o -MD -MP -MF $depbase.Tpo -c -o version.o version.c &&\
+mv -f $depbase.Tpo $depbase.Po
+x86_64-lfs-linux-uclibc-gcc -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o gawk array.o awkgram.o builtin.o cint_array.o command.o debug.o eval.o ext.o field.o floatcomp.o gawkapi.o gawkmisc.o int_array.o io.o main.o mpfr.o msg.o node.o profile.o re.o replace.o str_array.o symbol.o version.o support/libsupport.a      -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie 
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0'
+Making all in extension
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/extension'
+make  all-recursive
+make[3]: Entering directory '/lfs_build/sources/gawk-5.3.0/extension'
+Making all in po
+make[4]: Entering directory '/lfs_build/sources/gawk-5.3.0/extension/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/lfs_build/sources/gawk-5.3.0/extension/po'
+make[4]: Entering directory '/lfs_build/sources/gawk-5.3.0/extension'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT testext.lo -MD -MP -MF .deps/testext.Tpo -c -o testext.lo testext.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT filefuncs.lo -MD -MP -MF .deps/filefuncs.Tpo -c -o filefuncs.lo filefuncs.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT stack.lo -MD -MP -MF .deps/stack.Tpo -c -o stack.lo stack.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT gawkfts.lo -MD -MP -MF .deps/gawkfts.Tpo -c -o gawkfts.lo gawkfts.c
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT filefuncs.lo -MD -MP -MF .deps/filefuncs.Tpo -c filefuncs.c  -fPIC -DPIC -o .libs/filefuncs.o
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT stack.lo -MD -MP -MF .deps/stack.Tpo -c stack.c  -fPIC -DPIC -o .libs/stack.o
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT testext.lo -MD -MP -MF .deps/testext.Tpo -c testext.c  -fPIC -DPIC -o .libs/testext.o
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT gawkfts.lo -MD -MP -MF .deps/gawkfts.Tpo -c gawkfts.c  -fPIC -DPIC -o .libs/gawkfts.o
+mv -f .deps/stack.Tpo .deps/stack.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT fnmatch.lo -MD -MP -MF .deps/fnmatch.Tpo -c -o fnmatch.lo fnmatch.c
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT fnmatch.lo -MD -MP -MF .deps/fnmatch.Tpo -c fnmatch.c  -fPIC -DPIC -o .libs/fnmatch.o
+mv -f .deps/fnmatch.Tpo .deps/fnmatch.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT fork.lo -MD -MP -MF .deps/fork.Tpo -c -o fork.lo fork.c
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT fork.lo -MD -MP -MF .deps/fork.Tpo -c fork.c  -fPIC -DPIC -o .libs/fork.o
+mv -f .deps/filefuncs.Tpo .deps/filefuncs.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT inplace.lo -MD -MP -MF .deps/inplace.Tpo -c -o inplace.lo inplace.c
+mv -f .deps/gawkfts.Tpo .deps/gawkfts.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT intdiv.lo -MD -MP -MF .deps/intdiv.Tpo -c -o intdiv.lo intdiv.c
+mv -f .deps/fork.Tpo .deps/fork.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT ordchr.lo -MD -MP -MF .deps/ordchr.Tpo -c -o ordchr.lo ordchr.c
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT inplace.lo -MD -MP -MF .deps/inplace.Tpo -c inplace.c  -fPIC -DPIC -o .libs/inplace.o
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT intdiv.lo -MD -MP -MF .deps/intdiv.Tpo -c intdiv.c  -fPIC -DPIC -o .libs/intdiv.o
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT ordchr.lo -MD -MP -MF .deps/ordchr.Tpo -c ordchr.c  -fPIC -DPIC -o .libs/ordchr.o
+mv -f .deps/testext.Tpo .deps/testext.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT readdir.lo -MD -MP -MF .deps/readdir.Tpo -c -o readdir.lo readdir.c
+mv -f .deps/ordchr.Tpo .deps/ordchr.Plo
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT readdir.lo -MD -MP -MF .deps/readdir.Tpo -c readdir.c  -fPIC -DPIC -o .libs/readdir.o
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT readfile.lo -MD -MP -MF .deps/readfile.Tpo -c -o readfile.lo readfile.c
+mv -f .deps/intdiv.Tpo .deps/intdiv.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT revoutput.lo -MD -MP -MF .deps/revoutput.Tpo -c -o revoutput.lo revoutput.c
+mv -f .deps/inplace.Tpo .deps/inplace.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT revtwoway.lo -MD -MP -MF .deps/revtwoway.Tpo -c -o revtwoway.lo revtwoway.c
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT readfile.lo -MD -MP -MF .deps/readfile.Tpo -c readfile.c  -fPIC -DPIC -o .libs/readfile.o
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT revoutput.lo -MD -MP -MF .deps/revoutput.Tpo -c revoutput.c  -fPIC -DPIC -o .libs/revoutput.o
+readdir.c: In function 'dir_get_record':
+readdir.c:221:27: warning: array subscript 1 is above array bounds of 'struct awk_field_info[1]' [-Warray-bounds=]
+  221 |         the_dir->fw.fields[1].len = flen-1;
+      |         ~~~~~~~~~~~~~~~~~~^~~
+In file included from readdir.c:65:
+./../gawkapi.h:142:11: note: while referencing 'fields'
+  142 |         } fields[1];            /* actual dimension should be nf */
+      |           ^~~~~~
+readdir.c:225:27: warning: array subscript 2 is above array bounds of 'struct awk_field_info[1]' [-Warray-bounds=]
+  225 |         the_dir->fw.fields[2].len = flen-1;
+      |         ~~~~~~~~~~~~~~~~~~^~~
+./../gawkapi.h:142:11: note: while referencing 'fields'
+  142 |         } fields[1];            /* actual dimension should be nf */
+      |           ^~~~~~
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT revtwoway.lo -MD -MP -MF .deps/revtwoway.Tpo -c revtwoway.c  -fPIC -DPIC -o .libs/revtwoway.o
+readdir.c: In function 'dir_take_control_of':
+readdir.c:303:27: warning: array subscript 1 is above array bounds of 'struct awk_field_info[1]' [-Warray-bounds=]
+  303 |         the_dir->fw.fields[1].skip = 1; /* single '/' separator */
+      |         ~~~~~~~~~~~~~~~~~~^~~
+./../gawkapi.h:142:11: note: while referencing 'fields'
+  142 |         } fields[1];            /* actual dimension should be nf */
+      |           ^~~~~~
+readdir.c:304:27: warning: array subscript 2 is above array bounds of 'struct awk_field_info[1]' [-Warray-bounds=]
+  304 |         the_dir->fw.fields[2].skip = 1; /* single '/' separator */
+      |         ~~~~~~~~~~~~~~~~~~^~~
+./../gawkapi.h:142:11: note: while referencing 'fields'
+  142 |         } fields[1];            /* actual dimension should be nf */
+      |           ^~~~~~
+mv -f .deps/readdir.Tpo .deps/readdir.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT rwarray.lo -MD -MP -MF .deps/rwarray.Tpo -c -o rwarray.lo rwarray.c
+mv -f .deps/revoutput.Tpo .deps/revoutput.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I.  -I./.. -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT time.lo -MD -MP -MF .deps/time.Tpo -c -o time.lo time.c
+mv -f .deps/readfile.Tpo .deps/readfile.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -rpath /foo -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o testext.la  testext.lo   
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT rwarray.lo -MD -MP -MF .deps/rwarray.Tpo -c rwarray.c  -fPIC -DPIC -o .libs/rwarray.o
+libtool: compile:  x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I./.. -DNDEBUG -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -MT time.lo -MD -MP -MF .deps/time.Tpo -c time.c  -fPIC -DPIC -o .libs/time.o
+mv -f .deps/revtwoway.Tpo .deps/revtwoway.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o filefuncs.la -rpath /usr/lib/gawk filefuncs.lo stack.lo gawkfts.lo  
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/testext.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,testext.so -o .libs/testext.so
+libtool: link: ( cd ".libs" && rm -f "testext.la" && ln -s "../testext.la" "testext.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o fnmatch.la -rpath /usr/lib/gawk fnmatch.lo  
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/filefuncs.o .libs/stack.o .libs/gawkfts.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,filefuncs.so -o .libs/filefuncs.so
+mv -f .deps/time.Tpo .deps/time.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o fork.la -rpath /usr/lib/gawk fork.lo  
+libtool: link: ( cd ".libs" && rm -f "filefuncs.la" && ln -s "../filefuncs.la" "filefuncs.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o inplace.la -rpath /usr/lib/gawk inplace.lo  
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/fnmatch.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,fnmatch.so -o .libs/fnmatch.so
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/fork.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,fork.so -o .libs/fork.so
+libtool: link: ( cd ".libs" && rm -f "fnmatch.la" && ln -s "../fnmatch.la" "fnmatch.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o intdiv.la -rpath /usr/lib/gawk intdiv.lo   -lm 
+libtool: link: ( cd ".libs" && rm -f "fork.la" && ln -s "../fork.la" "fork.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o ordchr.la -rpath /usr/lib/gawk ordchr.lo  
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/inplace.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,inplace.so -o .libs/inplace.so
+libtool: link: ( cd ".libs" && rm -f "inplace.la" && ln -s "../inplace.la" "inplace.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o readdir.la -rpath /usr/lib/gawk readdir.lo  
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/intdiv.o   -lm  -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,intdiv.so -o .libs/intdiv.so
+mv -f .deps/rwarray.Tpo .deps/rwarray.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o readfile.la -rpath /usr/lib/gawk readfile.lo  
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/ordchr.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,ordchr.so -o .libs/ordchr.so
+libtool: link: ( cd ".libs" && rm -f "intdiv.la" && ln -s "../intdiv.la" "intdiv.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o revoutput.la -rpath /usr/lib/gawk revoutput.lo  
+libtool: link: ( cd ".libs" && rm -f "ordchr.la" && ln -s "../ordchr.la" "ordchr.la" )
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/readdir.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,readdir.so -o .libs/readdir.so
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o revtwoway.la -rpath /usr/lib/gawk revtwoway.lo  
+libtool: link: ( cd ".libs" && rm -f "readdir.la" && ln -s "../readdir.la" "readdir.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o rwarray.la -rpath /usr/lib/gawk rwarray.lo   
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/readfile.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,readfile.so -o .libs/readfile.so
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/revoutput.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,revoutput.so -o .libs/revoutput.so
+libtool: link: ( cd ".libs" && rm -f "readfile.la" && ln -s "../readfile.la" "readfile.la" )
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/revtwoway.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,revtwoway.so -o .libs/revtwoway.so
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wall -DNDEBUG -module -avoid-version -no-undefined -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o time.la -rpath /usr/lib/gawk time.lo  
+libtool: link: ( cd ".libs" && rm -f "revoutput.la" && ln -s "../revoutput.la" "revoutput.la" )
+libtool: link: ( cd ".libs" && rm -f "revtwoway.la" && ln -s "../revtwoway.la" "revtwoway.la" )
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/rwarray.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,rwarray.so -o .libs/rwarray.so
+libtool: link: ( cd ".libs" && rm -f "rwarray.la" && ln -s "../rwarray.la" "rwarray.la" )
+libtool: link: x86_64-lfs-linux-uclibc-gcc -shared  -fPIC -DPIC  .libs/time.o    -march=x86-64-v3 -mtune=haswell -Os -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--gc-sections   -Wl,-soname -Wl,time.so -o .libs/time.so
+libtool: link: ( cd ".libs" && rm -f "time.la" && ln -s "../time.la" "time.la" )
+make[4]: Leaving directory '/lfs_build/sources/gawk-5.3.0/extension'
+make[3]: Leaving directory '/lfs_build/sources/gawk-5.3.0/extension'
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/extension'
+Making all in doc
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/doc'
+Making all in awklib
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/awklib'
+rm -f pwcat.c
+rm -f grcat.c
+sed 's;/usr/local/libexec/awk;/usr/libexec/awk;' < ./eg/lib/passwdawk.in > passwd.awk
+ln -s ./eg/lib/pwcat.c .
+sed 's;/usr/local/libexec/awk;/usr/libexec/awk;' < ./eg/lib/groupawk.in > group.awk
+ln -s ./eg/lib/grcat.c .
+depbase=`echo pwcat.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I.. -I../support -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT pwcat.o -MD -MP -MF $depbase.Tpo -c -o pwcat.o pwcat.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo grcat.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-lfs-linux-uclibc-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I.. -I../support -DNDEBUG  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG -MT grcat.o -MD -MP -MF $depbase.Tpo -c -o grcat.o grcat.c &&\
+mv -f $depbase.Tpo $depbase.Po
+x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o pwcat pwcat.o  
+x86_64-lfs-linux-uclibc-gcc  -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -DNDEBUG  -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections -no-pie -o grcat grcat.o  
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/awklib'
+Making all in po
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/po'
+Making all in test
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/test'
+make[1]: Leaving directory '/lfs_build/sources/gawk-5.3.0'
+make  install-recursive
+make[1]: Entering directory '/lfs_build/sources/gawk-5.3.0'
+Making install in support
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/support'
+make[3]: Entering directory '/lfs_build/sources/gawk-5.3.0/support'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/lfs_build/sources/gawk-5.3.0/support'
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/support'
+Making install in .
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0'
+make[3]: Entering directory '/lfs_build/sources/gawk-5.3.0'
+ /usr/bin/mkdir -p '/lfs_build/usr/bin'
+ /usr/bin/mkdir -p '/lfs_build/usr/include'
+ /usr/bin/mkdir -p '/lfs_build/usr/bin'
+ ./build-aux/install-sh -c gawkbug '/lfs_build/usr/bin'
+ ./build-aux/install-sh -c -m 644 gawkapi.h '/lfs_build/usr/include'
+  ./build-aux/install-sh -c gawk '/lfs_build/usr/bin'
+make  install-exec-hook
+make[4]: Entering directory '/lfs_build/sources/gawk-5.3.0'
+(cd /lfs_build/usr/bin; \
+name=`echo gawk | sed 's,x,x,'` ; \
+if [ ! -f gawk-5.3.0 ]; \
+then	ln ${name} gawk-5.3.0 2>/dev/null ; \
+fi; \
+if [ ! -f awk ]; \
+then	ln -s ${name} awk; \
+fi; exit 0)
+make[4]: Leaving directory '/lfs_build/sources/gawk-5.3.0'
+make[3]: Leaving directory '/lfs_build/sources/gawk-5.3.0'
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0'
+Making install in extension
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/extension'
+Making install in po
+make[3]: Entering directory '/lfs_build/sources/gawk-5.3.0/extension/po'
+if test "gawk-extensions" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /lfs_build/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    .././../build-aux//install-sh -c -m 644 ./$file \
+		    /lfs_build/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /lfs_build/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[3]: Leaving directory '/lfs_build/sources/gawk-5.3.0/extension/po'
+make[3]: Entering directory '/lfs_build/sources/gawk-5.3.0/extension'
+make[4]: Entering directory '/lfs_build/sources/gawk-5.3.0/extension'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/lfs_build/usr/share/man/man3'
+ ./../build-aux//install-sh -c -m 644 filefuncs.3am fnmatch.3am fork.3am inplace.3am ordchr.3am readdir.3am readfile.3am revoutput.3am revtwoway.3am rwarray.3am time.3am '/lfs_build/usr/share/man/man3'
+ /usr/bin/mkdir -p '/lfs_build/usr/lib/gawk'
+ /bin/sh ./libtool   --mode=install ./../build-aux//install-sh -c   filefuncs.la fnmatch.la fork.la inplace.la intdiv.la ordchr.la readdir.la readfile.la revoutput.la revtwoway.la rwarray.la time.la '/lfs_build/usr/lib/gawk'
+libtool: install: ./../build-aux//install-sh -c .libs/filefuncs.so /lfs_build/usr/lib/gawk/filefuncs.so
+libtool: install: ./../build-aux//install-sh -c .libs/filefuncs.lai /lfs_build/usr/lib/gawk/filefuncs.la
+libtool: install: ./../build-aux//install-sh -c .libs/fnmatch.so /lfs_build/usr/lib/gawk/fnmatch.so
+libtool: install: ./../build-aux//install-sh -c .libs/fnmatch.lai /lfs_build/usr/lib/gawk/fnmatch.la
+libtool: install: ./../build-aux//install-sh -c .libs/fork.so /lfs_build/usr/lib/gawk/fork.so
+libtool: install: ./../build-aux//install-sh -c .libs/fork.lai /lfs_build/usr/lib/gawk/fork.la
+libtool: install: ./../build-aux//install-sh -c .libs/inplace.so /lfs_build/usr/lib/gawk/inplace.so
+libtool: install: ./../build-aux//install-sh -c .libs/inplace.lai /lfs_build/usr/lib/gawk/inplace.la
+libtool: install: ./../build-aux//install-sh -c .libs/intdiv.so /lfs_build/usr/lib/gawk/intdiv.so
+libtool: install: ./../build-aux//install-sh -c .libs/intdiv.lai /lfs_build/usr/lib/gawk/intdiv.la
+libtool: install: ./../build-aux//install-sh -c .libs/ordchr.so /lfs_build/usr/lib/gawk/ordchr.so
+libtool: install: ./../build-aux//install-sh -c .libs/ordchr.lai /lfs_build/usr/lib/gawk/ordchr.la
+libtool: install: ./../build-aux//install-sh -c .libs/readdir.so /lfs_build/usr/lib/gawk/readdir.so
+libtool: install: ./../build-aux//install-sh -c .libs/readdir.lai /lfs_build/usr/lib/gawk/readdir.la
+libtool: install: ./../build-aux//install-sh -c .libs/readfile.so /lfs_build/usr/lib/gawk/readfile.so
+libtool: install: ./../build-aux//install-sh -c .libs/readfile.lai /lfs_build/usr/lib/gawk/readfile.la
+libtool: install: ./../build-aux//install-sh -c .libs/revoutput.so /lfs_build/usr/lib/gawk/revoutput.so
+libtool: install: ./../build-aux//install-sh -c .libs/revoutput.lai /lfs_build/usr/lib/gawk/revoutput.la
+libtool: install: ./../build-aux//install-sh -c .libs/revtwoway.so /lfs_build/usr/lib/gawk/revtwoway.so
+libtool: install: ./../build-aux//install-sh -c .libs/revtwoway.lai /lfs_build/usr/lib/gawk/revtwoway.la
+libtool: install: ./../build-aux//install-sh -c .libs/rwarray.so /lfs_build/usr/lib/gawk/rwarray.so
+libtool: install: ./../build-aux//install-sh -c .libs/rwarray.lai /lfs_build/usr/lib/gawk/rwarray.la
+libtool: install: ./../build-aux//install-sh -c .libs/time.so /lfs_build/usr/lib/gawk/time.so
+libtool: install: ./../build-aux//install-sh -c .libs/time.lai /lfs_build/usr/lib/gawk/time.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/gawk'
+make  install-data-hook
+make[5]: Entering directory '/lfs_build/sources/gawk-5.3.0/extension'
+for i in filefuncs.la fnmatch.la fork.la inplace.la intdiv.la ordchr.la readdir.la readfile.la revoutput.la revtwoway.la rwarray.la time.la ; do \
+	rm -f /lfs_build/usr/lib/gawk/$i ; \
+done
+make[5]: Leaving directory '/lfs_build/sources/gawk-5.3.0/extension'
+make[4]: Leaving directory '/lfs_build/sources/gawk-5.3.0/extension'
+make[3]: Leaving directory '/lfs_build/sources/gawk-5.3.0/extension'
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/extension'
+Making install in doc
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/doc'
+make[3]: Entering directory '/lfs_build/sources/gawk-5.3.0/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/lfs_build/usr/share/info'
+ /usr/bin/mkdir -p '/lfs_build/usr/share/man/man1'
+ /usr/bin/mkdir -p '/lfs_build/usr/share/info'
+ .././build-aux/install-sh -c -m 644 gawk_api-figure1.png gawk_api-figure2.png gawk_api-figure3.png gawk_array-elements.png gawk_general-program.png gawk_process-flow.png gawk_statist.jpg '/lfs_build/usr/share/info'
+ .././build-aux/install-sh -c -m 644 gawk.1 gawkbug.1 pm-gawk.1 '/lfs_build/usr/share/man/man1'
+ .././build-aux/install-sh -c -m 644 ./gawk.info ./gawkinet.info ./gawkworkflow.info ./pm-gawk.info '/lfs_build/usr/share/info'
+ install-info --info-dir='/lfs_build/usr/share/info' '/lfs_build/usr/share/info/gawk.info'
+ install-info --info-dir='/lfs_build/usr/share/info' '/lfs_build/usr/share/info/gawkinet.info'
+ install-info --info-dir='/lfs_build/usr/share/info' '/lfs_build/usr/share/info/gawkworkflow.info'
+ install-info --info-dir='/lfs_build/usr/share/info' '/lfs_build/usr/share/info/pm-gawk.info'
+make[3]: Leaving directory '/lfs_build/sources/gawk-5.3.0/doc'
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/doc'
+Making install in awklib
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/awklib'
+make[3]: Entering directory '/lfs_build/sources/gawk-5.3.0/awklib'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/lfs_build/usr/libexec/awk'
+  .././build-aux/install-sh -c pwcat grcat '/lfs_build/usr/libexec/awk'
+make  install-exec-hook
+make[4]: Entering directory '/lfs_build/sources/gawk-5.3.0/awklib'
+/bin/sh /lfs_build/sources/gawk-5.3.0/build-aux/install-sh -d /lfs_build/usr/share/awk
+for i in passwd.awk group.awk ./eg/lib/*.awk ; do \
+	progname=`echo $i | sed 's;.*/;;'` ; \
+	.././build-aux/install-sh -c -m 644 $i /lfs_build/usr/share/awk/$progname ; \
+done
+make[4]: Leaving directory '/lfs_build/sources/gawk-5.3.0/awklib'
+make[3]: Leaving directory '/lfs_build/sources/gawk-5.3.0/awklib'
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/awklib'
+Making install in po
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/po'
+if test "gawk" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /lfs_build/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    .././build-aux/install-sh -c -m 644 ./$file \
+		    /lfs_build/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /lfs_build/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/po'
+Making install in test
+make[2]: Entering directory '/lfs_build/sources/gawk-5.3.0/test'
+make[3]: Entering directory '/lfs_build/sources/gawk-5.3.0/test'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/lfs_build/sources/gawk-5.3.0/test'
+make[2]: Leaving directory '/lfs_build/sources/gawk-5.3.0/test'
+make[1]: Leaving directory '/lfs_build/sources/gawk-5.3.0'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Fri May  3 08:32:47 UTC 2024
+
+Totalseconds: 17
+
+KB: 915496	/lfs_build
+

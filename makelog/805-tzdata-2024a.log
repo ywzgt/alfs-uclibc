@@ -1,0 +1,24 @@
+Fri May  3 09:06:40 UTC 2024
+KB: 1026944	/
+
+mkdir: created directory '/usr/share/zoneinfo'
+mkdir: created directory '/usr/share/zoneinfo/posix'
+mkdir: created directory '/usr/share/zoneinfo/right'
+'zone.tab' -> '/usr/share/zoneinfo/zone.tab'
+'zone1970.tab' -> '/usr/share/zoneinfo/zone1970.tab'
+'iso3166.tab' -> '/usr/share/zoneinfo/iso3166.tab'
+'/etc/TZ' -> '/usr/share/zoneinfo/UTC'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Fri May  3 09:06:43 UTC 2024
+
+Totalseconds: 3
+
+KB: 1033812	/
+

@@ -1,0 +1,20 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/svn/general/libassuan.html
+
+SRC="libassuan"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static
+make
+make install
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	CC="gcc -m32" \
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32
+	make
+	make DESTDIR=$PWD/pkg install
+	cp -av pkg/usr/lib32/* /usr/lib32
+fi

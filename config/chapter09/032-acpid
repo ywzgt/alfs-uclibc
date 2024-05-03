@@ -1,0 +1,13 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/systemd/general/acpid.html
+
+SRC="acpid"
+PKG="$SRC"
+
+./configure --prefix=/usr
+make
+make install
+install -vdm755 /etc/acpi/events
+cp -r samples /usr/share/doc/acpid
+git clone --depth=1 git://git.linuxfromscratch.org/blfs-systemd-units.git
+make -C blfs-systemd-units install-acpid

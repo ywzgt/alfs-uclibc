@@ -1,0 +1,45 @@
+#!/bin/bash
+
+SRC="uclibc-ng"
+
+case $(uname -m) in
+	i?86)
+		cp "$SRC_ARCHIVE/config-i686" .config
+		;;
+	*)
+		cp "$SRC_ARCHIVE/config-$(uname -m)" .config
+		;;
+esac
+for i in $SRC_ARCHIVE/uClibc-*.patch; do
+	printf "\nApplying patch: ${i##*/}\n"
+	patch -Np1 -i $i
+done
+
+sed -e "s#^KERNEL_HEADERS=.*#KERNEL_HEADERS=\"$LFS/usr/include\"#;" \
+	-e "/^UCLIBC_EXTRA_CFLAGS/s/=.*/=\"${CFLAGS} ${LDFLAGS}\"/" -i.old .config
+
+timeout 10 make silentoldconfig
+diff -u .config{.old,} || true
+
+make CC=$LFS_TGT-gcc
+make CC=$LFS_TGT-gcc utils
+make CC=$LFS_TGT-gcc DESTDIR=$LFS install
+make CC=$LFS_TGT-gcc DESTDIR=$LFS install_utils
+
+if [[ $MULTILIB ]]; then
+	mkdir -pv $LFS/usr/lib32
+	ln -sv usr/lib32 "$LFS/lib32"
+	make distclean
+	cp "$SRC_ARCHIVE/config-multilib" .config
+	timeout 10 make silentoldconfig
+	patch -Np1 -i $SRC_ARCHIVE/uClibc-*-x86_64-multilib.diff
+	sed -i "s#^KERNEL_HEADERS=.*#KERNEL_HEADERS=\"$LFS/usr/include\"#" .config
+	make CC="$LFS_TGT-gcc -m32"
+	make CC="$LFS_TGT-gcc -m32" DESTDIR=$PWD/pkg install
+	cp -a pkg/{,usr/}lib32/* -vt $LFS/usr/lib32/
+	ln -sfv ../lib32/ld-uClibc.so.1 $LFS/usr/lib/ld-uClibc.so.1
+	sed -e '/^# include <bits\/uClibc_config.h>$/i\# ifdef __LP64__' \
+		-e '/^# include <bits\/uClibc_config.h>$/a\# else\n# include <bits\/uClibc_config_32.h>\n# endif' \
+		-i "$LFS/usr/include/features.h"
+	install -Dvm644 pkg/usr/include/bits/uClibc_config.h "$LFS/usr/include/bits/uClibc_config_32.h"
+fi

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SRC="m4"
+PKG="$SRC"
+
+./configure --prefix=/usr
+
+make
+make install

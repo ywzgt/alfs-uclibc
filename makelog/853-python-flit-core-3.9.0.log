@@ -1,0 +1,53 @@
+Fri May  3 10:02:32 UTC 2024
+KB: 1525168	/
+
+pip 24.0 from /usr/lib/python3.12/site-packages/pip (python 3.12)
+Processing /sources/flit_core-3.9.0
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: flit_core
+  Building wheel for flit_core (pyproject.toml): started
+  Building wheel for flit_core (pyproject.toml): finished with status 'done'
+  Created wheel for flit_core: filename=flit_core-3.9.0-py3-none-any.whl size=63141 sha256=e5b2a84881cf1f40eb5b0115e1d3a429765e0f43743b79e871352bb8e0c95952
+  Stored in directory: /root/.cache/pip/wheels/b6/fc/d9/1867098c7dd8bc9463aed01828eb04127f3a0565dcd57be316
+Successfully built flit_core
+Looking in links: dist
+Processing ./dist/flit_core-3.9.0-py3-none-any.whl
+Installing collected packages: flit_core
+Successfully installed flit_core-3.9.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+
+removed '/root/.cache/pip/selfcheck/241e69162522ccf5846a2f42ebc24b17464915a155679666b89a9f31'
+removed directory '/root/.cache/pip/selfcheck'
+removed '/root/.cache/pip/wheels/b6/fc/d9/1867098c7dd8bc9463aed01828eb04127f3a0565dcd57be316/origin.json'
+removed '/root/.cache/pip/wheels/b6/fc/d9/1867098c7dd8bc9463aed01828eb04127f3a0565dcd57be316/flit_core-3.9.0-py3-none-any.whl'
+removed directory '/root/.cache/pip/wheels/b6/fc/d9/1867098c7dd8bc9463aed01828eb04127f3a0565dcd57be316'
+removed directory '/root/.cache/pip/wheels/b6/fc/d9'
+removed directory '/root/.cache/pip/wheels/b6/fc'
+removed directory '/root/.cache/pip/wheels/b6'
+removed directory '/root/.cache/pip/wheels'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a.body'
+removed '/root/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5/3'
+removed directory '/root/.cache/pip/http-v2/a/1/9/5'
+removed directory '/root/.cache/pip/http-v2/a/1/9'
+removed directory '/root/.cache/pip/http-v2/a/1'
+removed directory '/root/.cache/pip/http-v2/a'
+removed directory '/root/.cache/pip/http-v2'
+removed directory '/root/.cache/pip'
+removed directory '/root/.cache'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri May  3 10:02:33 UTC 2024
+
+Totalseconds: 1
+
+KB: 1526808	/
+

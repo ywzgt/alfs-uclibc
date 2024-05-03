@@ -1,0 +1,17 @@
+/usr/include/nghttp2/nghttp2.h	249702	root:root	644	
+/usr/include/nghttp2/nghttp2ver.h	1605	root:root	644	
+/usr/lib/libnghttp2.so	21	root:root	777	libnghttp2.so.14.28.0
+/usr/lib/libnghttp2.so.14	21	root:root	777	libnghttp2.so.14.28.0
+/usr/lib/libnghttp2.so.14.28.0	178760	root:root	755	
+/usr/lib/pkgconfig/libnghttp2.pc	1382	root:root	644	
+/usr/lib32/libnghttp2.a	314028	root:root	644	
+/usr/lib32/libnghttp2.so	21	root:root	777	libnghttp2.so.14.28.0
+/usr/lib32/libnghttp2.so.14	21	root:root	777	libnghttp2.so.14.28.0
+/usr/lib32/libnghttp2.so.14.28.0	180028	root:root	755	
+/usr/lib32/pkgconfig/libnghttp2.pc	1374	root:root	644	
+/usr/share/doc/nghttp2/README.rst	49571	root:root	644	
+/usr/share/man/man1/h2load.1	15790	root:root	644	
+/usr/share/man/man1/nghttp.1	9008	root:root	644	
+/usr/share/man/man1/nghttpd.1	5527	root:root	644	
+/usr/share/man/man1/nghttpx.1	94507	root:root	644	
+/usr/share/nghttp2/fetch-ocsp-response	8987	root:root	755	

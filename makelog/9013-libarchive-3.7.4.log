@@ -1,0 +1,2098 @@
+Fri May  3 10:27:27 UTC 2024
+KB: 1776872	/
+
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for strip... (cached) strip
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for acl/libacl.h... yes
+checking for attr/xattr.h... no
+checking for copyfile.h... no
+checking for ctype.h... yes
+checking for errno.h... yes
+checking for ext2fs/ext2_fs.h... yes
+checking for fcntl.h... yes
+checking for fnmatch.h... yes
+checking for grp.h... yes
+checking whether EXT2_IOC_GETFLAGS is usable... yes
+checking for inttypes.h... (cached) yes
+checking for io.h... no
+checking for langinfo.h... yes
+checking for limits.h... yes
+checking for linux/fiemap.h... yes
+checking for linux/fs.h... yes
+checking for linux/magic.h... yes
+checking for linux/types.h... yes
+checking whether FS_IOC_GETFLAGS is usable... yes
+checking for locale.h... yes
+checking for membership.h... no
+checking for paths.h... yes
+checking for poll.h... yes
+checking for pthread.h... yes
+checking for pwd.h... yes
+checking for readpassphrase.h... no
+checking for signal.h... yes
+checking for spawn.h... yes
+checking for stdarg.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/acl.h... yes
+checking for sys/cdefs.h... yes
+checking for sys/ea.h... no
+checking for sys/extattr.h... no
+checking for sys/ioctl.h... yes
+checking for sys/mkdev.h... no
+checking for sys/mount.h... yes
+checking for sys/queue.h... yes
+checking for sys/param.h... yes
+checking for sys/poll.h... yes
+checking for sys/richacl.h... no
+checking for sys/select.h... yes
+checking for sys/statfs.h... (cached) no
+checking for sys/statvfs.h... (cached) no
+checking for sys/sysmacros.h... yes
+checking for sys/time.h... (cached) yes
+checking for sys/utime.h... no
+checking for sys/utsname.h... yes
+checking for sys/vfs.h... yes
+checking for sys/xattr.h... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking for utime.h... yes
+checking for wchar.h... (cached) yes
+checking for wctype.h... yes
+checking for windows.h... no
+checking for wincrypt.h... no
+checking for winioctl.h... no
+checking for zlib.h... yes
+checking for inflate in -lz... yes
+checking for bzlib.h... yes
+checking for BZ2_bzDecompressInit in -lbz2... yes
+checking for blake2.h... no
+checking for blake2sp_init in -lb2... no
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for iconv.h... yes
+checking for localcharset.h... no
+checking for locale_charset... no
+checking for locale_charset in -lcharset... no
+checking for lz4.h... yes
+checking for lz4hc.h... yes
+checking for LZ4_decompress_safe in -llz4... yes
+checking for zstd.h... yes
+checking for ZSTD_decompressStream in -lzstd... yes
+checking for ZSTD_compressStream in -lzstd... yes
+checking for lzma.h... yes
+checking for lzma_stream_decoder in -llzma... yes
+checking whether we have multithread support in lzma... yes
+checking whether we have ARM64 filter support in lzma... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libxml-2.0... no
+checking for xmlInitParser in -lxml2... no
+checking for libxml/xmlreader.h... no
+checking for libxml/xmlwriter.h... no
+checking for expat.h... yes
+checking for XML_ParserCreate in -lexpat... yes
+checking for regex.h... yes
+checking for regcomp... yes
+checking whether C compiler accepts -Wall... yes
+checking whether C compiler accepts -Wformat... yes
+checking whether C compiler accepts -Wformat-security... yes
+checking whether ld supports --gc-sections... yes
+checking whether C compiler accepts -ffunction-sections... yes
+checking whether C compiler accepts -fdata-sections... yes
+checking for an ANSI C-conforming const... yes
+checking for uid_t in sys/types.h... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for id_t... yes
+checking for uintptr_t... yes
+checking for struct tm.tm_gmtoff... yes
+checking for struct tm.__tm_gmtoff... no
+checking for struct statfs.f_namemax... no
+checking for struct statfs.f_iosize... no
+checking for struct statvfs.f_iosize... no
+checking for struct stat.st_birthtime... no
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_mtimespec.tv_nsec... no
+checking for struct stat.st_mtim.tv_nsec... yes
+checking for struct stat.st_mtime_n... no
+checking for struct stat.st_umtime... no
+checking for struct stat.st_mtime_usec... no
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_flags... no
+checking for uintmax_t... yes
+checking for unsigned long long... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for intmax_t... yes
+checking for uintmax_t... (cached) yes
+checking for int64_t... yes
+checking for uint64_t... yes
+checking for int32_t... yes
+checking for uint32_t... yes
+checking for int16_t... yes
+checking for uint16_t... yes
+checking for uint8_t... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether SIZE_MAX is declared... yes
+checking whether INT32_MAX is declared... yes
+checking whether INT32_MIN is declared... yes
+checking whether INT64_MAX is declared... yes
+checking whether INT64_MIN is declared... yes
+checking whether UINT64_MAX is declared... yes
+checking whether UINT32_MAX is declared... yes
+checking whether INTMAX_MAX is declared... yes
+checking whether INTMAX_MIN is declared... yes
+checking whether UINTMAX_MAX is declared... yes
+checking whether SSIZE_MAX is declared... yes
+checking whether EFTYPE is declared... no
+checking whether EILSEQ is declared... yes
+checking for wchar_t... yes
+checking size of wchar_t... 4
+checking size of int... 4
+checking size of long... 8
+checking whether gcc needs -traditional... no
+checking for sys/mkdev.h... (cached) no
+checking for sys/sysmacros.h... (cached) yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for working memcmp... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether lstat accepts an empty string... no
+checking whether stat accepts an empty string... no
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for strftime... yes
+checking for vprintf... yes
+checking for CreateHardLinkA... no
+checking for arc4random_buf... no
+checking for chflags... no
+checking for chown... yes
+checking for chroot... yes
+checking for ctime_r... yes
+checking for fchdir... yes
+checking for fchflags... no
+checking for fchmod... yes
+checking for fchown... yes
+checking for fcntl... yes
+checking for fdopendir... yes
+checking for fnmatch... yes
+checking for fork... yes
+checking for fstat... yes
+checking for fstatat... yes
+checking for fstatfs... yes
+checking for fstatvfs... yes
+checking for ftruncate... yes
+checking for futimens... yes
+checking for futimes... no
+checking for futimesat... yes
+checking for geteuid... yes
+checking for getline... yes
+checking for getpid... yes
+checking for getgrgid_r... yes
+checking for getgrnam_r... yes
+checking for getpwnam_r... yes
+checking for getpwuid_r... yes
+checking for getvfsbyname... no
+checking for gmtime_r... yes
+checking for lchflags... no
+checking for lchmod... no
+checking for lchown... yes
+checking for link... yes
+checking for linkat... yes
+checking for localtime_r... yes
+checking for lstat... yes
+checking for lutimes... yes
+checking for mbrtowc... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mkfifo... yes
+checking for mknod... yes
+checking for mkstemp... yes
+checking for nl_langinfo... yes
+checking for openat... yes
+checking for pipe... yes
+checking for poll... yes
+checking for posix_spawnp... yes
+checking for readlink... yes
+checking for readlinkat... yes
+checking for readpassphrase... no
+checking for select... yes
+checking for setenv... yes
+checking for setlocale... (cached) no
+checking for sigaction... yes
+checking for statfs... (cached) no
+checking for statvfs... (cached) no
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncpy_s... no
+checking for strnlen... yes
+checking for strrchr... yes
+checking for symlink... yes
+checking for sysconf... yes
+checking for timegm... yes
+checking for tzset... yes
+checking for unlinkat... yes
+checking for unsetenv... yes
+checking for utime... yes
+checking for utimensat... yes
+checking for utimes... yes
+checking for vfork... yes
+checking for wcrtomb... yes
+checking for wcscmp... yes
+checking for wcscpy... yes
+checking for wcslen... yes
+checking for wctomb... yes
+checking for wmemcmp... yes
+checking for wmemcpy... yes
+checking for wmemmove... yes
+checking for _fseeki64... no
+checking for _get_timezone... no
+checking whether cmtime_s is declared... no
+checking whether gmtime_s is declared... no
+checking for localtime_s... no
+checking whether _mkgmtime is declared... no
+checking for cygwin_conv_path... no
+checking for struct vfsconf... no
+checking for struct xvfsconf... no
+checking for struct statfs... no
+checking whether D_MD_ORDER is declared... no
+checking for struct dirent.d_namlen... no
+checking for library containing setxattr... none required
+checking whether EXTATTR_NAMESPACE_USER is declared... no
+checking whether XATTR_NOFOLLOW is declared... no
+checking for fgetxattr... yes
+checking for flistxattr... yes
+checking for fsetxattr... yes
+checking for getxattr... yes
+checking for lgetxattr... yes
+checking for listxattr... yes
+checking for llistxattr... yes
+checking for lsetxattr... yes
+checking for extended attributes support... Linux
+checking for acl_get_file in -lacl... yes
+checking for acl_t... yes
+checking for acl_entry_t... yes
+checking for acl_permset_t... yes
+checking for acl_tag_t... yes
+checking for richacl_get_file in -lrichacl... no
+checking for struct richace... no
+checking for struct richacl... no
+checking for acl... no
+checking for facl... no
+checking for acl_add_perm... yes
+checking for acl_clear_perms... yes
+checking for acl_create_entry... yes
+checking for acl_delete_def_file... yes
+checking for acl_free... yes
+checking for acl_get_entry... yes
+checking for acl_get_fd... yes
+checking for acl_get_file... yes
+checking for acl_get_permset... yes
+checking for acl_get_qualifier... yes
+checking for acl_get_tag_type... yes
+checking for acl_init... yes
+checking for acl_set_fd... yes
+checking for acl_set_file... yes
+checking for acl_set_qualifier... yes
+checking for acl_set_tag_type... yes
+checking for acl_get_perm... yes
+checking for ACL support... libacl (POSIX.1e)
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking support for ARCHIVE_CRYPTO_MD5_LIBC... no
+checking support for ARCHIVE_CRYPTO_MD5_LIBSYSTEM... no
+checking support for ARCHIVE_CRYPTO_RMD160_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA1_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA1_LIBSYSTEM... no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBC2... no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBC3... no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBSYSTEM... no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBC2... no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBC3... no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBSYSTEM... no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBC2... no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBC3... no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBSYSTEM... no
+checking for bcrypt.h... no
+checking for openssl/evp.h... yes
+checking for OPENSSL_config in -lcrypto... yes
+checking support for ARCHIVE_CRYPTO_MD5_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_RMD160_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_SHA1_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_SHA256_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_SHA384_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_SHA512_OPENSSL... yes
+checking for PKCS5_PBKDF2_HMAC_SHA1... yes
+checking for md5.h... no
+checking for ripemd.h... no
+checking for sha.h... no
+checking for sha256.h... no
+checking for sha512.h... no
+checking for MD5Init in -lmd... no
+checking whether compiler supports visibility annotations... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating build/pkgconfig/libarchive.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing mkdirs commands
+/usr/bin/mkdir -p libarchive/test
+/usr/bin/mkdir -p tar/test
+/usr/bin/mkdir -p cpio/test
+/usr/bin/mkdir -p cat/test
+cat ./libarchive/test/test_*.c | grep '^DEFINE_TEST' > libarchive/test/list.h
+cat ./tar/test/test_*.c | grep '^DEFINE_TEST' > tar/test/list.h
+cat ./cpio/test/test_*.c | grep '^DEFINE_TEST' > cpio/test/list.h
+cat ./cat/test/test_*.c | grep '^DEFINE_TEST' > cat/test/list.h
+/usr/bin/mkdir -p unzip/test
+cat ./unzip/test/test_*.c | grep '^DEFINE_TEST' > unzip/test/list.h
+make  all-am
+make[1]: Entering directory '/sources/libarchive-3.7.4'
+  CC       tar/bsdtar-bsdtar.o
+  CC       tar/bsdtar-cmdline.o
+  CC       tar/bsdtar-creation_set.o
+  CC       tar/bsdtar-read.o
+  CC       tar/bsdtar-subst.o
+  CC       tar/bsdtar-util.o
+  CC       tar/bsdtar-write.o
+  CC       libarchive/archive_acl.lo
+  CC       libarchive/archive_check_magic.lo
+  CC       libarchive/archive_cmdline.lo
+  CC       libarchive/archive_cryptor.lo
+  CC       libarchive/archive_digest.lo
+  CC       libarchive/archive_entry.lo
+  CC       libarchive/archive_entry_copy_stat.lo
+  CC       libarchive/archive_entry_link_resolver.lo
+  CC       libarchive/archive_entry_sparse.lo
+  CC       libarchive/archive_entry_stat.lo
+  CC       libarchive/archive_entry_strmode.lo
+  CC       libarchive/archive_entry_xattr.lo
+  CC       libarchive/archive_getdate.lo
+  CC       libarchive/archive_hmac.lo
+  CC       libarchive/archive_match.lo
+  CC       libarchive/archive_options.lo
+  CC       libarchive/archive_pack_dev.lo
+  CC       libarchive/archive_pathmatch.lo
+  CC       libarchive/archive_ppmd7.lo
+  CC       libarchive/archive_ppmd8.lo
+  CC       libarchive/archive_random.lo
+  CC       libarchive/archive_rb.lo
+  CC       libarchive/archive_read.lo
+  CC       libarchive/archive_read_add_passphrase.lo
+  CC       libarchive/archive_read_append_filter.lo
+  CC       libarchive/archive_read_data_into_fd.lo
+  CC       libarchive/archive_read_disk_entry_from_file.lo
+  CC       libarchive/archive_read_disk_posix.lo
+  CC       libarchive/archive_read_disk_set_standard_lookup.lo
+  CC       libarchive/archive_read_extract.lo
+  CC       libarchive/archive_read_extract2.lo
+  CC       libarchive/archive_read_open_fd.lo
+  CC       libarchive/archive_read_open_file.lo
+  CC       libarchive/archive_read_open_filename.lo
+  CC       libarchive/archive_read_open_memory.lo
+  CC       libarchive/archive_read_set_format.lo
+  CC       libarchive/archive_read_set_options.lo
+  CC       libarchive/archive_read_support_filter_all.lo
+  CC       libarchive/archive_read_support_filter_bzip2.lo
+  CC       libarchive/archive_read_support_filter_by_code.lo
+  CC       libarchive/archive_read_support_filter_compress.lo
+  CC       libarchive/archive_read_support_filter_grzip.lo
+  CC       libarchive/archive_read_support_filter_gzip.lo
+  CC       libarchive/archive_read_support_filter_lrzip.lo
+  CC       libarchive/archive_read_support_filter_lz4.lo
+  CC       libarchive/archive_read_support_filter_lzop.lo
+  CC       libarchive/archive_read_support_filter_none.lo
+  CC       libarchive/archive_read_support_filter_program.lo
+  CC       libarchive/archive_read_support_filter_rpm.lo
+  CC       libarchive/archive_read_support_filter_uu.lo
+  CC       libarchive/archive_read_support_filter_xz.lo
+  CC       libarchive/archive_read_support_filter_zstd.lo
+  CC       libarchive/archive_read_support_format_7zip.lo
+  CC       libarchive/archive_read_support_format_all.lo
+  CC       libarchive/archive_read_support_format_ar.lo
+  CC       libarchive/archive_read_support_format_by_code.lo
+  CC       libarchive/archive_read_support_format_cab.lo
+  CC       libarchive/archive_read_support_format_cpio.lo
+  CC       libarchive/archive_read_support_format_empty.lo
+  CC       libarchive/archive_read_support_format_iso9660.lo
+  CC       libarchive/archive_read_support_format_lha.lo
+  CC       libarchive/archive_read_support_format_mtree.lo
+  CC       libarchive/archive_read_support_format_rar.lo
+  CC       libarchive/archive_read_support_format_rar5.lo
+  CC       libarchive/archive_read_support_format_raw.lo
+  CC       libarchive/archive_read_support_format_tar.lo
+  CC       libarchive/archive_read_support_format_warc.lo
+  CC       libarchive/archive_read_support_format_xar.lo
+  CC       libarchive/archive_read_support_format_zip.lo
+  CC       libarchive/archive_string.lo
+  CC       libarchive/archive_string_sprintf.lo
+  CC       libarchive/archive_util.lo
+  CC       libarchive/archive_version_details.lo
+  CC       libarchive/archive_virtual.lo
+  CC       libarchive/archive_write.lo
+  CC       libarchive/archive_write_disk_posix.lo
+  CC       libarchive/archive_write_disk_set_standard_lookup.lo
+  CC       libarchive/archive_write_open_fd.lo
+  CC       libarchive/archive_write_open_file.lo
+  CC       libarchive/archive_write_open_filename.lo
+  CC       libarchive/archive_write_open_memory.lo
+  CC       libarchive/archive_write_add_filter.lo
+  CC       libarchive/archive_write_add_filter_b64encode.lo
+  CC       libarchive/archive_write_add_filter_by_name.lo
+  CC       libarchive/archive_write_add_filter_bzip2.lo
+  CC       libarchive/archive_write_add_filter_compress.lo
+  CC       libarchive/archive_write_add_filter_grzip.lo
+  CC       libarchive/archive_write_add_filter_gzip.lo
+  CC       libarchive/archive_write_add_filter_lrzip.lo
+  CC       libarchive/archive_write_add_filter_lz4.lo
+  CC       libarchive/archive_write_add_filter_lzop.lo
+  CC       libarchive/archive_write_add_filter_none.lo
+  CC       libarchive/archive_write_add_filter_program.lo
+  CC       libarchive/archive_write_add_filter_uuencode.lo
+  CC       libarchive/archive_write_add_filter_xz.lo
+  CC       libarchive/archive_write_add_filter_zstd.lo
+  CC       libarchive/archive_write_set_format.lo
+  CC       libarchive/archive_write_set_format_7zip.lo
+  CC       libarchive/archive_write_set_format_ar.lo
+  CC       libarchive/archive_write_set_format_by_name.lo
+  CC       libarchive/archive_write_set_format_cpio.lo
+  CC       libarchive/archive_write_set_format_cpio_binary.lo
+  CC       libarchive/archive_write_set_format_cpio_newc.lo
+  CC       libarchive/archive_write_set_format_cpio_odc.lo
+  CC       libarchive/archive_write_set_format_filter_by_ext.lo
+  CC       libarchive/archive_write_set_format_iso9660.lo
+  CC       libarchive/archive_write_set_format_mtree.lo
+  CC       libarchive/archive_write_set_format_pax.lo
+  CC       libarchive/archive_write_set_format_raw.lo
+  CC       libarchive/archive_write_set_format_shar.lo
+  CC       libarchive/archive_write_set_format_ustar.lo
+  CC       libarchive/archive_write_set_format_v7tar.lo
+  CC       libarchive/archive_write_set_format_gnutar.lo
+  CC       libarchive/archive_write_set_format_warc.lo
+  CC       libarchive/archive_write_set_format_xar.lo
+  CC       libarchive/archive_write_set_format_zip.lo
+  CC       libarchive/archive_write_set_options.lo
+  CC       libarchive/archive_write_set_passphrase.lo
+  CC       libarchive/filter_fork_posix.lo
+  CC       libarchive/xxhash.lo
+  CC       libarchive/archive_blake2s_ref.lo
+  CC       libarchive/archive_blake2sp_ref.lo
+  CC       libarchive/archive_disk_acl_linux.lo
+  CC       libarchive_fe/la-err.lo
+  CC       libarchive_fe/la-line_reader.lo
+  CC       libarchive_fe/la-passphrase.lo
+  CC       cpio/bsdcpio-cmdline.o
+  CC       cpio/bsdcpio-cpio.o
+  CC       cat/bsdcat-bsdcat.o
+  CC       cat/bsdcat-cmdline.o
+  CC       unzip/bsdunzip-bsdunzip.o
+  CC       unzip/bsdunzip-cmdline.o
+  CC       unzip/bsdunzip-la_getline.o
+  CCLD     libarchive.la
+  CCLD     libarchive_fe.la
+  CCLD     bsdcpio
+  CCLD     bsdtar
+  CCLD     bsdcat
+  CCLD     bsdunzip
+make[1]: Leaving directory '/sources/libarchive-3.7.4'
+make  install-am
+make[1]: Entering directory '/sources/libarchive-3.7.4'
+make[2]: Entering directory '/sources/libarchive-3.7.4'
+ /usr/bin/mkdir -p '/usr/include'
+ /usr/bin/install -c -m 644 libarchive/archive.h libarchive/archive_entry.h '/usr/include'
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/mkdir -p '/usr/share/man/man5'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 build/pkgconfig/libarchive.pc '/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/usr/lib'
+ /usr/bin/install -c -m 644 libarchive/cpio.5 libarchive/libarchive-formats.5 libarchive/mtree.5 libarchive/tar.5 '/usr/share/man/man5'
+ /usr/bin/install -c -m 644 tar/bsdtar.1 cpio/bsdcpio.1 cat/bsdcat.1 unzip/bsdunzip.1 '/usr/share/man/man1'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libarchive.la '/usr/lib'
+ /usr/bin/install -c -m 644 libarchive/archive_entry.3 libarchive/archive_entry_acl.3 libarchive/archive_entry_linkify.3 libarchive/archive_entry_misc.3 libarchive/archive_entry_paths.3 libarchive/archive_entry_perms.3 libarchive/archive_entry_stat.3 libarchive/archive_entry_time.3 libarchive/archive_read.3 libarchive/archive_read_add_passphrase.3 libarchive/archive_read_data.3 libarchive/archive_read_disk.3 libarchive/archive_read_extract.3 libarchive/archive_read_filter.3 libarchive/archive_read_format.3 libarchive/archive_read_free.3 libarchive/archive_read_header.3 libarchive/archive_read_new.3 libarchive/archive_read_open.3 libarchive/archive_read_set_options.3 libarchive/archive_util.3 libarchive/archive_write.3 libarchive/archive_write_blocksize.3 libarchive/archive_write_data.3 libarchive/archive_write_disk.3 libarchive/archive_write_filter.3 libarchive/archive_write_finish_entry.3 libarchive/archive_write_format.3 libarchive/archive_write_free.3 libarchive/archive_write_header.3 libarchive/archive_write_new.3 libarchive/archive_write_open.3 libarchive/archive_write_set_options.3 libarchive/archive_write_set_passphrase.3 libarchive/libarchive.3 libarchive/libarchive_changes.3 libarchive/libarchive_internals.3 '/usr/share/man/man3'
+libtool: install: /usr/bin/install -c .libs/libarchive.so.13.7.4 /usr/lib/libarchive.so.13.7.4
+libtool: install: (cd /usr/lib && { ln -s -f libarchive.so.13.7.4 libarchive.so.13 || { rm -f libarchive.so.13 && ln -s libarchive.so.13.7.4 libarchive.so.13; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libarchive.so.13.7.4 libarchive.so || { rm -f libarchive.so && ln -s libarchive.so.13.7.4 libarchive.so; }; })
+libtool: install: /usr/bin/install -c .libs/libarchive.lai /usr/lib/libarchive.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/usr/local/bin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c bsdtar bsdcpio bsdcat bsdunzip '/usr/bin'
+libtool: install: /usr/bin/install -c .libs/bsdtar /usr/bin/bsdtar
+libtool: install: /usr/bin/install -c .libs/bsdcpio /usr/bin/bsdcpio
+libtool: install: /usr/bin/install -c .libs/bsdcat /usr/bin/bsdcat
+libtool: install: /usr/bin/install -c .libs/bsdunzip /usr/bin/bsdunzip
+make[2]: Leaving directory '/sources/libarchive-3.7.4'
+make[1]: Leaving directory '/sources/libarchive-3.7.4'
+test -z "libarchive.la" || rm -f libarchive.la
+rm -rf .libs _libs
+ rm -f bsdtar bsdcpio bsdcat bsdunzip
+test -z "libarchive_fe.la" || rm -f libarchive_fe.la
+rm -rf libarchive/.libs libarchive/_libs
+ rm -f libarchive_test bsdtar_test bsdcpio_test bsdcat_test bsdunzip_test
+rm -f *.o
+rm -rf libarchive_fe/.libs libarchive_fe/_libs
+rm -f ./so_locations
+test -z "libarchive_test.log bsdtar_test.log bsdcpio_test.log bsdcat_test.log bsdunzip_test.log" || rm -f libarchive_test.log bsdtar_test.log bsdcpio_test.log bsdcat_test.log bsdunzip_test.log
+rm -f cat/*.o
+rm -f *.lo
+rm -f ./so_locations
+rm -f *.tab.c
+rm -f cat/test/*.o
+test -z "libarchive_test.trs bsdtar_test.trs bsdcpio_test.trs bsdcat_test.trs bsdunzip_test.trs" || rm -f libarchive_test.trs bsdtar_test.trs bsdcpio_test.trs bsdcat_test.trs bsdunzip_test.trs
+test -z "build/pkgconfig/libarchive.pc" || rm -f build/pkgconfig/libarchive.pc
+rm -f cpio/*.o
+rm -f config.h stamp-h1
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f libtool config.lt
+test . = "." || test -z "" || rm -f 
+rm -rf .ref
+rm -f cpio/test/*.o
+rm -rf autom4te.cache/
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f cat/.deps/.dirstamp
+rm -f *~
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+rm -f cat/.dirstamp
+rm -f cat/test/.deps/.dirstamp
+rm -f libarchive/*.o
+rm -f cat/test/.dirstamp
+[ -f libarchive/Makefile ] && cd libarchive && make clean
+rm -f cpio/.deps/.dirstamp
+rm -f cpio/.dirstamp
+make: [Makefile:17701: distclean-local] Error 1 (ignored)
+[ -f libarchive/test/Makefile ] && cd libarchive/test && make clean
+rm -f libarchive/*.lo
+rm -f cpio/test/.deps/.dirstamp
+rm -f cpio/test/.dirstamp
+make: [Makefile:17702: distclean-local] Error 1 (ignored)
+[ -f tar/Makefile ] && cd tar && make clean
+rm -f libarchive/.deps/.dirstamp
+rm -f libarchive/.dirstamp
+rm -f libarchive/test/.deps/.dirstamp
+make: [Makefile:17703: distclean-local] Error 1 (ignored)
+[ -f tar/test/Makefile ] && cd tar/test && make clean
+rm -f libarchive/test/.dirstamp
+rm -f libarchive_fe/.deps/.dirstamp
+rm -f libarchive_fe/.dirstamp
+make: [Makefile:17704: distclean-local] Error 1 (ignored)
+[ -f cpio/Makefile ] && cd cpio && make clean
+rm -f tar/.deps/.dirstamp
+rm -f tar/.dirstamp
+rm -f libarchive/test/*.o
+rm -f tar/test/.deps/.dirstamp
+make: [Makefile:17705: distclean-local] Error 1 (ignored)
+[ -f cpio/test/Makefile ] && cd cpio/test && make clean
+rm -f tar/test/.dirstamp
+rm -f test_utils/.deps/.dirstamp
+make: [Makefile:17706: distclean-local] Error 1 (ignored)
+[ -f cat/Makefile ] && cd cat && make clean
+rm -f test_utils/.dirstamp
+rm -f libarchive_fe/*.o
+rm -f unzip/.deps/.dirstamp
+rm -f unzip/.dirstamp
+make: [Makefile:17707: distclean-local] Error 1 (ignored)
+[ -f cat/test/Makefile ] && cd cat/test && make clean
+rm -f unzip/test/.deps/.dirstamp
+rm -f libarchive_fe/*.lo
+rm -f unzip/test/.dirstamp
+make: [Makefile:17708: distclean-local] Error 1 (ignored)
+[ -f unzip/Makefile ] && cd unzip && make clean
+test -z "libarchive/test/list.h tar/test/list.h cpio/test/list.h cat/test/list.h unzip/test/list.h" || rm -f libarchive/test/list.h tar/test/list.h cpio/test/list.h cat/test/list.h unzip/test/list.h
+rm -f tar/*.o
+make: [Makefile:17709: distclean-local] Error 1 (ignored)
+[ -f unzip/test/Makefile ] && cd unzip/test && make clean
+rm -f tar/test/*.o
+make: [Makefile:17710: distclean-local] Error 1 (ignored)
+rm -f test_utils/*.o
+rm -f unzip/*.o
+rm -f unzip/test/*.o
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f cat/.deps/bsdcat-bsdcat.Po
+rm -f cat/.deps/bsdcat-cmdline.Po
+rm -f cat/test/.deps/bsdcat_test-test_0.Po
+rm -f cat/test/.deps/bsdcat_test-test_empty_gz.Po
+rm -f cat/test/.deps/bsdcat_test-test_empty_lz4.Po
+rm -f cat/test/.deps/bsdcat_test-test_empty_xz.Po
+rm -f cat/test/.deps/bsdcat_test-test_empty_zstd.Po
+rm -f cat/test/.deps/bsdcat_test-test_error.Po
+rm -f cat/test/.deps/bsdcat_test-test_error_mixed.Po
+rm -f cat/test/.deps/bsdcat_test-test_expand_Z.Po
+rm -f cat/test/.deps/bsdcat_test-test_expand_bz2.Po
+rm -f cat/test/.deps/bsdcat_test-test_expand_gz.Po
+rm -f cat/test/.deps/bsdcat_test-test_expand_lz4.Po
+rm -f cat/test/.deps/bsdcat_test-test_expand_mixed.Po
+rm -f cat/test/.deps/bsdcat_test-test_expand_plain.Po
+rm -f cat/test/.deps/bsdcat_test-test_expand_xz.Po
+rm -f cat/test/.deps/bsdcat_test-test_expand_zstd.Po
+rm -f cat/test/.deps/bsdcat_test-test_help.Po
+rm -f cat/test/.deps/bsdcat_test-test_stdin.Po
+rm -f cat/test/.deps/bsdcat_test-test_version.Po
+rm -f cpio/.deps/bsdcpio-cmdline.Po
+rm -f cpio/.deps/bsdcpio-cpio.Po
+rm -f cpio/.deps/bsdcpio-cpio_windows.Po
+rm -f cpio/.deps/bsdcpio_test-cmdline.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_0.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_basic.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_cmdline.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_Z.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_bz2.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_grz.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_gz.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_lrz.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_lz.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_lz4.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_lzma.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_lzo.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_xz.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_extract_cpio_zstd.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_format_newc.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_gcpio_compat.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_missing_file.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_0.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_B_upper.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_C_upper.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_J_upper.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_L_upper.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_Z_upper.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_a.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_b64encode.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_c.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_d.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_f.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_grzip.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_help.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_l.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_lrzip.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_lz4.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_lzma.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_lzop.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_m.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_passphrase.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_t.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_u.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_uuencode.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_version.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_xz.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_y.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_z.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_option_zstd.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_owner_parse.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_passthrough_dotdot.Po
+rm -f cpio/test/.deps/bsdcpio_test-test_passthrough_reverse.Po
+rm -f libarchive/.deps/archive_acl.Plo
+rm -f libarchive/.deps/archive_blake2s_ref.Plo
+rm -f libarchive/.deps/archive_blake2sp_ref.Plo
+rm -f libarchive/.deps/archive_check_magic.Plo
+rm -f libarchive/.deps/archive_cmdline.Plo
+rm -f libarchive/.deps/archive_cryptor.Plo
+rm -f libarchive/.deps/archive_digest.Plo
+rm -f libarchive/.deps/archive_disk_acl_darwin.Plo
+rm -f libarchive/.deps/archive_disk_acl_freebsd.Plo
+rm -f libarchive/.deps/archive_disk_acl_linux.Plo
+rm -f libarchive/.deps/archive_disk_acl_sunos.Plo
+rm -f libarchive/.deps/archive_entry.Plo
+rm -f libarchive/.deps/archive_entry_copy_bhfi.Plo
+rm -f libarchive/.deps/archive_entry_copy_stat.Plo
+rm -f libarchive/.deps/archive_entry_link_resolver.Plo
+rm -f libarchive/.deps/archive_entry_sparse.Plo
+rm -f libarchive/.deps/archive_entry_stat.Plo
+rm -f libarchive/.deps/archive_entry_strmode.Plo
+rm -f libarchive/.deps/archive_entry_xattr.Plo
+rm -f libarchive/.deps/archive_getdate.Plo
+rm -f libarchive/.deps/archive_hmac.Plo
+rm -f libarchive/.deps/archive_match.Plo
+rm -f libarchive/.deps/archive_options.Plo
+rm -f libarchive/.deps/archive_pack_dev.Plo
+rm -f libarchive/.deps/archive_pathmatch.Plo
+rm -f libarchive/.deps/archive_ppmd7.Plo
+rm -f libarchive/.deps/archive_ppmd8.Plo
+rm -f libarchive/.deps/archive_random.Plo
+rm -f libarchive/.deps/archive_rb.Plo
+rm -f libarchive/.deps/archive_read.Plo
+rm -f libarchive/.deps/archive_read_add_passphrase.Plo
+rm -f libarchive/.deps/archive_read_append_filter.Plo
+rm -f libarchive/.deps/archive_read_data_into_fd.Plo
+rm -f libarchive/.deps/archive_read_disk_entry_from_file.Plo
+rm -f libarchive/.deps/archive_read_disk_posix.Plo
+rm -f libarchive/.deps/archive_read_disk_set_standard_lookup.Plo
+rm -f libarchive/.deps/archive_read_disk_windows.Plo
+rm -f libarchive/.deps/archive_read_extract.Plo
+rm -f libarchive/.deps/archive_read_extract2.Plo
+rm -f libarchive/.deps/archive_read_open_fd.Plo
+rm -f libarchive/.deps/archive_read_open_file.Plo
+rm -f libarchive/.deps/archive_read_open_filename.Plo
+rm -f libarchive/.deps/archive_read_open_memory.Plo
+rm -f libarchive/.deps/archive_read_set_format.Plo
+rm -f libarchive/.deps/archive_read_set_options.Plo
+rm -f libarchive/.deps/archive_read_support_filter_all.Plo
+rm -f libarchive/.deps/archive_read_support_filter_by_code.Plo
+rm -f libarchive/.deps/archive_read_support_filter_bzip2.Plo
+rm -f libarchive/.deps/archive_read_support_filter_compress.Plo
+rm -f libarchive/.deps/archive_read_support_filter_grzip.Plo
+rm -f libarchive/.deps/archive_read_support_filter_gzip.Plo
+rm -f libarchive/.deps/archive_read_support_filter_lrzip.Plo
+rm -f libarchive/.deps/archive_read_support_filter_lz4.Plo
+rm -f libarchive/.deps/archive_read_support_filter_lzop.Plo
+rm -f libarchive/.deps/archive_read_support_filter_none.Plo
+rm -f libarchive/.deps/archive_read_support_filter_program.Plo
+rm -f libarchive/.deps/archive_read_support_filter_rpm.Plo
+rm -f libarchive/.deps/archive_read_support_filter_uu.Plo
+rm -f libarchive/.deps/archive_read_support_filter_xz.Plo
+rm -f libarchive/.deps/archive_read_support_filter_zstd.Plo
+rm -f libarchive/.deps/archive_read_support_format_7zip.Plo
+rm -f libarchive/.deps/archive_read_support_format_all.Plo
+rm -f libarchive/.deps/archive_read_support_format_ar.Plo
+rm -f libarchive/.deps/archive_read_support_format_by_code.Plo
+rm -f libarchive/.deps/archive_read_support_format_cab.Plo
+rm -f libarchive/.deps/archive_read_support_format_cpio.Plo
+rm -f libarchive/.deps/archive_read_support_format_empty.Plo
+rm -f libarchive/.deps/archive_read_support_format_iso9660.Plo
+rm -f libarchive/.deps/archive_read_support_format_lha.Plo
+rm -f libarchive/.deps/archive_read_support_format_mtree.Plo
+rm -f libarchive/.deps/archive_read_support_format_rar.Plo
+rm -f libarchive/.deps/archive_read_support_format_rar5.Plo
+rm -f libarchive/.deps/archive_read_support_format_raw.Plo
+rm -f libarchive/.deps/archive_read_support_format_tar.Plo
+rm -f libarchive/.deps/archive_read_support_format_warc.Plo
+rm -f libarchive/.deps/archive_read_support_format_xar.Plo
+rm -f libarchive/.deps/archive_read_support_format_zip.Plo
+rm -f libarchive/.deps/archive_string.Plo
+rm -f libarchive/.deps/archive_string_sprintf.Plo
+rm -f libarchive/.deps/archive_util.Plo
+rm -f libarchive/.deps/archive_version_details.Plo
+rm -f libarchive/.deps/archive_virtual.Plo
+rm -f libarchive/.deps/archive_windows.Plo
+rm -f libarchive/.deps/archive_write.Plo
+rm -f libarchive/.deps/archive_write_add_filter.Plo
+rm -f libarchive/.deps/archive_write_add_filter_b64encode.Plo
+rm -f libarchive/.deps/archive_write_add_filter_by_name.Plo
+rm -f libarchive/.deps/archive_write_add_filter_bzip2.Plo
+rm -f libarchive/.deps/archive_write_add_filter_compress.Plo
+rm -f libarchive/.deps/archive_write_add_filter_grzip.Plo
+rm -f libarchive/.deps/archive_write_add_filter_gzip.Plo
+rm -f libarchive/.deps/archive_write_add_filter_lrzip.Plo
+rm -f libarchive/.deps/archive_write_add_filter_lz4.Plo
+rm -f libarchive/.deps/archive_write_add_filter_lzop.Plo
+rm -f libarchive/.deps/archive_write_add_filter_none.Plo
+rm -f libarchive/.deps/archive_write_add_filter_program.Plo
+rm -f libarchive/.deps/archive_write_add_filter_uuencode.Plo
+rm -f libarchive/.deps/archive_write_add_filter_xz.Plo
+rm -f libarchive/.deps/archive_write_add_filter_zstd.Plo
+rm -f libarchive/.deps/archive_write_disk_posix.Plo
+rm -f libarchive/.deps/archive_write_disk_set_standard_lookup.Plo
+rm -f libarchive/.deps/archive_write_disk_windows.Plo
+rm -f libarchive/.deps/archive_write_open_fd.Plo
+rm -f libarchive/.deps/archive_write_open_file.Plo
+rm -f libarchive/.deps/archive_write_open_filename.Plo
+rm -f libarchive/.deps/archive_write_open_memory.Plo
+rm -f libarchive/.deps/archive_write_set_format.Plo
+rm -f libarchive/.deps/archive_write_set_format_7zip.Plo
+rm -f libarchive/.deps/archive_write_set_format_ar.Plo
+rm -f libarchive/.deps/archive_write_set_format_by_name.Plo
+rm -f libarchive/.deps/archive_write_set_format_cpio.Plo
+rm -f libarchive/.deps/archive_write_set_format_cpio_binary.Plo
+rm -f libarchive/.deps/archive_write_set_format_cpio_newc.Plo
+rm -f libarchive/.deps/archive_write_set_format_cpio_odc.Plo
+rm -f libarchive/.deps/archive_write_set_format_filter_by_ext.Plo
+rm -f libarchive/.deps/archive_write_set_format_gnutar.Plo
+rm -f libarchive/.deps/archive_write_set_format_iso9660.Plo
+rm -f libarchive/.deps/archive_write_set_format_mtree.Plo
+rm -f libarchive/.deps/archive_write_set_format_pax.Plo
+rm -f libarchive/.deps/archive_write_set_format_raw.Plo
+rm -f libarchive/.deps/archive_write_set_format_shar.Plo
+rm -f libarchive/.deps/archive_write_set_format_ustar.Plo
+rm -f libarchive/.deps/archive_write_set_format_v7tar.Plo
+rm -f libarchive/.deps/archive_write_set_format_warc.Plo
+rm -f libarchive/.deps/archive_write_set_format_xar.Plo
+rm -f libarchive/.deps/archive_write_set_format_zip.Plo
+rm -f libarchive/.deps/archive_write_set_options.Plo
+rm -f libarchive/.deps/archive_write_set_passphrase.Plo
+rm -f libarchive/.deps/filter_fork_posix.Plo
+rm -f libarchive/.deps/filter_fork_windows.Plo
+rm -f libarchive/.deps/test-archive_acl.Po
+rm -f libarchive/.deps/test-archive_blake2s_ref.Po
+rm -f libarchive/.deps/test-archive_blake2sp_ref.Po
+rm -f libarchive/.deps/test-archive_check_magic.Po
+rm -f libarchive/.deps/test-archive_cmdline.Po
+rm -f libarchive/.deps/test-archive_cryptor.Po
+rm -f libarchive/.deps/test-archive_digest.Po
+rm -f libarchive/.deps/test-archive_disk_acl_darwin.Po
+rm -f libarchive/.deps/test-archive_disk_acl_freebsd.Po
+rm -f libarchive/.deps/test-archive_disk_acl_linux.Po
+rm -f libarchive/.deps/test-archive_disk_acl_sunos.Po
+rm -f libarchive/.deps/test-archive_entry.Po
+rm -f libarchive/.deps/test-archive_entry_copy_bhfi.Po
+rm -f libarchive/.deps/test-archive_entry_copy_stat.Po
+rm -f libarchive/.deps/test-archive_entry_link_resolver.Po
+rm -f libarchive/.deps/test-archive_entry_sparse.Po
+rm -f libarchive/.deps/test-archive_entry_stat.Po
+rm -f libarchive/.deps/test-archive_entry_strmode.Po
+rm -f libarchive/.deps/test-archive_entry_xattr.Po
+rm -f libarchive/.deps/test-archive_getdate.Po
+rm -f libarchive/.deps/test-archive_hmac.Po
+rm -f libarchive/.deps/test-archive_match.Po
+rm -f libarchive/.deps/test-archive_options.Po
+rm -f libarchive/.deps/test-archive_pack_dev.Po
+rm -f libarchive/.deps/test-archive_pathmatch.Po
+rm -f libarchive/.deps/test-archive_ppmd7.Po
+rm -f libarchive/.deps/test-archive_ppmd8.Po
+rm -f libarchive/.deps/test-archive_random.Po
+rm -f libarchive/.deps/test-archive_rb.Po
+rm -f libarchive/.deps/test-archive_read.Po
+rm -f libarchive/.deps/test-archive_read_add_passphrase.Po
+rm -f libarchive/.deps/test-archive_read_append_filter.Po
+rm -f libarchive/.deps/test-archive_read_data_into_fd.Po
+rm -f libarchive/.deps/test-archive_read_disk_entry_from_file.Po
+rm -f libarchive/.deps/test-archive_read_disk_posix.Po
+rm -f libarchive/.deps/test-archive_read_disk_set_standard_lookup.Po
+rm -f libarchive/.deps/test-archive_read_disk_windows.Po
+rm -f libarchive/.deps/test-archive_read_extract.Po
+rm -f libarchive/.deps/test-archive_read_extract2.Po
+rm -f libarchive/.deps/test-archive_read_open_fd.Po
+rm -f libarchive/.deps/test-archive_read_open_file.Po
+rm -f libarchive/.deps/test-archive_read_open_filename.Po
+rm -f libarchive/.deps/test-archive_read_open_memory.Po
+rm -f libarchive/.deps/test-archive_read_set_format.Po
+rm -f libarchive/.deps/test-archive_read_set_options.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_all.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_by_code.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_bzip2.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_compress.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_grzip.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_gzip.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_lrzip.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_lz4.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_lzop.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_none.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_program.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_rpm.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_uu.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_xz.Po
+rm -f libarchive/.deps/test-archive_read_support_filter_zstd.Po
+rm -f libarchive/.deps/test-archive_read_support_format_7zip.Po
+rm -f libarchive/.deps/test-archive_read_support_format_all.Po
+rm -f libarchive/.deps/test-archive_read_support_format_ar.Po
+rm -f libarchive/.deps/test-archive_read_support_format_by_code.Po
+rm -f libarchive/.deps/test-archive_read_support_format_cab.Po
+rm -f libarchive/.deps/test-archive_read_support_format_cpio.Po
+rm -f libarchive/.deps/test-archive_read_support_format_empty.Po
+rm -f libarchive/.deps/test-archive_read_support_format_iso9660.Po
+rm -f libarchive/.deps/test-archive_read_support_format_lha.Po
+rm -f libarchive/.deps/test-archive_read_support_format_mtree.Po
+rm -f libarchive/.deps/test-archive_read_support_format_rar.Po
+rm -f libarchive/.deps/test-archive_read_support_format_rar5.Po
+rm -f libarchive/.deps/test-archive_read_support_format_raw.Po
+rm -f libarchive/.deps/test-archive_read_support_format_tar.Po
+rm -f libarchive/.deps/test-archive_read_support_format_warc.Po
+rm -f libarchive/.deps/test-archive_read_support_format_xar.Po
+rm -f libarchive/.deps/test-archive_read_support_format_zip.Po
+rm -f libarchive/.deps/test-archive_string.Po
+rm -f libarchive/.deps/test-archive_string_sprintf.Po
+rm -f libarchive/.deps/test-archive_util.Po
+rm -f libarchive/.deps/test-archive_version_details.Po
+rm -f libarchive/.deps/test-archive_virtual.Po
+rm -f libarchive/.deps/test-archive_windows.Po
+rm -f libarchive/.deps/test-archive_write.Po
+rm -f libarchive/.deps/test-archive_write_add_filter.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_b64encode.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_by_name.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_bzip2.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_compress.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_grzip.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_gzip.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_lrzip.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_lz4.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_lzop.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_none.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_program.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_uuencode.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_xz.Po
+rm -f libarchive/.deps/test-archive_write_add_filter_zstd.Po
+rm -f libarchive/.deps/test-archive_write_disk_posix.Po
+rm -f libarchive/.deps/test-archive_write_disk_set_standard_lookup.Po
+rm -f libarchive/.deps/test-archive_write_disk_windows.Po
+rm -f libarchive/.deps/test-archive_write_open_fd.Po
+rm -f libarchive/.deps/test-archive_write_open_file.Po
+rm -f libarchive/.deps/test-archive_write_open_filename.Po
+rm -f libarchive/.deps/test-archive_write_open_memory.Po
+rm -f libarchive/.deps/test-archive_write_set_format.Po
+rm -f libarchive/.deps/test-archive_write_set_format_7zip.Po
+rm -f libarchive/.deps/test-archive_write_set_format_ar.Po
+rm -f libarchive/.deps/test-archive_write_set_format_by_name.Po
+rm -f libarchive/.deps/test-archive_write_set_format_cpio.Po
+rm -f libarchive/.deps/test-archive_write_set_format_cpio_binary.Po
+rm -f libarchive/.deps/test-archive_write_set_format_cpio_newc.Po
+rm -f libarchive/.deps/test-archive_write_set_format_cpio_odc.Po
+rm -f libarchive/.deps/test-archive_write_set_format_filter_by_ext.Po
+rm -f libarchive/.deps/test-archive_write_set_format_gnutar.Po
+rm -f libarchive/.deps/test-archive_write_set_format_iso9660.Po
+rm -f libarchive/.deps/test-archive_write_set_format_mtree.Po
+rm -f libarchive/.deps/test-archive_write_set_format_pax.Po
+rm -f libarchive/.deps/test-archive_write_set_format_raw.Po
+rm -f libarchive/.deps/test-archive_write_set_format_shar.Po
+rm -f libarchive/.deps/test-archive_write_set_format_ustar.Po
+rm -f libarchive/.deps/test-archive_write_set_format_v7tar.Po
+rm -f libarchive/.deps/test-archive_write_set_format_warc.Po
+rm -f libarchive/.deps/test-archive_write_set_format_xar.Po
+rm -f libarchive/.deps/test-archive_write_set_format_zip.Po
+rm -f libarchive/.deps/test-archive_write_set_options.Po
+rm -f libarchive/.deps/test-archive_write_set_passphrase.Po
+rm -f libarchive/.deps/test-filter_fork_posix.Po
+rm -f libarchive/.deps/test-filter_fork_windows.Po
+rm -f libarchive/.deps/test-xxhash.Po
+rm -f libarchive/.deps/xxhash.Plo
+rm -f libarchive/test/.deps/test-read_open_memory.Po
+rm -f libarchive/test/.deps/test-test_acl_nfs4.Po
+rm -f libarchive/test/.deps/test-test_acl_pax.Po
+rm -f libarchive/test/.deps/test-test_acl_platform_nfs4.Po
+rm -f libarchive/test/.deps/test-test_acl_platform_posix1e.Po
+rm -f libarchive/test/.deps/test-test_acl_posix1e.Po
+rm -f libarchive/test/.deps/test-test_acl_text.Po
+rm -f libarchive/test/.deps/test-test_archive_api_feature.Po
+rm -f libarchive/test/.deps/test-test_archive_clear_error.Po
+rm -f libarchive/test/.deps/test-test_archive_cmdline.Po
+rm -f libarchive/test/.deps/test-test_archive_digest.Po
+rm -f libarchive/test/.deps/test-test_archive_getdate.Po
+rm -f libarchive/test/.deps/test-test_archive_match_owner.Po
+rm -f libarchive/test/.deps/test-test_archive_match_path.Po
+rm -f libarchive/test/.deps/test-test_archive_match_time.Po
+rm -f libarchive/test/.deps/test-test_archive_pathmatch.Po
+rm -f libarchive/test/.deps/test-test_archive_read_add_passphrase.Po
+rm -f libarchive/test/.deps/test-test_archive_read_close_twice.Po
+rm -f libarchive/test/.deps/test-test_archive_read_close_twice_open_fd.Po
+rm -f libarchive/test/.deps/test-test_archive_read_close_twice_open_filename.Po
+rm -f libarchive/test/.deps/test-test_archive_read_multiple_data_objects.Po
+rm -f libarchive/test/.deps/test-test_archive_read_next_header_empty.Po
+rm -f libarchive/test/.deps/test-test_archive_read_next_header_raw.Po
+rm -f libarchive/test/.deps/test-test_archive_read_open2.Po
+rm -f libarchive/test/.deps/test-test_archive_read_set_filter_option.Po
+rm -f libarchive/test/.deps/test-test_archive_read_set_format_option.Po
+rm -f libarchive/test/.deps/test-test_archive_read_set_option.Po
+rm -f libarchive/test/.deps/test-test_archive_read_set_options.Po
+rm -f libarchive/test/.deps/test-test_archive_read_support.Po
+rm -f libarchive/test/.deps/test-test_archive_set_error.Po
+rm -f libarchive/test/.deps/test-test_archive_string.Po
+rm -f libarchive/test/.deps/test-test_archive_string_conversion.Po
+rm -f libarchive/test/.deps/test-test_archive_write_add_filter_by_name.Po
+rm -f libarchive/test/.deps/test-test_archive_write_set_filter_option.Po
+rm -f libarchive/test/.deps/test-test_archive_write_set_format_by_name.Po
+rm -f libarchive/test/.deps/test-test_archive_write_set_format_filter_by_ext.Po
+rm -f libarchive/test/.deps/test-test_archive_write_set_format_option.Po
+rm -f libarchive/test/.deps/test-test_archive_write_set_option.Po
+rm -f libarchive/test/.deps/test-test_archive_write_set_options.Po
+rm -f libarchive/test/.deps/test-test_archive_write_set_passphrase.Po
+rm -f libarchive/test/.deps/test-test_bad_fd.Po
+rm -f libarchive/test/.deps/test-test_compat_bzip2.Po
+rm -f libarchive/test/.deps/test-test_compat_cpio.Po
+rm -f libarchive/test/.deps/test-test_compat_gtar.Po
+rm -f libarchive/test/.deps/test-test_compat_gzip.Po
+rm -f libarchive/test/.deps/test-test_compat_lz4.Po
+rm -f libarchive/test/.deps/test-test_compat_lzip.Po
+rm -f libarchive/test/.deps/test-test_compat_lzma.Po
+rm -f libarchive/test/.deps/test-test_compat_lzop.Po
+rm -f libarchive/test/.deps/test-test_compat_mac.Po
+rm -f libarchive/test/.deps/test-test_compat_perl_archive_tar.Po
+rm -f libarchive/test/.deps/test-test_compat_plexus_archiver_tar.Po
+rm -f libarchive/test/.deps/test-test_compat_solaris_pax_sparse.Po
+rm -f libarchive/test/.deps/test-test_compat_solaris_tar_acl.Po
+rm -f libarchive/test/.deps/test-test_compat_star_acl.Po
+rm -f libarchive/test/.deps/test-test_compat_tar_directory.Po
+rm -f libarchive/test/.deps/test-test_compat_tar_hardlink.Po
+rm -f libarchive/test/.deps/test-test_compat_uudecode.Po
+rm -f libarchive/test/.deps/test-test_compat_uudecode_large.Po
+rm -f libarchive/test/.deps/test-test_compat_xz.Po
+rm -f libarchive/test/.deps/test-test_compat_zip.Po
+rm -f libarchive/test/.deps/test-test_compat_zstd.Po
+rm -f libarchive/test/.deps/test-test_empty_write.Po
+rm -f libarchive/test/.deps/test-test_entry.Po
+rm -f libarchive/test/.deps/test-test_entry_strmode.Po
+rm -f libarchive/test/.deps/test-test_extattr_freebsd.Po
+rm -f libarchive/test/.deps/test-test_filter_count.Po
+rm -f libarchive/test/.deps/test-test_fuzz.Po
+rm -f libarchive/test/.deps/test-test_gnutar_filename_encoding.Po
+rm -f libarchive/test/.deps/test-test_link_resolver.Po
+rm -f libarchive/test/.deps/test-test_open_failure.Po
+rm -f libarchive/test/.deps/test-test_open_fd.Po
+rm -f libarchive/test/.deps/test-test_open_file.Po
+rm -f libarchive/test/.deps/test-test_open_filename.Po
+rm -f libarchive/test/.deps/test-test_pax_filename_encoding.Po
+rm -f libarchive/test/.deps/test-test_pax_xattr_header.Po
+rm -f libarchive/test/.deps/test-test_read_data_large.Po
+rm -f libarchive/test/.deps/test-test_read_disk.Po
+rm -f libarchive/test/.deps/test-test_read_disk_directory_traversals.Po
+rm -f libarchive/test/.deps/test-test_read_disk_entry_from_file.Po
+rm -f libarchive/test/.deps/test-test_read_extract.Po
+rm -f libarchive/test/.deps/test-test_read_file_nonexistent.Po
+rm -f libarchive/test/.deps/test-test_read_filter_compress.Po
+rm -f libarchive/test/.deps/test-test_read_filter_grzip.Po
+rm -f libarchive/test/.deps/test-test_read_filter_lrzip.Po
+rm -f libarchive/test/.deps/test-test_read_filter_lzop.Po
+rm -f libarchive/test/.deps/test-test_read_filter_lzop_multiple_parts.Po
+rm -f libarchive/test/.deps/test-test_read_filter_program.Po
+rm -f libarchive/test/.deps/test-test_read_filter_program_signature.Po
+rm -f libarchive/test/.deps/test-test_read_filter_uudecode.Po
+rm -f libarchive/test/.deps/test-test_read_filter_uudecode_raw.Po
+rm -f libarchive/test/.deps/test-test_read_format_7zip.Po
+rm -f libarchive/test/.deps/test-test_read_format_7zip_encryption_data.Po
+rm -f libarchive/test/.deps/test-test_read_format_7zip_encryption_header.Po
+rm -f libarchive/test/.deps/test-test_read_format_7zip_encryption_partially.Po
+rm -f libarchive/test/.deps/test-test_read_format_7zip_malformed.Po
+rm -f libarchive/test/.deps/test-test_read_format_7zip_packinfo_digests.Po
+rm -f libarchive/test/.deps/test-test_read_format_ar.Po
+rm -f libarchive/test/.deps/test-test_read_format_cab.Po
+rm -f libarchive/test/.deps/test-test_read_format_cab_filename.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_afio.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_bin.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_bin_Z.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_bin_be.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_bin_bz2.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_bin_gz.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_bin_le.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_bin_lzip.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_bin_lzma.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_bin_xz.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_filename.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_odc.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_svr4_bzip2_rpm.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_svr4_gzip.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_svr4_gzip_rpm.Po
+rm -f libarchive/test/.deps/test-test_read_format_cpio_svr4c_Z.Po
+rm -f libarchive/test/.deps/test-test_read_format_empty.Po
+rm -f libarchive/test/.deps/test-test_read_format_gtar_filename.Po
+rm -f libarchive/test/.deps/test-test_read_format_gtar_gz.Po
+rm -f libarchive/test/.deps/test-test_read_format_gtar_lzma.Po
+rm -f libarchive/test/.deps/test-test_read_format_gtar_sparse.Po
+rm -f libarchive/test/.deps/test-test_read_format_gtar_sparse_skip_entry.Po
+rm -f libarchive/test/.deps/test-test_read_format_iso_Z.Po
+rm -f libarchive/test/.deps/test-test_read_format_iso_multi_extent.Po
+rm -f libarchive/test/.deps/test-test_read_format_iso_xorriso.Po
+rm -f libarchive/test/.deps/test-test_read_format_isojoliet_bz2.Po
+rm -f libarchive/test/.deps/test-test_read_format_isojoliet_long.Po
+rm -f libarchive/test/.deps/test-test_read_format_isojoliet_rr.Po
+rm -f libarchive/test/.deps/test-test_read_format_isojoliet_versioned.Po
+rm -f libarchive/test/.deps/test-test_read_format_isorr_bz2.Po
+rm -f libarchive/test/.deps/test-test_read_format_isorr_ce.Po
+rm -f libarchive/test/.deps/test-test_read_format_isorr_new_bz2.Po
+rm -f libarchive/test/.deps/test-test_read_format_isorr_rr_moved.Po
+rm -f libarchive/test/.deps/test-test_read_format_isozisofs_bz2.Po
+rm -f libarchive/test/.deps/test-test_read_format_lha.Po
+rm -f libarchive/test/.deps/test-test_read_format_lha_bugfix_0.Po
+rm -f libarchive/test/.deps/test-test_read_format_lha_filename.Po
+rm -f libarchive/test/.deps/test-test_read_format_lha_filename_utf16.Po
+rm -f libarchive/test/.deps/test-test_read_format_mtree.Po
+rm -f libarchive/test/.deps/test-test_read_format_mtree_crash747.Po
+rm -f libarchive/test/.deps/test-test_read_format_pax_bz2.Po
+rm -f libarchive/test/.deps/test-test_read_format_rar.Po
+rm -f libarchive/test/.deps/test-test_read_format_rar5.Po
+rm -f libarchive/test/.deps/test-test_read_format_rar_encryption_data.Po
+rm -f libarchive/test/.deps/test-test_read_format_rar_encryption_header.Po
+rm -f libarchive/test/.deps/test-test_read_format_rar_encryption_partially.Po
+rm -f libarchive/test/.deps/test-test_read_format_rar_filter.Po
+rm -f libarchive/test/.deps/test-test_read_format_rar_invalid1.Po
+rm -f libarchive/test/.deps/test-test_read_format_raw.Po
+rm -f libarchive/test/.deps/test-test_read_format_tar.Po
+rm -f libarchive/test/.deps/test-test_read_format_tar_concatenated.Po
+rm -f libarchive/test/.deps/test-test_read_format_tar_empty_filename.Po
+rm -f libarchive/test/.deps/test-test_read_format_tar_empty_pax.Po
+rm -f libarchive/test/.deps/test-test_read_format_tar_empty_with_gnulabel.Po
+rm -f libarchive/test/.deps/test-test_read_format_tar_filename.Po
+rm -f libarchive/test/.deps/test-test_read_format_tar_invalid_pax_size.Po
+rm -f libarchive/test/.deps/test-test_read_format_tbz.Po
+rm -f libarchive/test/.deps/test-test_read_format_tgz.Po
+rm -f libarchive/test/.deps/test-test_read_format_tlz.Po
+rm -f libarchive/test/.deps/test-test_read_format_txz.Po
+rm -f libarchive/test/.deps/test-test_read_format_tz.Po
+rm -f libarchive/test/.deps/test-test_read_format_ustar_filename.Po
+rm -f libarchive/test/.deps/test-test_read_format_warc.Po
+rm -f libarchive/test/.deps/test-test_read_format_xar.Po
+rm -f libarchive/test/.deps/test-test_read_format_xar_doublelink.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_7075_utf8_paths.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_comment_stored.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_encryption_data.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_encryption_header.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_encryption_partially.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_extra_padding.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_filename.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_high_compression.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_jar.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_mac_metadata.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_malformed.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_msdos.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_nested.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_nofiletype.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_padded.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_sfx.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_traditional_encryption_data.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_winzip_aes.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_winzip_aes_large.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_with_invalid_traditional_eocd.Po
+rm -f libarchive/test/.deps/test-test_read_format_zip_zip64.Po
+rm -f libarchive/test/.deps/test-test_read_large.Po
+rm -f libarchive/test/.deps/test-test_read_pax_truncated.Po
+rm -f libarchive/test/.deps/test-test_read_pax_xattr_rht_security_selinux.Po
+rm -f libarchive/test/.deps/test-test_read_pax_xattr_schily.Po
+rm -f libarchive/test/.deps/test-test_read_position.Po
+rm -f libarchive/test/.deps/test-test_read_set_format.Po
+rm -f libarchive/test/.deps/test-test_read_too_many_filters.Po
+rm -f libarchive/test/.deps/test-test_read_truncated.Po
+rm -f libarchive/test/.deps/test-test_read_truncated_filter.Po
+rm -f libarchive/test/.deps/test-test_short_writes.Po
+rm -f libarchive/test/.deps/test-test_sparse_basic.Po
+rm -f libarchive/test/.deps/test-test_tar_filenames.Po
+rm -f libarchive/test/.deps/test-test_tar_large.Po
+rm -f libarchive/test/.deps/test-test_ustar_filename_encoding.Po
+rm -f libarchive/test/.deps/test-test_ustar_filenames.Po
+rm -f libarchive/test/.deps/test-test_warn_missing_hardlink_target.Po
+rm -f libarchive/test/.deps/test-test_write_disk.Po
+rm -f libarchive/test/.deps/test-test_write_disk_appledouble.Po
+rm -f libarchive/test/.deps/test-test_write_disk_failures.Po
+rm -f libarchive/test/.deps/test-test_write_disk_fixup.Po
+rm -f libarchive/test/.deps/test-test_write_disk_hardlink.Po
+rm -f libarchive/test/.deps/test-test_write_disk_hfs_compression.Po
+rm -f libarchive/test/.deps/test-test_write_disk_lookup.Po
+rm -f libarchive/test/.deps/test-test_write_disk_mac_metadata.Po
+rm -f libarchive/test/.deps/test-test_write_disk_no_hfs_compression.Po
+rm -f libarchive/test/.deps/test-test_write_disk_perms.Po
+rm -f libarchive/test/.deps/test-test_write_disk_secure.Po
+rm -f libarchive/test/.deps/test-test_write_disk_secure744.Po
+rm -f libarchive/test/.deps/test-test_write_disk_secure745.Po
+rm -f libarchive/test/.deps/test-test_write_disk_secure746.Po
+rm -f libarchive/test/.deps/test-test_write_disk_sparse.Po
+rm -f libarchive/test/.deps/test-test_write_disk_symlink.Po
+rm -f libarchive/test/.deps/test-test_write_disk_times.Po
+rm -f libarchive/test/.deps/test-test_write_filter_b64encode.Po
+rm -f libarchive/test/.deps/test-test_write_filter_bzip2.Po
+rm -f libarchive/test/.deps/test-test_write_filter_compress.Po
+rm -f libarchive/test/.deps/test-test_write_filter_gzip.Po
+rm -f libarchive/test/.deps/test-test_write_filter_gzip_timestamp.Po
+rm -f libarchive/test/.deps/test-test_write_filter_lrzip.Po
+rm -f libarchive/test/.deps/test-test_write_filter_lz4.Po
+rm -f libarchive/test/.deps/test-test_write_filter_lzip.Po
+rm -f libarchive/test/.deps/test-test_write_filter_lzma.Po
+rm -f libarchive/test/.deps/test-test_write_filter_lzop.Po
+rm -f libarchive/test/.deps/test-test_write_filter_program.Po
+rm -f libarchive/test/.deps/test-test_write_filter_uuencode.Po
+rm -f libarchive/test/.deps/test-test_write_filter_xz.Po
+rm -f libarchive/test/.deps/test-test_write_filter_zstd.Po
+rm -f libarchive/test/.deps/test-test_write_format_7zip.Po
+rm -f libarchive/test/.deps/test-test_write_format_7zip_empty.Po
+rm -f libarchive/test/.deps/test-test_write_format_7zip_large.Po
+rm -f libarchive/test/.deps/test-test_write_format_ar.Po
+rm -f libarchive/test/.deps/test-test_write_format_cpio.Po
+rm -f libarchive/test/.deps/test-test_write_format_cpio_empty.Po
+rm -f libarchive/test/.deps/test-test_write_format_cpio_newc.Po
+rm -f libarchive/test/.deps/test-test_write_format_cpio_odc.Po
+rm -f libarchive/test/.deps/test-test_write_format_gnutar.Po
+rm -f libarchive/test/.deps/test-test_write_format_gnutar_filenames.Po
+rm -f libarchive/test/.deps/test-test_write_format_iso9660.Po
+rm -f libarchive/test/.deps/test-test_write_format_iso9660_boot.Po
+rm -f libarchive/test/.deps/test-test_write_format_iso9660_empty.Po
+rm -f libarchive/test/.deps/test-test_write_format_iso9660_filename.Po
+rm -f libarchive/test/.deps/test-test_write_format_iso9660_zisofs.Po
+rm -f libarchive/test/.deps/test-test_write_format_mtree.Po
+rm -f libarchive/test/.deps/test-test_write_format_mtree_absolute_path.Po
+rm -f libarchive/test/.deps/test-test_write_format_mtree_classic.Po
+rm -f libarchive/test/.deps/test-test_write_format_mtree_classic_indent.Po
+rm -f libarchive/test/.deps/test-test_write_format_mtree_fflags.Po
+rm -f libarchive/test/.deps/test-test_write_format_mtree_no_separator.Po
+rm -f libarchive/test/.deps/test-test_write_format_mtree_quoted_filename.Po
+rm -f libarchive/test/.deps/test-test_write_format_pax.Po
+rm -f libarchive/test/.deps/test-test_write_format_raw.Po
+rm -f libarchive/test/.deps/test-test_write_format_raw_b64.Po
+rm -f libarchive/test/.deps/test-test_write_format_shar_empty.Po
+rm -f libarchive/test/.deps/test-test_write_format_tar.Po
+rm -f libarchive/test/.deps/test-test_write_format_tar_empty.Po
+rm -f libarchive/test/.deps/test-test_write_format_tar_sparse.Po
+rm -f libarchive/test/.deps/test-test_write_format_tar_ustar.Po
+rm -f libarchive/test/.deps/test-test_write_format_tar_v7tar.Po
+rm -f libarchive/test/.deps/test-test_write_format_warc.Po
+rm -f libarchive/test/.deps/test-test_write_format_warc_empty.Po
+rm -f libarchive/test/.deps/test-test_write_format_xar.Po
+rm -f libarchive/test/.deps/test-test_write_format_xar_empty.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip64_stream.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip_compression_store.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip_empty.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip_empty_zip64.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip_entry_size_unset.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip_file.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip_file_zip64.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip_large.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip_stream.Po
+rm -f libarchive/test/.deps/test-test_write_format_zip_zip64.Po
+rm -f libarchive/test/.deps/test-test_write_open_memory.Po
+rm -f libarchive/test/.deps/test-test_write_read_format_zip.Po
+rm -f libarchive/test/.deps/test-test_xattr_platform.Po
+rm -f libarchive/test/.deps/test-test_zip_filename_encoding.Po
+rm -f libarchive_fe/.deps/la-err.Plo
+rm -f libarchive_fe/.deps/la-line_reader.Plo
+rm -f libarchive_fe/.deps/la-passphrase.Plo
+rm -f tar/.deps/bsdtar-bsdtar.Po
+rm -f tar/.deps/bsdtar-bsdtar_windows.Po
+rm -f tar/.deps/bsdtar-cmdline.Po
+rm -f tar/.deps/bsdtar-creation_set.Po
+rm -f tar/.deps/bsdtar-read.Po
+rm -f tar/.deps/bsdtar-subst.Po
+rm -f tar/.deps/bsdtar-util.Po
+rm -f tar/.deps/bsdtar-write.Po
+rm -f tar/test/.deps/bsdtar_test-test_0.Po
+rm -f tar/test/.deps/bsdtar_test-test_basic.Po
+rm -f tar/test/.deps/bsdtar_test-test_copy.Po
+rm -f tar/test/.deps/bsdtar_test-test_empty_mtree.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_Z.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_bz2.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_grz.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_gz.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_lrz.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_lz.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_lz4.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_lzma.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_lzo.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_xz.Po
+rm -f tar/test/.deps/bsdtar_test-test_extract_tar_zstd.Po
+rm -f tar/test/.deps/bsdtar_test-test_format_newc.Po
+rm -f tar/test/.deps/bsdtar_test-test_help.Po
+rm -f tar/test/.deps/bsdtar_test-test_leading_slash.Po
+rm -f tar/test/.deps/bsdtar_test-test_missing_file.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_C_mtree.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_C_upper.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_H_upper.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_L_upper.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_O_upper.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_T_upper.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_U_upper.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_X_upper.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_a.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_acls.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_b.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_b64encode.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_exclude.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_exclude_vcs.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_fflags.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_gid_gname.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_group.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_grzip.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_ignore_zeros.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_j.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_k.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_keep_newer_files.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_lrzip.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_lz4.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_lzma.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_lzop.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_n.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_newer_than.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_nodump.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_older_than.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_owner.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_passphrase.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_q.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_r.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_s.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_safe_writes.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_uid_uname.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_uuencode.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_xattrs.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_xz.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_z.Po
+rm -f tar/test/.deps/bsdtar_test-test_option_zstd.Po
+rm -f tar/test/.deps/bsdtar_test-test_patterns.Po
+rm -f tar/test/.deps/bsdtar_test-test_print_longpath.Po
+rm -f tar/test/.deps/bsdtar_test-test_stdio.Po
+rm -f tar/test/.deps/bsdtar_test-test_strip_components.Po
+rm -f tar/test/.deps/bsdtar_test-test_symlink_dir.Po
+rm -f tar/test/.deps/bsdtar_test-test_version.Po
+rm -f tar/test/.deps/bsdtar_test-test_windows.Po
+rm -f test_utils/.deps/bsdcat_test-test_main.Po
+rm -f test_utils/.deps/bsdcat_test-test_utils.Po
+rm -f test_utils/.deps/bsdcpio_test-test_main.Po
+rm -f test_utils/.deps/bsdcpio_test-test_utils.Po
+rm -f test_utils/.deps/bsdtar_test-test_main.Po
+rm -f test_utils/.deps/bsdtar_test-test_utils.Po
+rm -f test_utils/.deps/bsdunzip_test-test_main.Po
+rm -f test_utils/.deps/bsdunzip_test-test_utils.Po
+rm -f test_utils/.deps/libarchive_test-test_main.Po
+rm -f test_utils/.deps/libarchive_test-test_utils.Po
+rm -f unzip/.deps/bsdunzip-bsdunzip.Po
+rm -f unzip/.deps/bsdunzip-cmdline.Po
+rm -f unzip/.deps/bsdunzip-la_getline.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_0.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_C.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_I.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_L.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_P_encryption.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_Z1.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_basic.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_d.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_doubledash.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_glob.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_j.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_n.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_not_exist.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_o.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_p.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_q.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_singlefile.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_t.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_t_bad.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_version.Po
+rm -f unzip/test/.deps/bsdunzip_test-test_x.Po
+rm -f Makefile
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking build system type... x86_64-pc-linux-uclibcx32
+checking host system type... x86_64-pc-linux-uclibcx32
+checking for gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to enable C11 features... none needed
+checking whether gcc -m32 understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc -m32... gcc3
+checking how to run the C preprocessor... gcc -m32 -E
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc -m32... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibcx32 file names to x86_64-pc-linux-uclibcx32 format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibcx32 file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc -m32 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -m32 supports -fno-rtti -fno-exceptions... no
+checking for gcc -m32 option to produce PIC... -fPIC -DPIC
+checking if gcc -m32 PIC flag -fPIC -DPIC works... yes
+checking if gcc -m32 static flag -static works... yes
+checking if gcc -m32 supports -c -o file.o... yes
+checking if gcc -m32 supports -c -o file.o... (cached) yes
+checking whether the gcc -m32 linker (/usr/bin/ld -m elf_i386) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for strip... (cached) strip
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for acl/libacl.h... yes
+checking for attr/xattr.h... no
+checking for copyfile.h... no
+checking for ctype.h... yes
+checking for errno.h... yes
+checking for ext2fs/ext2_fs.h... yes
+checking for fcntl.h... yes
+checking for fnmatch.h... yes
+checking for grp.h... yes
+checking whether EXT2_IOC_GETFLAGS is usable... yes
+checking for inttypes.h... (cached) yes
+checking for io.h... no
+checking for langinfo.h... yes
+checking for limits.h... yes
+checking for linux/fiemap.h... yes
+checking for linux/fs.h... yes
+checking for linux/magic.h... yes
+checking for linux/types.h... yes
+checking whether FS_IOC_GETFLAGS is usable... yes
+checking for locale.h... yes
+checking for membership.h... no
+checking for paths.h... yes
+checking for poll.h... yes
+checking for pthread.h... yes
+checking for pwd.h... yes
+checking for readpassphrase.h... no
+checking for signal.h... yes
+checking for spawn.h... yes
+checking for stdarg.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/acl.h... yes
+checking for sys/cdefs.h... yes
+checking for sys/ea.h... no
+checking for sys/extattr.h... no
+checking for sys/ioctl.h... yes
+checking for sys/mkdev.h... no
+checking for sys/mount.h... yes
+checking for sys/queue.h... yes
+checking for sys/param.h... yes
+checking for sys/poll.h... yes
+checking for sys/richacl.h... no
+checking for sys/select.h... yes
+checking for sys/statfs.h... (cached) no
+checking for sys/statvfs.h... (cached) no
+checking for sys/sysmacros.h... yes
+checking for sys/time.h... (cached) yes
+checking for sys/utime.h... no
+checking for sys/utsname.h... yes
+checking for sys/vfs.h... yes
+checking for sys/xattr.h... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking for utime.h... yes
+checking for wchar.h... (cached) yes
+checking for wctype.h... yes
+checking for windows.h... no
+checking for wincrypt.h... no
+checking for winioctl.h... no
+checking for zlib.h... yes
+checking for inflate in -lz... yes
+checking for bzlib.h... yes
+checking for BZ2_bzDecompressInit in -lbz2... yes
+checking for blake2.h... no
+checking for blake2sp_init in -lb2... no
+checking for ld used by GCC... /usr/bin/ld -m elf_i386
+checking if the linker (/usr/bin/ld -m elf_i386) is GNU ld... yes
+checking for shared library run path origin... done
+./configure: line 15468: cd: /lib/../lib32/: No such file or directory
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for iconv.h... yes
+checking for localcharset.h... no
+checking for locale_charset... no
+checking for locale_charset in -lcharset... no
+checking for lz4.h... yes
+checking for lz4hc.h... yes
+checking for LZ4_decompress_safe in -llz4... yes
+checking for zstd.h... yes
+checking for ZSTD_decompressStream in -lzstd... yes
+checking for ZSTD_compressStream in -lzstd... yes
+checking for lzma.h... yes
+checking for lzma_stream_decoder in -llzma... yes
+checking whether we have multithread support in lzma... yes
+checking whether we have ARM64 filter support in lzma... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libxml-2.0... no
+checking for xmlInitParser in -lxml2... no
+checking for libxml/xmlreader.h... no
+checking for libxml/xmlwriter.h... no
+checking for expat.h... yes
+checking for XML_ParserCreate in -lexpat... yes
+checking for regex.h... yes
+checking for regcomp... yes
+checking whether C compiler accepts -Wall... yes
+checking whether C compiler accepts -Wformat... yes
+checking whether C compiler accepts -Wformat-security... yes
+checking whether ld supports --gc-sections... yes
+checking whether C compiler accepts -ffunction-sections... yes
+checking whether C compiler accepts -fdata-sections... yes
+checking for an ANSI C-conforming const... yes
+checking for uid_t in sys/types.h... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for id_t... yes
+checking for uintptr_t... yes
+checking for struct tm.tm_gmtoff... yes
+checking for struct tm.__tm_gmtoff... no
+checking for struct statfs.f_namemax... no
+checking for struct statfs.f_iosize... no
+checking for struct statvfs.f_iosize... no
+checking for struct stat.st_birthtime... no
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_mtimespec.tv_nsec... no
+checking for struct stat.st_mtim.tv_nsec... yes
+checking for struct stat.st_mtime_n... no
+checking for struct stat.st_umtime... no
+checking for struct stat.st_mtime_usec... no
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_flags... no
+checking for uintmax_t... yes
+checking for unsigned long long... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for intmax_t... yes
+checking for uintmax_t... (cached) yes
+checking for int64_t... yes
+checking for uint64_t... yes
+checking for int32_t... yes
+checking for uint32_t... yes
+checking for int16_t... yes
+checking for uint16_t... yes
+checking for uint8_t... yes
+checking for gcc -m32 options needed to detect all undeclared functions... none needed
+checking whether SIZE_MAX is declared... yes
+checking whether INT32_MAX is declared... yes
+checking whether INT32_MIN is declared... yes
+checking whether INT64_MAX is declared... yes
+checking whether INT64_MIN is declared... yes
+checking whether UINT64_MAX is declared... yes
+checking whether UINT32_MAX is declared... yes
+checking whether INTMAX_MAX is declared... yes
+checking whether INTMAX_MIN is declared... yes
+checking whether UINTMAX_MAX is declared... yes
+checking whether SSIZE_MAX is declared... yes
+checking whether EFTYPE is declared... no
+checking whether EILSEQ is declared... yes
+checking for wchar_t... yes
+checking size of wchar_t... 4
+checking size of int... 4
+checking size of long... 4
+checking whether gcc -m32 needs -traditional... no
+checking for sys/mkdev.h... (cached) no
+checking for sys/sysmacros.h... (cached) yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for working memcmp... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether lstat accepts an empty string... no
+checking whether stat accepts an empty string... no
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for strftime... yes
+checking for vprintf... yes
+checking for CreateHardLinkA... no
+checking for arc4random_buf... no
+checking for chflags... no
+checking for chown... yes
+checking for chroot... yes
+checking for ctime_r... yes
+checking for fchdir... yes
+checking for fchflags... no
+checking for fchmod... yes
+checking for fchown... yes
+checking for fcntl... yes
+checking for fdopendir... yes
+checking for fnmatch... yes
+checking for fork... yes
+checking for fstat... yes
+checking for fstatat... yes
+checking for fstatfs... yes
+checking for fstatvfs... yes
+checking for ftruncate... yes
+checking for futimens... yes
+checking for futimes... no
+checking for futimesat... yes
+checking for geteuid... yes
+checking for getline... yes
+checking for getpid... yes
+checking for getgrgid_r... yes
+checking for getgrnam_r... yes
+checking for getpwnam_r... yes
+checking for getpwuid_r... yes
+checking for getvfsbyname... no
+checking for gmtime_r... yes
+checking for lchflags... no
+checking for lchmod... no
+checking for lchown... yes
+checking for link... yes
+checking for linkat... yes
+checking for localtime_r... yes
+checking for lstat... yes
+checking for lutimes... yes
+checking for mbrtowc... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mkfifo... yes
+checking for mknod... yes
+checking for mkstemp... yes
+checking for nl_langinfo... yes
+checking for openat... yes
+checking for pipe... yes
+checking for poll... yes
+checking for posix_spawnp... yes
+checking for readlink... yes
+checking for readlinkat... yes
+checking for readpassphrase... no
+checking for select... yes
+checking for setenv... yes
+checking for setlocale... (cached) no
+checking for sigaction... yes
+checking for statfs... (cached) no
+checking for statvfs... (cached) no
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncpy_s... no
+checking for strnlen... yes
+checking for strrchr... yes
+checking for symlink... yes
+checking for sysconf... yes
+checking for timegm... yes
+checking for tzset... yes
+checking for unlinkat... yes
+checking for unsetenv... yes
+checking for utime... yes
+checking for utimensat... yes
+checking for utimes... yes
+checking for vfork... yes
+checking for wcrtomb... yes
+checking for wcscmp... yes
+checking for wcscpy... yes
+checking for wcslen... yes
+checking for wctomb... yes
+checking for wmemcmp... yes
+checking for wmemcpy... yes
+checking for wmemmove... yes
+checking for _fseeki64... no
+checking for _get_timezone... no
+checking whether cmtime_s is declared... no
+checking whether gmtime_s is declared... no
+checking for localtime_s... no
+checking whether _mkgmtime is declared... no
+checking for cygwin_conv_path... no
+checking for struct vfsconf... no
+checking for struct xvfsconf... no
+checking for struct statfs... no
+checking whether D_MD_ORDER is declared... no
+checking for struct dirent.d_namlen... no
+checking for library containing setxattr... none required
+checking whether EXTATTR_NAMESPACE_USER is declared... no
+checking whether XATTR_NOFOLLOW is declared... no
+checking for fgetxattr... yes
+checking for flistxattr... yes
+checking for fsetxattr... yes
+checking for getxattr... yes
+checking for lgetxattr... yes
+checking for listxattr... yes
+checking for llistxattr... yes
+checking for lsetxattr... yes
+checking for extended attributes support... Linux
+checking for acl_get_file in -lacl... yes
+checking for acl_t... yes
+checking for acl_entry_t... yes
+checking for acl_permset_t... yes
+checking for acl_tag_t... yes
+checking for richacl_get_file in -lrichacl... no
+checking for struct richace... no
+checking for struct richacl... no
+checking for acl... no
+checking for facl... no
+checking for acl_add_perm... yes
+checking for acl_clear_perms... yes
+checking for acl_create_entry... yes
+checking for acl_delete_def_file... yes
+checking for acl_free... yes
+checking for acl_get_entry... yes
+checking for acl_get_fd... yes
+checking for acl_get_file... yes
+checking for acl_get_permset... yes
+checking for acl_get_qualifier... yes
+checking for acl_get_tag_type... yes
+checking for acl_init... yes
+checking for acl_set_fd... yes
+checking for acl_set_file... yes
+checking for acl_set_qualifier... yes
+checking for acl_set_tag_type... yes
+checking for acl_get_perm... yes
+checking for ACL support... libacl (POSIX.1e)
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking support for ARCHIVE_CRYPTO_MD5_LIBC... no
+checking support for ARCHIVE_CRYPTO_MD5_LIBSYSTEM... no
+checking support for ARCHIVE_CRYPTO_RMD160_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA1_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA1_LIBSYSTEM... no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBC2... no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBC3... no
+checking support for ARCHIVE_CRYPTO_SHA256_LIBSYSTEM... no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBC2... no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBC3... no
+checking support for ARCHIVE_CRYPTO_SHA384_LIBSYSTEM... no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBC... no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBC2... no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBC3... no
+checking support for ARCHIVE_CRYPTO_SHA512_LIBSYSTEM... no
+checking for bcrypt.h... no
+checking for openssl/evp.h... yes
+checking for OPENSSL_config in -lcrypto... yes
+checking support for ARCHIVE_CRYPTO_MD5_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_RMD160_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_SHA1_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_SHA256_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_SHA384_OPENSSL... yes
+checking support for ARCHIVE_CRYPTO_SHA512_OPENSSL... yes
+checking for PKCS5_PBKDF2_HMAC_SHA1... yes
+checking for md5.h... no
+checking for ripemd.h... no
+checking for sha.h... no
+checking for sha256.h... no
+checking for sha512.h... no
+checking for MD5Init in -lmd... no
+checking whether compiler supports visibility annotations... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating build/pkgconfig/libarchive.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing mkdirs commands
+/usr/bin/mkdir -p libarchive/test
+/usr/bin/mkdir -p tar/test
+/usr/bin/mkdir -p cpio/test
+/usr/bin/mkdir -p cat/test
+cat ./libarchive/test/test_*.c | grep '^DEFINE_TEST' > libarchive/test/list.h
+cat ./tar/test/test_*.c | grep '^DEFINE_TEST' > tar/test/list.h
+cat ./cpio/test/test_*.c | grep '^DEFINE_TEST' > cpio/test/list.h
+cat ./cat/test/test_*.c | grep '^DEFINE_TEST' > cat/test/list.h
+/usr/bin/mkdir -p unzip/test
+cat ./unzip/test/test_*.c | grep '^DEFINE_TEST' > unzip/test/list.h
+make  all-am
+make[1]: Entering directory '/sources/libarchive-3.7.4'
+  CC       tar/bsdtar-bsdtar.o
+  CC       tar/bsdtar-cmdline.o
+  CC       tar/bsdtar-creation_set.o
+  CC       tar/bsdtar-read.o
+  CC       tar/bsdtar-subst.o
+  CC       tar/bsdtar-util.o
+  CC       tar/bsdtar-write.o
+  CC       libarchive/archive_acl.lo
+  CC       libarchive/archive_check_magic.lo
+  CC       libarchive/archive_cmdline.lo
+  CC       libarchive/archive_cryptor.lo
+  CC       libarchive/archive_digest.lo
+  CC       libarchive/archive_entry.lo
+  CC       libarchive/archive_entry_copy_stat.lo
+  CC       libarchive/archive_entry_link_resolver.lo
+  CC       libarchive/archive_entry_sparse.lo
+  CC       libarchive/archive_entry_stat.lo
+  CC       libarchive/archive_entry_strmode.lo
+  CC       libarchive/archive_entry_xattr.lo
+  CC       libarchive/archive_getdate.lo
+  CC       libarchive/archive_hmac.lo
+  CC       libarchive/archive_match.lo
+  CC       libarchive/archive_options.lo
+  CC       libarchive/archive_pack_dev.lo
+  CC       libarchive/archive_pathmatch.lo
+  CC       libarchive/archive_ppmd7.lo
+  CC       libarchive/archive_ppmd8.lo
+  CC       libarchive/archive_random.lo
+  CC       libarchive/archive_rb.lo
+  CC       libarchive/archive_read.lo
+  CC       libarchive/archive_read_add_passphrase.lo
+  CC       libarchive/archive_read_append_filter.lo
+  CC       libarchive/archive_read_data_into_fd.lo
+  CC       libarchive/archive_read_disk_entry_from_file.lo
+  CC       libarchive/archive_read_disk_posix.lo
+  CC       libarchive/archive_read_disk_set_standard_lookup.lo
+  CC       libarchive/archive_read_extract.lo
+  CC       libarchive/archive_read_extract2.lo
+  CC       libarchive/archive_read_open_fd.lo
+  CC       libarchive/archive_read_open_file.lo
+  CC       libarchive/archive_read_open_filename.lo
+  CC       libarchive/archive_read_open_memory.lo
+  CC       libarchive/archive_read_set_format.lo
+  CC       libarchive/archive_read_set_options.lo
+  CC       libarchive/archive_read_support_filter_all.lo
+  CC       libarchive/archive_read_support_filter_bzip2.lo
+  CC       libarchive/archive_read_support_filter_by_code.lo
+  CC       libarchive/archive_read_support_filter_compress.lo
+  CC       libarchive/archive_read_support_filter_grzip.lo
+  CC       libarchive/archive_read_support_filter_gzip.lo
+  CC       libarchive/archive_read_support_filter_lrzip.lo
+  CC       libarchive/archive_read_support_filter_lz4.lo
+  CC       libarchive/archive_read_support_filter_lzop.lo
+  CC       libarchive/archive_read_support_filter_none.lo
+  CC       libarchive/archive_read_support_filter_program.lo
+  CC       libarchive/archive_read_support_filter_rpm.lo
+  CC       libarchive/archive_read_support_filter_uu.lo
+  CC       libarchive/archive_read_support_filter_xz.lo
+  CC       libarchive/archive_read_support_filter_zstd.lo
+  CC       libarchive/archive_read_support_format_7zip.lo
+  CC       libarchive/archive_read_support_format_all.lo
+  CC       libarchive/archive_read_support_format_ar.lo
+  CC       libarchive/archive_read_support_format_by_code.lo
+  CC       libarchive/archive_read_support_format_cab.lo
+  CC       libarchive/archive_read_support_format_cpio.lo
+  CC       libarchive/archive_read_support_format_empty.lo
+  CC       libarchive/archive_read_support_format_iso9660.lo
+  CC       libarchive/archive_read_support_format_lha.lo
+  CC       libarchive/archive_read_support_format_mtree.lo
+  CC       libarchive/archive_read_support_format_rar.lo
+  CC       libarchive/archive_read_support_format_rar5.lo
+  CC       libarchive/archive_read_support_format_raw.lo
+  CC       libarchive/archive_read_support_format_tar.lo
+  CC       libarchive/archive_read_support_format_warc.lo
+  CC       libarchive/archive_read_support_format_xar.lo
+  CC       libarchive/archive_read_support_format_zip.lo
+  CC       libarchive/archive_string.lo
+  CC       libarchive/archive_string_sprintf.lo
+  CC       libarchive/archive_util.lo
+  CC       libarchive/archive_version_details.lo
+  CC       libarchive/archive_virtual.lo
+  CC       libarchive/archive_write.lo
+  CC       libarchive/archive_write_disk_posix.lo
+  CC       libarchive/archive_write_disk_set_standard_lookup.lo
+  CC       libarchive/archive_write_open_fd.lo
+  CC       libarchive/archive_write_open_file.lo
+  CC       libarchive/archive_write_open_filename.lo
+  CC       libarchive/archive_write_open_memory.lo
+  CC       libarchive/archive_write_add_filter.lo
+  CC       libarchive/archive_write_add_filter_b64encode.lo
+  CC       libarchive/archive_write_add_filter_by_name.lo
+  CC       libarchive/archive_write_add_filter_bzip2.lo
+  CC       libarchive/archive_write_add_filter_compress.lo
+  CC       libarchive/archive_write_add_filter_grzip.lo
+  CC       libarchive/archive_write_add_filter_gzip.lo
+  CC       libarchive/archive_write_add_filter_lrzip.lo
+  CC       libarchive/archive_write_add_filter_lz4.lo
+  CC       libarchive/archive_write_add_filter_lzop.lo
+  CC       libarchive/archive_write_add_filter_none.lo
+  CC       libarchive/archive_write_add_filter_program.lo
+  CC       libarchive/archive_write_add_filter_uuencode.lo
+  CC       libarchive/archive_write_add_filter_xz.lo
+  CC       libarchive/archive_write_add_filter_zstd.lo
+  CC       libarchive/archive_write_set_format.lo
+  CC       libarchive/archive_write_set_format_7zip.lo
+  CC       libarchive/archive_write_set_format_ar.lo
+  CC       libarchive/archive_write_set_format_by_name.lo
+  CC       libarchive/archive_write_set_format_cpio.lo
+  CC       libarchive/archive_write_set_format_cpio_binary.lo
+  CC       libarchive/archive_write_set_format_cpio_newc.lo
+  CC       libarchive/archive_write_set_format_cpio_odc.lo
+  CC       libarchive/archive_write_set_format_filter_by_ext.lo
+  CC       libarchive/archive_write_set_format_iso9660.lo
+  CC       libarchive/archive_write_set_format_mtree.lo
+  CC       libarchive/archive_write_set_format_pax.lo
+  CC       libarchive/archive_write_set_format_raw.lo
+  CC       libarchive/archive_write_set_format_shar.lo
+  CC       libarchive/archive_write_set_format_ustar.lo
+  CC       libarchive/archive_write_set_format_v7tar.lo
+  CC       libarchive/archive_write_set_format_gnutar.lo
+  CC       libarchive/archive_write_set_format_warc.lo
+  CC       libarchive/archive_write_set_format_xar.lo
+  CC       libarchive/archive_write_set_format_zip.lo
+  CC       libarchive/archive_write_set_options.lo
+  CC       libarchive/archive_write_set_passphrase.lo
+  CC       libarchive/filter_fork_posix.lo
+  CC       libarchive/xxhash.lo
+  CC       libarchive/archive_blake2s_ref.lo
+  CC       libarchive/archive_blake2sp_ref.lo
+  CC       libarchive/archive_disk_acl_linux.lo
+  CC       libarchive_fe/la-err.lo
+  CC       libarchive_fe/la-line_reader.lo
+  CC       libarchive_fe/la-passphrase.lo
+  CC       cpio/bsdcpio-cmdline.o
+  CC       cpio/bsdcpio-cpio.o
+  CC       cat/bsdcat-bsdcat.o
+  CC       cat/bsdcat-cmdline.o
+  CC       unzip/bsdunzip-bsdunzip.o
+  CC       unzip/bsdunzip-cmdline.o
+  CC       unzip/bsdunzip-la_getline.o
+  CCLD     libarchive_fe.la
+  CCLD     libarchive.la
+  CCLD     bsdcpio
+  CCLD     bsdtar
+  CCLD     bsdcat
+  CCLD     bsdunzip
+make[1]: Leaving directory '/sources/libarchive-3.7.4'
+make  install-am
+make[1]: Entering directory '/sources/libarchive-3.7.4'
+make[2]: Entering directory '/sources/libarchive-3.7.4'
+ /usr/bin/mkdir -p '/sources/libarchive-3.7.4/pkg/usr/include'
+ /usr/bin/install -c -m 644 libarchive/archive.h libarchive/archive_entry.h '/sources/libarchive-3.7.4/pkg/usr/include'
+ /usr/bin/mkdir -p '/sources/libarchive-3.7.4/pkg/usr/share/man/man1'
+ /usr/bin/mkdir -p '/sources/libarchive-3.7.4/pkg/usr/share/man/man3'
+ /usr/bin/mkdir -p '/sources/libarchive-3.7.4/pkg/usr/share/man/man5'
+ /usr/bin/mkdir -p '/sources/libarchive-3.7.4/pkg/usr/lib32/pkgconfig'
+ /usr/bin/install -c -m 644 build/pkgconfig/libarchive.pc '/sources/libarchive-3.7.4/pkg/usr/lib32/pkgconfig'
+ /usr/bin/mkdir -p '/sources/libarchive-3.7.4/pkg/usr/lib32'
+ /usr/bin/install -c -m 644 tar/bsdtar.1 cpio/bsdcpio.1 cat/bsdcat.1 unzip/bsdunzip.1 '/sources/libarchive-3.7.4/pkg/usr/share/man/man1'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libarchive.la '/sources/libarchive-3.7.4/pkg/usr/lib32'
+ /usr/bin/install -c -m 644 libarchive/cpio.5 libarchive/libarchive-formats.5 libarchive/mtree.5 libarchive/tar.5 '/sources/libarchive-3.7.4/pkg/usr/share/man/man5'
+ /usr/bin/install -c -m 644 libarchive/archive_entry.3 libarchive/archive_entry_acl.3 libarchive/archive_entry_linkify.3 libarchive/archive_entry_misc.3 libarchive/archive_entry_paths.3 libarchive/archive_entry_perms.3 libarchive/archive_entry_stat.3 libarchive/archive_entry_time.3 libarchive/archive_read.3 libarchive/archive_read_add_passphrase.3 libarchive/archive_read_data.3 libarchive/archive_read_disk.3 libarchive/archive_read_extract.3 libarchive/archive_read_filter.3 libarchive/archive_read_format.3 libarchive/archive_read_free.3 libarchive/archive_read_header.3 libarchive/archive_read_new.3 libarchive/archive_read_open.3 libarchive/archive_read_set_options.3 libarchive/archive_util.3 libarchive/archive_write.3 libarchive/archive_write_blocksize.3 libarchive/archive_write_data.3 libarchive/archive_write_disk.3 libarchive/archive_write_filter.3 libarchive/archive_write_finish_entry.3 libarchive/archive_write_format.3 libarchive/archive_write_free.3 libarchive/archive_write_header.3 libarchive/archive_write_new.3 libarchive/archive_write_open.3 libarchive/archive_write_set_options.3 libarchive/archive_write_set_passphrase.3 libarchive/libarchive.3 libarchive/libarchive_changes.3 libarchive/libarchive_internals.3 '/sources/libarchive-3.7.4/pkg/usr/share/man/man3'
+libtool: install: /usr/bin/install -c .libs/libarchive.so.13.7.4 /sources/libarchive-3.7.4/pkg/usr/lib32/libarchive.so.13.7.4
+libtool: install: (cd /sources/libarchive-3.7.4/pkg/usr/lib32 && { ln -s -f libarchive.so.13.7.4 libarchive.so.13 || { rm -f libarchive.so.13 && ln -s libarchive.so.13.7.4 libarchive.so.13; }; })
+libtool: install: (cd /sources/libarchive-3.7.4/pkg/usr/lib32 && { ln -s -f libarchive.so.13.7.4 libarchive.so || { rm -f libarchive.so && ln -s libarchive.so.13.7.4 libarchive.so; }; })
+libtool: install: /usr/bin/install -c .libs/libarchive.lai /sources/libarchive-3.7.4/pkg/usr/lib32/libarchive.la
+libtool: warning: remember to run 'libtool --finish /usr/lib32'
+ /usr/bin/mkdir -p '/sources/libarchive-3.7.4/pkg/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c bsdtar bsdcpio bsdcat bsdunzip '/sources/libarchive-3.7.4/pkg/usr/bin'
+libtool: warning: 'libarchive.la' has not been installed in '/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/bsdtar /sources/libarchive-3.7.4/pkg/usr/bin/bsdtar
+libtool: warning: 'libarchive.la' has not been installed in '/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/bsdcpio /sources/libarchive-3.7.4/pkg/usr/bin/bsdcpio
+libtool: warning: 'libarchive.la' has not been installed in '/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/bsdcat /sources/libarchive-3.7.4/pkg/usr/bin/bsdcat
+libtool: warning: 'libarchive.la' has not been installed in '/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/bsdunzip /sources/libarchive-3.7.4/pkg/usr/bin/bsdunzip
+make[2]: Leaving directory '/sources/libarchive-3.7.4'
+make[1]: Leaving directory '/sources/libarchive-3.7.4'
+'pkg/usr/lib32/libarchive.la' -> '/usr/lib32/libarchive.la'
+'pkg/usr/lib32/libarchive.so' -> '/usr/lib32/libarchive.so'
+'pkg/usr/lib32/libarchive.so.13' -> '/usr/lib32/libarchive.so.13'
+'pkg/usr/lib32/libarchive.so.13.7.4' -> '/usr/lib32/libarchive.so.13.7.4'
+'pkg/usr/lib32/pkgconfig/libarchive.pc' -> '/usr/lib32/pkgconfig/libarchive.pc'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri May  3 10:28:27 UTC 2024
+
+Totalseconds: 60
+
+KB: 1816020	/
+

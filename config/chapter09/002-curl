@@ -1,0 +1,25 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/git/basicnet/curl.html
+
+SRC="curl"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	--with-openssl \
+	--enable-threaded-resolver \
+	--with-ca-path=/etc/ssl/certs --without-libpsl
+
+make
+make install
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	PKG_CONFIG_PATH="/usr/lib32/pkgconfig" \
+	CC="gcc -m32" CXX="g++ -m32" \
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--with-openssl
+	make
+	make DESTDIR=$PWD/pkg install
+	cp -av pkg/usr/lib32/* /usr/lib32
+fi

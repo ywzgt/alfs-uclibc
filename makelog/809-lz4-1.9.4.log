@@ -1,0 +1,56 @@
+Fri May  3 09:07:40 UTC 2024
+KB: 1039396	/
+
+make[1]: Entering directory '/sources/lz4-1.9.4/lib'
+compiling dynamic library 1.9.4
+creating versioned links
+make[1]: Leaving directory '/sources/lz4-1.9.4/lib'
+make[1]: Entering directory '/sources/lz4-1.9.4/programs'
+make[1]: Leaving directory '/sources/lz4-1.9.4/programs'
+make[1]: Entering directory '/sources/lz4-1.9.4/lib'
+creating pkgconfig
+Installing libraries in /usr/lib
+Installing headers in /usr/include
+lz4 libraries installed
+make[1]: Leaving directory '/sources/lz4-1.9.4/lib'
+make[1]: Entering directory '/sources/lz4-1.9.4/programs'
+Installing binaries in /usr/bin
+Installing man pages in /usr/share/man/man1
+lz4 installation completed
+make[1]: Leaving directory '/sources/lz4-1.9.4/programs'
+Cleaning completed
+make[1]: Entering directory '/sources/lz4-1.9.4/lib'
+compiling dynamic library 1.9.4
+creating versioned links
+make[1]: Leaving directory '/sources/lz4-1.9.4/lib'
+make[1]: Entering directory '/sources/lz4-1.9.4/programs'
+make[1]: Leaving directory '/sources/lz4-1.9.4/programs'
+make[1]: Entering directory '/sources/lz4-1.9.4/lib'
+creating pkgconfig
+Installing libraries in /sources/lz4-1.9.4/pkg/usr/lib32
+Installing headers in /sources/lz4-1.9.4/pkg/usr/include
+lz4 libraries installed
+make[1]: Leaving directory '/sources/lz4-1.9.4/lib'
+make[1]: Entering directory '/sources/lz4-1.9.4/programs'
+Installing binaries in /sources/lz4-1.9.4/pkg/usr/bin
+Installing man pages in /sources/lz4-1.9.4/pkg/usr/share/man/man1
+lz4 installation completed
+make[1]: Leaving directory '/sources/lz4-1.9.4/programs'
+'pkg/usr/lib32/liblz4.so' -> '/usr/lib32/liblz4.so'
+'pkg/usr/lib32/liblz4.so.1' -> '/usr/lib32/liblz4.so.1'
+'pkg/usr/lib32/liblz4.so.1.9.4' -> '/usr/lib32/liblz4.so.1.9.4'
+'pkg/usr/lib32/pkgconfig/liblz4.pc' -> '/usr/lib32/pkgconfig/liblz4.pc'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections
+
+
+Fri May  3 09:07:59 UTC 2024
+
+Totalseconds: 19
+
+KB: 1043320	/
+

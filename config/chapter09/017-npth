@@ -1,0 +1,11 @@
+#!/bin/bash
+# https://linuxfromscratch.org/blfs/view/git/general/npth.html
+
+SRC="npth"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+		--disable-static
+
+make
+make install

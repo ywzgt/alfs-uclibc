@@ -1,0 +1,12 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/svn/general/brotli.html
+
+SRC="brotli"
+PKG="$SRC"
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr \
+	-DCMAKE_BUILD_TYPE=Release \
+	-B build -GNinja -S .
+
+cmake --build build
+cmake --install build

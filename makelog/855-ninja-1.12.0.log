@@ -1,0 +1,58 @@
+Fri May  3 10:02:38 UTC 2024
+KB: 1526708	/
+
+[4 1/32 0.021s] INLINE build/browse_py.h
+[4 2/32 0.415s] CXX build/browse.o
+[4 3/32 0.782s] CXX build/depfile_parser.o
+[4 4/32 1.052s] CXX build/lexer.o
+[4 5/32 1.931s] CXX build/clparser.o
+[4 6/32 1.956s] CXX build/debug_flags.o
+[4 7/32 2.328s] CXX build/build_log.o
+[4 8/32 2.474s] CXX build/clean.o
+[4 9/32 3.126s] CXX build/disk_interface.o
+[4 10/32 3.499s] CXX build/deps_log.o
+[4 11/32 3.939s] CXX build/dyndep.o
+[4 12/32 4.026s] CXX build/edit_distance.o
+[4 13/32 4.398s] CXX build/build.o
+[4 14/32 4.805s] CXX build/dyndep_parser.o
+[4 15/32 5.270s] CXX build/json.o
+[4 16/32 5.478s] CXX build/graphviz.o
+[4 17/32 5.501s] CXX build/eval_env.o
+[4 18/32 5.914s] CXX build/line_printer.o
+[4 19/32 6.182s] CXX build/metrics.o
+[4 20/32 6.847s] CXX build/parser.o
+[4 21/32 6.939s] CXX build/graph.o
+[4 22/32 7.564s] CXX build/manifest_parser.o
+[4 23/32 8.273s] CXX build/string_piece_util.o
+[4 24/32 8.323s] CXX build/missing_deps.o
+[4 25/32 8.451s] CXX build/status.o
+[4 26/32 8.787s] CXX build/version.o
+[4 27/32 8.942s] CXX build/state.o
+[3 28/32 9.295s] CXX build/subprocess-posix.o
+[2 29/32 10.107s] CXX build/util.o
+[2 30/32 10.150s] AR build/libninja.a
+[1 31/32 11.448s] CXX build/ninja.o
+[1 32/32 11.635s] LINK ninja
+bootstrapping ninja...
+warning: A compatible version of re2c (>= 0.15.3) was not found; changes to src/*.in.cc will not affect your build.
+wrote build.ninja.
+bootstrap complete.  rebuilding...
+'ninja' -> '/usr/bin/ninja'
+'misc/bash-completion' -> '/usr/share/bash-completion/completions/ninja'
+install: creating directory '/usr/share/zsh'
+install: creating directory '/usr/share/zsh/site-functions'
+'misc/zsh-completion' -> '/usr/share/zsh/site-functions/_ninja'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri May  3 10:03:15 UTC 2024
+
+Totalseconds: 37
+
+KB: 1550476	/
+

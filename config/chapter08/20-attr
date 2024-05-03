@@ -1,0 +1,25 @@
+#!/bin/bash
+
+SRC="attr"
+PKG="$SRC"
+
+CFLAGS+=" -lintl"
+./configure --prefix=/usr \
+	--disable-static \
+	--sysconfdir=/etc
+
+make
+make install
+
+
+if [[ $MULTILIB ]]; then
+	make distclean
+	CC="gcc -m32" CXX="g++ -m32" \
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--disable-static \
+		--sysconfdir=/etc
+	make
+	make DESTDIR=$PWD/pkg install
+	cp -av pkg/usr/lib32/* /usr/lib32
+fi

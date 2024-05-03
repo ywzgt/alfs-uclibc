@@ -1,0 +1,520 @@
+Fri May  3 10:19:41 UTC 2024
+KB: 1698132	/
+
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for vfork.h... no
+checking for sys/param.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for gawk... (cached) gawk
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking whether ln -s works... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking whether NLS is requested... yes
+checking for po4a... no
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for langinfo.h... yes
+checking for libintl.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for stdint.h... (cached) yes
+checking for stdio_ext.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/time.h... yes
+checking for termios.h... yes
+checking for unistd.h... (cached) yes
+checking for utmp.h... yes
+checking for utmpx.h... yes
+checking for values.h... yes
+checking for wchar.h... (cached) yes
+checking for wctype.h... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for uid_t in sys/types.h... yes
+checking for inline... inline
+checking for int32_t... yes
+checking for pid_t... yes
+checking for C/C++ restrict keyword... __restrict__
+checking for size_t... yes
+checking for ssize_t... yes
+checking for struct stat.st_rdev... yes
+checking for siginfo_t.si_int... yes
+checking for gcc -std=gnu99 options needed to detect all undeclared functions... none needed
+checking whether __UT_HOSTSIZE is declared... yes
+checking build system type... x86_64-pc-linux-uclibc
+checking host system type... x86_64-pc-linux-uclibc
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc -std=gnu99... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-uclibc file names to x86_64-pc-linux-uclibc format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-uclibc file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc -std=gnu99 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -std=gnu99 supports -fno-rtti -fno-exceptions... no
+checking for gcc -std=gnu99 option to produce PIC... -fPIC -DPIC
+checking if gcc -std=gnu99 PIC flag -fPIC -DPIC works... yes
+checking if gcc -std=gnu99 static flag -static works... yes
+checking if gcc -std=gnu99 supports -c -o file.o... yes
+checking if gcc -std=gnu99 supports -c -o file.o... (cached) yes
+checking whether the gcc -std=gnu99 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for error_at_line... yes
+checking for fork... yes
+checking for vfork... yes
+checking for getpagesize... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking for working mmap... yes
+checking for GNU libc compatible realloc... yes
+checking for working strcoll... yes
+checking for working strtod... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking whether NLS is requested... yes
+checking for GNU gettext in libc... no
+checking for iconv... yes
+checking for GNU gettext in libintl... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... external libintl
+checking how to link with libintl... /usr/lib/libintl.so
+checking for error.h... yes
+checking for stdio_ext.h... (cached) yes
+checking for __progname... yes
+checking whether program_invocation_name is defined... yes
+checking whether program_invocation_short_name is defined... yes
+checking for pidfd_open... no
+checking for __NR_pidfd_open... yes
+checking for ncursesw... yes
+checking for libsystemd... yes
+checking for sd_session_get_leader... no
+checking for library containing dlopen... none required
+checking for __fpending... yes
+checking for alarm... yes
+checking for atexit... yes
+checking for dup2... yes
+checking for gethostname... yes
+checking for getpagesize... (cached) yes
+checking for gettimeofday... yes
+checking for iswprint... yes
+checking for memchr... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for nl_langinfo... yes
+checking for putenv... yes
+checking for regcomp... yes
+checking for rpmatch... yes
+checking for select... yes
+checking for setlocale... yes
+checking for sigabbrev_np... no
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strndup... yes
+checking for strpbrk... yes
+checking for strrchr... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for strverscmp... yes
+checking for utmpname... yes
+checking for wcwidth... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating local/Makefile
+config.status: creating po-man/Makefile
+config.status: creating po/Makefile.in
+config.status: creating library/libproc2.pc
+config.status: creating testsuite/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make  all-recursive
+make[1]: Entering directory '/sources/procps-ng-4.0.4'
+Making all in local
+make[2]: Entering directory '/sources/procps-ng-4.0.4/local'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/procps-ng-4.0.4/local'
+Making all in po-man
+make[2]: Entering directory '/sources/procps-ng-4.0.4/po-man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/procps-ng-4.0.4/po-man'
+Making all in po
+make[2]: Entering directory '/sources/procps-ng-4.0.4/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/sources/procps-ng-4.0.4/po'
+Making all in testsuite
+make[2]: Entering directory '/sources/procps-ng-4.0.4/testsuite'
+  CC       ps.test/test-schedbatch.o
+  CCLD     test-schedbatch
+make[2]: Leaving directory '/sources/procps-ng-4.0.4/testsuite'
+make[2]: Entering directory '/sources/procps-ng-4.0.4'
+  CC       local/strutils.o
+  CC       local/src_watch-fileutils.o
+  CC       local/src_watch-strutils.o
+  CC       local/src_top_top-fileutils.o
+  CC       local/src_top_top-signals.o
+  CC       src/slabtop-slabtop.o
+  CC       local/src_slabtop-strutils.o
+  CC       local/src_slabtop-fileutils.o
+  CC       src/sysctl.o
+  CC       local/procio.o
+  CC       src/ps/display.o
+  CC       src/ps/global.o
+  CC       src/ps/help.o
+  CC       src/ps/output.o
+  CC       src/ps/parser.o
+  CC       src/ps/select.o
+  CC       src/ps/signames.o
+  CC       src/ps/sortformat.o
+  CC       src/ps/stacktrace.o
+  CC       local/fileutils.o
+  CC       local/signals.o
+  CC       library/devname.lo
+  CC       library/diskstats.lo
+  CC       library/escape.lo
+  CC       library/meminfo.lo
+  CC       library/namespace.lo
+  CC       library/numa.lo
+  CC       library/pids.lo
+  CC       library/pwcache.lo
+  CC       library/readproc.lo
+  CC       library/slabinfo.lo
+  CC       library/stat.lo
+  CC       library/sysinfo.lo
+  CC       library/version.lo
+  CC       library/vmstat.lo
+  CC       library/wchan.lo
+  CC       library/uptime.lo
+  CC       src/free.o
+  CC       src/pgrep.o
+  CC       src/pmap.o
+  CC       src/pwdx.o
+  CC       src/tload.o
+  CC       src/uptime.o
+  CC       src/vmstat.o
+  CC       src/pidof.o
+  CC       src/w.o
+  CC       src/watch-watch.o
+  CC       src/top/top-top.o
+  CC       src/top/top-top_nls.o
+  CCLD     src/sysctl
+  CCLD     library/libproc2.la
+  CCLD     src/pwdx
+  CCLD     src/watch
+  CCLD     src/ps/pscommand
+  CCLD     src/free
+  CCLD     src/pgrep
+  CCLD     src/pkill
+  CCLD     src/pmap
+  CCLD     src/tload
+  CCLD     src/uptime
+  CCLD     src/vmstat
+  CCLD     src/pidwait
+  CCLD     src/pidof
+  CCLD     src/w
+  CCLD     src/slabtop
+  CCLD     src/top/top
+make[2]: Leaving directory '/sources/procps-ng-4.0.4'
+make[1]: Leaving directory '/sources/procps-ng-4.0.4'
+make  install-recursive
+make[1]: Entering directory '/sources/procps-ng-4.0.4'
+Making install in local
+make[2]: Entering directory '/sources/procps-ng-4.0.4/local'
+make[3]: Entering directory '/sources/procps-ng-4.0.4/local'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/procps-ng-4.0.4/local'
+make[2]: Leaving directory '/sources/procps-ng-4.0.4/local'
+Making install in po-man
+make[2]: Entering directory '/sources/procps-ng-4.0.4/po-man'
+make[3]: Entering directory '/sources/procps-ng-4.0.4/po-man'
+make[3]: Nothing to be done for 'install-exec-am'.
+for lang in de fr pl pt_BR ro sv uk zh_CN ; do \
+    files=""; \
+    for trans in free.1 kill.1 pgrep.1 pidof.1 pidwait.1 pkill.1 pmap.1 procps.3 procps_misc.3 procps_pids.3 ps.1 pwdx.1 skill.1 slabtop.1 snice.1 sysctl.8 sysctl.conf.5 tload.1 top.1 uptime.1 vmstat.8 w.1 watch.1; do \
+	if [ -f /sources/procps-ng-4.0.4/po-man/$lang/$trans ]; then \
+	    files="$files /sources/procps-ng-4.0.4/po-man/$lang/$trans"; \
+	elif [ -f ./$lang/$trans ]; then \
+	    files="$files ./$lang/$trans"; \
+	fi; \
+    done; \
+    make -C .. install-man \
+            mandir="/usr/share/man/$lang" \
+	    dist_man_MANS="$files"; \
+done
+make[4]: Entering directory '/sources/procps-ng-4.0.4'
+ /usr/bin/mkdir -p '/usr/share/man/de/man1'
+ /usr/bin/mkdir -p '/usr/share/man/de/man3'
+ /usr/bin/mkdir -p '/usr/share/man/de/man5'
+ /usr/bin/mkdir -p '/usr/share/man/de/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/de/sysctl.conf.5 '/usr/share/man/de/man5'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/de/free.1 /sources/procps-ng-4.0.4/po-man/de/kill.1 /sources/procps-ng-4.0.4/po-man/de/pgrep.1 /sources/procps-ng-4.0.4/po-man/de/pidof.1 /sources/procps-ng-4.0.4/po-man/de/pmap.1 /sources/procps-ng-4.0.4/po-man/de/ps.1 /sources/procps-ng-4.0.4/po-man/de/pwdx.1 /sources/procps-ng-4.0.4/po-man/de/skill.1 /sources/procps-ng-4.0.4/po-man/de/slabtop.1 /sources/procps-ng-4.0.4/po-man/de/tload.1 /sources/procps-ng-4.0.4/po-man/de/uptime.1 /sources/procps-ng-4.0.4/po-man/de/w.1 /sources/procps-ng-4.0.4/po-man/de/watch.1 '/usr/share/man/de/man1'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/de/sysctl.8 /sources/procps-ng-4.0.4/po-man/de/vmstat.8 '/usr/share/man/de/man8'
+make[4]: Leaving directory '/sources/procps-ng-4.0.4'
+make[4]: Entering directory '/sources/procps-ng-4.0.4'
+ /usr/bin/mkdir -p '/usr/share/man/fr/man1'
+ /usr/bin/mkdir -p '/usr/share/man/fr/man3'
+ /usr/bin/mkdir -p '/usr/share/man/fr/man5'
+ /usr/bin/mkdir -p '/usr/share/man/fr/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/fr/sysctl.conf.5 '/usr/share/man/fr/man5'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/fr/sysctl.8 /sources/procps-ng-4.0.4/po-man/fr/vmstat.8 '/usr/share/man/fr/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/fr/free.1 /sources/procps-ng-4.0.4/po-man/fr/kill.1 /sources/procps-ng-4.0.4/po-man/fr/pmap.1 /sources/procps-ng-4.0.4/po-man/fr/ps.1 /sources/procps-ng-4.0.4/po-man/fr/pwdx.1 /sources/procps-ng-4.0.4/po-man/fr/skill.1 /sources/procps-ng-4.0.4/po-man/fr/slabtop.1 /sources/procps-ng-4.0.4/po-man/fr/tload.1 /sources/procps-ng-4.0.4/po-man/fr/uptime.1 /sources/procps-ng-4.0.4/po-man/fr/w.1 /sources/procps-ng-4.0.4/po-man/fr/watch.1 '/usr/share/man/fr/man1'
+make[4]: Leaving directory '/sources/procps-ng-4.0.4'
+make[4]: Entering directory '/sources/procps-ng-4.0.4'
+ /usr/bin/mkdir -p '/usr/share/man/pl/man1'
+ /usr/bin/mkdir -p '/usr/share/man/pl/man3'
+ /usr/bin/mkdir -p '/usr/share/man/pl/man5'
+ /usr/bin/mkdir -p '/usr/share/man/pl/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/pl/free.1 /sources/procps-ng-4.0.4/po-man/pl/pgrep.1 /sources/procps-ng-4.0.4/po-man/pl/pmap.1 /sources/procps-ng-4.0.4/po-man/pl/uptime.1 '/usr/share/man/pl/man1'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/pl/procps.3 /sources/procps-ng-4.0.4/po-man/pl/procps_misc.3 /sources/procps-ng-4.0.4/po-man/pl/procps_pids.3 '/usr/share/man/pl/man3'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/pl/vmstat.8 '/usr/share/man/pl/man8'
+make[4]: Leaving directory '/sources/procps-ng-4.0.4'
+make[4]: Entering directory '/sources/procps-ng-4.0.4'
+ /usr/bin/mkdir -p '/usr/share/man/pt_BR/man3'
+ /usr/bin/mkdir -p '/usr/share/man/pt_BR/man1'
+ /usr/bin/mkdir -p '/usr/share/man/pt_BR/man5'
+ /usr/bin/mkdir -p '/usr/share/man/pt_BR/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/pt_BR/sysctl.conf.5 '/usr/share/man/pt_BR/man5'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/pt_BR/sysctl.8 /sources/procps-ng-4.0.4/po-man/pt_BR/vmstat.8 '/usr/share/man/pt_BR/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/pt_BR/free.1 /sources/procps-ng-4.0.4/po-man/pt_BR/kill.1 /sources/procps-ng-4.0.4/po-man/pt_BR/pmap.1 /sources/procps-ng-4.0.4/po-man/pt_BR/pwdx.1 /sources/procps-ng-4.0.4/po-man/pt_BR/skill.1 /sources/procps-ng-4.0.4/po-man/pt_BR/slabtop.1 /sources/procps-ng-4.0.4/po-man/pt_BR/tload.1 /sources/procps-ng-4.0.4/po-man/pt_BR/uptime.1 /sources/procps-ng-4.0.4/po-man/pt_BR/w.1 /sources/procps-ng-4.0.4/po-man/pt_BR/watch.1 '/usr/share/man/pt_BR/man1'
+make[4]: Leaving directory '/sources/procps-ng-4.0.4'
+make[4]: Entering directory '/sources/procps-ng-4.0.4'
+ /usr/bin/mkdir -p '/usr/share/man/ro/man1'
+ /usr/bin/mkdir -p '/usr/share/man/ro/man3'
+ /usr/bin/mkdir -p '/usr/share/man/ro/man5'
+ /usr/bin/mkdir -p '/usr/share/man/ro/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/ro/sysctl.conf.5 '/usr/share/man/ro/man5'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/ro/sysctl.8 /sources/procps-ng-4.0.4/po-man/ro/vmstat.8 '/usr/share/man/ro/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/ro/procps.3 /sources/procps-ng-4.0.4/po-man/ro/procps_misc.3 /sources/procps-ng-4.0.4/po-man/ro/procps_pids.3 '/usr/share/man/ro/man3'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/ro/free.1 /sources/procps-ng-4.0.4/po-man/ro/kill.1 /sources/procps-ng-4.0.4/po-man/ro/pgrep.1 /sources/procps-ng-4.0.4/po-man/ro/pidof.1 /sources/procps-ng-4.0.4/po-man/ro/pmap.1 /sources/procps-ng-4.0.4/po-man/ro/ps.1 /sources/procps-ng-4.0.4/po-man/ro/pwdx.1 /sources/procps-ng-4.0.4/po-man/ro/skill.1 /sources/procps-ng-4.0.4/po-man/ro/slabtop.1 /sources/procps-ng-4.0.4/po-man/ro/tload.1 /sources/procps-ng-4.0.4/po-man/ro/top.1 /sources/procps-ng-4.0.4/po-man/ro/uptime.1 /sources/procps-ng-4.0.4/po-man/ro/w.1 /sources/procps-ng-4.0.4/po-man/ro/watch.1 '/usr/share/man/ro/man1'
+make[4]: Leaving directory '/sources/procps-ng-4.0.4'
+make[4]: Entering directory '/sources/procps-ng-4.0.4'
+ /usr/bin/mkdir -p '/usr/share/man/sv/man1'
+ /usr/bin/mkdir -p '/usr/share/man/sv/man3'
+ /usr/bin/mkdir -p '/usr/share/man/sv/man5'
+ /usr/bin/mkdir -p '/usr/share/man/sv/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/sv/sysctl.8 /sources/procps-ng-4.0.4/po-man/sv/vmstat.8 '/usr/share/man/sv/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/sv/procps.3 /sources/procps-ng-4.0.4/po-man/sv/procps_misc.3 /sources/procps-ng-4.0.4/po-man/sv/procps_pids.3 '/usr/share/man/sv/man3'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/sv/free.1 /sources/procps-ng-4.0.4/po-man/sv/kill.1 /sources/procps-ng-4.0.4/po-man/sv/pgrep.1 /sources/procps-ng-4.0.4/po-man/sv/pidof.1 /sources/procps-ng-4.0.4/po-man/sv/pmap.1 /sources/procps-ng-4.0.4/po-man/sv/ps.1 /sources/procps-ng-4.0.4/po-man/sv/pwdx.1 /sources/procps-ng-4.0.4/po-man/sv/skill.1 /sources/procps-ng-4.0.4/po-man/sv/slabtop.1 /sources/procps-ng-4.0.4/po-man/sv/tload.1 /sources/procps-ng-4.0.4/po-man/sv/top.1 /sources/procps-ng-4.0.4/po-man/sv/uptime.1 /sources/procps-ng-4.0.4/po-man/sv/w.1 /sources/procps-ng-4.0.4/po-man/sv/watch.1 '/usr/share/man/sv/man1'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/sv/sysctl.conf.5 '/usr/share/man/sv/man5'
+make[4]: Leaving directory '/sources/procps-ng-4.0.4'
+make[4]: Entering directory '/sources/procps-ng-4.0.4'
+ /usr/bin/mkdir -p '/usr/share/man/uk/man1'
+ /usr/bin/mkdir -p '/usr/share/man/uk/man3'
+ /usr/bin/mkdir -p '/usr/share/man/uk/man5'
+ /usr/bin/mkdir -p '/usr/share/man/uk/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/uk/sysctl.conf.5 '/usr/share/man/uk/man5'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/uk/procps.3 /sources/procps-ng-4.0.4/po-man/uk/procps_misc.3 /sources/procps-ng-4.0.4/po-man/uk/procps_pids.3 '/usr/share/man/uk/man3'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/uk/sysctl.8 /sources/procps-ng-4.0.4/po-man/uk/vmstat.8 '/usr/share/man/uk/man8'
+ /usr/bin/install -c -m 644 /sources/procps-ng-4.0.4/po-man/uk/free.1 /sources/procps-ng-4.0.4/po-man/uk/kill.1 /sources/procps-ng-4.0.4/po-man/uk/pgrep.1 /sources/procps-ng-4.0.4/po-man/uk/pidof.1 /sources/procps-ng-4.0.4/po-man/uk/pmap.1 /sources/procps-ng-4.0.4/po-man/uk/ps.1 /sources/procps-ng-4.0.4/po-man/uk/pwdx.1 /sources/procps-ng-4.0.4/po-man/uk/skill.1 /sources/procps-ng-4.0.4/po-man/uk/slabtop.1 /sources/procps-ng-4.0.4/po-man/uk/tload.1 /sources/procps-ng-4.0.4/po-man/uk/top.1 /sources/procps-ng-4.0.4/po-man/uk/uptime.1 /sources/procps-ng-4.0.4/po-man/uk/w.1 /sources/procps-ng-4.0.4/po-man/uk/watch.1 '/usr/share/man/uk/man1'
+make[4]: Leaving directory '/sources/procps-ng-4.0.4'
+make[4]: Entering directory '/sources/procps-ng-4.0.4'
+make[4]: Leaving directory '/sources/procps-ng-4.0.4'
+make[3]: Leaving directory '/sources/procps-ng-4.0.4/po-man'
+make[2]: Leaving directory '/sources/procps-ng-4.0.4/po-man'
+Making install in po
+make[2]: Entering directory '/sources/procps-ng-4.0.4/po'
+/bin/sh .././/mkinstalldirs /usr/share
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/procps-ng.mo
+installing es.gmo as /usr/share/locale/es/LC_MESSAGES/procps-ng.mo
+installing fr.gmo as /usr/share/locale/fr/LC_MESSAGES/procps-ng.mo
+installing ka.gmo as /usr/share/locale/ka/LC_MESSAGES/procps-ng.mo
+installing ko.gmo as /usr/share/locale/ko/LC_MESSAGES/procps-ng.mo
+installing pl.gmo as /usr/share/locale/pl/LC_MESSAGES/procps-ng.mo
+installing pt_BR.gmo as /usr/share/locale/pt_BR/LC_MESSAGES/procps-ng.mo
+installing ro.gmo as /usr/share/locale/ro/LC_MESSAGES/procps-ng.mo
+installing sv.gmo as /usr/share/locale/sv/LC_MESSAGES/procps-ng.mo
+installing uk.gmo as /usr/share/locale/uk/LC_MESSAGES/procps-ng.mo
+installing vi.gmo as /usr/share/locale/vi/LC_MESSAGES/procps-ng.mo
+installing zh_CN.gmo as /usr/share/locale/zh_CN/LC_MESSAGES/procps-ng.mo
+if test "procps-ng" = "gettext-tools"; then \
+  /bin/sh .././/mkinstalldirs /usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/sources/procps-ng-4.0.4/po'
+Making install in testsuite
+make[2]: Entering directory '/sources/procps-ng-4.0.4/testsuite'
+make[3]: Entering directory '/sources/procps-ng-4.0.4/testsuite'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/sources/procps-ng-4.0.4/testsuite'
+make[2]: Leaving directory '/sources/procps-ng-4.0.4/testsuite'
+make[2]: Entering directory '/sources/procps-ng-4.0.4'
+make[3]: Entering directory '/sources/procps-ng-4.0.4'
+ /usr/bin/mkdir -p '/usr/share/doc/procps-ng'
+ /usr/bin/mkdir -p '/usr/include/libproc2/'
+ /usr/bin/install -c -m 644 doc/bugs.md doc/FAQ doc/libproc.supp '/usr/share/doc/procps-ng'
+ /usr/bin/mkdir -p '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 library/include/diskstats.h library/include/meminfo.h library/include/misc.h library/include/pids.h library/include/slabinfo.h library/include/stat.h library/include/vmstat.h library/include/xtra-procps-debug.h '/usr/include/libproc2/'
+ /usr/bin/mkdir -p '/usr/share/man/man3'
+ /usr/bin/mkdir -p '/usr/share/man/man5'
+ /usr/bin/mkdir -p '/usr/share/man/man8'
+ /usr/bin/install -c -m 644 man/procps.3 man/procps_pids.3 man/procps_misc.3 '/usr/share/man/man3'
+ /usr/bin/install -c -m 644 man/free.1 man/pgrep.1 man/pkill.1 man/pmap.1 man/uptime.1 man/pwdx.1 man/tload.1 man/ps.1 man/pidwait.1 man/pidof.1 man/w.1 man/watch.1 man/top.1 man/slabtop.1 '/usr/share/man/man1'
+ /usr/bin/install -c -m 644 man/sysctl.conf.5 '/usr/share/man/man5'
+ /usr/bin/install -c -m 644 man/vmstat.8 man/sysctl.8 '/usr/share/man/man8'
+ /usr/bin/mkdir -p '/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/usr/lib'
+ /usr/bin/install -c -m 644 library/libproc2.pc '/usr/lib/pkgconfig'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   library/libproc2.la '/usr/lib'
+libtool: install: /usr/bin/install -c library/.libs/libproc2.so.0.0.2 /usr/lib/libproc2.so.0.0.2
+libtool: install: (cd /usr/lib && { ln -s -f libproc2.so.0.0.2 libproc2.so.0 || { rm -f libproc2.so.0 && ln -s libproc2.so.0.0.2 libproc2.so.0; }; })
+libtool: install: (cd /usr/lib && { ln -s -f libproc2.so.0.0.2 libproc2.so || { rm -f libproc2.so && ln -s libproc2.so.0.0.2 libproc2.so; }; })
+libtool: install: /usr/bin/install -c library/.libs/libproc2.lai /usr/lib/libproc2.la
+libtool: finish: PATH="/usr/bin:/usr/sbin:/sbin" ldconfig -n /usr/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/bin'
+ /usr/bin/mkdir -p '/usr/sbin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c src/sysctl '/usr/sbin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c src/ps/pscommand '/usr/bin/./ps'
+libtool: install: /usr/bin/install -c src/sysctl /usr/sbin/sysctl
+libtool: install: /usr/bin/install -c src/ps/.libs/pscommand /usr/bin/./ps
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c src/free src/pgrep src/pkill src/pmap src/pwdx src/tload src/uptime src/vmstat src/pidwait src/pidof src/w src/watch src/top/top src/slabtop '/usr/bin'
+libtool: install: /usr/bin/install -c src/.libs/free /usr/bin/free
+libtool: install: /usr/bin/install -c src/.libs/pgrep /usr/bin/pgrep
+libtool: install: /usr/bin/install -c src/.libs/pkill /usr/bin/pkill
+libtool: install: /usr/bin/install -c src/.libs/pmap /usr/bin/pmap
+libtool: install: /usr/bin/install -c src/pwdx /usr/bin/pwdx
+libtool: install: /usr/bin/install -c src/.libs/tload /usr/bin/tload
+libtool: install: /usr/bin/install -c src/.libs/uptime /usr/bin/uptime
+libtool: install: /usr/bin/install -c src/.libs/vmstat /usr/bin/vmstat
+libtool: install: /usr/bin/install -c src/.libs/pidwait /usr/bin/pidwait
+libtool: install: /usr/bin/install -c src/.libs/pidof /usr/bin/pidof
+libtool: install: /usr/bin/install -c src/.libs/w /usr/bin/w
+libtool: install: /usr/bin/install -c src/watch /usr/bin/watch
+libtool: install: /usr/bin/install -c src/top/.libs/top /usr/bin/top
+libtool: install: /usr/bin/install -c src/.libs/slabtop /usr/bin/slabtop
+make[3]: Leaving directory '/sources/procps-ng-4.0.4'
+make[2]: Leaving directory '/sources/procps-ng-4.0.4'
+make[1]: Leaving directory '/sources/procps-ng-4.0.4'
+
+
+CFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections
+CXXFLAGS:: -march=x86-64-v3 -mtune=haswell -Os -pipe -fno-plt -fPIC -fstack-clash-protection -ffunction-sections -fdata-sections -Wp,-D_GLIBCXX_ASSERTIONS
+CPPFLAGS:: -DNDEBUG
+LDFLAGS:: -Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now,--gc-sections,--compress-debug-sections=zstd
+
+
+Fri May  3 10:19:53 UTC 2024
+
+Totalseconds: 12
+
+KB: 1718912	/
+

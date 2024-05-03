@@ -1,0 +1,22 @@
+/usr/include/crypt.h	11131	root:root	644	
+/usr/lib/libcrypt.a	167722	root:root	644	
+/usr/lib/libcrypt.so	17	root:root	777	libcrypt.so.2.0.0
+/usr/lib/libcrypt.so.2	17	root:root	777	libcrypt.so.2.0.0
+/usr/lib/libcrypt.so.2.0.0	96312	root:root	755	
+/usr/lib/pkgconfig/libcrypt.pc	12	root:root	777	libxcrypt.pc
+/usr/lib/pkgconfig/libxcrypt.pc	382	root:root	644	
+/usr/lib32/libcrypt.so	17	root:root	777	libcrypt.so.2.0.0
+/usr/lib32/libcrypt.so.2	17	root:root	777	libcrypt.so.2.0.0
+/usr/lib32/libcrypt.so.2.0.0	110092	root:root	755	
+/usr/lib32/pkgconfig/libcrypt.pc	12	root:root	777	libxcrypt.pc
+/usr/lib32/pkgconfig/libxcrypt.pc	374	root:root	644	
+/usr/share/man/man3/crypt.3	10381	root:root	644	
+/usr/share/man/man3/crypt_checksalt.3	2891	root:root	644	
+/usr/share/man/man3/crypt_gensalt.3	6002	root:root	644	
+/usr/share/man/man3/crypt_gensalt_ra.3	25	root:root	644	
+/usr/share/man/man3/crypt_gensalt_rn.3	25	root:root	644	
+/usr/share/man/man3/crypt_preferred_method.3	1580	root:root	644	
+/usr/share/man/man3/crypt_r.3	17	root:root	644	
+/usr/share/man/man3/crypt_ra.3	17	root:root	644	
+/usr/share/man/man3/crypt_rn.3	17	root:root	644	
+/usr/share/man/man5/crypt.5	11497	root:root	644	

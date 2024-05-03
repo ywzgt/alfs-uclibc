@@ -1,0 +1,18 @@
+--- a/utils/ldconfig.c
++++ b/utils/ldconfig.c
+@@ -105,6 +105,7 @@ static void verror_msg(const char *s, va_list p)
+
+ static void warnx(const char *s, ...)
+ {
++	if (verbose != 1) return;
+ 	va_list p;
+
+ 	va_start(p, s);
+@@ -138,6 +139,7 @@ static void vperror_msg(const char *s, va_list p)
+
+ static void warn(const char *s, ...)
+ {
++	if (verbose != 1) return;
+ 	va_list p;
+
+ 	va_start(p, s);

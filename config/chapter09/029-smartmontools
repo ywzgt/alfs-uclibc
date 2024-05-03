@@ -1,0 +1,11 @@
+#!/bin/bash
+# https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/smartmontools.html
+
+SRC="smartmontools"
+PKG="$SRC"
+
+./configure --prefix=/usr \
+	 --sysconfdir=/etc
+
+make
+make install
