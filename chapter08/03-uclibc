@@ -42,7 +42,11 @@ if [[ $MULTILIB ]]; then
 	sed -e '/^#include <bits\/sysnum.h>$/i\# ifdef __LP64__' \
 		-e '/^#include <bits\/sysnum.h>$/a\# else\n#include <bits\/sysnum-32.h>\n# endif' \
 		-i /usr/include/sys/syscall.h
+	sed -e '/^# include <bits\/uClibc_config.h>$/i\# ifdef __LP64__' \
+		-e '/^# include <bits\/uClibc_config.h>$/a\# else\n# include <bits\/uClibc_config_32.h>\n# endif' \
+		-i /usr/include/features.h
 	install -Dm644 pkg/usr/include/bits/sysnum.h -v /usr/include/bits/sysnum-32.h
+	install -Dm644 pkg/usr/include/bits/uClibc_config.h -v /usr/include/bits/uClibc_config_32.h
 	install -vm755 pkg/sbin/ldconfig /usr/sbin/ldconfig32
 	install -vm755 pkg/usr/bin/ldd /usr/bin/ldd32
 	install -vm644 libssp_nonshared.a -t /usr/lib32

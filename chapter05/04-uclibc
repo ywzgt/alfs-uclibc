@@ -38,4 +38,8 @@ if [[ $MULTILIB ]]; then
 	make CC="$LFS_TGT-gcc -m32" DESTDIR=$PWD/pkg install
 	cp -a pkg/{,usr/}lib32/* -vt $LFS/usr/lib32/
 	ln -sfv ../lib32/ld-uClibc.so.1 $LFS/usr/lib/ld-uClibc.so.1
+	sed -e '/^# include <bits\/uClibc_config.h>$/i\# ifdef __LP64__' \
+		-e '/^# include <bits\/uClibc_config.h>$/a\# else\n# include <bits\/uClibc_config_32.h>\n# endif' \
+		-i "$LFS/usr/include/features.h"
+	install -Dvm644 pkg/usr/include/bits/uClibc_config.h "$LFS/usr/include/bits/uClibc_config_32.h"
 fi
